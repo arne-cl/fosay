@@ -1,0 +1,171 @@
+vp-att := tense, aspect, mood, object-persone, object-number, object-form, object-difinity, subject-persone, subject-number, transitivity
+subj-att := number -> subject-number, persone -> subject-persone
+obj-att := persone->object-persone, number->object-number, form->object-form, difinity->object-difinity
+V-att := tense, aspect, mood, participle, object-persone, object-number, object-form, object-difinity, subject-persone, subject-number, transitivity
+N-att := case, number, persone
+PRON-att := case, number, persone, form
+ap-att := number, case
+np-att := difinity, case, number, persone, form
+np1-att := difinity, case, number, persone
+PRON-empty-att := case, real-number->number, persone, form
+
+#grammar
+
+ip :-
+    $prcl{clause-type: principal}
+    PUNCT{lemma: "."}
+
+prcl :-
+    (
+    subj<subj-att>
+    $vp<vp-att>
+    [obj<obj-att>]
+    [time<tense>]
+    [inobj]
+    [illobj]
+    [elobj]
+    )
+
+##|
+prcl :-
+    (
+    .subj<subj-att>
+    $vp<vp-att>{object-difinity: difinite; transitivity: transitive}
+    .obj<obj-att>
+    [time<tense>]
+    [inobj]
+    [illobj]
+    [elobj]
+    )
+
+##|
+prcl :-
+    .subj<subj-att>
+    $vp<vp-att>{object-difinity: difinite; transitivity: transitive}
+    obj<obj-att>
+
+##|
+prcl :-
+    subj<subj-att>
+    $vp<vp-att>{object-difinity: difinite; transitivity: transitive}
+    .obj<obj-att>
+
+.subj :-
+    $.np<np-att>{case: nominative}
+
+.obj :-
+    $.np<np-att>{case: accusative}
+
+.np :-
+    $.PRON<PRON-empty-att>
+
+time :-
+    $ADV<tense>{adverb-type: time}
+
+subj :-
+    $np<np-att>{case: nominative}
+
+obj :-
+    $np<np-att>{case: accusative}
+
+inobj :-
+    $np{case: inessive}
+
+illobj :-
+    $np{case: illative}
+
+elobj :-
+    $np{case: elative}
+
+pp :-
+    P<$case>
+    $np<case>
+
+vp{truth: 1.0} :-
+    $V<V-att>
+
+ap :-
+    $ADJ<ap-att>
+
+&ap<ap-att> :- auto
+
+poss :-
+    $np<difinity>{case: nominative}
+
+poss1 :-
+    $np<difinity>{case: dative}
+
+np :-
+    $PRON<PRON-att>{pronoun-type: personal}
+
+np{quantity: none} :-
+    ART<$difinity>{difinity: difinite}
+    [ap<ap-att>]
+    $N<case2, noun-type, $N-att>
+
+np{quantity: none; number: singular; noun-type: common} :-
+    ART<$difinity>{difinity: undifinite}
+    [ap<ap-att>]
+    $N<case2, noun-type, $N-att>
+
+np{quantity: none; difinity: undifinite; number: plural} :-
+    [ap<ap-att>]
+    $N<case2, noun-type, $N-att>
+
+#1.0:
+np{quantity: none; noun-type: proper; difinity: difinite; number: singular} :-
+    [ap<ap-att>]
+    $N<case2, noun-type, $N-att>
+
+np{number: singular} :-
+    QUA<$quantity, $quantity-number, $difinity>
+    [ap<ap-att>]
+    $N<case2, number, $case, $persone>
+
+np :-
+    poss
+    $np1<$N-att, $difinity>{case2: possessed}
+
+np :-
+    poss1
+    $np<$N-att, $difinity>{case2: possessed}
+
+&np<np-att> :- auto
+
+np1{quantity: none; difinity: difinite} :-
+    [ap<ap-att>]
+    $N<case2, $N-att>
+
+np1{difinity: difinite; number: singular} :-
+    QUA<quantity, quantity-number>
+    ap<ap-att>
+    $N<case2, number, $case, $persone>
+
+np1 :-
+    poss1
+    $np<$N-att, $difinity>{case2: possessed}
+
+np1{difinity: difinite} :-
+    poss
+    $np1<$N-att, $difinity>{case2: possessed}
+
+&np1<np1-att> :- auto
+
+#priorities
+
+prcl ::=
+    0.8: subj vp
+    0.8: subj vp obj
+    0.8: time subj vp
+    0.8: time subj vp obj
+    0.8: subj vp inobj
+    0.8: subj vp inobj obj
+    0.8: time subj vp inobj
+    0.8: time subj vp inobj obj
+    1.0: .subj vp .obj
+    0.9: .subj vp obj
+    0.9: subj vp .obj
+np ::=
+    1.0: poss np1
+    #0.8: ap N
+    #0.8: JMP N #########

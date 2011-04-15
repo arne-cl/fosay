@@ -717,23 +717,23 @@ def parse(s, print_to_console=True):
     return _parse_text(s, print_to_console)
 
 def _read_file(file_path):
-        try:
-            f = open(file_path, encoding = 'utf-8')
-            s = [x.split('#')[0].strip() for x in f.readlines()]
-            i = 0
-            while i < len(s):
-                if len(s[i]) == 0:
-                    del s[i]
-                elif s[i][-1] != '\\':
-                    i += 1
-                else:
-                    s[i] = s[i][:-1] + ' ' + s[i + 1]
-                    del s[i + 1]
-        except IOError:
-            print("can't open file '" + os.path.join(self.path, file_path) + "'")
-        finally:
-            f.close()
-        return s
+    try:
+        f = open(file_path, encoding = 'utf-8')
+        s = [x.split('#')[0].strip() for x in f.readlines()]
+        i = 0
+        while i < len(s):
+            if len(s[i]) == 0:
+                del s[i]
+            elif s[i][-1] != '\\':
+                i += 1
+            else:
+                s[i] = s[i][:-1] + ' ' + s[i + 1]
+                del s[i + 1]
+    except IOError:
+        print("can't open file '" + os.path.join(self.path, file_path) + "'")
+    finally:
+        f.close()
+    return s
 
 def parse_file(_path, print_to_console=True):
     path = _path
