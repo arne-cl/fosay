@@ -1,0 +1,134 @@
+"1"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    conj-type: non-contrasting
+    #among: , #може на це й потреби нема
+    with-comma: true
+}
+"1"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    conj-type: non-contrasting
+    among: "і"
+    among-transcription: "i"
+}
+"1"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    conj-type: non-contrasting
+    among: "й"
+    among-transcription: "j"
+}
+"1"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    conj-type: non-contrasting
+    among: "та"
+    among-transcription: "ta"
+}
+"1"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    max-items: 2
+    conj-type: contrasting
+    among: "але"
+    among-transcription: "alɛ"
+}
+"1"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    max-items: 2
+    conj-type: non-contrasting
+    with-comma: true
+    before: "і"
+    before-transcription: "i"
+    among: "і"
+    among-transcription: "i"
+}
+"7"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    conj-type: non-contrasting
+    among: "або"
+    among-transcription: "abo"
+}
+"7"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    conj-type: non-contrasting
+    among: "чи"
+    among-transcription: "tʃe"
+}
+"7"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    max-items: 2
+    conj-type: non-contrasting
+    with-comma: true
+    before: "або"
+    before-transcription: "abo"
+    among: "або"
+    among-transcription: "abo"
+#}
+#"6
+#por:\
+#	type == noun-phrase or\
+#	type == epithet or\
+#	type == preposition-phrase or\
+#	type == clause
+#order: 1
+#conj-type: non-contrasting
+#among: or
+#}
+#"6
+#por:\
+#	type == noun-phrase or\
+#	type == epithet or\
+#	type == preposition-phrase or\
+#	type == clause
+#order: 1
+#max-items: 2
+#conj-type: non-contrasting
+#before: either
+#among: or
+}
+"8"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    max-items: 2
+    conj-type: non-contrasting
+    before: "ні"
+    before-transcription: "nʲi"
+    among: "ні"
+    among-transcription: "nʲi"
+}
+"13"
+{
+    por: clause
+    order: 1
+    max-items: 2
+    conj-type: non-contrasting
+    before: "якщо"
+    before-transcription: "jakʃtʃo"
+    among: "то"
+    among-transcription: "to"
+}
+"13"
+{
+    por: clause
+    order: 1
+    max-items: 2
+    conj-type: non-contrasting
+    before: "якщо"
+    before-transcription: "jakʃtʃo"
+}

@@ -1,0 +1,77 @@
+"mondani" :: all-verbs-2
+{
+    transcription: "mondɒni"
+    lemma: "cusku"
+    stem: "cusku.mondani"
+    type: verb
+    tense: infinitive
+    mood: declarative #######nem itt kell!!
+    aspect: indefinite
+    participle: not-participle
+}
+"látni" :: all-verbs
+{
+    transcription: "latni"
+    lemma: "viska"
+    stem: "viska.látni"
+    type: verb
+    tense: infinitive
+    mood: declarative #######nem itt kell!!
+    aspect: indefinite
+    participle: not-participle
+}
+"látni fogja"
+{
+    transcription: "latni fogjɒ"
+    lemma: "viska"
+    stem: "viska.látni"
+    type: verb
+    tense: future
+    aspect: indefinite
+    mood: declarative #######nem itt kell!!
+    subject-number: singular
+    subject-persone: third
+    object-difinity: difinite
+    participle: not-participle
+}
+"látni fog"
+{
+    transcription: "latni fog"
+    lemma: "viska"
+    stem: "viska.látni"
+    type: verb
+    tense: future
+    aspect: indefinite
+    mood: declarative #######nem itt kell!!
+    subject-number: singular
+    subject-persone: third
+    object-difinity: undifinite
+    participle: not-participle
+}
+"látni fognak"
+{
+    transcription: "latni fogɒk"
+    lemma: "viska"
+    stem: "viska.látni"
+    type: verb
+    tense: future
+    aspect: indefinite
+    mood: declarative #######nem itt kell!!
+    subject-number: plural
+    subject-persone: third
+    object-difinity: undifinite
+    participle: not-participle
+}
+"megy" :: verb-continuous; verb-perfect-continuous-durative
+{
+    transcription: "mɛdʲ"
+    lemma: "cadzu"
+    stem: "cadzu.megy"
+    type: verb
+    tense: present
+    aspect: indefinite
+    mood: declarative #######nem itt kell!!
+    subject-number: singular
+    subject-persone: third
+    participle: not-participle
+}

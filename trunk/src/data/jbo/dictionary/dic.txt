@@ -1,0 +1,155 @@
+"a long time ago"
+{
+    meaning: "a long time ago"
+    type: adverb
+}
+"am"
+{
+    meaning: "esi"
+    type: auxiliary
+    number: singular
+    persone: first
+    tense: present
+    participle: not-participle
+    modal: false
+}
+"an"
+{
+    type: article
+}
+"any"
+{
+    meaning: "any"
+    type: pronoun
+}
+"anybody"
+{
+    meaning: "anybody"
+    type: pronoun
+}
+"anyone"
+{
+    meaning: "anybody"
+    type: pronoun
+}
+"esi"
+{
+    meaning: "esi"
+    type: auxiliary
+}
+"at(time)"
+{
+    meaning: "at(time)"
+    type: preposition
+}
+"be"
+{
+    meaning: "be"
+    type: auxiliary
+}
+"melbi"
+{
+    meaning: "melbi"
+    type: adjective
+}
+"melbi"
+{
+    meaning: "melbi"
+    type: adverb
+}
+".ivan"
+{
+    meaning: ".ivan"
+    type: noun
+    persone: third
+    noun-type: proper
+}
+"nanla"
+{
+    meaning: "nanla"
+    type: noun
+    persone: third
+    noun-type: common
+}
+"povi"
+{
+    meaning: "povi"
+    type: verb
+}
+"djedi"
+{
+    meaning: "djedi"
+    type: noun
+    persone: third
+    noun-type: common
+}
+"day after day"
+{
+    meaning: "day after day"
+    type: adverb
+}
+"do"
+{
+    meaning: "do"
+    type: auxiliary
+}
+"8"
+{
+    meaning: "8"
+    type: numeral
+}
+"yun-homino"
+{
+    meaning: "nixli"
+    type: noun
+    persone: third
+    noun-type: common
+}
+"cadzu"
+{
+    meaning: "cadzu"
+    type: verb
+}
+"fetsi"
+{
+    meaning: "fetsi"
+    type: adjective
+}
+"nakni"
+{
+    meaning: "nakni"
+    type: adjective
+}
+"tunba"
+{
+    meaning: "tunba"
+    type: noun
+    persone: third
+    noun-type: common
+}
+"mensi"
+{
+    meaning: "mensi"
+    type: noun
+    persone: third
+    noun-type: common
+}
+"bruna"
+{
+    meaning: "bruna"
+    type: noun
+    persone: third
+    noun-type: common
+}
+"nanmu"
+{
+    meaning: "nanmu"
+    type: noun
+    persone: third
+    noun-type: common
+}
+"yuna"
+{
+    meaning: "yuno"
+    type: adjective
+}

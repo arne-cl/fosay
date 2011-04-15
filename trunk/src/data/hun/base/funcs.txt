@@ -1,0 +1,2322 @@
+verb-perfect-present
+{
+    text: "meg<0"
+    aspect: perfect
+    tense: present
+}
+
+verb-continuous
+{
+    aspect: continuous
+}
+
+verb-perfect-continuous-durative
+{
+    aspect: perfect-continuous-durative
+}
+
+verb-perfect-continuous-not-durative
+{
+    tense: present
+    aspect: perfect-continuous-not-durative
+}
+
+
+past-verbs :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "2>tam"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: first
+    object-persone: third
+    participle: not-participle
+}
+past-verbs :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "2>tam"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: first
+    object-persone: second
+    object-form: formal
+    participle: not-participle
+}
+past-verbs :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "2>talak"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: first
+    object-form: informal
+    object-persone: second
+    participle: not-participle
+}
+past-verbs :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "2>tuk"
+    tense: past
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: first
+    object-form: informal
+    object-persone: second
+    participle: not-participle
+}
+past-verbs :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "2>tunk"
+    tense: past
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: first
+    object-persone: second
+    object-form: informal
+    #object-difinity: undifinite
+    participle: not-participle
+#}
+#{text: "2>tunk"
+#tense: past
+#aspect: indefinite
+#subject-number: plural
+#subject-persone: first
+#object-difinity: undifinite
+#participle: not-participle
+}
+past-verbs :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "2>tad"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: informal
+    object-difinity: difinite
+    participle: not-participle
+}
+past-verbs :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "2>tál"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: informal
+    object-difinity: undifinite
+    participle: not-participle
+}
+past-verbs :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "2>tál"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: informal
+    object-persone: first
+    participle: not-participle
+}
+past-verbs :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "2>ta"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: formal
+    object-difinity: difinite
+    participle: not-participle
+}
+past-verbs :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "2>ta"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: third
+    object-difinity: difinite
+    participle: not-participle
+}
+past-verbs :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "2>ott"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: formal
+    object-difinity: undifinite
+    participle: not-participle
+}
+past-verbs :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "2>ott"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: formal
+    object-persone: first
+    participle: not-participle
+}
+past-verbs :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "2>ott"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: third
+    object-difinity: undifinite
+    participle: not-participle
+}
+past-verbs :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "2>ott"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: third
+    object-persone: first
+    participle: not-participle
+}
+past-verbs :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "2>tátok"
+    tense: past
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: second
+    subject-form: informal
+    object-difinity: difinite
+    participle: not-participle
+}
+past-verbs :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "2>tatok"
+    tense: past
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: second
+    subject-form: informal
+    object-difinity: undifinite
+    participle: not-participle
+}
+past-verbs :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "2>ták"
+    tense: past
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: second
+    subject-form: formal
+    object-difinity: difinite
+    participle: not-participle
+}
+past-verbs :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "2>tak"
+    tense: past
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: second
+    subject-form: formal
+    object-difinity: undifinite
+    participle: not-participle
+}
+past-verbs :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "2>ták"
+    tense: past
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: third
+    object-difinity: difinite
+    participle: not-participle
+}
+past-verbs :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "2>tak"
+    tense: past
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: third
+    object-difinity: undifinite
+    participle: not-participle
+}
+
+#past-verbs-2
+past-verbs-2 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>tam"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: first
+    object-persone: third
+    participle: not-participle
+}
+past-verbs-2 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>tam"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: first
+    object-persone: second
+    object-form: formal
+    participle: not-participle
+}
+past-verbs-2 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>talak"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: first
+    object-form: informal
+    object-persone: second
+    participle: not-participle
+}
+past-verbs-2 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>tuk"
+    tense: past
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: first
+    object-form: informal
+    object-persone: second
+    participle: not-participle
+}
+past-verbs-2 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>tunk"
+    tense: past
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: first
+    object-persone: second
+    object-form: informal
+    #object-difinity: undifinite
+    participle: not-participle
+#}
+#{text: "3>tunk"
+#tense: past
+#aspect: indefinite
+#subject-number: plural
+#subject-persone: first
+#object-difinity: undifinite
+#participle: not-participle
+}
+past-verbs-2 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>tad"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: informal
+    object-difinity: difinite
+    participle: not-participle
+}
+past-verbs-2 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>tál"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: informal
+    object-difinity: undifinite
+    participle: not-participle
+}
+past-verbs-2 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>tál"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: informal
+    object-persone: first
+    participle: not-participle
+}
+past-verbs-2 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>ta"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: formal
+    object-difinity: difinite
+    participle: not-participle
+}
+past-verbs-2 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>ta"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: third
+    object-difinity: difinite
+    participle: not-participle
+}
+past-verbs-2 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>ott"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: formal
+    object-difinity: undifinite
+    participle: not-participle
+}
+past-verbs-2 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>ott"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: formal
+    object-persone: first
+    participle: not-participle
+}
+past-verbs-2 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>ott"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: third
+    object-difinity: undifinite
+    participle: not-participle
+}
+past-verbs-2 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>ott"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: third
+    object-persone: first
+    participle: not-participle
+}
+past-verbs-2 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>tátok"
+    tense: past
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: second
+    subject-form: informal
+    object-difinity: difinite
+    participle: not-participle
+}
+past-verbs-2 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>tatok"
+    tense: past
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: second
+    subject-form: informal
+    object-difinity: undifinite
+    participle: not-participle
+}
+past-verbs-2 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>ták"
+    tense: past
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: second
+    subject-form: formal
+    object-difinity: difinite
+    participle: not-participle
+}
+past-verbs-2 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>tak"
+    tense: past
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: second
+    subject-form: formal
+    object-difinity: undifinite
+    participle: not-participle
+}
+past-verbs-2 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>ták"
+    tense: past
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: third
+    object-difinity: difinite
+    participle: not-participle
+}
+past-verbs-2 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>tak"
+    tense: past
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: third
+    object-difinity: undifinite
+    participle: not-participle
+}
+
+#present================================================
+present-verbs :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "2>ok"
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: first
+    object-persone: third
+    object-difinity: undifinite
+    participle: not-participle
+}
+present-verbs :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "2>om"
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: first
+    object-persone: third
+    object-difinity: difinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "2>om"
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: first
+    object-persone: second
+    object-form: formal
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "2>lak"
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: first
+    object-form: informal
+    object-persone: second
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "2>juk"
+    tense: present
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: first
+    object-form: informal
+    object-persone: second
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "2>unk"
+    tense: present
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: first
+    object-persone: second
+    object-form: informal
+    #object-difinity: undifinite
+    participle: not-participle
+    transitivity: transitive
+#}
+#{text: "2>unk"
+#tense: present
+#aspect: indefinite
+#subject-number: plural
+#subject-persone: first
+#object-difinity: undifinite
+#participle: not-participle
+}
+present-verbs :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "2>od"
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: informal
+    object-difinity: difinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "2>ol"
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: informal
+    object-difinity: undifinite
+    participle: not-participle
+}
+present-verbs :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "2>ol"
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: informal
+    object-persone: first
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "2>ja"
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: formal
+    object-difinity: difinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "2>ja"
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: third
+    object-difinity: difinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "2>"#lát
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: formal
+    object-persone: third
+    object-difinity: undifinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "2>"#lát
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: formal
+    object-persone: first
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "2>"#lát
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: third
+    object-persone: third
+    object-difinity: undifinite
+    participle: not-participle
+}
+present-verbs :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "2>"#lát
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: third
+    object-persone: first
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "2>játok"
+    tense: present
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: second
+    subject-form: informal
+    object-difinity: difinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "2>tok"
+    tense: present
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: second
+    subject-form: informal
+    object-difinity: undifinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "2>ják"
+    tense: present
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: second
+    subject-form: formal
+    object-difinity: difinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "2>nak"
+    tense: present
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: second
+    subject-form: formal
+    object-difinity: undifinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "2>ják"
+    tense: present
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: third
+    object-difinity: difinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "2>nak"
+    tense: present
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: third
+    object-difinity: undifinite
+    participle: not-participle
+}
+
+#present-verbs-2================================================
+present-verbs-2 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>ok"
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: first
+    object-persone: third
+    object-difinity: undifinite
+    participle: not-participle
+}
+present-verbs-2 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>om"
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: first
+    object-persone: third
+    object-difinity: difinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-2 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>om"
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: first
+    object-persone: second
+    object-form: formal
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-2 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>lak"
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: first
+    object-form: informal
+    object-persone: second
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-2 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>juk"
+    tense: present
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: first
+    object-form: informal
+    object-persone: second
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-2 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>unk"
+    tense: present
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: first
+    object-persone: second
+    object-form: informal
+    #object-difinity: undifinite
+    participle: not-participle
+    transitivity: transitive
+#}
+#{text: "3>unk"
+#tense: present
+#aspect: indefinite
+#subject-number: plural
+#subject-persone: first
+#object-difinity: undifinite
+#participle: not-participle
+}
+present-verbs-2 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>od"
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: informal
+    object-difinity: difinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-2 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>ol"
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: informal
+    object-difinity: undifinite
+    participle: not-participle
+}
+present-verbs-2 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>ol"
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: informal
+    object-persone: first
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-2 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>ja"
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: formal
+    object-difinity: difinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-2 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>ja"
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: third
+    object-difinity: difinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-2 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>"#lát
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: formal
+    object-persone: third
+    object-difinity: undifinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-2 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>"#lát
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: formal
+    object-persone: first
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-2 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>"#lát
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: third
+    object-persone: third
+    object-difinity: undifinite
+    participle: not-participle
+}
+present-verbs-2 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>"#lát
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: third
+    object-persone: first
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-2 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>játok"
+    tense: present
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: second
+    subject-form: informal
+    object-difinity: difinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-2 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>tok"
+    tense: present
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: second
+    subject-form: informal
+    object-difinity: undifinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-2 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>ják"
+    tense: present
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: second
+    subject-form: formal
+    object-difinity: difinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-2 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>nak"
+    tense: present
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: second
+    subject-form: formal
+    object-difinity: undifinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-2 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>ják"
+    tense: present
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: third
+    object-difinity: difinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-2 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>nak"
+    tense: present
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: third
+    object-difinity: undifinite
+    participle: not-participle
+}
+
+verb-perfect-future
+{
+    text: "meg<0"
+    aspect: perfect
+    tense: future
+}
+
+
+
+cases-1
+{
+    text: "0>at"
+    case: accusative
+}
+cases-1
+{
+    text: "0>ban"
+    case: inessive
+}
+cases-1
+{
+    text: "0>ból"
+    case: elative
+}
+cases-1
+{
+    text: "0>tól"
+    case: ablative
+}
+cases-1
+{
+    text: "0>nak"
+    case: dative
+}
+cases-1
+{
+    text: "0>ként"
+    case: essive-formal
+}
+cases-1
+{
+    text: "0>ul"
+    case: essive-modal
+}
+cases-1
+{
+    text: "0>:al"
+    case: instrumental
+}
+cases-1
+{
+    text: "0>é"
+    case: possessive
+}
+cases-1
+{
+    text: "0>nál"
+    case: adessive
+}
+cases-1
+{
+    text: "0>hoz"
+    case: allative
+}
+cases-1
+{
+    text: "0>:al"
+    case: comitative
+}
+cases-1
+{
+    text: "0>ról"
+    case: delative
+}
+cases-1
+{
+    text: "0>ba"
+    case: illative
+}
+cases-1
+{
+    text: "0>ra"
+    case: sublative
+}
+cases-1
+{
+    text: "0>on"
+    case: superessive
+}
+cases-1
+{
+    text: "0>ig"
+    case: terminative
+}
+cases-1
+{
+    text: "0>:á"
+    case: translative
+}
+cases-1
+{
+    text: "0>ért"
+    case: final
+}
+
+cases-2
+{
+    text: "0>t"
+    case: accusative
+}
+cases-2
+{
+    text: "0>ban"
+    case: inessive
+}
+cases-2
+{
+    text: "0>ból"
+    case: elative
+}
+cases-2
+{
+    text: "0>tól"
+    case: ablative
+}
+cases-2
+{
+    text: "0>nak"
+    case: dative
+}
+cases-2
+{
+    text: "0>ként"
+    case: essive-formal
+}
+cases-2
+{
+    text: "0>ul"
+    case: essive-modal
+}
+cases-2
+{
+    text: "0>val"
+    case: instrumental
+}
+cases-2
+{
+    text: "0>é"
+    case: possessive
+}
+cases-2
+{
+    text: "0>nál"
+    case: adessive
+}
+cases-2
+{
+    text: "0>hoz"
+    case: allative
+}
+cases-2
+{
+    text: "0>val"
+    case: comitative
+}
+cases-2
+{
+    text: "0>ról"
+    case: delative
+}
+cases-2
+{
+    text: "0>ba"
+    case: illative
+}
+cases-2
+{
+    text: "0>ra"
+    case: sublative
+}
+cases-2
+{
+    text: "0>n"
+    case: superessive
+}
+cases-2
+{
+    text: "0>ig"
+    case: terminative
+}
+cases-2
+{
+    text: "0>vá"
+    case: translative
+}
+cases-2
+{
+    text: "0>ért"
+    case: final
+}
+
+cases-3
+{
+    text: "0>t"
+    case: accusative
+}
+cases-3
+{
+    text: "0>ban"
+    case: inessive
+}
+cases-3
+{
+    text: "0>ból"
+    case: elative
+}
+cases-3
+{
+    text: "0>tól"
+    case: ablative
+}
+cases-3
+{
+    text: "0>nak"
+    case: dative
+}
+cases-3
+{
+    text: "0>ként"
+    case: essive-formal
+}
+cases-3
+{
+    text: "0>ul"
+    case: essive-modal
+}
+cases-3
+{
+    text: "0>:al"
+    case: instrumental
+}
+cases-3
+{
+    text: "0>é"
+    case: possessive
+}
+cases-3
+{
+    text: "0>nál"
+    case: adessive
+}
+cases-3
+{
+    text: "0>hoz"
+    case: allative
+}
+cases-3
+{
+    text: "0>:al"
+    case: comitative
+}
+cases-3
+{
+    text: "0>ról"
+    case: delative
+}
+cases-3
+{
+    text: "0>ba"
+    case: illative
+}
+cases-3
+{
+    text: "0>ra"
+    case: sublative
+}
+cases-3
+{
+    text: "0>on"
+    case: superessive
+}
+cases-3
+{
+    text: "0>ig"
+    case: terminative
+}
+cases-3
+{
+    text: "0>:á"
+    case: translative
+}
+cases-3
+{
+    text: "0>ért"
+    case: final
+}
+
+cases-4
+{
+    text: "0>t"
+    case: accusative
+}
+cases-4
+{
+    text: "0>ben"
+    case: inessive
+}
+cases-4
+{
+    text: "0>ből"
+    case: elative
+}
+cases-4
+{
+    text: "0>től"
+    case: ablative
+}
+cases-4
+{
+    text: "0>nek"
+    case: dative
+}
+cases-4
+{
+    text: "0>ként"
+    case: essive-formal
+}
+cases-4
+{
+    text: "0>ül"
+    case: essive-modal
+}
+cases-4
+{
+    text: "0>vel"
+    case: instrumental
+}
+cases-4
+{
+    text: "0>é"
+    case: possessive
+}
+cases-4
+{
+    text: "0>nél"
+    case: adessive
+}
+cases-4
+{
+    text: "0>höz"
+    case: allative
+}
+cases-4
+{
+    text: "0>vel"
+    case: comitative
+}
+cases-4
+{
+    text: "0>ről"
+    case: delative
+}
+cases-4
+{
+    text: "0>be"
+    case: illative
+}
+cases-4
+{
+    text: "0>re"
+    case: sublative
+}
+cases-4
+{
+    text: "0>n"
+    case: superessive
+}
+cases-4
+{
+    text: "0>ig"
+    case: terminative
+}
+cases-4
+{
+    text: "1>é"
+    case: translative
+}
+cases-4
+{
+    text: "0>ért"
+    case: final
+}
+
+cases-5
+{
+    text: "0>et"
+    case: accusative
+}
+cases-5
+{
+    text: "0>ben"
+    case: inessive
+}
+cases-5
+{
+    text: "0>ből"
+    case: elative
+}
+cases-5
+{
+    text: "0>től"
+    case: ablative
+}
+cases-5
+{
+    text: "0>nek"
+    case: dative
+}
+cases-5
+{
+    text: "0>ként"
+    case: essive-formal
+}
+cases-5
+{
+    text: "0>ül"
+    case: essive-modal
+}
+cases-5
+{
+    text: "1>kel"
+    case: instrumental
+}
+cases-5
+{
+    text: "0>é"
+    case: possessive
+}
+cases-5
+{
+    text: "0>nél"
+    case: adessive
+}
+cases-5
+{
+    text: "0>höz"
+    case: allative
+}
+cases-5
+{
+    text: "1>kel"
+    case: comitative
+}
+cases-5
+{
+    text: "0>ről"
+    case: delative
+}
+cases-5
+{
+    text: "0>be"
+    case: illative
+}
+cases-5
+{
+    text: "0>re"
+    case: sublative
+}
+cases-5
+{
+    text: "0>ön"
+    case: superessive
+}
+cases-5
+{
+    text: "0>ig"
+    case: terminative
+}
+cases-5
+{
+    text: "1>é"
+    case: translative
+}
+cases-5
+{
+    text: "0>ért"
+    case: final
+}
+
+plural-1 :: cases-1
+{
+    text: "0>ak"
+    real-number: plural
+    number: plural
+}
+
+plural-3 :: cases-1
+{
+    text: "0>ok"
+    real-number: plural
+    number: plural
+}
+
+plural-2 :: cases-1
+{
+    text: "0>k"
+    real-number: plural
+    number: plural
+}
+
+plural-4 :: cases-5
+{
+    text: "0>k"
+    real-number: plural
+    number: plural
+}
+
+all-cases-1 :: cases-1; plural-1
+{
+}
+
+all-cases-2 :: cases-2; plural-2
+{
+}
+
+all-cases-3 :: cases-3; plural-3
+{
+}
+
+all-cases-4 :: cases-4; plural-4
+{
+}
+
+possessed-1
+{
+    text: "0>a"
+    case: nominative
+    case2: possessed
+}
+possessed-1
+{
+    text: "0>át"
+    case: accusative
+    case2: possessed
+}
+possessed-1
+{
+    text: "0>ában"
+    case: inessive
+    case2: possessed
+}
+possessed-1
+{
+    text: "0>ából"
+    case: elative
+    case2: possessed
+}
+possessed-1
+{
+    text: "0>ától"
+    case: ablative
+    case2: possessed
+}
+possessed-1
+{
+    text: "0>ának"
+    case: dative
+    case2: possessed
+}
+possessed-1
+{
+    text: "0>aként"
+    case: essive-formal
+    case2: possessed
+}
+possessed-1
+{
+    text: "0>ául"
+    case: essive-modal
+    case2: possessed
+}
+possessed-1
+{
+    text: "0>ával"
+    case: instrumental
+    case2: possessed
+}
+possessed-1
+{
+    text: "0>áé"
+    case: possessive
+    case2: possessed
+}
+possessed-1
+{
+    text: "0>ánál"
+    case: adessive
+    case2: possessed
+}
+possessed-1
+{
+    text: "0>ához"
+    case: allative
+    case2: possessed
+}
+possessed-1
+{
+    text: "0>ával"
+    case: comitative
+    case2: possessed
+}
+possessed-1
+{
+    text: "0>áról"
+    case: delative
+    case2: possessed
+}
+possessed-1
+{
+    text: "0>ába"
+    case: illative
+    case2: possessed
+}
+possessed-1
+{
+    text: "0>ára"
+    case: sublative
+    case2: possessed
+}
+possessed-1
+{
+    text: "0>án"
+    case: superessive
+    case2: possessed
+}
+possessed-1
+{
+    text: "0>áig"
+    case: terminative
+    case2: possessed
+}
+possessed-1
+{
+    text: "0>ává"
+    case: translative
+    case2: possessed
+}
+possessed-1
+{
+    text: "0>áért"
+    case: final
+    case2: possessed
+}
+possessed-1
+{
+    text: "0>ai"
+    case: nominative
+    case2: possessed
+    real-number: plural
+    number: plural
+}
+possessed-1
+{
+    text: "0>ait"
+    case: accusative
+    case2: possessed
+    real-number: plural
+    number: plural
+}
+possessed-1
+{
+    text: "0>aiban"
+    case: inessive
+    case2: possessed
+    real-number: plural
+    number: plural
+}
+possessed-1
+{
+    text: "0>aiból"
+    case: elative
+    case2: possessed
+    real-number: plural
+    number: plural
+}
+possessed-1
+{
+    text: "0>aitól"
+    case: ablative
+    case2: possessed
+    real-number: plural
+    number: plural
+}
+possessed-1
+{
+    text: "0>ainak"
+    case: dative
+    case2: possessed
+    real-number: plural
+    number: plural
+}
+possessed-1
+{
+    text: "0>aiként"
+    case: essive-formal
+    case2: possessed
+    real-number: plural
+    number: plural
+}
+possessed-1
+{
+    text: "0>aiul"
+    case: essive-modal
+    case2: possessed
+    real-number: plural
+    number: plural
+}
+possessed-1
+{
+    text: "0>aival"
+    case: instrumental
+    case2: possessed
+    real-number: plural
+    number: plural
+}
+possessed-1
+{
+    text: "0>aié"
+    case: possessive
+    case2: possessed
+    real-number: plural
+    number: plural
+}
+possessed-1
+{
+    text: "0>ainál"
+    case: adessive
+    case2: possessed
+    real-number: plural
+    number: plural
+}
+possessed-1
+{
+    text: "0>aihoz"
+    case: allative
+    case2: possessed
+    real-number: plural
+    number: plural
+}
+possessed-1
+{
+    text: "0>aival"
+    case: comitative
+    case2: possessed
+    real-number: plural
+    number: plural
+}
+possessed-1
+{
+    text: "0>airól"
+    case: delative
+    case2: possessed
+    real-number: plural
+    number: plural
+}
+possessed-1
+{
+    text: "0>aiba"
+    case: illative
+    case2: possessed
+    real-number: plural
+    number: plural
+}
+possessed-1
+{
+    text: "0>aira"
+    case: sublative
+    case2: possessed
+    real-number: plural
+    number: plural
+}
+possessed-1
+{
+    text: "0>ain"
+    case: superessive
+    case2: possessed
+    real-number: plural
+    number: plural
+}
+possessed-1
+{
+    text: "0>aiig"
+    case: terminative
+    case2: possessed
+    real-number: plural
+    number: plural
+}
+possessed-1
+{
+    text: "0>aivá"
+    case: translative
+    case2: possessed
+    real-number: plural
+    number: plural
+}
+possessed-1
+{
+    text: "0>aiért"
+    case: final
+    case2: possessed
+    real-number: plural
+    number: plural
+}
+
+
+################################################################################
+################################################################################
+################################################################################
+possessive-1
+{
+    text: "0>é"
+    case: nominative
+    case2: possessive
+}
+possessive-1
+{
+    text: "0>ét"
+    case: accusative
+    case2: possessive
+}
+possessive-1
+{
+    text: "0>éban"
+    case: inessive
+    case2: possessive
+}
+possessive-1
+{
+    text: "0>éból"
+    case: elative
+    case2: possessive
+}
+possessive-1
+{
+    text: "0>étól"
+    case: ablative
+    case2: possessive
+}
+possessive-1
+{
+    text: "0>énak"
+    case: dative
+    case2: possessive
+}
+possessive-1
+{
+    text: "0>éként"
+    case: essive-formal
+    case2: possessive
+}
+possessive-1
+{
+    text: "0>ául"
+    case: essive-modal
+    case2: possessive
+}
+possessive-1
+{
+    text: "0>ával"
+    case: instrumental
+    case2: possessive
+}
+possessive-1
+{
+    text: "0>áé"
+    case: possessive
+    case2: possessive
+}
+possessive-1
+{
+    text: "0>ánál"
+    case: adessive
+    case2: possessive
+}
+possessive-1
+{
+    text: "0>ához"
+    case: allative
+    case2: possessive
+}
+possessive-1
+{
+    text: "0>ával"
+    case: comitative
+    case2: possessive
+}
+possessive-1
+{
+    text: "0>áról"
+    case: delative
+    case2: possessive
+}
+possessive-1
+{
+    text: "0>ába"
+    case: illative
+    case2: possessive
+}
+possessive-1
+{
+    text: "0>ára"
+    case: sublative
+    case2: possessive
+}
+possessive-1
+{
+    text: "0>án"
+    case: superessive
+    case2: possessive
+}
+possessive-1
+{
+    text: "0>áig"
+    case: terminative
+    case2: possessive
+}
+possessive-1
+{
+    text: "0>ává"
+    case: translative
+    case2: possessive
+}
+possessive-1
+{
+    text: "0>áért"
+    case: final
+    case2: possessive
+}
+possessive-1
+{
+    text: "0>ai"
+    case: nominative
+    case2: possessive
+    number: plural
+}
+possessive-1
+{
+    text: "0>áit"
+    case: accusative
+    case2: possessive
+    number: plural
+}
+possessive-1
+{
+    text: "0>aiban"
+    case: inessive
+    case2: possessive
+    number: plural
+}
+possessive-1
+{
+    text: "0>aiból"
+    case: elative
+    case2: possessive
+    number: plural
+}
+possessive-1
+{
+    text: "0>aitól"
+    case: ablative
+    case2: possessive
+    number: plural
+}
+possessive-1
+{
+    text: "0>ainak"
+    case: dative
+    case2: possessive
+    number: plural
+}
+possessive-1
+{
+    text: "0>aiként"
+    case: essive-formal
+    case2: possessive
+    number: plural
+}
+possessive-1
+{
+    text: "0>aiul"
+    case: essive-modal
+    case2: possessive
+    number: plural
+}
+possessive-1
+{
+    text: "0>aival"
+    case: instrumental
+    case2: possessive
+    number: plural
+}
+possessive-1
+{
+    text: "0>aié"
+    case: possessive
+    case2: possessive
+    number: plural
+}
+possessive-1
+{
+    text: "0>ainál"
+    case: adessive
+    case2: possessive
+    number: plural
+}
+possessive-1
+{
+    text: "0>aihoz"
+    case: allative
+    case2: possessive
+    number: plural
+}
+possessive-1
+{
+    text: "0>aival"
+    case: comitative
+    case2: possessive
+    number: plural
+}
+possessive-1
+{
+    text: "0>airól"
+    case: delative
+    case2: possessive
+    number: plural
+}
+possessive-1
+{
+    text: "0>aiba"
+    case: illative
+    case2: possessive
+    number: plural
+}
+possessive-1
+{
+    text: "0>aira"
+    case: sublative
+    case2: possessive
+    number: plural
+}
+possessive-1
+{
+    text: "0>ain"
+    case: superessive
+    case2: possessive
+    number: plural
+}
+possessive-1
+{
+    text: "0>aiig"
+    case: terminative
+    case2: possessive
+    number: plural
+}
+possessive-1
+{
+    text: "0>aivá"
+    case: translative
+    case2: possessive
+    number: plural
+}
+possessive-1
+{
+    text: "0>aiért"
+    case: final
+    case2: possessive
+    number: plural
+}
+################################################################################
+################################################################################
+################################################################################
+
+
+
+
+
+
+possessed-2
+{
+    text: "0>ja"
+    case: possessed
+}
+possessed-2
+{
+    text: "0>ji"
+    case: possessed
+    number: plural
+}
+
+
+
+possessed-3
+{
+    text: "0>a"
+    case: possessed
+}
+possessed-3
+{
+    text: "0>ai"
+    case: possessed
+    number: plural
+}
+
+possessed-4
+{
+    text: "0>je"
+    case: possessed
+}
+possessed-4
+{
+    text: "0>jei"
+    case: possessed
+    number: plural
+}
+
+cases-6
+{
+    text: "0>t"
+    case: accusative
+}
+cases-6
+{
+    text: "0>on"
+    case: inessive
+}
+cases-6
+{
+    text: "0>ból"
+    case: elative
+}
+cases-6
+{
+    text: "0>tól"
+    case: ablative
+}
+cases-6
+{
+    text: "0>nak"
+    case: dative
+}
+cases-6
+{
+    text: "0>ként"
+    case: essive-formal
+}
+cases-6
+{
+    text: "0>ul"
+    case: essive-modal
+}
+cases-6
+{
+    text: "0>:al"
+    case: instrumental
+}
+cases-6
+{
+    text: "0>á"
+    case: possessive
+}
+cases-6
+{
+    text: "0>nál"
+    case: adessive
+}
+cases-6
+{
+    text: "0>hoz"
+    case: allative
+}
+cases-6
+{
+    text: "0>:al"
+    case: comitative
+}
+cases-6
+{
+    text: "0>ról"
+    case: delative
+}
+cases-6
+{
+    text: "0>ba"
+    case: illative
+}
+cases-6
+{
+    text: "0>ra"
+    case: sublative
+}
+cases-6
+{
+    text: "0>on"
+    case: superessive
+}
+cases-6
+{
+    text: "0>ig"
+    case: terminative
+}
+cases-6
+{
+    text: "0>:á"
+    case: translative
+}
+cases-6
+{
+    text: "0>ért"
+    case: final
+}
+
+cases-7
+{
+    text: "1>át"
+    case: accusative
+}
+cases-7
+{
+    text: "1>ában"
+    case: inessive
+}
+cases-7
+{
+    text: "1>ából"
+    case: elative
+}
+cases-7
+{
+    text: "1>ától"
+    case: ablative
+}
+cases-7
+{
+    text: "1>ának"
+    case: dative
+}
+cases-7
+{
+    text: "1>aként"
+    case: essive-formal
+}
+cases-7
+{
+    text: "1>ául"
+    case: essive-modal
+}
+cases-7
+{
+    text: "1>ával"
+    case: instrumental
+}
+cases-7
+{
+    text: "1>áé"
+    case: possessive
+}
+cases-7
+{
+    text: "1>ánál"
+    case: adessive
+}
+cases-7
+{
+    text: "1>ához"
+    case: allative
+}
+cases-7
+{
+    text: "1>ával"
+    case: comitative
+}
+cases-7
+{
+    text: "1>áról"
+    case: delative
+}
+cases-7
+{
+    text: "1>ába"
+    case: illative
+}
+cases-7
+{
+    text: "1>ára"
+    case: sublative
+}
+cases-7
+{
+    text: "1>án"
+    case: superessive
+}
+cases-7
+{
+    text: "1>áig"
+    case: terminative
+}
+cases-7
+{
+    text: "1>ává"
+    case: translative
+}
+cases-7
+{
+    text: "1>áért"
+    case: final
+}
+
+
+
+
+
+
+
+
+
+
+all-verbs :: \
+    past-verbs; \
+    present-verbs
+{
+}
+
+all-verbs-2 :: \
+    past-verbs-2; \
+    present-verbs-2
+{
+}

@@ -1,0 +1,89 @@
+"джон"
+{
+    transcription: "dʒon"
+    lemma: "ioxanan."
+    type: noun
+    tags: english
+    number: singular
+    gender: masculine
+    persone: third
+    case: nominative
+    noun-type: proper
+    personal-name: first-name
+}
+"іван" :: masculine-patronymic-1; feminine-patronymic-1
+{
+    transcription: "ivan"
+    lemma: "ioxanan."
+    type: noun
+    tags: ukrainian
+    number: singular
+    gender: masculine
+    persone: third
+    case: nominative
+    noun-type: proper
+    personal-name: first-name
+}
+"шевченко"
+{
+    transcription: "ʃɛvtʃɛnko"
+    lemma: "cevtcenkos."
+    type: noun
+    tags: ukrainian
+    number: singular
+    persone: third
+    case: nominative
+    noun-type: proper
+    personal-name: last-name
+}
+"юлія"
+{
+    transcription: "julʲija"
+    lemma: "iuli,as."
+    type: noun
+    form: formal
+    number: singular
+    gender: feminine
+    persone: third
+    case: nominative
+    noun-type: proper
+    personal-name: first-name
+}
+"юлії"
+{
+    transcription: "julʲiji"
+    lemma: "iuli,as."
+    type: noun
+    form: formal
+    number: singular
+    gender: feminine
+    persone: third
+    case: possessive
+    noun-type: proper
+    personal-name: first-name
+}
+"юлі"
+{
+    transcription: "julʲi"
+    lemma: "iuli,as."
+    type: noun
+    form: informal
+    number: singular
+    gender: feminine
+    persone: third
+    case: possessive
+    noun-type: proper
+    personal-name: first-name
+}
+"ужгороді"
+{
+    transcription: "uʒhorod"
+    lemma: ".ujhorod."
+    type: noun
+    tags: ukrainian
+    number: singular
+    gender: masculine
+    persone: third
+    case: inessive
+    noun-type: proper
+}

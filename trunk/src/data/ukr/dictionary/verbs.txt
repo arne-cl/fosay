@@ -1,0 +1,147 @@
+#ukrainian dictionary v0.0.1
+"бачити" :: verbs-2
+{
+    transcription: "batʃete"
+    lemma: "viska"
+    stem: "viska.бачити"
+    type: verb
+    tense: infinitive
+    aspect: indefinite
+    participle: not-participle
+}
+"говорити" :: verb-forms-3
+{
+    transcription: "hovorete"
+    lemma: "cusku"
+    lemma: "cusku.говорити"
+    type: verb
+    tense: infinitive
+    participle: not-participle
+}
+"знати" :: verb-forms-1
+{
+    transcription: "znate"
+    lemma: "dzuno"
+    stem: "dzuno.знати"
+    type: verb
+    tense: infinitive
+    participle: not-participle
+}
+"іти"
+{
+    transcription: "ite"
+    lemma: "cadzu"
+    stem: "cadzu.іти"
+    type: verb
+    tense: infinitive
+    participle: not-participle
+}
+"іде"[idɛ]; "йде"[jdɛ]
+{
+    lemma: "cadzu"
+    stem: "cadzu.іти"
+    type: verb
+    tense: present
+    participle: not-participle
+    number: singular
+}
+"ішов"
+{
+    transcription: "iʃov"
+    lemma: "cadzu"
+    stem: "cadzu.іти"
+    type: verb
+    tense: past
+    participle: not-participle
+    gender: masculine
+    number: singular
+}
+"ішли"
+{
+    transcription: "iʃle"
+    lemma: "cadzu"
+    stem: "cadzu.іти"
+    type: verb
+    tense: past
+    participle: not-participle
+    number: plural
+}
+"ідуть"[idutʲ]; "йдуть"[jdutʲ]
+{
+    lemma: "cadzu"
+    stem: "cadzu.іти"
+    type: verb
+    tense: present
+    participle: not-participle
+    number: plural
+}
+"ітимуть"
+{
+    transcription: "itemutʲ"
+    lemma: "cadzu"
+    stem: "cadzu.іти"
+    type: verb
+    tense: future
+    participle: not-participle
+    number: plural
+}
+"йтимуть"
+{
+    transcription: "jtemutʲ"
+    lemma: "cadzu"
+    stem: "cadzu.іти"
+    type: verb
+    tense: future
+    participle: not-participle
+    number: plural
+}
+"йти"
+{
+    transcription: "jte"
+    lemma: "cadzu"
+    stem: "cadzu.іти"
+    type: verb
+    tense: infinitive
+    participle: not-participle
+}
+"йшов"
+{
+    transcription: "jʃov"
+    lemma: "cadzu"
+    stem: "cadzu.іти"
+    type: verb
+    tense: past
+    participle: not-participle
+    gender: masculine
+    number: singular
+}
+"йшла"
+{
+    transcription: "jʃla"
+    lemma: "cadzu"
+    stem: "cadzu.іти"
+    type: verb
+    tense: past
+    participle: not-participle
+    gender: feminine
+    number: singular
+}
+"йшли"
+{
+    transcription: "jʃle"
+    lemma: "cadzu"
+    stem: "cadzu.іти"
+    type: verb
+    tense: past
+    participle: not-participle
+    number: plural
+}
+"плавати" :: verb-forms-1
+{
+    transcription: "plavate"
+    lemma: "limna"
+    stem: "limna.плавати"
+    type: verb
+    tense: infinitive
+    participle: not-participle
+}

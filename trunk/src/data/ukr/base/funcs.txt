@@ -1,0 +1,1572 @@
+feminine-patronymic-1
+{
+    text: "0>івна"
+    gender: feminine
+    personal-name: patronymic
+}
+
+feminine-patronymic-2
+{
+    text: "1>ївна"
+    gender: feminine
+    personal-name: patronymic
+}
+
+masculine-patronymic-1
+{
+    text: "0>ович"
+    gender: masculine
+    personal-name: patronymic
+}
+
+
+verb-perfect-future
+{
+    text: "по<0"
+    aspect: perfect
+    tense: future
+}
+
+verb-perfect-present
+{
+    text: "по<0"
+    aspect: perfect
+    tense: present
+}
+
+verb-continuous
+{
+    aspect: continuous
+}
+
+verb-perfect-continuous-durative
+{
+    aspect: perfect-continuous-durative
+}
+
+verb-perfect-continuous-not-durative
+{
+    tense: present
+    aspect: perfect-continuous-not-durative
+}
+
+present-verb-forms1
+{
+    text: "2>ю"
+    tense: present
+    persone: first
+    number: singular
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+present-verb-forms1
+{
+    text: "2>ємо"
+    tense: present
+    persone: first
+    number: plural
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+present-verb-forms1
+{
+    text: "2>єш"
+    tense: present
+    persone: second
+    number: singular
+    form: informal
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+present-verb-forms1
+{
+    text: "2>єте"
+    tense: present
+    persone: second
+    number: singular
+    form: formal
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+present-verb-forms1
+{
+    text: "2>єте"
+    tense: present
+    persone: second
+    number: plural
+    form: informal
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+present-verb-forms1
+{
+    text: "2>є"
+    tense: present
+    persone: third
+    number: singular
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+present-verb-forms1
+{
+    text: "2>ють"
+    tense: present
+    persone: third
+    number: plural
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+
+
+past-verb-forms1
+{
+    text: "2>в"
+    gender: masculine
+    tense: past
+    #persone: neutral
+    number: singular
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+past-verb-forms1
+{
+    text: "2>ла"
+    gender: feminine
+    tense: past
+    #persone: neutral
+    number: singular
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+past-verb-forms1
+{
+    text: "2>ло"
+    gender: lifeless
+    tense: past
+    #persone: neutral
+    number: singular
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+past-verb-forms1
+{
+    text: "2>ли"
+    tense: past
+    #persone: neutral
+    number: plural
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+
+future-verb-forms1
+{
+    text: "2>тиму"
+    tense: future
+    persone: first
+    number: singular
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+future-verb-forms1
+{
+    text: "2>тимемо"
+    tense: future
+    persone: first
+    number: plural
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+future-verb-forms1
+{
+    text: "2>тимеш"
+    tense: future
+    persone: second
+    number: singular
+    form: informal
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+future-verb-forms1
+{
+    text: "2>тимете"
+    tense: future
+    persone: second
+    number: singular
+    form: formal
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+future-verb-forms1
+{
+    text: "2>тимете"
+    tense: future
+    persone: second
+    number: plural
+    form: informal
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+future-verb-forms1
+{
+    text: "2>тиме"
+    tense: future
+    persone: third
+    number: singular
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+future-verb-forms1
+{
+    text: "2>тимуть"
+    tense: future
+    persone: third
+    number: plural
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+
+conditional-verb-forms1
+{
+    text: "2>в би"
+    gender: masculine
+    tense: past
+    #persone: neutral
+    number: singular
+    aspect: indefinite
+    participle: not-participle
+    mood: conditional
+}
+conditional-verb-forms1
+{
+    text: "2>ла б"
+    gender: feminine
+    tense: past
+    #persone: neutral
+    number: singular
+    aspect: indefinite
+    participle: not-participle
+    mood: conditional
+}
+conditional-verb-forms1
+{
+    text: "2>ло б"
+    gender: lifeless
+    tense: past
+    #persone: neutral
+    number: singular
+    mood: conditional
+    aspect: indefinite
+    participle: not-participle
+}
+conditional-verb-forms1
+{
+    text: "2>ли б"
+    tense: past
+    #persone: neutral
+    number: plural
+    mood: conditional
+    aspect: indefinite
+    participle: not-participle
+}
+
+
+present-verb-forms2 :: verb-perfect-future; verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>у"
+    tense: present
+    persone: first
+    number: singular
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+present-verb-forms2 :: verb-perfect-future; verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>имо"
+    tense: present
+    persone: first
+    number: plural
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+present-verb-forms2 :: verb-perfect-future; verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>иш"
+    tense: present
+    persone: second
+    number: singular
+    form: informal
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+present-verb-forms2 :: verb-perfect-future; verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>ите"
+    tense: present
+    persone: second
+    number: singular
+    form: formal
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+present-verb-forms2 :: verb-perfect-future; verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>ите"
+    tense: present
+    persone: second
+    number: plural
+    form: informal
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+present-verb-forms2 :: verb-perfect-future; verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>ить"
+    tense: present
+    persone: third
+    number: singular
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+present-verb-forms2 :: verb-perfect-future; verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>ать"
+    tense: present
+    persone: third
+    number: plural
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+
+past-verb-forms2 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>ив"
+    gender: masculine
+    tense: past
+    #persone: neutral
+    number: singular
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+past-verb-forms2 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>ила"
+    gender: feminine
+    tense: past
+    #persone: neutral
+    number: singular
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+past-verb-forms2 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>ило"
+    gender: lifeless
+    tense: past
+    #persone: neutral
+    number: singular
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+past-verb-forms2 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>или"
+    tense: past
+    #persone: neutral
+    number: plural
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+
+future-verb-forms2
+{
+    text: "3>итиму"
+    tense: future
+    persone: first
+    number: singular
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+future-verb-forms2
+{
+    text: "3>итимемо"
+    tense: future
+    persone: first
+    number: plural
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+future-verb-forms2
+{
+    text: "3>итимеш"
+    tense: future
+    persone: second
+    number: singular
+    form: informal
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+future-verb-forms2
+{
+    text: "3>итимете"
+    tense: future
+    persone: second
+    number: singular
+    form: formal
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+future-verb-forms2
+{
+    text: "3>итимете"
+    tense: future
+    persone: second
+    number: plural
+    form: informal
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+future-verb-forms2
+{
+    text: "3>итиме"
+    tense: future
+    persone: third
+    number: singular
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+future-verb-forms2
+{
+    text: "3>итимуть"
+    tense: future
+    persone: third
+    number: plural
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+
+conditional-verb-forms2
+{
+    text: "3>ив би"
+    gender: masculine
+    tense: past
+    #persone: neutral
+    number: singular
+    aspect: indefinite
+    participle: not-participle
+    mood: conditional
+}
+conditional-verb-forms2
+{
+    text: "3>ила б"
+    gender: feminine
+    tense: past
+    #persone: neutral
+    number: singular
+    aspect: indefinite
+    participle: not-participle
+    mood: conditional
+}
+conditional-verb-forms2
+{
+    text: "3>ило б"
+    gender: lifeless
+    tense: past
+    #persone: neutral
+    number: singular
+    mood: conditional
+    aspect: indefinite
+    participle: not-participle
+}
+conditional-verb-forms2
+{
+    text: "3>или б"
+    tense: past
+    #persone: neutral
+    number: plural
+    mood: conditional
+    aspect: indefinite
+    participle: not-participle
+}
+
+
+present-verb-forms3
+{
+    text: "3>ю"
+    tense: present
+    persone: first
+    number: singular
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+present-verb-forms3
+{
+    text: "3>имо"
+    tense: present
+    persone: first
+    number: plural
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+present-verb-forms3
+{
+    text: "3>иш"
+    tense: present
+    persone: second
+    number: singular
+    form: informal
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+present-verb-forms3
+{
+    text: "3>ите"
+    tense: present
+    persone: second
+    number: singular
+    form: formal
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+present-verb-forms3
+{
+    text: "3>ите"
+    tense: present
+    persone: second
+    number: plural
+    form: informal
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+present-verb-forms3
+{
+    text: "3>ить"
+    tense: present
+    persone: third
+    number: singular
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+present-verb-forms3
+{
+    text: "3>ять"
+    tense: present
+    persone: third
+    number: plural
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+
+past-verb-forms3
+{
+    text: "3>ив"
+    gender: masculine
+    tense: past
+    #persone: neutral
+    number: singular
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+past-verb-forms3
+{
+    text: "3>ила"
+    gender: feminine
+    tense: past
+    #persone: neutral
+    number: singular
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+past-verb-forms3
+{
+    text: "3>ило"
+    gender: lifeless
+    tense: past
+    #persone: neutral
+    number: singular
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+past-verb-forms3
+{
+    text: "3>или"
+    tense: past
+    #persone: neutral
+    number: plural
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+
+future-verb-forms3
+{
+    text: "3>итиму"
+    tense: future
+    persone: first
+    number: singular
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+future-verb-forms3
+{
+    text: "3>итимемо"
+    tense: future
+    persone: first
+    number: plural
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+future-verb-forms3
+{
+    text: "3>итимеш"
+    tense: future
+    persone: second
+    number: singular
+    form: informal
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+future-verb-forms3
+{
+    text: "3>итимете"
+    tense: future
+    persone: second
+    number: singular
+    form: formal
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+future-verb-forms3
+{
+    text: "3>итимете"
+    tense: future
+    persone: second
+    number: plural
+    form: informal
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+future-verb-forms3
+{
+    text: "3>итиме"
+    tense: future
+    persone: third
+    number: singular
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+future-verb-forms3
+{
+    text: "3>итимуть"
+    tense: future
+    persone: third
+    number: plural
+    aspect: indefinite
+    participle: not-participle
+    mood: declarative
+}
+
+conditional-verb-forms3
+{
+    text: "3>ив би"
+    gender: masculine
+    tense: past
+    #persone: neutral
+    number: singular
+    aspect: indefinite
+    participle: not-participle
+    mood: conditional
+}
+conditional-verb-forms3
+{
+    text: "3>ила б"
+    gender: feminine
+    tense: past
+    #persone: neutral
+    number: singular
+    aspect: indefinite
+    participle: not-participle
+    mood: conditional
+}
+conditional-verb-forms3
+{
+    text: "3>ило б"
+    gender: lifeless
+    tense: past
+    #persone: neutral
+    number: singular
+    mood: conditional
+    aspect: indefinite
+    participle: not-participle
+}
+conditional-verb-forms3
+{
+    text: "3>или б"
+    tense: past
+    #persone: neutral
+    number: plural
+    mood: conditional
+    aspect: indefinite
+    participle: not-participle
+}
+
+
+
+accusative
+{
+    case: accusative
+}
+
+
+cases-1
+{
+    text: "1>я"
+    case: possessive
+}
+cases-1
+{
+    text: "1>ю"
+    case: dative
+}
+cases-1
+{
+    text: "1>еві"
+    case: dative
+}
+cases-1
+{
+    text: "1>я"
+    case: accusative
+}
+cases-1
+{
+    text: "1>ем"
+    case: instrumental
+}
+cases-1
+{
+    text: "1>еві"
+    case: locative
+}
+cases-1
+{
+    text: "1>і"
+    case: locative
+}
+cases-1
+{
+    text: "1>ю"
+    case: vocative
+}
+
+
+cases-2
+{
+    text: "1>и"
+    case: possessive
+}
+cases-2
+{
+    text: "1>і"
+    case: dative
+}
+cases-2
+{
+    text: "1>у"
+    case: accusative
+}
+cases-2
+{
+    text: "1>ою"
+    case: instrumental
+}
+cases-2
+{
+    text: "1>і"
+    case: locative
+}
+cases-2
+{
+    text: "1>о"
+    case: vocative
+}
+
+
+cases-3
+{
+    text: "1>и"
+    case: possessive
+}
+cases-3
+{
+    text: "2>ці"
+    case: dative
+}
+cases-3
+{
+    text: "1>у"
+    case: accusative
+}
+cases-3
+{
+    text: "1>ою"
+    case: instrumental
+}
+cases-3
+{
+    text: "2>ці"
+    case: locative
+}
+cases-3
+{
+    text: "1>о"
+    case: vocative
+}
+
+cases-4
+{
+    text: "1>і"
+    case: possessive
+}
+cases-4
+{
+    text: "1>і"
+    case: dative
+}
+cases-4
+{
+    text: "1>ю"
+    case: accusative
+}
+cases-4
+{
+    text: "1>ею"
+    case: instrumental
+}
+cases-4
+{
+    text: "1>і"
+    case: locative
+}
+cases-4
+{
+    text: "1>е"
+    case: vocative
+}
+
+cases-5
+{
+    text: "0>а"
+    case: possessive
+}
+cases-5
+{
+    text: "0>у"
+    case: dative
+}
+cases-5
+{
+    text: "0>ові"
+    case: dative
+}
+cases-5
+{
+    text: "0>а"
+    case: accusative
+}
+cases-5
+{
+    text: "0>ом"
+    case: instrumental
+}
+cases-5
+{
+    text: "0>ові"
+    case: locative
+}
+cases-5
+{
+    text: "0>у"
+    case: locative
+}
+cases-5
+{
+    text: "0>у"
+    case: vocative
+}
+
+
+lifeless
+{
+    gender: lifeless
+}
+
+adj-cases-1 :: lifeless
+{
+    text: "2>ого"
+    case: possessive
+}
+adj-cases-1 :: lifeless
+{
+    text: "2>ому"
+    case: dative
+}
+adj-cases-1 :: lifeless
+{
+    text: "2>ому"
+    case: accusative
+    extra-1: 1
+}
+adj-cases-1 :: lifeless
+{
+    case: accusative
+    extra-1: 2
+}
+adj-cases-1 :: lifeless
+{
+    text: "2>им"
+    case: instrumental
+}
+adj-cases-1 :: lifeless
+{
+    text: "2>ому"
+    case: locative
+}
+adj-cases-1 :: lifeless
+    {
+    text: "2>ім"
+    case: locative
+}
+adj-cases-1
+{
+    text: "2>е"
+    case: nominative
+    gender: lifeless
+}
+
+adj-cases-2
+{
+    text: "1>ого"
+    case: possessive
+}
+adj-cases-2
+{
+    text: "1>ому"
+    case: dative
+}
+adj-cases-2
+{
+    text: "1>ому"
+    case: accusative
+    extra-1: 1
+}
+adj-cases-2
+{
+    case: accusative
+    extra-1: 2
+}
+adj-cases-2
+{
+    text: "1>им"
+    case: instrumental
+}
+adj-cases-2
+{
+    text: "1>ому"
+    case: locative
+}
+adj-cases-2
+{
+    text: "1>ім"
+    case: locative
+}
+
+adj-cases-3
+{
+    text: "1>ього"
+    case: possessive
+}
+adj-cases-3
+{
+    text: "1>ьій"
+    case: dative
+}
+adj-cases-3
+{
+    text: "1>ього"
+    case: accusative
+    extra-1: 1
+}
+adj-cases-3
+{
+    case: accusative
+    extra-1: 2
+}
+adj-cases-3
+{
+    text: "1>ім"
+    case: instrumental
+}
+adj-cases-3
+{
+    text: "1>ьому"
+    case: locative
+}
+adj-cases-3
+{
+    text: "1>ьім"
+    case: locative
+}
+
+adj-cases-4
+{
+    text: "2>ього"
+    case: possessive
+}
+adj-cases-4
+{
+    text: "2>ьій"
+    case: dative
+}
+adj-cases-4
+{
+    text: "2>ього"
+    case: accusative
+    extra-1: 1
+}
+adj-cases-4
+{
+    case: accusative
+    extra-1: 2
+}
+adj-cases-4
+{
+    text: "2>ім"
+    case: instrumental
+}
+adj-cases-4
+{
+    text: "2>ьому"
+    case: locative
+}
+adj-cases-4
+{
+    text: "2>ьім"
+    case: locative
+}
+
+adj-cases-feminine-t
+{
+    text: "2>а"
+    gender: feminine
+    case: nominative
+}
+
+adj-cases-feminine-t
+{
+    text: "2>ої"
+    gender: feminine
+    case: possessive
+}
+adj-cases-feminine-t
+{
+    text: "2>ій"
+    gender: feminine
+    case: dative
+}
+adj-cases-feminine-t
+{
+    text: "2>у"
+    gender: feminine
+    case: accusative
+    extra-1: 1
+}
+adj-cases-feminine-t
+{
+    text: "2>а"
+    gender: feminine
+    case: accusative
+    extra-1: 2
+}
+adj-cases-feminine-t
+{
+    text: "2>ою"
+    gender: feminine
+    case: instrumental
+}
+adj-cases-feminine-t
+{
+    text: "2>ій"
+    gender: feminine
+    case: locative
+}
+
+adj-cases-6
+{
+    text: "2>ої"
+    case: possessive
+}
+adj-cases-6
+{
+    text: "2>ій"
+    case: dative
+}
+adj-cases-6
+{
+    text: "2>ю"
+    case: accusative
+    extra-1: 1
+}
+adj-cases-6
+{
+    case: accusative
+    extra-1: 2
+}
+adj-cases-6
+{
+    text: "2>ою"
+    case: instrumental
+}
+adj-cases-6
+{
+    text: "2>ій"
+    case: locative
+}
+
+adj-feminine-m
+{
+    text: "2>я"
+    gender: feminine
+}
+
+adj-lifeless-t
+{
+    text: "2>е"
+    gender: lifeless
+}
+
+adj-lifeless-m
+{
+    text: "2>є"
+    gender: lifeless
+}
+
+adj-plural-cases-m1
+{
+    text: "1>і"
+    case: nominative
+    number: plural
+}
+adj-plural-cases-m1
+{
+    text: "1>іх"
+    case: possessive
+    number: plural
+}
+adj-plural-cases-m1
+{
+    text: "1>ім"
+    case: dative
+    number: plural
+}
+adj-plural-cases-m1
+{
+    text: "1>іх"
+    case: accusative
+    number: plural
+}
+adj-plural-cases-m1
+{
+    text: "1>іми"
+    case: instrumental
+    number: plural
+}
+adj-plural-cases-m1
+{
+    text: "1>іх"
+    case: locative
+    number: plural
+}
+
+adj-plural-cases-m2
+{
+    text: "2>і"
+    case: nominative
+    number: plural
+}
+adj-plural-cases-m2
+{
+    text: "2>іх"
+    case: possessive
+    number: plural
+}
+adj-plural-cases-m2
+{
+    text: "2>ім"
+    case: dative
+    number: plural
+}
+adj-plural-cases-m2
+{
+    text: "2>іх"
+    case: accusative
+    number: plural
+}
+adj-plural-cases-m2
+{
+    text: "2>іми"
+    case: instrumental
+    number: plural
+}
+adj-plural-cases-m2
+{
+    text: "2>іх"
+    case: locative
+    number: plural
+}
+
+adj-plural-cases-t1
+{
+    text: "1>і"
+    case: nominative
+    number: plural
+}
+adj-plural-cases-t1
+{
+    text: "1>их"
+    case: possessive
+    number: plural
+}
+adj-plural-cases-t1
+{
+    text: "1>им"
+    case: dative
+    number: plural
+}
+adj-plural-cases-t1
+{
+    text: "1>их"
+    case: accusative
+    number: plural
+}
+adj-plural-cases-t1
+{
+    text: "1>ими"
+    case: instrumental
+    number: plural
+}
+adj-plural-cases-t1
+{
+    text: "1>их"
+    case: locative
+    number: plural
+}
+
+adj-plural-cases-t2
+{
+    text: "2>і"
+    case: nominative
+    number: plural
+    gender: inherit
+}
+adj-plural-cases-t2
+{
+    text: "2>их"
+    case: possessive
+    number: plural
+    gender: inherit
+}
+adj-plural-cases-t2
+{
+    text: "2>им"
+    case: dative
+    number: plural
+    gender: inherit
+}
+adj-plural-cases-t2
+{
+    text: "2>их"
+    case: accusative
+    number: plural
+    gender: inherit
+}
+adj-plural-cases-t2
+{
+    text: "2>ими"
+    case: instrumental
+    number: plural
+    gender: inherit
+}
+adj-plural-cases-t2
+{
+    text: "2>их"
+    case: locative
+    number: plural
+    gender: inherit
+}
+
+pl-nominative-1s; plural-cases-1; plural-cases-2; plural-cases-5
+{
+    text: "1>і"
+    real-number: plural
+    case: nominative
+    number: plural
+}
+
+pl-nominative-1h; plural-cases-3
+{
+    text: "1>и"
+    real-number: plural
+    case: nominative
+    number: plural
+}
+
+pl-nominative-2h
+{
+    text: "0>и"
+    real-number: plural
+    case: nominative
+    number: plural
+}
+
+pl-possessive-1s
+{
+    text: "1>ь"
+    real-number: plural
+    case: possessive
+    number: plural
+}
+
+pl-possessive-1h; plural-cases-3
+{
+    text: "1>"
+    real-number: plural
+    case: possessive
+    number: plural
+}
+
+pl-possessive-2h; plural-cases-1; plural-cases-4
+{
+    text: "0>ів"
+    real-number: plural
+    case: possessive
+    number: plural
+}
+
+plural-cases-5
+{
+    text: "1>ів"
+    real-number: plural
+    case: possessive
+    number: plural
+}
+
+
+pl-dative-1; plural-cases-1; plural-cases-2; plural-cases-5
+{
+    text: "1>ям"
+    real-number: plural
+    case: dative
+    number: plural
+}
+
+pl-dative-2; plural-cases-3
+{
+    text: "1>ам"
+    real-number: plural
+    case: dative
+    number: plural
+}
+
+pl-dative-20; plural-cases-4
+{
+    text: "0>ам"
+    real-number: plural
+    case: dative
+    number: plural
+}
+
+
+pl-instrumental-1; plural-cases-1; plural-cases-2; plural-cases-5
+{
+    text: "1>ями"
+    real-number: plural
+    case: instrumental
+    number: plural
+}
+
+pl-instrumental-2; plural-cases-3
+{
+    text: "1>ами"
+    real-number: plural
+    case: instrumental
+    number: plural
+}
+
+pl-instrumental-20; plural-cases-4
+{
+    text: "0>ами"
+    real-number: plural
+    case: instrumental
+    number: plural
+}
+
+
+pl-locative-1; plural-cases-1; plural-cases-2; plural-cases-5
+{
+    text: "1>ях"
+    real-number: plural
+    case: locative
+    number: plural
+}
+
+pl-locative-2; plural-cases-3
+{
+    text: "1>ах"
+    real-number: plural
+    case: locative
+    number: plural
+}
+
+pl-locative-20; plural-cases-4
+{
+    text: "0>ах"
+    real-number: plural
+    case: locative
+    number: plural
+}
+
+
+pl-vocative-1; plural-cases-1; plural-cases-2; plural-cases-5
+{
+    text: "1>і"
+    real-number: plural
+    case: vocative
+    number: plural
+}
+
+pl-vocative-2; plural-cases-3
+{
+    text: "1>и"
+    real-number: plural
+    case: vocative
+    number: plural
+}
+
+pl-vocative-20; plural-cases-4
+{
+    text: "0>и"
+    real-number: plural
+    case: vocative
+    number: plural
+}
+
+accusative-1
+{
+    text: "0>у"
+    case: accusative
+}
+
+accusative-2
+{
+    text: "0>ю"
+    case: accusative
+}
+
+all-adj-cases-1 :: adj-cases-1; \
+                    adj-plural-cases-t2; \
+                    adj-cases-feminine-t
+{
+}
+
+verb-forms-3 :: \
+    past-verb-forms3; \
+    present-verb-forms3; \
+    future-verb-forms3; \
+    conditional-verb-forms3
+{
+}
+
+verb-forms-1 :: \
+    past-verb-forms1; \
+    present-verb-forms1; \
+    future-verb-forms1; \
+    conditional-verb-forms1
+{
+}
+
+all-cases-3 :: \
+    cases-3; \
+    pl-nominative-1h; \
+    pl-dative-2; \
+    pl-instrumental-2; \
+    pl-locative-2; \
+    pl-vocative-2
+{
+}
+
+
+
+
+
+
+
+
+
+verbs-2 :: past-verb-forms2; \
+           present-verb-forms2; \
+           future-verb-forms2; \
+           conditional-verb-forms2
+{
+}

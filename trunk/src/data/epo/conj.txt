@@ -1,0 +1,76 @@
+﻿"1"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    conj-type: non-contrasting
+    #among: , ####
+    with-comma: true
+}
+"1"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    conj-type: non-contrasting
+    among: "kaj"
+    among-transcription: "kaj"
+}
+"1"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    max-items: 2
+    conj-type: contrasting
+    among: "sed"
+    among-transcription: "sed"
+}
+"7"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    conj-type: non-contrasting
+    among: "aŭ"
+    among-transcription: "aʊ"
+}
+"7"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    max-items: 2
+    conj-type: non-contrasting
+    before: "aŭ"
+    before-transcription: "aʊ"
+    among: "aŭ"
+    among-transcription: "aʊ"
+}
+#*
+#function: 6
+#por:\
+#	type == noun-phrase or\
+#	type == epithet or\
+#	type == preposition-phrase or\
+#	type == clause
+#order: 1
+#conj-type: non-contrasting
+#among: or
+#*
+#function: 6
+#por:\
+#	type == noun-phrase or\
+#	type == epithet or\
+#	type == preposition-phrase or\
+#	type == clause
+#order: 1
+#max-items: 2
+#conj-type: non-contrasting
+#before: either
+#among: or
+}
+"13"
+{
+    por: clause
+    order: 1
+    max-items: 2
+    conj-type: non-contrasting
+    before: "se"
+    before-transcription: "se"
+}

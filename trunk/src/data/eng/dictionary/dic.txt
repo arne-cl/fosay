@@ -1,0 +1,99 @@
+". "
+{
+    lemma: "."
+    type: punctuation
+}
+"a"[ə]; "an"[æn]
+{
+    type: article
+    number: singular
+    difinity: undifinite
+    quantity: none
+}
+"the"
+{
+    transcription: "ðə"
+    type: article
+    difinity: difinite
+    quantity: none
+}
+"a long time ago"
+{
+    transcription: "ə lɒŋ tajm əgo"
+    lemma: "a long time ago"
+    stem: "a long time ago.a long time ago"
+    type: adverb
+    tense: past
+    adverb-type: time
+}
+"beautifully"
+{
+    transcription: "bjutəfli"
+    lemma: "melbi"
+    stem: "beautiful"
+    type: adverb
+}
+"day after day"
+{
+    transcription: "de æftər de"
+    lemma: "day after day"
+    stem: "day after day.day after day"
+    type: adverb
+    tense: past
+    adverb-type: time
+}
+"greatly"
+{
+    transcription: "gretli"
+    lemma: "greatly"
+    stem: "great"
+    type: adverb
+}
+"last"
+{
+    transcription: "læst"
+    lemma: "lasta"
+    stem: "lasta.last"
+    type: adjective
+}
+"not"[nɑt]
+{
+    type: negative
+    truth: 0.0
+}
+"once upon a time"
+{
+    transcription: "wəns əpɑn ə tajm"
+    lemma: "once"
+    stem: "once.once upon a time"
+    type: adverb
+    tense: past
+    adverb-type: time
+}
+"today"
+{
+    transcription: "tədeɪ"
+    lemma: "cabdei"
+    stem: "cabdei.today"
+    type: adverb
+    adverb-type: time
+    tense: inherit
+}
+"tomorrow"
+{
+    transcription: "bavlamdei"
+    lemma: "on posdjorno"
+    stem: "on posdjorno.tomorrow"
+    type: adverb
+    tense: future
+    adverb-type: time
+}
+"yesterday"
+{
+    transcription: "yɛstərdeɪ"
+    lemma: "prulamdei"
+    stem: "prulamdei"
+    type: adverb
+    tense: past
+    adverb-type: time
+}

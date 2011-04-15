@@ -1,0 +1,114 @@
+"1"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    conj-type: non-contrasting
+    #among: , #може на це й потреби нема
+    with-comma: true
+}
+"1"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    conj-type: non-contrasting
+    among: "és"
+    among-transcription: "ejʃ"
+}
+"1"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    conj-type: non-contrasting
+    among: "s"
+    among-transcription: "ʃ"
+}
+"1"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    conj-type: non-contrasting
+    among: "meg"
+    among-transcription: "mɛg"
+}
+"1"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    max-items: 2
+    conj-type: contrasting
+    among: "de"
+    among-transcription: "dɛ"
+}
+"7"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    conj-type: non-contrasting
+    among: "vagy"
+    among-transcription: "vɒdʲ"
+}
+"7"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    max-items: 2
+    conj-type: non-contrasting
+    with-comma: true
+    before: "vagy"
+    before-transcription: "vɒdʲ"
+    among: "vagy"
+    among-transcription: "vɒdʲ"
+#}
+#"6
+#por:\
+#	type == noun-phrase or\
+#	type == epithet or\
+#	type == preposition-phrase or\
+#	type == clause
+#order: 1
+#conj-type: non-contrasting
+#among: or
+#}
+#"6
+#por:\
+#	type == noun-phrase or\
+#	type == epithet or\
+#	type == preposition-phrase or\
+#	type == clause
+#order: 1
+#max-items: 2
+#conj-type: non-contrasting
+#before: either
+#among: or
+}
+"8"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    max-items: 2
+    conj-type: non-contrasting
+    before: "se"
+    before-transcription: "ʃɛ"
+    among: "se"
+    among-transcription: "ʃɛ"
+}
+"13"
+{
+    por: clause
+    order: 1
+    max-items: 2
+    conj-type: non-contrasting
+    before: "ha"
+    before-transcription: "hɒ"
+    among: "akkor"
+    among-transcription: "ɒkor"
+}
+"13"
+{
+    por: clause
+    order: 1
+    max-items: 2
+    conj-type: non-contrasting
+    before: "ha"
+    before-transcription: "hɒ"
+}
