@@ -1,0 +1,58 @@
+"7"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    conj-type: non-contrasting
+    among: "a"
+}
+"1"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    conj-type: non-contrasting
+    among: "e"
+}
+"9"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    conj-type: non-contrasting
+    among: "o"
+}
+"3"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    conj-type: non-contrasting
+    among: "u"
+}
+"1"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    max-items: 2
+    conj-type: contrasting
+    among: "sed"
+}
+"6"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    conj-type: non-contrasting
+    among: ".ijonai"
+}
+"6"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    conj-type: non-contrasting
+    among: ".inajo"
+}
+"13"
+{
+    por: clause
+    order: 1
+    max-items: 2
+    conj-type: non-contrasting
+    before: "se"
+}

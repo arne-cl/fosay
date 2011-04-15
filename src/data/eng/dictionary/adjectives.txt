@@ -1,0 +1,14 @@
+"beautiful"
+{
+    transcription: "bjutəfəl"
+    lemma: "melbi"
+    stem: "melbi.beautiful"
+    type: adjective
+}
+"smart"
+{
+    transcription: "smɑrt"
+    lemma: "prije"
+    stem: "prije.smart"
+    type: adjective
+}

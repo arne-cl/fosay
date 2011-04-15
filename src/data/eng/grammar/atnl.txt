@@ -1,0 +1,164 @@
+subj-att := number, persone
+vp1-att  := number, persone, aspect, tense
+np-att   := number, persone, case
+V-att    := number, persone, aspect, tense, participle, mood
+ap-att   := number, case
+
+ip :-
+    $prcl{clause-type: principal}
+    PUNCT{lemma: "."}
+
+prcl{clause-type: principal} :-
+    [time<tense>]
+    subj<subj-att>
+    $vp1<vp1-att>
+    [
+        [obj{case: dative}]
+        [obj]
+    ]
+    [inobj]
+    [illobj]
+    [elobj]
+
+
+subj :-
+    $np<np-att>{case: nominative}
+    #subcl{clause-type: subordinate} ####################################
+
+obj :-
+    $np<np-att>{case: accusative}
+##|
+#obj :- ##################################################################
+#    $subcl{clause-type: subordinate}#####################################
+
+inobj :-
+    P<case>{case: inessive}
+    $np<case>
+
+illobj :-
+    P<case>{case: illative}
+    $np<case>
+
+elobj :-
+    P<case>{case: elative}
+    $np<case>
+
+ap :-
+    $ADJ
+
+&ap<ap-att> :- auto
+
+time :-
+    $ADV<tense>{adverb-type: time}
+
+vp1{mood: declarative; aspect: indefinite; truth: 1.0} :-
+    $V<V-att>{tense: present; participle: not-participle}
+
+vp1{mood: declarative; aspect: indefinite; truth: 1.0} :-
+    $V<V-att>{tense: past; participle: not-participle}
+
+vp1{mood: declarative; aspect: perfect} :-
+    AUX<V-att>{ \
+        lemma: "havi"; \
+        tense: present; \
+        participle: not-participle}
+    [NOT<truth>{truth: 0.0}]
+    $V{tense: past; participle: participle}
+
+vp1{mood: declarative; aspect: indefinite} :-
+    AUX<V-att>{ \
+        lemma: "do"; \
+        tense: past; \
+        participle: not-participle}
+    [NOT<truth>{truth: 0.0}]
+    $V{tense: present; participle: not-participle; persone: first}
+
+vp1{mood: declarative; aspect: indefinite} :-
+    AUX<V-att>{lemma: "do"; tense: present; participle: not-participle}
+    [NOT<truth>{truth: 0.0}]
+    $V{tense: present; participle: not-participle; persone: first}
+
+vp1{mood: declarative; aspect: indefinite} :-
+    AUX<V-att>{lemma: "be"; tense: future; participle: not-participle}
+    [NOT<truth>{truth: 0.0}]
+    $V{tense: present; participle: not-participle; persone: first}
+
+vp1{mood: declarative; aspect: continuous} :-
+    AUX<V-att>{lemma: "esi"; tense: present; participle: not-participle}
+    [NOT<truth>{truth: 0.0}]
+    $V{tense: present; participle: participle}
+
+vp1{mood: declarative; aspect: perfect-continuous-durative} :-
+    AUX<V-att>{lemma: "havi"; tense: present; participle: not-participle}
+    [NOT<truth>{truth: 0.0}]
+    AUX{lemma: "be"; tense: past; participle: participle}
+    $V{tense: present; participle: participle}
+
+vp1{mood: declarative; aspect: perfect-continuous-not-durative} :-
+    AUX<V-att>{lemma: "havi"; tense: present; participle: not-participle}
+    [NOT<truth>{truth: 0.0}]
+    AUX{lemma: "be"; tense: past; participle: participle}
+    $V{tense: present; participle: participle}
+
+poss :-
+    $np<case>{case: possessive}
+
+poss1 :-
+    P<case>{case: possessive}
+    $np{case: nominative}
+
+np1{difinity: difinite} :-
+    [ap]
+    $N<$number, $persone, $case>
+
+##|
+np1{difinity: difinite} :-
+    poss{difinity: difinite}
+    $np1<$number, $persone, $case>
+
+np1 :-
+    $PRON<$number, $persone, $case, $difinity>{pronoun-type: personal}
+
+&np1<np-att> :- auto
+
+np :-
+    QUA<$quantity, $quantity-number, $number>
+    [ap]
+    $N<$number, $persone, $noun-type, case>
+
+np{quantity: none; noun-type: common; number: singular} :-
+    ART<$difinity>{difinity: undifinite}
+    [ap]
+    $N<$number, $persone, $noun-type, case>
+
+np{quantity: none; difinity: undifinite; number: plural} :-
+    [ap]
+    $N<$number, $persone, $noun-type, case>
+
+np{quantity: none; difinity: difinite; number: singular; noun-type: proper} :-
+    [ap]
+    $N<$number, $persone, $noun-type, case>
+
+np :-
+    $PRON<$number, $persone, $case, $difinity>{pronoun-type: personal}
+##|
+np :-
+    $np<number, persone, case>
+    poss1
+##|
+np :-
+    poss{difinity: difinite}
+    $np1<$number, $persone, $case>
+
+np{quantity: none; noun-type: common}:-
+    ART<$difinity>{difinity: difinite}
+    [ap]
+    $N<$number, $persone, $noun-type, case>
+
+&np<np-att> :- auto
+
+vp1 ::=
+    1.0: V
+#    1.0: AUX JMP AUX V
+np ::=
+    1.0: poss np1

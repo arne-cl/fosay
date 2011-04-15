@@ -1,0 +1,119 @@
+"1"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    conj-type: non-contrasting
+    #among: , ####
+    with-comma: true
+}
+"1"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    conj-type: non-contrasting
+    among: "and"
+    among-transcription: "ænd"
+}
+"1"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    max-items: 2
+    conj-type: contrasting
+    among: "but"
+    among-transcription: "bat"
+}
+"1"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    max-items: 2
+    conj-type: non-contrasting
+    before: "both"
+    before-transcription: "boθ"
+    among: "and"
+    among-transcription: "ænd"
+}
+"7"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    conj-type: non-contrasting
+    among: "or"
+    among-transcription: "ɔr"
+}
+"7"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    max-items: 2
+    conj-type: non-contrasting
+    before: "either"
+    before-transcription: "iðər"
+    among: "or"
+    among-transcription: "ɔr"
+}
+"7"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    max-items: 2
+    conj-type: non-contrasting
+    before: "whether"
+    before-transcription: "wɛðər"
+    among: "or"
+    among-transcription: "ɔr"
+#*
+#function: 6
+#por:\
+#	type == noun-phrase or\
+#	type == epithet or\
+#	type == preposition-phrase or\
+#	type == clause
+#order: 1
+#conj-type: non-contrasting
+#among: or
+#*
+#function: 6
+#por:\
+#	type == noun-phrase or\
+#	type == epithet or\
+#	type == preposition-phrase or\
+#	type == clause
+#order: 1
+#max-items: 2
+#conj-type: non-contrasting
+#before: either
+#among: or
+}
+"8"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    max-items: 2
+    conj-type: non-contrasting
+    before: "neither"
+    before-transcription: "niðər"
+    among: "nor"
+    among-transcription: "nɔr"
+}
+"13"
+{
+    por: clause
+    order: 1
+    max-items: 2
+    conj-type: non-contrasting
+    before: "if"
+    before-transcription: "ɪf"
+    among: "then"
+    among-transcription: "ðɛn"
+}
+"13"
+{
+    por: clause
+    order: 1
+    max-items: 2
+    conj-type: non-contrasting
+    before: "if"
+    before-transcription: "ɪf"
+}

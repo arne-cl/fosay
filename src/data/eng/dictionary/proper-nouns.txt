@@ -1,0 +1,66 @@
+"john" :: possessive; accusative
+{
+    transcription: "dʒon"
+    lemma: "ioxanan."
+    tags: english
+    type: noun
+    number: singular
+    gender: masculine
+    persone: third
+    noun-type: proper
+    personal-name: first-name
+    case: nominative
+}
+"ivan" :: possessive; accusative
+{
+    transcription: "ivan"
+    lemma: "ioxanan."
+    tags: ukrainian
+    type: noun
+    number: singular
+    gender: masculine
+    persone: third
+    noun-type: proper
+    personal-name: first-name
+    case: nominative
+}
+"yuliya"[julija]; "yulia"[julia] :: possessive; accusative
+{
+    lemma: "iuli,as."
+    form: formal
+    tags: ukrainian
+    type: noun
+    number: singular
+    gender: masculine
+    persone: third
+    noun-type: proper
+    personal-name: first-name
+    case: nominative
+}
+"yulya" :: possessive; accusative
+{
+    transcription: "julʲa"
+    lemma: "iuli,as."
+    form: informal
+    tags: ukrainian
+    type: noun
+    number: singular
+    gender: masculine
+    persone: third
+    noun-type: proper
+    personal-name: first-name
+    case: nominative
+}
+"uzhhorod" :: possessive; accusative
+{
+    transcription: "uʒhorod"
+    lemma: ".ujhorod."
+    real-number: singular
+    tags: ukrainian
+    type: noun
+    number: singular
+    gender: lifeless
+    persone: third
+    noun-type: proper
+    case: nominative
+}

@@ -1,0 +1,13 @@
+meaning == "a" . x: meaning == "100" -> text == "one" & meaning == "1" . x:
+meaning == "a" . x: meaning == "1000" -> text == "one" & meaning == "1" . x:
+meaning == "a" . x: meaning == "1000000" -> text == "one" & meaning == "1" . x:
+
+x: type == noun . \
+y: type == numeral & \
+num-type == cardinal -> \
+text == "the" & meaning == "the" . \
+y: num-type == ordinal . \
+x:
+
+meaning == "on" . x: meaning == "unadjorno" -> text == "in" & meaning == "in(time)" . x:
+#this way for all days of week

@@ -1,0 +1,16 @@
+"в"[v]; "у"[u]
+{
+    type: preposition
+    case: inessive; illative
+}
+"з"[z]; "із"[iz]
+{
+    type: preposition
+    case: elative; comitative
+}
+"на"
+{
+    transcription: "na"
+    type: preposition
+    case: adessive
+}

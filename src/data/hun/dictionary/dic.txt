@@ -1,0 +1,26 @@
+". "
+{
+    lemma: "."
+    type: punctuation
+}
+"egy"
+{
+    transcription: "ɛdʲ"
+    type: article
+    number: singular
+    difinity: undifinite
+    quantity: none
+}
+"a"[ɒ]; "az"[ɒz]
+{
+    type: article
+    difinity: difinite
+    quantity: none
+}
+"ma"[mɒ]; "máma"[mamɒ]
+{
+    lemma: "cabdei"
+    type: adverb
+    adverb-type: time
+    tense: inherit
+}

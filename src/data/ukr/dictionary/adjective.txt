@@ -1,0 +1,31 @@
+#ukrainian dictionary v0.0.1
+"гарний" :: all-adj-cases-1
+{
+    transcription: "harnej"
+    lemma: "melbi"
+    stem: "melbe.гарний"
+    type: adjective
+    number: singular
+    gender: masculine
+    case: nominative
+}
+"гарному"
+{
+    transcription: "harnomu"
+    lemma: "melbi"
+    stem: "melbe.гарний"
+    type: adjective
+    number: singular
+    gender: masculine
+    case: inessive
+}
+"розумний" :: all-adj-cases-1
+{
+    transcription: "rozumnej"
+    lemma: "prije"
+    stem: "prije.розумний"
+    type: adjective
+    number: singular
+    case: nominative
+    gender: masculine
+}

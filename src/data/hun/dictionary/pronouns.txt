@@ -1,0 +1,24 @@
+"én"
+{
+    transcription: "ejn"
+    lemma: "imio"
+    type: pronoun
+    real-number: singular
+    number: singular
+    persone: first
+    case: nominative
+    pronoun-type: personal
+    #difinity: undifinite ######difinite!
+}
+"téged"
+{
+    transcription: "tejgɛd"
+    lemma: "ivio"
+    type: pronoun
+    real-number: singular
+    number: singular
+    persone: second
+    case: accusative
+    pronoun-type: personal
+    #difinity: undifinite ######difinite!
+}

@@ -1,0 +1,34 @@
+#ukrainian dictionary v0.0.1
+". "
+{
+    lemma: "."
+    type: punctuation
+}
+"гарно"
+{
+    transcription: "harno"
+    lemma: "melbi"
+    stem: "melbi.гарно"
+    type: adverb
+}
+"не"
+{
+    transcription: "nɛ"
+    type: negative
+}
+"чудово"
+{
+    transcription: "tʃudovo"
+    lemma: "greatly"
+    lemma: "greatly.чудово"
+    type: adverb
+}
+"сьогодні"
+{
+    transcription: "sʲohodnʲi"
+    lemma: "cabdei"
+    stem: "cabdei.сьогодні"
+    type: adverb
+    adverb-type: time
+    tense: inherit
+}

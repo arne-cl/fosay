@@ -1,0 +1,78 @@
+"iván"
+{
+    transcription: "ivan"
+    lemma: "ioxanan."
+    real-number: singular
+    tags: ukrainian
+    type: noun
+    number: singular
+    persone: third
+    case: nominative
+    noun-type: proper
+    personal-name: first-name
+}
+"jános"
+{
+    transcription: "janoʃ"
+    lemma: "ioxanan."
+    tags: hungarian
+    real-number: singular
+    type: noun
+    form: formal
+    number: singular
+    persone: third
+    case: nominative
+    noun-type: proper
+    personal-name: first-name
+}
+"john"
+{
+    transcription: "dʒon"
+    lemma: "ioxanan."
+    tags: english
+    real-number: singular
+    type: noun
+    form: formal
+    number: singular
+    persone: third
+    case: nominative
+    noun-type: proper
+    personal-name: first-name
+}
+"júlia" :: cases-7
+{
+    transcription: "juliɒ"
+    lemma: "iuli,as."
+    real-number: singular
+    tags: hungarian
+    type: noun
+    number: singular
+    persone: third
+    case: nominative
+    noun-type: proper
+    personal-name: first-name
+}
+"uzshorod" :: cases-2
+{
+    transcription: "uʒhorod"
+    lemma: ".ujhorod."
+    tags: ukrainian
+    real-number: singular
+    type: noun
+    number: singular
+    persone: third
+    case: nominative
+    noun-type: proper
+}
+"ungvár" :: cases-6
+{
+    transcription: "ungvar"
+    lemma: ".ujhorod."
+    tags: hungarian
+    real-number: singular
+    type: noun
+    number: singular
+    persone: third
+    case: nominative
+    noun-type: proper
+}
