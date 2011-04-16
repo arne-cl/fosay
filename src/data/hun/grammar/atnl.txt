@@ -88,7 +88,7 @@ ap :-
     $ADJ<ap-att>
 
 &ap :-
-    ap<ap-att>
+    $ap<ap-att>
 
 poss :-
     $np<difinity>{case: nominative}
@@ -132,7 +132,7 @@ np :-
     $np<$N-att, $difinity>{case2: possessed}
 
 &np :-
-    np<np-att>
+    $np<np-att>
 
 np1{quantity: none; difinity: difinite} :-
     [ap<ap-att>]
@@ -152,7 +152,7 @@ np1{difinity: difinite} :-
     $np1<$N-att, $difinity>{case2: possessed}
 
 &np1 :-
-    npl<np1-att>
+    $np1<np1-att>
 
 #priorities
 

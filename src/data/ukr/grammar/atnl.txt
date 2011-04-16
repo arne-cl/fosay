@@ -65,7 +65,7 @@ ap :-
     $ADJ<ADJ-att>
 
 &ap :-
-    ap<ap-att>
+    $ap<ap-att>
 
 poss :-
     $np<case>{case: possessive}
@@ -91,7 +91,7 @@ np :-
     $N<$gender, $persone, $extra-1, case -> quantity-case, number -> quantity-number>
 
 &np :-
-    np<np-att>
+    $np<np-att>
 
 prcl ::=
     1.0: subj vp

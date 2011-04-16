@@ -6,7 +6,7 @@ __version_info__ = ("pre-alpha", 0, 0, 1, 212)
 __version__ = '.'.join([str(i) for i in __version_info__[1:]])
 
 #testing
-import test.core.__init__
+#import test.core.__init__
 
 from core.models.lang import Language
 import os, glob, sys
@@ -23,9 +23,11 @@ def load_languages():
 
 langs = {}
 long_names = {}
+short_name = {}
 for sn, ln in load_languages():
     langs[sn] = Language(sn)
     long_names[sn] = ln
+    short_name[ln] = sn
     print("%s dictionary has been loaded (%d words; %d meanings)." % (ln, len(langs[sn].vocabulary), len(langs[sn].meanings)))
 
 #hun = Language("hun")
@@ -120,7 +122,7 @@ class TranslatorFrame(ttk.Frame):
         for child in self.winfo_children(): child.grid_configure(padx=5, pady=5)
 
     def trans(self):
-        srclan = langs[self.source_combo_box.get()]
+        srclan = langs[short_name[self.source_combo_box.get()]]
         text = self.source_text.get('1.0', 'end').strip()
         first = 'ip'
         self.target_text.config(state=NORMAL)
@@ -129,7 +131,7 @@ class TranslatorFrame(ttk.Frame):
             s = interlingua_to_str(text_to_interlingua(text, first, srclan)[0])
             self.target_text.insert('end', s)
         else:
-            trglan = langs[self.target_combo_box.get()]
+            trglan = langs[short_name[self.target_combo_box.get()]]
             tr = translate(text, first, srclan, [trglan])
             self.target_text.insert('end', tr)
         self.target_text.config(state=DISABLED)

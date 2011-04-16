@@ -47,7 +47,7 @@ ap :-
     $ADJ
 
 &ap :-
-    ap<ap-att>
+    $ap<ap-att>
 
 time :-
     $ADV<tense>{adverb-type: time}
@@ -121,7 +121,7 @@ np1 :-
     $PRON<$number, $persone, $case, $difinity>{pronoun-type: personal}
 
 &np1 :-
-    npl<np-att>
+    $np1<np-att>
 
 np :-
     QUA<$quantity, $quantity-number, $number>
@@ -158,7 +158,7 @@ np{quantity: none; noun-type: common}:-
     $N<$number, $persone, $noun-type, case>
 
 &np :-
-    np<np-att>
+    $np<np-att>
 
 vp1 ::=
     1.0: V

@@ -32,6 +32,7 @@ ERROR_INVALID_IDENT_HYPH = "'%s' is an invalid identifier. An identifier can't c
 ERROR_INVALID_IDENT_NUM_HYPH = "'%s' is an invalid identifier. An identifier should start with a letter of the latin alphabet and can't contain hyphen sequences"
 ERROR_INVALID_STRING = "'%s' is an invalid string. String should have a closing \""
 ERROR_CONJ = "'%s' already is a conjunction structure"
+ERROR_CONJ_SUB = "a conjunction structure rule should consist of one element which is '%s'"
 
 # Compute column.
 #     input is the input text string
@@ -310,11 +311,13 @@ def p_conj_rule(p):
     global atn
     if const.STATE_CONJ_A1 in atn[label]:
         raise AtnlSyntaxError(ERROR_CONJ, p, 1, label)
-    atn[label] = with_conj(label, p[4], atn[label])
+    if p[4][0] != label:
+        raise AtnlSyntaxError(ERROR_CONJ_SUB, p, 1, label)
+    atn[label] = with_conj(label, p[4][1], atn[label])
 
 def p_conj_sub(p):
-    '''conj_sub : identifier "<" attaches ">"'''
-    p[0] = p[3]
+    '''conj_sub : DOLLAR_IDENTIFIER "<" attaches ">"'''
+    p[0] = (p[1][1:], p[3])
 
 def p_full_rule(p):
     '''full_rule : rule_params ASSIGN_RULE newlines terms newlines
@@ -691,7 +694,7 @@ path = None
 def _parse_text(s, print_to_console):
     global PRINT_TO_CONSOLE
     PRINT_TO_CONSOLE = print_to_console
-    global path
+    #global path
 
     global atn, text, prior
     atn = {}
@@ -737,6 +740,7 @@ def _read_file(file_path):
     return s
 
 def parse_file(_path, print_to_console=True):
+    global path
     path = _path
     f = _read_file(path)
     #print(f)
