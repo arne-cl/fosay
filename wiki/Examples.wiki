@@ -1,0 +1,8 @@
+#labels Featured
+= Examples =
+
+from English
+  # The woman's house saw a boy.
+  # Today the boy will see the house of the woman.
+  # I see you.
+  # A boy has seen the beautiful house.
