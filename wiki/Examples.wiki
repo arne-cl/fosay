@@ -6,3 +6,4 @@ from English
   # Today the boy will see the house of the woman.
   # I see you.
   # A boy has seen the beautiful house.
+  # A boy and a girl have been seeing a beautiful house.
