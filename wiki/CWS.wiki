@@ -1,4 +1,28 @@
 #labels Featured
 = Cascading Word Sheets =
+----
+*Cascading Word Sheets* (*CWS*) is a language used to describe the dictionary of a natural or constructed language.
 
-Cascading Word Sheets (CWS) is a language used to describe the dictionary of a natural or constructed language.
+Every word has a set of attributes, like: number, gender, case, form, person, time, etc. A dictionary is a place where this information can be stored. CWS is an instrument to represent this info.
+
+=Syntax=
+----
+CWS looks like CSS:
+{{{
+"brother"[brəðər]
+{
+    lemma: "bruna"
+    stem: "bruna.brother"
+    real-number: singular
+    type: noun
+    number: singular
+    gender: masculine
+    persone: third
+    noun-type: common
+    case: nominative
+}
+}}}
+I guess only three attributes need explanation here: lemma, stem and real-number.
+  * lemma is used to unambiguously define the word's meaning. To do so we need to anchor the word to a Lojban word which is always unambiguous.
+  * stem is used to tie different forms of one word in the language. E.g. _"brother"_, _"brothers"_ and _"brother's"_ all will have the same stem - "bruna.brother"
+  * real-number is used to define the number de facto of the word
