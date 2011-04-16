@@ -1,0 +1,4 @@
+#labels Featured
+= Augmented Transition Network Language =
+
+Augmented Transition Network Language (ATNL) is a language used to describe the grammar of a natural or constructed language.
