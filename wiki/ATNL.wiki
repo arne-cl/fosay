@@ -26,6 +26,7 @@ np :-
     $N
 }}}
 `[...`] shows the part of the rule which is optional.
+
 OK, as you can see, the rules for English noun-phrases are really simple because they are context-free. But how do we handle a context-sensitive noun-phrase? E.g. a Spanish noun-phrase is always context-sensitive because the article, adjective and noun should have the same number: _"las grandes casas"_, _"una manzana roja"_, _"las hermosas chicas"_, etc. But the rule above will produce also invalid phrases like: _"las grande casa"_, _"la hermosa casas"_, etc. To exclude such results the ATN should be as follows:
 {{{
 ap :-
@@ -35,3 +36,4 @@ np :-
     [ap<number>]
     $N<$number>
 }}}
+Here `<number> shows that the number of the terminal/nonterminal should be the same as it's parent(rule). `<$number> shows that if there are more than one elements which have influence to the number of the rule then the current elements number will be assign as the rules number and the others will be compared with it.
