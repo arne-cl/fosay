@@ -1,5 +1,6 @@
-__author__="Z-CORE"
-__date__ ="$3 квіт 2011 1:25:43$"
+# -*- coding: utf-8 -*-
+__author__="zoltan kochan"
+__date__ ="$3 apr 2011 1:25:43$"
 
 from setuptools import setup,find_packages
 
@@ -9,19 +10,23 @@ setup (
   packages = find_packages(),
 
   # Declare your packages' dependencies here, for eg:
-  install_requires=['foo>=3'],
+  #install_requires=['foo>=3'],
 
   # Fill in these to make your Egg ready for upload to
   # PyPI
-  author = 'Z-CORE',
-  author_email = '',
+  author = 'Zoltan Kochan',
+  author_email = 'ZoltanKochan@gmail.com',
 
-  summary = 'Just another Python package for the cheese shop',
-  url = '',
-  license = '',
-  long_description= 'Long description of the package',
+  summary = 'An Interlingual Machine Translator',
+  url = 'http://code.google.com/p/fosay/',
+  license = 'GNU GPL v3',
+  long_description=
+        '''Fosay is an interlingual machine translator written in Python.
+        Fosay allows adding new languages by simply describing their grammar
+        with ATNL (Augmented Transition Network Language) and their dictionary
+        with CWS (Cascading Word Sheets).''',
 
   # could also include long_description, download_url, classifiers, etc.
 
-  
+
 )

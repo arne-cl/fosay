@@ -305,15 +305,16 @@ def p_rule(p):
     p[0] = p[1]
 
 def p_conj_rule(p):
-    '''conj_rule : CONJ_IDENTIFIER "<" attaches ">" ASSIGN_RULE IDENTIFIER newlines'''
-    if p[6] != 'auto':
-        raise AtnlSyntaxError("in p_conj_rule", p, 1, '')
+    '''conj_rule : CONJ_IDENTIFIER ASSIGN_RULE newlines conj_sub newlines'''
     label = p[1][1:]
     global atn
     if const.STATE_CONJ_A1 in atn[label]:
         raise AtnlSyntaxError(ERROR_CONJ, p, 1, label)
-    atn[label] = with_conj(label, p[3], atn[label])
+    atn[label] = with_conj(label, p[4], atn[label])
 
+def p_conj_sub(p):
+    '''conj_sub : identifier "<" attaches ">"'''
+    p[0] = p[3]
 
 def p_full_rule(p):
     '''full_rule : rule_params ASSIGN_RULE newlines terms newlines

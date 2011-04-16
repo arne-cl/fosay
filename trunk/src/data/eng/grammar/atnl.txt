@@ -46,7 +46,8 @@ elobj :-
 ap :-
     $ADJ
 
-&ap<ap-att> :- auto
+&ap :-
+    ap<ap-att>
 
 time :-
     $ADV<tense>{adverb-type: time}
@@ -119,7 +120,8 @@ np1{difinity: difinite} :-
 np1 :-
     $PRON<$number, $persone, $case, $difinity>{pronoun-type: personal}
 
-&np1<np-att> :- auto
+&np1 :-
+    npl<np-att>
 
 np :-
     QUA<$quantity, $quantity-number, $number>
@@ -155,7 +157,8 @@ np{quantity: none; noun-type: common}:-
     [ap]
     $N<$number, $persone, $noun-type, case>
 
-&np<np-att> :- auto
+&np :-
+    np<np-att>
 
 vp1 ::=
     1.0: V
