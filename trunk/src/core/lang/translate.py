@@ -29,7 +29,7 @@ def interlingua_to_str(dc, c = 0):
                 for item in dc[key]:
                     res += b1 + str(key) + ":" + "\n"
                     res += interlingua_to_str(item, c + 2)
-        elif not isinstance(dc[key], int) and not isinstance(dc[key], str): #isinstance(dc, dict):!!!!!!!!!!
+        elif not isinstance(dc[key], int) and not isinstance(dc[key], float) and not isinstance(dc[key], str): #isinstance(dc, dict):!!!!!!!!!!
             res += b1 + str(key) + ":" + "\n"
             res += interlingua_to_str(dc[key], c + 2)
         else:
