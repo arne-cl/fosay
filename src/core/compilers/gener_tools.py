@@ -9,7 +9,6 @@ from core.constants import STATE_END
 from core.constants import type as ltype
 from core.constants import modificators
 from core.constants import preqconst
-from core.lang.atn.base_atn import to_type_code
 from core.constants import STATE_CONJS, STATE_CONJ_A1, STATE_CONJ_A2, STATE_CONJ_A3, STATE_CONJ_A4
 from core.constants import INDEFINITE
 from core.constants import position
@@ -418,7 +417,8 @@ def to_full_atn(atn):
 
 POSITIVE_INFINITY = float('inf')
 
-def subnet_deepness(atn, num = STATE_START):
+def subnet_deepness(atn, to_type_code, num = STATE_START):
+   #7 iyui78i
     if num == STATE_END:
         return atn, 0, 0
     mx = -1
@@ -430,7 +430,7 @@ def subnet_deepness(atn, num = STATE_START):
             mn = INDEFINITE
             atn[num][i] = atn[num][i][0], atn[num][i][1], atn[num][i][2], atn[num][i][3], mx, mn
             continue
-        atn, mxtmp, mntmp = subnet_deepness(atn, item[3])
+        atn, mxtmp, mntmp = subnet_deepness(atn, to_type_code, item[3])
         mxtmp += 0 if to_type_code(item[0]) in modificators + [ltype["epsilon"]] else 1
         mntmp += 0 if to_type_code(item[0]) in modificators + [ltype["epsilon"]] else 1
         atn[num][i] = atn[num][i][0], atn[num][i][1], atn[num][i][2], atn[num][i][3], mxtmp, mntmp
@@ -438,18 +438,18 @@ def subnet_deepness(atn, num = STATE_START):
         mn = min(mntmp, mn)
     return atn, mx, mn
 
-def init_weights(atn):
+def init_weights(atn, to_type_code):
     '''Initializes the maximum and minimum number of tokens
         that can be on the rest of the way.'''
     for key in atn.keys():
-        atn[key], mx, mn = subnet_deepness(atn[key])
+        atn[key], mx, mn = subnet_deepness(atn[key], to_type_code)
     return atn
 
-def finish_atn(atn):
+def finish_atn(atn, to_type_code):
     atn = to_full_atn(atn)
     for key in atn:
         atn[key] = compr(atn[key])
-    return init_weights(dicts_to_funcs(atn))
+    return init_weights(dicts_to_funcs(atn), to_type_code)
 
 
 def with_conj(key, w, d):

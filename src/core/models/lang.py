@@ -14,7 +14,6 @@ from core.constants import INHERIT_NAME, INHERIT_VALUE, STATE_START
 from core.constants import type as ltype
 import sys
 import os
-from core.lang.atn.base_atn import label_types
 from string import digits
 from core.lang.process import parse
 from copy import deepcopy
@@ -24,20 +23,6 @@ import os, glob
 
 curr_dict = sys.modules[core.constants.__name__].__dict__
 
-def xx(s):
-    r = []
-    for key in label_types.keys():
-        if label_types[key] == s:
-            r += [key]
-    return r
-
-def zz(s):
-    t = xx(s)
-    if len(t) > 1:
-        print(label_types, s)
-        raise NotImplementedError
-    return t[0]
-
 def markov(s, tr):
     '''Markov's algorithm.'''
     for old, new in tr:
@@ -46,6 +31,8 @@ def markov(s, tr):
     return s
 
 class Language():
+    '''Language is an object that stores all the info about a language.
+    Like dictionary, grammar, contradictions, etc.'''
 #    uncomplited = ["..."] #""
 #    exclamation = ["!"]
 #    question = ["?"]
@@ -81,6 +68,10 @@ class Language():
         self._init_contr()
 
         #print "ready"
+
+    def to_type_code(self, label):
+        return self.label_types[label.split(":")[0]]
+
     @staticmethod
     def _parse_bool(s):
         return s == "True"
@@ -103,50 +94,6 @@ class Language():
         finally:
             f.close()
         return s
-
-    def _fstr_to_cond(self, s):
-        #left, right = [x.strip() for x in s.split(":")]
-        f = s.find(":")
-        left = s[:f].strip()
-        right = s[f+1:].strip()
-        if left == "type":
-            m = concept["type"], curr_dict[right]
-        elif left == "text":
-            if (not (right[0] == right[-1] == "\"")):
-                raise Exception("invalid text '" + right + "'")
-            m = concept["text"], right[1:-1]
-        elif left == "transcription":
-            if (not (right[0] == right[-1] == "\"")):
-                raise Exception("invalid transcription '" + right + "'")
-            m = concept["transcription"], right[1:-1]
-        elif right in ["True", "False"]:
-            m = concept[left], Language._parse_bool(right)
-        elif right[0] == right[-1] == '"':
-            #print(right)
-            m = concept[left], right[1:-1]
-        elif right[0] in digits + "-":
-            #print "right"
-            m = concept[left], int(right)
-        else:
-                #print(left.capitalize(), right)
-                #print(left[0].upper() + left[1:], )
-                #SubjNumber = Number
-            #print(m.meaning)
-            #print(concept[left])
-            #print("xx")
-            if right == "inherit":
-                m = concept[left], None
-            else:
-                m = concept[left], curr_dict[left.replace("-", "_")][right.lower()]
-            #m = concept[left], curr_dict[left[0].upper() + left[1:]].__getattr__(right.upper())
-        return m
-
-#    def _left_to_enum(self, left):
-#        if left.find("_") != -1:
-#            a, b = left.split("_")
-#            return a[0].upper() + a[1:] + b[0].upper() + b[1:]
-#        else:
-#            return left[0].upper() + left[1:]
 
     def divide_into_words(self, text):
         """Lexing : Input is split into tokens"""
@@ -193,31 +140,8 @@ class Language():
     def gen_to_ipa(self):
         return lambda text: [markov(s, self.tr) for s in text]
 
-    def modif_text(self, pattern, text):
-        if pattern.find("|") != -1:
-            left, right = pattern.split("|")
-            text = self.modif_text(left, text)
-            text = self.modif_text(right, text)
-            return text
-        
-        if pattern.find(">") != -1:
-            n, wo = pattern.split(">")
-            temp = text if n == "0" else text[:-int(n)]
-            if len(wo) > 1 and wo[0] == ":":
-                if temp[-1] == "y":
-                    temp = temp[:-1] + temp[-2] + temp[-1]
-                else:
-                    temp += temp[-1]
-                wo = wo[1:]
-            return temp + wo
-        if pattern.find("<") != -1:
-            wo, n = pattern.split("<")
-            temp = text[int(n):]
-            return wo + temp
-        return pattern
-
     def _init_tr(self):
-        s = self._read_file(os.path.join(self.path,"ipa.txt"))
+        s = self._read_file(os.path.join(self.path, "ipa.txt"))
         self.tr = []
         if s == [] or s == None or s[0] == "": return
         i = 0
@@ -229,13 +153,13 @@ class Language():
             i += 1
 
     def _init_grammar(self):
-        #import WConio
-        #WConio.textcolor(WConio.BLUE)
         print("Initializing %s grammar" % self.name)
-        self.atn = atnl.parse_file(os.path.join(os.path.join(self.path, "grammar"), "atnl.txt"))
-        #f = open(os.path.join(os.path.join(self.path, "grammar"), "atnl.txt"), encoding = 'utf-8')
-        #self.atn = atnl.parse("".join(f.readlines()))
-        #atnl.parse("iyiu")
+        res = atnl.parse_file(os.path.join(os.path.join(self.path, "grammar"), "atnl.txt"))
+        if res is None:
+            print('error')
+        else:
+            print('done')
+            self.atn, self.label_types = res
 
     def _init_dictionary(self):
         self._init_tr()
@@ -275,14 +199,10 @@ class Language():
                 i += 1
             i += 1
 
-#    def _init_pronouns(self):
-#        self.pronouns = self._init_modificators("pron.txt")
     def is_punctuation(self, text):
         return text in [self.comma, self.semicolon, self.colon,\
             self.exclamation, self.question, self.point]
-#    def is_modifier(self, word):
-#
-#        pass
+
     def is_number(self, t):
         for s in t:
             if not s in digits:
@@ -301,7 +221,6 @@ class Language():
             w.num_type = NUM_TYPE_CARDINAL
             w.str_type = STR_TYPE_DIGITS
             return [([w], text)]
-            #print "!!!!!!!!!"
         if t[-3:] in ["1st", "2nd", "3rd"] or t[-2:] == "th" and self.is_number(t[:-2]):
             w = Token(type["numeral"], [tt], start, end)
             w.meaning = t[:-2]
@@ -366,15 +285,26 @@ class Language():
                 else:
                     ss.append(temp)
         return ss
+
+    def type_labels(self, type):
+        return [label for label in self.label_types.keys() if self.label_types[label] == type]
+
+    def zz(self, s):
+        t = self.type_labels(s)
+        if len(t) > 1:
+            print(self.label_types, s)
+            raise NotImplementedError
+        return t[0]
+
     def words_to_mem(self, wss):
         mem = []
         for ws in wss:
             mem += [{}]
             for w in ws:
-                if zz(w.type) in mem[-1]:
-                    mem[-1][zz(w.type)] += [(w, len(mem))]
+                if self.zz(w.type) in mem[-1]:
+                    mem[-1][self.zz(w.type)] += [(w, len(mem))]
                 else:
-                    mem[-1][zz(w.type)] = [(w, len(mem))]
+                    mem[-1][self.zz(w.type)] = [(w, len(mem))]
         return mem
 
     def init_sentence(self, sent, first = "IP"):
@@ -382,18 +312,9 @@ class Language():
         res = []
         for s in ss:
             y = self.divide_into_words(s)
-            #r = [self.init_word(x) for x in y]
             for r in self.morphan(y):
-#               ### res += [x for x in match1_mem(self.atn, "IP", STATE_START, r)]
                 mr = self.words_to_mem(r)
-                ##print mem
-                res += [x[2] for x in parse(self, first, STATE_START, mr)] # MAYBE self.words_to_mem(r)
-                #res += [x for x, y in mem[0]["IP"]] #!!!!!!!!!!!!!!!!!!!!!!!!
-
-                #mem = total_mem(self.atn, mr) #MUSTN'T BE!!!!!!!!!
-#                for m in self.look_for_patterns(mr): #TODO: !!!!!!!!!!!!!!!!!!!!!!!!!!
-#                    #print m
-#                    res += [x[2] for x in parse(self, first, STATE_START, m)]
+                res += [x[2] for x in parse(self, first, STATE_START, mr)]
         return res
 
     def conj_str3(self, fn, ct, cs):
@@ -404,47 +325,10 @@ class Language():
     def is_one_conjuction(self, before, among, after):
         pass
 
-#    #comparing only the needed properties (from w[])
-#    def find_all(self, word):
-#        words = []
-#        #print(word._props, word.type)
-#        for key in self.vocabulary.keys():
-#            for w in self.vocabulary[key]:
-#                if w.type == word.type:
-#                    for p in w._props.keys():
-#                        #print key
-#                        if p in word._props.keys() and w._props[p] != word._props[p]:
-#                            break
-#                    else:
-#                        cw = deepcopy(w)
-#                        cw.text = None
-#                        if not cw in words:
-#                            words += [cw]
-#        #print words
-#        return words
-##        #raise NotImplementedError
-##        words = []
-##        #print(word._props, word.type)
-##        for key in self.vocabulary.keys():
-##            for w in self.vocabulary[key]:
-##                if w.type == word.type:
-##                    cw = deepcopy(w)
-##                    cw.text = None
-##                    if not cw in words:
-##                        words += [cw]
-##        #print words
-##        return words
-##        #raise NotImplementedError
-
-
     def synset(self, meaning):
         return [w for w in self.meanings[meaning] if w.contains(case["@nominative"]) and w.contains(number["@singular"])]
 
     def definition(self, meaning):
         raise NotImplementedError
 
-
 #global_props = [CONCEPT_CASE, CONCEPT_TENSE, CONCEPT_PARTICIPLE, CONCEPT_PERSONE]
-
-#TODO: Mosaic translation
-#required leafs

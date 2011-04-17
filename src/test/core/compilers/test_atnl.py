@@ -16,19 +16,82 @@ class AtnlTestCase(unittest.TestCase):
     #    self.foo = None
 
     def test_atnl(self):
-        self.assertIsNotNone(atnl.parse("np :- \n $N", self.ptc))
-        self.assertIsNotNone(atnl.parse("np :- \n $N<number, $case->gender>", self.ptc))
-        self.assertIsNotNone(atnl.parse("np :- \n $N<number, case->gender>{gender: feminine}", self.ptc))
+        tests = [
+            """
+            np is noun-phrase
+            N is noun
+            np :-
+                $N
+            """,
+            """
+            np is noun-phrase
+            N is noun
+            np :-
+                $N<number, $case->gender>
+            """,
+            """
+            np is noun-phrase
+            N is noun
+            np :-
+                $N<number, case->gender>{gender: feminine}
+            """,
+        ]
+        for txt in tests:
+            self.assertIsNotNone(atnl.parse(txt, self.ptc))
         
     def test_atnl_errors(self):
-        self.assertIsNone(atnl.parse("np :- \n $N<number, $caste->gender>", self.ptc))
-        self.assertIsNone(atnl.parse("np :- \n $N<number, case->gender>{gender: fkeminine}", self.ptc))
-        self.assertIsNone(atnl.parse("np :- \n $N<number, case->gender>{geonder: feminine}", self.ptc))
-        self.assertIsNone(atnl.parse("np :- \n $Nbb<number, case->gender>{geonder: feminine}", self.ptc))
-        self.assertIsNone(atnl.parse("npb :- \n $N<number, case->gender>{gender: feminine}", self.ptc))
-        self.assertIsNone(atnl.parse("\nn--p :- \n $N<8number, case->gender>{gender: feminine}", self.ptc))
-        self.assertIsNone(atnl.parse("np :- \n $N<num---ber, case->gender>{gender: feminine}", self.ptc))
-        self.assertIsNone(atnl.parse('np :- \n $N<number, case->gender>{gender: ".uioou}', self.ptc))
+        tests = [
+            """
+            np is noun-phrase
+            N is noun
+            np :-
+                $N<number, $caste->gender>
+            """,
+            """
+            np is noun-phrase
+            N is noun
+            np :-
+                $N<number, case->gender>{gender: fkeminine}
+            """,
+            """
+            np is noun-phrase
+            N is noun
+            np :-
+                $N<number, case->gender>{geonder: feminine}
+            """,
+            """
+            np is noun-phrase
+            N is noun
+            np :-
+                $Nbb<number, case->gender>{geonder: feminine}
+            """,
+            """
+            np is noun-phrase
+            N is noun
+            npb :-
+                $N<number, case->gender>{gender: feminine}
+            """,
+            """
+            np is noun-phrase
+            N is noun
+            n--p :-
+                $N<8number, case->gender>{gender: feminine}
+            """,
+            """
+            np is noun-phrase
+            N is noun
+            np :-
+                $N<num---ber, case->gender>{gender: feminine}
+            """,
+            """
+            np is noun-phrase
+            N is noun
+            np :-
+                $N<number, case->gender>{gender: ".uioou}
+            """,
+        ]
+        for txt in tests:
+            self.assertIsNone(atnl.parse(txt, self.ptc))
 
     def test_div_to_op(self):
         tests = [
