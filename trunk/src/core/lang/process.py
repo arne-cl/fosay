@@ -10,8 +10,6 @@ from core.constants import concept, difinity, form
 from core.constants import STATE_START, STATE_END, STATE_CONJ_A1, STATE_CONJ_A4
 from core.constants import NONE
 from core.constants import is_nonterminalc, is_terminalc, eqx, is_prop
-from core.lang.atn.base_atn import to_type_code
-from core.lang.atn.base_atn import label_types
 
 from core.constants import quantity
 from core.lang.scoring import *
@@ -64,7 +62,7 @@ def find_maxposs(caseframe):
 #synthesize
 def unparse(lang, label, state, caseframe, parent = None):
     "Uses generator to yield all possible sentences"
-    if to_type_code(label) == const.type["epsilon"]: ############
+    if lang.to_type_code(label) == const.type["epsilon"]: ############
         yield None ##########################
     if caseframe == None:
         return
@@ -72,8 +70,8 @@ def unparse(lang, label, state, caseframe, parent = None):
     if is_terminal(label):
         w = Token()
         w.set_ghost(is_empty(label))
-        w.type = to_type_code(label)
-        for c in transferred_attributes[to_type_code(label)]:
+        w.type = lang.to_type_code(label)
+        for c in transferred_attributes[lang.to_type_code(label)]:
             if c == concept["real-number"] and not c in caseframe:
                 continue
             w.attr(c, caseframe[c])
@@ -84,15 +82,15 @@ def unparse(lang, label, state, caseframe, parent = None):
     else:
         net = lang.atn[label]
         if not parent:
-            parent = FlowerLingUnit(to_type_code(label), 0, 0)
+            parent = FlowerLingUnit(lang.to_type_code(label), 0, 0)
 
             for key in caseframe.keys():
                 if is_prop(key):
                     parent.attr(key, caseframe.get(key, None))
 
-        if to_type_code(label) in caseframe and type(caseframe[to_type_code(label)]) == list:
+        if lang.to_type_code(label) in caseframe and type(caseframe[lang.to_type_code(label)]) == list:
             if not STATE_CONJ_A1 in net: return ###it is needed when we go on a way of an empty alternative. Like NP:EMPTY
-            objs = caseframe[to_type_code(label)]
+            objs = caseframe[lang.to_type_code(label)]
             conj = caseframe[concept["conj-function"]], caseframe[concept["conj-type"]], caseframe[concept["conj-str"]]
             for x in gen_conj(lang, label, deepcopy(parent), net[STATE_CONJ_A1][0][1], net[STATE_CONJ_A4][1][1], deepcopy(objs), conj):
                 yield x
@@ -117,7 +115,7 @@ def unparse(lang, label, state, caseframe, parent = None):
                 for labl, f, nextState in q[i]:
                     if nextState == STATE_CONJ_A1: continue
 
-                    cl = to_type_code(labl)
+                    cl = lang.to_type_code(labl)
                     words = \
                         [Token(cl)] \
                         if cl in modificators and req(cl, caseframe) else \
@@ -127,8 +125,8 @@ def unparse(lang, label, state, caseframe, parent = None):
                         par = deepcopy(parent)
                         for x in f(lang, par, word) if f else [par]:
                             cf = deepcopy(caseframe)
-                            if to_type_code(labl) in cf.keys():
-                                del cf[to_type_code(labl)]
+                            if lang.to_type_code(labl) in cf.keys():
+                                del cf[lang.to_type_code(labl)]
 
                             for rest in unparse(lang, label, nextState, cf, x):
                                 good_speed = True
@@ -163,11 +161,11 @@ def parse(lang, label, state, mem, wc = 0, parent = None, deep = None):
         return
     elif is_terminal(label):
         if is_empty(label):
-            w = Token(to_type_code(empty_type(label)))
+            w = Token(lang.to_type_code(empty_type(label)))
             w.set_ghost(True)
             #w.meaning = "_"
             yield mem, wc, w
-        elif to_type_code(label) == const.type["epsilon"]:
+        elif lang.to_type_code(label) == const.type["epsilon"]:
             yield mem, wc, None 
         elif label in mem[wc]:
             for w, l in mem[wc][label]:
@@ -175,7 +173,7 @@ def parse(lang, label, state, mem, wc = 0, parent = None, deep = None):
     else:
         net = lang.atn[label]
         n = net[state]
-        if not parent: parent = FlowerLingUnit(to_type_code(label), 0, 0)
+        if not parent: parent = FlowerLingUnit(lang.to_type_code(label), 0, 0)
         m = [(deep.get(item[0], 0), item) for item in n]
         mr = [x[1] for x in sorted(m, key = lambda d: d[0])]
         for labl, f, standard, next_state, maxel, minel in mr:
@@ -569,9 +567,10 @@ def morphen(lang, st, ind = 0):
             for y in morphen(lang, c, ind + 1):
                 yield y
 
-def case_frame_to_lang(caseframe, target_lang, first="IP"):
+def case_frame_to_lang(caseframe, target_lang, first=const.type['sentence']):
     '''Translates Interlingua to the target language AST'''
-    for x in unparse(target_lang, first, STATE_START, caseframe[label_types[first]]):
-        for y in pre_morphen(target_lang, x):
-            for z in morphen(target_lang, y):
-                yield z
+    for first_label in target_lang.type_labels(first):
+        for x in unparse(target_lang, first_label, STATE_START, caseframe[first]):
+            for y in pre_morphen(target_lang, x):
+                for z in morphen(target_lang, y):
+                    yield z

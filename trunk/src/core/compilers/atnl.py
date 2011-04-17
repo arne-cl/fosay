@@ -10,7 +10,6 @@ from core.constants import concept
 import core.constants as const
 from core.compilers.gener_tools import add_to_lorr, add_to_blocks, return_parent
 from core.compilers.gener_tools import any_sequence, unite, straight_sequences, with_conj, finish_atn
-from core.lang.atn.base_atn import label_types
 
 PRINT_TO_CONSOLE = True
 
@@ -163,6 +162,7 @@ prior = {}
 d = {}
 label = ""
 consts = {}
+label_types = {}
 
 def p_grammar(p):
     '''grammar : rules
@@ -173,9 +173,11 @@ def p_rules(p):
     '''rules : rule
              | assignment
              | priority
+             | is_type
              | rules rule
              | rules assignment
              | rules priority
+             | rules is_type
 
              | assignment newlines
              | rules assignment newlines'''
@@ -226,6 +228,16 @@ def p_proper_string(p):
 def p_invalid_string(p):
     '''invalid_string : ERROR_STRING'''
     raise AtnlSyntaxError(ERROR_INVALID_STRING, p, 1, p[1])
+
+#-------------------------------------------------------------------------------
+# is_type rules
+#-------------------------------------------------------------------------------
+def p_is_type(p):
+    '''is_type : identifier identifier identifier newlines'''
+    if p[2] != 'is':
+        AtnlSyntaxError("'%s' is an invalid keyword", p, 2, p[2])
+    global label_types
+    label_types[p[1]] = p[3]
 
 #-------------------------------------------------------------------------------
 # Priority rules
@@ -341,24 +353,28 @@ def p_rule_params(p):
 
 def p_rule_params_empty(p):
     '''rule_params_empty : DOT_IDENTIFIER'''
+    global label_types
     if not p[1][1:] in label_types:
         raise AtnlSyntaxError(ERROR_INVALID_RULE_NAME, p, 1, p[1][1:])
     p[0] = (p[1][1:]+":empty", None)
 
 def p_rule_params_simple(p):
     '''rule_params_simple : identifier'''
+    global label_types
     if not p[1] in label_types:
         raise AtnlSyntaxError(ERROR_INVALID_RULE_NAME, p, 1, p[1])
     p[0] = (p[1], None)
 
 def p_rule_params_complex_empty(p):
     '''rule_params_complex_empty : DOT_IDENTIFIER "{" attributes "}"'''
+    global label_types
     if not p[1][1:] in label_types:
         raise AtnlSyntaxError(ERROR_INVALID_RULE_NAME, p, 1, p[1][1:])
     p[0] = (p[1][1:]+":empty", p[3])
 
 def p_rule_params_complex(p):
     '''rule_params_complex : identifier "{" attributes "}"'''
+    global label_types
     if not p[1] in label_types:
         raise AtnlSyntaxError(ERROR_INVALID_RULE_NAME, p, 1, p[1])
     p[0] = (p[1], p[3])
@@ -489,24 +505,28 @@ def p_term_name(p):
 
 def p_term_name_main(p):
     '''term_name_main : DOLLAR_IDENTIFIER'''
+    global label_types
     if not p[1][1:] in label_types:
         raise AtnlSyntaxError(ERROR_INVALID_RULE_NAME, p, 1, p[1][1:])
     p[0] = (p[1][1:], add_to_blocks)
 
 def p_term_name_child(p):
     '''term_name_child : identifier'''
+    global label_types
     if not p[1] in label_types:
         raise AtnlSyntaxError(ERROR_INVALID_RULE_NAME, p, 1, p[1])
     p[0] = (p[1], add_to_lorr)
 
 def p_term_name_empty(p):
     '''term_name_empty : DOT_IDENTIFIER'''
+    global label_types
     if not p[1][1:] in label_types:
         raise AtnlSyntaxError(ERROR_INVALID_RULE_NAME, p, 1, p[1][1:])
     p[0] = (p[1][1:]+':empty', add_to_lorr)
 
 def p_term_name_empty_main(p):
     '''term_name_empty_main : DOLLAR_DOT_IDENTIFIER'''
+    global label_types
     if not p[1][2:] in label_types:
         raise AtnlSyntaxError(ERROR_INVALID_RULE_NAME, p, 1, p[1][2:])
     p[0] = (p[1][2:]+':empty', add_to_blocks)
@@ -691,29 +711,33 @@ def print_interlingua(dc, c = 0):
 yaccer = yacc.yacc()
 path = None
 
+def gen_to_type_code():
+    global label_types
+    return lambda label: label_types[label.split(":")[0]]
+
 def _parse_text(s, print_to_console):
     global PRINT_TO_CONSOLE
     PRINT_TO_CONSOLE = print_to_console
     #global path
 
-    global atn, text, prior
+    global atn, text, prior, label_types
     atn = {}
     prior = {}
+    label_types = {'JMP': const.type['epsilon']}
     text = s
     lexer.lineno = 1
     try:
         yaccer.parse(s, lexer=lexer, tracking=PRINT_TO_CONSOLE)
-        #print(atn)
-        #print(prior)
         add_priorities(atn, prior)
-        #print_interlingua(atn)########
-        ret = finish_atn(atn)
-        #print(ret)
+        ret = finish_atn(atn, gen_to_type_code())
     except Exception:
         if PRINT_TO_CONSOLE:
             print("WARNING: internal ATNL compiler error")
         return None
-    return ret if ret != {} else None
+    atn = ret if ret != {} else None
+    if atn is None: return None
+    label_types
+    return atn, label_types
 
 def parse(s, print_to_console=True):
     global path

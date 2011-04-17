@@ -115,7 +115,7 @@ def translate(text, first, source_lang, tlangs):
     #        print(c)
     #        print()
         for x in loc_cfs:
-            temp = [y for y in case_frame_to_lang(x, target_lang, first)] #case_frame_to_lang(x, target_lang)
+            temp = [y for y in case_frame_to_lang(x, target_lang, source_lang.label_types[first])] #case_frame_to_lang(x, target_lang)
             ct += len(temp)
             target_lang_syntax_trees += [temp]
         if PRINT_TO_CONSOLE:
