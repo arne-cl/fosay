@@ -233,7 +233,8 @@ def meaning_shift(cf, lang):
     for key in [x for x in cf.keys()]: #beacause of conjunctions is the error!
         #print(key)
         if is_terminalc(key):
-            if not cf[key][concept["lemma"]] in lang.meanings.keys():
+            lemma = cf[key][concept["lemma"]]
+            if not lemma is None and not lemma in lang.meanings.keys():
                 #replace with deffination
                 #checking for properness
                 #print(cf[key][concept["lemma"]], cf_diff[cf[key][concept["lemma"]]])

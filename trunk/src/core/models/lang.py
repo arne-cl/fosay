@@ -79,7 +79,6 @@ class Language():
         self._init_dictionary()
         self._init_grammar()
         self._init_contr()
-        self._init_patterns()
 
         #print "ready"
     @staticmethod
@@ -104,65 +103,6 @@ class Language():
         finally:
             f.close()
         return s
-
-    def _str_to_cond(self, mm, s):
-        left, r = [x.strip() for x in s.split(":")]
-        res = []
-        for mx in mm:
-            if left == "tags":
-                m = deepcopy(mx)
-                m.attr(concept["tags"], [])
-                rr = [x.strip() for x in r.split(",")]
-                for right in rr:
-                    m.attr(concept["tags"], m.attr(concept["tags"]) + [tags[right.lower()]])
-                res += [m]
-                continue
-            rr = [x.strip() for x in r.split(";")]
-            for right in rr:
-                m = deepcopy(mx)
-                if left == "type":
-                    m.type = ltype[right.lower()]
-                elif left == "text":
-        #                q = False
-        #                for i in range(len(right)):
-        #                    if right[i] == "\"":
-        #                        q = not q
-        #                    if right[i] == "," and not q:
-        #                        right[i] = "@@"
-                    if right[-1] == "]":
-                        right, trans = right.split("[")
-                        trans = trans[:-1]
-                        m.transcription = self.divide_into_words(trans)
-
-                    if (not (right[0] == right[-1] == "\"")):
-                        raise Exception("invalid text '" + right + "'")
-                    m.text = self.divide_into_words(right[1:-1])
-                elif left == "transcription":
-                    if (not (right[0] == right[-1] == "\"")):
-                        raise Exception("invalid transcription '" + right + "'")
-                    m.transcription = self.divide_into_words(right[1:-1])
-                elif right in ["true", "false"]:
-                    m.attr(concept[left], Language._parse_bool(right))
-                elif right[0] == right[-1] == '"':
-                    #print(right)
-                    m.attr(concept[left], right[1:-1])
-                elif right[0] in digits + "-":
-                    #print "right"
-                    m.attr(concept[left], int(right))
-                else:
-                        #print(left.capitalize(), right)
-                        #print(left[0].upper() + left[1:], )
-                        #SubjNumber = Number
-                    #print(m.meaning)
-                    #print(concept[left])
-                    #print("xx")
-                    if right == INHERIT_NAME:
-                        m.attr(concept[left], INHERIT_VALUE)
-                    else:
-                        #print(left, right)
-                        m.attr(concept[left], curr_dict[left.replace("-", "_")][right.lower()])
-                res += [m]
-        return res
 
     def _fstr_to_cond(self, s):
         #left, right = [x.strip() for x in s.split(":")]
@@ -207,59 +147,6 @@ class Language():
 #            return a[0].upper() + a[1:] + b[0].upper() + b[1:]
 #        else:
 #            return left[0].upper() + left[1:]
-
-    def _str_to_condition(self, m, s):
-        if s.find("!=") != -1:
-            u = [x.strip() for x in s.split("!=")]
-            #print s
-            #if u[0] == "text": ##############################################################################
-            #    m.__dict__[u[0]] = '$' + u[1]##############################################################################
-
-            if u[0] == "type":
-                m.type = -1*ltype[u[1]]
-            elif u[0] == "text":
-                m.text = "$" + u[1][1:-1]
-            elif u[0] == "meaning":
-                m.meaning = "$" + u[1][1:-1]
-            elif u[1] in ["True", "False"]:
-                m.attr(concept[u[0]], not _parse_bool(u[1]))
-            elif u[1][0] == u[1][-1] == '"':
-                m.attr(concept[u[0]], '$' + u[1][1:-1])
-            elif u[1][0] in digits + "-":
-                m.attr(concept[u[0]], -1*int(u[1]))
-            else:
-                m.attr(concept[u[0]], -1*curr_dict[u[1]])
-        elif s.find("==") != -1:
-            u = [x.strip() for x in s.split("==")]
-            #print "1----------"
-            #print "_" + u[0] + "_"
-            #print "_" + u[1] + "_"
-            #if u[0] == "text":##############################################################################
-            #    m.__dict__[u[0]] = u[1].strip()##############################################################################
-            if u[0] == "type":
-                m.type = ltype[u[1]]
-            elif u[0] == "text":
-                m.text = u[1][1:-1]
-            elif u[0] == "meaning":
-                m.meaning = u[1][1:-1]
-            elif u[1] in ["True", "False"]:
-                m.attr(concept[u[0]], Language._parse_bool(u[1]))
-            elif u[1][0] == u[1][-1] == '"':
-                m.attr(concept[u[0]], u[1][1:-1])
-            elif u[1][0] in digits + "-":
-                #print "u[1]"
-                m.attr(concept[u[0]], int(u[1]))
-            else:
-                #m.attr(concept[u[0]], curr_dict[u[1]])
-                m.attr(concept[u[0]], curr_dict[u[0].replace("-", "_")][u[1]])
-        else:
-            m.attr(concept[s], True)
-
-#        p = [x.strip() for x in s.split(":")]
-#        if len(p) == 1:
-#            m.__dict__[p[0]] = True
-#        else:
-#            m.__dict__[p[0]] = dict[p[1]]
 
     def divide_into_words(self, text):
         """Lexing : Input is split into tokens"""
@@ -388,26 +275,6 @@ class Language():
                 i += 1
             i += 1
 
-    def _t(self, ss):
-        #print ss
-        ws = []
-        for s in ss.split("."):
-            w = Token()
-            t = s.split(":")
-            if len(t) > 1: w.text = "*" + t[0].strip()
-            t = t[-1]
-            if t.strip() != "":
-                for c in t.split("&"):
-                    self._str_to_condition(w, c)
-                    #print w.text
-            ws += [w]
-        return ws
-    def _init_patterns(self):
-        ss = self._read_file(os.path.join(self.path, "patterns.txt"))
-        self.patts = []
-        for s in ss:
-            self.patts += [[self._t(x) for x in s.split("->")]]
-
 #    def _init_pronouns(self):
 #        self.pronouns = self._init_modificators("pron.txt")
     def is_punctuation(self, text):
@@ -486,10 +353,10 @@ class Language():
                     yield [deepcopy(w)] + ww
 
 
-
-    def remove_contr(self, s, contr):
-        ss = [s]
-        for old, news in contr:
+    def remove_contr(self, text):
+        '''Removes all contradictions from the text'''
+        ss = [text]
+        for old, news in self.contr:
             for i in range(len(ss)):
                 temp = ss[0]
                 del ss[0]
@@ -510,153 +377,8 @@ class Language():
                     mem[-1][zz(w.type)] = [(w, len(mem))]
         return mem
 
-    def eq_text(self, patt, b):
-#        print patt, b, not patt or\
-#                patt[0] != '$' and patt == b or\
-#                patt[0] == '$' and patt[1:] != b
-        return not patt or\
-                patt[0] != '$' and patt == b or\
-                patt[0] == '$' and patt[1:] != b
-    def eq_num(self, patt, b):
-        return not patt or \
-                patt >= 0 and patt == b or\
-                patt < 0 and -patt != b
-    def equal_to_pattern(self, pattern, w):
-        if not w: return False
-        if isinstance(w, Token):
-            return \
-                self.eq_text(pattern.meaning, w.meaning) and\
-                self.eq_num(pattern.type, w.type) and\
-                self.eq_num(pattern.attr(CONCEPT_CASE), w.attr(CONCEPT_CASE)) and\
-                self.eq_num(pattern.attr(CONCEPT_TENSE), w.attr(CONCEPT_TENSE)) and\
-                self.eq_num(pattern.attr(CONCEPT_NUMBER), w.attr(CONCEPT_NUMBER)) and\
-                self.eq_num(pattern.attr(CONCEPT_NUM_TYPE), w.attr(CONCEPT_NUM_TYPE))
-        elif not pattern.meaning:
-            return \
-                self.eq_num(pattern.type, w.type) and\
-                self.eq_num(pattern.attr(CONCEPT_CASE), w.attr(CONCEPT_CASE)) and\
-                self.eq_num(pattern.attr(CONCEPT_TENSE), w.attr(CONCEPT_TENSE)) and\
-                self.eq_num(pattern.attr(CONCEPT_NUMBER), w.attr(CONCEPT_NUMBER)) and\
-                self.eq_num(pattern.attr(CONCEPT_NUM_TYPE), w.attr(CONCEPT_NUM_TYPE))
-        else:
-            return False
-
-#        if isinstance(pattern, Word):
-#            return \
-#                self.eq_num(pattern.type, w.type) and\
-#                self.eq_num(pattern.case, w.case) and\
-#                self.eq_num(pattern.tense, w.tense) and\
-#                self.eq_num(pattern.number, w.number) and\
-#                self.eq_text(pattern.meaning, w.meaning) and\
-#                self.eq_num(pattern.num_type, w.num_type)
-#                #self.eq_text(pattern.text, w.text) and\
-#        return False
-
-    def get_eq(self, patt, mem, i):
-#        ret = []
-#        for key in mem[i].keys(): #use also build_ct here...............
-#            for n, j in mem[i][key]:
-#                if self.equal_to_pattern(patt, n):
-#                    ret += [(key, (n, j))]
-#        return ret, mem
-
-        ret = []
-        #MAYBE THERE IS ALSO TYPE, BUT THEN I MUST WRITE IT ALWAYS IN THE PATTERN FILE
-        #print patt.type
-        if not patt.type:
-            for key in mem[i].keys():
-                for n, j in mem[i][key]:
-                    if self.equal_to_pattern(patt, n):
-                        ret += [(key, (n, j))]
-        elif is_terminalc(patt.type):
-            if zz(self.yy, patt.type) in mem[i]:
-                for n, j in mem[i][zz(self.yy, patt.type)]:
-                    if self.equal_to_pattern(patt, n):
-                        ret += [(zz(self.yy, patt.type), (n, j))]
-        else:
-            #print patt.type
-            for type in xx[patt.type]:
-                #print type
-                if not mem[i].has_key(type):
-                    #print get_mem(self.atn, type, STATE_START, mem, i)
-                    mem = get_mem(self.atn, type, STATE_START, mem, i)
-
-                for n, j in mem[i][type]:
-                    if self.equal_to_pattern(patt, n):
-                        ret += [(type, (n, j))]
-        #print ret
-        return ret, mem
-
-    def insert_patt(self, mem, changed, start):
-        for i in range(len(changed)):
-            del mem[start]
-        for i in range(start):
-            for key in mem[i].keys():
-                if not is_terminal(key):
-                    del mem[i][key]
-#                for n, j in mem[i][key]:
-#                    if j > start:
-#                        del mem[i][key]
-        i = start
-        for c in changed:
-            mem.insert(i, {})
-            for key, y in c:
-                if mem[i].has_key(key):
-                    mem[i][key] += [y]
-                else:
-                    mem[i][key] = [y]
-            i += 1
-        return mem
-
-    def get_the_right(self, w, fr, temp, j, shift):
-        if w.text[0] == "*":
-            i = 0
-            #print fr, temp
-            for f in fr:
-                if f.text == w.text:
-                    tt = []
-                    for t in temp[i]:
-                        #print t[1][1], i, j
-                        tt += [(t[0], (t[1][0], j - i + t[1][1]))]
-                        tt[-1][1][0].copy_properties(w)
-
-                    return tt
-                i += 1
-        else:
-            u = None
-            #print w.text, w.meaning
-            for k in self.vocabulary[w.text]:
-                if k.meaning == w.meaning:
-                    u = k
-                    break
-            return [(zz(self.yy, u.type), (u, j + 1 + shift))] #MAYBE SOMEHOW WITHOUT SHIFT.........
-
-    def look_for_patterns(self, mem):
-        for from_, to_ in self.patts:
-            i = 0
-            while i < len(mem):
-                j = 0
-                temp = []
-
-                while j < len(from_) and i + j < len(mem):
-                    t, mem = self.get_eq(from_[j], mem, i + j)
-                    #print t
-                    if t == []: break
-                    temp.append(t)
-                    j += 1
-
-                if j == len(from_):
-                    res = []
-                    j = 0
-                    for y in to_:
-                        res += [self.get_the_right(y, from_, temp, j, i)]
-                        j += 1
-                    yield self.insert_patt(mem, res, i)
-                i += 1
-
-
     def init_sentence(self, sent, first = "IP"):
-        ss = self.remove_contr(sent, self.contr)
+        ss = self.remove_contr(sent)
         res = []
         for s in ss:
             y = self.divide_into_words(s)
