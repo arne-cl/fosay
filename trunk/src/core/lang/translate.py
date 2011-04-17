@@ -2,7 +2,8 @@ __author__="zoltan kochan"
 __date__ ="$28 june 2010 1:02:10$"
 
 from core.lang.process import referencing
-from core.lang.process import case_frame_to_lang, lang_to_case_frame, meaning_shift
+from core.lang.process import case_frame_to_lang, lang_to_case_frame
+from core.kb import meaning_shift
 from core.lang.scoring import eupony_score
 from core.lang.scoring import pithiness_score
 from core.lang.scoring import direct_pithiness_score
@@ -28,34 +29,16 @@ def interlingua_to_str(dc, c = 0):
             else:
                 for item in dc[key]:
                     res += b1 + str(key) + ":" + "\n"
-                    res += interlingua_to_str(item, c + 2)
+                    res += interlingua_to_str(item, c + 1)
         elif not isinstance(dc[key], int) and not isinstance(dc[key], float) and not isinstance(dc[key], str): #isinstance(dc, dict):!!!!!!!!!!
             res += b1 + str(key) + ":" + "\n"
-            res += interlingua_to_str(dc[key], c + 2)
+            res += interlingua_to_str(dc[key], c + 1)
         else:
             res += b1 + str(key) + ": " + str(dc[key]) + "\n"
     return res + b + "}" + "\n"
 
-def print_interlingua(dc, c = 0):
-    d = 5
-    b = d*c*" "
-    b1 = b + d*" "
-    print(b + "{")
-    for key in dc.keys():
-        if dc[key] == None: continue
-        if type(dc[key]) == list:
-            if key == concept["tags"]:
-                print(b1 + str(key) + ":", ', '.join(dc[key]))
-            else:
-                for item in dc[key]:
-                    print(b1 + str(key) + ":")
-                    print_interlingua(item, c + 1)
-        elif not isinstance(dc[key], int) and not isinstance(dc[key], str): #isinstance(dc, dict):!!!!!!!!!!
-            print(b1 + str(key) + ":")
-            print_interlingua(dc[key], c + 1)
-        else:
-            print(b1 + str(key) + ":", dc[key])
-    print(b + "}")
+def print_interlingua(dc):
+    print(interlingua_to_str(dc))
 
 
 from datetime import datetime

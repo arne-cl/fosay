@@ -165,7 +165,7 @@
 "have"
 {
     transcription: "hæv"
-    lemma: "havo"
+    lemma: "havi"
     stem: "havi.have"
     type: verb
     tense: present

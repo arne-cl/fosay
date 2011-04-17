@@ -130,8 +130,8 @@
 "school" :: plural-sz; possessive; accusative
 {
     transcription: "skul"
-    lemma: "lerneyo"
-    stem: "lerneyo.school"
+    lemma: "ckule"
+    stem: "ckule.school"
     real-number: singular
     type: noun
     number: singular
@@ -156,8 +156,8 @@
 "university" :: plural-ies; possessive; accusative
 {
     transcription: "junɪvərsəti"
-    lemma: "bas-lerneyo"
-    stem: "bas-lerneyo.university"
+    lemma: "balcu'e"
+    stem: "balcu'e.university"
     real-number: singular
     type: noun
     number: singular
@@ -182,8 +182,8 @@
 "elder" :: possessive; plural-sz; accusative
 {
     transcription: "ɛldər"
-    lemma: "nuy-homulo"
-    stem: "nuy-homulo.elder"
+    lemma: "dzena"
+    stem: "dzena.elder"
     real-number: singular
     type: noun
     number: singular
