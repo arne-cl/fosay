@@ -45,15 +45,15 @@
 "greatly"
 {
     transcription: "gretli"
-    lemma: "greatly"
-    stem: "great"
+    lemma: "banli"
+    stem: "banli.great"
     type: adverb
 }
 "last"
 {
     transcription: "læst"
-    lemma: "lasta"
-    stem: "lasta.last"
+    lemma: "prula'i"
+    stem: "prula'i.last"
     type: adjective
 }
 "not"[nɑt]
@@ -64,8 +64,8 @@
 "once upon a time"
 {
     transcription: "wəns əpɑn ə tajm"
-    lemma: "once"
-    stem: "once.once upon a time"
+    lemma: "paroi"
+    stem: "paroi.once upon a time"
     type: adverb
     tense: past
     adverb-type: time
@@ -81,9 +81,9 @@
 }
 "tomorrow"
 {
-    transcription: "bavlamdei"
-    lemma: "on posdjorno"
-    stem: "on posdjorno.tomorrow"
+    transcription: "təmɑro"
+    lemma: "bavlamdei"
+    stem: "bavlamdei.tomorrow"
     type: adverb
     tense: future
     adverb-type: time

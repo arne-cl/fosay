@@ -1,11 +1,11 @@
 "a long time ago"
 {
-    meaning: "a long time ago"
+    lemma: "a long time ago"
     type: adverb
 }
 "am"
 {
-    meaning: "esi"
+    lemma: "esi"
     type: auxiliary
     number: singular
     persone: first
@@ -19,137 +19,137 @@
 }
 "any"
 {
-    meaning: "any"
+    lemma: "any"
     type: pronoun
 }
 "anybody"
 {
-    meaning: "anybody"
+    lemma: "anybody"
     type: pronoun
 }
 "anyone"
 {
-    meaning: "anybody"
+    lemma: "anybody"
     type: pronoun
 }
 "esi"
 {
-    meaning: "esi"
+    lemma: "esi"
     type: auxiliary
 }
 "at(time)"
 {
-    meaning: "at(time)"
+    lemma: "at(time)"
     type: preposition
 }
 "be"
 {
-    meaning: "be"
+    lemma: "be"
     type: auxiliary
 }
 "melbi"
 {
-    meaning: "melbi"
+    lemma: "melbi"
     type: adjective
 }
 "melbi"
 {
-    meaning: "melbi"
+    lemma: "melbi"
     type: adverb
 }
 ".ivan"
 {
-    meaning: ".ivan"
+    lemma: ".ivan"
     type: noun
     persone: third
     noun-type: proper
 }
 "nanla"
 {
-    meaning: "nanla"
+    lemma: "nanla"
     type: noun
     persone: third
     noun-type: common
 }
 "povi"
 {
-    meaning: "povi"
+    lemma: "povi"
     type: verb
 }
 "djedi"
 {
-    meaning: "djedi"
+    lemma: "djedi"
     type: noun
     persone: third
     noun-type: common
 }
 "day after day"
 {
-    meaning: "day after day"
+    lemma: "day after day"
     type: adverb
 }
 "do"
 {
-    meaning: "do"
+    lemma: "do"
     type: auxiliary
 }
 "8"
 {
-    meaning: "8"
+    lemma: "8"
     type: numeral
 }
 "yun-homino"
 {
-    meaning: "nixli"
+    lemma: "nixli"
     type: noun
     persone: third
     noun-type: common
 }
 "cadzu"
 {
-    meaning: "cadzu"
+    lemma: "cadzu"
     type: verb
 }
 "fetsi"
 {
-    meaning: "fetsi"
+    lemma: "fetsi"
     type: adjective
 }
 "nakni"
 {
-    meaning: "nakni"
+    lemma: "nakni"
     type: adjective
 }
 "tunba"
 {
-    meaning: "tunba"
+    lemma: "tunba"
     type: noun
     persone: third
     noun-type: common
 }
 "mensi"
 {
-    meaning: "mensi"
+    lemma: "mensi"
     type: noun
     persone: third
     noun-type: common
 }
 "bruna"
 {
-    meaning: "bruna"
+    lemma: "bruna"
     type: noun
     persone: third
     noun-type: common
 }
 "nanmu"
 {
-    meaning: "nanmu"
+    lemma: "nanmu"
     type: noun
     persone: third
     noun-type: common
 }
 "yuna"
 {
-    meaning: "yuno"
+    lemma: "yuno"
     type: adjective
 }

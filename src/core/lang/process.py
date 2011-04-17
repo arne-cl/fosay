@@ -575,33 +575,3 @@ def case_frame_to_lang(caseframe, target_lang, first="IP"):
         for y in pre_morphen(target_lang, x):
             for z in morphen(target_lang, y):
                 yield z
-
-#if there is not some word in the aim lang
-def meaning_shift(cf, lang):
-    '''Interlingua approximation'''
-    if type(cf) != dict:
-        return cf
-
-    for key in [x for x in cf.keys()]: #beacause of conjunctions is the error!
-        if is_terminalc(key):
-            if not cf[key][concept["lemma"]] in lang.meanings.keys():
-                #replace with deffination
-                #checking for properness
-                q = cf_diff[cf[key][concept["lemma"]]]
-                temp = meaning_shift(q, lang)
-                tt = cf[key][concept["order_number"]]
-                del cf[key]
-                h = temp[[k for k in temp.keys()][0]] #because of {16: {16:
-                #WTF? IT WILL CHACK IT TWICE!!!
-                for key in h.keys():
-                    cf[key] = h[key]
-                cf[concept["order_number"]] = tt
-        elif type(cf[key]) == tuple:
-            ci, children = cf[key]
-            r = []
-            for c in children:
-                r += [meaning_shift(c, lang)]
-            cf[key] = ci, r
-        else:
-            cf[key] = meaning_shift(cf[key], lang)
-    return cf
