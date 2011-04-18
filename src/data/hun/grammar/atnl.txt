@@ -10,9 +10,7 @@ np1-att := difinity, case, number, persone
 PRON-empty-att := case, real-number->number, persone, form
 
 PUNCT is punctuation
-CONJ is conjunction
 ADJ is adjective
-AUX is auxiliary
 ADV is adverb
 V is verb
 P is preposition
@@ -24,7 +22,6 @@ NUM is numeral
 NOT is negative
 ip is sentence
 subj is subject
-cps is subject
 np1 is noun-phrase
 np is noun-phrase
 ap is epithet
@@ -32,21 +29,15 @@ time is time
 vp is verb-phrase
 vp1 is verb-phrase
 vp2 is verb-phrase
-mvp is verb-phrase
-ivp is verb-phrase
-pobj is accusative
 inobj is inessive
 illobj is illative
 elobj is elative
 obj is accusative
-cpo is accusative
 poss is possessive
 poss1 is possessive
 pp is preposition-phrase
-ppv is preposition-phrase
 prcl is clause
 subcl is clause
-cpa is adverbial
 nump is numeral-phrase
 
 #grammar

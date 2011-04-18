@@ -723,7 +723,7 @@ def _parse_text(s, print_to_console):
     global atn, text, prior, label_types
     atn = {}
     prior = {}
-    label_types = {'JMP': const.type['epsilon']}
+    label_types = {'JMP': const.type['epsilon'], 'CONJ': const.type['conjunction']}
     text = s
     lexer.lineno = 1
     try:
