@@ -30,8 +30,8 @@ INDEFINITE = 100000 #TODO: but should show the minimal count!!!
 
 INHERIT_NAME = "inherit"
 INHERIT_VALUE = None
-NEUTRAL = "neutral"#0
-NONE = "none"
+#NEUTRAL_VALUE = "neutral"#0
+NONE_VALUE = "none"
 
 #class XEnum(Enum):
 #    def __init__(self, concept, name, enumList):
@@ -55,7 +55,7 @@ def create_dict_t(concept, list):
         d[item] = item
     #    d["@" + item] = (concept, item)
     ########
-    d["none"] = NONE
+    d["none"] = NONE_VALUE
     #d["@none"] = (concept, NONE)
     ###########
     d[INHERIT_NAME] = INHERIT_VALUE
@@ -792,10 +792,10 @@ modificators = [
 def eq(a, b):
     #print(a, b)
     return a == b or \
-        None in [a, b] or \
-        a == NEUTRAL and b != NONE or \
-        b == NEUTRAL and a != NONE
-        #return a == b or a == None or b == None
+        a == INHERIT_VALUE or \
+        b == INHERIT_VALUE
+        #a == INHERIT_VALUE and b != NONE_VALUE or \
+        #b == INHERIT_VALUE and a != NONE_VALUE
 
 def eqx(name, a, b):
     return eq(a.attr(name), b.attr(name))

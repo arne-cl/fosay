@@ -8,7 +8,7 @@ from copy import deepcopy
 import core.constants as const
 from core.constants import concept, difinity, form
 from core.constants import STATE_START, STATE_END, STATE_CONJ_A1, STATE_CONJ_A4
-from core.constants import NONE
+from core.constants import NONE_VALUE
 from core.constants import is_nonterminalc, is_terminalc, eqx, is_prop
 
 from core.constants import quantity
@@ -240,10 +240,6 @@ min_str = {
     const.type["clause"]: [const.type["subject"], const.type["verb-phrase"]]
     }
 
-default_value = {
-    concept["truth"]: 1.0
-}
-
 transferred_attributes = {
     const.type["noun"]:
     [
@@ -254,6 +250,7 @@ transferred_attributes = {
         concept["form"],
         concept["tags"],
         concept["personal-name"],
+        concept["case2"]
     ],
     const.type["pronoun"]:
     [
@@ -296,7 +293,7 @@ transferred_attributes = {
         concept["persone"],
         concept["difinity"],
         concept["quantity"],
-        concept["quantity-number"],
+        concept["quantity-number"]
     ],
     const.type["time"]:
     [
@@ -312,7 +309,8 @@ transferred_attributes = {
 }
 
 default = {
-    concept["form"]: form["formal"] ##########
+    concept["form"]: form["formal"], ##########
+    concept["truth"]: 1.0
 }
 
 exclusions = [
@@ -341,19 +339,20 @@ def lang_to_case_frame(unit):
                 cf.update(lang_to_case_frame(e))
         for c in transferred_attributes[unit.type]:
             if unit.attr(c) == None:
-                if c in default_value:
-                    cf[c] = default_value[c]
+                if c in default:
+                    cf[c] = default[c]
                 elif not c in exclusions:
                     print(unit.type, c)
                     raise NotImplementedError
                     #continue
-            cf[c] = unit.attr(c)
+            else:
+                cf[c] = unit.attr(c)
 
         if len(unit.blocks) == 1:
-            if not cf.get(concept["quantity"], None) in [None, NONE]:
+            if not cf.get(concept["quantity"], None) in [None, NONE_VALUE]:
                 transferred_attributes[const.type["noun"]].remove(concept["real-number"])
             cf.update(lang_to_case_frame(unit.blocks[0]))
-            if not cf.get(concept["quantity"], None) in [None, NONE]:
+            if not cf.get(concept["quantity"], None) in [None, NONE_VALUE]:
                 transferred_attributes[const.type["noun"]].append(concept["real-number"])
         else:
             for b in unit.blocks:
@@ -508,7 +507,7 @@ def pre_morphen(lang, st, ind = 0):
                     break
             else:
                 for f in st.fixed: #################################################
-                    if r.attr(f) == NONE:
+                    if r.attr(f) == NONE_VALUE:
                         print("xxxxxxxxxxxpre_morphenpre_morphenpre_morphenpre_morphen")
                         break#############################################################################################################################
                 else:

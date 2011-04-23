@@ -189,7 +189,13 @@ class TranslateTestCase(unittest.TestCase):
         [
             "A nő háza látott egy fiút.",
         ]
-    )
+    ),
+    (
+        "Zoltan Kochan saw a house.",
+        [
+            "Kocsán Zoltán látott egy házat.",
+        ]
+    ),
     ]
 
     def test_translate_eng_to_hun(self):

@@ -39,6 +39,8 @@ pp is preposition-phrase
 prcl is clause
 subcl is clause
 nump is numeral-phrase
+FN is noun{personal-name: first-name}
+SN is noun{personal-name: surname}
 
 #grammar
 
@@ -94,19 +96,19 @@ time :-
     $ADV<tense>{adverb-type: time}
 
 subj :-
-    $np<np-att>{case: nominative}
+    $np<np-att>{case: nominative; case2: nominative}
 
 obj :-
-    $np<np-att>{case: accusative}
+    $np<np-att>{case: accusative; case2: nominative}
 
 inobj :-
-    $np{case: inessive}
+    $np{case: inessive; case2: nominative}
 
 illobj :-
-    $np{case: illative}
+    $np{case: illative; case2: nominative}
 
 elobj :-
-    $np{case: elative}
+    $np{case: elative; case2: nominative}
 
 pp :-
     P<$case>
@@ -150,8 +152,10 @@ np{quantity: none; noun-type: proper; difinity: difinite; number: singular} :-
     $N<case2, noun-type, $N-att>
 
 np{quantity: none; difinity: difinite; number: singular; noun-type: proper} :-
-    $N<case2, noun-type, $N-att>{personal-name: first-name}
-    $N<case2, noun-type, $N-att>{personal-name: surname}
+    (
+    $SN<case2, noun-type, $N-att>
+    $FN<case2, noun-type, $N-att>
+    )
 
 np{number: singular} :-
     QUA<$quantity, $quantity-number, $difinity>
@@ -207,3 +211,4 @@ np ::=
     1.0: poss np1
     #0.8: ap N
     #0.8: JMP N #########
+    1.0: SN FN
