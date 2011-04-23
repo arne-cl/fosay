@@ -38,6 +38,8 @@ pp is preposition-phrase
 prcl is clause
 subcl is clause
 nump is numeral-phrase
+FN is noun{personal-name: first-name}
+SN is noun{personal-name: surname}
 
 ip :-
     $prcl
@@ -124,8 +126,8 @@ np :-
 
 np{quantity: none; difinity: difinite; number: singular; noun-type: proper} :-
     (
-    $N<case, gender>{personal-name: first-name}
-    $N<case, gender>{personal-name: surname}
+    $FN<case, gender>
+    $SN<case, gender>
     )
 
 &np :-
@@ -143,3 +145,4 @@ prcl ::=
 
 np ::=
     1.0: np poss
+    1.0: SN FN
