@@ -70,6 +70,45 @@
     noun-type: proper
     personal-name: surname
 }
+"johnson"[dʒɑnsən]
+{
+    lemma: "djonson."
+    real-number: singular
+    type: noun
+    tags: english
+    number: singular
+    persone: third
+    case: nominative
+    case-2: nominative
+    noun-type: proper
+    personal-name: surname
+}
+"lokk"[lokk]
+{
+    lemma: "lok."
+    real-number: singular
+    type: noun
+    tags: english
+    number: singular
+    persone: third
+    case: nominative
+    case-2: nominative
+    noun-type: proper
+    personal-name: surname
+}
+"smith"[smɪθ]
+{
+    lemma: "smit."
+    real-number: singular
+    type: noun
+    tags: english
+    number: singular
+    persone: third
+    case: nominative
+    case-2: nominative
+    noun-type: proper
+    personal-name: surname
+}
 "jános"
 {
     transcription: "janoʃ"
@@ -89,6 +128,20 @@
 {
     transcription: "dʒon"
     lemma: "ioxanan."
+    tags: english
+    real-number: singular
+    type: noun
+    form: formal
+    number: singular
+    persone: third
+    case: nominative
+    case-2: nominative
+    noun-type: proper
+    personal-name: first-name
+}
+"samuel"[sæmjul]
+{
+    lemma: "semu,el."
     tags: english
     real-number: singular
     type: noun

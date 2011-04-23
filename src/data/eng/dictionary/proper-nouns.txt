@@ -11,6 +11,18 @@
     personal-name: first-name
     case: nominative
 }
+"samuel"[sæmjul] :: possessive; accusative
+{
+    lemma: "semu,el."
+    tags: english
+    type: noun
+    number: singular
+    gender: masculine
+    persone: third
+    noun-type: proper
+    personal-name: first-name
+    case: nominative
+}
 "ivan" :: possessive; accusative
 {
     transcription: "ivan"
@@ -83,6 +95,39 @@
 {
     lemma: "kotcan."
     type: noun
+    number: singular
+    persone: third
+    noun-type: proper
+    personal-name: surname
+    case: nominative
+}
+"lokk"[lokk] :: possessive; accusative
+{
+    lemma: "lok."
+    type: noun
+    tags: english
+    number: singular
+    persone: third
+    noun-type: proper
+    personal-name: surname
+    case: nominative
+}
+"johnson"[dʒɑnsən] :: possessive; accusative
+{
+    lemma: "djonson."
+    type: noun
+    tags: english
+    number: singular
+    persone: third
+    noun-type: proper
+    personal-name: surname
+    case: nominative
+}
+"smith"[smɪθ] :: possessive; accusative
+{
+    lemma: "smit."
+    type: noun
+    tags: english
     number: singular
     persone: third
     noun-type: proper
