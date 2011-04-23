@@ -122,6 +122,12 @@ np :-
     [ap<gender, number -> quantity-number, extra-1, case -> quantity-case>]
     $N<$gender, $persone, $extra-1, case -> quantity-case, number -> quantity-number>
 
+np{quantity: none; difinity: difinite; number: singular; noun-type: proper} :-
+    (
+    $N<case, gender>{personal-name: first-name}
+    $N<case, gender>{personal-name: surname}
+    )
+
 &np :-
     $np<np-att>
 
