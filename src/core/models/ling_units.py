@@ -3,7 +3,7 @@ __date__ ="$30 жовт 2010 15:55:57$"
 
 import sys
 from core.constants import concept, noun_type, modificators, conj_str, number
-from core.constants import NONE
+from core.constants import NONE_VALUE
 from core.constants import eq
 from core.constants import XFROM_NUMBER, XFROM_EVERY, XFROM_FIRST, XFROM_LAST, XFROM_SUM
 from core.constants import type as ltype
@@ -301,7 +301,7 @@ class FlowerLingUnit(RelationLingUnit):
         return any([x.get_ghost() for x in self.left + self.blocks + self.right])
 
     def _top_down_shift(self, obj, name, value):
-        return value == NONE or value != NONE and self._shift_value(obj, name, value)
+        return value == NONE_VALUE or value != NONE_VALUE and self._shift_value(obj, name, value)
 
     def _agree(self, name):
         value = self._attrs.get(name, None)

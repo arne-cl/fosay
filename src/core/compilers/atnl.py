@@ -595,6 +595,7 @@ def p_attr_float(p):
 import copy
 
 def update_dict(c, b):
+    '''Unites two dictionaries'''
     if c is None: return b
     if b is None: return c
     a = copy.deepcopy(c)

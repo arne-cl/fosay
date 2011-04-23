@@ -9,6 +9,7 @@
     number: singular
     persone: third
     case: nominative
+    case2: nominative
     noun-type: common
 }
 "báty"
@@ -22,6 +23,7 @@
     number: singular
     persone: third
     case: nominative
+    case2: nominative
     noun-type: common
 }
 "testvér"
@@ -35,6 +37,7 @@
     number: singular
     persone: third
     case: nominative
+    case2: nominative
     noun-type: common
 }
 "lány" :: all-cases-3
@@ -48,6 +51,7 @@
     number: singular
     persone: third
     case: nominative
+    case2: nominative
     noun-type: common
 }
 "fiú" :: all-cases-2
@@ -61,6 +65,7 @@
     number: singular
     persone: third
     case: nominative
+    case2: nominative
     noun-type: common
 }
 "fiúcska"
@@ -74,6 +79,7 @@
     number: singular
     persone: third
     case: nominative
+    case2: nominative
     noun-type: common
 }
 "nő" :: all-cases-4
@@ -87,6 +93,7 @@
     number: singular
     persone: third
     case: nominative
+    case2: nominative
     noun-type: common
 }
 "ház" :: all-cases-1; possessed-1
@@ -100,7 +107,7 @@
     number: singular
     persone: third
     case: nominative
-    case2: nominative ########
+    case2: nominative
     noun-type: common
 }
 "tanár" :: all-cases-3
@@ -114,6 +121,6 @@
     number: singular
     persone: third
     case: nominative
-    case2: nominative ########
+    case2: nominative
     noun-type: common
 }
