@@ -1520,127 +1520,127 @@ possessed-1
 {
     text: "0>a"
     case: nominative
-    case2: possessed
+    case-2: possessed
 }
 possessed-1
 {
     text: "0>át"
     case: accusative
-    case2: possessed
+    case-2: possessed
 }
 possessed-1
 {
     text: "0>ában"
     case: inessive
-    case2: possessed
+    case-2: possessed
 }
 possessed-1
 {
     text: "0>ából"
     case: elative
-    case2: possessed
+    case-2: possessed
 }
 possessed-1
 {
     text: "0>ától"
     case: ablative
-    case2: possessed
+    case-2: possessed
 }
 possessed-1
 {
     text: "0>ának"
     case: dative
-    case2: possessed
+    case-2: possessed
 }
 possessed-1
 {
     text: "0>aként"
     case: essive-formal
-    case2: possessed
+    case-2: possessed
 }
 possessed-1
 {
     text: "0>ául"
     case: essive-modal
-    case2: possessed
+    case-2: possessed
 }
 possessed-1
 {
     text: "0>ával"
     case: instrumental
-    case2: possessed
+    case-2: possessed
 }
 possessed-1
 {
     text: "0>áé"
     case: possessive
-    case2: possessed
+    case-2: possessed
 }
 possessed-1
 {
     text: "0>ánál"
     case: adessive
-    case2: possessed
+    case-2: possessed
 }
 possessed-1
 {
     text: "0>ához"
     case: allative
-    case2: possessed
+    case-2: possessed
 }
 possessed-1
 {
     text: "0>ával"
     case: comitative
-    case2: possessed
+    case-2: possessed
 }
 possessed-1
 {
     text: "0>áról"
     case: delative
-    case2: possessed
+    case-2: possessed
 }
 possessed-1
 {
     text: "0>ába"
     case: illative
-    case2: possessed
+    case-2: possessed
 }
 possessed-1
 {
     text: "0>ára"
     case: sublative
-    case2: possessed
+    case-2: possessed
 }
 possessed-1
 {
     text: "0>án"
     case: superessive
-    case2: possessed
+    case-2: possessed
 }
 possessed-1
 {
     text: "0>áig"
     case: terminative
-    case2: possessed
+    case-2: possessed
 }
 possessed-1
 {
     text: "0>ává"
     case: translative
-    case2: possessed
+    case-2: possessed
 }
 possessed-1
 {
     text: "0>áért"
     case: final
-    case2: possessed
+    case-2: possessed
 }
 possessed-1
 {
     text: "0>ai"
     case: nominative
-    case2: possessed
+    case-2: possessed
     real-number: plural
     number: plural
 }
@@ -1648,7 +1648,7 @@ possessed-1
 {
     text: "0>ait"
     case: accusative
-    case2: possessed
+    case-2: possessed
     real-number: plural
     number: plural
 }
@@ -1656,7 +1656,7 @@ possessed-1
 {
     text: "0>aiban"
     case: inessive
-    case2: possessed
+    case-2: possessed
     real-number: plural
     number: plural
 }
@@ -1664,7 +1664,7 @@ possessed-1
 {
     text: "0>aiból"
     case: elative
-    case2: possessed
+    case-2: possessed
     real-number: plural
     number: plural
 }
@@ -1672,7 +1672,7 @@ possessed-1
 {
     text: "0>aitól"
     case: ablative
-    case2: possessed
+    case-2: possessed
     real-number: plural
     number: plural
 }
@@ -1680,7 +1680,7 @@ possessed-1
 {
     text: "0>ainak"
     case: dative
-    case2: possessed
+    case-2: possessed
     real-number: plural
     number: plural
 }
@@ -1688,7 +1688,7 @@ possessed-1
 {
     text: "0>aiként"
     case: essive-formal
-    case2: possessed
+    case-2: possessed
     real-number: plural
     number: plural
 }
@@ -1696,7 +1696,7 @@ possessed-1
 {
     text: "0>aiul"
     case: essive-modal
-    case2: possessed
+    case-2: possessed
     real-number: plural
     number: plural
 }
@@ -1704,7 +1704,7 @@ possessed-1
 {
     text: "0>aival"
     case: instrumental
-    case2: possessed
+    case-2: possessed
     real-number: plural
     number: plural
 }
@@ -1712,7 +1712,7 @@ possessed-1
 {
     text: "0>aié"
     case: possessive
-    case2: possessed
+    case-2: possessed
     real-number: plural
     number: plural
 }
@@ -1720,7 +1720,7 @@ possessed-1
 {
     text: "0>ainál"
     case: adessive
-    case2: possessed
+    case-2: possessed
     real-number: plural
     number: plural
 }
@@ -1728,7 +1728,7 @@ possessed-1
 {
     text: "0>aihoz"
     case: allative
-    case2: possessed
+    case-2: possessed
     real-number: plural
     number: plural
 }
@@ -1736,7 +1736,7 @@ possessed-1
 {
     text: "0>aival"
     case: comitative
-    case2: possessed
+    case-2: possessed
     real-number: plural
     number: plural
 }
@@ -1744,7 +1744,7 @@ possessed-1
 {
     text: "0>airól"
     case: delative
-    case2: possessed
+    case-2: possessed
     real-number: plural
     number: plural
 }
@@ -1752,7 +1752,7 @@ possessed-1
 {
     text: "0>aiba"
     case: illative
-    case2: possessed
+    case-2: possessed
     real-number: plural
     number: plural
 }
@@ -1760,7 +1760,7 @@ possessed-1
 {
     text: "0>aira"
     case: sublative
-    case2: possessed
+    case-2: possessed
     real-number: plural
     number: plural
 }
@@ -1768,7 +1768,7 @@ possessed-1
 {
     text: "0>ain"
     case: superessive
-    case2: possessed
+    case-2: possessed
     real-number: plural
     number: plural
 }
@@ -1776,7 +1776,7 @@ possessed-1
 {
     text: "0>aiig"
     case: terminative
-    case2: possessed
+    case-2: possessed
     real-number: plural
     number: plural
 }
@@ -1784,7 +1784,7 @@ possessed-1
 {
     text: "0>aivá"
     case: translative
-    case2: possessed
+    case-2: possessed
     real-number: plural
     number: plural
 }
@@ -1792,7 +1792,7 @@ possessed-1
 {
     text: "0>aiért"
     case: final
-    case2: possessed
+    case-2: possessed
     real-number: plural
     number: plural
 }
@@ -1805,260 +1805,260 @@ possessive-1
 {
     text: "0>é"
     case: nominative
-    case2: possessive
+    case-2: possessive
 }
 possessive-1
 {
     text: "0>ét"
     case: accusative
-    case2: possessive
+    case-2: possessive
 }
 possessive-1
 {
     text: "0>éban"
     case: inessive
-    case2: possessive
+    case-2: possessive
 }
 possessive-1
 {
     text: "0>éból"
     case: elative
-    case2: possessive
+    case-2: possessive
 }
 possessive-1
 {
     text: "0>étól"
     case: ablative
-    case2: possessive
+    case-2: possessive
 }
 possessive-1
 {
     text: "0>énak"
     case: dative
-    case2: possessive
+    case-2: possessive
 }
 possessive-1
 {
     text: "0>éként"
     case: essive-formal
-    case2: possessive
+    case-2: possessive
 }
 possessive-1
 {
     text: "0>ául"
     case: essive-modal
-    case2: possessive
+    case-2: possessive
 }
 possessive-1
 {
     text: "0>ával"
     case: instrumental
-    case2: possessive
+    case-2: possessive
 }
 possessive-1
 {
     text: "0>áé"
     case: possessive
-    case2: possessive
+    case-2: possessive
 }
 possessive-1
 {
     text: "0>ánál"
     case: adessive
-    case2: possessive
+    case-2: possessive
 }
 possessive-1
 {
     text: "0>ához"
     case: allative
-    case2: possessive
+    case-2: possessive
 }
 possessive-1
 {
     text: "0>ával"
     case: comitative
-    case2: possessive
+    case-2: possessive
 }
 possessive-1
 {
     text: "0>áról"
     case: delative
-    case2: possessive
+    case-2: possessive
 }
 possessive-1
 {
     text: "0>ába"
     case: illative
-    case2: possessive
+    case-2: possessive
 }
 possessive-1
 {
     text: "0>ára"
     case: sublative
-    case2: possessive
+    case-2: possessive
 }
 possessive-1
 {
     text: "0>án"
     case: superessive
-    case2: possessive
+    case-2: possessive
 }
 possessive-1
 {
     text: "0>áig"
     case: terminative
-    case2: possessive
+    case-2: possessive
 }
 possessive-1
 {
     text: "0>ává"
     case: translative
-    case2: possessive
+    case-2: possessive
 }
 possessive-1
 {
     text: "0>áért"
     case: final
-    case2: possessive
+    case-2: possessive
 }
 possessive-1
 {
     text: "0>ai"
     case: nominative
-    case2: possessive
+    case-2: possessive
     number: plural
 }
 possessive-1
 {
     text: "0>áit"
     case: accusative
-    case2: possessive
+    case-2: possessive
     number: plural
 }
 possessive-1
 {
     text: "0>aiban"
     case: inessive
-    case2: possessive
+    case-2: possessive
     number: plural
 }
 possessive-1
 {
     text: "0>aiból"
     case: elative
-    case2: possessive
+    case-2: possessive
     number: plural
 }
 possessive-1
 {
     text: "0>aitól"
     case: ablative
-    case2: possessive
+    case-2: possessive
     number: plural
 }
 possessive-1
 {
     text: "0>ainak"
     case: dative
-    case2: possessive
+    case-2: possessive
     number: plural
 }
 possessive-1
 {
     text: "0>aiként"
     case: essive-formal
-    case2: possessive
+    case-2: possessive
     number: plural
 }
 possessive-1
 {
     text: "0>aiul"
     case: essive-modal
-    case2: possessive
+    case-2: possessive
     number: plural
 }
 possessive-1
 {
     text: "0>aival"
     case: instrumental
-    case2: possessive
+    case-2: possessive
     number: plural
 }
 possessive-1
 {
     text: "0>aié"
     case: possessive
-    case2: possessive
+    case-2: possessive
     number: plural
 }
 possessive-1
 {
     text: "0>ainál"
     case: adessive
-    case2: possessive
+    case-2: possessive
     number: plural
 }
 possessive-1
 {
     text: "0>aihoz"
     case: allative
-    case2: possessive
+    case-2: possessive
     number: plural
 }
 possessive-1
 {
     text: "0>aival"
     case: comitative
-    case2: possessive
+    case-2: possessive
     number: plural
 }
 possessive-1
 {
     text: "0>airól"
     case: delative
-    case2: possessive
+    case-2: possessive
     number: plural
 }
 possessive-1
 {
     text: "0>aiba"
     case: illative
-    case2: possessive
+    case-2: possessive
     number: plural
 }
 possessive-1
 {
     text: "0>aira"
     case: sublative
-    case2: possessive
+    case-2: possessive
     number: plural
 }
 possessive-1
 {
     text: "0>ain"
     case: superessive
-    case2: possessive
+    case-2: possessive
     number: plural
 }
 possessive-1
 {
     text: "0>aiig"
     case: terminative
-    case2: possessive
+    case-2: possessive
     number: plural
 }
 possessive-1
 {
     text: "0>aivá"
     case: translative
-    case2: possessive
+    case-2: possessive
     number: plural
 }
 possessive-1
 {
     text: "0>aiért"
     case: final
-    case2: possessive
+    case-2: possessive
     number: plural
 }
 ################################################################################

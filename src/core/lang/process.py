@@ -250,7 +250,6 @@ transferred_attributes = {
         concept["form"],
         concept["tags"],
         concept["personal-name"],
-        concept["case2"]
     ],
     const.type["pronoun"]:
     [

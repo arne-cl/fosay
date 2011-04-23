@@ -209,7 +209,7 @@ concept = create_dict([
     "lemma",
     "difinity",
     "case",
-    "case2",
+    "case-2",
     "tense",
     "transitivity",
     "aspect",
@@ -653,7 +653,7 @@ cases = [
 ##########################################################
 #http://hu.wikipedia.org/wiki/esetek_a_magyar_nyelvben
 case = create_dict_t(concept["case"], cases)
-case2 = create_dict_t(concept["case2"], cases)
+case_2 = create_dict_t(concept["case-2"], cases)
 quantity_case = create_dict_t(concept["quantity-case"], cases)
 adverb_type = create_dict_t(concept["adverb-type"], adverb_types)
 

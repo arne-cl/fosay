@@ -96,19 +96,19 @@ time :-
     $ADV<tense>{adverb-type: time}
 
 subj :-
-    $np<np-att>{case: nominative; case2: nominative}
+    $np<np-att>{case: nominative; case-2: nominative}
 
 obj :-
-    $np<np-att>{case: accusative; case2: nominative}
+    $np<np-att>{case: accusative; case-2: nominative}
 
 inobj :-
-    $np{case: inessive; case2: nominative}
+    $np{case: inessive; case-2: nominative}
 
 illobj :-
-    $np{case: illative; case2: nominative}
+    $np{case: illative; case-2: nominative}
 
 elobj :-
-    $np{case: elative; case2: nominative}
+    $np{case: elative; case-2: nominative}
 
 pp :-
     P<$case>
@@ -135,60 +135,60 @@ np :-
 np{quantity: none} :-
     ART<$difinity>{difinity: difinite}
     [ap<ap-att>]
-    $N<case2, noun-type, $N-att>
+    $N<case-2, noun-type, $N-att>
 
 np{quantity: none; number: singular; noun-type: common} :-
     ART<$difinity>{difinity: undifinite}
     [ap<ap-att>]
-    $N<case2, noun-type, $N-att>
+    $N<case-2, noun-type, $N-att>
 
 np{quantity: none; difinity: undifinite; number: plural} :-
     [ap<ap-att>]
-    $N<case2, noun-type, $N-att>
+    $N<case-2, noun-type, $N-att>
 
 #1.0:
 np{quantity: none; noun-type: proper; difinity: difinite; number: singular} :-
     [ap<ap-att>]
-    $N<case2, noun-type, $N-att>
+    $N<case-2, noun-type, $N-att>
 
 np{quantity: none; difinity: difinite; number: singular; noun-type: proper} :-
     (
-    $SN<case2, noun-type, $N-att>
-    $FN<case2, noun-type, $N-att>
+    $SN<case-2, noun-type, $N-att>
+    $FN<case-2, noun-type, $N-att>
     )
 
 np{number: singular} :-
     QUA<$quantity, $quantity-number, $difinity>
     [ap<ap-att>]
-    $N<case2, number, $case, $persone>
+    $N<case-2, number, $case, $persone>
 
 np :-
     poss
-    $np1<$N-att, $difinity>{case2: possessed}
+    $np1<$N-att, $difinity>{case-2: possessed}
 
 np :-
     poss1
-    $np<$N-att, $difinity>{case2: possessed}
+    $np<$N-att, $difinity>{case-2: possessed}
 
 &np :-
     $np<np-att>
 
 np1{quantity: none; difinity: difinite} :-
     [ap<ap-att>]
-    $N<case2, $N-att>
+    $N<case-2, $N-att>
 
 np1{difinity: difinite; number: singular} :-
     QUA<quantity, quantity-number>
     ap<ap-att>
-    $N<case2, number, $case, $persone>
+    $N<case-2, number, $case, $persone>
 
 np1 :-
     poss1
-    $np<$N-att, $difinity>{case2: possessed}
+    $np<$N-att, $difinity>{case-2: possessed}
 
 np1{difinity: difinite} :-
     poss
-    $np1<$N-att, $difinity>{case2: possessed}
+    $np1<$N-att, $difinity>{case-2: possessed}
 
 &np1 :-
     $np1<np1-att>
