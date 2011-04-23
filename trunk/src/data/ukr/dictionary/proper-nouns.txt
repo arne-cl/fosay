@@ -11,6 +11,18 @@
     noun-type: proper
     personal-name: first-name
 }
+"семюель"[semjuelʲ]
+{
+    lemma: "semu,el."
+    type: noun
+    tags: english
+    number: singular
+    gender: masculine
+    persone: third
+    case: nominative
+    noun-type: proper
+    personal-name: first-name
+}
 "іван" :: masculine-patronymic-1; feminine-patronymic-1
 {
     transcription: "ivan"
@@ -70,6 +82,39 @@
     lemma: "cevtcenkos."
     type: noun
     tags: ukrainian
+    number: singular
+    persone: third
+    case: nominative
+    noun-type: proper
+    personal-name: surname
+}
+"локк"[lok]
+{
+    lemma: "lok."
+    type: noun
+    tags: english
+    number: singular
+    persone: third
+    case: nominative
+    noun-type: proper
+    personal-name: surname
+}
+"джонсон"[djonson]
+{
+    lemma: "djonson."
+    type: noun
+    tags: english
+    number: singular
+    persone: third
+    case: nominative
+    noun-type: proper
+    personal-name: surname
+}
+"сміт"[smit]
+{
+    lemma: "smit."
+    type: noun
+    tags: english
     number: singular
     persone: third
     case: nominative
