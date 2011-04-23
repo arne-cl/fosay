@@ -112,6 +112,7 @@
     persone: third
     case: nominative
     noun-type: common
+    extra-1: 1
 }
 "дівчинку"
 {

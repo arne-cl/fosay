@@ -761,7 +761,7 @@ def _parse_text(s, print_to_console):
         return None
     atn = ret if ret != {} else None
     if atn is None: return None
-    return atn, label_types, standard_attr
+    return atn, label_types
 
 def parse(s, print_to_console=True):
     global path
