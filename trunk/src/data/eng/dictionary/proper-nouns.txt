@@ -51,6 +51,16 @@
     personal-name: first-name
     case: nominative
 }
+"kochan"[kotʃan] :: possessive; accusative
+{
+    lemma: "kotcan."
+    type: noun
+    number: singular
+    persone: third
+    noun-type: proper
+    personal-name: surname
+    case: nominative
+}
 "uzhhorod" :: possessive; accusative
 {
     transcription: "uʒhorod"

@@ -233,27 +233,33 @@ def meaning_shift(cf, lang):
     for key in [x for x in cf.keys()]: #beacause of conjunctions is the error!
         #print(key)
         if is_terminalc(key):
-            lemma = cf[key][concept["lemma"]]
-            if not lemma is None and not lemma in lang.meanings.keys():
-                #replace with deffination
-                #checking for properness
-                #print(cf[key][concept["lemma"]], cf_diff[cf[key][concept["lemma"]]])
-                q = cf_diff[cf[key][concept["lemma"]]]
-                temp = meaning_shift(q, lang)
-                tt = cf[key][concept["order-number"]]
-                del cf[key]
-                h = temp[[k for k in temp.keys()][0]] #because of {16: {16:
-                #WTF? IT WILL CHACK IT TWICE!!!
-                for key in h.keys():
-                    cf[key] = h[key]
-                cf[concept["order-number"]] = tt
-                #print(cf)
-        elif type(cf[key]) == tuple:
-            ci, children = cf[key]
-            r = []
-            for c in children:
-                r += [meaning_shift(c, lang)]
-            cf[key] = ci, r
+            if type(cf[key]) == type([]):
+                r = []
+                for c in cf[key]:
+                    r += [meaning_shift(c, lang)]
+                cf[key] = r
+            else:
+                lemma = cf[key][concept["lemma"]]
+                if not lemma is None and not lemma in lang.meanings.keys():
+                    #replace with deffination
+                    #checking for properness
+                    #print(cf[key][concept["lemma"]], cf_diff[cf[key][concept["lemma"]]])
+                    q = cf_diff[cf[key][concept["lemma"]]]
+                    temp = meaning_shift(q, lang)
+                    tt = cf[key][concept["order-number"]]
+                    del cf[key]
+                    h = temp[[k for k in temp.keys()][0]] #because of {16: {16:
+                    #WTF? IT WILL CHACK IT TWICE!!!
+                    for key in h.keys():
+                        cf[key] = h[key]
+                    cf[concept["order-number"]] = tt
+                    #print(cf)
+###        elif type(cf[key]) == tuple:
+###            ci, children = cf[key]
+###            r = []
+###            for c in children:
+###                r += [meaning_shift(c, lang)]
+###            cf[key] = ci, r
         else:
             cf[key] = meaning_shift(cf[key], lang)
     return cf

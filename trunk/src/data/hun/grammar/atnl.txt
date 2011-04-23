@@ -149,6 +149,10 @@ np{quantity: none; noun-type: proper; difinity: difinite; number: singular} :-
     [ap<ap-att>]
     $N<case2, noun-type, $N-att>
 
+np{quantity: none; difinity: difinite; number: singular; noun-type: proper} :-
+    $N<case2, noun-type, $N-att>{personal-name: first-name}
+    $N<case2, noun-type, $N-att>{personal-name: surname}
+
 np{number: singular} :-
     QUA<$quantity, $quantity-number, $difinity>
     [ap<ap-att>]

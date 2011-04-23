@@ -56,7 +56,10 @@ def find_maxposs(caseframe):
     res = 0
     for c in caseframe.keys():
         if not is_prop(c):
-            res += 1
+            if type(caseframe[c]) == type([]):
+                res += len(caseframe[c])
+            else:
+                res += 1
     return res
 
 #synthesize
@@ -88,7 +91,11 @@ def unparse(lang, label, state, caseframe, parent = None):
                 if is_prop(key):
                     parent.attr(key, caseframe.get(key, None))
 
-        if lang.to_type_code(label) in caseframe and type(caseframe[lang.to_type_code(label)]) == list:
+        if lang.to_type_code(label) in caseframe and \
+            type(caseframe[lang.to_type_code(label)]) == list and \
+            concept["conj-function"] in caseframe and \
+            not caseframe[concept["conj-function"]] is None:
+
             if not STATE_CONJ_A1 in net: return ###it is needed when we go on a way of an empty alternative. Like NP:EMPTY
             objs = caseframe[lang.to_type_code(label)]
             conj = caseframe[concept["conj-function"]], caseframe[concept["conj-type"]], caseframe[concept["conj-str"]]
@@ -116,19 +123,29 @@ def unparse(lang, label, state, caseframe, parent = None):
                     if nextState == STATE_CONJ_A1: continue
 
                     cl = lang.to_type_code(labl)
-                    words = \
-                        [Token(cl)] \
-                        if cl in modificators and req(cl, caseframe) else \
-                        unparse(lang, labl, STATE_START, caseframe.get(cl), None)
+                    if cl in modificators and req(cl, caseframe):
+                        tmp = deepcopy(caseframe)
+                        words = [(Token(cl), tmp)]
+                    elif type(caseframe.get(cl)) == type([]):
+                        words = []
+                        for i in range(len(caseframe.get(cl))):
+                            tmp = deepcopy(caseframe)
+                            if len(tmp[cl]) == 1:
+                                cf = tmp[cl][0]
+                                del tmp[cl]
+                            else:
+                                cf = tmp[cl].pop(i)
+                            words += [(word, deepcopy(tmp)) for word in unparse(lang, labl, STATE_START, cf, None)]
+                    else:
+                        tmp = deepcopy(caseframe)
+                        if cl in tmp:
+                            del tmp[cl]
+                        words = [(word, deepcopy(tmp)) for word in unparse(lang, labl, STATE_START, caseframe.get(cl), None)]
 
-                    for word in words:
+                    for word, cf in words:
                         par = deepcopy(parent)
                         for x in f(lang, par, word) if f else [par]:
-                            cf = deepcopy(caseframe)
-                            if lang.to_type_code(labl) in cf.keys():
-                                del cf[lang.to_type_code(labl)]
-
-                            for rest in unparse(lang, label, nextState, cf, x):
+                            for rest in unparse(lang, label, nextState, deepcopy(cf), x):
                                 good_speed = True
                                 yield rest
                 i += 1
@@ -312,15 +329,12 @@ def lang_to_case_frame(unit):
             cf[c] = unit.attr(c)
             if cf[c] == None and c in default.keys():
                 cf[c] = default[c]
-    elif len(unit.blocks) > 1:
+    elif len(unit.blocks) > 1 and not unit.relation is None:
         t = unit.blocks[0].type
-        #print(curr_type)
-        #print(len(eng.blocks))
         cf[concept["conj-str"]] = unit.relation.conj_str
         cf[concept["conj-type"]] = unit.relation.conj_type
         cf[concept["conj-function"]] = unit.relation.function_number
-        cf[t] = [lang_to_case_frame(y)[y.type] for y in unit.blocks] #########
-        #print(cf)
+        cf[t] = [lang_to_case_frame(y)[y.type] for y in unit.blocks]
     else:
         for e in unit.left + unit.right:
             if not e.type in modificators: ##and (e.type != TERMINAL_DETERMINER or not e.attr(concept["difinity"])): #OR JUST TERMINAL_ARTICLE
@@ -335,12 +349,18 @@ def lang_to_case_frame(unit):
                     #continue
             cf[c] = unit.attr(c)
 
-        if not cf.get(concept["quantity"], None) in [None, NONE]:
-            transferred_attributes[const.type["noun"]].remove(concept["real-number"])
-        t = unit.blocks[0].type
-        cf.update(lang_to_case_frame(unit.blocks[0]))
-        if not cf.get(concept["quantity"], None) in [None, NONE]:
-            transferred_attributes[const.type["noun"]].append(concept["real-number"])
+        if len(unit.blocks) == 1:
+            if not cf.get(concept["quantity"], None) in [None, NONE]:
+                transferred_attributes[const.type["noun"]].remove(concept["real-number"])
+            cf.update(lang_to_case_frame(unit.blocks[0]))
+            if not cf.get(concept["quantity"], None) in [None, NONE]:
+                transferred_attributes[const.type["noun"]].append(concept["real-number"])
+        else:
+            for b in unit.blocks:
+                if b.type in cf:
+                    cf[b.type] += [lang_to_case_frame(b)[b.type]]
+                else:
+                    cf[b.type] = [lang_to_case_frame(b)[b.type]]
 
 #        #mosaic translation
 #        if not curr_type in cf.keys():
@@ -356,19 +376,21 @@ def nouns(cf, ord = None):
     #print(cf)
     for key in cf.keys():
         if key == const.type["noun-phrase"]:
-            if type(cf[key]) == list: # const.type["noun_phrase"] in cf[key].keys() and type(cf[key][const.type["noun_phrase"]]) == tuple:#!= dict:
-                #print(cf[key], cf[key][const.type["noun_phrase"]])
-                #a, b = cf[key][const.type["noun_phrase"]] ######################it is a bad structure!!
-                for x in cf[key]:
+            if concept['conj-str'] in cf[key].keys():
+                for x in cf[key][key]:
                     if const.type["noun"] in x.keys():
                         p += [(x[const.type["noun"]].get(concept["order-number"], None) if ord == None else ord, x)]
                     elif const.type["pronoun"] in x.keys():
                         p += [(x[const.type["pronoun"]].get(concept["order-number"], None) if ord == None else ord, x)]
-                    else:
-                        raise Exception()
+                    elif const.type["noun-phrase"] in x.keys():
+                        p += nouns(x, cf[key].get(concept["order-number"], None))
             else:
                 if const.type["noun"] in cf[key].keys():
-                    p += [(cf[key][const.type["noun"]].get(concept["order-number"], None) if ord == None else ord, cf[key])]
+                    if type(cf[key][const.type["noun"]]) == type([]):
+                        for item in cf[key][const.type["noun"]]:
+                            p += [(item.get(concept["order-number"], None) if ord == None else ord, {key: item})]
+                    else:
+                        p += [(cf[key][const.type["noun"]].get(concept["order-number"], None) if ord == None else ord, cf[key])]
                 elif const.type["pronoun"] in cf[key].keys():
                     p += [(cf[key][const.type["pronoun"]].get(concept["order-number"], None) if ord == None else ord, cf[key])]
                 elif const.type["noun-phrase"] in cf[key].keys():

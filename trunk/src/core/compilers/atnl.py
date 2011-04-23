@@ -26,6 +26,7 @@ ERROR_INVALID_ATTACH = "'%s' is an invalid attachment attribute"
 ERROR_INVALID_ATTR = "'%s' is an invalid attribute"
 ERROR_INVALID_ATTR_PAR = "'%s' is an invalid attribute value"
 ERROR_INVALID_RULE_NAME = "'%s' is an invalid rule name"
+ERROR_INVALID_TYPE = "'%s' is an invalid type"
 ERROR_INVALID_IDENT_NUM = "'%s' is an invalid identifier. An identifier should start with a letter of the latin alphabet"
 ERROR_INVALID_IDENT_HYPH = "'%s' is an invalid identifier. An identifier can't contain hyphen sequences"
 ERROR_INVALID_IDENT_NUM_HYPH = "'%s' is an invalid identifier. An identifier should start with a letter of the latin alphabet and can't contain hyphen sequences"
@@ -236,8 +237,10 @@ def p_is_type(p):
     '''is_type : identifier identifier identifier newlines'''
     if p[2] != 'is':
         AtnlSyntaxError("'%s' is an invalid keyword", p, 2, p[2])
+    if not p[3] in const.type:
+        AtnlSyntaxError(ERROR_INVALID_TYPE, p, 3, p[3])
     global label_types
-    label_types[p[1]] = p[3]
+    label_types[p[1]] = const.type[p[3]]
 
 #-------------------------------------------------------------------------------
 # Priority rules

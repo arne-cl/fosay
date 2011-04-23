@@ -8,8 +8,22 @@
     number: singular
     persone: third
     case: nominative
+    case2: nominative ########
     noun-type: proper
     personal-name: first-name
+}
+"kocsán"
+{
+    transcription: "kotʃan"
+    lemma: "kotcan."
+    real-number: singular
+    type: noun
+    number: singular
+    persone: third
+    case: nominative
+    case2: nominative ########
+    noun-type: proper
+    personal-name: surname
 }
 "jános"
 {
