@@ -159,7 +159,7 @@ class Language():
             print('error')
         else:
             print('done')
-            self.atn, self.label_types, self._standard_attr = res
+            self.atn, self.label_types = res
 
     def _init_dictionary(self):
         self._init_tr()
@@ -287,26 +287,18 @@ class Language():
         return ss
 
     def type_labels(self, type):
-        return [label for label in self.label_types.keys() \
-            if (not label in self._standard_attr or self._standard_attr[label] == []) \
-                and self.label_types[label] == type]
-
-    def zz(self, s):
-        t = self.type_labels(s)
-        if len(t) > 1:
-            print(self.label_types, s)
-            raise NotImplementedError
-        return t[0]
+        return [label for label in self.label_types.keys() if self.label_types[label] == type]
 
     def words_to_mem(self, wss):
         mem = []
         for ws in wss:
             mem += [{}]
             for w in ws:
-                if self.zz(w.type) in mem[-1]:
-                    mem[-1][self.zz(w.type)] += [(w, len(mem))]
-                else:
-                    mem[-1][self.zz(w.type)] = [(w, len(mem))]
+                for type in self.type_labels(w.type):
+                    if type in mem[-1]:
+                        mem[-1][type] += [(w, len(mem))]
+                    else:
+                        mem[-1][type] = [(w, len(mem))]
         return mem
 
     def init_sentence(self, sent, first = "IP"):
