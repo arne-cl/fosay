@@ -159,7 +159,7 @@ class Language():
             print('error')
         else:
             print('done')
-            self.atn, self.label_types = res
+            self.atn, self.label_types, self._standard_attr = res
 
     def _init_dictionary(self):
         self._init_tr()
@@ -287,7 +287,9 @@ class Language():
         return ss
 
     def type_labels(self, type):
-        return [label for label in self.label_types.keys() if self.label_types[label] == type]
+        return [label for label in self.label_types.keys() \
+            if (not label in self._standard_attr or self._standard_attr[label] == []) \
+                and self.label_types[label] == type]
 
     def zz(self, s):
         t = self.type_labels(s)

@@ -234,13 +234,24 @@ def p_invalid_string(p):
 # is_type rules
 #-------------------------------------------------------------------------------
 def p_is_type(p):
-    '''is_type : identifier identifier identifier newlines'''
+    '''is_type : identifier identifier rule_name_simple
+               | identifier identifier rule_name_complex'''
     if p[2] != 'is':
         AtnlSyntaxError("'%s' is an invalid keyword", p, 2, p[2])
-    if not p[3] in const.type:
-        AtnlSyntaxError(ERROR_INVALID_TYPE, p, 3, p[3])
-    global label_types
-    label_types[p[1]] = const.type[p[3]]
+    global label_types, standard_attr
+    label_types[p[1]], standard_attr[p[1]] = p[3]
+
+def p_rule_name_simple(p):
+    '''rule_name_simple : identifier newlines'''
+    if not p[1] in const.type:
+        AtnlSyntaxError(ERROR_INVALID_TYPE, p, 1, p[1])
+    p[0] = (const.type[p[1]], [])
+
+def p_rule_name_complex(p):
+    '''rule_name_complex : identifier "{" attributes "}" newlines'''
+    if not p[1] in const.type:
+        AtnlSyntaxError(ERROR_INVALID_TYPE, p, 1, p[1])
+    p[0] = (const.type[p[1]], p[3])
 
 #-------------------------------------------------------------------------------
 # Priority rules
@@ -483,20 +494,24 @@ def p_term(p):
 
 def p_ling_unit(p):
     '''ling_unit : term_name'''
-    p[0] = (p[1][0], dict(f = p[1][1]))
+    global standard_attr
+    p[0] = (p[1][0], dict(f = p[1][1], down = standard_attr[root_label(p[1][0])]))
 
 def p_ling_unit_attaches(p):
     '''ling_unit_attaches : term_name "<" attaches ">"'''
-    func = dict(f = p[1][1], attach = p[3].get('attach', []), fixed = p[3].get('fixed', []))
+    global standard_attr
+    func = dict(f = p[1][1], attach = p[3].get('attach', []), fixed = p[3].get('fixed', []), down = standard_attr[root_label(p[1][0])])
     p[0] = (p[1][0], func)
 
 def p_ling_unit_attr(p):
     '''ling_unit_attr : term_name "{" attributes "}"'''
-    p[0] = (p[1][0], dict(f = p[1][1], down = p[3]))
+    global standard_attr
+    p[0] = (p[1][0], dict(f = p[1][1], down = p[3] + standard_attr[root_label(p[1][0])]))
     
 def p_ling_unit_comlex(p):
     '''ling_unit_comlex : term_name "<" attaches ">" "{" attributes "}"'''
-    func = dict(f = p[1][1], attach = p[3].get('attach', []), fixed = p[3].get('fixed', []), down = p[6])
+    global standard_attr
+    func = dict(f = p[1][1], attach = p[3].get('attach', []), fixed = p[3].get('fixed', []), down = p[6] + standard_attr[root_label(p[1][0])])
     p[0] = (p[1][0], func)
 
 def p_term_name(p):
@@ -580,6 +595,8 @@ def p_attr_float(p):
 import copy
 
 def update_dict(c, b):
+    if c is None: return b
+    if b is None: return c
     a = copy.deepcopy(c)
     for key in b:
         if key in a:
@@ -714,19 +731,23 @@ def print_interlingua(dc, c = 0):
 yaccer = yacc.yacc()
 path = None
 
+def root_label(label):
+    return label.split(":")[0]
+
 def gen_to_type_code():
     global label_types
-    return lambda label: label_types[label.split(":")[0]]
+    return lambda label: label_types[root_label(label)]
 
 def _parse_text(s, print_to_console):
     global PRINT_TO_CONSOLE
     PRINT_TO_CONSOLE = print_to_console
     #global path
 
-    global atn, text, prior, label_types
+    global atn, text, prior, label_types, standard_attr
     atn = {}
     prior = {}
     label_types = {'JMP': const.type['epsilon'], 'CONJ': const.type['conjunction']}
+    standard_attr = {}
     text = s
     lexer.lineno = 1
     try:
@@ -739,8 +760,7 @@ def _parse_text(s, print_to_console):
         return None
     atn = ret if ret != {} else None
     if atn is None: return None
-    label_types
-    return atn, label_types
+    return atn, label_types, standard_attr
 
 def parse(s, print_to_console=True):
     global path
