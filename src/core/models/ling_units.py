@@ -129,8 +129,10 @@ class LingUnit:
 
         
 
-        
-        tx = self.rx[self.relation.function_number][name]
+        if self.relation is None:
+            tx = XFROM_EVERY #?
+        else:
+            tx = self.rx[self.relation.function_number][name]
         if tx == XFROM_NUMBER:
             return self._shift_value(self, name, number["plural"])
         elif tx == XFROM_EVERY:
@@ -312,8 +314,8 @@ class FlowerLingUnit(RelationLingUnit):
                 if name in b._attach_down:
                     if not self._top_down_shift(b, b._attach_down[name], value):
                         return False
-            #print(len(self.blocks))
-            if len(self.blocks) <= 1 or self.rx[self.relation.function_number].get(name, None) == XFROM_EVERY:
+            if len(self.blocks) <= 1 or self.relation is None or \
+                self.rx[self.relation.function_number].get(name, None) == XFROM_EVERY:
                 for b in self.blocks:
                     if name in b._attach_down:
                         if not self._top_down_shift(b, b._attach_down[name], value):
