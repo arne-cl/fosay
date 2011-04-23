@@ -12,6 +12,51 @@
     noun-type: proper
     personal-name: first-name
 }
+"zoltán"
+{
+    transcription: "zoltan"
+    lemma: "zoltan."
+    real-number: singular
+    tags: hungarian
+    type: noun
+    number: singular
+    form: formal
+    persone: third
+    case: nominative
+    case2: nominative ########
+    noun-type: proper
+    personal-name: first-name
+}
+"zoli"
+{
+    transcription: "zoli"
+    lemma: "zoltan."
+    real-number: singular
+    tags: hungarian
+    type: noun
+    number: singular
+    form: informal
+    persone: third
+    case: nominative
+    case2: nominative ########
+    noun-type: proper
+    personal-name: first-name
+}
+"zolika"
+{
+    transcription: "zolikɒ"
+    lemma: "zoltan."
+    real-number: singular
+    tags: hungarian
+    type: noun
+    number: singular
+    form: meek
+    persone: third
+    case: nominative
+    case2: nominative ########
+    noun-type: proper
+    personal-name: first-name
+}
 "kocsán"
 {
     transcription: "kotʃan"

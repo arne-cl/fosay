@@ -171,7 +171,7 @@ np{quantity: none; difinity: difinite; number: singular; noun-type: proper} :-
     [ap]
     $N<$number, $persone, $noun-type, case>
 
-np{quantity: none; difinity: difinite; number: singular; noun-type: proper} :-
+np{quantity: none; difinity: difinite; number: singular; noun-type: proper; persone: third} :-
     $N<number, case>{personal-name: first-name}
     $N<number, case>{personal-name: surname}
 

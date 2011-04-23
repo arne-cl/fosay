@@ -24,6 +24,34 @@
     personal-name: first-name
     case: nominative
 }
+"zoltan" :: possessive; accusative
+{
+    transcription: "zoltan"
+    lemma: "zoltan."
+    tags: hungarian
+    type: noun
+    form: formal
+    number: singular
+    gender: masculine
+    persone: third
+    noun-type: proper
+    personal-name: first-name
+    case: nominative
+}
+"zoli" :: possessive; accusative
+{
+    transcription: "zoli"
+    lemma: "zoltan."
+    tags: hungarian
+    type: noun
+    form: informal
+    number: singular
+    gender: masculine
+    persone: third
+    noun-type: proper
+    personal-name: first-name
+    case: nominative
+}
 "yuliya"[julija]; "yulia"[julia] :: possessive; accusative
 {
     lemma: "iuli,as."
