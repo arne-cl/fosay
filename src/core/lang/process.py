@@ -298,13 +298,8 @@ transferred_attributes = {
     [
         concept["tense"],
     ],
-    const.type["subject"]: [],#[concept["case"]],
-    const.type["inessive"]: [],#[concept["case"]],
-    const.type["illative"]: [],#[concept["case"]],
-    const.type["allative"]: [],
-    const.type["elative"]: [],#[concept["case"]],
-    const.type["accusative"]: [],#[concept["case"]],
-    const.type["possessive"]: [],#[concept["case"]],
+    const.type["subject"]: [],
+    const.type["object"]: [concept["case"]],
     const.type["preposition-phrase"]: [],
 }
 
