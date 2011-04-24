@@ -2,7 +2,7 @@
 __author__ = "zoltan kochan"
 __date__ = "$28 june 2010 1:02:10$"
 __name__ = "fosay translator"
-__version_info__ = ("pre-alpha", 0, 0, 1, 212)
+__version_info__ = ("pre-alpha", 0, 0, 1, 239)
 __version__ = '.'.join([str(i) for i in __version_info__[1:]])
 
 #testing
@@ -72,7 +72,7 @@ def friendly_output(t):
             You either made a mistake or it's too hard for the translator yet.
             """
     if len(t) == 1:
-        return t[0][0]
+        return t[0]
     alt = 1
     out = ""
     for item in t:
