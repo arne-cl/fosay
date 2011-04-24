@@ -111,7 +111,7 @@ class TranslatorFrame(ttk.Frame):
         self.target_combo_box = ttk.Combobox(self, state="readonly", font=11)
         self.target_combo_box.config(width=10)
         self.target_combo_box.grid(row=18, sticky=W)
-        self.target_combo_box['values'] = [key for key in long_names.values()] + ["interlingua"]
+        self.target_combo_box['values'] = [key for key in long_names.values()] + ["*caseframe"]
 
         #init target_text
         self.target_text = Text(self, width=80, height=10, font=11)
@@ -127,7 +127,7 @@ class TranslatorFrame(ttk.Frame):
         first = 'ip'
         self.target_text.config(state=NORMAL)
         self.target_text.delete('1.0', 'end')
-        if self.target_combo_box.get() == "interlingua":
+        if self.target_combo_box.get() == "*caseframe":
             s = interlingua_to_str(text_to_interlingua(text, first, srclan)[0])
             self.target_text.insert('end', s)
         else:

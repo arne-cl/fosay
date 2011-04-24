@@ -1,3 +1,4 @@
 eng, English
 ukr, українська
+rus, русский
 hun, magyar

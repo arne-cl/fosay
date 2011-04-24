@@ -19,8 +19,8 @@
 "чудово"
 {
     transcription: "tʃudovo"
-    lemma: "greatly"
-    lemma: "greatly.чудово"
+    lemma: "banli"
+    lemma: "banli.чудово"
     type: adverb
 }
 "сьогодні"

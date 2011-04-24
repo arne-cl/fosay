@@ -1,0 +1,148 @@
+subj-att := gender, number, persone
+vp-att := gender, number, tense, persone, mood, aspect
+np-att := case, gender, number, persone
+ap-att := case, gender, number, persone, extra-1
+N-att := case, gender, number, persone, extra-1
+V-att := gender, number, tense, aspect, persone, mood, participle
+ADJ-att := case, gender, number, extra-1
+PRON-empty-att := case, real-number -> number, persone, form
+
+PUNCT is punctuation
+ADJ is adjective
+ADV is adverb
+V is verb
+P is preposition
+PRON is pronoun
+ART is article
+QUA is quantifier
+N is noun
+NUM is numeral
+NOT is negative
+ip is sentence
+subj is subject
+np1 is noun-phrase
+np is noun-phrase
+ap is epithet
+time is time
+vp is verb-phrase
+vp1 is verb-phrase
+vp2 is verb-phrase
+inobj is inessive
+illobj is illative
+elobj is elative
+obj is accusative
+cpo is accusative
+poss is possessive
+poss1 is possessive
+pp is preposition-phrase
+prcl is clause
+subcl is clause
+nump is numeral-phrase
+FN is noun{personal-name: first-name}
+SN is noun{personal-name: surname}
+
+ip :-
+    $prcl
+    PUNCT{lemma: "."}
+
+prcl :-
+    (
+    subj<subj-att>
+    $vp<vp-att>
+    [obj]
+    [time]
+    [inobj]
+    [illobj]
+    [elobj]
+    )
+
+prcl :-
+    .subj<subj-att>
+    $vp<vp-att>
+    [obj]
+
+.subj :-
+    $.np<np-att>{case: nominative}
+
+.np :-
+    $.PRON<PRON-empty-att>
+
+time :-
+    $ADV<tense>{adverb-type: time}
+
+subj :-
+    $np<np-att>{case: nominative}
+
+obj :-
+    $np<np-att>{case: accusative}
+
+inobj :-
+    P<$case>{case: inessive}
+    $np{case: inessive}
+
+illobj :-
+    P<$case>{case: illative}
+    $np{case: illative}
+
+elobj :-
+    P<$case>{case: elative}
+    $np{case: possessive}
+
+pp :-
+    P<$case>
+    $np<case>
+
+vp{truth: 1.0} :-
+    $V<V-att>
+
+ap :-
+    $ADJ<ADJ-att>
+
+&ap :-
+    $ap<ap-att>
+
+poss :-
+    $np<case>{case: possessive}
+
+np :-
+    $PRON<N-att>{pronoun-type: personal}
+
+np :-
+    poss
+    $np<N-att>
+
+np :-
+    $np<N-att>
+    poss
+
+np{quantity: none} :-
+    [ap<ap-att>]
+    $N<$N-att> ###
+
+np :-
+    QUA<$quantity, $number, $quantity-number, $quantity-case, $case, $difinity, ap-att>
+    [ap<gender, number -> quantity-number, extra-1, case -> quantity-case>]
+    $N<$gender, $persone, $extra-1, case -> quantity-case, number -> quantity-number>
+
+np{quantity: none; difinity: difinite; number: singular; noun-type: proper; persone: third} :-
+    (
+    $FN<case, gender>
+    $SN<case, gender>
+    )
+
+&np :-
+    $np<np-att>
+
+prcl ::=
+    1.0: subj vp
+    1.0: subj vp obj
+    1.0: time subj vp
+    1.0: time subj vp obj
+    1.0: subj vp inobj
+    1.0: subj vp inobj obj
+    1.0: time subj vp inobj
+    1.0: time subj vp inobj obj
+
+np ::=
+    1.0: np poss
+    1.0: SN FN

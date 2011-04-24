@@ -1,0 +1,27 @@
+"красивый"[krasivej] :: all-adj-cases-1
+{
+    lemma: "melbi"
+    stem: "melbe.красивый"
+    type: adjective
+    number: singular
+    gender: masculine
+    case: nominative
+}
+"красивому"[krasivomu]
+{
+    lemma: "melbi"
+    stem: "melbe.красивый"
+    type: adjective
+    number: singular
+    gender: masculine
+    case: inessive
+}
+"умный"[umnej] :: all-adj-cases-1
+{
+    lemma: "prije"
+    stem: "prije.умный"
+    type: adjective
+    number: singular
+    case: nominative
+    gender: masculine
+}
