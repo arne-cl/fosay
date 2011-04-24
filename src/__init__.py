@@ -65,6 +65,22 @@ for sn, ln in load_languages():
 #########################################################################################################################
 
 
+def friendly_output(t):
+    if len(t) == 0:
+        return """
+            THE TRANSLATOR WAS UNABLE TO TRANSLATE THE GIVEN TEXT
+            You either made a mistake or it's too hard for the translator yet.
+            """
+    if len(t) == 1:
+        return t[0][0]
+    alt = 1
+    out = ""
+    for item in t:
+        out += "alternative #" + str(alt) + ":\n"
+        out += item + "\n\n"
+        alt += 1
+    return out
+
 from core.lang.translate import translate, text_to_interlingua, interlingua_to_str
 
 
@@ -133,7 +149,7 @@ class TranslatorFrame(ttk.Frame):
         else:
             trglan = langs[short_name[self.target_combo_box.get()]]
             tr = translate(text, first, srclan, [trglan])
-            self.target_text.insert('end', tr)
+            self.target_text.insert('end', friendly_output(tr[0]))
         self.target_text.config(state=DISABLED)
 
 

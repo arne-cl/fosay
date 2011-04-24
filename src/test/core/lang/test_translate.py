@@ -56,7 +56,7 @@ class TranslateTestCase(unittest.TestCase):
         for text, proper in self.ukr_to_eng:
             translations = translate(text, first, source_lang, [target_lang])
             #self.assertSameElements(translations[0], proper)
-            self.assertListEqual(translations[0], proper)
+            self.assertSameElements(translations[0], proper)
 
     eng_to_ukr = [
     (
@@ -68,7 +68,6 @@ class TranslateTestCase(unittest.TestCase):
     (
         "I see you.",
         [
-            "Я бачу вас.",
             "Я бачу вас."
         ]
     ),
@@ -87,21 +86,19 @@ class TranslateTestCase(unittest.TestCase):
         for text, proper in self.eng_to_ukr:
             translations = translate(text, first, source_lang, [target_lang])
             #self.assertSameElements(translations[0], proper)
-            self.assertListEqual(translations[0], proper)
+            self.assertSameElements(translations[0], proper)
 
     hun_to_ukr = [
     (
         "Néhány fiú látott sok szép lányt.",
         [
-            "Декілька хлопців бачили багатьох гарних дівчат.",
             "Декілька хлопців бачили багатьох гарних дівчат."
         ]
     ),
     (
         "A fiú látta egy okos nőnek a szép házát.",
         [
-            "Хлопець бачив гарний будинок розумної жінки.",
-            "Хлопець бачив гарний будинок розумної жінки.",
+            "Хлопець бачив гарний будинок розумної жінки."
         ]
     )
     ]
@@ -113,21 +110,19 @@ class TranslateTestCase(unittest.TestCase):
         for text, proper in self.hun_to_ukr:
             translations = translate(text, first, source_lang, [target_lang])
             #self.assertSameElements(translations[0], proper)
-            self.assertListEqual(translations[0], proper)
+            self.assertSameElements(translations[0], proper)
 
     ukr_to_hun = [
     (
         "Всі хлопці бачили багатьох дівчат.",
         [
-            'Az összes fiú látott sok lányt.',
-            'Az összes fiú látott sok lányt.',
+            'Az összes fiú látott sok lányt.'
         ]
     ),
     (
         "Декілька хлопців бачили дівчат.",
         [
-            "Néhány fiú látott lányokat.",
-            "Néhány fiú látott lányokat.",
+            "Néhány fiú látott lányokat."
         ]
     ),
     (
@@ -155,7 +150,7 @@ class TranslateTestCase(unittest.TestCase):
         for text, proper in self.ukr_to_hun:
             translations = translate(text, first, source_lang, [target_lang])
             #self.assertSameElements(translations[0], proper)
-            self.assertListEqual(translations[0], proper)
+            self.assertSameElements(translations[0], proper)
 
     hun_to_eng = [
     (
@@ -181,7 +176,7 @@ class TranslateTestCase(unittest.TestCase):
         for text, proper in self.hun_to_eng:
             translations = translate(text, first, source_lang, [target_lang])
             #self.assertSameElements(translations[0], proper)
-            self.assertListEqual(translations[0], proper)
+            self.assertSameElements(translations[0], proper)
 
     eng_to_hun = [
     (
@@ -205,4 +200,4 @@ class TranslateTestCase(unittest.TestCase):
         for text, proper in self.eng_to_hun:
             translations = translate(text, first, source_lang, [target_lang])
             #self.assertSameElements(translations[0], proper)
-            self.assertListEqual(translations[0], proper)
+            self.assertSameElements(translations[0], proper)
