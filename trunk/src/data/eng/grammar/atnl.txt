@@ -28,6 +28,7 @@ vp2 is verb-phrase
 inobj is inessive
 illobj is illative
 elobj is elative
+allobj is allative
 obj is accusative
 poss is possessive
 poss1 is possessive
@@ -46,6 +47,7 @@ prcl{clause-type: principal} :-
         [obj{case: dative}]
         [obj]
     ]
+    [allobj]
     [inobj]
     [illobj]
     [elobj]
@@ -63,15 +65,19 @@ obj :-
 
 inobj :-
     P<case>{case: inessive}
-    $np<case>
+    $np{case: nominative}
 
 illobj :-
     P<case>{case: illative}
-    $np<case>
+    $np{case: nominative}
+
+allobj :-
+    P<case>{case: allative}
+    $np{case: nominative}
 
 elobj :-
     P<case>{case: elative}
-    $np<case>
+    $np{case: nominative}
 
 ap :-
     $ADJ

@@ -74,75 +74,9 @@ def order_score(lang, st):
 def unambiguity_score(lang, st):
     pass
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-def the_bests9(lang, f1, f2, q):
-    if q == []: return q
-    ws = []
-    for w in q:
-        ws += [(f1(lang, w[1]), f2(lang, w[1]), w)]
-    ws = sorted(ws, key = lambda d: (d[0], d[1]), reverse = True)
-
-    i = 0
-    px = []
-    b = 2 ######
-    while i < len(ws):
-        k = ws[i][0], ws[i][1]
-        pp = []
-        while i < len(ws) and abs(ws[i][0] - k[0]) <= b and abs(ws[i][1] - k[1]) <= b:
-            pp += [ws[i][2]]
-            i += 1
-        px += [pp]
-    return px
-
-def the_bests0(lang, f, q):
-    if q == []: return q
-    ws = []
-    for w in q:
-        ws += [(f(lang, w[2]), w)]
-    ws = sorted(ws, key = lambda d: (d[0]), reverse = True)
-
-    i = 0
-    px = []
-    while i < len(ws):
-        k = ws[i][0]
-        pp = []
-        while i < len(ws) and ws[i][0] == k:
-            pp += [ws[i][1]]
-            i += 1
-        px += [pp]
-    return px
+import random
 
 def the_bests(lang, f, q):
-    if q == []: return q
-    ws = []
-    for w in q:
-        ws += [(f(lang, w[2]), w)]
-    ws = sorted(ws, key = lambda d: (d[0]), reverse = True)
-
-    k = ws[0][0]
-    i = 0
-    px = []
-    while i < len(ws) and ws[i][0] == k:
-        px += [ws[i][1]]
-        i += 1
-    return px
-
-#THE PROPER ONE!!!!!!!!!
-def the_bests1(lang, f, q):
-    #print("xxx")
     if q == []: return q
     ws = []
     for w in q:

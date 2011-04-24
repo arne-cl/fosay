@@ -48,14 +48,19 @@
     case: illative
     type: preposition
 }
-"onto"[ɑntu]
-{
-    type: preposition
-    case: allative
-}
+#"onto"[ɑntu]
+#{
+#    type: preposition
+#    case: allative
+#}
 "with"
 {
     transcription: "wɪθ"
     type: preposition
     case: comitative
+}
+"to"[tu]
+{
+    type: preposition
+    case: allative
 }
