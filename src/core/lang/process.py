@@ -301,6 +301,7 @@ transferred_attributes = {
     const.type["subject"]: [],#[concept["case"]],
     const.type["inessive"]: [],#[concept["case"]],
     const.type["illative"]: [],#[concept["case"]],
+    const.type["allative"]: [],
     const.type["elative"]: [],#[concept["case"]],
     const.type["accusative"]: [],#[concept["case"]],
     const.type["possessive"]: [],#[concept["case"]],
@@ -534,7 +535,7 @@ def pre_morphen(lang, st, ind = 0):
         if not x.refresh(): continue
         res += [c]
 
-    res = the_bests1(lang, eupony_score, res)
+    res = the_bests(lang, eupony_score, res)
 
     for c in res:
         if ind + 1 == len(c.left + c.blocks + c.right):
@@ -579,7 +580,7 @@ def morphen(lang, st, ind = 0):
             continue
         res += [c]
 
-    res = the_bests1(lang, eupony_score, res)
+    res = the_bests(lang, eupony_score, res)
     for c in res:
         if ind + 1 == len(c.left+c.blocks+c.right):
             yield c

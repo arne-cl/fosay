@@ -29,6 +29,7 @@ vp1 is verb-phrase
 vp2 is verb-phrase
 inobj is inessive
 illobj is illative
+allobj is allative
 elobj is elative
 obj is accusative
 cpo is accusative
@@ -51,6 +52,7 @@ prcl :-
     $vp<vp-att>
     [obj]
     [time]
+    [allobj]
     [inobj]
     [illobj]
     [elobj]
@@ -83,6 +85,10 @@ inobj :-
 illobj :-
     P<$case>{case: illative}
     $np{case: illative}
+
+allobj :-
+    P<$case>{case: allative}
+    $np{case: possessive}
 
 elobj :-
     P<$case>{case: elative}

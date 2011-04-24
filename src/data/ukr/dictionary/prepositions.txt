@@ -8,9 +8,13 @@
     type: preposition
     case: elative; comitative
 }
-"на"
+"на"[na]
 {
-    transcription: "na"
     type: preposition
     case: adessive
+}
+"до"[do]
+{
+    type: preposition
+    case: allative
 }

@@ -77,6 +77,30 @@
     personal-name: first-name
     case: nominative
 }
+"victoria"[vɪktɔriə] :: possessive; accusative
+{
+    lemma: "viktoriias."
+    form: formal
+    type: noun
+    number: singular
+    gender: masculine
+    persone: third
+    noun-type: proper
+    personal-name: first-name
+    case: nominative
+}
+"vicki"[vɪki]; "tori"[tɔri] :: possessive; accusative
+{
+    lemma: "viktoriias."
+    form: informal
+    type: noun
+    number: singular
+    gender: masculine
+    persone: third
+    noun-type: proper
+    personal-name: first-name
+    case: nominative
+}
 "yulya" :: possessive; accusative
 {
     transcription: "julʲa"

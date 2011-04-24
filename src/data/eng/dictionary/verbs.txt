@@ -271,6 +271,48 @@
     tense: past
     participle: participle
 }
+"buy"[baj] :: present-participle; third-singular-s; third-plural; second-persone
+{
+    lemma: "terme'u"
+    stem: "terme'u.buy"
+    type: verb
+    tense: present
+    persone: first
+    participle: not-participle
+}
+"bought"[bɑt]
+{
+    lemma: "terme'u"
+    stem: "terme'u.buy"
+    type: verb
+    tense: past
+    participle: not-participle; participle
+}
+"write"[rajt] :: present-participle; third-singular-s; third-plural; second-persone
+{
+    lemma: "ciska"
+    stem: "ciska.write"
+    type: verb
+    tense: present
+    persone: first
+    participle: not-participle
+}
+"wrote"[rot]
+{
+    lemma: "ciska"
+    stem: "ciska.write"
+    type: verb
+    tense: past
+    participle: not-participle
+}
+"written"[rɪtən]
+{
+    lemma: "ciska"
+    stem: "ciska.write"
+    type: verb
+    tense: past
+    participle: participle
+}
 "shall"
 {
     transcription: "ʃæl"

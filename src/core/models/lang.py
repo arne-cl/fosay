@@ -259,7 +259,7 @@ class Language():
                 result += [([deepcopy(x)], p)]
 
         if not result or result == []:
-            raise Exception("Word '" + t + "' not found in the vocabulary.")
+            raise Exception("Word '%s' not found in the '%s' dictionary." % (t, self.name))
         return result
 
     def morphan(self, text):

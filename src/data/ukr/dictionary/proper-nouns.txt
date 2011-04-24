@@ -134,6 +134,30 @@
     noun-type: proper
     personal-name: first-name
 }
+"вікторія"[viktorija]
+{
+    lemma: "viktoriias."
+    type: noun
+    form: formal
+    number: singular
+    gender: feminine
+    persone: third
+    case: nominative
+    noun-type: proper
+    personal-name: first-name
+}
+"віка"[vika]
+{
+    lemma: "viktoriias."
+    type: noun
+    form: informal
+    number: singular
+    gender: feminine
+    persone: third
+    case: nominative
+    noun-type: proper
+    personal-name: first-name
+}
 "юлії"
 {
     transcription: "julʲiji"

@@ -9,11 +9,26 @@
     aspect: indefinite
     participle: not-participle
 }
-"говорити" :: verb-forms-3
+"говорити"[hovorete] :: verb-forms-3
 {
-    transcription: "hovorete"
     lemma: "cusku"
-    lemma: "cusku.говорити"
+    stem: "cusku.говорити"
+    type: verb
+    tense: infinitive
+    participle: not-participle
+}
+"купити"[kupete] :: verbs-2
+{
+    lemma: "terme'u"
+    stem: "terme'u.купити"
+    type: verb
+    tense: infinitive
+    participle: not-participle
+}
+"писати"[pesate]
+{
+    lemma: "ciska"
+    stem: "ciska.писати"
     type: verb
     tense: infinitive
     participle: not-participle
