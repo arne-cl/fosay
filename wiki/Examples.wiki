@@ -7,3 +7,4 @@ from English
   # I see you.
   # A boy has seen the beautiful house.
   # A boy and a girl have been seeing a beautiful house.
+  # Samuel Johnson saw a smart girl.
