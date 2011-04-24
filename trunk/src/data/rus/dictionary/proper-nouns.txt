@@ -1,0 +1,164 @@
+"джон"[dʒon]
+{
+    lemma: "ioxanan."
+    type: noun
+    tags: english
+    number: singular
+    gender: masculine
+    persone: third
+    case: nominative
+    noun-type: proper
+    personal-name: first-name
+}
+"сэмюэл"[semjuelʲ]
+{
+    lemma: "semu,el."
+    type: noun
+    tags: english
+    number: singular
+    gender: masculine
+    persone: third
+    case: nominative
+    noun-type: proper
+    personal-name: first-name
+}
+"иван"[ivan] :: masculine-patronymic-1; feminine-patronymic-1
+{
+    lemma: "ioxanan."
+    type: noun
+    tags: ukrainian
+    number: singular
+    gender: masculine
+    persone: third
+    case: nominative
+    noun-type: proper
+    personal-name: first-name
+}
+"золтан"[zoltan] :: masculine-patronymic-1; feminine-patronymic-1
+{
+    lemma: "zoltan."
+    type: noun
+    form: formal
+    tags: hungarian
+    number: singular
+    gender: masculine
+    persone: third
+    case: nominative
+    noun-type: proper
+    personal-name: first-name
+}
+"золи"[zoli]
+{
+    lemma: "zoltan."
+    type: noun
+    form: informal
+    tags: hungarian
+    number: singular
+    gender: masculine
+    persone: third
+    case: nominative
+    noun-type: proper
+    personal-name: first-name
+}
+"кочан"[kotʃan]
+{
+    lemma: "kotcan."
+    stem: "kotcan.кочан"
+    type: noun
+    number: singular
+    persone: third
+    case: nominative
+    noun-type: proper
+    personal-name: surname
+}
+"шевченко"[ʃɛvtʃɛnko]
+{
+    lemma: "cevtcenkos."
+    type: noun
+    tags: ukrainian
+    number: singular
+    persone: third
+    case: nominative
+    noun-type: proper
+    personal-name: surname
+}
+"локк"[lok]
+{
+    lemma: "lok."
+    type: noun
+    tags: english
+    number: singular
+    persone: third
+    case: nominative
+    noun-type: proper
+    personal-name: surname
+}
+"джонсон"[djonson]
+{
+    lemma: "djonson."
+    type: noun
+    tags: english
+    number: singular
+    persone: third
+    case: nominative
+    noun-type: proper
+    personal-name: surname
+}
+"смит"[smit]
+{
+    lemma: "smit."
+    type: noun
+    tags: english
+    number: singular
+    persone: third
+    case: nominative
+    noun-type: proper
+    personal-name: surname
+}
+"юлия"[julʲija]
+{
+    lemma: "iuli,as."
+    type: noun
+    form: formal
+    number: singular
+    gender: feminine
+    persone: third
+    case: nominative
+    noun-type: proper
+    personal-name: first-name
+}
+"юлии"[julʲii]
+{
+    lemma: "iuli,as."
+    type: noun
+    form: formal
+    number: singular
+    gender: feminine
+    persone: third
+    case: possessive
+    noun-type: proper
+    personal-name: first-name
+}
+"юли"[julʲi]
+{
+    lemma: "iuli,as."
+    type: noun
+    form: informal
+    number: singular
+    gender: feminine
+    persone: third
+    case: possessive
+    noun-type: proper
+    personal-name: first-name
+}
+"ужгороде"[uʒgarodʲɛ]
+{
+    lemma: ".ujhorod."
+    type: noun
+    tags: ukrainian
+    number: singular
+    gender: masculine
+    persone: third
+    case: inessive
+    noun-type: proper
+}

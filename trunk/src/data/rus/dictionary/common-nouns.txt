@@ -1,0 +1,335 @@
+"здания"[zdanʲija] :: accusative
+{
+    lemma: "zdani"
+    stem: "zdani.здание"
+    real-number: plural
+    type: noun
+    number: plural
+    gender: masculine
+    persone: third
+    case: nominative
+    noun-type: common
+}
+"здание"[zdanʲijɛ]
+{
+    lemma: "zdani"
+    stem: "zdani.здание"
+    real-number: singular
+    type: noun
+    number: singular
+    gender: lifeless
+    persone: third
+    case: nominative; accusative; illative
+    noun-type: common
+    extra-1: 2
+}
+"здании"[zdanʲii]
+{
+    lemma: "zdani"
+    stem: "zdani.здание"
+    real-number: singular
+    type: noun
+    number: singular
+    gender: masculine
+    persone: third
+    case: inessive
+    noun-type: common
+}
+"здания"[zdanʲija]
+{
+    lemma: "zdani"
+    stem: "zdani.здание"
+    real-number: singular
+    type: noun
+    number: singular
+    gender: masculine
+    persone: third
+    case: possessive
+    noun-type: common
+}
+"учитель"[utʃitʲɛlʲ] :: cases-1; plural-cases-5
+{
+    lemma: "ctuca"
+    stem: "ctuca.учитель"
+    real-number: singular
+    type: noun
+    number: singular
+    gender: masculine
+    persone: third
+    case: nominative
+}
+"ученик"[utʃenʲik]
+{
+    lemma: "tadni"
+    stem: "tadni.ученик"
+    real-number: singular
+    type: noun
+    number: singular
+    gender: masculine
+    persone: third
+    case: nominative
+}
+"дверь"[dvɛrj]
+{
+    lemma: "vrogai"
+    stem: "vrogai.дверь"
+    real-number: singular
+    type: noun
+    number: singular
+    gender: lifeless
+    persone: third
+    case: nominative
+    noun-type: common
+}
+"девушек"[dʲɛvuʃɛk]
+{
+    lemma: "nixli"
+    stem: "nixli.девушка"
+    real-number: plural
+    type: noun
+    number: plural
+    gender: feminine
+    persone: third
+    case: accusative
+    noun-type: common
+}
+"девушки"[dʲɛvuʃki]
+{
+    lemma: "nixli"
+    stem: "nixli.девушка"
+    real-number: plural
+    type: noun
+    number: plural
+    gender: feminine
+    persone: third
+    case: nominative
+    noun-type: common
+}
+"девушкa"[dʲɛvuʃka] :: cases-2
+{
+    lemma: "nixli"
+    stem: "nixli.девушка"
+    real-number: singular
+    type: noun
+    number: singular
+    gender: feminine
+    persone: third
+    case: nominative
+    noun-type: common
+    extra-1: 1
+}
+"девушку"[dʲɛvuʃku]
+{
+    lemma: "nixli"
+    stem: "nixli.девушка"
+    real-number: singular
+    type: noun
+    form: informal
+    number: singular
+    gender: feminine
+    persone: third
+    case: accusative
+    noun-type: common
+}
+"дeвка"[dʲɛvka]
+{
+    lemma: "nixli"
+    stem: "nixli.девушка"
+    real-number: singular
+    type: noun
+    tags: slang
+    number: singular
+    gender: feminine
+    persone: third
+    case: nominative
+    noun-type: common
+}
+"тёлка"[tʲolka]; "телка"[tʲolka]
+{
+    lemma: "nixli"
+    stem: "nixli.девушка"
+    real-number: singular
+    type: noun
+    tags: slang, russian
+    number: singular
+    gender: feminine
+    persone: third
+    case: nominative
+    noun-type: common
+}
+"женщина"[ʒɛnʃtʃina] :: all-cases-3
+{
+    lemma: "ninmu"
+    stem: "ninmu.женщина"
+    real-number: singular
+    type: noun
+    number: singular
+    gender: feminine
+    persone: third
+    case: nominative
+    noun-type: common
+}
+"женщин"[ʒɛnʃtʃin]
+{
+    lemma: "ninmu"
+    stem: "ninmu.женщина"
+    real-number: plural
+    type: noun
+    number: plural
+    gender: feminine
+    persone: third
+    case: accusative; possessive
+    noun-type: common
+}
+"работница"[rabotnʲitsa] :: cases-4; plural-cases-2
+{
+    lemma: "workorino" #it's not a lojbanic word!
+    stem: "workorino.работница"
+    real-number: singular
+    type: noun
+    number: singular
+    gender: feminine
+    persone: third
+    case: nominative
+}
+"фабрика"[fabrika] :: cases-3; plural-cases-3
+{
+    lemma: "fanri"
+    stem: "fanri.фабрика"
+    real-number: singular
+    type: noun
+    number: singular
+    gender: feminine
+    persone: third
+    case: nominative
+    noun-type: common
+}
+"брат"[brat]
+{
+    lemma: "bruna"
+    stem: "bruna.брат"
+    real-number: singular
+    type: noun
+    number: singular
+    gender: masculine
+    persone: third
+    case: nominative
+    noun-type: common
+}
+"сестра"[sistra]
+{
+    lemma: "mensi"
+    stem: "mensi.сестра"
+    real-number: singular
+    type: noun
+    number: singular
+    gender: feminine
+    persone: third
+    case: nominative
+    noun-type: common
+}
+"мальчик"[malʲtʃik]
+{
+    lemma: "nanla"
+    stem: "nanla.парень"
+    real-number: singular
+    form: informal
+    type: noun
+    number: singular
+    gender: masculine
+    persone: third
+    case: nominative
+    noun-type: common
+}
+"парень"[parinʲ]
+{
+    lemma: "nanla"
+    stem: "nanla.парень"
+    real-number: singular
+    form: formal
+    type: noun
+    number: singular
+    gender: masculine
+    persone: third
+    case: nominative
+    noun-type: common
+}
+"чувак"[tʃuvak]
+{
+    lemma: "nanla"
+    stem: "nanla.парень"
+    real-number: singular
+    form: formal
+    type: noun
+    tags: slang
+    number: singular
+    gender: masculine
+    persone: third
+    case: nominative
+    noun-type: common
+}
+"пацан"[patsan]
+{
+    lemma: "nanla"
+    stem: "nanla.парень"
+    real-number: singular
+    form: formal
+    type: noun
+    tags: slang, russian
+    number: singular
+    gender: masculine
+    persone: third
+    case: nominative
+    noun-type: common
+}
+"парни"[parnʲi]
+{
+    lemma: "nanla"
+    stem: "nanla.парень"
+    real-number: plural
+    form: formal
+    type: noun
+    number: plural
+    gender: masculine
+    persone: third
+    case: nominative
+    noun-type: common
+}
+"парней"[parnʲɛj]
+{
+    lemma: "nanla"
+    stem: "nanla.парень"
+    real-number: plural
+    form: formal
+    type: noun
+    number: plural
+    gender: masculine
+    persone: third
+    case: accusative
+    noun-type: common
+}
+"парня"[parnʲa]
+{
+    lemma: "nanla"
+    stem: "nanla.парень"
+    real-number: singular
+    form: formal
+    type: noun
+    number: singular
+    gender: masculine
+    persone: third
+    case: accusative
+    noun-type: common
+}
+"человек"[tʃɛlavʲɛk] :: cases-5; plural-cases-4
+{
+    lemma: "nanmu"
+    stem: "nanmu.человек"
+    real-number: singular
+    type: noun
+    number: singular
+    gender: masculine
+    persone: third
+    case: nominative
+    noun-type: common
+}

@@ -1,0 +1,67 @@
+"много"[mnoga]
+{
+    type: quantifier
+    real-number: plural
+    quantity: many
+    number: plural
+    case: nominative
+    quantity-number: plural
+    quantity-case: accusative
+    difinity: undifinite
+}
+"многих"[mnogix]
+{
+    type: quantifier
+    real-number: plural
+    quantity: many
+    number: plural
+    case: accusative; possessive
+    quantity-number: plural
+    quantity-case: accusative
+    difinity: undifinite
+}
+"несколько"[nʲɛskolʲka]
+{
+    type: quantifier
+    real-number: plural
+    quantity: few
+    number: plural
+    case: nominative
+    quantity-number: plural
+    quantity-case: accusative
+    difinity: undifinite
+}
+"нескольких"[nʲɛskolʲkix]
+{
+    type: quantifier
+    real-number: plural
+    quantity: few
+    number: plural
+    case: accusative; possessive
+    quantity-number: plural
+    quantity-case: accusative
+    difinity: undifinite
+}
+"все"[vsʲɛ]
+{
+    type: quantifier
+    real-number: plural
+    quantity: all
+    number: plural
+    case: nominative
+    quantity-number: plural
+    quantity-case: nominative
+    difinity: difinite
+}
+"каждый"[kaʒdej] :: all-adj-cases-1
+{
+    type: quantifier
+    real-number: singular
+    quantity: all
+    number: singular
+    gender: masculine
+    case: nominative
+    quantity-number: singular
+    quantity-case: nominative
+    difinity: undifinite
+}

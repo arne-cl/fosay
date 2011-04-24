@@ -240,7 +240,8 @@ def meaning_shift(cf, lang):
                 cf[key] = r
             else:
                 lemma = cf[key][concept["lemma"]]
-                if not lemma is None and not lemma in lang.meanings.keys():
+                if not lemma is None and not lemma in lang.meanings.keys() \
+                    and cf[key][concept["lemma"]] in cf_diff:
                     #replace with deffination
                     #checking for properness
                     #print(cf[key][concept["lemma"]], cf_diff[cf[key][concept["lemma"]]])

@@ -1,0 +1,88 @@
+"1"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    conj-type: non-contrasting
+    #among: , #може на це й потреби нема
+    with-comma: true
+}
+"1"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    conj-type: non-contrasting
+    among: "и"
+    among-transcription: "i"
+}
+"1"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    max-items: 2
+    conj-type: contrasting
+    among: "но"
+    among-transcription: "no"
+}
+"1"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    max-items: 2
+    conj-type: non-contrasting
+    with-comma: true
+    before: "и"
+    before-transcription: "i"
+    among: "и"
+    among-transcription: "i"
+}
+"7"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    conj-type: non-contrasting
+    among: "или"
+    among-transcription: "ilʲi"
+}
+"7"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    max-items: 2
+    conj-type: non-contrasting
+    with-comma: true
+    before: "либо"
+    before-transcription: "lʲiba"
+    among: "либо"
+    among-transcription: "lʲiba"
+}
+"8"
+{
+    por: noun-phrase, epithet, preposition-phrase, clause
+    order: 1
+    max-items: 2
+    conj-type: non-contrasting
+    before: "не"
+    before-transcription: "nʲi"
+    among: "не"
+    among-transcription: "nʲi"
+}
+"13"
+{
+    por: clause
+    order: 1
+    max-items: 2
+    conj-type: non-contrasting
+    before: "если"
+    before-transcription: "jɛslʲi"
+    among: "то"
+    among-transcription: "to"
+}
+"13"
+{
+    por: clause
+    order: 1
+    max-items: 2
+    conj-type: non-contrasting
+    before: "если"
+    before-transcription: "jɛslʲi"
+}
