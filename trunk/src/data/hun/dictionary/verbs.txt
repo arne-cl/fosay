@@ -1,6 +1,5 @@
-"mondani" :: all-verbs-2
+"mondani"[mondɒni] :: all-verbs-2
 {
-    transcription: "mondɒni"
     lemma: "cusku"
     stem: "cusku.mondani"
     type: verb

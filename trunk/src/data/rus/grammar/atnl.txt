@@ -27,13 +27,13 @@ time is time
 vp is verb-phrase
 vp1 is verb-phrase
 vp2 is verb-phrase
-inobj is inessive
-illobj is illative
-elobj is elative
-obj is accusative
-cpo is accusative
-poss is possessive
-poss1 is possessive
+inobj is object{case: inessive}
+illobj is object{case: illative}
+elobj is object{case: elative}
+obj is object{case: accusative}
+cpo is object{case: accusative}
+poss is object{case: possessive}
+poss1 is object{case: possessive}
 pp is preposition-phrase
 prcl is clause
 subcl is clause

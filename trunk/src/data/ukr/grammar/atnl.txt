@@ -27,14 +27,14 @@ time is time
 vp is verb-phrase
 vp1 is verb-phrase
 vp2 is verb-phrase
-inobj is inessive
-illobj is illative
-allobj is allative
-elobj is elative
-obj is accusative
-cpo is accusative
-poss is possessive
-poss1 is possessive
+inobj is object{case: inessive}
+illobj is object{case: illative}
+allobj is object{case: allative}
+elobj is object{case: elative}
+obj is object{case: accusative}
+cpo is object{case: accusative}
+poss is object{case: possessive}
+poss1 is object{case: possessive}
 pp is preposition-phrase
 prcl is clause
 subcl is clause
@@ -79,19 +79,19 @@ obj :-
     $np<np-att>{case: accusative}
 
 inobj :-
-    P<$case>{case: inessive}
-    $np{case: inessive}
+    P<case>
+    $np<case>
 
 illobj :-
-    P<$case>{case: illative}
-    $np{case: illative}
+    P<case>
+    $np<case>
 
 allobj :-
-    P<$case>{case: allative}
+    P<case>
     $np{case: possessive}
 
 elobj :-
-    P<$case>{case: elative}
+    P<case>
     $np{case: possessive}
 
 pp :-

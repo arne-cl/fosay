@@ -136,6 +136,7 @@ nonterminals = [
     "preposition-phrase",
     "noun-phrase",
     "subject",
+    "object",
     "verb-phrase",
     "numeral-phrase",
     "clause",
@@ -657,7 +658,7 @@ case_2 = create_dict_t(concept["case-2"], cases)
 quantity_case = create_dict_t(concept["quantity-case"], cases)
 adverb_type = create_dict_t(concept["adverb-type"], adverb_types)
 
-nonterminal = create_dict(nonterminals + cases + adverb_types)
+nonterminal = create_dict(nonterminals + adverb_types)
 
 from copy import copy
 type = copy(terminal)
