@@ -62,6 +62,36 @@
     object-difinity: undifinite
     participle: not-participle
 }
+"venni"[vɛn:i] :: all-verbs-3
+{
+    lemma: "terme'u"
+    stem: "terme'u.venni"
+    type: verb
+    tense: infinitive
+    mood: declarative #######nem itt kell!!
+    aspect: indefinite
+    participle: not-participle
+}
+"írni"[i:rni]
+{
+    lemma: "ciska"
+    stem: "ciska.írni"
+    type: verb
+    tense: infinitive
+    mood: declarative #######nem itt kell!!
+    aspect: indefinite
+    participle: not-participle
+}
+"olvasni"[olvɒʃni]
+{
+    lemma: "tcidu"
+    stem: "tcidu.olvasni"
+    type: verb
+    tense: infinitive
+    mood: declarative #######nem itt kell!!
+    aspect: indefinite
+    participle: not-participle
+}
 "megy" :: verb-continuous; verb-perfect-continuous-durative
 {
     transcription: "mɛdʲ"

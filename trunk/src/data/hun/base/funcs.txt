@@ -471,6 +471,230 @@ past-verbs-2 :: verb-perfect-present; verb-perfect-continuous-not-durative
     participle: not-participle
 }
 
+past-verbs-3 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>ttem"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: first
+    object-persone: third
+    participle: not-participle
+}
+past-verbs-3 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>ttem"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: first
+    object-persone: second
+    object-form: formal
+    participle: not-participle
+}
+past-verbs-3 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>ttelek"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: first
+    object-form: informal
+    object-persone: second
+    participle: not-participle
+}
+past-verbs-3 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>ttük"
+    tense: past
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: first
+    object-form: informal
+    object-persone: second
+    participle: not-participle
+}
+past-verbs-3 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>ttünk"
+    tense: past
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: first
+    object-persone: second
+    object-form: informal
+    #object-difinity: undifinite
+    participle: not-participle
+#}
+#{text: "2>tunk"
+#tense: past
+#aspect: indefinite
+#subject-number: plural
+#subject-persone: first
+#object-difinity: undifinite
+#participle: not-participle
+}
+past-verbs-3 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>tted"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: informal
+    object-difinity: difinite
+    participle: not-participle
+}
+past-verbs-3 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>ttél"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: informal
+    object-difinity: undifinite
+    participle: not-participle
+}
+past-verbs-3 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>ttél"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: informal
+    object-persone: first
+    participle: not-participle
+}
+past-verbs-3 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>tte"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: formal
+    object-difinity: difinite
+    participle: not-participle
+}
+past-verbs-3 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>tte"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: third
+    object-difinity: difinite
+    participle: not-participle
+}
+past-verbs-3 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>tt"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: formal
+    object-difinity: undifinite
+    participle: not-participle
+}
+past-verbs-3 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>tt"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: formal
+    object-persone: first
+    participle: not-participle
+}
+past-verbs-3 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>tt"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: third
+    object-difinity: undifinite
+    participle: not-participle
+}
+past-verbs-3 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>tt"
+    tense: past
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: third
+    object-persone: first
+    participle: not-participle
+}
+past-verbs-3 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>ttétek"
+    tense: past
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: second
+    subject-form: informal
+    object-difinity: difinite
+    participle: not-participle
+}
+past-verbs-3 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>ttetek"
+    tense: past
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: second
+    subject-form: informal
+    object-difinity: undifinite
+    participle: not-participle
+}
+past-verbs-3 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>tték"
+    tense: past
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: second
+    subject-form: formal
+    object-difinity: difinite
+    participle: not-participle
+}
+past-verbs-3 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>ttek"
+    tense: past
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: second
+    subject-form: formal
+    object-difinity: undifinite
+    participle: not-participle
+}
+past-verbs-3 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>tték"
+    tense: past
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: third
+    object-difinity: difinite
+    participle: not-participle
+}
+past-verbs-3 :: verb-perfect-present; verb-perfect-continuous-not-durative
+{
+    text: "3>ttek"
+    tense: past
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: third
+    object-difinity: undifinite
+    participle: not-participle
+}
+
 #present================================================
 present-verbs :: verb-continuous; verb-perfect-continuous-durative
 {
@@ -975,6 +1199,261 @@ present-verbs-2 :: verb-continuous; verb-perfect-continuous-durative
 present-verbs-2 :: verb-continuous; verb-perfect-continuous-durative
 {
     text: "3>nak"
+    tense: present
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: third
+    object-difinity: undifinite
+    participle: not-participle
+}
+
+present-verbs-3 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>szek"
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: first
+    object-persone: third
+    object-difinity: undifinite
+    participle: not-participle
+}
+present-verbs-3 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>szem"
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: first
+    object-persone: third
+    object-difinity: difinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-3 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>szem"
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: first
+    object-persone: second
+    object-form: formal
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-3 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>szlek"
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: first
+    object-form: informal
+    object-persone: second
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-3 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>sszük"
+    tense: present
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: first
+    object-form: informal
+    object-persone: second
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-3 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>szünk"
+    tense: present
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: first
+    object-persone: second
+    object-form: informal
+    #object-difinity: undifinite
+    participle: not-participle
+    transitivity: transitive
+#}
+#{text: "3>unk"
+#tense: present
+#aspect: indefinite
+#subject-number: plural
+#subject-persone: first
+#object-difinity: undifinite
+#participle: not-participle
+}
+present-verbs-3 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>szed"
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: informal
+    object-difinity: difinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-3 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>szel"
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: informal
+    object-difinity: undifinite
+    participle: not-participle
+}
+present-verbs-3 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>szel"
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: informal
+    object-persone: first
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-3 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>szi"
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: formal
+    object-difinity: difinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-3 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>szi"
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: third
+    object-difinity: difinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-3 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>sz"#lát
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: formal
+    object-persone: third
+    object-difinity: undifinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-3 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>sz"#lát
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: second
+    subject-form: formal
+    object-persone: first
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-3 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>sz"#lát
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: third
+    object-persone: third
+    object-difinity: undifinite
+    participle: not-participle
+}
+present-verbs-3 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>sz"#lát
+    tense: present
+    aspect: indefinite
+    subject-number: singular
+    subject-persone: third
+    object-persone: first
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-3 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>szitek"
+    tense: present
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: second
+    subject-form: informal
+    object-difinity: difinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-3 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>sztek"
+    tense: present
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: second
+    subject-form: informal
+    object-difinity: undifinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-3 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>szik"
+    tense: present
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: second
+    subject-form: formal
+    object-difinity: difinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-3 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>sznek"
+    tense: present
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: second
+    subject-form: formal
+    object-difinity: undifinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-3 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>szik"
+    tense: present
+    aspect: indefinite
+    subject-number: plural
+    subject-persone: third
+    object-difinity: difinite
+    participle: not-participle
+    transitivity: transitive
+}
+present-verbs-3 :: verb-continuous; verb-perfect-continuous-durative
+{
+    text: "3>sznek"
     tense: present
     aspect: indefinite
     subject-number: plural
@@ -2318,5 +2797,11 @@ all-verbs :: \
 all-verbs-2 :: \
     past-verbs-2; \
     present-verbs-2
+{
+}
+
+all-verbs-3 :: \
+    past-verbs-3; \
+    present-verbs-3
 {
 }
