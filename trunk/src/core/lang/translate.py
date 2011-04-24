@@ -185,13 +185,13 @@ def translate(text, first, source_lang, tlangs):
         #print cfs #english_to_case_frame(tree)
 
         #print cfs[0] #[str(x) for x in cfs]
-        tl = []
+        tl = set([])
         #pr += "translating to " + target_lang.name + ":\n" #; ln += 1 #print("translating #" + str(ln) + ":"); ln += 1
         for x in ncf:
             temp = 0
             for r, p, dr, t in x:
                 #pr += shift + str(r) + ", " + str(p) + ": " + str(t) + "\n" #print((shift + str(ccfs[i])).encode("utf-8"))
-                tl += [str(t)] #tl += [t]
+                tl.add(str(t)) #tl += [t]
                 #pr += shift + str(t) + "\n" #print((shift + str(ccfs[i])).encode("utf-8"))
                 temp += 1
             if PRINT_TO_CONSOLE:
@@ -199,7 +199,7 @@ def translate(text, first, source_lang, tlangs):
             #pr += "\n"
             #tkMessageBox.showinfo("Say Hello", str(ccfs[i]))
             #print(shift + str(r) + ": " + str(t))
-        tr += [tl]
+        tr += [list(tl)]
         if PRINT_TO_CONSOLE:
             print("translating duration =", datetime.now() - d)
             print()
