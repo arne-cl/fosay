@@ -1,4 +1,4 @@
-"mondani"[mondɒni] :: all-verbs-2
+"mondani"[mondɒni]
 {
     lemma: "cusku"
     stem: "cusku.mondani"
@@ -8,9 +8,15 @@
     aspect: indefinite
     participle: not-participle
 }
-"látni" :: all-verbs
+."mond" :: all-verbs
 {
-    transcription: "latni"
+    lemma: "cusku"
+    stem: "cusku.mondani"
+    type: verb
+    mood: declarative #######nem itt kell!!
+}
+"látni"[latni]
+{
     lemma: "viska"
     stem: "viska.látni"
     type: verb
@@ -18,6 +24,14 @@
     mood: declarative #######nem itt kell!!
     aspect: indefinite
     participle: not-participle
+}
+."lát" :: all-verbs
+{
+    transcription: "latni"
+    lemma: "viska"
+    stem: "viska.látni"
+    type: verb
+    mood: declarative #######nem itt kell!!
 }
 "látni fogja"
 {
@@ -61,7 +75,7 @@
     object-difinity: undifinite
     participle: not-participle
 }
-"venni"[vɛn:i] :: all-verbs-3
+"venni"[vɛn:i] :: all-verbs-2
 {
     lemma: "terme'u"
     stem: "terme'u.venni"
@@ -70,6 +84,20 @@
     mood: declarative #######nem itt kell!!
     aspect: indefinite
     participle: not-participle
+}
+."vet" :: past-verbs-2
+{
+    lemma: "terme'u"
+    stem: "terme'u.venni"
+    type: verb
+    mood: declarative #######nem itt kell!!
+}
+."vesz" :: present-verbs-2
+{
+    lemma: "terme'u"
+    stem: "terme'u.venni"
+    type: verb
+    mood: declarative #######nem itt kell!!
 }
 "írni"[i:rni]
 {
