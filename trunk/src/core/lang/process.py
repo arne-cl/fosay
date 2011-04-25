@@ -2,6 +2,7 @@ __author__="zoltan kochan"
 __date__ ="$28 june 2010 1:02:10$"
 __name__ == "process"
 
+from ctypes import ArgumentError
 from core.constants import INDEFINITE
 from core.models.ling_units import *
 from copy import deepcopy
@@ -314,6 +315,20 @@ exclusions = [
     concept["quantity-number"]
 ]
 
+def update_dict(a, b):
+    if len(b.keys()) > 1:
+        print(str(b))
+        raise ArgumentError()
+    key = [item for item in b.keys()][0]
+    if not key in a:
+        a.update(b)
+    else:
+        c = [b[key]] if type(b[key]) != list else b[key]
+        if type(a[key]) == list:
+            a[key] += c
+        else:
+            a[key] = [a[key]] + c
+
 def lang_to_case_frame(unit):
     '''Translates the source language AST to Interlingua'''
     cf = {}
@@ -331,7 +346,7 @@ def lang_to_case_frame(unit):
     else:
         for e in unit.left + unit.right:
             if not e.type in modificators: ##and (e.type != TERMINAL_DETERMINER or not e.attr(concept["difinity"])): #OR JUST TERMINAL_ARTICLE
-                cf.update(lang_to_case_frame(e))
+                update_dict(cf, lang_to_case_frame(e))
         for c in transferred_attributes[unit.type]:
             if unit.attr(c) == None:
                 if c in default:
@@ -365,34 +380,36 @@ def lang_to_case_frame(unit):
 
     return {unit.type: cf}
 
-def nouns(cf, ord = None):
+def nouns(cfe, ord = None):
     p = []
     #print(cf)
-    for key in cf.keys():
-        if key == const.type["noun-phrase"]:
-            if concept['conj-str'] in cf[key].keys():
-                for x in cf[key][key]:
-                    if const.type["noun"] in x.keys():
-                        p += [(x[const.type["noun"]].get(concept["order-number"], None) if ord == None else ord, x)]
-                    elif const.type["pronoun"] in x.keys():
-                        p += [(x[const.type["pronoun"]].get(concept["order-number"], None) if ord == None else ord, x)]
-                    elif const.type["noun-phrase"] in x.keys():
-                        p += nouns(x, cf[key].get(concept["order-number"], None))
-            else:
-                if const.type["noun"] in cf[key].keys():
-                    if type(cf[key][const.type["noun"]]) == type([]):
-                        for item in cf[key][const.type["noun"]]:
-                            p += [(item.get(concept["order-number"], None) if ord == None else ord, {key: item})]
-                    else:
-                        p += [(cf[key][const.type["noun"]].get(concept["order-number"], None) if ord == None else ord, cf[key])]
-                elif const.type["pronoun"] in cf[key].keys():
-                    p += [(cf[key][const.type["pronoun"]].get(concept["order-number"], None) if ord == None else ord, cf[key])]
-                elif const.type["noun-phrase"] in cf[key].keys():
-                    p += nouns(cf[key], cf.get(concept["order-number"], None))
+    ll = [cfe] if type(cfe) != type([]) else cfe
+    for cf in ll:
+        for key in cf.keys():
+            if key == const.type["noun-phrase"]:
+                if concept['conj-str'] in cf[key].keys():
+                    for x in cf[key][key]:
+                        if const.type["noun"] in x.keys():
+                            p += [(x[const.type["noun"]].get(concept["order-number"], None) if ord == None else ord, x)]
+                        elif const.type["pronoun"] in x.keys():
+                            p += [(x[const.type["pronoun"]].get(concept["order-number"], None) if ord == None else ord, x)]
+                        elif const.type["noun-phrase"] in x.keys():
+                            p += nouns(x, cf[key].get(concept["order-number"], None))
+                else:
+                    if const.type["noun"] in cf[key].keys():
+                        if type(cf[key][const.type["noun"]]) == type([]):
+                            for item in cf[key][const.type["noun"]]:
+                                p += [(item.get(concept["order-number"], None) if ord == None else ord, {key: item})]
+                        else:
+                            p += [(cf[key][const.type["noun"]].get(concept["order-number"], None) if ord == None else ord, cf[key])]
+                    elif const.type["pronoun"] in cf[key].keys():
+                        p += [(cf[key][const.type["pronoun"]].get(concept["order-number"], None) if ord == None else ord, cf[key])]
+                    elif const.type["noun-phrase"] in cf[key].keys():
+                        p += nouns(cf[key], cf.get(concept["order-number"], None))
 
 
-        elif is_nonterminalc(key):
-            p += nouns(cf[key], cf.get(concept["order-number"], None))
+            elif is_nonterminalc(key):
+                p += nouns(cf[key], cf.get(concept["order-number"], None))
     return p
 
 #def nouns(cf, ord = None):
