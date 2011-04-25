@@ -167,6 +167,13 @@ class TranslateTestCase(unittest.TestCase):
             "The boy has been seeing a smart woman's beautiful house."
         ]
     ),
+    (
+        "Egy lány vett egy házat Londonban.",
+        [
+            "A girl bought a house in London.",
+            "A girl has been buying a house in London."
+        ]
+    ),
     ]
 
     def test_translate_hun_to_eng(self):

@@ -74,8 +74,6 @@ def order_score(lang, st):
 def unambiguity_score(lang, st):
     pass
 
-import random
-
 def the_bests(lang, f, q):
     if q == []: return q
     ws = []
@@ -90,3 +88,9 @@ def the_bests(lang, f, q):
         px += [ws[i][1]]
         i += 1
     return px
+
+import random
+
+def the_best(lang, f, q):
+    tmp = the_bests(lang, f, q)
+    return tmp[random.randint(0, len(tmp)-1)]

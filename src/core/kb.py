@@ -162,6 +162,13 @@ types_hierarchy = [
     ("lando", "la gr'eyt brit'eyn"),
     ("urbego", "la lyviv"),
     ("urbego", "la k'eyiv"),
+    ('tcadu', 'BUdapect'),
+    ('tcadu', '.UJhorod'),
+    ('tcadu', 'kiiev'),
+    ('tcadu', 'lyndyn'),
+    ('tcadu', 'moskov'),
+    ('tcadu', 'nu,IORK'),
+    ('tcadu', 'byLIN'),
 ]
 
 def is_supertype(sup, sub):

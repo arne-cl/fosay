@@ -162,3 +162,13 @@
     case: inessive
     noun-type: proper
 }
+"лондоне"[londonʲɛ]
+{
+    lemma: "lyndyn"
+    type: noun
+    number: singular
+    gender: masculine
+    persone: third
+    case: inessive
+    noun-type: proper
+}
