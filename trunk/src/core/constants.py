@@ -2,14 +2,6 @@
 __author__="zoltan kochan"
 __date__ ="$28 june 2010 1:02:10$"
 
-
-#TODO:додати негативний чи позитивний відтінок
-#як
-#кохатись - єбатись
-#жіночка - курва
-
-#from core.core import Enum
-
 # Standard states
 STATE_START = 1
 STATE_END = 1000000
@@ -25,7 +17,7 @@ STATE_CONJS = [
     STATE_CONJ_A4,
 ]
 
-INDEFINITE = 100000 #TODO: but should show the minimal count!!!
+INDEFINITE = 100000
 
 
 INHERIT_NAME = "inherit"
@@ -33,15 +25,6 @@ INHERIT_VALUE = None
 #NEUTRAL_VALUE = "neutral"#0
 NONE_VALUE = "none"
 
-#class XEnum(Enum):
-#    def __init__(self, concept, name, enumList):
-#        self.CONCEPT = concept
-#        Enum.__init__(self, name, [("NEUTRAL", NEUTRAL), ("NONE", NONE)] + enumList)
-#
-#    def __getattr__(self, attr):
-#        if attr[0] == 'x':
-#            return (self.CONCEPT, Enum.__getattr__(self, attr[1:]))
-#        return Enum.__getattr__(self, attr)
 
 def create_dict(list):
     d = {}
@@ -70,51 +53,9 @@ def is_terminalc(const):
 def is_nonterminalc(const):
     return const in nonterminal
 
-#def is_prop(p): return FIRST_PROPERTY<=p<=LAST_PROPERTY
 def is_prop(c):
     return c in concept
 
-#MAIN = 1000
-
-#NEUTRAL = 0
-
-#THERE_IS = 0#-1
-
-##constants
-#####LEXICAL_CATEGORY SYNTACTIC_CATEGORY LINGUISTIC_UNIT
-#EPSILON = -2
-##TERMINAL_MODIFIER = 0
-#TERMINAL_PREPOSITION = 1 ##
-#TERMINAL_AUXILIARY = 2 ####
-#TERMINAL_DETERMINER = 3 ###
-#TERMINAL_NOUN = 4
-#TERMINAL_PRONOUN = 5 ######
-#TERMINAL_ADJECTIVE = 6
-#TERMINAL_VERB = 7 #maybe make a modal verb type too?!
-#TERMINAL_ADVERB = 8
-#TERMINAL_NUMERAL = 9
-#TERMINAL_NEGATIVE = 10 #it was my idea. "'Not' is an interesting case. Grammarians have a difficult time categorizing it, and it probably belongs in its own class (Haegeman 1995, Cinque 1998)."
-#TERMINAL_CONJUNCTION = 11
-#LAST_TERMINAL = \
-#TERMINAL_PUNCTUATION = 12
-
-#ConjStr = Enum("ConjStr",
-#    [
-#    ("", 1),
-#    "",
-#    "",
-#    "",
-#    "",
-#    "",
-#    ])
-#TODO: I should use vocabularies instead of Enums
-
-#NONTERMINAL_OBJECT = 17 ##########################
-#NONTERMINAL_PHRASE =
-#NONTERMINAL_SUB_SENTENCE =
-#NONTERMINAL_PREDICATE,\
-
-#TERMINAL_DETERMINER,\
 terminal = create_dict([
     "preposition",
     "auxiliary",
@@ -144,27 +85,6 @@ nonterminals = [
     "paragraph",
     "text"
 ]
-
-
-
-#LAST_NONTERMINAL = NONTERMINAL_TEXT
-#LAST_TERMINAL = TERMINAL_PUNCTUATION
-#TODO: type with Enum
-#Type = XEnum(CONCEPT_TYPE, "Type",
-#    [
-#TERMINAL_PREPOSITION,\
-#TERMINAL_AUXILIARY,\
-#TERMINAL_DETERMINER,\
-#TERMINAL_NOUN,\
-#TERMINAL_PRONOUN,\
-#TERMINAL_ADJECTIVE,\
-#TERMINAL_VERB,\
-#TERMINAL_ADVERB,\
-#TERMINAL_NUMERAL,\
-#TERMINAL_NEGATIVE,\
-#TERMINAL_CONJUNCTION,\
-#TERMINAL_PUNCTUATION
-#             ])
 
 concept = create_dict([
     "personal-name",
@@ -218,11 +138,6 @@ concept = create_dict([
     "real-number",
     "tags"
     ])
-#FIRST_PROPERTY = CONCEPT_TRANSCRIPTION
-#LAST_PROPERTY = CONCEPT_REAL_NUMBER
-####CONCEPT_GENDER = 204 #������������ �����������
-###CONCEPT_NUMBER = 201 #������������ �����������
-#FROM_CASE = 1000
 
 XFROM_FIRST,\
 XFROM_LAST,\
@@ -281,13 +196,6 @@ sentence_end = create_dict(
     "uncomplited-question",
     "uncomplited-exclamation",
     ])
-#sentence_end_point = 1 # the sentence ends with a period (.)
-#sentence_end_uncomplited = 2 # the sentence ends with three periods (...)
-#sentence_end_question = 3 # the sentence ends with a question mark (?)
-#sentence_end_exclamation = 4 # the sentence ends with an exclamation point (!)
-#sentence_end_question_exclamation_ = 5 # the sentence ends with an exclamation point and a question mark (?!)
-#sentence_end_uncomplited_question = 6 # the sentence ends with two periods and a question mark (..?)
-#sentence_end_uncomplited_exclamation = 7 # the sentence ends with two periods and an exclamation point (..!)
 
 sentence_type = create_dict(
     [
@@ -302,30 +210,6 @@ poss_form = create_dict_t(concept["poss-form"],
     "conjoint",
     "absolute",
     ])
-#poss_form_neutral = neutral
-
-#tense = enum("tense",
-#    [
-#    "neutral",
-#    "infinitive",
-#    "infinitive_continuous",
-#    "infinitive_perfect",
-#    "infinitive_perfect_continuous",
-#    "past",
-#    "past_perfect",
-#    "past_continuous",
-#    "past_perfect_continuous",
-#    "present",
-#    "present_perfect",
-#    "present_continuous",
-#    "present_perfect_continuous",
-#    "future",
-#    "future_perfect",
-#    "future_continuous",
-#    "future_indefinite_in_the_past",
-#    "future_perfect_in_the_past",
-#    "future_continuous_in_the_past",
-#    ])
 
 transitivity = create_dict_t(concept["transitivity"],
     [
@@ -390,20 +274,6 @@ aspect = create_dict_t(concept["aspect"],
 #iteration          once
 #duration           prolonged
 #telicity               false
-
-
-#progressive = enum("progressive",
-#    [("stopped", 1),
-#    "going_on",
-#    ])
-
-#
-#past_tenses = set([tense_past, tense_past_perfect, tense_past_continuous, tense_past_perfect_continuous])
-#present_tenses = set([tense_present, tense_present_perfect, tense_present_continuous, tense_present_perfect_continuous])
-#future_tenses = set([tense_future, tense_future_perfect, tense_future_continuous])
-#perfect_tenses = set([tense_infinitive_perfect, tense_past_perfect, tense_present_perfect, tense_future_perfect, tense_future_perfect_in_the_past])
-
-
 
 voice = create_dict_t(concept["voice"],
     [
@@ -514,16 +384,6 @@ conj_str = create_dict_t(concept["conj-str"],
     "nothing",
     ])
 
-#number_indefinite = 6
-
-#difinity_indefinite = neutral #difinity_neutral!!!!!!!!!!!!!!
-
-#degree = xenum(concept_degree, "degree",
-#    [
-#    ""
-#    ])
-#
-
 quantity = create_dict_t(concept["quantity"],
     [
     "all", #всі/кожна
@@ -556,7 +416,6 @@ gender = create_dict_t(concept["gender"],
     "masculine",
     "feminine",
     #"masculine_feminine",
-    #"none", ################################################################
     ])
 
 ###################################################
@@ -711,54 +570,12 @@ difs = [
 difinity = create_dict_t(concept["difinity"], difs)
 object_difinity = create_dict_t(concept["object-difinity"], difs)
 
-#conc = {
-#    conc: adverb_type,
-#    CONCEPT_CASE: case,
-#    CONCEPT_CLAUSE_TYPE: clause_type,
-#    CONCEPT_DIFINITY: difinity,
-#    }
 
 
 
 
 
 
-
-
-#IT IS THE SAME AS CASE!!! SO MAYBE I MUST GET RID OFF ONE OF THEM
-
-#CONCEPT_ADVERBIAL          = NONTERMINAL_ADVERBIAL
-#CONCEPT_EPITHET            = NONTERMINAL_EPITHET
-#CONCEPT_PREPOSITION_PHRASE = NONTERMINAL_PREPOSITION_PHRASE
-#CONCEPT_NOUN_PHRASE        = NONTERMINAL_NOUN_PHRASE ##
-##CONCEPT_OBJECT             = NONTERMINAL_OBJECT
-#CONCEPT_AGENT              = NONTERMINAL_SUBJECT
-#CONCEPT_VERB_PHRASE        = NONTERMINAL_VERB_PHRASE
-##CONCEPT_PREDICATE          = NONTERMINAL_PREDICATE
-##CONCEPT_PHRASE             = NONTERMINAL_PHRASE
-#CONCEPT_CLAUSE             = NONTERMINAL_CLAUSE
-#
-##CONCEPT_EXPERIENCER = 1
-#CONCEPT_INSTRUMENT         = CASE_INSTRUMENTAL
-#CONCEPT_OBJECT             = CASE_ACCUSATIVE
-#CONCEPT_PART_OF            = CASE_PARTITIVE
-#CONCEPT_RECIPIENT          = CASE_DATIVE #indirect object
-#
-##CONCEPT_FROM_TIME
-##CONCEPT_TO_TIME
-##CONCEPT_FROM_PLACE
-##CONCEPT_TO_PLACE
-##OWNS
-##CONCEPT_TIME
-##CONCEPT_PLACE
-##CONCEPT_AIM
-
-
-
-#concept_to_enum = {
-#    CONCEPT_DIFINITY: Difinity,
-#    CONCEPT_NUMBER: Number,
-#    }
 
 
 
@@ -812,9 +629,7 @@ neq = lambda a, b: not eq(a, b)
 #    return b.attr(name) == value
 
 def preqconst(name, a, c):
-    #print a.type, b.type
     if a.attr(name) == None:
         a.attr(name, c)
-        #print "--------"
         return True
     return eq(a.attr(name), c)
