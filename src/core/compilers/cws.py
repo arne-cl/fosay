@@ -45,8 +45,10 @@ class CWSSyntaxError(SyntaxError):
 
 tokens = [
     'IDENTIFIER',
+    'DOT_IDENTIFIER',
     'DCOLON',
     "STRING",
+    "DOT_STRING",
     "NUMBER",
     "NEWLINE",
     "TRANSCR",
@@ -65,8 +67,10 @@ literals = ['{', '}', ':', ';', ',', '[', ']']
 t_ignore = " \t"
 t_TRANSCR = r"\[[^\[\]]+\]"
 t_IDENTIFIER = r"[a-zA-Z_][-a-zA-Z_0-9]*"
+t_DOT_IDENTIFIER = r"\.[a-zA-Z_][-a-zA-Z_0-9]*"
 t_DCOLON = r"::"
 t_STRING = r'\"([^\\\n]|(\\.))*?\"'
+t_DOT_STRING = r'\.\"([^\\\n]|(\\.))*?\"'
 
 ident_hyph_suff = '''[a-zA-Z0-9]*
         ((-[a-zA-Z0-9]+)|(-{2,}[a-zA-Z0-9]+))*
@@ -221,9 +225,10 @@ def modif_text(pattern, text):
         return wo + temp
     return pattern
 
-def modify_base(name, tomod, base):
+def modify_base(has_dot, name, tomod, base):
     global funcs
     for pr in funcs[base]:
+        if pr is None and has_dot: continue
         n = deepcopy(tomod)
         pattern = None
         for p in pr:
@@ -269,7 +274,7 @@ def p_record(p):
     #print(p[1])
     for name, base in header:
         #print(len(name[0]), name[0][0])
-        is_word, nme, ipa = name
+        has_dot, is_word, nme, ipa = name
         if is_word:
             for attr in attributes:
                 if not base is None:
@@ -289,15 +294,15 @@ def p_record(p):
                     if not tok.attr(concept['transcription']) is None:
                         tok.attr(concept['transcription'], [tok.attr(concept['transcription'])])
                     tok.text = [nme]
-                    p[0] += [tok]
+                    if not has_dot: p[0] += [tok]
         else:
             #print(nme)
             if not ipa is None:
                 raise Exception()
             for attr in attributes:
                 if not base is None:
-                    modify_base(nme, attr, base)
-                elif attr != []:
+                    modify_base(has_dot, nme, attr, base)
+                elif not has_dot and attr != []:
                     if nme in funcs.keys():
                         funcs[nme] += [attr]
                     else:
@@ -362,20 +367,35 @@ def p_few_words(p):
 def p_word(p):
     '''word : word_txt
             | word_txtipa
-            | identifier_head'''
+            | identifier_head
+            | dot_word_txt
+            | dot_word_txtipa
+            | dot_identifier_head'''
     p[0] = [p[1]]
 
 def p_identifier_head(p):
     '''identifier_head : identifier'''
-    p[0] = (False, p[1], None)
+    p[0] = (False, False, p[1], None)
 
 def p_word_txt(p):
     '''word_txt : STRING'''
-    p[0] = (True, p[1][1:-1], None)
+    p[0] = (False, True, p[1][1:-1], None)
 
 def p_word_txtipa(p):
     '''word_txtipa : STRING TRANSCR'''
-    p[0] = (True, p[1][1:-1], p[2][1:-1])
+    p[0] = (False, True, p[1][1:-1], p[2][1:-1])
+
+def p_dot_identifier_head(p):
+    '''dot_identifier_head : DOT_IDENTIFIER'''
+    p[0] = (True, False, p[1][1:], None)
+
+def p_dot_word_txt(p):
+    '''dot_word_txt : DOT_STRING'''
+    p[0] = (True, True, p[1][2:-1], None)
+
+def p_dot_word_txtipa(p):
+    '''dot_word_txtipa : DOT_STRING TRANSCR'''
+    p[0] = (True, True, p[1][2:-1], p[2][1:-1])
 
 # string sequences region
 def p_strings(p):
