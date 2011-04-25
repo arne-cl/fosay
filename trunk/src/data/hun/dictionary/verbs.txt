@@ -75,7 +75,7 @@
     object-difinity: undifinite
     participle: not-participle
 }
-"venni"[vɛn:i] :: all-verbs-2
+"venni"[vɛn:i]
 {
     lemma: "terme'u"
     stem: "terme'u.venni"
