@@ -119,6 +119,13 @@
     aspect: indefinite
     participle: not-participle
 }
+."olvas" :: all-verbs-3
+{
+    lemma: "tcidu"
+    stem: "tcidu.olvasni"
+    type: verb
+    mood: declarative #######nem itt kell!!
+}
 "megy" :: verb-continuous; verb-perfect-continuous-durative
 {
     transcription: "mɛdʲ"
