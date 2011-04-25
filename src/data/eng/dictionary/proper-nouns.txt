@@ -1,7 +1,7 @@
 "john" :: possessive; accusative
 {
     transcription: "dʒon"
-    lemma: "ioxanan."
+    lemma: "ioxanan"
     tags: english
     type: noun
     number: singular
@@ -13,7 +13,7 @@
 }
 "samuel"[sæmjul] :: possessive; accusative
 {
-    lemma: "semu,el."
+    lemma: "semu'el"
     tags: english
     type: noun
     number: singular
@@ -26,7 +26,7 @@
 "ivan" :: possessive; accusative
 {
     transcription: "ivan"
-    lemma: "ioxanan."
+    lemma: "ioxanan"
     tags: ukrainian
     type: noun
     number: singular
@@ -39,7 +39,7 @@
 "zoltan" :: possessive; accusative
 {
     transcription: "zoltan"
-    lemma: "zoltan."
+    lemma: "zoltan"
     tags: hungarian
     type: noun
     form: formal
@@ -53,7 +53,7 @@
 "zoli" :: possessive; accusative
 {
     transcription: "zoli"
-    lemma: "zoltan."
+    lemma: "zoltan"
     tags: hungarian
     type: noun
     form: informal
@@ -66,7 +66,7 @@
 }
 "yuliya"[julija]; "yulia"[julia] :: possessive; accusative
 {
-    lemma: "iuli,as."
+    lemma: "iuli'as"
     form: formal
     tags: ukrainian
     type: noun
@@ -79,7 +79,7 @@
 }
 "victoria"[vɪktɔriə] :: possessive; accusative
 {
-    lemma: "viktoriias."
+    lemma: "viktoriias"
     form: formal
     type: noun
     number: singular
@@ -91,7 +91,7 @@
 }
 "vicki"[vɪki]; "tori"[tɔri] :: possessive; accusative
 {
-    lemma: "viktoriias."
+    lemma: "viktoriias"
     form: informal
     type: noun
     number: singular
@@ -104,7 +104,7 @@
 "yulya" :: possessive; accusative
 {
     transcription: "julʲa"
-    lemma: "iuli,as."
+    lemma: "iuli'as"
     form: informal
     tags: ukrainian
     type: noun
@@ -117,7 +117,7 @@
 }
 "kochan"[kotʃan] :: possessive; accusative
 {
-    lemma: "kotcan."
+    lemma: "kotcan"
     type: noun
     number: singular
     persone: third
@@ -127,7 +127,7 @@
 }
 "lokk"[lokk] :: possessive; accusative
 {
-    lemma: "lok."
+    lemma: "lok"
     type: noun
     tags: english
     number: singular
@@ -138,7 +138,7 @@
 }
 "johnson"[dʒɑnsən] :: possessive; accusative
 {
-    lemma: "djonson."
+    lemma: "djonson"
     type: noun
     tags: english
     number: singular
@@ -149,7 +149,7 @@
 }
 "smith"[smɪθ] :: possessive; accusative
 {
-    lemma: "smit."
+    lemma: "smit"
     type: noun
     tags: english
     number: singular
@@ -158,13 +158,99 @@
     personal-name: surname
     case: nominative
 }
+#
+# Geographical names
+#
 "uzhhorod" :: possessive; accusative
 {
     transcription: "uʒhorod"
-    lemma: ".ujhorod."
+    lemma: ".UJhorod"
     real-number: singular
     tags: ukrainian
     type: noun
+    number: singular
+    gender: lifeless
+    persone: third
+    noun-type: proper
+    case: nominative
+}
+"budapest"[budəpɛst] :: possessive; accusative
+{
+    lemma: "BUdapect"
+    real-number: singular
+    type: noun
+    number: singular
+    gender: lifeless
+    persone: third
+    noun-type: proper
+    case: nominative
+}
+"kyiv"[keiv] :: possessive; accusative
+{
+    lemma: "kiiev"
+    real-number: singular
+    type: noun
+    tags: ukrainian
+    number: singular
+    gender: lifeless
+    persone: third
+    noun-type: proper
+    case: nominative
+}
+"kiev"[kiɛv] :: possessive; accusative
+{
+    lemma: "kiiev"
+    real-number: singular
+    type: noun
+    tags: russian
+    number: singular
+    gender: lifeless
+    persone: third
+    noun-type: proper
+    case: nominative
+}
+"london"[ləndən] :: possessive; accusative
+{
+    lemma: "lyndyn"
+    real-number: singular
+    type: noun
+    tags: russian
+    number: singular
+    gender: lifeless
+    persone: third
+    noun-type: proper
+    case: nominative
+}
+"moscow"[mɑsko] :: possessive; accusative
+{
+    lemma: "moskov"
+    real-number: singular
+    type: noun
+    tags: russian
+    number: singular
+    gender: lifeless
+    persone: third
+    noun-type: proper
+    case: nominative
+}
+"new york"[nu jɔrk]
+{
+    lemma: "nu,IORK"
+    real-number: singular
+    type: noun
+    tags: russian
+    number: singular
+    gender: lifeless
+    persone: third
+    noun-type: proper
+    case: nominative
+}
+"berlin"[bərlɪn]
+{
+    lemma: "byLIN"
+    real-number: singular
+    type: noun
+    tags: russian
     number: singular
     gender: lifeless
     persone: third

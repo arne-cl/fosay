@@ -1,7 +1,7 @@
-"iván"
+"iván" :: cases-london
 {
     transcription: "ivan"
-    lemma: "ioxanan."
+    lemma: "ioxanan"
     real-number: singular
     tags: ukrainian
     type: noun
@@ -12,10 +12,10 @@
     noun-type: proper
     personal-name: first-name
 }
-"zoltán"
+"zoltán" :: cases-london
 {
     transcription: "zoltan"
-    lemma: "zoltan."
+    lemma: "zoltan"
     real-number: singular
     tags: hungarian
     type: noun
@@ -30,7 +30,7 @@
 "zoli"
 {
     transcription: "zoli"
-    lemma: "zoltan."
+    lemma: "zoltan"
     real-number: singular
     tags: hungarian
     type: noun
@@ -45,7 +45,7 @@
 "zolika"
 {
     transcription: "zolikɒ"
-    lemma: "zoltan."
+    lemma: "zoltan"
     real-number: singular
     tags: hungarian
     type: noun
@@ -57,10 +57,10 @@
     noun-type: proper
     personal-name: first-name
 }
-"kocsán"
+"kocsán" :: cases-london
 {
     transcription: "kotʃan"
-    lemma: "kotcan."
+    lemma: "kotcan"
     real-number: singular
     type: noun
     number: singular
@@ -72,7 +72,7 @@
 }
 "johnson"[dʒɑnsən]
 {
-    lemma: "djonson."
+    lemma: "djonson"
     real-number: singular
     type: noun
     tags: english
@@ -85,7 +85,7 @@
 }
 "lokk"[lokk]
 {
-    lemma: "lok."
+    lemma: "lok"
     real-number: singular
     type: noun
     tags: english
@@ -98,7 +98,7 @@
 }
 "smith"[smɪθ]
 {
-    lemma: "smit."
+    lemma: "smit"
     real-number: singular
     type: noun
     tags: english
@@ -109,10 +109,10 @@
     noun-type: proper
     personal-name: surname
 }
-"jános"
+"jános" :: cases-london
 {
     transcription: "janoʃ"
-    lemma: "ioxanan."
+    lemma: "ioxanan"
     tags: hungarian
     real-number: singular
     type: noun
@@ -127,7 +127,7 @@
 "john"
 {
     transcription: "dʒon"
-    lemma: "ioxanan."
+    lemma: "ioxanan"
     tags: english
     real-number: singular
     type: noun
@@ -141,7 +141,7 @@
 }
 "samuel"[sæmjul]
 {
-    lemma: "semu,el."
+    lemma: "semu'el"
     tags: english
     real-number: singular
     type: noun
@@ -156,7 +156,7 @@
 "júlia" :: cases-7
 {
     transcription: "juliɒ"
-    lemma: "iuli,as."
+    lemma: "iuli'as"
     real-number: singular
     tags: hungarian
     type: noun
@@ -167,10 +167,13 @@
     noun-type: proper
     personal-name: first-name
 }
+#
+# Városok
+#
 "uzshorod" :: cases-2
 {
     transcription: "uʒhorod"
-    lemma: ".ujhorod."
+    lemma: ".UJhorod"
     tags: ukrainian
     real-number: singular
     type: noun
@@ -180,11 +183,77 @@
     case-2: nominative
     noun-type: proper
 }
-"ungvár" :: cases-6
+"ungvár"[ungvar] :: cases-6
 {
-    transcription: "ungvar"
-    lemma: ".ujhorod."
+    lemma: ".UJhorod"
     tags: hungarian
+    real-number: singular
+    type: noun
+    number: singular
+    persone: third
+    case: nominative
+    case-2: nominative
+    noun-type: proper
+}
+"budapest"[budɒpɛʃt] :: cases-budapest
+{
+    lemma: "BUdapect"
+    real-number: singular
+    type: noun
+    number: singular
+    persone: third
+    case: nominative
+    case-2: nominative
+    noun-type: proper
+}
+"kijev"[kijev] :: cases-kijev
+{
+    lemma: "kiiev"
+    real-number: singular
+    tags: russian
+    type: noun
+    number: singular
+    persone: third
+    case: nominative
+    case-2: nominative
+    noun-type: proper
+}
+"london"[london] :: cases-london
+{
+    lemma: "lyndyn"
+    real-number: singular
+    type: noun
+    number: singular
+    persone: third
+    case: nominative
+    case-2: nominative
+    noun-type: proper
+}
+"moskva"[moskvɒ]
+{
+    lemma: "moskov"
+    real-number: singular
+    type: noun
+    number: singular
+    persone: third
+    case: nominative
+    case-2: nominative
+    noun-type: proper
+}
+"new york"[nʲu jork] :: cases-ny
+{
+    lemma: "nu,IORK"
+    real-number: singular
+    type: noun
+    number: singular
+    persone: third
+    case: nominative
+    case-2: nominative
+    noun-type: proper
+}
+"berlin"[bɛrlin] :: cases-berlin
+{
+    lemma: "byLIN"
     real-number: singular
     type: noun
     number: singular
