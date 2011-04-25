@@ -8,9 +8,6 @@ def get_tranarr(st):
         return st.transcription
     r = []
     for c in st.left + st.cblocks + st.right:
-
-        #r += get_tranarr(c)
-
         t = get_tranarr(c)
         if t != None:
             r += t
@@ -21,22 +18,10 @@ def get_wordarr(st):
         return st.text
     r = []
     for c in st.left + st.blocks + st.right:
-        ###
         if is_terminalc(c.type) and c.meaning == None: continue
-        ###
         if get_wordarr(c) != None:
             r += get_wordarr(c)
-        #else:
-        #    r += [0]
     return r
-
-#def _eupony_score(st, r, v = None):
-#    if is_terminalc(st.type):
-#        if (v == True and )
-#        pass
-#    else:
-#        for c in st.left + st.blocks + st.right:
-#            pass
 
 ipa_vow = ["a", "e", "u", "i", "o", "ø", "ɒ", "ɛ", "ɪ", "ə", "æ"]
 
@@ -44,7 +29,6 @@ def eupony_score(lang, st):
     "Оцінює милозвучність текста"
     r = 0
     v = None
-    #print(get_wordarr(st))
     for w in get_tranarr(st):
         if (v == None):
             v = w[-1] in ipa_vow
@@ -62,15 +46,12 @@ def pithiness_score(lang, st):
 def direct_pithiness_score(lang, st):
     return -1*len(str(st))
 
-#def pithiness_score1(lang, st):
-#    return -1*len(str(st))
-
-
 
 def order_score(lang, st):
     return -1*st.renumerate()[1]
 
-#cлова з меншою кількістю лексичних значень або з ближчими за значення лексичними значеннями отримують вищий бал
+#cлова з меншою кількістю лексичних значень або
+#з ближчими за значення лексичними значеннями отримують вищий бал
 def unambiguity_score(lang, st):
     pass
 
