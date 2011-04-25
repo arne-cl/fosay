@@ -1,6 +1,6 @@
 "джон"[dʒon]
 {
-    lemma: "ioxanan."
+    lemma: "ioxanan"
     type: noun
     tags: english
     number: singular
@@ -12,7 +12,7 @@
 }
 "сэмюэл"[semjuelʲ]
 {
-    lemma: "semu,el."
+    lemma: "semu'el"
     type: noun
     tags: english
     number: singular
@@ -24,7 +24,7 @@
 }
 "иван"[ivan] :: masculine-patronymic-1; feminine-patronymic-1
 {
-    lemma: "ioxanan."
+    lemma: "ioxanan"
     type: noun
     tags: ukrainian
     number: singular
@@ -36,7 +36,7 @@
 }
 "золтан"[zoltan] :: masculine-patronymic-1; feminine-patronymic-1
 {
-    lemma: "zoltan."
+    lemma: "zoltan"
     type: noun
     form: formal
     tags: hungarian
@@ -49,7 +49,7 @@
 }
 "золи"[zoli]
 {
-    lemma: "zoltan."
+    lemma: "zoltan"
     type: noun
     form: informal
     tags: hungarian
@@ -62,7 +62,7 @@
 }
 "кочан"[kotʃan]
 {
-    lemma: "kotcan."
+    lemma: "kotcan"
     stem: "kotcan.кочан"
     type: noun
     number: singular
@@ -73,7 +73,7 @@
 }
 "шевченко"[ʃɛvtʃɛnko]
 {
-    lemma: "cevtcenkos."
+    lemma: "cevtcenkos"
     type: noun
     tags: ukrainian
     number: singular
@@ -84,7 +84,7 @@
 }
 "локк"[lok]
 {
-    lemma: "lok."
+    lemma: "lok"
     type: noun
     tags: english
     number: singular
@@ -95,7 +95,7 @@
 }
 "джонсон"[djonson]
 {
-    lemma: "djonson."
+    lemma: "djonson"
     type: noun
     tags: english
     number: singular
@@ -106,7 +106,7 @@
 }
 "смит"[smit]
 {
-    lemma: "smit."
+    lemma: "smit"
     type: noun
     tags: english
     number: singular
@@ -117,7 +117,7 @@
 }
 "юлия"[julʲija]
 {
-    lemma: "iuli,as."
+    lemma: "iuli'as"
     type: noun
     form: formal
     number: singular
@@ -129,7 +129,7 @@
 }
 "юлии"[julʲii]
 {
-    lemma: "iuli,as."
+    lemma: "iuli'as"
     type: noun
     form: formal
     number: singular
@@ -141,7 +141,7 @@
 }
 "юли"[julʲi]
 {
-    lemma: "iuli,as."
+    lemma: "iuli'as"
     type: noun
     form: informal
     number: singular
@@ -153,7 +153,7 @@
 }
 "ужгороде"[uʒgarodʲɛ]
 {
-    lemma: ".ujhorod."
+    lemma: ".UJhorod"
     type: noun
     tags: ukrainian
     number: singular

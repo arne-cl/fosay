@@ -1,7 +1,7 @@
 "джон"
 {
     transcription: "dʒon"
-    lemma: "ioxanan."
+    lemma: "ioxanan"
     type: noun
     tags: english
     number: singular
@@ -13,7 +13,7 @@
 }
 "семюель"[semjuelʲ]
 {
-    lemma: "semu,el."
+    lemma: "semu'el"
     type: noun
     tags: english
     number: singular
@@ -26,7 +26,7 @@
 "іван" :: masculine-patronymic-1; feminine-patronymic-1
 {
     transcription: "ivan"
-    lemma: "ioxanan."
+    lemma: "ioxanan"
     type: noun
     tags: ukrainian
     number: singular
@@ -39,7 +39,7 @@
 "золтан" :: masculine-patronymic-1; feminine-patronymic-1
 {
     transcription: "zoltan"
-    lemma: "zoltan."
+    lemma: "zoltan"
     type: noun
     form: formal
     tags: hungarian
@@ -53,7 +53,7 @@
 "зол'і"
 {
     transcription: "zoli"
-    lemma: "zoltan."
+    lemma: "zoltan"
     type: noun
     form: informal
     tags: hungarian
@@ -67,7 +67,7 @@
 "кочан"
 {
     transcription: "kotʃan"
-    lemma: "kotcan."
+    lemma: "kotcan"
     stem: "kotcan.кочан"
     type: noun
     number: singular
@@ -79,7 +79,7 @@
 "шевченко"
 {
     transcription: "ʃɛvtʃɛnko"
-    lemma: "cevtcenkos."
+    lemma: "cevtcenkos"
     type: noun
     tags: ukrainian
     number: singular
@@ -90,7 +90,7 @@
 }
 "локк"[lok]
 {
-    lemma: "lok."
+    lemma: "lok"
     type: noun
     tags: english
     number: singular
@@ -101,7 +101,7 @@
 }
 "джонсон"[djonson]
 {
-    lemma: "djonson."
+    lemma: "djonson"
     type: noun
     tags: english
     number: singular
@@ -112,7 +112,7 @@
 }
 "сміт"[smit]
 {
-    lemma: "smit."
+    lemma: "smit"
     type: noun
     tags: english
     number: singular
@@ -124,7 +124,7 @@
 "юлія"
 {
     transcription: "julʲija"
-    lemma: "iuli,as."
+    lemma: "iuli'as"
     type: noun
     form: formal
     number: singular
@@ -136,7 +136,7 @@
 }
 "вікторія"[viktorija]
 {
-    lemma: "viktoriias."
+    lemma: "viktoriias"
     type: noun
     form: formal
     number: singular
@@ -148,7 +148,7 @@
 }
 "віка"[vika]
 {
-    lemma: "viktoriias."
+    lemma: "viktoriias"
     type: noun
     form: informal
     number: singular
@@ -161,7 +161,7 @@
 "юлії"
 {
     transcription: "julʲiji"
-    lemma: "iuli,as."
+    lemma: "iuli'as"
     type: noun
     form: formal
     number: singular
@@ -174,7 +174,7 @@
 "юлі"
 {
     transcription: "julʲi"
-    lemma: "iuli,as."
+    lemma: "iuli'as"
     type: noun
     form: informal
     number: singular
@@ -187,7 +187,7 @@
 "ужгороді"
 {
     transcription: "uʒhorod"
-    lemma: ".ujhorod."
+    lemma: ".UJhorod"
     type: noun
     tags: ukrainian
     number: singular
