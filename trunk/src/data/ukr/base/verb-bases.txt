@@ -34,6 +34,7 @@ cpr-s1 :: verb-perfect-future; verb-perfect-continuous-durative
     number: singular
     participle: not-participle
     mood: declarative
+    aspect: continuous
 }
 cpr-p1 :: verb-perfect-future; verb-perfect-continuous-durative
 {
@@ -42,6 +43,7 @@ cpr-p1 :: verb-perfect-future; verb-perfect-continuous-durative
     number: plural
     participle: not-participle
     mood: declarative
+    aspect: continuous
 }
 cpr-s2i :: verb-perfect-future; verb-perfect-continuous-durative
 {
@@ -51,6 +53,7 @@ cpr-s2i :: verb-perfect-future; verb-perfect-continuous-durative
     form: informal
     participle: not-participle
     mood: declarative
+    aspect: continuous
 }
 cpr-s2f :: verb-perfect-future; verb-perfect-continuous-durative
 {
@@ -60,6 +63,7 @@ cpr-s2f :: verb-perfect-future; verb-perfect-continuous-durative
     form: formal
     participle: not-participle
     mood: declarative
+    aspect: continuous
 }
 cpr-p2i :: verb-perfect-future; verb-perfect-continuous-durative
 {
@@ -69,6 +73,7 @@ cpr-p2i :: verb-perfect-future; verb-perfect-continuous-durative
     form: informal
     participle: not-participle
     mood: declarative
+    aspect: continuous
 }
 cpr-s3 :: verb-perfect-future; verb-perfect-continuous-durative
 {
@@ -77,6 +82,7 @@ cpr-s3 :: verb-perfect-future; verb-perfect-continuous-durative
     number: singular
     participle: not-participle
     mood: declarative
+    aspect: continuous
 }
 cpr-p3 :: verb-perfect-future; verb-perfect-continuous-durative
 {
@@ -85,6 +91,7 @@ cpr-p3 :: verb-perfect-future; verb-perfect-continuous-durative
     number: plural
     participle: not-participle
     mood: declarative
+    aspect: continuous
 }
 pr-s1 :: verb-perfect-future
 {
@@ -93,6 +100,7 @@ pr-s1 :: verb-perfect-future
     number: singular
     participle: not-participle
     mood: declarative
+    aspect: indefinite
 }
 pr-p1 :: verb-perfect-future
 {
@@ -101,6 +109,7 @@ pr-p1 :: verb-perfect-future
     number: plural
     participle: not-participle
     mood: declarative
+    aspect: indefinite
 }
 pr-s2i :: verb-perfect-future
 {
@@ -110,6 +119,7 @@ pr-s2i :: verb-perfect-future
     form: informal
     participle: not-participle
     mood: declarative
+    aspect: indefinite
 }
 pr-s2f :: verb-perfect-future
 {
@@ -119,6 +129,7 @@ pr-s2f :: verb-perfect-future
     form: formal
     participle: not-participle
     mood: declarative
+    aspect: indefinite
 }
 pr-p2i :: verb-perfect-future
 {
@@ -128,6 +139,7 @@ pr-p2i :: verb-perfect-future
     form: informal
     participle: not-participle
     mood: declarative
+    aspect: indefinite
 }
 pr-s3 :: verb-perfect-future
 {
@@ -136,6 +148,7 @@ pr-s3 :: verb-perfect-future
     number: singular
     participle: not-participle
     mood: declarative
+    aspect: indefinite
 }
 pr-p3 :: verb-perfect-future
 {
@@ -144,77 +157,78 @@ pr-p3 :: verb-perfect-future
     number: plural
     participle: not-participle
     mood: declarative
+    aspect: indefinite
 }
 #past
 pa-sm :: verb-perfect-present
 {
     gender: masculine
     tense: past
-    #persone: neutral
     number: singular
     participle: not-participle
     mood: declarative
+    aspect: indefinite
 }
 pa-sf :: verb-perfect-present
 {
     gender: feminine
     tense: past
-    #persone: neutral
     number: singular
     participle: not-participle
     mood: declarative
+    aspect: indefinite
 }
 pa-sl :: verb-perfect-present
 {
     gender: lifeless
     tense: past
-    #persone: neutral
     number: singular
     participle: not-participle
     mood: declarative
+    aspect: indefinite
 }
 pa-p :: verb-perfect-present
 {
     tense: past
-    #persone: neutral
     number: plural
     participle: not-participle
     mood: declarative
+    aspect: indefinite
 }
 cpa-sm :: verb-perfect-present; verb-perfect-continuous-not-durative
 {
     gender: masculine
     tense: past
-    #persone: neutral
     number: singular
     participle: not-participle
     mood: declarative
+    aspect: indefinite #continuous
 }
 cpa-sf :: verb-perfect-present; verb-perfect-continuous-not-durative
 {
     gender: feminine
     tense: past
-    #persone: neutral
     number: singular
     participle: not-participle
     mood: declarative
+    aspect: indefinite #continuous
 }
 cpa-sl :: verb-perfect-present; verb-perfect-continuous-not-durative
 {
     gender: lifeless
     tense: past
-    #persone: neutral
     number: singular
     participle: not-participle
     mood: declarative
+    aspect: indefinite #continuous
 }
 cpa-p :: verb-perfect-present; verb-perfect-continuous-not-durative
 {
     tense: past
-    #persone: neutral
     number: plural
     participle: not-participle
     mood: declarative
+    aspect: indefinite #continuous
 }
 #future
 fu-s1
@@ -224,6 +238,7 @@ fu-s1
     number: singular
     participle: not-participle
     mood: declarative
+    aspect: indefinite
 }
 fu-p1
 {
@@ -232,6 +247,7 @@ fu-p1
     number: plural
     participle: not-participle
     mood: declarative
+    aspect: indefinite
 }
 fu-s2i
 {
@@ -241,6 +257,7 @@ fu-s2i
     form: informal
     participle: not-participle
     mood: declarative
+    aspect: indefinite
 }
 fu-s2f
 {
@@ -250,6 +267,7 @@ fu-s2f
     form: formal
     participle: not-participle
     mood: declarative
+    aspect: indefinite
 }
 fu-p2i
 {
@@ -259,6 +277,7 @@ fu-p2i
     form: informal
     participle: not-participle
     mood: declarative
+    aspect: indefinite
 }
 fu-s3
 {
@@ -267,6 +286,7 @@ fu-s3
     number: singular
     participle: not-participle
     mood: declarative
+    aspect: indefinite
 }
 fu-p3
 {
@@ -275,6 +295,7 @@ fu-p3
     number: plural
     participle: not-participle
     mood: declarative
+    aspect: indefinite
 }
 
 co-sm
@@ -284,6 +305,7 @@ co-sm
     number: singular
     participle: not-participle
     mood: conditional
+    aspect: indefinite
 }
 co-sf
 {
@@ -292,6 +314,7 @@ co-sf
     number: singular
     participle: not-participle
     mood: conditional
+    aspect: indefinite
 }
 co-sl
 {
@@ -300,6 +323,7 @@ co-sl
     number: singular
     mood: conditional
     participle: not-participle
+    aspect: indefinite
 }
 co-p
 {
@@ -307,6 +331,7 @@ co-p
     number: plural
     mood: conditional
     participle: not-participle
+    aspect: indefinite
 }
 
 .past-verb-forms-1 :: pa-sm
@@ -343,19 +368,19 @@ co-p
     text: "0>или"
 }
 
-.past-verb-forms-kupljaty :: pa-sm
+.past-verb-forms-kupljaty :: cpa-sm
 {
     text: "0>в"
 }
-.past-verb-forms-kupljaty :: pa-sf
+.past-verb-forms-kupljaty :: cpa-sf
 {
     text: "0>ла"
 }
-.past-verb-forms-kupljaty :: pa-sl
+.past-verb-forms-kupljaty :: cpa-sl
 {
     text: "0>ло"
 }
-.past-verb-forms-kupljaty :: pa-p
+.past-verb-forms-kupljaty :: cpa-p
 {
     text: "0>ли"
 }
@@ -389,31 +414,31 @@ co-p
     text: "2>ють"
 }
 
-.present-verb-forms-kupljaty :: pr-s1
+.present-verb-forms-kupljaty :: cpr-s1
 {
     text: "0>ю"
 }
-.present-verb-forms-kupljaty :: pr-p1
+.present-verb-forms-kupljaty :: cpr-p1
 {
     text: "0>ємо"
 }
-.present-verb-forms-kupljaty :: pr-s2i
+.present-verb-forms-kupljaty :: cpr-s2i
 {
     text: "0>єш"
 }
-.present-verb-forms-kupljaty :: pr-s2f
+.present-verb-forms-kupljaty :: cpr-s2f
 {
     text: "0>єте"
 }
-.present-verb-forms-kupljaty :: pr-p2i
+.present-verb-forms-kupljaty :: cpr-p2i
 {
     text: "0>єте"
 }
-.present-verb-forms-kupljaty :: pr-s3
+.present-verb-forms-kupljaty :: cpr-s3
 {
     text: "0>є"
 }
-.present-verb-forms-kupljaty :: pr-p3
+.present-verb-forms-kupljaty :: cpr-p3
 {
     text: "0>ють"
 }

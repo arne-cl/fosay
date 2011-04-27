@@ -1,5 +1,5 @@
 #ukrainian dictionary v0.0.1
-"бачити" :: cont-verbs-2
+"бачити" :: verbs-2; cont-verbs-2
 {
     transcription: "batʃete"
     lemma: "viska"
@@ -181,7 +181,6 @@
     lemma: "terme'u"
     stem: "terme'u.купляти"
     type: verb
-    aspect: continuous
 }
 "купити"[kupete]
 {
@@ -198,6 +197,5 @@
     stem: "terme'u.купити"
     type: verb
     tense: infinitive
-    aspect: indefinite
     participle: not-participle
 }
