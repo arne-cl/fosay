@@ -55,6 +55,12 @@ verb-perfect-continuous-not-durative
     tense: present;
     aspect: perfect-continuous-not-durative;
 }
+inf
+{
+    tense: infinitive;
+    aspect: indefinite;
+    participle: not-participle;
+}
 pr-s1
 {
     tense: present;
@@ -262,10 +268,10 @@ co-p
 }
 
 .past-verb-forms-1
-:: pa-sm { text: "2>в"  }
-:: pa-sf { text: "2>ла" }
-:: pa-sl { text: "2>ло" }
-:: pa-p  { text: "2>ли" }
+:: pa-sm { sufix: "в"  }
+:: pa-sf { sufix: "ла" }
+:: pa-sl { sufix: "ло" }
+:: pa-p  { sufix: "ли" }
 
 .past-verb-forms-kupyty
 :: pa-sm { sufix: "ив"  }
@@ -280,64 +286,64 @@ co-p
 :: pa-p  { sufix: "ли" }
 
 .present-verb-forms-1
-:: pr-s1  { text: "2>ю"   }
-:: pr-p1  { text: "2>ємо" }
-:: pr-s2i { text: "2>єш"  }
-:: pr-s2f { text: "2>єте" }
-:: pr-p2i { text: "2>єте" }
-:: pr-s3  { text: "2>є"   }
-:: pr-p3  { text: "2>ють" }
-
-.present-verb-forms-kupljaty
-:: pr-s1 { sufix: "ю" }
-:: pr-p1 { sufix: "ємо" }
-:: pr-s2i { sufix: "єш" }
+:: pr-s1  { sufix: "ю"   }
+:: pr-p1  { sufix: "ємо" }
+:: pr-s2i { sufix: "єш"  }
 :: pr-s2f { sufix: "єте" }
 :: pr-p2i { sufix: "єте" }
-:: pr-s3 { sufix: "є" }
-:: pr-p3 { sufix: "ють" }
+:: pr-s3  { sufix: "є"   }
+:: pr-p3  { sufix: "ють" }
+
+.present-verb-forms-kupljaty
+:: pr-s1  { sufix: "ю"   }
+:: pr-p1  { sufix: "ємо" }
+:: pr-s2i { sufix: "єш"  }
+:: pr-s2f { sufix: "єте" }
+:: pr-p2i { sufix: "єте" }
+:: pr-s3  { sufix: "є"   }
+:: pr-p3  { sufix: "ють" }
 
 .present-verb-forms-kupyty
-:: pr-s1 { sufix: "ую" }
-:: pr-p1 { sufix: "уємо" }
-:: pr-s2i { sufix: "уєш" }
+:: pr-s1  { sufix: "ую"   }
+:: pr-p1  { sufix: "уємо" }
+:: pr-s2i { sufix: "уєш"  }
 :: pr-s2f { sufix: "уєте" }
 :: pr-p2i { sufix: "уєте" }
-:: pr-s3 { sufix: "ує" }
-:: pr-p3 { sufix: "ують" }
+:: pr-s3  { sufix: "ує"   }
+:: pr-p3  { sufix: "ують" }
 
 .future-verb-forms-1
-:: fu-s1 { text: "2>тиму" }
-:: fu-p1 { text: "2>тимемо" }
-:: fu-s2i { text: "2>тимеш" }
-:: fu-s2f { text: "2>тимете" }
-:: fu-p2i { text: "2>тимете" }
-:: fu-s3 { text: "2>тиме" }
-:: fu-p3 { text: "2>тимуть" }
+:: fu-s1  { sufix: "тиму"   }
+:: fu-p1  { sufix: "тимемо" }
+:: fu-s2i { sufix: "тимеш"  }
+:: fu-s2f { sufix: "тимете" }
+:: fu-p2i { sufix: "тимете" }
+:: fu-s3  { sufix: "тиме"   }
+:: fu-p3  { sufix: "тимуть" }
 
 .future-verb-forms-kupyty
-:: fu-s1  { sufix: "лю" }
-:: fu-p1  { sufix: "имо" }
-:: fu-s2i { sufix: "иш" }
-:: fu-s2f { sufix: "ите" }
-:: fu-p2i { sufix: "ите" }
-:: fu-s3  { sufix: "ить" }
+:: fu-s1  { sufix: "лю"   }
+:: fu-p1  { sufix: "имо"  }
+:: fu-s2i { sufix: "иш"   }
+:: fu-s2f { sufix: "ите"  }
+:: fu-p2i { sufix: "ите"  }
+:: fu-s3  { sufix: "ить"  }
 :: fu-p3  { sufix: "лять" }
 
 .future-verb-forms-kupljaty
-:: fu-s1  { sufix: "тиму" }
+:: fu-s1  { sufix: "тиму"   }
 :: fu-p1  { sufix: "тимемо" }
-:: fu-s2i { sufix: "тимеш" }
+:: fu-s2i { sufix: "тимеш"  }
 :: fu-s2f { sufix: "тимете" }
 :: fu-p2i { sufix: "тимете" }
-:: fu-s3  { sufix: "тиме" }
+:: fu-s3  { sufix: "тиме"   }
 :: fu-p3  { sufix: "тимуть" }
 
 .conditional-verb-forms-1
-:: co-sm { text: "2>в би" }
-:: co-sf { text: "2>ла б" }
-:: co-sl { text: "2>ло б" }
-:: co-p  { text: "2>ли б" }
+:: co-sm { sufix: "в би" }
+:: co-sf { sufix: "ла б" }
+:: co-sl { sufix: "ло б" }
+:: co-p  { sufix: "ли б" }
 
 .conditional-verb-forms-kupyty
 :: co-sm { sufix: "ив би" }
@@ -352,77 +358,66 @@ co-p
 :: co-p  { sufix: "ли б" }
 
 .present-verb-forms-2
-:: pr-s1 { text: "3>у" }
-:: pr-p1 { text: "3>имо" }
-:: pr-s2i { text: "3>иш" }
-:: pr-s2f { text: "3>ите" }
-:: pr-p2i { text: "3>ите" }
-:: pr-s3 { text: "3>ить" }
-:: pr-p3 { text: "3>ать" }
+:: pr-s1  { sufix: "у"   }
+:: pr-p1  { sufix: "имо" }
+:: pr-s2i { sufix: "иш"  }
+:: pr-s2f { sufix: "ите" }
+:: pr-p2i { sufix: "ите" }
+:: pr-s3  { sufix: "ить" }
+:: pr-p3  { sufix: "ать" }
 
-.past-verb-forms-2
-:: pa-sm { text: "3>ив" }
-:: pa-sf { text: "3>ила" }
-:: pa-sl { text: "3>ило" }
-:: pa-p { text: "3>или" }
+.past-verb-forms-yla
+:: pa-sm { sufix: "ив"  }
+:: pa-sf { sufix: "ила" }
+:: pa-sl { sufix: "ило" }
+:: pa-p  { sufix: "или" }
 
-.future-verb-forms-2
-:: fu-s1 { text: "3>итиму" }
-:: fu-p1 { text: "3>итимемо" }
-:: fu-s2i { text: "3>итимеш" }
-:: fu-s2f { text: "3>итимете" }
-:: fu-p2i { text: "3>итимете" }
-:: fu-s3 { text: "3>итиме" }
-:: fu-p3 { text: "3>итимуть" }
+.future-verb-forms-ytymu
+:: fu-s1  { sufix: "итиму"   }
+:: fu-p1  { sufix: "итимемо" }
+:: fu-s2i { sufix: "итимеш"  }
+:: fu-s2f { sufix: "итимете" }
+:: fu-p2i { sufix: "итимете" }
+:: fu-s3  { sufix: "итиме"   }
+:: fu-p3  { sufix: "итимуть" }
 
-.conditional-verb-forms-2
-:: co-sm { text: "3>ив би" }
-:: co-sf { text: "3>ила б" }
-:: co-sl { text: "3>ило б" }
-:: co-p { text: "3>или б" }
+.conditional-verb-forms-yla
+:: co-sm { sufix: "ив би" }
+:: co-sf { sufix: "ила б" }
+:: co-sl { sufix: "ило б" }
+:: co-p  { sufix: "или б" }
 
 
 .present-verb-forms-3
-:: pr-s1 { text: "3>ю" }
-:: pr-p1 { text: "3>имо" }
-:: pr-s2i { text: "3>иш" }
-:: pr-s2f { text: "3>ите" }
-:: pr-p2i { text: "3>ите" }
-:: pr-s3 { text: "3>ить" }
-:: pr-p3 { text: "3>ять" }
+:: pr-s1  { sufix: "ю"   }
+:: pr-p1  { sufix: "имо" }
+:: pr-s2i { sufix: "иш"  }
+:: pr-s2f { sufix: "ите" }
+:: pr-p2i { sufix: "ите" }
+:: pr-s3  { sufix: "ить" }
+:: pr-p3  { sufix: "ять" }
 
-.past-verb-forms-3
-:: pa-sm { text: "3>ив" }
-:: pa-sf { text: "3>ила" }
-:: pa-sl { text: "3>ило" }
-:: pa-p { text: "3>или" }
 
-.future-verb-forms-3
-:: fu-s1 { text: "3>итиму" }
-:: fu-p1 { text: "3>итимемо" }
-:: fu-s2i { text: "3>итимеш" }
-:: fu-s2f { text: "3>итимете" }
-:: fu-p2i { text: "3>итимете" }
-:: fu-s3 { text: "3>итиме" }
-:: fu-p3 { text: "3>итимуть" }
+.infinitive-yty
+:: inf { sufix: "ити" }
 
-.conditional-verb-forms-3
-:: co-sm { text: "3>ив би" }
-:: co-sf { text: "3>ила б" }
-:: co-sl { text: "3>ило б" }
-:: co-p { text: "3>или б" }
+.infinitive-ty
+:: inf { sufix: "ти" }
 
-verb-forms-3 :: 
-    past-verb-forms-3 
-    past-verb-forms-3(verb-perfect-present-po) 
+.verb-forms-3 ::
+    infinitive-yty
+    past-verb-forms-yla
+    past-verb-forms-yla(verb-perfect-present-po)
     present-verb-forms-3 
     present-verb-forms-3(verb-perfect-future-po) 
-    future-verb-forms-3 
-    conditional-verb-forms-3
+    future-verb-forms-ytymu
+    conditional-verb-forms-yla
 {
+    type: verb;
 }
 
-verb-forms-1 :: 
+.verb-forms-1 ::
+    infinitive-ty
     past-verb-forms-1 
     past-verb-forms-1(verb-perfect-present-po) 
     present-verb-forms-1 
@@ -430,9 +425,10 @@ verb-forms-1 ::
     future-verb-forms-1 
     conditional-verb-forms-1
 {
+    type: verb;
 }
 
-verb-forms-kupljaty :: 
+.verb-forms-kupljaty ::
     past-verb-forms-kupljaty 
     past-verb-forms-kupljaty(verb-perfect-present-po) 
     present-verb-forms-kupljaty 
@@ -442,7 +438,7 @@ verb-forms-kupljaty ::
 {
 }
 
-verb-forms-kupyty :: 
+.verb-forms-kupyty ::
     past-verb-forms-kupyty 
     past-verb-forms-kupyty(verb-perfect-present-po) 
     present-verb-forms-kupyty 
@@ -452,19 +448,28 @@ verb-forms-kupyty ::
 {
 }
 
-verbs-2 :: past-verb-forms-2 
-           past-verb-forms-2(verb-perfect-present-po) 
-           present-verb-forms-2 
-           present-verb-forms-2(verb-perfect-future-po) 
-           future-verb-forms-2 
-           conditional-verb-forms-2
+.verbs-2 ::
+    infinitive-yty
+    past-verb-forms-yla
+    past-verb-forms-yla(verb-perfect-present-po)
+    present-verb-forms-2 
+    present-verb-forms-2(verb-perfect-future-po) 
+    future-verb-forms-ytymu
+    conditional-verb-forms-yla
 {
+    type: verb;
 }
 
-cont-verbs-2 :: past-verb-forms-2
-           past-verb-forms-2(verb-perfect-continuous-not-durative) 
-           present-verb-forms-2(verb-perfect-continuous-durative) 
-           future-verb-forms-2 
-           conditional-verb-forms-2
+.cont-verbs-2 ::
+    infinitive-yty
+    past-verb-forms-yla
+    past-verb-forms-yla(verb-perfect-present-po)
+    past-verb-forms-yla(verb-perfect-continuous-not-durative)
+    present-verb-forms-2
+    present-verb-forms-2(verb-perfect-future-po)
+    present-verb-forms-2(verb-perfect-continuous-durative) 
+    future-verb-forms-ytymu
+    conditional-verb-forms-yla
 {
+    type: verb;
 }

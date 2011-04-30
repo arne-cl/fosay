@@ -5,3 +5,8 @@
 ."nagy"[nɒdʲ]     :: adjective { stem: "barda.nagy"   }
 ."fehér"[fɛher]   :: adjective { stem: "blabi.fehér"  }
 ."fekete"[fɛkɛtɛ] :: adjective { stem: "xekri.fekete" }
+."sárga"[ʃargɒ]   :: adjective { stem: "pelxu.sárga"  }
+."piros"[piroʃ]   :: adjective { stem: "xunre.piros"  }
+."zöld"[zøld]     :: adjective { stem: "crino.zöld"   }
+."kék"[kek]       :: adjective { stem: "blanu.kék"    }
+."barna"[bɒrnɒ]   :: adjective { stem: "bunre.barna"  }

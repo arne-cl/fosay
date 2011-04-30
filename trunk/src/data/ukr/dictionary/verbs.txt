@@ -1,22 +1,11 @@
 //ukrainian dictionary v0.0.1;
-"бачити" :: verbs-2 cont-verbs-2
+."бач" :: cont-verbs-2
 {
-    transcription: "batʃete";
-    lemma: "viska";
-    stem: "viska.бачити";
-    type: verb;
-    tense: infinitive;
-    aspect: indefinite;
-    participle: not-participle;
+    stem: "viska.бачити"
 }
-"говорити"[hovorete] :: verb-forms-3
+."говор" :: verb-forms-3
 {
-    lemma: "cusku";
-    stem: "cusku.говорити";
-    type: verb;
-    aspect: indefinite;
-    tense: infinitive;
-    participle: not-participle;
+    stem: "cusku.говорити"
 }
 "писати"[pesate]
 {
@@ -27,15 +16,9 @@
     aspect: indefinite;
     participle: not-participle;
 }
-"знати" :: verb-forms-1
+."зна" :: verb-forms-1
 {
-    transcription: "znate";
-    lemma: "dzuno";
     stem: "dzuno.знати";
-    type: verb;
-    tense: infinitive;
-    aspect: indefinite;
-    participle: not-participle;
 }
 "іти"
 {
@@ -157,15 +140,9 @@
     aspect: indefinite;
     number: plural;
 }
-"плавати" :: verb-forms-1
+."плава" :: verb-forms-1
 {
-    transcription: "plavate";
-    lemma: "limna";
-    stem: "limna.плавати";
-    type: verb;
-    tense: infinitive;
-    aspect: indefinite;
-    participle: not-participle;
+    stem: "limna.плавати"
 }
 "купляти"[kuplʲate]
 {
