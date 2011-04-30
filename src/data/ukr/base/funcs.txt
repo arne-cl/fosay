@@ -84,7 +84,7 @@ masculine
 .inst-ml :: instrumental(lifeless) instrumental(masculine) { }
 .loc-ml :: locative(lifeless) locative(masculine) { }
 
-.adj-cases-1
+.adj-sing-cases-1
 :: poss-ml   { sufix: "ого" }
 :: dat-ml    { sufix: "ому" }
 :: acc-ml-1  { sufix: "ого" }
@@ -391,4 +391,4 @@ pia
 :: instrumental(pia) { sufix: "ими" }
 :: locative(pia)     { sufix: "их"  }
 
-.all-adj-cases-1 :: adj-cases-1 adj-plural-cases-t2 { }
+.adj-cases-1 :: adj-sing-cases-1 adj-plural-cases-t2 { }

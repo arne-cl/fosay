@@ -1,36 +1,7 @@
-//ukrainian dictionary v0.0.1
-."гарн" :: all-adj-cases-1
-{
-    lemma: "melbi";
-    stem: "melbe.гарний";
-}
-."розумн" :: all-adj-cases-1
-{
-    lemma: "prije";
-    stem: "prije.розумний";
-}
-."біл" :: all-adj-cases-1
-{
-    lemma: "blabi";
-    stem: "blabi.білий";
-}
-."чорн" :: all-adj-cases-1
-{
-    lemma: "xekri";
-    stem: "xekri.чорний";
-}
-."мал" :: all-adj-cases-1
-{
-    lemma: "cmalu";
-    stem: "cmalu.малий";
-}
-."велик" :: all-adj-cases-1
-{
-    lemma: "barda";
-    stem: "barda.великий";
-}
-."дорог" :: all-adj-cases-1
-{
-    lemma: "kargu";
-    stem: "kargu.дорогий";
-}
+."гарн"   :: adj-cases-1 { stem: "melbi.гарний" }
+."розумн" :: adj-cases-1 { stem: "prije.розумний" }
+."біл"    :: adj-cases-1 { stem: "blabi.білий" }
+."чорн"   :: adj-cases-1 { stem: "xekri.чорний" }
+."мал"    :: adj-cases-1 { stem: "cmalu.малий" }
+."велик"  :: adj-cases-1 { stem: "barda.великий" }
+."дорог"  :: adj-cases-1 { stem: "kargu.дорогий" }
