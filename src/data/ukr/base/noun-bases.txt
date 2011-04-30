@@ -1,187 +1,55 @@
-accusative
-{
-    case: accusative;
-}
+accusative{ case: accusative }
+inessive { case: inessive }
+dative { case: dative }
+instrumental { case: instrumental }
+possessive { case: possessive }
+allative { case: allative }
+locative { case: locative }
+vocative { case: vocative }
 
+.cases-1
+:: possessive   { text: "1>я"   }
+:: dative       { text: "1>ю"   }
+:: dative       { text: "1>еві" }
+:: accusative   { text: "1>я"   }
+:: instrumental { text: "1>ем"  }
+:: locative     { text: "1>еві" }
+:: locative     { text: "1>і"   }
+:: vocative     { text: "1>ю"   }
 
+.cases-2
+:: possessive   { text: "1>и"   }
+:: dative       { text: "1>і"   }
+:: accusative   { text: "1>у"   }
+:: instrumental { text: "1>ою"  }
+:: locative     { text: "1>і"   }
+:: vocative     { text: "1>о"   }
 
-cases-1
-{
-    text: "1>я";
-    case: possessive;
-}
-cases-1
-{
-    text: "1>ю";
-    case: dative;
-}
-cases-1
-{
-    text: "1>еві";
-    case: dative;
-}
-cases-1
-{
-    text: "1>я";
-    case: accusative;
-}
-cases-1
-{
-    text: "1>ем";
-    case: instrumental;
-}
-cases-1
-{
-    text: "1>еві";
-    case: locative;
-}
-cases-1
-{
-    text: "1>і";
-    case: locative;
-}
-cases-1
-{
-    text: "1>ю";
-    case: vocative;
-}
+.cases-3
+:: possessive   { text: "1>и"   }
+:: dative       { text: "2>ці"  }
+:: accusative   { text: "1>у"   }
+:: instrumental { text: "1>ою"  }
+:: locative     { text: "1>ці"  }
+:: vocative     { text: "1>о"   }
 
+.cases-4
+:: possessive   { text: "1>і"   }
+:: dative       { text: "1>і"   }
+:: accusative   { text: "1>ю"   }
+:: instrumental { text: "1>ею"  }
+:: locative     { text: "1>і"   }
+:: vocative     { text: "1>е"   }
 
-cases-2
-{
-    text: "1>и";
-    case: possessive;
-}
-cases-2
-{
-    text: "1>і";
-    case: dative;
-}
-cases-2
-{
-    text: "1>у";
-    case: accusative;
-}
-cases-2
-{
-    text: "1>ою";
-    case: instrumental;
-}
-cases-2
-{
-    text: "1>і";
-    case: locative;
-}
-cases-2
-{
-    text: "1>о";
-    case: vocative;
-}
-
-
-cases-3
-{
-    text: "1>и";
-    case: possessive;
-}
-cases-3
-{
-    text: "2>ці";
-    case: dative;
-}
-cases-3
-{
-    text: "1>у";
-    case: accusative;
-}
-cases-3
-{
-    text: "1>ою";
-    case: instrumental;
-}
-cases-3
-{
-    text: "2>ці";
-    case: locative;
-}
-cases-3
-{
-    text: "1>о";
-    case: vocative;
-}
-
-cases-4
-{
-    text: "1>і";
-    case: possessive;
-}
-cases-4
-{
-    text: "1>і";
-    case: dative;
-}
-cases-4
-{
-    text: "1>ю";
-    case: accusative;
-}
-cases-4
-{
-    text: "1>ею";
-    case: instrumental;
-}
-cases-4
-{
-    text: "1>і";
-    case: locative;
-}
-cases-4
-{
-    text: "1>е";
-    case: vocative;
-}
-
-cases-5
-{
-    text: "0>а";
-    case: possessive;
-}
-cases-5
-{
-    text: "0>у";
-    case: dative;
-}
-cases-5
-{
-    text: "0>ові";
-    case: dative;
-}
-cases-5
-{
-    text: "0>а";
-    case: accusative;
-}
-cases-5
-{
-    text: "0>ом";
-    case: instrumental;
-}
-cases-5
-{
-    text: "0>ові";
-    case: locative;
-}
-cases-5
-{
-    text: "0>у";
-    case: locative;
-}
-cases-5
-{
-    text: "0>у";
-    case: vocative;
-}
-
+.cases-5
+:: possessive   { text: "0>а"   }
+:: dative       { text: "0>у"   }
+:: dative       { text: "0>ові" }
+:: accusative   { text: "0>а"   }
+:: instrumental { text: "0>ом"  }
+:: locative     { text: "0>ові" }
+:: locative     { text: "0>у"   }
+:: vocative     { text: "0>у"   }
 
 pl-nominative-1s plural-cases-1 plural-cases-2 plural-cases-5
 {

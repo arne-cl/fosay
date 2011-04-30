@@ -17,6 +17,7 @@ ERROR_MULT_VALUE = "attribute '%s' can't have multiple values"
 ERROR_INVALID_ATTR_PAR = "'%s' is an invalid attribute value"
 ERROR_INVALID_ATTR = "'%s' is an invalid attribute"
 ERROR_IMP_INHERIT_NAME = "it's impossible to inherit any name here"
+ERROR_INVALID_BASE_NAME = "base '%s' doesn't exist."
 
 # Compute column.
 #     input is the input text string
@@ -468,18 +469,34 @@ def p_base_tokens(p):
 
 def p_base_token(p):
     '''base_token : identifier'''
+    global funcs
+    if not p[1] in funcs:
+        raise CWSSyntaxError(ERROR_INVALID_BASE_NAME, p, 1, p[1])
     p[0] = [(p[1], None)]
 
 def p_complex_base_token(p):
     '''complex_base_token : identifier "(" identifier ")"'''
+    global funcs
+    if not p[1] in funcs:
+        raise CWSSyntaxError(ERROR_INVALID_BASE_NAME, p, 1, p[1])
+    if not p[3] in funcs:
+        raise CWSSyntaxError(ERROR_INVALID_BASE_NAME, p, 3, p[3])
     p[0] = [(p[1], p[3])]
 
 def p_few_base_tokens(p):
     '''few_base_tokens : base_tokens identifier'''
+    global funcs
+    if not p[2] in funcs:
+        raise CWSSyntaxError(ERROR_INVALID_BASE_NAME, p, 2, p[2])
     p[0] = p[1] + [(p[2], None)]
 
 def p_few_complex_base_tokens(p):
     '''few_complex_base_tokens : base_tokens identifier "(" identifier ")" '''
+    global funcs
+    if not p[2] in funcs:
+        raise CWSSyntaxError(ERROR_INVALID_BASE_NAME, p, 2, p[2])
+    if not p[4] in funcs:
+        raise CWSSyntaxError(ERROR_INVALID_BASE_NAME, p, 4, p[4])
     p[0] = p[1] + [(p[2], p[4])]
 
 def p_sem_identifiers(p):

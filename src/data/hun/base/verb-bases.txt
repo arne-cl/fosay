@@ -209,258 +209,6 @@ pa-p3-u :: verb-perfect-present verb-perfect-continuous-not-durative
     object-difinity: undifinite;
     participle: not-participle;
 }
-.past-verbs :: pa-s1-3
-{
-    text: "0>tam";
-}
-.past-verbs :: pa-s1-2f
-{
-    text: "0>tam";
-}
-.past-verbs :: pa-s1-2i
-{
-    text: "0>talak";
-}
-.past-verbs :: pa-p1-2i
-{
-    text: "0>tuk";
-}
-.past-verbs :: pa-p1-2iu
-{
-    text: "0>tunk";
-}
-.past-verbs :: pa-s2i-d
-{
-    text: "0>tad";
-}
-.past-verbs :: pa-s2i-u
-{
-    text: "0>tál";
-}
-.past-verbs :: pa-s2i-1
-{
-    text: "0>tál";
-}
-.past-verbs :: pa-s2f-d
-{
-    text: "0>ta";
-}
-.past-verbs :: pa-s3-d
-{
-    text: "0>ta";
-}
-.past-verbs :: pa-s2f-u
-{
-    text: "0>ott";
-}
-.past-verbs :: pa-s2f-1
-{
-    text: "0>ott";
-}
-.past-verbs :: pa-s3-u
-{
-    text: "0>ott";
-}
-.past-verbs :: pa-s3-1
-{
-    text: "0>ott";
-}
-.past-verbs :: pa-p2i-d
-{
-    text: "0>tátok";
-}
-.past-verbs :: pa-p2i-u
-{
-    text: "0>tatok";
-}
-.past-verbs :: pa-p2f-d
-{
-    text: "0>ták";
-}
-.past-verbs :: pa-p2f-u
-{
-    text: "0>tak";
-}
-.past-verbs :: pa-p3-d
-{
-    text: "0>ták";
-}
-.past-verbs :: pa-p3-u
-{
-    text: "0>tak";
-}
-
-.past-verbs-2 :: pa-s1-3
-{
-    text: "0>tem";
-}
-.past-verbs-2 :: pa-s1-2f
-{
-    text: "0>tem";
-}
-.past-verbs-2 :: pa-s1-2i
-{
-    text: "0>telek";
-}
-.past-verbs-2 :: pa-p1-2i
-{
-    text: "0>tük";
-}
-.past-verbs-2 :: pa-p1-2iu
-{
-    text: "0>tünk";
-//}
-//{text: "2>tunk";
-//tense: past
-//aspect: indefinite
-//subject-number: plural
-//subject-persone: first
-//object-difinity: undifinite
-//participle: not-participle
-}
-.past-verbs-2 :: pa-s2i-d
-{
-    text: "0>ted";
-}
-.past-verbs-2 :: pa-s2i-u
-{
-    text: "0>tél";
-}
-.past-verbs-2 :: pa-s2i-1
-{
-    text: "0>tél";
-}
-.past-verbs-2 :: pa-s2f-d
-{
-    text: "0>te";
-}
-.past-verbs-2 :: pa-s3-d
-{
-    text: "0>te";
-}
-.past-verbs-2 :: pa-s2f-u
-{
-    text: "0>t";
-}
-.past-verbs-2 :: pa-s2f-1
-{
-    text: "0>t";
-}
-.past-verbs-2 :: pa-s3-u
-{
-    text: "0>t";
-}
-.past-verbs-2 :: pa-s3-1
-{
-    text: "0>t";
-}
-.past-verbs-2 :: pa-p2i-d
-{
-    text: "0>tétek";
-}
-.past-verbs-2 :: pa-p2i-u
-{
-    text: "0>tetek";
-}
-.past-verbs-2 :: pa-p2f-d
-{
-    text: "0>ték";
-}
-.past-verbs-2 :: pa-p2f-u
-{
-    text: "0>tek";
-}
-.past-verbs-2 :: pa-p3-d
-{
-    text: "0>ték";
-}
-.past-verbs-2 :: pa-p3-u
-{
-    text: "0>tek";
-}
-
-//past-verbs-3
-.past-verbs-3 :: pa-s1-3
-{
-    text: "0>tam";
-}
-.past-verbs-3 :: pa-s1-2f
-{
-    text: "0>tam";
-}
-.past-verbs-3 :: pa-s1-2i
-{
-    text: "0>talak";
-}
-.past-verbs-3 :: pa-p1-2i
-{
-    text: "0>tuk";
-}
-.past-verbs-3 :: pa-p1-2iu
-{
-    text: "0>tunk";
-}
-.past-verbs-3 :: pa-s2i-d
-{
-    text: "0>tad";
-}
-.past-verbs-3 :: pa-s2i-u
-{
-    text: "0>tál";
-}
-.past-verbs-3 :: pa-s2i-1
-{
-    text: "0>tál";
-}
-.past-verbs-3 :: pa-s2f-d
-{
-    text: "0>ta";
-}
-.past-verbs-3 :: pa-s3-d
-{
-    text: "0>ta";
-}
-.past-verbs-3 :: pa-s2f-u
-{
-    text: "0>t";
-}
-.past-verbs-3 :: pa-s2f-1
-{
-    text: "0>t";
-}
-.past-verbs-3 :: pa-s3-u
-{
-    text: "0>t";
-}
-.past-verbs-3 :: pa-s3-1
-{
-    text: "0>t";
-}
-.past-verbs-3 :: pa-p2i-d
-{
-    text: "0>tátok";
-}
-.past-verbs-3 :: pa-p2i-u
-{
-    text: "0>tatok";
-}
-.past-verbs-3 :: pa-p2f-d
-{
-    text: "0>ták";
-}
-.past-verbs-3 :: pa-p2f-u
-{
-    text: "0>tak";
-}
-.past-verbs-3 :: pa-p3-d
-{
-    text: "0>ták";
-}
-.past-verbs-3 :: pa-p3-u
-{
-    text: "0>tak";
-}
-
 //present================================================
 pr-s1-3u :: verb-continuous verb-perfect-continuous-durative
 {
@@ -696,339 +444,182 @@ pr-p3-u :: verb-continuous verb-perfect-continuous-durative
     object-difinity: undifinite;
     participle: not-participle;
 }
-.present-verbs :: pr-s1-3u
-{
-    text: "0>ok";
-}
-.present-verbs :: pr-s1-3d
-{
-    text: "0>om";
-}
-.present-verbs :: pr-s1-2f
-{
-    text: "0>om";
-}
-.present-verbs :: pr-s1-2i
-{
-    text: "0>lak";
-}
-.present-verbs :: pr-p1-2id
-{
-    text: "0>juk";
-}
-.present-verbs :: pr-p1-2iu
-{
-    text: "0>unk";
-}
-.present-verbs :: pr-s2i-d
-{
-    text: "0>od";
-}
-.present-verbs :: pr-s2i-u
-{
-    text: "0>ol";
-}
-.present-verbs :: pr-s2i-1
-{
-    text: "0>ol";
-}
-.present-verbs :: pr-s2f-d
-{
-    text: "0>ja";
-}
-.present-verbs :: pr-s3-d
-{
-    text: "0>ja";
-}
-.present-verbs :: pr-s2f-3u
-{
-}
-.present-verbs :: pr-s2f-1
-{
-}
-.present-verbs :: pr-s3-3u
-{
-}
-.present-verbs :: pr-s3-1
-{
-}
-.present-verbs :: pr-p2i-d
-{
-    text: "0>játok";
-}
-.present-verbs :: pr-p2i-u
-{
-    text: "0>tok";
-}
-.present-verbs :: pr-p2f-d
-{
-    text: "0>ják";
-}
-.present-verbs :: pr-p2f-u
-{
-    text: "0>nak";
-}
-.present-verbs :: pr-p3-d
-{
-    text: "0>ják";
-}
-.present-verbs :: pr-p3-u
-{
-    text: "0>nak";
-}
+.past-verbs
+:: pa-s1-3   { sufix: "tam"   }
+:: pa-s1-2f  { sufix: "tam"   }
+:: pa-s1-2i  { sufix: "talak" }
+:: pa-p1-2i  { sufix: "tuk"   }
+:: pa-p1-2iu { sufix: "tunk"  }
+:: pa-s2i-d  { sufix: "tad"   }
+:: pa-s2i-u  { sufix: "tál"   }
+:: pa-s2i-1  { sufix: "tál"   }
+:: pa-s2f-d  { sufix: "ta"    }
+:: pa-s3-d   { sufix: "ta"    }
+:: pa-s2f-u  { sufix: "ott"   }
+:: pa-s2f-1  { sufix: "ott"   }
+:: pa-s3-u   { sufix: "ott"   }
+:: pa-s3-1   { sufix: "ott"   }
+:: pa-p2i-d  { sufix: "tátok" }
+:: pa-p2i-u  { sufix: "tatok" }
+:: pa-p2f-d  { sufix: "ták"   }
+:: pa-p2f-u  { sufix: "tak"   }
+:: pa-p3-d   { sufix: "ták"   }
+:: pa-p3-u   { sufix: "tak"   }
 
-.present-verbs-2 :: pr-s1-3u
-{
-    text: "0>ek";
-}
-.present-verbs-2 :: pr-s1-3d
-{
-    text: "0>em";
-}
-.present-verbs-2 :: pr-s1-2f
-{
-    text: "0>em";
-}
-.present-verbs-2 :: pr-s1-2i
-{
-    text: "0>lek";
-}
-.present-verbs-2 :: pr-p1-2id
-{
-    text: "2>sszük";
-}
-.present-verbs-2 :: pr-p1-2iu
-{
-    text: "0>ünk";
-//}
-//{text: "3>unk";
+.past-verbs-2
+:: pa-s1-3   { sufix: "tem"   }
+:: pa-s1-2f  { sufix: "tem"   }
+:: pa-s1-2i  { sufix: "telek" }
+:: pa-p1-2i  { sufix: "tük"   }
+:: pa-p1-2iu { sufix: "tünk"  }
+//text: "2>tunk";
+//tense: past
+//aspect: indefinite
+//subject-number: plural
+//subject-persone: first
+//object-difinity: undifinite
+//participle: not-participle
+:: pa-s2i-d  { sufix: "ted"   }
+:: pa-s2i-u  { sufix: "tél"   }
+:: pa-s2i-1  { sufix: "tél"   }
+:: pa-s2f-d  { sufix: "te"    }
+:: pa-s3-d   { sufix: "te"    }
+:: pa-s2f-u  { sufix: "t"     }
+:: pa-s2f-1  { sufix: "t"     }
+:: pa-s3-u   { sufix: "t"     }
+:: pa-s3-1   { sufix: "t"     }
+:: pa-p2i-d  { sufix: "tétek" }
+:: pa-p2i-u  { sufix: "tetek" }
+:: pa-p2f-d  { sufix: "ték"   }
+:: pa-p2f-u  { sufix: "tek"   }
+:: pa-p3-d   { sufix: "ték"   }
+:: pa-p3-u   { sufix: "tek"   }
+
+//past-verbs-3
+.past-verbs-3
+:: pa-s1-3   { sufix: "tam"   }
+:: pa-s1-2f  { sufix: "tam"   }
+:: pa-s1-2i  { sufix: "talak" }
+:: pa-p1-2i  { sufix: "tuk"   }
+:: pa-p1-2iu { sufix: "tunk"  }
+:: pa-s2i-d  { sufix: "tad"   }
+:: pa-s2i-u  { sufix: "tál"   }
+:: pa-s2i-1  { sufix: "tál"   }
+:: pa-s2f-d  { sufix: "ta"    }
+:: pa-s3-d   { sufix: "ta"    }
+:: pa-s2f-u  { sufix: "t"     }
+:: pa-s2f-1  { sufix: "t"     }
+:: pa-s3-u   { sufix: "t"     }
+:: pa-s3-1   { sufix: "t"     }
+:: pa-p2i-d  { sufix: "tátok" }
+:: pa-p2i-u  { sufix: "tatok" }
+:: pa-p2f-d  { sufix: "ták"   }
+:: pa-p2f-u  { sufix: "tak"   }
+:: pa-p3-d   { sufix: "ták"   }
+:: pa-p3-u   { sufix: "tak"   }
+
+
+.present-verbs
+:: pr-s1-3u  { sufix: "ok"    }
+:: pr-s1-3d  { sufix: "om"    }
+:: pr-s1-2f  { sufix: "om"    }
+:: pr-s1-2i  { sufix: "lak"   }
+:: pr-p1-2id { sufix: "juk"   }
+:: pr-p1-2iu { sufix: "unk"   }
+:: pr-s2i-d  { sufix: "od"    }
+:: pr-s2i-u  { sufix: "ol"    }
+:: pr-s2i-1  { sufix: "ol"    }
+:: pr-s2f-d  { sufix: "ja"    }
+:: pr-s3-d   { sufix: "ja"    }
+:: pr-s2f-3u {                }
+:: pr-s2f-1  {                }
+:: pr-s3-3u  {                }
+:: pr-s3-1   {                }
+:: pr-p2i-d  { sufix: "játok" }
+:: pr-p2i-u  { sufix: "tok"   }
+:: pr-p2f-d  { sufix: "ják"   }
+:: pr-p2f-u  { sufix: "nak"   }
+:: pr-p3-d   { sufix: "ják"   }
+:: pr-p3-u   { sufix: "nak"   }
+
+.present-verbs-2
+:: pr-s1-3u  { text: "0>ek"    }
+:: pr-s1-3d  { text: "0>em"    }
+:: pr-s1-2f  { text: "0>em"    }
+:: pr-s1-2i  { text: "0>lek"   }
+:: pr-p1-2id { text: "2>sszük" }
+:: pr-p1-2iu { text: "0>ünk"   }
+//} text: "3>unk";
 //tense: present
 //aspect: indefinite
 //subject-number: plural
 //subject-persone: first
 //object-difinity: undifinite
 //participle: not-participle
-}
-.present-verbs-2 :: pr-s2i-d
-{
-    text: "0>ed";
-}
-.present-verbs-2 :: pr-s2i-u
-{
-    text: "0>el";
-}
-.present-verbs-2 :: pr-s2i-1
-{
-    text: "0>el";
-}
-.present-verbs-2 :: pr-s2f-d
-{
-    text: "0>i";
-}
-.present-verbs-2 :: pr-s3-d
-{
-    text: "0>i";
-}
-.present-verbs-2 :: pr-s2f-3u
-{
-}
-.present-verbs-2 :: pr-s2f-1
-{
-}
-.present-verbs-2 :: pr-s3-3u
-{
-}
-.present-verbs-2 :: pr-s3-1
-{
-}
-.present-verbs-2 :: pr-p2i-d
-{
-    text: "0>itek";
-}
-.present-verbs-2 :: pr-p2i-u
-{
-    text: "0>tek";
-}
-.present-verbs-2 :: pr-p2f-d
-{
-    text: "0>ik";
-}
-.present-verbs-2 :: pr-p2f-u
-{
-    text: "0>nek";
-}
-.present-verbs-2 :: pr-p3-d
-{
-    text: "0>ik";
-}
-.present-verbs-2 :: pr-p3-u
-{
-    text: "0>nek";
-}
+.present-verbs-2
+:: pr-s2i-d  { text: "0>ed"    }
+:: pr-s2i-u  { text: "0>el"    }
+:: pr-s2i-1  { text: "0>el"    }
+:: pr-s2f-d  { text: "0>i"     }
+:: pr-s3-d   { text: "0>i"     }
+:: pr-s2f-3u {                 }
+:: pr-s2f-1  {                 }
+:: pr-s3-3u  {                 }
+:: pr-s3-1   {                 }
+:: pr-p2i-d  { text: "0>itek"  }
+:: pr-p2i-u  { text: "0>tek"   }
+:: pr-p2f-d  { text: "0>ik"    }
+:: pr-p2f-u  { text: "0>nek"   }
+:: pr-p3-d   { text: "0>ik"    }
+:: pr-p3-u   { text: "0>nek"   }
 
 //present-verbs-3
-.present-verbs-3 :: pr-s1-3u
-{
-    text: "0>ok";
-}
-.present-verbs-3 :: pr-s1-3d
-{
-    text: "0>om";
-}
-.present-verbs-3 :: pr-s1-2f
-{
-    text: "0>om";
-}
-.present-verbs-3 :: pr-s1-2i
-{
-    text: "0>lak";
-}
-.present-verbs-3 :: pr-p1-2id
-{
-    text: "0>uk";
-}
-.present-verbs-3 :: pr-p1-2iu
-{
-    text: "0>unk";
-}
-.present-verbs-3 :: pr-s2i-d
-{
-    text: "0>od";
-}
-.present-verbs-3 :: pr-s2i-u
-{
-    text: "0>ol";
-}
-.present-verbs-3 :: pr-s2i-1
-{
-    text: "0>ol";
-}
-.present-verbs-3 :: pr-s2f-d
-{
-    text: "0>i";
-}
-.present-verbs-3 :: pr-s3-d
-{
-    text: "0>i";
-}
-.present-verbs-3 :: pr-s2f-3u
-{
-}
-.present-verbs-3 :: pr-s2f-1
-{
-}
-.present-verbs-3 :: pr-s3-3u
-{
-}
-.present-verbs-3 :: pr-s3-1
-{
-}
-.present-verbs-3 :: pr-p2i-d
-{
-    text: "0>itok";
-}
-.present-verbs-3 :: pr-p2i-u
-{
-    text: "0>tok";
-}
-.present-verbs-3 :: pr-p2f-d
-{
-    text: "0>ik";
-}
-.present-verbs-3 :: pr-p2f-u
-{
-    text: "0>nak";
-}
-.present-verbs-3 :: pr-p3-d
-{
-    text: "0>ik";
-}
-.present-verbs-3 :: pr-p3-u
-{
-    text: "0>nak";
-}
+.present-verbs-3
+:: pr-s1-3u  { sufix: "ok"   }
+:: pr-s1-3d  { sufix: "om"   }
+:: pr-s1-2f  { sufix: "om"   }
+:: pr-s1-2i  { sufix: "lak"  }
+:: pr-p1-2id { sufix: "uk"   }
+:: pr-p1-2iu { sufix: "unk"  }
+:: pr-s2i-d  { sufix: "od"   }
+:: pr-s2i-u  { sufix: "ol"   }
+:: pr-s2i-1  { sufix: "ol"   }
+:: pr-s2f-d  { sufix: "i"    }
+:: pr-s3-d   { sufix: "i"    }
+:: pr-s2f-3u {               }
+:: pr-s2f-1  {               }
+:: pr-s3-3u  {               }
+:: pr-s3-1   {               }
+:: pr-p2i-d  { sufix: "itok" }
+:: pr-p2i-u  { sufix: "tok"  }
+:: pr-p2f-d  { sufix: "ik"   }
+:: pr-p2f-u  { sufix: "nak"  }
+:: pr-p3-d   { sufix: "ik"   }
+:: pr-p3-u   { sufix: "nak"  }
 
 //present-verbs-4
-.present-verbs-4 :: pr-s1-3u
-{
-    text: "0>ok";
-}
-.present-verbs-4 :: pr-s1-3d
-{
-    text: "0>om";
-}
-.present-verbs-4 :: pr-s1-2f
-{
-    text: "0>om";
-}
-.present-verbs-4 :: pr-s1-2i
-{
-    text: "0>lak";
-}
-.present-verbs-4 :: pr-p1-2id
-{
-    text: "0>juk";
-}
-.present-verbs-4 :: pr-p1-2iu
-{
-    text: "0>unk";
-}
-.present-verbs-4 :: pr-s2i-d
-{
-    text: "0>od";
-}
-.present-verbs-4 :: pr-s2i-u
-{
-    text: "0>sz";
-}
-.present-verbs-4 :: pr-s2i-1
-{
-    text: "0>sz";
-}
-.present-verbs-4 :: pr-s2f-d
-{
-    text: "0>ja";
-}
-.present-verbs-4 :: pr-s3-d
-{
-    text: "0>ja";
-}
-.present-verbs-4 :: pr-s2f-3u
-{
-}
-.present-verbs-4 :: pr-s2f-1
-{
-}
-.present-verbs-4 :: pr-s3-3u
-{
-}
-.present-verbs-4 :: pr-s3-1
-{
-}
-.present-verbs-4 :: pr-p2i-d
-{
-    text: "0>játok";
-}
-.present-verbs-4 :: pr-p2i-u
-{
-    text: "0>tok";
-}
-.present-verbs-4 :: pr-p2f-d
-{
-    text: "0>ják";
-}
-.present-verbs-4 :: pr-p2f-u
-{
-    text: "0>nak";
-}
-.present-verbs-4 :: pr-p3-d
-{
-    text: "0>ják";
-}
-.present-verbs-4 :: pr-p3-u
-{
-    text: "0>nak";
-}
+.present-verbs-4
+:: pr-s1-3u  { sufix: "ok"    }
+:: pr-s1-3d  { sufix: "om"    }
+:: pr-s1-2f  { sufix: "om"    }
+:: pr-s1-2i  { sufix: "lak"   }
+:: pr-p1-2id { sufix: "juk"   }
+:: pr-p1-2iu { sufix: "unk"   }
+:: pr-s2i-d  { sufix: "od"    }
+:: pr-s2i-u  { sufix: "sz"    }
+:: pr-s2i-1  { sufix: "sz"    }
+:: pr-s2f-d  { sufix: "ja"    }
+:: pr-s3-d   { sufix: "ja"    }
+:: pr-s2f-3u {                }
+:: pr-s2f-1  {                }
+:: pr-s3-3u  {                }
+:: pr-s3-1   {                }
+:: pr-p2i-d  { sufix: "játok" }
+:: pr-p2i-u  { sufix: "tok"   }
+:: pr-p2f-d  { sufix: "ják"   }
+:: pr-p2f-u  { sufix: "nak"   }
+:: pr-p3-d   { sufix: "ják"   }
+:: pr-p3-u   { sufix: "nak"   }
 
 verb-perfect-future
 {
@@ -1037,21 +628,6 @@ verb-perfect-future
     tense: future;
 }
 
-
-all-verbs :: 
-    past-verbs 
-    present-verbs
-{
-}
-
-all-verbs-2 :: 
-    past-verbs-2 
-    present-verbs-2
-{
-}
-
-all-verbs-3 :: 
-    past-verbs 
-    present-verbs-3
-{
-}
+.all-verbs :: past-verbs present-verbs { }
+.all-verbs-2 :: past-verbs-2 present-verbs-2 { }
+.all-verbs-3 :: past-verbs present-verbs-3 { }
