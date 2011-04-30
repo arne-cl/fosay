@@ -1,4 +1,3 @@
-//ukrainian dictionary v0.0.1;
 "вы"[ve]
 {
     lemma: "ivio";
@@ -12,7 +11,6 @@
 }
 "вы"[ve]
 {
-    transcription: "ve";
     lemma: "ivio";
     real-number: plural;
     type: pronoun;
@@ -76,7 +74,6 @@
 }
 "его"[jivo]
 {
-    transcription: "joho";
     lemma: "ilulo";
     real-number: singular;
     type: pronoun;

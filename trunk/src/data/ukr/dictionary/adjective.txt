@@ -1,31 +1,36 @@
 //ukrainian dictionary v0.0.1
-"гарний" :: all-adj-cases-1
+."гарн" :: all-adj-cases-1
 {
-    transcription: "harnej";
     lemma: "melbi";
     stem: "melbe.гарний";
-    type: adjective;
-    number: singular;
-    gender: masculine;
-    case: nominative;
 }
-"гарному"
+."розумн" :: all-adj-cases-1
 {
-    transcription: "harnomu";
-    lemma: "melbi";
-    stem: "melbe.гарний";
-    type: adjective;
-    number: singular;
-    gender: masculine;
-    case: inessive;
-}
-"розумний" :: all-adj-cases-1
-{
-    transcription: "rozumnej";
     lemma: "prije";
     stem: "prije.розумний";
-    type: adjective;
-    number: singular;
-    case: nominative;
-    gender: masculine;
+}
+."біл" :: all-adj-cases-1
+{
+    lemma: "blabi";
+    stem: "blabi.білий";
+}
+."чорн" :: all-adj-cases-1
+{
+    lemma: "xekri";
+    stem: "xekri.чорний";
+}
+."мал" :: all-adj-cases-1
+{
+    lemma: "cmalu";
+    stem: "cmalu.малий";
+}
+."велик" :: all-adj-cases-1
+{
+    lemma: "barda";
+    stem: "barda.великий";
+}
+."дорог" :: all-adj-cases-1
+{
+    lemma: "kargu";
+    stem: "kargu.дорогий";
 }

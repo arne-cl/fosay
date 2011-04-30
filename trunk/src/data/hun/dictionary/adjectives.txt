@@ -12,3 +12,33 @@
     stem: "prije.okos";
     type: adjective;
 }
+"drága"[dragɒ]
+{
+    lemma: "kargu";
+    stem: "kargu.drága";
+    type: adjective;
+}
+"kicsi"[kitʃi]
+{
+    lemma: "cmalu";
+    stem: "cmalu.kicsi";
+    type: adjective;
+}
+"nagy"[nɒdʲ]
+{
+    lemma: "barda";
+    stem: "barda.nagy";
+    type: adjective;
+}
+"fehér"[fɛher]
+{
+    lemma: "blabi";
+    stem: "blabi.fehér";
+    type: adjective;
+}
+"fekete"[fɛkɛtɛ]
+{
+    lemma: "xekri";
+    stem: "xekri.fekete";
+    type: adjective;
+}

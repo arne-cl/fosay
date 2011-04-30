@@ -598,9 +598,57 @@ modificators = [
 
 
 
-
-
-
+concept_type = {
+    "personal-name": "ident",
+    "use-of-to": "bool",
+    "extra-1": "int",
+    "extra-2": "int",
+    "transcription": "str",
+    "text": "str",
+    "type": "ident",
+    "truth": "float",
+    "quantity": "ident",
+    "quantity-number": "ident",
+    "quantity-case": "ident",
+    "conj-type": "ident",
+    "conj-str": "ident",
+    "conj-function": "ident",
+    "gender": "ident",
+    "number": "ident",
+    "participle": "ident",
+    "voice": "ident",
+    "mood": "ident",
+    "persone": "ident",
+    "clusivity": "ident",
+    "modal": "bool",
+    "poss-form": "ident",
+    "clause-type": "ident",
+    "pronoun-type": "ident",
+    "adverb-type": "ident",
+    "num-type": "ident",
+    "noun-type": "ident",
+    "str-type": "ident",
+    "position": "ident",
+    "form": "ident",
+    "object-persone": "ident",
+    "subject-persone": "ident",
+    "object-number": "ident",
+    "object-difinity": "ident",
+    "subject-number": "ident",
+    "object-form": "ident",
+    "subject-form": "ident",
+    "stem": "str",
+    "lemma": "str",
+    "difinity": "ident",
+    "case": "ident",
+    "case-2": "ident",
+    "tense": "ident",
+    "transitivity": "ident",
+    "aspect": "ident",
+    "order-number": "int",
+    "real-number": "ident",
+    "tags": "ident",
+}
 
 
 
