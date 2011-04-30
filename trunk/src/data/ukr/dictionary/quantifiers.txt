@@ -54,7 +54,7 @@
     quantity-case: nominative;
     difinity: difinite;
 }
-"кожний" :: all-adj-cases-1
+"кожний" //it's bad 'cuz it makes it adjective!!:: adj-cases-1
 {
     transcription: "koʒnej";
     type: quantifier;

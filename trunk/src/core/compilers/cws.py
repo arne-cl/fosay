@@ -188,6 +188,8 @@ def y(n, props):
             w.attr(p, v)
     global to_ipa
     if b: w.transcription = to_ipa(w.text)
+    if w.meaning is None and not w.attr(concept['stem']) is None:
+        w.meaning = w.attr(concept['stem']).rsplit('.', 1)[0]
     return [w]
 
 funcs = {}
