@@ -39,7 +39,8 @@
     case: inessive possessive;
     noun-type: common;
 }
-"вчитель"[vtʃetɛlʲ] "учитель"[utʃetɛlʲ] :: cases-1 plural-cases-5
+"вчитель"[vtʃetɛlʲ]
+"учитель"[utʃetɛlʲ] :: cases-1 plural-cases-5
 {
     lemma: "ctuca";
     stem: "ctuca.вчитель";
