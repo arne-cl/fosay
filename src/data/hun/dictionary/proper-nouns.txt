@@ -206,7 +206,7 @@
     case-2: nominative;
     noun-type: proper;
 }
-"kijev"[kijev] :: cases-kijev
+"kijev"[kijev] :: cases-berlin
 {
     lemma: "kiiev";
     real-number: singular;

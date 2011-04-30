@@ -1,866 +1,169 @@
-cases-1
-{
-    text: "0>at";
-    case: accusative;
-}
-cases-1
-{
-    text: "0>ban";
-    case: inessive;
-}
-cases-1
-{
-    text: "0>ból";
-    case: elative;
-}
-cases-1
-{
-    text: "0>tól";
-    case: ablative;
-}
-cases-1
-{
-    text: "0>nak";
-    case: dative;
-}
-cases-1
-{
-    text: "0>ként";
-    case: essive-formal;
-}
-cases-1
-{
-    text: "0>ul";
-    case: essive-modal;
-}
-cases-1
-{
-    text: "0>:al";
-    case: instrumental;
-}
-cases-1
-{
-    text: "0>é";
-    case: possessive;
-}
-cases-1
-{
-    text: "0>nál";
-    case: adessive;
-}
-cases-1
-{
-    text: "0>hoz";
-    case: allative;
-}
-cases-1
-{
-    text: "0>:al";
-    case: comitative;
-}
-cases-1
-{
-    text: "0>ról";
-    case: delative;
-}
-cases-1
-{
-    text: "0>ba";
-    case: illative;
-}
-cases-1
-{
-    text: "0>ra";
-    case: sublative;
-}
-cases-1
-{
-    text: "0>on";
-    case: superessive;
-}
-cases-1
-{
-    text: "0>ig";
-    case: terminative;
-}
-cases-1
-{
-    text: "0>:á";
-    case: translative;
-}
-cases-1
-{
-    text: "0>ért";
-    case: final;
-}
+accusative { case: accusative }
+inessive { case: inessive }
+elative { case: elative }
+ablative { case: ablative }
+dative { case: dative }
+essive-formal { case: essive-formal }
+essive-modal { case: essive-modal }
+instrumental { case: instrumental }
+possessive { case: possessive }
+adessive { case: adessive }
+allative { case: allative }
+comitative { case: comitative }
+delative { case: delative }
+illative { case: illative }
+sublative { case: sublative }
+superessive { case: superessive }
+terminative { case: terminative }
+translative { case: translative }
+final { case: final }
 
-cases-2
-{
-    text: "0>t";
-    case: accusative;
-}
-cases-2
-{
-    text: "0>ban";
-    case: inessive;
-}
-cases-2
-{
-    text: "0>ból";
-    case: elative;
-}
-cases-2
-{
-    text: "0>tól";
-    case: ablative;
-}
-cases-2
-{
-    text: "0>nak";
-    case: dative;
-}
-cases-2
-{
-    text: "0>ként";
-    case: essive-formal;
-}
-cases-2
-{
-    text: "0>ul";
-    case: essive-modal;
-}
-cases-2
-{
-    text: "0>val";
-    case: instrumental;
-}
-cases-2
-{
-    text: "0>é";
-    case: possessive;
-}
-cases-2
-{
-    text: "0>nál";
-    case: adessive;
-}
-cases-2
-{
-    text: "0>hoz";
-    case: allative;
-}
-cases-2
-{
-    text: "0>val";
-    case: comitative;
-}
-cases-2
-{
-    text: "0>ról";
-    case: delative;
-}
-cases-2
-{
-    text: "0>ba";
-    case: illative;
-}
-cases-2
-{
-    text: "0>ra";
-    case: sublative;
-}
-cases-2
-{
-    text: "0>n";
-    case: superessive;
-}
-cases-2
-{
-    text: "0>ig";
-    case: terminative;
-}
-cases-2
-{
-    text: "0>vá";
-    case: translative;
-}
-cases-2
-{
-    text: "0>ért";
-    case: final;
-}
+.cases-1
+:: accusative { text: "0>at" }
+:: inessive { text: "0>ban" }
+:: elative { text: "0>ból" }
+:: ablative { text: "0>tól" }
+:: dative { text: "0>nak" }
+:: essive-formal { text: "0>ként" }
+:: essive-modal { text: "0>ul" }
+:: instrumental { text: "0>:al" }
+:: possessive { text: "0>é" }
+:: adessive { text: "0>nál" }
+:: allative { text: "0>hoz" }
+:: comitative { text: "0>:al" }
+:: delative { text: "0>ról" }
+:: illative { text: "0>ba" }
+:: sublative { text: "0>ra" }
+:: superessive { text: "0>on" }
+:: terminative { text: "0>ig" }
+:: translative { text: "0>:á" }
+:: final { text: "0>ért" }
 
-cases-london
-{
-    text: "0>t";
-    case: accusative;
-}
-cases-london
-{
-    text: "0>ban";
-    case: inessive;
-}
-cases-london
-{
-    text: "0>ból";
-    case: elative;
-}
-cases-london
-{
-    text: "0>tól";
-    case: ablative;
-}
-cases-london
-{
-    text: "0>nak";
-    case: dative;
-}
-cases-london
-{
-    text: "0>ként";
-    case: essive-formal;
-}
-cases-london
-{
-    text: "0>ul";
-    case: essive-modal;
-}
-cases-london
-{
-    text: "0>:al";
-    case: instrumental;
-}
-cases-london
-{
-    text: "0>é";
-    case: possessive;
-}
-cases-london
-{
-    text: "0>nál";
-    case: adessive;
-}
-cases-london
-{
-    text: "0>hoz";
-    case: allative;
-}
-cases-london
-{
-    text: "0>:al";
-    case: comitative;
-}
-cases-london
-{
-    text: "0>ról";
-    case: delative;
-}
-cases-london
-{
-    text: "0>ba";
-    case: illative;
-}
-cases-london
-{
-    text: "0>ra";
-    case: sublative;
-}
-cases-london
-{
-    text: "0>on";
-    case: superessive;
-}
-cases-london
-{
-    text: "0>ig";
-    case: terminative;
-}
-cases-london
-{
-    text: "0>:á";
-    case: translative;
-}
-cases-london
-{
-    text: "0>ért";
-    case: final;
-}
+.cases-2
+:: accusative { text: "0>t" }
+:: inessive { text: "0>ban" }
+:: elative { text: "0>ból" }
+:: ablative { text: "0>tól" }
+:: dative { text: "0>nak" }
+:: essive-formal { text: "0>ként" }
+:: essive-modal { text: "0>ul" }
+:: instrumental { text: "0>val" }
+:: possessive { text: "0>é" }
+:: adessive { text: "0>nál" }
+:: allative { text: "0>hoz" }
+:: comitative { text: "0>val" }
+:: delative { text: "0>ról" }
+:: illative { text: "0>ba" }
+:: sublative { text: "0>ra" }
+:: superessive { text: "0>n" }
+:: terminative { text: "0>ig" }
+:: translative { text: "0>vá" }
+:: final { text: "0>ért" }
 
-cases-3
-{
-    text: "0>t";
-    case: accusative;
-}
-cases-3
-{
-    text: "0>ban";
-    case: inessive;
-}
-cases-3
-{
-    text: "0>ból";
-    case: elative;
-}
-cases-3
-{
-    text: "0>tól";
-    case: ablative;
-}
-cases-3
-{
-    text: "0>nak";
-    case: dative;
-}
-cases-3
-{
-    text: "0>ként";
-    case: essive-formal;
-}
-cases-3
-{
-    text: "0>ul";
-    case: essive-modal;
-}
-cases-3
-{
-    text: "0>:al";
-    case: instrumental;
-}
-cases-3
-{
-    text: "0>é";
-    case: possessive;
-}
-cases-3
-{
-    text: "0>nál";
-    case: adessive;
-}
-cases-3
-{
-    text: "0>hoz";
-    case: allative;
-}
-cases-3
-{
-    text: "0>:al";
-    case: comitative;
-}
-cases-3
-{
-    text: "0>ról";
-    case: delative;
-}
-cases-3
-{
-    text: "0>ba";
-    case: illative;
-}
-cases-3
-{
-    text: "0>ra";
-    case: sublative;
-}
-cases-3
-{
-    text: "0>on";
-    case: superessive;
-}
-cases-3
-{
-    text: "0>ig";
-    case: terminative;
-}
-cases-3
-{
-    text: "0>:á";
-    case: translative;
-}
-cases-3
-{
-    text: "0>ért";
-    case: final;
-}
+.cases-london
+:: accusative { text: "0>t" }
+:: inessive { text: "0>ban" }
+:: elative { text: "0>ból" }
+:: ablative { text: "0>tól" }
+:: dative { text: "0>nak" }
+:: essive-formal { text: "0>ként" }
+:: essive-modal { text: "0>ul" }
+:: instrumental { text: "0>:al" }
+:: possessive { text: "0>é" }
+:: adessive { text: "0>nál" }
+:: allative { text: "0>hoz" }
+:: comitative { text: "0>:al" }
+:: delative { text: "0>ról" }
+:: illative { text: "0>ba" }
+:: sublative { text: "0>ra" }
+:: superessive { text: "0>on" }
+:: terminative { text: "0>ig" }
+:: translative { text: "0>:á" }
+:: final { text: "0>ért" }
 
-cases-4
-{
-    text: "0>t";
-    case: accusative;
-}
-cases-4
-{
-    text: "0>ben";
-    case: inessive;
-}
-cases-4
-{
-    text: "0>ből";
-    case: elative;
-}
-cases-4
-{
-    text: "0>től";
-    case: ablative;
-}
-cases-4
-{
-    text: "0>nek";
-    case: dative;
-}
-cases-4
-{
-    text: "0>ként";
-    case: essive-formal;
-}
-cases-4
-{
-    text: "0>ül";
-    case: essive-modal;
-}
-cases-4
-{
-    text: "0>vel";
-    case: instrumental;
-}
-cases-4
-{
-    text: "0>é";
-    case: possessive;
-}
-cases-4
-{
-    text: "0>nél";
-    case: adessive;
-}
-cases-4
-{
-    text: "0>höz";
-    case: allative;
-}
-cases-4
-{
-    text: "0>vel";
-    case: comitative;
-}
-cases-4
-{
-    text: "0>ről";
-    case: delative;
-}
-cases-4
-{
-    text: "0>be";
-    case: illative;
-}
-cases-4
-{
-    text: "0>re";
-    case: sublative;
-}
-cases-4
-{
-    text: "0>n";
-    case: superessive;
-}
-cases-4
-{
-    text: "0>ig";
-    case: terminative;
-}
-cases-4
-{
-    text: "1>é";
-    case: translative;
-}
-cases-4
-{
-    text: "0>ért";
-    case: final;
-}
+.cases-4
+:: accusative { text: "0>t" }
+:: inessive { text: "0>ben" }
+:: elative { text: "0>ből" }
+:: ablative { text: "0>től" }
+:: dative { text: "0>nek" }
+:: essive-formal { text: "0>ként" }
+:: essive-modal { text: "0>ül" }
+:: instrumental { text: "0>vel" }
+:: possessive { text: "0>é" }
+:: adessive { text: "0>nél" }
+:: allative { text: "0>höz" }
+:: comitative { text: "0>vel" }
+:: delative { text: "0>ről" }
+:: illative { text: "0>be" }
+:: sublative { text: "0>re" }
+:: superessive { text: "0>n" }
+:: terminative { text: "0>ig" }
+:: translative { text: "0>é" }
+:: final { text: "0>ért" }
 
-cases-berlin
-{
-    text: "0>t";
-    case: accusative;
-}
-cases-berlin
-{
-    text: "0>ben";
-    case: inessive;
-}
-cases-berlin
-{
-    text: "0>ből";
-    case: elative;
-}
-cases-berlin
-{
-    text: "0>től";
-    case: ablative;
-}
-cases-berlin
-{
-    text: "0>nek";
-    case: dative;
-}
-cases-berlin
-{
-    text: "0>ként";
-    case: essive-formal;
-}
-cases-berlin
-{
-    text: "0>ül";
-    case: essive-modal;
-}
-cases-berlin
-{
-    text: "0>:el";
-    case: instrumental;
-}
-cases-berlin
-{
-    text: "0>é";
-    case: possessive;
-}
-cases-berlin
-{
-    text: "0>nél";
-    case: adessive;
-}
-cases-berlin
-{
-    text: "0>hez";
-    case: allative;
-}
-cases-berlin
-{
-    text: "0>:el";
-    case: comitative;
-}
-cases-berlin
-{
-    text: "0>ről";
-    case: delative;
-}
-cases-berlin
-{
-    text: "0>be";
-    case: illative;
-}
-cases-berlin
-{
-    text: "0>re";
-    case: sublative;
-}
-cases-berlin
-{
-    text: "0>en";
-    case: superessive;
-}
-cases-berlin
-{
-    text: "0>ig";
-    case: terminative;
-}
-cases-berlin
-{
-    text: "1>é";
-    case: translative;
-}
-cases-berlin
-{
-    text: "0>ért";
-    case: final;
-}
+.cases-berlin
+:: accusative { text: "0>t" }
+:: inessive { text: "0>ben" }
+:: elative { text: "0>ből" }
+:: ablative { text: "0>től" }
+:: dative { text: "0>nek" }
+:: essive-formal { text: "0>ként" }
+:: essive-modal { text: "0>ül" }
+:: instrumental { text: "0>:el" }
+:: possessive { text: "0>é" }
+:: adessive { text: "0>nél" }
+:: allative { text: "0>hez" }
+:: comitative { text: "0>:el" }
+:: delative { text: "0>ről" }
+:: illative { text: "0>be" }
+:: sublative { text: "0>re" }
+:: superessive { text: "0>en" }
+:: terminative { text: "0>ig" }
+:: translative { text: "0>é" }
+:: final { text: "0>ért" }
 
-cases-5
-{
-    text: "0>et";
-    case: accusative;
-}
-cases-5
-{
-    text: "0>ben";
-    case: inessive;
-}
-cases-5
-{
-    text: "0>ből";
-    case: elative;
-}
-cases-5
-{
-    text: "0>től";
-    case: ablative;
-}
-cases-5
-{
-    text: "0>nek";
-    case: dative;
-}
-cases-5
-{
-    text: "0>ként";
-    case: essive-formal;
-}
-cases-5
-{
-    text: "0>ül";
-    case: essive-modal;
-}
-cases-5
-{
-    text: "1>kel";
-    case: instrumental;
-}
-cases-5
-{
-    text: "0>é";
-    case: possessive;
-}
-cases-5
-{
-    text: "0>nél";
-    case: adessive;
-}
-cases-5
-{
-    text: "0>höz";
-    case: allative;
-}
-cases-5
-{
-    text: "1>kel";
-    case: comitative;
-}
-cases-5
-{
-    text: "0>ről";
-    case: delative;
-}
-cases-5
-{
-    text: "0>be";
-    case: illative;
-}
-cases-5
-{
-    text: "0>re";
-    case: sublative;
-}
-cases-5
-{
-    text: "0>ön";
-    case: superessive;
-}
-cases-5
-{
-    text: "0>ig";
-    case: terminative;
-}
-cases-5
-{
-    text: "1>é";
-    case: translative;
-}
-cases-5
-{
-    text: "0>ért";
-    case: final;
-}
+.cases-5
+:: accusative    { text: "0>et"   }
+:: inessive      { text: "0>ben"  }
+:: elative       { text: "0>ből"  }
+:: ablative      { text: "0>től"  }
+:: dative        { text: "0>nek"  }
+:: essive-formal { text: "0>ként" }
+:: essive-modal  { text: "0>ül"   }
+:: instrumental  { text: "0>kel"  }
+:: possessive    { text: "0>é"    }
+:: adessive      { text: "0>nél"  }
+:: allative      { text: "0>höz"  }
+:: comitative    { text: "0>kel"  }
+:: delative      { text: "0>ről"  }
+:: illative      { text: "0>be"   }
+:: sublative     { text: "0>re"   }
+:: superessive   { text: "0>ön"   }
+:: terminative   { text: "0>ig"   }
+:: translative   { text: "0>é"    }
+:: final         { text: "0>ért"  }
 
-cases-budapest
-{
-    text: "0>et";
-    case: accusative;
-}
-cases-budapest
-{
-    text: "0>en";
-    case: inessive;
-}
-cases-budapest
-{
-    text: "0>ből";
-    case: elative;
-}
-cases-budapest
-{
-    text: "0>től";
-    case: ablative;
-}
-cases-budapest
-{
-    text: "0>nek";
-    case: dative;
-}
-cases-budapest
-{
-    text: "0>ként";
-    case: essive-formal;
-}
-cases-budapest
-{
-    text: "0>ül";
-    case: essive-modal;
-}
-cases-budapest
-{
-    text: "0>:el";
-    case: instrumental;
-}
-cases-budapest
-{
-    text: "0>é";
-    case: possessive;
-}
-cases-budapest
-{
-    text: "0>nél";
-    case: adessive;
-}
-cases-budapest
-{
-    text: "0>hez";
-    case: allative;
-}
-cases-budapest
-{
-    text: "0>:el";
-    case: comitative;
-}
-cases-budapest
-{
-    text: "0>ről";
-    case: delative;
-}
-cases-budapest
-{
-    text: "0>be";
-    case: illative;
-}
-cases-budapest
-{
-    text: "0>re";
-    case: sublative;
-}
-cases-budapest
-{
-    text: "0>en";
-    case: superessive;
-}
-cases-budapest
-{
-    text: "0>ig";
-    case: terminative;
-}
-cases-budapest
-{
-    text: "1>é";
-    case: translative;
-}
-cases-budapest
-{
-    text: "0>ért";
-    case: final;
-}
-
-cases-kijev
-{
-    text: "0>t";
-    case: accusative;
-}
-cases-kijev
-{
-    text: "0>en";
-    case: inessive;
-}
-cases-kijev
-{
-    text: "0>ből";
-    case: elative;
-}
-cases-kijev
-{
-    text: "0>től";
-    case: ablative;
-}
-cases-kijev
-{
-    text: "0>nek";
-    case: dative;
-}
-cases-kijev
-{
-    text: "0>ként";
-    case: essive-formal;
-}
-cases-kijev
-{
-    text: "0>ül";
-    case: essive-modal;
-}
-cases-kijev
-{
-    text: "0>:el";
-    case: instrumental;
-}
-cases-kijev
-{
-    text: "0>é";
-    case: possessive;
-}
-cases-kijev
-{
-    text: "0>nél";
-    case: adessive;
-}
-cases-kijev
-{
-    text: "0>hez";
-    case: allative;
-}
-cases-kijev
-{
-    text: "0>:el";
-    case: comitative;
-}
-cases-kijev
-{
-    text: "0>ről";
-    case: delative;
-}
-cases-kijev
-{
-    text: "0>be";
-    case: illative;
-}
-cases-kijev
-{
-    text: "0>re";
-    case: sublative;
-}
-cases-kijev
-{
-    text: "0>en";
-    case: superessive;
-}
-cases-kijev
-{
-    text: "0>ig";
-    case: terminative;
-}
-cases-kijev
-{
-    text: "1>é";
-    case: translative;
-}
-cases-kijev
-{
-    text: "0>ért";
-    case: final;
-}
+.cases-budapest
+:: accusative    { text: "0>et"   }
+:: inessive      { text: "0>en"  }
+:: elative       { text: "0>ből"  }
+:: ablative      { text: "0>től"  }
+:: dative        { text: "0>nek"  }
+:: essive-formal { text: "0>ként" }
+:: essive-modal  { text: "0>ül"   }
+:: instrumental  { text: "0>:el"  }
+:: possessive    { text: "0>é"    }
+:: adessive      { text: "0>nél"  }
+:: allative      { text: "0>hez"  }
+:: comitative    { text: "0>:el"  }
+:: delative      { text: "0>ről"  }
+:: illative      { text: "0>be"   }
+:: sublative     { text: "0>re"   }
+:: superessive   { text: "0>en"   }
+:: terminative   { text: "0>ig"   }
+:: translative   { text: "0>é"    }
+:: final         { text: "0>ért"  }
 
 plural-1 :: cases-1
 {
@@ -890,19 +193,19 @@ plural-4 :: cases-5
     number: plural;
 }
 
-all-cases-1 :: cases-1 plural-1
+.all-cases-1 :: cases-1 plural-1
 {
 }
 
-all-cases-2 :: cases-2 plural-2
+.all-cases-2 :: cases-2 plural-2
 {
 }
 
-all-cases-3 :: cases-3 plural-3
+.all-cases-3 :: cases-london plural-3
 {
 }
 
-all-cases-4 :: cases-4 plural-4
+.all-cases-4 :: cases-4 plural-4
 {
 }
 

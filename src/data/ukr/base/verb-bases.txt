@@ -316,40 +316,40 @@ co-p
 :: fu-p3 { text: "2>тимуть" }
 
 .future-verb-forms-kupyty
-:: fu-s1 { sufix: "лю" }
-:: fu-p1 { sufix: "имо" }
+:: fu-s1  { sufix: "лю" }
+:: fu-p1  { sufix: "имо" }
 :: fu-s2i { sufix: "иш" }
 :: fu-s2f { sufix: "ите" }
 :: fu-p2i { sufix: "ите" }
-:: fu-s3 { sufix: "ить" }
-:: fu-p3 { sufix: "лять" }
+:: fu-s3  { sufix: "ить" }
+:: fu-p3  { sufix: "лять" }
 
 .future-verb-forms-kupljaty
-:: fu-s1 { sufix: "тиму" }
-:: fu-p1 { sufix: "тимемо" }
+:: fu-s1  { sufix: "тиму" }
+:: fu-p1  { sufix: "тимемо" }
 :: fu-s2i { sufix: "тимеш" }
 :: fu-s2f { sufix: "тимете" }
 :: fu-p2i { sufix: "тимете" }
-:: fu-s3 { sufix: "тиме" }
-:: fu-p3 { sufix: "тимуть" }
+:: fu-s3  { sufix: "тиме" }
+:: fu-p3  { sufix: "тимуть" }
 
 .conditional-verb-forms-1
 :: co-sm { text: "2>в би" }
 :: co-sf { text: "2>ла б" }
 :: co-sl { text: "2>ло б" }
-:: co-p { text: "2>ли б" }
+:: co-p  { text: "2>ли б" }
 
 .conditional-verb-forms-kupyty
 :: co-sm { sufix: "ив би" }
 :: co-sf { sufix: "ила б" }
 :: co-sl { sufix: "ило б" }
-:: co-p { sufix: "или б" }
+:: co-p  { sufix: "или б" }
 
 .conditional-verb-forms-kupljaty
 :: co-sm { sufix: "в би" }
 :: co-sf { sufix: "ла б" }
 :: co-sl { sufix: "ло б" }
-:: co-p { sufix: "ли б" }
+:: co-p  { sufix: "ли б" }
 
 .present-verb-forms-2
 :: pr-s1 { text: "3>у" }
