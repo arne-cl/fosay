@@ -324,6 +324,8 @@ def p_record(p):
                         tok.attr(concept['transcription'], ipa)
                     if not tok.attr(concept['transcription']) is None:
                         tok.attr(concept['transcription'], [tok.attr(concept['transcription'])])
+                    if tok.meaning is None and not tok.attr(concept['stem']) is None:
+                        tok.meaning = tok.attr(concept['stem']).rsplit('.', 1)[0]
                     tok.text = [nme]
                     p[0] += modify_token(base, tok)
                 else:
@@ -333,6 +335,8 @@ def p_record(p):
                         tok.attr(concept['transcription'], ipa)
                     if not tok.attr(concept['transcription']) is None:
                         tok.attr(concept['transcription'], [tok.attr(concept['transcription'])])
+                    if tok.meaning is None and not tok.attr(concept['stem']) is None:
+                        tok.meaning = tok.attr(concept['stem']).rsplit('.', 1)[0]
                     tok.text = [nme]
                     if not has_dot: p[0] += [tok]
         else:

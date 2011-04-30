@@ -1,44 +1,7 @@
-"szép"
-{
-    transcription: "sep";
-    lemma: "melbi";
-    stem: "melbi.szép";
-    type: adjective;
-}
-"okos"
-{
-    transcription: "okoʃ";
-    lemma: "prije";
-    stem: "prije.okos";
-    type: adjective;
-}
-"drága"[dragɒ]
-{
-    lemma: "kargu";
-    stem: "kargu.drága";
-    type: adjective;
-}
-"kicsi"[kitʃi]
-{
-    lemma: "cmalu";
-    stem: "cmalu.kicsi";
-    type: adjective;
-}
-"nagy"[nɒdʲ]
-{
-    lemma: "barda";
-    stem: "barda.nagy";
-    type: adjective;
-}
-"fehér"[fɛher]
-{
-    lemma: "blabi";
-    stem: "blabi.fehér";
-    type: adjective;
-}
-"fekete"[fɛkɛtɛ]
-{
-    lemma: "xekri";
-    stem: "xekri.fekete";
-    type: adjective;
-}
+."szép"[sep]      :: adjective { stem: "melbi.szép"   }
+."okos"[okoʃ]     :: adjective { stem: "prije.okos"   }
+."drága"[dragɒ]   :: adjective { stem: "kargu.drága"  }
+."kicsi"[kitʃi]   :: adjective { stem: "cmalu.kicsi"  }
+."nagy"[nɒdʲ]     :: adjective { stem: "barda.nagy"   }
+."fehér"[fɛher]   :: adjective { stem: "blabi.fehér"  }
+."fekete"[fɛkɛtɛ] :: adjective { stem: "xekri.fekete" }

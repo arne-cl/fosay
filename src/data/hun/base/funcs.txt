@@ -237,7 +237,7 @@ plural { real-number: plural; number: plural }
 
 .all-cases-1 :: cases-1 plural-1 { }
 .all-cases-2 :: cases-2 plural-2 { }
-.all-cases-3 :: cases-london plural-3 { }
+.all-cases-3 :: cases-london plural-3 { type: noun }
 .all-cases-4 :: cases-4 plural-4 { }
 
 possessed-1
@@ -831,3 +831,5 @@ possessed-4
     case: possessed;
     number: plural;
 }
+
+adjective { type: adjective }
