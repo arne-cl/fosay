@@ -12,3 +12,33 @@
     stem: "prije.smart";
     type: adjective;
 }
+"big"[bɪg] :: adjective
+{
+    lemma: "barda";
+    stem: "big.barda";
+}
+."big"[bɪg] :: adjective
+{
+    lemma: "barda";
+    stem: "big.barda";
+}
+."small"[smɒl] :: adjective
+{
+    lemma: "cmalu";
+    stem: "cmalu.small";
+}
+."expensive"[ɪkspɛnsɪv] :: adjective
+{
+    lemma: "kargu";
+    stem: "expensive.kargu";
+}
+."white"[wajt] :: adjective
+{
+    lemma: "blabi";
+    stem: "blabi.white";
+}
+."black"[blæk] :: adjective
+{
+    lemma: "xekri";
+    stem: "xekri.black";
+}

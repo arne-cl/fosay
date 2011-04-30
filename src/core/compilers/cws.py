@@ -7,7 +7,7 @@ __date__ ="$5 бер 2011 11:36:40$"
 from core.models.ling_units import Token
 import core.ply.lex as lex
 import core.ply.yacc as yacc
-from core.constants import concept
+from core.constants import concept, concept_type
 from copy import deepcopy
 import core.constants as const
 
@@ -15,6 +15,7 @@ PRINT_TO_CONSOLE = True
 
 ERROR_MULT_VALUE = "attribute '%s' can't have multiple values"
 ERROR_INVALID_ATTR_PAR = "'%s' is an invalid attribute value"
+ERROR_INVALID_ATTR_PAR_TYPE = "'%s' has bad type"
 ERROR_INVALID_ATTR = "'%s' is an invalid attribute"
 ERROR_IMP_INHERIT_NAME = "it's impossible to inherit any name here"
 ERROR_INVALID_BASE_NAME = "base '%s' doesn't exist."
@@ -562,11 +563,13 @@ def p_attr_ident(p):
             raise CWSSyntaxError(ERROR_MULT_VALUE, p, 1, p[1])
         else:
             val = item[0]
-        if val == 'true':
-            p[0] += [(concept[p[1]], True)]
-        elif val == 'false':
-            p[0] += [(concept[p[1]], False)]
+        if val in ['true', 'false']:
+            if concept_type[p[1]] != 'bool':
+                raise CWSSyntaxError(ERROR_INVALID_ATTR_PAR_TYPE, p, 3, p[3])
+            p[0] += [(concept[p[1]], val == 'true')]
         else:
+            if concept_type[p[1]] != 'ident':
+                raise CWSSyntaxError(ERROR_INVALID_ATTR_PAR_TYPE, p, 3, p[3])
             pd = const.__dict__[p[1].replace("-", "_")]
             if not val in pd:
                 error_text = ERROR_INVALID_ATTR_PAR + ".\nValid values are: " + ', '.join(pd.keys()) + "."
@@ -590,12 +593,16 @@ def p_attr_str(p):
         attr = concept['text']
     else:
         attr = concept[p[1]]
+    if concept_type[attr] != 'str':
+        raise CWSSyntaxError(ERROR_INVALID_ATTR_PAR_TYPE, p, 3, p[3])
     p[0] = [(attr, val)]
 
 def p_attr_float(p):
     '''attr_float : identifier ":" FLOAT'''
     if not p[1] in concept:
         raise AtnlSyntaxError(ERROR_INVALID_ATTR, p, 1, p[1])
+    if concept_type[p[1]] != 'float':
+        raise CWSSyntaxError(ERROR_INVALID_ATTR_PAR_TYPE, p, 3, p[3])
     p[0] = [(concept[p[1]], p[3])]
 
 #region attr_number
@@ -607,6 +614,8 @@ def p_attr_numb(p):
         raise CWSSyntaxError(ERROR_MULT_VALUE, p, 1, p[1])
     else:
         val = p[3][0]
+    if concept_type[p[1]] != 'int':
+        raise CWSSyntaxError(ERROR_INVALID_ATTR_PAR_TYPE, p, 3, p[3])
     p[0] = [(concept[p[1]], val)]
 
 def p_numbers(p):

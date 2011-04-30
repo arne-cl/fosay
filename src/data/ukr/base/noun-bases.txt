@@ -1,12 +1,3 @@
-accusative{ case: accusative }
-inessive { case: inessive }
-dative { case: dative }
-instrumental { case: instrumental }
-possessive { case: possessive }
-allative { case: allative }
-locative { case: locative }
-vocative { case: vocative }
-
 .cases-1
 :: possessive   { text: "1>я"   }
 :: dative       { text: "1>ю"   }
