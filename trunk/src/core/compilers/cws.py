@@ -558,13 +558,22 @@ def p_attr_ident(p):
 
 def p_attr_str(p):
     '''attr_str : identifier ":" strings'''
-    if not p[1] in concept:
+    if not p[1] in concept and \
+        not p[1] in ['sufix', 'prefix']:
         raise CWSSyntaxError(ERROR_INVALID_ATTR, p, 1, p[1])
     if len(p[3]) > 1:
         raise CWSSyntaxError(ERROR_MULT_VALUE, p, 1, p[1])
     else:
         val = p[3][0]
-    p[0] = [(concept[p[1]], val)]
+    if p[1] == 'sufix':
+        val = '0>' + val
+        attr = concept['text']
+    elif p[1] == 'prefix':
+        val = val + '<0'
+        attr = concept['text']
+    else:
+        attr = concept[p[1]]
+    p[0] = [(attr, val)]
 
 def p_attr_float(p):
     '''attr_float : identifier ":" FLOAT'''
