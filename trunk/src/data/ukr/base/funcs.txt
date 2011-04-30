@@ -19,11 +19,7 @@ masculine-patronymic-1
     personal-name: patronymic;
 }
 
-
-lifeless
-{
-    gender: lifeless;
-}
+lifeless { gender: lifeless }
 
 adj-cases-1 :: lifeless
 {
@@ -430,7 +426,7 @@ adj-plural-cases-t2
 }
 
 all-adj-cases-1 :: adj-cases-1
-                    adj-plural-cases-t2
-                    adj-cases-feminine-t
+                   adj-plural-cases-t2
+                   adj-cases-feminine-t
 {
 }
