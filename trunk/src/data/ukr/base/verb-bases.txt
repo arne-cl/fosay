@@ -261,136 +261,156 @@ co-p
     aspect: indefinite;
 }
 
-.past-verb-forms-1 :: pa-sm { text: "2>в";  }
-.past-verb-forms-1 :: pa-sf { text: "2>ла"; }
-.past-verb-forms-1 :: pa-sl { text: "2>ло"; }
-.past-verb-forms-1 :: pa-p  { text: "2>ли"; }
+.past-verb-forms-1
+:: pa-sm { text: "2>в";  }
+:: pa-sf { text: "2>ла"; }
+:: pa-sl { text: "2>ло"; }
+:: pa-p  { text: "2>ли"; }
 
-.past-verb-forms-kupyty :: pa-sm { text: "0>ив"; }
-.past-verb-forms-kupyty :: pa-sf { text: "0>ила"; }
-.past-verb-forms-kupyty :: pa-sl { text: "0>ило"; }
-.past-verb-forms-kupyty :: pa-p { text: "0>или"; }
+.past-verb-forms-kupyty
+:: pa-sm { text: "0>ив";  }
+:: pa-sf { text: "0>ила"; }
+:: pa-sl { text: "0>ило"; }
+:: pa-p  { text: "0>или"; }
 
-.past-verb-forms-kupljaty :: pa-sm { text: "0>в"; }
-.past-verb-forms-kupljaty :: pa-sf { text: "0>ла"; }
-.past-verb-forms-kupljaty :: pa-sl { text: "0>ло"; }
-.past-verb-forms-kupljaty :: pa-p { text: "0>ли"; }
+.past-verb-forms-kupljaty
+:: pa-sm { text: "0>в";  }
+:: pa-sf { text: "0>ла"; }
+:: pa-sl { text: "0>ло"; }
+:: pa-p  { text: "0>ли"; }
 
-.present-verb-forms-1 :: pr-s1 { text: "2>ю"; }
-.present-verb-forms-1 :: pr-p1 { text: "2>ємо"; }
-.present-verb-forms-1 :: pr-s2i { text: "2>єш"; }
-.present-verb-forms-1 :: pr-s2f { text: "2>єте"; }
-.present-verb-forms-1 :: pr-p2i { text: "2>єте"; }
-.present-verb-forms-1 :: pr-s3 { text: "2>є"; }
-.present-verb-forms-1 :: pr-p3 { text: "2>ють"; }
+.present-verb-forms-1
+:: pr-s1  { text: "2>ю";   }
+:: pr-p1  { text: "2>ємо"; }
+:: pr-s2i { text: "2>єш";  }
+:: pr-s2f { text: "2>єте"; }
+:: pr-p2i { text: "2>єте"; }
+:: pr-s3  { text: "2>є";   }
+:: pr-p3  { text: "2>ють"; }
 
-.present-verb-forms-kupljaty :: pr-s1 { text: "0>ю"; }
-.present-verb-forms-kupljaty :: pr-p1 { text: "0>ємо"; }
-.present-verb-forms-kupljaty :: pr-s2i { text: "0>єш"; }
-.present-verb-forms-kupljaty :: pr-s2f { text: "0>єте"; }
-.present-verb-forms-kupljaty :: pr-p2i { text: "0>єте"; }
-.present-verb-forms-kupljaty :: pr-s3 { text: "0>є"; }
-.present-verb-forms-kupljaty :: pr-p3 { text: "0>ють"; }
+.present-verb-forms-kupljaty
+:: pr-s1 { text: "0>ю"; }
+:: pr-p1 { text: "0>ємо"; }
+:: pr-s2i { text: "0>єш"; }
+:: pr-s2f { text: "0>єте"; }
+:: pr-p2i { text: "0>єте"; }
+:: pr-s3 { text: "0>є"; }
+:: pr-p3 { text: "0>ють"; }
 
-.present-verb-forms-kupyty :: pr-s1 { text: "0>ую"; }
-.present-verb-forms-kupyty :: pr-p1 { text: "0>уємо"; }
-.present-verb-forms-kupyty :: pr-s2i { text: "0>уєш"; }
-.present-verb-forms-kupyty :: pr-s2f { text: "0>уєте"; }
-.present-verb-forms-kupyty :: pr-p2i { text: "0>уєте"; }
-.present-verb-forms-kupyty :: pr-s3 { text: "0>ує"; }
-.present-verb-forms-kupyty :: pr-p3 { text: "0>ують"; }
+.present-verb-forms-kupyty
+:: pr-s1 { text: "0>ую"; }
+:: pr-p1 { text: "0>уємо"; }
+:: pr-s2i { text: "0>уєш"; }
+:: pr-s2f { text: "0>уєте"; }
+:: pr-p2i { text: "0>уєте"; }
+:: pr-s3 { text: "0>ує"; }
+:: pr-p3 { text: "0>ують"; }
 
-.future-verb-forms-1 :: fu-s1 { text: "2>тиму"; }
-.future-verb-forms-1 :: fu-p1 { text: "2>тимемо"; }
-.future-verb-forms-1 :: fu-s2i { text: "2>тимеш"; }
-.future-verb-forms-1 :: fu-s2f { text: "2>тимете"; }
-.future-verb-forms-1 :: fu-p2i { text: "2>тимете"; }
-.future-verb-forms-1 :: fu-s3 { text: "2>тиме"; }
-.future-verb-forms-1 :: fu-p3 { text: "2>тимуть"; }
+.future-verb-forms-1
+:: fu-s1 { text: "2>тиму"; }
+:: fu-p1 { text: "2>тимемо"; }
+:: fu-s2i { text: "2>тимеш"; }
+:: fu-s2f { text: "2>тимете"; }
+:: fu-p2i { text: "2>тимете"; }
+:: fu-s3 { text: "2>тиме"; }
+:: fu-p3 { text: "2>тимуть"; }
 
-.future-verb-forms-kupyty :: fu-s1 { text: "0>лю"; }
-.future-verb-forms-kupyty :: fu-p1 { text: "0>имо"; }
-.future-verb-forms-kupyty :: fu-s2i { text: "0>иш"; }
-.future-verb-forms-kupyty :: fu-s2f { text: "0>ите"; }
-.future-verb-forms-kupyty :: fu-p2i { text: "0>ите"; }
-.future-verb-forms-kupyty :: fu-s3 { text: "0>ить"; }
-.future-verb-forms-kupyty :: fu-p3 { text: "0>лять"; }
+.future-verb-forms-kupyty
+:: fu-s1 { text: "0>лю"; }
+:: fu-p1 { text: "0>имо"; }
+:: fu-s2i { text: "0>иш"; }
+:: fu-s2f { text: "0>ите"; }
+:: fu-p2i { text: "0>ите"; }
+:: fu-s3 { text: "0>ить"; }
+:: fu-p3 { text: "0>лять"; }
 
-.future-verb-forms-kupljaty :: fu-s1 { text: "0>тиму"; }
-.future-verb-forms-kupljaty :: fu-p1 { text: "0>тимемо"; }
-.future-verb-forms-kupljaty :: fu-s2i { text: "0>тимеш"; }
-.future-verb-forms-kupljaty :: fu-s2f { text: "0>тимете"; }
-.future-verb-forms-kupljaty :: fu-p2i { text: "0>тимете"; }
-.future-verb-forms-kupljaty :: fu-s3 { text: "0>тиме"; }
-.future-verb-forms-kupljaty :: fu-p3 { text: "0>тимуть"; }
+.future-verb-forms-kupljaty
+:: fu-s1 { text: "0>тиму"; }
+:: fu-p1 { text: "0>тимемо"; }
+:: fu-s2i { text: "0>тимеш"; }
+:: fu-s2f { text: "0>тимете"; }
+:: fu-p2i { text: "0>тимете"; }
+:: fu-s3 { text: "0>тиме"; }
+:: fu-p3 { text: "0>тимуть"; }
 
-.conditional-verb-forms-1 :: co-sm { text: "2>в би"; }
-.conditional-verb-forms-1 :: co-sf { text: "2>ла б"; }
-.conditional-verb-forms-1 :: co-sl { text: "2>ло б"; }
-.conditional-verb-forms-1 :: co-p { text: "2>ли б"; }
+.conditional-verb-forms-1
+:: co-sm { text: "2>в би"; }
+:: co-sf { text: "2>ла б"; }
+:: co-sl { text: "2>ло б"; }
+:: co-p { text: "2>ли б"; }
 
-.conditional-verb-forms-kupyty :: co-sm { text: "0>ив би"; }
-.conditional-verb-forms-kupyty :: co-sf { text: "0>ила б"; }
-.conditional-verb-forms-kupyty :: co-sl { text: "0>ило б"; }
-.conditional-verb-forms-kupyty :: co-p { text: "0>или б"; }
+.conditional-verb-forms-kupyty
+:: co-sm { text: "0>ив би"; }
+:: co-sf { text: "0>ила б"; }
+:: co-sl { text: "0>ило б"; }
+:: co-p { text: "0>или б"; }
 
-.conditional-verb-forms-kupljaty :: co-sm { text: "0>в би"; }
-.conditional-verb-forms-kupljaty :: co-sf { text: "0>ла б"; }
-.conditional-verb-forms-kupljaty :: co-sl { text: "0>ло б"; }
-.conditional-verb-forms-kupljaty :: co-p { text: "0>ли б"; }
+.conditional-verb-forms-kupljaty
+:: co-sm { text: "0>в би"; }
+:: co-sf { text: "0>ла б"; }
+:: co-sl { text: "0>ло б"; }
+:: co-p { text: "0>ли б"; }
 
-.present-verb-forms-2 :: pr-s1 { text: "3>у"; }
-.present-verb-forms-2 :: pr-p1 { text: "3>имо"; }
-.present-verb-forms-2 :: pr-s2i { text: "3>иш"; }
-.present-verb-forms-2 :: pr-s2f { text: "3>ите"; }
-.present-verb-forms-2 :: pr-p2i { text: "3>ите"; }
-.present-verb-forms-2 :: pr-s3 { text: "3>ить"; }
-.present-verb-forms-2 :: pr-p3 { text: "3>ать"; }
+.present-verb-forms-2
+:: pr-s1 { text: "3>у"; }
+:: pr-p1 { text: "3>имо"; }
+:: pr-s2i { text: "3>иш"; }
+:: pr-s2f { text: "3>ите"; }
+:: pr-p2i { text: "3>ите"; }
+:: pr-s3 { text: "3>ить"; }
+:: pr-p3 { text: "3>ать"; }
 
-.past-verb-forms-2 :: pa-sm { text: "3>ив"; }
-.past-verb-forms-2 :: pa-sf { text: "3>ила"; }
-.past-verb-forms-2 :: pa-sl { text: "3>ило"; }
-.past-verb-forms-2 :: pa-p { text: "3>или"; }
+.past-verb-forms-2
+:: pa-sm { text: "3>ив"; }
+:: pa-sf { text: "3>ила"; }
+:: pa-sl { text: "3>ило"; }
+:: pa-p { text: "3>или"; }
 
-.future-verb-forms-2 :: fu-s1 { text: "3>итиму"; }
-.future-verb-forms-2 :: fu-p1 { text: "3>итимемо"; }
-.future-verb-forms-2 :: fu-s2i { text: "3>итимеш"; }
-.future-verb-forms-2 :: fu-s2f { text: "3>итимете"; }
-.future-verb-forms-2 :: fu-p2i { text: "3>итимете"; }
-.future-verb-forms-2 :: fu-s3 { text: "3>итиме"; }
-.future-verb-forms-2 :: fu-p3 { text: "3>итимуть"; }
+.future-verb-forms-2
+:: fu-s1 { text: "3>итиму"; }
+:: fu-p1 { text: "3>итимемо"; }
+:: fu-s2i { text: "3>итимеш"; }
+:: fu-s2f { text: "3>итимете"; }
+:: fu-p2i { text: "3>итимете"; }
+:: fu-s3 { text: "3>итиме"; }
+:: fu-p3 { text: "3>итимуть"; }
 
-.conditional-verb-forms-2 :: co-sm { text: "3>ив би"; }
-.conditional-verb-forms-2 :: co-sf { text: "3>ила б"; }
-.conditional-verb-forms-2 :: co-sl { text: "3>ило б"; }
-.conditional-verb-forms-2 :: co-p { text: "3>или б"; }
+.conditional-verb-forms-2
+:: co-sm { text: "3>ив би"; }
+:: co-sf { text: "3>ила б"; }
+:: co-sl { text: "3>ило б"; }
+:: co-p { text: "3>или б"; }
 
 
-.present-verb-forms-3 :: pr-s1 { text: "3>ю"; }
-.present-verb-forms-3 :: pr-p1 { text: "3>имо"; }
-.present-verb-forms-3 :: pr-s2i { text: "3>иш"; }
-.present-verb-forms-3 :: pr-s2f { text: "3>ите"; }
-.present-verb-forms-3 :: pr-p2i { text: "3>ите"; }
-.present-verb-forms-3 :: pr-s3 { text: "3>ить"; }
-.present-verb-forms-3 :: pr-p3 { text: "3>ять"; }
+.present-verb-forms-3
+:: pr-s1 { text: "3>ю"; }
+:: pr-p1 { text: "3>имо"; }
+:: pr-s2i { text: "3>иш"; }
+:: pr-s2f { text: "3>ите"; }
+:: pr-p2i { text: "3>ите"; }
+:: pr-s3 { text: "3>ить"; }
+:: pr-p3 { text: "3>ять"; }
 
-.past-verb-forms-3 :: pa-sm { text: "3>ив"; }
-.past-verb-forms-3 :: pa-sf { text: "3>ила"; }
-.past-verb-forms-3 :: pa-sl { text: "3>ило"; }
-.past-verb-forms-3 :: pa-p { text: "3>или"; }
+.past-verb-forms-3
+:: pa-sm { text: "3>ив"; }
+:: pa-sf { text: "3>ила"; }
+:: pa-sl { text: "3>ило"; }
+:: pa-p { text: "3>или"; }
 
-.future-verb-forms-3 :: fu-s1 { text: "3>итиму"; }
-.future-verb-forms-3 :: fu-p1 { text: "3>итимемо"; }
-.future-verb-forms-3 :: fu-s2i { text: "3>итимеш"; }
-.future-verb-forms-3 :: fu-s2f { text: "3>итимете"; }
-.future-verb-forms-3 :: fu-p2i { text: "3>итимете"; }
-.future-verb-forms-3 :: fu-s3 { text: "3>итиме"; }
-.future-verb-forms-3 :: fu-p3 { text: "3>итимуть"; }
+.future-verb-forms-3
+:: fu-s1 { text: "3>итиму"; }
+:: fu-p1 { text: "3>итимемо"; }
+:: fu-s2i { text: "3>итимеш"; }
+:: fu-s2f { text: "3>итимете"; }
+:: fu-p2i { text: "3>итимете"; }
+:: fu-s3 { text: "3>итиме"; }
+:: fu-p3 { text: "3>итимуть"; }
 
-.conditional-verb-forms-3 :: co-sm { text: "3>ив би"; }
-.conditional-verb-forms-3 :: co-sf { text: "3>ила б"; }
-.conditional-verb-forms-3 :: co-sl { text: "3>ило б"; }
-.conditional-verb-forms-3 :: co-p { text: "3>или б"; }
+.conditional-verb-forms-3
+:: co-sm { text: "3>ив би"; }
+:: co-sf { text: "3>ила б"; }
+:: co-sl { text: "3>ило б"; }
+:: co-p { text: "3>или б"; }
 
 verb-forms-3 :: 
     past-verb-forms-3 

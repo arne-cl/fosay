@@ -16,6 +16,7 @@ PRINT_TO_CONSOLE = True
 ERROR_MULT_VALUE = "attribute '%s' can't have multiple values"
 ERROR_INVALID_ATTR_PAR = "'%s' is an invalid attribute value"
 ERROR_INVALID_ATTR = "'%s' is an invalid attribute"
+ERROR_IMP_INHERIT_NAME = "it's impossible to inherit any name here"
 
 # Compute column.
 #     input is the input text string
@@ -36,10 +37,13 @@ def print_error(line, col, errmsg):
     print("-"*80)
 
 class CWSSyntaxError(SyntaxError):
-    def __init__(self, errmsg, p, n, s):
+    def __init__(self, errmsg, p, n, s=None):
         global PRINT_TO_CONSOLE
         if PRINT_TO_CONSOLE:
-            print_error(p.lineno(n), find_column(p.lexpos(n)), errmsg % s)
+            if s is None:
+                print_error(p.lineno(n), find_column(p.lexpos(n)), errmsg)
+            else:
+                print_error(p.lineno(n), find_column(p.lexpos(n)), errmsg % s)
         SyntaxError.__init__(self)
 
 
@@ -374,7 +378,8 @@ def p_error_ident_num_hyph(p):
 #reqion header
 def p_header(p):
     '''header : simple_header
-              | full_header'''
+              | full_header
+              | lil_full_header'''
     p[0] = p[1]
 
 def p_simple_header(p):
@@ -383,7 +388,16 @@ def p_simple_header(p):
 
 def p_full_header(p):
     '''full_header : words DCOLON base_tokens'''
-    p[0] = [(w, bt) for bt in [None] + p[3] for w in p[1]]
+    global prev
+    prev = p[1]
+    p[0] = [(w, bt) for bt in [None] + p[3] for w in prev]
+
+def p_lil_full_header(p):
+    '''lil_full_header : DCOLON base_tokens'''
+    global prev
+    if prev is None:
+        raise CWSSyntaxError(ERROR_IMP_INHERIT_NAME, p, 1)
+    p[0] = [(w, bt) for bt in [None] + p[2] for w in prev]
 #endregion
 
 def p_words(p):
@@ -608,7 +622,8 @@ def _parse_text(s, print_to_console):
     global PRINT_TO_CONSOLE
     PRINT_TO_CONSOLE = print_to_console
 
-    global text
+    global text, prev
+    prev = None
     text = s
     lexer.lineno = 1
     res = None
