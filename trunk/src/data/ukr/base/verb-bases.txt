@@ -1,13 +1,41 @@
-verb-perfect-future
+verb-perfect-future-po
 {
     text: "по<0"
     aspect: perfect
     tense: future
 }
 
-verb-perfect-present
+verb-perfect-present-po
 {
     text: "по<0"
+    aspect: perfect
+    tense: present
+}
+
+verb-perfect-future-na
+{
+    text: "на<0"
+    aspect: perfect
+    tense: future
+}
+
+verb-perfect-present-na
+{
+    text: "на<0"
+    aspect: perfect
+    tense: present
+}
+
+verb-perfect-future-s
+{
+    text: "на<0"
+    aspect: perfect
+    tense: future
+}
+
+verb-perfect-present-s
+{
+    text: "на<0"
     aspect: perfect
     tense: present
 }
@@ -27,73 +55,7 @@ verb-perfect-continuous-not-durative
     tense: present
     aspect: perfect-continuous-not-durative
 }
-cpr-s1 :: verb-perfect-future; verb-perfect-continuous-durative
-{
-    tense: present
-    persone: first
-    number: singular
-    participle: not-participle
-    mood: declarative
-    aspect: continuous
-}
-cpr-p1 :: verb-perfect-future; verb-perfect-continuous-durative
-{
-    tense: present
-    persone: first
-    number: plural
-    participle: not-participle
-    mood: declarative
-    aspect: continuous
-}
-cpr-s2i :: verb-perfect-future; verb-perfect-continuous-durative
-{
-    tense: present
-    persone: second
-    number: singular
-    form: informal
-    participle: not-participle
-    mood: declarative
-    aspect: continuous
-}
-cpr-s2f :: verb-perfect-future; verb-perfect-continuous-durative
-{
-    tense: present
-    persone: second
-    number: singular
-    form: formal
-    participle: not-participle
-    mood: declarative
-    aspect: continuous
-}
-cpr-p2i :: verb-perfect-future; verb-perfect-continuous-durative
-{
-    tense: present
-    persone: second
-    number: plural
-    form: informal
-    participle: not-participle
-    mood: declarative
-    aspect: continuous
-}
-cpr-s3 :: verb-perfect-future; verb-perfect-continuous-durative
-{
-    tense: present
-    persone: third
-    number: singular
-    participle: not-participle
-    mood: declarative
-    aspect: continuous
-}
-cpr-p3 :: verb-perfect-future; verb-perfect-continuous-durative
-{
-    tense: present
-    persone: third
-    number: plural
-    participle: not-participle
-    mood: declarative
-    aspect: continuous
-}
-pr-s1 :: verb-perfect-future
+pr-s1
 {
     tense: present
     persone: first
@@ -102,7 +64,7 @@ pr-s1 :: verb-perfect-future
     mood: declarative
     aspect: indefinite
 }
-pr-p1 :: verb-perfect-future
+pr-p1
 {
     tense: present
     persone: first
@@ -111,7 +73,7 @@ pr-p1 :: verb-perfect-future
     mood: declarative
     aspect: indefinite
 }
-pr-s2i :: verb-perfect-future
+pr-s2i
 {
     tense: present
     persone: second
@@ -121,7 +83,7 @@ pr-s2i :: verb-perfect-future
     mood: declarative
     aspect: indefinite
 }
-pr-s2f :: verb-perfect-future
+pr-s2f
 {
     tense: present
     persone: second
@@ -131,7 +93,7 @@ pr-s2f :: verb-perfect-future
     mood: declarative
     aspect: indefinite
 }
-pr-p2i :: verb-perfect-future
+pr-p2i
 {
     tense: present
     persone: second
@@ -141,7 +103,7 @@ pr-p2i :: verb-perfect-future
     mood: declarative
     aspect: indefinite
 }
-pr-s3 :: verb-perfect-future
+pr-s3
 {
     tense: present
     persone: third
@@ -150,7 +112,7 @@ pr-s3 :: verb-perfect-future
     mood: declarative
     aspect: indefinite
 }
-pr-p3 :: verb-perfect-future
+pr-p3
 {
     tense: present
     persone: third
@@ -160,7 +122,7 @@ pr-p3 :: verb-perfect-future
     aspect: indefinite
 }
 #past
-pa-sm :: verb-perfect-present
+pa-sm
 {
     gender: masculine
     tense: past
@@ -169,7 +131,7 @@ pa-sm :: verb-perfect-present
     mood: declarative
     aspect: indefinite
 }
-pa-sf :: verb-perfect-present
+pa-sf
 {
     gender: feminine
     tense: past
@@ -178,7 +140,7 @@ pa-sf :: verb-perfect-present
     mood: declarative
     aspect: indefinite
 }
-pa-sl :: verb-perfect-present
+pa-sl
 {
     gender: lifeless
     tense: past
@@ -187,48 +149,13 @@ pa-sl :: verb-perfect-present
     mood: declarative
     aspect: indefinite
 }
-pa-p :: verb-perfect-present
+pa-p
 {
     tense: past
     number: plural
     participle: not-participle
     mood: declarative
     aspect: indefinite
-}
-cpa-sm :: verb-perfect-present; verb-perfect-continuous-not-durative
-{
-    gender: masculine
-    tense: past
-    number: singular
-    participle: not-participle
-    mood: declarative
-    aspect: indefinite #continuous
-}
-cpa-sf :: verb-perfect-present; verb-perfect-continuous-not-durative
-{
-    gender: feminine
-    tense: past
-    number: singular
-    participle: not-participle
-    mood: declarative
-    aspect: indefinite #continuous
-}
-cpa-sl :: verb-perfect-present; verb-perfect-continuous-not-durative
-{
-    gender: lifeless
-    tense: past
-    number: singular
-    participle: not-participle
-    mood: declarative
-    aspect: indefinite #continuous
-}
-cpa-p :: verb-perfect-present; verb-perfect-continuous-not-durative
-{
-    tense: past
-    number: plural
-    participle: not-participle
-    mood: declarative
-    aspect: indefinite #continuous
 }
 #future
 fu-s1
@@ -368,19 +295,19 @@ co-p
     text: "0>или"
 }
 
-.past-verb-forms-kupljaty :: cpa-sm
+.past-verb-forms-kupljaty :: pa-sm
 {
     text: "0>в"
 }
-.past-verb-forms-kupljaty :: cpa-sf
+.past-verb-forms-kupljaty :: pa-sf
 {
     text: "0>ла"
 }
-.past-verb-forms-kupljaty :: cpa-sl
+.past-verb-forms-kupljaty :: pa-sl
 {
     text: "0>ло"
 }
-.past-verb-forms-kupljaty :: cpa-p
+.past-verb-forms-kupljaty :: pa-p
 {
     text: "0>ли"
 }
@@ -414,31 +341,31 @@ co-p
     text: "2>ють"
 }
 
-.present-verb-forms-kupljaty :: cpr-s1
+.present-verb-forms-kupljaty :: pr-s1
 {
     text: "0>ю"
 }
-.present-verb-forms-kupljaty :: cpr-p1
+.present-verb-forms-kupljaty :: pr-p1
 {
     text: "0>ємо"
 }
-.present-verb-forms-kupljaty :: cpr-s2i
+.present-verb-forms-kupljaty :: pr-s2i
 {
     text: "0>єш"
 }
-.present-verb-forms-kupljaty :: cpr-s2f
+.present-verb-forms-kupljaty :: pr-s2f
 {
     text: "0>єте"
 }
-.present-verb-forms-kupljaty :: cpr-p2i
+.present-verb-forms-kupljaty :: pr-p2i
 {
     text: "0>єте"
 }
-.present-verb-forms-kupljaty :: cpr-s3
+.present-verb-forms-kupljaty :: pr-s3
 {
     text: "0>є"
 }
-.present-verb-forms-kupljaty :: cpr-p3
+.present-verb-forms-kupljaty :: pr-p3
 {
     text: "0>ють"
 }
@@ -639,36 +566,6 @@ co-p
     text: "3>ать"
 }
 
-.cont-present-verb-forms-2 :: cpr-s1
-{
-    text: "3>у"
-}
-.cont-present-verb-forms-2 :: cpr-p1
-{
-    text: "3>имо"
-}
-.cont-present-verb-forms-2 :: cpr-s2i
-{
-    text: "3>иш"
-}
-.cont-present-verb-forms-2 :: cpr-s2f
-{
-    text: "3>ите"
-}
-.cont-present-verb-forms-2 :: cpr-p2i
-{
-    text: "3>ите"
-}
-.cont-present-verb-forms-2 :: cpr-s3
-{
-    text: "3>ить"
-}
-.cont-present-verb-forms-2 :: cpr-p3
-{
-    text: "3>ать"
-}
-
-
 .past-verb-forms-2 :: pa-sm
 {
     text: "3>ив"
@@ -682,23 +579,6 @@ co-p
     text: "3>ило"
 }
 .past-verb-forms-2 :: pa-p
-{
-    text: "3>или"
-}
-
-.cont-past-verb-forms-2 :: cpa-sm
-{
-    text: "3>ив"
-}
-.cont-past-verb-forms-2 :: cpa-sf
-{
-    text: "3>ила"
-}
-.cont-past-verb-forms-2 :: cpa-sl
-{
-    text: "3>ило"
-}
-.cont-past-verb-forms-2 :: cpa-p
 {
     text: "3>или"
 }
@@ -844,7 +724,9 @@ co-p
 
 verb-forms-3 :: \
     past-verb-forms-3; \
+    past-verb-forms-3(verb-perfect-present-po); \
     present-verb-forms-3; \
+    present-verb-forms-3(verb-perfect-future-po); \
     future-verb-forms-3; \
     conditional-verb-forms-3
 {
@@ -852,7 +734,9 @@ verb-forms-3 :: \
 
 verb-forms-1 :: \
     past-verb-forms-1; \
+    past-verb-forms-1(verb-perfect-present-po); \
     present-verb-forms-1; \
+    present-verb-forms-1(verb-perfect-future-po); \
     future-verb-forms-1; \
     conditional-verb-forms-1
 {
@@ -860,7 +744,9 @@ verb-forms-1 :: \
 
 verb-forms-kupljaty :: \
     past-verb-forms-kupljaty; \
+    past-verb-forms-kupljaty(verb-perfect-present-po); \
     present-verb-forms-kupljaty; \
+    present-verb-forms-kupljaty(verb-perfect-future-po); \
     future-verb-forms-kupljaty; \
     conditional-verb-forms-kupljaty
 {
@@ -868,21 +754,26 @@ verb-forms-kupljaty :: \
 
 verb-forms-kupyty :: \
     past-verb-forms-kupyty; \
+    past-verb-forms-kupyty(verb-perfect-present-po); \
     present-verb-forms-kupyty; \
+    present-verb-forms-kupyty(verb-perfect-future-po); \
     future-verb-forms-kupyty; \
     conditional-verb-forms-kupyty
 {
 }
 
 verbs-2 :: past-verb-forms-2; \
+           past-verb-forms-2(verb-perfect-present-po); \
            present-verb-forms-2; \
+           present-verb-forms-2(verb-perfect-future-po); \
            future-verb-forms-2; \
            conditional-verb-forms-2
 {
 }
 
-cont-verbs-2 :: cont-past-verb-forms-2; \
-           cont-present-verb-forms-2; \
+cont-verbs-2 :: past-verb-forms-2;\
+           past-verb-forms-2(verb-perfect-continuous-not-durative); \
+           present-verb-forms-2(verb-perfect-continuous-durative); \
            future-verb-forms-2; \
            conditional-verb-forms-2
 {

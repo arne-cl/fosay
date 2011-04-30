@@ -62,7 +62,7 @@ tokens = [
 
 # Tokens
 
-literals = ['{', '}', ':', ';', ',', '[', ']']
+literals = ['{', '}', ':', ';', ',', '[', ']', '(', ')']
 
 t_ignore = " \t"
 t_TRANSCR = r"\[[^\[\]]+\]"
@@ -192,12 +192,12 @@ def y(n, props):
 
 funcs = {}
 
-def modify_token(function_name, word):
+def modify_token(base, word):
     global funcs
     words = []
     #if not function_name in funcs:
     #   print(funcs.keys())
-    for ff in funcs[function_name]:
+    for ff in get_base(base):
         words += y(word, ff)
     return words
 
@@ -225,9 +225,46 @@ def modif_text(pattern, text):
         return wo + temp
     return pattern
 
-def modify_base(has_dot, name, tomod, base):
+def modify(obj, base):
+    res = []
     global funcs
     for pr in funcs[base]:
+        if pr is None: raise Exception()
+        for bj in funcs[obj]:
+            n = deepcopy(bj)
+            pattern = None
+            for p in pr:
+                if p[0] != concept["text"]:
+                    for j in range(len(n)):
+                        if n[j][0] == p[0]:
+                            del n[j]
+                            break
+                    n += [p]
+                else:
+                    pattern = p[1]
+            if not pattern is None:
+                for j in range(len(n)):
+                    if n[j][0] == concept["text"]:
+                        text = n[j][1]
+                        if text.find(">") != -1 and pattern.find("<") != -1:
+                            n[j] = (n[j][0], pattern + "|" + text)
+                        elif text.find("<") != -1 and pattern.find(">") != -1:
+                            n[j] = (n[j][0], text + "|" + pattern)
+                        else:
+                            n[j] = (n[j][0], modif_text(pattern, text))
+                        break
+                else:
+                    n += [(concept["text"], pattern)]
+            res += [n]
+    return res
+
+def get_base(base):
+    if base[1] is None: return funcs[base[0]]
+    else: return modify(base[0], base[1])
+
+def modify_base(has_dot, name, tomod, base):
+    global funcs
+    for pr in get_base(base):
         if pr is None and has_dot: continue
         n = deepcopy(tomod)
         pattern = None
@@ -415,17 +452,26 @@ def p_few_strings(p):
 #region base tokens
 def p_base_tokens(p):
     '''base_tokens : base_token
-                   | few_base_tokens'''
+                   | complex_base_token
+                   | few_base_tokens
+                   | few_complex_base_tokens'''
     p[0] = p[1]
 
 def p_base_token(p):
     '''base_token : identifier'''
-    p[0] = [p[1]]
+    p[0] = [(p[1], None)]
+
+def p_complex_base_token(p):
+    '''complex_base_token : identifier "(" identifier ")"'''
+    p[0] = [(p[1], p[3])]
 
 def p_few_base_tokens(p):
     '''few_base_tokens : base_tokens ";" identifier'''
-    p[0] = p[1] + [p[3]]
-#endregion
+    p[0] = p[1] + [(p[3], None)]
+
+def p_few_complex_base_tokens(p):
+    '''few_complex_base_tokens : base_tokens ";" identifier "(" identifier ")" '''
+    p[0] = p[1] + [(p[3], p[5])]
 
 def p_sem_identifiers(p):
     '''sem_identifiers : one_sem_identifier
