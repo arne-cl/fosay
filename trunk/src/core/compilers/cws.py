@@ -301,11 +301,12 @@ def attr_to_dict(l):
 
 def p_record(p):
     '''record : header "{" attributes "}"
+              | header "{" attributes ";" "}"
               | header "{" "}"'''
     global funcs
     p[0] = []
     header = p[1]
-    attributes = p[3] if len(p) == 5 else [[]]
+    attributes = p[3] if len(p) > 4 else [[]]
     #print(p[1])
     for name, base in header:
         #print(len(name[0]), name[0][0])
@@ -518,11 +519,11 @@ def p_one_attribute(p):
     p[0] = [p[1]]
     
 def p_few_attributes(p):
-    '''few_attributes : attributes attribute'''
+    '''few_attributes : attributes ";" attribute'''
     #p[0] = p[1] + [p[2]]
     p[0] = []
     for head in p[1]:
-        for end in p[2]:
+        for end in p[3]:
             p[0] += [head + [end]]
 #endregion attributes
 
@@ -534,7 +535,7 @@ def p_attribute(p):
     p[0] = p[1]
 
 def p_attr_ident(p):
-    '''attr_ident : identifier ":" sem_identifiers ";"'''
+    '''attr_ident : identifier ":" sem_identifiers'''
     if not p[1] in concept:
         error_text = ERROR_INVALID_ATTR + ".\nValid attributes are: " + ', '.join(concept.keys()) + "."
         raise CWSSyntaxError(error_text, p, 1, p[1])
@@ -556,7 +557,7 @@ def p_attr_ident(p):
             p[0] += [(concept[p[1]], pd[val])]
 
 def p_attr_str(p):
-    '''attr_str : identifier ":" strings ";"'''
+    '''attr_str : identifier ":" strings'''
     if not p[1] in concept:
         raise CWSSyntaxError(ERROR_INVALID_ATTR, p, 1, p[1])
     if len(p[3]) > 1:
@@ -566,14 +567,14 @@ def p_attr_str(p):
     p[0] = [(concept[p[1]], val)]
 
 def p_attr_float(p):
-    '''attr_float : identifier ":" FLOAT ";"'''
+    '''attr_float : identifier ":" FLOAT'''
     if not p[1] in concept:
         raise AtnlSyntaxError(ERROR_INVALID_ATTR, p, 1, p[1])
     p[0] = [(concept[p[1]], p[3])]
 
 #region attr_number
 def p_attr_numb(p):
-    '''attr_numb : identifier ":" numbers ";"'''
+    '''attr_numb : identifier ":" numbers'''
     if not p[1] in concept:
         raise CWSSyntaxError(ERROR_INVALID_ATTR, p, 1, p[1])
     if len(p[3]) > 1:
