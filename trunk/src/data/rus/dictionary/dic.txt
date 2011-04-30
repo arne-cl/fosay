@@ -1,29 +1,29 @@
 ". "
 {
-    lemma: "."
-    type: punctuation
+    lemma: ".";
+    type: punctuation;
 }
 "красиво"[krasiva]
 {
-    lemma: "melbi"
-    stem: "melbi.красиво"
-    type: adverb
+    lemma: "melbi";
+    stem: "melbi.красиво";
+    type: adverb;
 }
 "нет"[nʲɛ]
 {
-    type: negative
+    type: negative;
 }
 "прекрасно"[prikrasna]
 {
-    lemma: "banli"
-    lemma: "banli.прекрасно"
-    type: adverb
+    lemma: "banli";
+    lemma: "banli.прекрасно";
+    type: adverb;
 }
 "сегодня"[sivodnʲa]
 {
-    lemma: "cabdei"
-    stem: "cabdei.сегодня"
-    type: adverb
-    adverb-type: time
-    tense: inherit
+    lemma: "cabdei";
+    stem: "cabdei.сегодня";
+    type: adverb;
+    adverb-type: time;
+    tense: inherit;
 }

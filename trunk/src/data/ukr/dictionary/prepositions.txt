@@ -1,20 +1,20 @@
-"в"[v]; "у"[u]
+"в"[v] "у"[u]
 {
-    type: preposition
-    case: inessive; illative
+    type: preposition;
+    case: inessive illative;
 }
-"з"[z]; "із"[iz]
+"з"[z] "із"[iz]
 {
-    type: preposition
-    case: elative; comitative
+    type: preposition;
+    case: elative comitative;
 }
 "на"[na]
 {
-    type: preposition
-    case: adessive
+    type: preposition;
+    case: adessive;
 }
 "до"[do]
 {
-    type: preposition
-    case: allative
+    type: preposition;
+    case: allative;
 }

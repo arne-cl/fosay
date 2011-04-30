@@ -1,48 +1,48 @@
 "each"
 {
-    transcription: "ɛvəri"
-    type: quantifier
-    number: singular
-    quantity: all
-    quantity-number: singular
+    transcription: "ɛvəri";
+    type: quantifier;
+    number: singular;
+    quantity: all;
+    quantity-number: singular;
 }
 "every"
 {
-    transcription: "ɛvəri"
-    type: quantifier
-    number: singular
-    quantity: all
-    quantity-number: plural
+    transcription: "ɛvəri";
+    type: quantifier;
+    number: singular;
+    quantity: all;
+    quantity-number: plural;
 }
 "all the"
 {
-    transcription: "ɒl ðə"
-    type:  quantifier
-    number: plural
-    quantity: all
-    quantity-number: plural
+    transcription: "ɒl ðə";
+    type:  quantifier;
+    number: plural;
+    quantity: all;
+    quantity-number: plural;
 }
 "all"
 {
-    transcription: "ɒl"
-    type: quantifier
-    number: plural
-    quantity: all
-    quantity-number: plural
+    transcription: "ɒl";
+    type: quantifier;
+    number: plural;
+    quantity: all;
+    quantity-number: plural;
 }
 "a few"
 {
-    transcription: "ə fju"
-    type: quantifier
-    number: plural
-    quantity: few
-    quantity-number: plural
+    transcription: "ə fju";
+    type: quantifier;
+    number: plural;
+    quantity: few;
+    quantity-number: plural;
 }
 "many"
 {
-    transcription: "mɛni"
-    type: quantifier
-    number: plural
-    quantity: many
-    quantity-number: plural
+    transcription: "mɛni";
+    type: quantifier;
+    number: plural;
+    quantity: many;
+    quantity-number: plural;
 }

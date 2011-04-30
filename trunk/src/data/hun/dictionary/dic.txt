@@ -1,26 +1,26 @@
 ". "
 {
-    lemma: "."
-    type: punctuation
+    lemma: ".";
+    type: punctuation;
 }
 "egy"
 {
-    transcription: "ɛdʲ"
-    type: article
-    number: singular
-    difinity: undifinite
-    quantity: none
+    transcription: "ɛdʲ";
+    type: article;
+    number: singular;
+    difinity: undifinite;
+    quantity: none;
 }
-"a"[ɒ]; "az"[ɒz]
+"a"[ɒ] "az"[ɒz]
 {
-    type: article
-    difinity: difinite
-    quantity: none
+    type: article;
+    difinity: difinite;
+    quantity: none;
 }
-"ma"[mɒ]; "máma"[mamɒ]
+"ma"[mɒ] "máma"[mamɒ]
 {
-    lemma: "cabdei"
-    type: adverb
-    adverb-type: time
-    tense: inherit
+    lemma: "cabdei";
+    type: adverb;
+    adverb-type: time;
+    tense: inherit;
 }

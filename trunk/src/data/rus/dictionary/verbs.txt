@@ -1,78 +1,78 @@
 "видеть"[vidʲɛtʲ] :: verbs-2
 {
-    lemma: "viska"
-    stem: "viska.видеть"
-    type: verb
-    tense: infinitive
-    aspect: indefinite
-    participle: not-participle
+    lemma: "viska";
+    stem: "viska.видеть";
+    type: verb;
+    tense: infinitive;
+    aspect: indefinite;
+    participle: not-participle;
 }
 "говорить"[gavaritʲ] :: verb-forms-3
 {
-    lemma: "cusku"
-    lemma: "cusku.говорить"
-    type: verb
-    tense: infinitive
-    participle: not-participle
+    lemma: "cusku";
+    lemma: "cusku.говорить";
+    type: verb;
+    tense: infinitive;
+    participle: not-participle;
 }
 "знать"[znatʲ] :: verb-forms-1
 {
-    lemma: "dzuno"
-    stem: "dzuno.знать"
-    type: verb
-    tense: infinitive
-    participle: not-participle
+    lemma: "dzuno";
+    stem: "dzuno.знать";
+    type: verb;
+    tense: infinitive;
+    participle: not-participle;
 }
 "идти"[idtʲi]
 {
-    lemma: "cadzu"
-    stem: "cadzu.идти"
-    type: verb
-    tense: infinitive
-    participle: not-participle
+    lemma: "cadzu";
+    stem: "cadzu.идти";
+    type: verb;
+    tense: infinitive;
+    participle: not-participle;
 }
-"идет"[idʲot]; "идёт"[idʲot]
+"идет"[idʲot] "идёт"[idʲot]
 {
-    lemma: "cadzu"
-    stem: "cadzu.идти"
-    type: verb
-    tense: present
-    participle: not-participle
-    number: singular
+    lemma: "cadzu";
+    stem: "cadzu.идти";
+    type: verb;
+    tense: present;
+    participle: not-participle;
+    number: singular;
 }
-"шел"[ʃol]; "шёл"[ʃol]
+"шел"[ʃol] "шёл"[ʃol]
 {
-    lemma: "cadzu"
-    stem: "cadzu.идти"
-    type: verb
-    tense: past
-    participle: not-participle
-    gender: masculine
-    number: singular
+    lemma: "cadzu";
+    stem: "cadzu.идти";
+    type: verb;
+    tense: past;
+    participle: not-participle;
+    gender: masculine;
+    number: singular;
 }
 "шли"[ʃlʲi]
 {
-    lemma: "cadzu"
-    stem: "cadzu.идти"
-    type: verb
-    tense: past
-    participle: not-participle
-    number: plural
+    lemma: "cadzu";
+    stem: "cadzu.идти";
+    type: verb;
+    tense: past;
+    participle: not-participle;
+    number: plural;
 }
 "идут"[idut]
 {
-    lemma: "cadzu"
-    stem: "cadzu.идти"
-    type: verb
-    tense: present
-    participle: not-participle
-    number: plural
+    lemma: "cadzu";
+    stem: "cadzu.идти";
+    type: verb;
+    tense: present;
+    participle: not-participle;
+    number: plural;
 }
 "плавать"[plavatʲ] :: verb-forms-1
 {
-    lemma: "limna"
-    stem: "limna.плавать"
-    type: verb
-    tense: infinitive
-    participle: not-participle
+    lemma: "limna";
+    stem: "limna.плавать";
+    type: verb;
+    tense: infinitive;
+    participle: not-participle;
 }

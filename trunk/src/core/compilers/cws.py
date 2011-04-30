@@ -50,7 +50,6 @@ tokens = [
     "STRING",
     "DOT_STRING",
     "NUMBER",
-    "NEWLINE",
     "TRANSCR",
     "FLOAT",
 
@@ -86,10 +85,15 @@ def t_FLOAT(t):
     t.value = float(t.value)
     return t
 
-def t_NEWLINE(t):
-    r'(\#.*)?\n'
-    t.lexer.lineno += 1
-    return t
+# Comment
+def t_COMMENT(t):
+    r'(/\*(.|\n)*?\*/)|(//.*?\n)'
+    t.lexer.lineno += t.value.count("\n")
+    pass
+
+def t_newline(t):
+    r'\n+'
+    t.lexer.lineno += len(t.value)
 
 def t_NUMBER(t):
     r'\d+'
@@ -109,7 +113,6 @@ def t_error(t):
 
 
 precedence = (
-    ('left', 'NEWLINE'),
     ('right',
         'IDENTIFIER',
         'FLOAT',
@@ -127,17 +130,8 @@ lexer = lex.lex()
 # Parsing rules
 
 def p_whole(p):
-    '''whole : one_whole
-             | nl_whole'''
+    '''whole : records'''
     p[0] = p[1]
-
-def p_one_whole(p):
-    '''one_whole : records'''
-    p[0] = p[1]
-
-def p_nl_whole(p):
-    '''nl_whole : newlines records'''
-    p[0] = p[2]
 
 def p_records(p):
     '''records : one_record
@@ -302,12 +296,12 @@ def attr_to_dict(l):
     return d
 
 def p_record(p):
-    '''record : header newlines "{" newlines attributes "}" newlines
-              | header newlines "{" newlines "}" newlines'''
+    '''record : header "{" attributes "}"
+              | header "{" "}"'''
     global funcs
     p[0] = []
     header = p[1]
-    attributes = p[5] if len(p) == 8 else [[]]
+    attributes = p[3] if len(p) == 5 else [[]]
     #print(p[1])
     for name, base in header:
         #print(len(name[0]), name[0][0])
@@ -398,8 +392,8 @@ def p_words(p):
     p[0] = p[1]
 
 def p_few_words(p):
-    '''few_words : words ";" word'''
-    p[0] = p[1] + p[3]
+    '''few_words : words word'''
+    p[0] = p[1] + p[2]
 
 def p_word(p):
     '''word : word_txt
@@ -445,8 +439,8 @@ def p_one_string(p):
     p[0] = [p[1][1:-1]]
 
 def p_few_strings(p):
-    '''few_strings : strings ";" STRING'''
-    p[0] = p[1] + [p[3][1:-1]]
+    '''few_strings : strings STRING'''
+    p[0] = p[1] + [p[2][1:-1]]
 # string sequences endregion
 
 #region base tokens
@@ -466,12 +460,12 @@ def p_complex_base_token(p):
     p[0] = [(p[1], p[3])]
 
 def p_few_base_tokens(p):
-    '''few_base_tokens : base_tokens ";" identifier'''
-    p[0] = p[1] + [(p[3], None)]
+    '''few_base_tokens : base_tokens identifier'''
+    p[0] = p[1] + [(p[2], None)]
 
 def p_few_complex_base_tokens(p):
-    '''few_complex_base_tokens : base_tokens ";" identifier "(" identifier ")" '''
-    p[0] = p[1] + [(p[3], p[5])]
+    '''few_complex_base_tokens : base_tokens identifier "(" identifier ")" '''
+    p[0] = p[1] + [(p[2], p[4])]
 
 def p_sem_identifiers(p):
     '''sem_identifiers : one_sem_identifier
@@ -483,8 +477,8 @@ def p_one_sem_identifier(p):
     p[0] = [p[1]]
 
 def p_few_sem_identifiers(p):
-    '''few_sem_identifiers : sem_identifiers ";" com_identifiers'''
-    p[0] = p[1] + [p[3]]
+    '''few_sem_identifiers : sem_identifiers com_identifiers'''
+    p[0] = p[1] + [p[2]]
 
 def p_com_identifiers(p):
     '''com_identifiers : one_com_ident
@@ -526,7 +520,7 @@ def p_attribute(p):
     p[0] = p[1]
 
 def p_attr_ident(p):
-    '''attr_ident : identifier ":" sem_identifiers newlines'''
+    '''attr_ident : identifier ":" sem_identifiers ";"'''
     if not p[1] in concept:
         error_text = ERROR_INVALID_ATTR + ".\nValid attributes are: " + ', '.join(concept.keys()) + "."
         raise CWSSyntaxError(error_text, p, 1, p[1])
@@ -548,7 +542,7 @@ def p_attr_ident(p):
             p[0] += [(concept[p[1]], pd[val])]
 
 def p_attr_str(p):
-    '''attr_str : identifier ":" strings newlines'''
+    '''attr_str : identifier ":" strings ";"'''
     if not p[1] in concept:
         raise CWSSyntaxError(ERROR_INVALID_ATTR, p, 1, p[1])
     if len(p[3]) > 1:
@@ -558,14 +552,14 @@ def p_attr_str(p):
     p[0] = [(concept[p[1]], val)]
 
 def p_attr_float(p):
-    '''attr_float : identifier ":" FLOAT newlines'''
+    '''attr_float : identifier ":" FLOAT ";"'''
     if not p[1] in concept:
         raise AtnlSyntaxError(ERROR_INVALID_ATTR, p, 1, p[1])
     p[0] = [(concept[p[1]], p[3])]
 
 #region attr_number
 def p_attr_numb(p):
-    '''attr_numb : identifier ":" numbers newlines'''
+    '''attr_numb : identifier ":" numbers ";"'''
     if not p[1] in concept:
         raise CWSSyntaxError(ERROR_INVALID_ATTR, p, 1, p[1])
     if len(p[3]) > 1:
@@ -584,7 +578,7 @@ def p_one_number(p):
     p[0] = [p[1]]
 
 def p_few_numbers(p):
-    '''few_numbers : numbers ";" NUMBER'''
+    '''few_numbers : numbers NUMBER'''
     p[0] = p[1] + [p[2]]
 #endregion
 
@@ -594,17 +588,17 @@ def p_error(p):
         try:
             if not p is None:
                 print_error(p.lineno, find_column(p.lexpos), "Syntax error at '%s'" % p.value)
-                global text
-                print(text)
+                #global text
+                #print(text)
             else:
                 print_error(-1, -1, "Syntax error")
         except UnicodeEncodeError:
             print_error(p.lineno, find_column(p.lexpos), "Syntax error")
     raise Exception()
 
-def p_newlines(p):
-    '''newlines : NEWLINE
-                | newlines NEWLINE'''
+#def p_newlines(p):
+#    '''newlines : NEWLINE
+#                | newlines NEWLINE'''
 
 yaccer = yacc.yacc()
 
@@ -634,16 +628,7 @@ def parse(s, print_to_console):
 def _read_file(file_path):
     try:
         f = open(file_path, encoding = 'utf-8')
-        s = [x.split('#')[0].strip() for x in f.readlines()]
-        i = 0
-        while i < len(s):
-            if len(s[i]) == 0:
-                del s[i]
-            elif s[i][-1] != '\\':
-                i += 1
-            else:
-                s[i] = s[i][:-1] + ' ' + s[i + 1]
-                del s[i + 1]
+        s = f.read()
     except IOError:
         print("can't open file '" + os.path.join(self.path, file_path) + "'")
     finally:
@@ -653,14 +638,7 @@ def _read_file(file_path):
 def _parse_file(_path, print_to_console=True):
     global path
     path = _path
-    f = _read_file(path)
-    #print(f)
-    lines = []
-    for line in f:
-        lines += [line] if line.find(':-') == -1 else ["\n" + line]
-    s = "\n".join(lines) + "\n" ##
-    #print(s)
-    return _parse_text(s, print_to_console)
+    return _parse_text(_read_file(path), print_to_console)
 
 to_ipa = None
 

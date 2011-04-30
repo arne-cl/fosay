@@ -1,66 +1,66 @@
 "at"
 {
-    transcription: "æt"
-    type: preposition
-    case: adessive
-    adverb-type: place
+    transcription: "æt";
+    type: preposition;
+    case: adessive;
+    adverb-type: place;
 }
 "from"
 {
-    transcription: "from"
-    type: preposition
-    case: elative
-    adverb-type: place
+    transcription: "from";
+    type: preposition;
+    case: elative;
+    adverb-type: place;
 }
 "in"
 {
-    transcription: "ɪn"
-    type: preposition
-    case: inessive
-    adverb-type: place
+    transcription: "ɪn";
+    type: preposition;
+    case: inessive;
+    adverb-type: place;
 }
 "in"
 {
-    transcription: "ɪn"
-    type: preposition
-    case: inessive-time
-    adverb-type: time
+    transcription: "ɪn";
+    type: preposition;
+    case: inessive-time;
+    adverb-type: time;
 }
 "of"[əv]
 {
-    type: preposition
-    case: possessive
+    type: preposition;
+    case: possessive;
 }
 "off"[ɒf]
 {
-    type: preposition
-    case: ablative
+    type: preposition;
+    case: ablative;
 }
 "on"[ɑn]
 {
-    type: preposition
-    case: adessive
-    adverb-type: place
+    type: preposition;
+    case: adessive;
+    adverb-type: place;
 }
 "into"
 {
-    transcription: "intu"
-    case: illative
-    type: preposition
+    transcription: "intu";
+    case: illative;
+    type: preposition;
 }
-#"onto"[ɑntu]
-#{
-#    type: preposition
-#    case: allative
-#}
+/*"onto"[ɑntu]
+{
+    type: preposition;
+    case: allative;
+}*/
 "with"
 {
-    transcription: "wɪθ"
-    type: preposition
-    case: comitative
+    transcription: "wɪθ";
+    type: preposition;
+    case: comitative;
 }
 "to"[tu]
 {
-    type: preposition
-    case: allative
+    type: preposition;
+    case: allative;
 }

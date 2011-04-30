@@ -1,155 +1,152 @@
 "a long time ago"
 {
-    lemma: "a long time ago"
-    type: adverb
+    lemma: "a long time ago";
+    type: adverb;
 }
 "am"
 {
-    lemma: "esi"
-    type: auxiliary
-    number: singular
-    persone: first
-    tense: present
-    participle: not-participle
-    modal: false
+    lemma: "esi";
+    type: auxiliary;
+    number: singular;
+    persone: first;
+    tense: present;
+    participle: not-participle;
+    modal: false;
 }
-"an"
-{
-    type: article
-}
+"an" { type: article; }
 "any"
 {
-    lemma: "any"
-    type: pronoun
+    lemma: "any";
+    type: pronoun;
 }
 "anybody"
 {
-    lemma: "anybody"
-    type: pronoun
+    lemma: "anybody";
+    type: pronoun;
 }
 "anyone"
 {
-    lemma: "anybody"
-    type: pronoun
+    lemma: "anybody";
+    type: pronoun;
 }
 "esi"
 {
-    lemma: "esi"
-    type: auxiliary
+    lemma: "esi";
+    type: auxiliary;
 }
 "at(time)"
 {
-    lemma: "at(time)"
-    type: preposition
+    lemma: "at(time)";
+    type: preposition;
 }
 "be"
 {
-    lemma: "be"
-    type: auxiliary
+    lemma: "be";
+    type: auxiliary;
 }
 "melbi"
 {
-    lemma: "melbi"
-    type: adjective
+    lemma: "melbi";
+    type: adjective;
 }
 "melbi"
 {
-    lemma: "melbi"
-    type: adverb
+    lemma: "melbi";
+    type: adverb;
 }
 ".ivan"
 {
-    lemma: ".ivan"
-    type: noun
-    persone: third
-    noun-type: proper
+    lemma: ".ivan";
+    type: noun;
+    persone: third;
+    noun-type: proper;
 }
 "nanla"
 {
-    lemma: "nanla"
-    type: noun
-    persone: third
-    noun-type: common
+    lemma: "nanla";
+    type: noun;
+    persone: third;
+    noun-type: common;
 }
 "povi"
 {
-    lemma: "povi"
-    type: verb
+    lemma: "povi";
+    type: verb;
 }
 "djedi"
 {
-    lemma: "djedi"
-    type: noun
-    persone: third
-    noun-type: common
+    lemma: "djedi";
+    type: noun;
+    persone: third;
+    noun-type: common;
 }
 "day after day"
 {
-    lemma: "day after day"
-    type: adverb
+    lemma: "day after day";
+    type: adverb;
 }
 "do"
 {
-    lemma: "do"
-    type: auxiliary
+    lemma: "do";
+    type: auxiliary;
 }
 "8"
 {
-    lemma: "8"
-    type: numeral
+    lemma: "8";
+    type: numeral;
 }
 "yun-homino"
 {
-    lemma: "nixli"
-    type: noun
-    persone: third
-    noun-type: common
+    lemma: "nixli";
+    type: noun;
+    persone: third;
+    noun-type: common;
 }
 "cadzu"
 {
-    lemma: "cadzu"
-    type: verb
+    lemma: "cadzu";
+    type: verb;
 }
 "fetsi"
 {
-    lemma: "fetsi"
-    type: adjective
+    lemma: "fetsi";
+    type: adjective;
 }
 "nakni"
 {
-    lemma: "nakni"
-    type: adjective
+    lemma: "nakni";
+    type: adjective;
 }
 "tunba"
 {
-    lemma: "tunba"
-    type: noun
-    persone: third
-    noun-type: common
+    lemma: "tunba";
+    type: noun;
+    persone: third;
+    noun-type: common;
 }
 "mensi"
 {
-    lemma: "mensi"
-    type: noun
-    persone: third
-    noun-type: common
+    lemma: "mensi";
+    type: noun;
+    persone: third;
+    noun-type: common;
 }
 "bruna"
 {
-    lemma: "bruna"
-    type: noun
-    persone: third
-    noun-type: common
+    lemma: "bruna";
+    type: noun;
+    persone: third;
+    noun-type: common;
 }
 "nanmu"
 {
-    lemma: "nanmu"
-    type: noun
-    persone: third
-    noun-type: common
+    lemma: "nanmu";
+    type: noun;
+    persone: third;
+    noun-type: common;
 }
 "yuna"
 {
-    lemma: "yuno"
-    type: adjective
+    lemma: "yuno";
+    type: adjective;
 }

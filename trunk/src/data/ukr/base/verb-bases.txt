@@ -1,780 +1,780 @@
 verb-perfect-future-po
 {
-    text: "по<0"
-    aspect: perfect
-    tense: future
+    text: "по<0";
+    aspect: perfect;
+    tense: future;
 }
 
 verb-perfect-present-po
 {
-    text: "по<0"
-    aspect: perfect
-    tense: present
+    text: "по<0";
+    aspect: perfect;
+    tense: present;
 }
 
 verb-perfect-future-na
 {
-    text: "на<0"
-    aspect: perfect
-    tense: future
+    text: "на<0";
+    aspect: perfect;
+    tense: future;
 }
 
 verb-perfect-present-na
 {
-    text: "на<0"
-    aspect: perfect
-    tense: present
+    text: "на<0";
+    aspect: perfect;
+    tense: present;
 }
 
 verb-perfect-future-s
 {
-    text: "на<0"
-    aspect: perfect
-    tense: future
+    text: "на<0";
+    aspect: perfect;
+    tense: future;
 }
 
 verb-perfect-present-s
 {
-    text: "на<0"
-    aspect: perfect
-    tense: present
+    text: "на<0";
+    aspect: perfect;
+    tense: present;
 }
 
 verb-continuous
 {
-    aspect: continuous
+    aspect: continuous;
 }
 
 verb-perfect-continuous-durative
 {
-    aspect: perfect-continuous-durative
+    aspect: perfect-continuous-durative;
 }
 
 verb-perfect-continuous-not-durative
 {
-    tense: present
-    aspect: perfect-continuous-not-durative
+    tense: present;
+    aspect: perfect-continuous-not-durative;
 }
 pr-s1
 {
-    tense: present
-    persone: first
-    number: singular
-    participle: not-participle
-    mood: declarative
-    aspect: indefinite
+    tense: present;
+    persone: first;
+    number: singular;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
 }
 pr-p1
 {
-    tense: present
-    persone: first
-    number: plural
-    participle: not-participle
-    mood: declarative
-    aspect: indefinite
+    tense: present;
+    persone: first;
+    number: plural;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
 }
 pr-s2i
 {
-    tense: present
-    persone: second
-    number: singular
-    form: informal
-    participle: not-participle
-    mood: declarative
-    aspect: indefinite
+    tense: present;
+    persone: second;
+    number: singular;
+    form: informal;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
 }
 pr-s2f
 {
-    tense: present
-    persone: second
-    number: singular
-    form: formal
-    participle: not-participle
-    mood: declarative
-    aspect: indefinite
+    tense: present;
+    persone: second;
+    number: singular;
+    form: formal;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
 }
 pr-p2i
 {
-    tense: present
-    persone: second
-    number: plural
-    form: informal
-    participle: not-participle
-    mood: declarative
-    aspect: indefinite
+    tense: present;
+    persone: second;
+    number: plural;
+    form: informal;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
 }
 pr-s3
 {
-    tense: present
-    persone: third
-    number: singular
-    participle: not-participle
-    mood: declarative
-    aspect: indefinite
+    tense: present;
+    persone: third;
+    number: singular;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
 }
 pr-p3
 {
-    tense: present
-    persone: third
-    number: plural
-    participle: not-participle
-    mood: declarative
-    aspect: indefinite
+    tense: present;
+    persone: third;
+    number: plural;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
 }
-#past
+//past;
 pa-sm
 {
-    gender: masculine
-    tense: past
-    number: singular
-    participle: not-participle
-    mood: declarative
-    aspect: indefinite
+    gender: masculine;
+    tense: past;
+    number: singular;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
 }
 pa-sf
 {
-    gender: feminine
-    tense: past
-    number: singular
-    participle: not-participle
-    mood: declarative
-    aspect: indefinite
+    gender: feminine;
+    tense: past;
+    number: singular;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
 }
 pa-sl
 {
-    gender: lifeless
-    tense: past
-    number: singular
-    participle: not-participle
-    mood: declarative
-    aspect: indefinite
+    gender: lifeless;
+    tense: past;
+    number: singular;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
 }
 pa-p
 {
-    tense: past
-    number: plural
-    participle: not-participle
-    mood: declarative
-    aspect: indefinite
+    tense: past;
+    number: plural;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
 }
-#future
+//future;
 fu-s1
 {
-    tense: future
-    persone: first
-    number: singular
-    participle: not-participle
-    mood: declarative
-    aspect: indefinite
+    tense: future;
+    persone: first;
+    number: singular;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
 }
 fu-p1
 {
-    tense: future
-    persone: first
-    number: plural
-    participle: not-participle
-    mood: declarative
-    aspect: indefinite
+    tense: future;
+    persone: first;
+    number: plural;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
 }
 fu-s2i
 {
-    tense: future
-    persone: second
-    number: singular
-    form: informal
-    participle: not-participle
-    mood: declarative
-    aspect: indefinite
+    tense: future;
+    persone: second;
+    number: singular;
+    form: informal;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
 }
 fu-s2f
 {
-    tense: future
-    persone: second
-    number: singular
-    form: formal
-    participle: not-participle
-    mood: declarative
-    aspect: indefinite
+    tense: future;
+    persone: second;
+    number: singular;
+    form: formal;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
 }
 fu-p2i
 {
-    tense: future
-    persone: second
-    number: plural
-    form: informal
-    participle: not-participle
-    mood: declarative
-    aspect: indefinite
+    tense: future;
+    persone: second;
+    number: plural;
+    form: informal;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
 }
 fu-s3
 {
-    tense: future
-    persone: third
-    number: singular
-    participle: not-participle
-    mood: declarative
-    aspect: indefinite
+    tense: future;
+    persone: third;
+    number: singular;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
 }
 fu-p3
 {
-    tense: future
-    persone: third
-    number: plural
-    participle: not-participle
-    mood: declarative
-    aspect: indefinite
+    tense: future;
+    persone: third;
+    number: plural;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
 }
 
 co-sm
 {
-    gender: masculine
-    tense: past
-    number: singular
-    participle: not-participle
-    mood: conditional
-    aspect: indefinite
+    gender: masculine;
+    tense: past;
+    number: singular;
+    participle: not-participle;
+    mood: conditional;
+    aspect: indefinite;
 }
 co-sf
 {
-    gender: feminine
-    tense: past
-    number: singular
-    participle: not-participle
-    mood: conditional
-    aspect: indefinite
+    gender: feminine;
+    tense: past;
+    number: singular;
+    participle: not-participle;
+    mood: conditional;
+    aspect: indefinite;
 }
 co-sl
 {
-    gender: lifeless
-    tense: past
-    number: singular
-    mood: conditional
-    participle: not-participle
-    aspect: indefinite
+    gender: lifeless;
+    tense: past;
+    number: singular;
+    mood: conditional;
+    participle: not-participle;
+    aspect: indefinite;
 }
 co-p
 {
-    tense: past
-    number: plural
-    mood: conditional
-    participle: not-participle
-    aspect: indefinite
+    tense: past;
+    number: plural;
+    mood: conditional;
+    participle: not-participle;
+    aspect: indefinite;
 }
 
 .past-verb-forms-1 :: pa-sm
 {
-    text: "2>в"
+    text: "2>в";
 }
 .past-verb-forms-1 :: pa-sf
 {
-    text: "2>ла"
+    text: "2>ла";
 }
 .past-verb-forms-1 :: pa-sl
 {
-    text: "2>ло"
+    text: "2>ло";
 }
 .past-verb-forms-1 :: pa-p
 {
-    text: "2>ли"
+    text: "2>ли";
 }
 
 .past-verb-forms-kupyty :: pa-sm
 {
-    text: "0>ив"
+    text: "0>ив";
 }
 .past-verb-forms-kupyty :: pa-sf
 {
-    text: "0>ила"
+    text: "0>ила";
 }
 .past-verb-forms-kupyty :: pa-sl
 {
-    text: "0>ило"
+    text: "0>ило";
 }
 .past-verb-forms-kupyty :: pa-p
 {
-    text: "0>или"
+    text: "0>или";
 }
 
 .past-verb-forms-kupljaty :: pa-sm
 {
-    text: "0>в"
+    text: "0>в";
 }
 .past-verb-forms-kupljaty :: pa-sf
 {
-    text: "0>ла"
+    text: "0>ла";
 }
 .past-verb-forms-kupljaty :: pa-sl
 {
-    text: "0>ло"
+    text: "0>ло";
 }
 .past-verb-forms-kupljaty :: pa-p
 {
-    text: "0>ли"
+    text: "0>ли";
 }
 
 .present-verb-forms-1 :: pr-s1
 {
-    text: "2>ю"
+    text: "2>ю";
 }
 .present-verb-forms-1 :: pr-p1
 {
-    text: "2>ємо"
+    text: "2>ємо";
 }
 .present-verb-forms-1 :: pr-s2i
 {
-    text: "2>єш"
+    text: "2>єш";
 }
 .present-verb-forms-1 :: pr-s2f
 {
-    text: "2>єте"
+    text: "2>єте";
 }
 .present-verb-forms-1 :: pr-p2i
 {
-    text: "2>єте"
+    text: "2>єте";
 }
 .present-verb-forms-1 :: pr-s3
 {
-    text: "2>є"
+    text: "2>є";
 }
 .present-verb-forms-1 :: pr-p3
 {
-    text: "2>ють"
+    text: "2>ють";
 }
 
 .present-verb-forms-kupljaty :: pr-s1
 {
-    text: "0>ю"
+    text: "0>ю";
 }
 .present-verb-forms-kupljaty :: pr-p1
 {
-    text: "0>ємо"
+    text: "0>ємо";
 }
 .present-verb-forms-kupljaty :: pr-s2i
 {
-    text: "0>єш"
+    text: "0>єш";
 }
 .present-verb-forms-kupljaty :: pr-s2f
 {
-    text: "0>єте"
+    text: "0>єте";
 }
 .present-verb-forms-kupljaty :: pr-p2i
 {
-    text: "0>єте"
+    text: "0>єте";
 }
 .present-verb-forms-kupljaty :: pr-s3
 {
-    text: "0>є"
+    text: "0>є";
 }
 .present-verb-forms-kupljaty :: pr-p3
 {
-    text: "0>ють"
+    text: "0>ють";
 }
 
 .present-verb-forms-kupyty :: pr-s1
 {
-    text: "0>ую"
+    text: "0>ую";
 }
 .present-verb-forms-kupyty :: pr-p1
 {
-    text: "0>уємо"
+    text: "0>уємо";
 }
 .present-verb-forms-kupyty :: pr-s2i
 {
-    text: "0>уєш"
+    text: "0>уєш";
 }
 .present-verb-forms-kupyty :: pr-s2f
 {
-    text: "0>уєте"
+    text: "0>уєте";
 }
 .present-verb-forms-kupyty :: pr-p2i
 {
-    text: "0>уєте"
+    text: "0>уєте";
 }
 .present-verb-forms-kupyty :: pr-s3
 {
-    text: "0>ує"
+    text: "0>ує";
 }
 .present-verb-forms-kupyty :: pr-p3
 {
-    text: "0>ують"
+    text: "0>ують";
 }
 
 .future-verb-forms-1 :: fu-s1
 {
-    text: "2>тиму"
+    text: "2>тиму";
 }
 .future-verb-forms-1 :: fu-p1
 {
-    text: "2>тимемо"
+    text: "2>тимемо";
 }
 .future-verb-forms-1 :: fu-s2i
 {
-    text: "2>тимеш"
+    text: "2>тимеш";
 }
 .future-verb-forms-1 :: fu-s2f
 {
-    text: "2>тимете"
+    text: "2>тимете";
 }
 .future-verb-forms-1 :: fu-p2i
 {
-    text: "2>тимете"
+    text: "2>тимете";
 }
 .future-verb-forms-1 :: fu-s3
 {
-    text: "2>тиме"
+    text: "2>тиме";
 }
 .future-verb-forms-1 :: fu-p3
 {
-    text: "2>тимуть"
+    text: "2>тимуть";
 }
 
 .future-verb-forms-kupyty :: fu-s1
 {
-    text: "0>лю"
+    text: "0>лю";
 }
 .future-verb-forms-kupyty :: fu-p1
 {
-    text: "0>имо"
+    text: "0>имо";
 }
 .future-verb-forms-kupyty :: fu-s2i
 {
-    text: "0>иш"
+    text: "0>иш";
 }
 .future-verb-forms-kupyty :: fu-s2f
 {
-    text: "0>ите"
+    text: "0>ите";
 }
 .future-verb-forms-kupyty :: fu-p2i
 {
-    text: "0>ите"
+    text: "0>ите";
 }
 .future-verb-forms-kupyty :: fu-s3
 {
-    text: "0>ить"
+    text: "0>ить";
 }
 .future-verb-forms-kupyty :: fu-p3
 {
-    text: "0>лять"
+    text: "0>лять";
 }
 
 .future-verb-forms-kupljaty :: fu-s1
 {
-    text: "0>тиму"
+    text: "0>тиму";
 }
 .future-verb-forms-kupljaty :: fu-p1
 {
-    text: "0>тимемо"
+    text: "0>тимемо";
 }
 .future-verb-forms-kupljaty :: fu-s2i
 {
-    text: "0>тимеш"
+    text: "0>тимеш";
 }
 .future-verb-forms-kupljaty :: fu-s2f
 {
-    text: "0>тимете"
+    text: "0>тимете";
 }
 .future-verb-forms-kupljaty :: fu-p2i
 {
-    text: "0>тимете"
+    text: "0>тимете";
 }
 .future-verb-forms-kupljaty :: fu-s3
 {
-    text: "0>тиме"
+    text: "0>тиме";
 }
 .future-verb-forms-kupljaty :: fu-p3
 {
-    text: "0>тимуть"
+    text: "0>тимуть";
 }
 
 .conditional-verb-forms-1 :: co-sm
 {
-    text: "2>в би"
+    text: "2>в би";
 }
 .conditional-verb-forms-1 :: co-sf
 {
-    text: "2>ла б"
+    text: "2>ла б";
 }
 .conditional-verb-forms-1 :: co-sl
 {
-    text: "2>ло б"
+    text: "2>ло б";
 }
 .conditional-verb-forms-1 :: co-p
 {
-    text: "2>ли б"
+    text: "2>ли б";
 }
 
 .conditional-verb-forms-kupyty :: co-sm
 {
-    text: "0>ив би"
+    text: "0>ив би";
 }
 .conditional-verb-forms-kupyty :: co-sf
 {
-    text: "0>ила б"
+    text: "0>ила б";
 }
 .conditional-verb-forms-kupyty :: co-sl
 {
-    text: "0>ило б"
+    text: "0>ило б";
 }
 .conditional-verb-forms-kupyty :: co-p
 {
-    text: "0>или б"
+    text: "0>или б";
 }
 
 .conditional-verb-forms-kupljaty :: co-sm
 {
-    text: "0>в би"
+    text: "0>в би";
 }
 .conditional-verb-forms-kupljaty :: co-sf
 {
-    text: "0>ла б"
+    text: "0>ла б";
 }
 .conditional-verb-forms-kupljaty :: co-sl
 {
-    text: "0>ло б"
+    text: "0>ло б";
 }
 .conditional-verb-forms-kupljaty :: co-p
 {
-    text: "0>ли б"
+    text: "0>ли б";
 }
 
 .present-verb-forms-2 :: pr-s1
 {
-    text: "3>у"
+    text: "3>у";
 }
 .present-verb-forms-2 :: pr-p1
 {
-    text: "3>имо"
+    text: "3>имо";
 }
 .present-verb-forms-2 :: pr-s2i
 {
-    text: "3>иш"
+    text: "3>иш";
 }
 .present-verb-forms-2 :: pr-s2f
 {
-    text: "3>ите"
+    text: "3>ите";
 }
 .present-verb-forms-2 :: pr-p2i
 {
-    text: "3>ите"
+    text: "3>ите";
 }
 .present-verb-forms-2 :: pr-s3
 {
-    text: "3>ить"
+    text: "3>ить";
 }
 .present-verb-forms-2 :: pr-p3
 {
-    text: "3>ать"
+    text: "3>ать";
 }
 
 .past-verb-forms-2 :: pa-sm
 {
-    text: "3>ив"
+    text: "3>ив";
 }
 .past-verb-forms-2 :: pa-sf
 {
-    text: "3>ила"
+    text: "3>ила";
 }
 .past-verb-forms-2 :: pa-sl
 {
-    text: "3>ило"
+    text: "3>ило";
 }
 .past-verb-forms-2 :: pa-p
 {
-    text: "3>или"
+    text: "3>или";
 }
 
 .future-verb-forms-2 :: fu-s1
 {
-    text: "3>итиму"
+    text: "3>итиму";
 }
 .future-verb-forms-2 :: fu-p1
 {
-    text: "3>итимемо"
+    text: "3>итимемо";
 }
 .future-verb-forms-2 :: fu-s2i
 {
-    text: "3>итимеш"
+    text: "3>итимеш";
 }
 .future-verb-forms-2 :: fu-s2f
 {
-    text: "3>итимете"
+    text: "3>итимете";
 }
 .future-verb-forms-2 :: fu-p2i
 {
-    text: "3>итимете"
+    text: "3>итимете";
 }
 .future-verb-forms-2 :: fu-s3
 {
-    text: "3>итиме"
+    text: "3>итиме";
 }
 .future-verb-forms-2 :: fu-p3
 {
-    text: "3>итимуть"
+    text: "3>итимуть";
 }
 
 .conditional-verb-forms-2 :: co-sm
 {
-    text: "3>ив би"
+    text: "3>ив би";
 }
 .conditional-verb-forms-2 :: co-sf
 {
-    text: "3>ила б"
+    text: "3>ила б";
 }
 .conditional-verb-forms-2 :: co-sl
 {
-    text: "3>ило б"
+    text: "3>ило б";
 }
 .conditional-verb-forms-2 :: co-p
 {
-    text: "3>или б"
+    text: "3>или б";
 }
 
 
 .present-verb-forms-3 :: pr-s1
 {
-    text: "3>ю"
+    text: "3>ю";
 }
 .present-verb-forms-3 :: pr-p1
 {
-    text: "3>имо"
+    text: "3>имо";
 }
 .present-verb-forms-3 :: pr-s2i
 {
-    text: "3>иш"
+    text: "3>иш";
 }
 .present-verb-forms-3 :: pr-s2f
 {
-    text: "3>ите"
+    text: "3>ите";
 }
 .present-verb-forms-3 :: pr-p2i
 {
-    text: "3>ите"
+    text: "3>ите";
 }
 .present-verb-forms-3 :: pr-s3
 {
-    text: "3>ить"
+    text: "3>ить";
 }
 .present-verb-forms-3 :: pr-p3
 {
-    text: "3>ять"
+    text: "3>ять";
 }
 
 .past-verb-forms-3 :: pa-sm
 {
-    text: "3>ив"
+    text: "3>ив";
 }
 .past-verb-forms-3 :: pa-sf
 {
-    text: "3>ила"
+    text: "3>ила";
 }
 .past-verb-forms-3 :: pa-sl
 {
-    text: "3>ило"
+    text: "3>ило";
 }
 .past-verb-forms-3 :: pa-p
 {
-    text: "3>или"
+    text: "3>или";
 }
 
 .future-verb-forms-3 :: fu-s1
 {
-    text: "3>итиму"
+    text: "3>итиму";
 }
 .future-verb-forms-3 :: fu-p1
 {
-    text: "3>итимемо"
+    text: "3>итимемо";
 }
 .future-verb-forms-3 :: fu-s2i
 {
-    text: "3>итимеш"
+    text: "3>итимеш";
 }
 .future-verb-forms-3 :: fu-s2f
 {
-    text: "3>итимете"
+    text: "3>итимете";
 }
 .future-verb-forms-3 :: fu-p2i
 {
-    text: "3>итимете"
+    text: "3>итимете";
 }
 .future-verb-forms-3 :: fu-s3
 {
-    text: "3>итиме"
+    text: "3>итиме";
 }
 .future-verb-forms-3 :: fu-p3
 {
-    text: "3>итимуть"
+    text: "3>итимуть";
 }
 
 .conditional-verb-forms-3 :: co-sm
 {
-    text: "3>ив би"
+    text: "3>ив би";
 }
 .conditional-verb-forms-3 :: co-sf
 {
-    text: "3>ила б"
+    text: "3>ила б";
 }
 .conditional-verb-forms-3 :: co-sl
 {
-    text: "3>ило б"
+    text: "3>ило б";
 }
 .conditional-verb-forms-3 :: co-p
 {
-    text: "3>или б"
+    text: "3>или б";
 }
 
-verb-forms-3 :: \
-    past-verb-forms-3; \
-    past-verb-forms-3(verb-perfect-present-po); \
-    present-verb-forms-3; \
-    present-verb-forms-3(verb-perfect-future-po); \
-    future-verb-forms-3; \
+verb-forms-3 :: 
+    past-verb-forms-3 
+    past-verb-forms-3(verb-perfect-present-po) 
+    present-verb-forms-3 
+    present-verb-forms-3(verb-perfect-future-po) 
+    future-verb-forms-3 
     conditional-verb-forms-3
 {
 }
 
-verb-forms-1 :: \
-    past-verb-forms-1; \
-    past-verb-forms-1(verb-perfect-present-po); \
-    present-verb-forms-1; \
-    present-verb-forms-1(verb-perfect-future-po); \
-    future-verb-forms-1; \
+verb-forms-1 :: 
+    past-verb-forms-1 
+    past-verb-forms-1(verb-perfect-present-po) 
+    present-verb-forms-1 
+    present-verb-forms-1(verb-perfect-future-po) 
+    future-verb-forms-1 
     conditional-verb-forms-1
 {
 }
 
-verb-forms-kupljaty :: \
-    past-verb-forms-kupljaty; \
-    past-verb-forms-kupljaty(verb-perfect-present-po); \
-    present-verb-forms-kupljaty; \
-    present-verb-forms-kupljaty(verb-perfect-future-po); \
-    future-verb-forms-kupljaty; \
+verb-forms-kupljaty :: 
+    past-verb-forms-kupljaty 
+    past-verb-forms-kupljaty(verb-perfect-present-po) 
+    present-verb-forms-kupljaty 
+    present-verb-forms-kupljaty(verb-perfect-future-po) 
+    future-verb-forms-kupljaty 
     conditional-verb-forms-kupljaty
 {
 }
 
-verb-forms-kupyty :: \
-    past-verb-forms-kupyty; \
-    past-verb-forms-kupyty(verb-perfect-present-po); \
-    present-verb-forms-kupyty; \
-    present-verb-forms-kupyty(verb-perfect-future-po); \
-    future-verb-forms-kupyty; \
+verb-forms-kupyty :: 
+    past-verb-forms-kupyty 
+    past-verb-forms-kupyty(verb-perfect-present-po) 
+    present-verb-forms-kupyty 
+    present-verb-forms-kupyty(verb-perfect-future-po) 
+    future-verb-forms-kupyty 
     conditional-verb-forms-kupyty
 {
 }
 
-verbs-2 :: past-verb-forms-2; \
-           past-verb-forms-2(verb-perfect-present-po); \
-           present-verb-forms-2; \
-           present-verb-forms-2(verb-perfect-future-po); \
-           future-verb-forms-2; \
+verbs-2 :: past-verb-forms-2 
+           past-verb-forms-2(verb-perfect-present-po) 
+           present-verb-forms-2 
+           present-verb-forms-2(verb-perfect-future-po) 
+           future-verb-forms-2 
            conditional-verb-forms-2
 {
 }
 
-cont-verbs-2 :: past-verb-forms-2;\
-           past-verb-forms-2(verb-perfect-continuous-not-durative); \
-           present-verb-forms-2(verb-perfect-continuous-durative); \
-           future-verb-forms-2; \
+cont-verbs-2 :: past-verb-forms-2
+           past-verb-forms-2(verb-perfect-continuous-not-durative) 
+           present-verb-forms-2(verb-perfect-continuous-durative) 
+           future-verb-forms-2 
            conditional-verb-forms-2
 {
 }

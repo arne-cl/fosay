@@ -1,50 +1,50 @@
 "az összes"
 {
-    transcription: "ɒz øseʃ"
-    type: quantifier
-    real-number: plural
-    number: singular
-    quantity: all
-    quantity-number: plural
-    difinity: difinite
+    transcription: "ɒz øseʃ";
+    type: quantifier;
+    real-number: plural;
+    number: singular;
+    quantity: all;
+    quantity-number: plural;
+    difinity: difinite;
 }
 "sok"
 {
-    transcription: "ʃok"
-    type: quantifier
-    real-number: plural
-    number: singular
-    quantity: many
-    quantity-number: plural
-    difinity: undifinite
+    transcription: "ʃok";
+    type: quantifier;
+    real-number: plural;
+    number: singular;
+    quantity: many;
+    quantity-number: plural;
+    difinity: undifinite;
 }
 "néhány"
 {
-    transcription: "nehanʲ"
-    type: quantifier
-    real-number: plural
-    number: singular
-    quantity: few
-    quantity-number: plural
-    difinity: undifinite
+    transcription: "nehanʲ";
+    type: quantifier;
+    real-number: plural;
+    number: singular;
+    quantity: few;
+    quantity-number: plural;
+    difinity: undifinite;
 }
 "minden"
 {
-    transcription: "mindɛn"
-    type: quantifier
-    real-number: plural
-    number: singular
-    quantity: all
-    quantity-number: plural
-    difinity: undifinite
+    transcription: "mindɛn";
+    type: quantifier;
+    real-number: plural;
+    number: singular;
+    quantity: all;
+    quantity-number: plural;
+    difinity: undifinite;
 }
 "mindegyik"
 {
-    transcription: "mindɛdʲik"
-    type: quantifier
-    real-number: singular
-    number: singular
-    quantity: all
-    quantity-number: singular
-    difinity: undifinite
+    transcription: "mindɛdʲik";
+    type: quantifier;
+    real-number: singular;
+    number: singular;
+    quantity: all;
+    quantity-number: singular;
+    difinity: undifinite;
 }

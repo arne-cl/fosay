@@ -1,264 +1,264 @@
 "iván" :: cases-london
 {
-    transcription: "ivan"
-    lemma: "ioxanan"
-    real-number: singular
-    tags: ukrainian
-    type: noun
-    number: singular
-    persone: third
-    case: nominative
-    case-2: nominative
-    noun-type: proper
-    personal-name: first-name
+    transcription: "ivan";
+    lemma: "ioxanan";
+    real-number: singular;
+    tags: ukrainian;
+    type: noun;
+    number: singular;
+    persone: third;
+    case: nominative;
+    case-2: nominative;
+    noun-type: proper;
+    personal-name: first-name;
 }
 "zoltán" :: cases-london
 {
-    transcription: "zoltan"
-    lemma: "zoltan"
-    real-number: singular
-    tags: hungarian
-    type: noun
-    number: singular
-    form: formal
-    persone: third
-    case: nominative
-    case-2: nominative
-    noun-type: proper
-    personal-name: first-name
+    transcription: "zoltan";
+    lemma: "zoltan";
+    real-number: singular;
+    tags: hungarian;
+    type: noun;
+    number: singular;
+    form: formal;
+    persone: third;
+    case: nominative;
+    case-2: nominative;
+    noun-type: proper;
+    personal-name: first-name;
 }
 "zoli"
 {
-    transcription: "zoli"
-    lemma: "zoltan"
-    real-number: singular
-    tags: hungarian
-    type: noun
-    number: singular
-    form: informal
-    persone: third
-    case: nominative
-    case-2: nominative
-    noun-type: proper
-    personal-name: first-name
+    transcription: "zoli";
+    lemma: "zoltan";
+    real-number: singular;
+    tags: hungarian;
+    type: noun;
+    number: singular;
+    form: informal;
+    persone: third;
+    case: nominative;
+    case-2: nominative;
+    noun-type: proper;
+    personal-name: first-name;
 }
 "zolika"
 {
-    transcription: "zolikɒ"
-    lemma: "zoltan"
-    real-number: singular
-    tags: hungarian
-    type: noun
-    number: singular
-    form: meek
-    persone: third
-    case: nominative
-    case-2: nominative
-    noun-type: proper
-    personal-name: first-name
+    transcription: "zolikɒ";
+    lemma: "zoltan";
+    real-number: singular;
+    tags: hungarian;
+    type: noun;
+    number: singular;
+    form: meek;
+    persone: third;
+    case: nominative;
+    case-2: nominative;
+    noun-type: proper;
+    personal-name: first-name;
 }
 "kocsán" :: cases-london
 {
-    transcription: "kotʃan"
-    lemma: "kotcan"
-    real-number: singular
-    type: noun
-    number: singular
-    persone: third
-    case: nominative
-    case-2: nominative
-    noun-type: proper
-    personal-name: surname
+    transcription: "kotʃan";
+    lemma: "kotcan";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    persone: third;
+    case: nominative;
+    case-2: nominative;
+    noun-type: proper;
+    personal-name: surname;
 }
 "johnson"[dʒɑnsən]
 {
-    lemma: "djonson"
-    real-number: singular
-    type: noun
-    tags: english
-    number: singular
-    persone: third
-    case: nominative
-    case-2: nominative
-    noun-type: proper
-    personal-name: surname
+    lemma: "djonson";
+    real-number: singular;
+    type: noun;
+    tags: english;
+    number: singular;
+    persone: third;
+    case: nominative;
+    case-2: nominative;
+    noun-type: proper;
+    personal-name: surname;
 }
 "lokk"[lokk]
 {
-    lemma: "lok"
-    real-number: singular
-    type: noun
-    tags: english
-    number: singular
-    persone: third
-    case: nominative
-    case-2: nominative
-    noun-type: proper
-    personal-name: surname
+    lemma: "lok";
+    real-number: singular;
+    type: noun;
+    tags: english;
+    number: singular;
+    persone: third;
+    case: nominative;
+    case-2: nominative;
+    noun-type: proper;
+    personal-name: surname;
 }
 "smith"[smɪθ]
 {
-    lemma: "smit"
-    real-number: singular
-    type: noun
-    tags: english
-    number: singular
-    persone: third
-    case: nominative
-    case-2: nominative
-    noun-type: proper
-    personal-name: surname
+    lemma: "smit";
+    real-number: singular;
+    type: noun;
+    tags: english;
+    number: singular;
+    persone: third;
+    case: nominative;
+    case-2: nominative;
+    noun-type: proper;
+    personal-name: surname;
 }
 "jános" :: cases-london
 {
-    transcription: "janoʃ"
-    lemma: "ioxanan"
-    tags: hungarian
-    real-number: singular
-    type: noun
-    form: formal
-    number: singular
-    persone: third
-    case: nominative
-    case-2: nominative
-    noun-type: proper
-    personal-name: first-name
+    transcription: "janoʃ";
+    lemma: "ioxanan";
+    tags: hungarian;
+    real-number: singular;
+    type: noun;
+    form: formal;
+    number: singular;
+    persone: third;
+    case: nominative;
+    case-2: nominative;
+    noun-type: proper;
+    personal-name: first-name;
 }
 "john"
 {
-    transcription: "dʒon"
-    lemma: "ioxanan"
-    tags: english
-    real-number: singular
-    type: noun
-    form: formal
-    number: singular
-    persone: third
-    case: nominative
-    case-2: nominative
-    noun-type: proper
-    personal-name: first-name
+    transcription: "dʒon";
+    lemma: "ioxanan";
+    tags: english;
+    real-number: singular;
+    type: noun;
+    form: formal;
+    number: singular;
+    persone: third;
+    case: nominative;
+    case-2: nominative;
+    noun-type: proper;
+    personal-name: first-name;
 }
 "samuel"[sæmjul]
 {
-    lemma: "semu'el"
-    tags: english
-    real-number: singular
-    type: noun
-    form: formal
-    number: singular
-    persone: third
-    case: nominative
-    case-2: nominative
-    noun-type: proper
-    personal-name: first-name
+    lemma: "semu'el";
+    tags: english;
+    real-number: singular;
+    type: noun;
+    form: formal;
+    number: singular;
+    persone: third;
+    case: nominative;
+    case-2: nominative;
+    noun-type: proper;
+    personal-name: first-name;
 }
 "júlia" :: cases-7
 {
-    transcription: "juliɒ"
-    lemma: "iuli'as"
-    real-number: singular
-    tags: hungarian
-    type: noun
-    number: singular
-    persone: third
-    case: nominative
-    case-2: nominative
-    noun-type: proper
-    personal-name: first-name
+    transcription: "juliɒ";
+    lemma: "iuli'as";
+    real-number: singular;
+    tags: hungarian;
+    type: noun;
+    number: singular;
+    persone: third;
+    case: nominative;
+    case-2: nominative;
+    noun-type: proper;
+    personal-name: first-name;
 }
-#
-# Városok
-#
+//
+// Városok
+//
 "uzshorod" :: cases-2
 {
-    transcription: "uʒhorod"
-    lemma: ".UJhorod"
-    tags: ukrainian
-    real-number: singular
-    type: noun
-    number: singular
-    persone: third
-    case: nominative
-    case-2: nominative
-    noun-type: proper
+    transcription: "uʒhorod";
+    lemma: ".UJhorod";
+    tags: ukrainian;
+    real-number: singular;
+    type: noun;
+    number: singular;
+    persone: third;
+    case: nominative;
+    case-2: nominative;
+    noun-type: proper;
 }
 "ungvár"[ungvar] :: cases-6
 {
-    lemma: ".UJhorod"
-    tags: hungarian
-    real-number: singular
-    type: noun
-    number: singular
-    persone: third
-    case: nominative
-    case-2: nominative
-    noun-type: proper
+    lemma: ".UJhorod";
+    tags: hungarian;
+    real-number: singular;
+    type: noun;
+    number: singular;
+    persone: third;
+    case: nominative;
+    case-2: nominative;
+    noun-type: proper;
 }
 "budapest"[budɒpɛʃt] :: cases-budapest
 {
-    lemma: "BUdapect"
-    real-number: singular
-    type: noun
-    number: singular
-    persone: third
-    case: nominative
-    case-2: nominative
-    noun-type: proper
+    lemma: "BUdapect";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    persone: third;
+    case: nominative;
+    case-2: nominative;
+    noun-type: proper;
 }
 "kijev"[kijev] :: cases-kijev
 {
-    lemma: "kiiev"
-    real-number: singular
-    tags: russian
-    type: noun
-    number: singular
-    persone: third
-    case: nominative
-    case-2: nominative
-    noun-type: proper
+    lemma: "kiiev";
+    real-number: singular;
+    tags: russian;
+    type: noun;
+    number: singular;
+    persone: third;
+    case: nominative;
+    case-2: nominative;
+    noun-type: proper;
 }
 "london"[london] :: cases-london
 {
-    lemma: "lyndyn"
-    real-number: singular
-    type: noun
-    number: singular
-    persone: third
-    case: nominative
-    case-2: nominative
-    noun-type: proper
+    lemma: "lyndyn";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    persone: third;
+    case: nominative;
+    case-2: nominative;
+    noun-type: proper;
 }
 "moskva"[moskvɒ]
 {
-    lemma: "moskov"
-    real-number: singular
-    type: noun
-    number: singular
-    persone: third
-    case: nominative
-    case-2: nominative
-    noun-type: proper
+    lemma: "moskov";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    persone: third;
+    case: nominative;
+    case-2: nominative;
+    noun-type: proper;
 }
 "new york"[nʲu jork] :: cases-ny
 {
-    lemma: "nu,IORK"
-    real-number: singular
-    type: noun
-    number: singular
-    persone: third
-    case: nominative
-    case-2: nominative
-    noun-type: proper
+    lemma: "nu,IORK";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    persone: third;
+    case: nominative;
+    case-2: nominative;
+    noun-type: proper;
 }
 "berlin"[bɛrlin] :: cases-berlin
 {
-    lemma: "byLIN"
-    real-number: singular
-    type: noun
-    number: singular
-    persone: third
-    case: nominative
-    case-2: nominative
-    noun-type: proper
+    lemma: "byLIN";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    persone: third;
+    case: nominative;
+    case-2: nominative;
+    noun-type: proper;
 }

@@ -1,14 +1,14 @@
 "szép"
 {
-    transcription: "sep"
-    lemma: "melbi"
-    stem: "melbi.szép"
-    type: adjective
+    transcription: "sep";
+    lemma: "melbi";
+    stem: "melbi.szép";
+    type: adjective;
 }
 "okos"
 {
-    transcription: "okoʃ"
-    lemma: "prije"
-    stem: "prije.okos"
-    type: adjective
+    transcription: "okoʃ";
+    lemma: "prije";
+    stem: "prije.okos";
+    type: adjective;
 }

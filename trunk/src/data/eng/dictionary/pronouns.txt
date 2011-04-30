@@ -1,408 +1,409 @@
 "i"
 {
-    transcription: "aj"
-    lemma: "imio"
-    real-number: singular
-    type: pronoun
-    number: singular
-    persone: first
-    case: nominative
-    pronoun-type: personal
-    #difinity: undifinite ######
+    transcription: "aj";
+    lemma: "imio";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    persone: first;
+    case: nominative;
+    pronoun-type: personal;
+    //difinity: undifinite;//
 }
 "any"
 {
-    transcription: "ɛni"
-    lemma: "any"
-    type: pronoun
-    pronoun-type: indefinite
-    poss-form: conjoint
+    transcription: "ɛni";
+    lemma: "any";
+    type: pronoun;
+    pronoun-type: indefinite;
+    poss-form: conjoint;
 }
-"anybody"[ɛnibədi]; "anyone"[ɛniwən] :: accusative; possessive
+"anybody"[ɛnibədi] "anyone"[ɛniwən] :: accusative possessive
 {
-    lemma: "anybody"
-    type: pronoun
-    case: nominative
-    pronoun-type: indefinite
-    poss-form: absolute
+    lemma: "anybody";
+    type: pronoun;
+    case: nominative;
+    pronoun-type: indefinite;
+    poss-form: absolute;
 }
 "he"
 {
-    transcription: "hi"
-    lemma: "ilulo"
-    real-number: singular
-    type: pronoun
-    number: singular
-    gender: masculine
-    persone: third
-    case: nominative
-    pronoun-type: personal
+    transcription: "hi";
+    lemma: "ilulo";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    gender: masculine;
+    persone: third;
+    case: nominative;
+    pronoun-type: personal;
 }
 "her"
 {
-    transcription: "hər"
-    lemma: "ilino"
-    real-number: singular
-    type: pronoun
-    number: singular
-    gender: feminine
-    persone: third
-    case: accusative
-    pronoun-type: personal
+    transcription: "hər";
+    lemma: "ilino";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    gender: feminine;
+    persone: third;
+    case: accusative;
+    pronoun-type: personal;
 }
 "her"
 {
-    transcription: "hər"
-    lemma: "ilino"
-    real-number: singular
-    type: pronoun
-    number: singular
-    gender: feminine
-    persone: third
-    case: possessive
-    pronoun-type: possessive
-    poss-form: conjoint
+    transcription: "hər";
+    lemma: "ilino";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    gender: feminine;
+    persone: third;
+    case: possessive;
+    pronoun-type: possessive;
+    poss-form: conjoint;
 }
 "hers"
 {
-    transcription: "hərz"
-    lemma: "ilino"
-    real-number: singular
-    type: pronoun
-    number: singular
-    gender: feminine
-    persone: third
-    case: possessive
-    pronoun-type: possessive
-    poss-form: absolute
+    transcription: "hərz";
+    lemma: "ilino";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    gender: feminine;
+    persone: third;
+    case: possessive;
+    pronoun-type: possessive;
+    poss-form: absolute;
 }
 "him"
 {
-    transcription: "hɪm"
-    lemma: "ilino"
-    real-number: singular
-    type: pronoun
-    number: singular
-    gender: masculine
-    persone: third
-    case: accusative
-    pronoun-type: personal
+    transcription: "hɪm";
+    lemma: "ilino";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    gender: masculine;
+    persone: third;
+    case: accusative;
+    pronoun-type: personal;
 }
 "his"
 {
-    transcription: "hɪz"
-    lemma: "ilino"
-    real-number: singular
-    type: pronoun
-    number: singular
-    gender: masculine
-    persone: third
-    case: possessive
-    pronoun-type: possessive
-    poss-form: conjoint
+    transcription: "hɪz";
+    lemma: "ilino";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    gender: masculine;
+    persone: third;
+    case: possessive;
+    pronoun-type: possessive;
+    poss-form: conjoint;
 }
 "his"
 {
-    transcription: "hɪz"
-    lemma: "ilino"
-    real-number: singular
-    type: pronoun
-    number: singular
-    gender: masculine
-    persone: third
-    case: possessive
-    pronoun-type: possessive
-    poss-form: absolute
+    transcription: "hɪz";
+    lemma: "ilino";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    gender: masculine;
+    persone: third;
+    case: possessive;
+    pronoun-type: possessive;
+    poss-form: absolute;
 }
 "it" :: accusative
 {
-    transcription: "ɪt"
-    lemma: "djio"
-    real-number: singular
-    type: pronoun
-    number: singular
-    persone: third
-    case: nominative
-    pronoun-type: personal
+    transcription: "ɪt";
+    lemma: "djio";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    persone: third;
+    case: nominative;
+    pronoun-type: personal;
 }
 "its"
 {
-    transcription: "ɪts"
-    lemma: "djio"
-    real-number: singular
-    type: pronoun
-    number: singular
-    persone: third
-    case: possessive
-    pronoun-type: possessive
-    poss-form: conjoint; absolute
+    transcription: "ɪts";
+    lemma: "djio";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    persone: third;
+    case: possessive;
+    pronoun-type: possessive;
+    poss-form: conjoint absolute;
 }
 "me"
 {
-    transcription: "mi"
-    lemma: "imio"
-    real-number: singular
-    type: pronoun
-    number: singular
-    persone: first
-    case: accusative
-    pronoun-type: personal
+    transcription: "mi";
+    lemma: "imio";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    persone: first;
+    case: accusative;
+    pronoun-type: personal;
 }
 "mine"
 {
-    transcription: "majn"
-    lemma: "imio"
-    real-number: singular
-    type: pronoun
-    number: singular
-    persone: first
-    case: possessive
-    pronoun-type: possessive
-    poss-form: conjoint
+    transcription: "majn";
+    lemma: "imio";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    persone: first;
+    case: possessive;
+    pronoun-type: possessive;
+    poss-form: conjoint;
 }
 "mine"
 {
-    transcription: "majn"
-    lemma: "imio"
-    real-number: singular
-    type: pronoun
-    number: singular
-    persone: first
-    case: possessive
-    pronoun-type: possessive
-    poss-form: absolute
+    transcription: "majn";
+    lemma: "imio";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    persone: first;
+    case: possessive;
+    pronoun-type: possessive;
+    poss-form: absolute;
 }
 "my"
 {
-    transcription: "maj"
-    lemma: "imio"
-    real-number: singular
-    type: pronoun
-    number: singular
-    persone: first
-    case: possessive
-    pronoun-type: possessive
-    poss-form: conjoint
+    transcription: "maj";
+    lemma: "imio";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    persone: first;
+    case: possessive;
+    pronoun-type: possessive;
+    poss-form: conjoint;
 }
 "our"
 {
-    transcription: "awər"
-    lemma: "inio"
-    real-number: plural
-    type: pronoun
-    number: plural
-    persone: first
-    case: possessive
-    pronoun-type: possessive
-    poss-form: conjoint
+    transcription: "awər";
+    lemma: "inio";
+    real-number: plural;
+    type: pronoun;
+    number: plural;
+    persone: first;
+    case: possessive;
+    pronoun-type: possessive;
+    poss-form: conjoint;
 }
 "ours"
 {
-    transcription: "awərz"
-    lemma: "inio"
-    real-number: plural
-    type: pronoun
-    number: plural
-    persone: first
-    case: possessive
-    pronoun-type: possessive
-    poss-form: absolute
-#}
-#"out of"
-#{transcription: "awt əv"
-#type: preposition
-#case: elative
+    transcription: "awərz";
+    lemma: "inio";
+    real-number: plural;
+    type: pronoun;
+    number: plural;
+    persone: first;
+    case: possessive;
+    pronoun-type: possessive;
+    poss-form: absolute;
 }
+/*"out of"
+{
+    transcription: "awt əv";
+    type: preposition;
+    case: elative;
+}*/
 "she"
 {
-    transcription: "ʃi"
-    lemma: "ilino"
-    real-number: singular
-    type: pronoun
-    number: singular
-    gender: feminine
-    persone: third
-    case: nominative
-    pronoun-type: personal
+    transcription: "ʃi";
+    lemma: "ilino";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    gender: feminine;
+    persone: third;
+    case: nominative;
+    pronoun-type: personal;
 }
 "some"
 {
-    transcription: "səm"
-    lemma: "some"
-    type: pronoun
-    pronoun-type: indefinite
-    poss-form: conjoint
+    transcription: "səm";
+    lemma: "some";
+    type: pronoun;
+    pronoun-type: indefinite;
+    poss-form: conjoint;
 }
 "somebody" :: accusative
 {
-    transcription: "səmbɑdi"
-    lemma: "somebody"
-    type: pronoun
-    case: nominative
-    pronoun-type: indefinite
-    poss-form: absolute
+    transcription: "səmbɑdi";
+    lemma: "somebody";
+    type: pronoun;
+    case: nominative;
+    pronoun-type: indefinite;
+    poss-form: absolute;
 }
 "somebody's"
 {
-    transcription: "səmbɑdis"
-    lemma: "somebody"
-    type: pronoun
-    case: possessive
-    pronoun-type: indefinite
-    poss-form: conjoint
+    transcription: "səmbɑdis";
+    lemma: "somebody";
+    type: pronoun;
+    case: possessive;
+    pronoun-type: indefinite;
+    poss-form: conjoint;
 }
 "their"
 {
-    transcription: "ðɛr"
-    lemma: "ilio"
-    real-number: plural
-    type: pronoun
-    number: plural
-    persone: third
-    case: possessive
-    pronoun-type: possessive
-    poss-form: conjoint
+    transcription: "ðɛr";
+    lemma: "ilio";
+    real-number: plural;
+    type: pronoun;
+    number: plural;
+    persone: third;
+    case: possessive;
+    pronoun-type: possessive;
+    poss-form: conjoint;
 }
 "theirs"
 {
-    transcription: "ðɛrz"
-    lemma: "ilio"
-    real-number: plural
-    type: pronoun
-    number: plural
-    persone: third
-    case: possessive
-    pronoun-type: possessive
-    poss-form: absolute
+    transcription: "ðɛrz";
+    lemma: "ilio";
+    real-number: plural;
+    type: pronoun;
+    number: plural;
+    persone: third;
+    case: possessive;
+    pronoun-type: possessive;
+    poss-form: absolute;
 }
 "them"
 {
-    transcription: "ðɛm"
-    lemma: "ilio"
-    real-number: plural
-    type: pronoun
-    number: plural
-    persone: third
-    case: accusative
-    pronoun-type: personal
+    transcription: "ðɛm";
+    lemma: "ilio";
+    real-number: plural;
+    type: pronoun;
+    number: plural;
+    persone: third;
+    case: accusative;
+    pronoun-type: personal;
 }
 "they"
 {
-    transcription: "ðeɪ"
-    lemma: "ilio"
-    real-number: plural
-    type: pronoun
-    number: plural
-    persone: third
-    case: nominative
-    pronoun-type: personal
+    transcription: "ðeɪ";
+    lemma: "ilio";
+    real-number: plural;
+    type: pronoun;
+    number: plural;
+    persone: third;
+    case: nominative;
+    pronoun-type: personal;
 }
 "us"
 {
-    transcription: "əs"
-    lemma: "imio"
-    real-number: plural
-    type: pronoun
-    number: plural
-    persone: first
-    case: accusative
-    pronoun-type: personal
+    transcription: "əs";
+    lemma: "imio";
+    real-number: plural;
+    type: pronoun;
+    number: plural;
+    persone: first;
+    case: accusative;
+    pronoun-type: personal;
 }
 "we"
 {
-    transcription: "wi"
-    lemma: "ilio"
-    real-number: plural
-    type: pronoun
-    number: plural
-    persone: first
-    case: nominative
-    pronoun-type: personal
+    transcription: "wi";
+    lemma: "ilio";
+    real-number: plural;
+    type: pronoun;
+    number: plural;
+    persone: first;
+    case: nominative;
+    pronoun-type: personal;
 }
 "when"
 {
-    transcription: "wɛn"
-    lemma: "when"
-    type: pronoun
-    pronoun-type: conjunctive
-    adverb-type: time
+    transcription: "wɛn";
+    lemma: "when";
+    type: pronoun;
+    pronoun-type: conjunctive;
+    adverb-type: time;
 }
 "which"
 {
-    transcription: "wɪtʃ"
-    lemma: "which"
-    type: pronoun
-    number: singular
-    gender: lifeless
-    persone: third
-    case: nominative
-    pronoun-type: conjunctive
-    adverb-type: individual
+    transcription: "wɪtʃ";
+    lemma: "which";
+    type: pronoun;
+    number: singular;
+    gender: lifeless;
+    persone: third;
+    case: nominative;
+    pronoun-type: conjunctive;
+    adverb-type: individual;
 }
 "who"
 {
-    transcription: "hu"
-    lemma: "who"
-    real-number: singular
-    type: pronoun
-    number: singular
-    gender: vivacious
-    persone: third
-    case: nominative
-    pronoun-type: conjunctive
-    adverb-type: individual
+    transcription: "hu";
+    lemma: "who";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    gender: vivacious;
+    persone: third;
+    case: nominative;
+    pronoun-type: conjunctive;
+    adverb-type: individual;
 }
 "whom"
 {
-    transcription: "hum"
-    lemma: "whom"
-    type: pronoun
-    number: singular
-    gender: vivacious
-    persone: third
-    case: accusative
-    pronoun-type: conjunctive
-    adverb-type: individual
+    transcription: "hum";
+    lemma: "whom";
+    type: pronoun;
+    number: singular;
+    gender: vivacious;
+    persone: third;
+    case: accusative;
+    pronoun-type: conjunctive;
+    adverb-type: individual;
 }
 "whose"
 {
-    transcription: "huz"
-    lemma: "whose"
-    type: pronoun
-    number: singular
-    persone: third
-    case: accusative
-    pronoun-type: conjunctive
-    adverb-type: association
+    transcription: "huz";
+    lemma: "whose";
+    type: pronoun;
+    number: singular;
+    persone: third;
+    case: accusative;
+    pronoun-type: conjunctive;
+    adverb-type: association;
 }
 "you" :: accusative
 {
-    transcription: "ju"
-    lemma: "ivio"
-    #real-number: inherit
-    type: pronoun
-    persone: second
-    case: nominative
-    pronoun-type: personal
-    #difinity: undifinite ######
+    transcription: "ju";
+    lemma: "ivio";
+    //real-number: inherit;
+    type: pronoun;
+    persone: second;
+    case: nominative;
+    pronoun-type: personal;
+    //difinity: undifinite ////;
 }
 "your"
 {
-    transcription: "jɔr"
-    lemma: "ivio"
-    type: pronoun
-    persone: second
-    case: possessive
-    pronoun-type: possessive
-    poss-form: conjoint
+    transcription: "jɔr";
+    lemma: "ivio";
+    type: pronoun;
+    persone: second;
+    case: possessive;
+    pronoun-type: possessive;
+    poss-form: conjoint;
 }
 "yours"
 {
-    transcription: "jʊrz"
-    lemma: "ivio"
-    type: pronoun
-    persone: second
-    case: possessive
-    pronoun-type: possessive
-    poss-form: absolute
+    transcription: "jʊrz";
+    lemma: "ivio";
+    type: pronoun;
+    persone: second;
+    case: possessive;
+    pronoun-type: possessive;
+    poss-form: absolute;
 }

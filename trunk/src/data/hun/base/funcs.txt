@@ -1,1459 +1,1459 @@
 cases-1
 {
-    text: "0>at"
-    case: accusative
+    text: "0>at";
+    case: accusative;
 }
 cases-1
 {
-    text: "0>ban"
-    case: inessive
+    text: "0>ban";
+    case: inessive;
 }
 cases-1
 {
-    text: "0>ból"
-    case: elative
+    text: "0>ból";
+    case: elative;
 }
 cases-1
 {
-    text: "0>tól"
-    case: ablative
+    text: "0>tól";
+    case: ablative;
 }
 cases-1
 {
-    text: "0>nak"
-    case: dative
+    text: "0>nak";
+    case: dative;
 }
 cases-1
 {
-    text: "0>ként"
-    case: essive-formal
+    text: "0>ként";
+    case: essive-formal;
 }
 cases-1
 {
-    text: "0>ul"
-    case: essive-modal
+    text: "0>ul";
+    case: essive-modal;
 }
 cases-1
 {
-    text: "0>:al"
-    case: instrumental
+    text: "0>:al";
+    case: instrumental;
 }
 cases-1
 {
-    text: "0>é"
-    case: possessive
+    text: "0>é";
+    case: possessive;
 }
 cases-1
 {
-    text: "0>nál"
-    case: adessive
+    text: "0>nál";
+    case: adessive;
 }
 cases-1
 {
-    text: "0>hoz"
-    case: allative
+    text: "0>hoz";
+    case: allative;
 }
 cases-1
 {
-    text: "0>:al"
-    case: comitative
+    text: "0>:al";
+    case: comitative;
 }
 cases-1
 {
-    text: "0>ról"
-    case: delative
+    text: "0>ról";
+    case: delative;
 }
 cases-1
 {
-    text: "0>ba"
-    case: illative
+    text: "0>ba";
+    case: illative;
 }
 cases-1
 {
-    text: "0>ra"
-    case: sublative
+    text: "0>ra";
+    case: sublative;
 }
 cases-1
 {
-    text: "0>on"
-    case: superessive
+    text: "0>on";
+    case: superessive;
 }
 cases-1
 {
-    text: "0>ig"
-    case: terminative
+    text: "0>ig";
+    case: terminative;
 }
 cases-1
 {
-    text: "0>:á"
-    case: translative
+    text: "0>:á";
+    case: translative;
 }
 cases-1
 {
-    text: "0>ért"
-    case: final
+    text: "0>ért";
+    case: final;
 }
 
 cases-2
 {
-    text: "0>t"
-    case: accusative
+    text: "0>t";
+    case: accusative;
 }
 cases-2
 {
-    text: "0>ban"
-    case: inessive
+    text: "0>ban";
+    case: inessive;
 }
 cases-2
 {
-    text: "0>ból"
-    case: elative
+    text: "0>ból";
+    case: elative;
 }
 cases-2
 {
-    text: "0>tól"
-    case: ablative
+    text: "0>tól";
+    case: ablative;
 }
 cases-2
 {
-    text: "0>nak"
-    case: dative
+    text: "0>nak";
+    case: dative;
 }
 cases-2
 {
-    text: "0>ként"
-    case: essive-formal
+    text: "0>ként";
+    case: essive-formal;
 }
 cases-2
 {
-    text: "0>ul"
-    case: essive-modal
+    text: "0>ul";
+    case: essive-modal;
 }
 cases-2
 {
-    text: "0>val"
-    case: instrumental
+    text: "0>val";
+    case: instrumental;
 }
 cases-2
 {
-    text: "0>é"
-    case: possessive
+    text: "0>é";
+    case: possessive;
 }
 cases-2
 {
-    text: "0>nál"
-    case: adessive
+    text: "0>nál";
+    case: adessive;
 }
 cases-2
 {
-    text: "0>hoz"
-    case: allative
+    text: "0>hoz";
+    case: allative;
 }
 cases-2
 {
-    text: "0>val"
-    case: comitative
+    text: "0>val";
+    case: comitative;
 }
 cases-2
 {
-    text: "0>ról"
-    case: delative
+    text: "0>ról";
+    case: delative;
 }
 cases-2
 {
-    text: "0>ba"
-    case: illative
+    text: "0>ba";
+    case: illative;
 }
 cases-2
 {
-    text: "0>ra"
-    case: sublative
+    text: "0>ra";
+    case: sublative;
 }
 cases-2
 {
-    text: "0>n"
-    case: superessive
+    text: "0>n";
+    case: superessive;
 }
 cases-2
 {
-    text: "0>ig"
-    case: terminative
+    text: "0>ig";
+    case: terminative;
 }
 cases-2
 {
-    text: "0>vá"
-    case: translative
+    text: "0>vá";
+    case: translative;
 }
 cases-2
 {
-    text: "0>ért"
-    case: final
+    text: "0>ért";
+    case: final;
 }
 
 cases-london
 {
-    text: "0>t"
-    case: accusative
+    text: "0>t";
+    case: accusative;
 }
 cases-london
 {
-    text: "0>ban"
-    case: inessive
+    text: "0>ban";
+    case: inessive;
 }
 cases-london
 {
-    text: "0>ból"
-    case: elative
+    text: "0>ból";
+    case: elative;
 }
 cases-london
 {
-    text: "0>tól"
-    case: ablative
+    text: "0>tól";
+    case: ablative;
 }
 cases-london
 {
-    text: "0>nak"
-    case: dative
+    text: "0>nak";
+    case: dative;
 }
 cases-london
 {
-    text: "0>ként"
-    case: essive-formal
+    text: "0>ként";
+    case: essive-formal;
 }
 cases-london
 {
-    text: "0>ul"
-    case: essive-modal
+    text: "0>ul";
+    case: essive-modal;
 }
 cases-london
 {
-    text: "0>:al"
-    case: instrumental
+    text: "0>:al";
+    case: instrumental;
 }
 cases-london
 {
-    text: "0>é"
-    case: possessive
+    text: "0>é";
+    case: possessive;
 }
 cases-london
 {
-    text: "0>nál"
-    case: adessive
+    text: "0>nál";
+    case: adessive;
 }
 cases-london
 {
-    text: "0>hoz"
-    case: allative
+    text: "0>hoz";
+    case: allative;
 }
 cases-london
 {
-    text: "0>:al"
-    case: comitative
+    text: "0>:al";
+    case: comitative;
 }
 cases-london
 {
-    text: "0>ról"
-    case: delative
+    text: "0>ról";
+    case: delative;
 }
 cases-london
 {
-    text: "0>ba"
-    case: illative
+    text: "0>ba";
+    case: illative;
 }
 cases-london
 {
-    text: "0>ra"
-    case: sublative
+    text: "0>ra";
+    case: sublative;
 }
 cases-london
 {
-    text: "0>on"
-    case: superessive
+    text: "0>on";
+    case: superessive;
 }
 cases-london
 {
-    text: "0>ig"
-    case: terminative
+    text: "0>ig";
+    case: terminative;
 }
 cases-london
 {
-    text: "0>:á"
-    case: translative
+    text: "0>:á";
+    case: translative;
 }
 cases-london
 {
-    text: "0>ért"
-    case: final
+    text: "0>ért";
+    case: final;
 }
 
 cases-3
 {
-    text: "0>t"
-    case: accusative
+    text: "0>t";
+    case: accusative;
 }
 cases-3
 {
-    text: "0>ban"
-    case: inessive
+    text: "0>ban";
+    case: inessive;
 }
 cases-3
 {
-    text: "0>ból"
-    case: elative
+    text: "0>ból";
+    case: elative;
 }
 cases-3
 {
-    text: "0>tól"
-    case: ablative
+    text: "0>tól";
+    case: ablative;
 }
 cases-3
 {
-    text: "0>nak"
-    case: dative
+    text: "0>nak";
+    case: dative;
 }
 cases-3
 {
-    text: "0>ként"
-    case: essive-formal
+    text: "0>ként";
+    case: essive-formal;
 }
 cases-3
 {
-    text: "0>ul"
-    case: essive-modal
+    text: "0>ul";
+    case: essive-modal;
 }
 cases-3
 {
-    text: "0>:al"
-    case: instrumental
+    text: "0>:al";
+    case: instrumental;
 }
 cases-3
 {
-    text: "0>é"
-    case: possessive
+    text: "0>é";
+    case: possessive;
 }
 cases-3
 {
-    text: "0>nál"
-    case: adessive
+    text: "0>nál";
+    case: adessive;
 }
 cases-3
 {
-    text: "0>hoz"
-    case: allative
+    text: "0>hoz";
+    case: allative;
 }
 cases-3
 {
-    text: "0>:al"
-    case: comitative
+    text: "0>:al";
+    case: comitative;
 }
 cases-3
 {
-    text: "0>ról"
-    case: delative
+    text: "0>ról";
+    case: delative;
 }
 cases-3
 {
-    text: "0>ba"
-    case: illative
+    text: "0>ba";
+    case: illative;
 }
 cases-3
 {
-    text: "0>ra"
-    case: sublative
+    text: "0>ra";
+    case: sublative;
 }
 cases-3
 {
-    text: "0>on"
-    case: superessive
+    text: "0>on";
+    case: superessive;
 }
 cases-3
 {
-    text: "0>ig"
-    case: terminative
+    text: "0>ig";
+    case: terminative;
 }
 cases-3
 {
-    text: "0>:á"
-    case: translative
+    text: "0>:á";
+    case: translative;
 }
 cases-3
 {
-    text: "0>ért"
-    case: final
+    text: "0>ért";
+    case: final;
 }
 
 cases-4
 {
-    text: "0>t"
-    case: accusative
+    text: "0>t";
+    case: accusative;
 }
 cases-4
 {
-    text: "0>ben"
-    case: inessive
+    text: "0>ben";
+    case: inessive;
 }
 cases-4
 {
-    text: "0>ből"
-    case: elative
+    text: "0>ből";
+    case: elative;
 }
 cases-4
 {
-    text: "0>től"
-    case: ablative
+    text: "0>től";
+    case: ablative;
 }
 cases-4
 {
-    text: "0>nek"
-    case: dative
+    text: "0>nek";
+    case: dative;
 }
 cases-4
 {
-    text: "0>ként"
-    case: essive-formal
+    text: "0>ként";
+    case: essive-formal;
 }
 cases-4
 {
-    text: "0>ül"
-    case: essive-modal
+    text: "0>ül";
+    case: essive-modal;
 }
 cases-4
 {
-    text: "0>vel"
-    case: instrumental
+    text: "0>vel";
+    case: instrumental;
 }
 cases-4
 {
-    text: "0>é"
-    case: possessive
+    text: "0>é";
+    case: possessive;
 }
 cases-4
 {
-    text: "0>nél"
-    case: adessive
+    text: "0>nél";
+    case: adessive;
 }
 cases-4
 {
-    text: "0>höz"
-    case: allative
+    text: "0>höz";
+    case: allative;
 }
 cases-4
 {
-    text: "0>vel"
-    case: comitative
+    text: "0>vel";
+    case: comitative;
 }
 cases-4
 {
-    text: "0>ről"
-    case: delative
+    text: "0>ről";
+    case: delative;
 }
 cases-4
 {
-    text: "0>be"
-    case: illative
+    text: "0>be";
+    case: illative;
 }
 cases-4
 {
-    text: "0>re"
-    case: sublative
+    text: "0>re";
+    case: sublative;
 }
 cases-4
 {
-    text: "0>n"
-    case: superessive
+    text: "0>n";
+    case: superessive;
 }
 cases-4
 {
-    text: "0>ig"
-    case: terminative
+    text: "0>ig";
+    case: terminative;
 }
 cases-4
 {
-    text: "1>é"
-    case: translative
+    text: "1>é";
+    case: translative;
 }
 cases-4
 {
-    text: "0>ért"
-    case: final
+    text: "0>ért";
+    case: final;
 }
 
 cases-berlin
 {
-    text: "0>t"
-    case: accusative
+    text: "0>t";
+    case: accusative;
 }
 cases-berlin
 {
-    text: "0>ben"
-    case: inessive
+    text: "0>ben";
+    case: inessive;
 }
 cases-berlin
 {
-    text: "0>ből"
-    case: elative
+    text: "0>ből";
+    case: elative;
 }
 cases-berlin
 {
-    text: "0>től"
-    case: ablative
+    text: "0>től";
+    case: ablative;
 }
 cases-berlin
 {
-    text: "0>nek"
-    case: dative
+    text: "0>nek";
+    case: dative;
 }
 cases-berlin
 {
-    text: "0>ként"
-    case: essive-formal
+    text: "0>ként";
+    case: essive-formal;
 }
 cases-berlin
 {
-    text: "0>ül"
-    case: essive-modal
+    text: "0>ül";
+    case: essive-modal;
 }
 cases-berlin
 {
-    text: "0>:el"
-    case: instrumental
+    text: "0>:el";
+    case: instrumental;
 }
 cases-berlin
 {
-    text: "0>é"
-    case: possessive
+    text: "0>é";
+    case: possessive;
 }
 cases-berlin
 {
-    text: "0>nél"
-    case: adessive
+    text: "0>nél";
+    case: adessive;
 }
 cases-berlin
 {
-    text: "0>hez"
-    case: allative
+    text: "0>hez";
+    case: allative;
 }
 cases-berlin
 {
-    text: "0>:el"
-    case: comitative
+    text: "0>:el";
+    case: comitative;
 }
 cases-berlin
 {
-    text: "0>ről"
-    case: delative
+    text: "0>ről";
+    case: delative;
 }
 cases-berlin
 {
-    text: "0>be"
-    case: illative
+    text: "0>be";
+    case: illative;
 }
 cases-berlin
 {
-    text: "0>re"
-    case: sublative
+    text: "0>re";
+    case: sublative;
 }
 cases-berlin
 {
-    text: "0>en"
-    case: superessive
+    text: "0>en";
+    case: superessive;
 }
 cases-berlin
 {
-    text: "0>ig"
-    case: terminative
+    text: "0>ig";
+    case: terminative;
 }
 cases-berlin
 {
-    text: "1>é"
-    case: translative
+    text: "1>é";
+    case: translative;
 }
 cases-berlin
 {
-    text: "0>ért"
-    case: final
+    text: "0>ért";
+    case: final;
 }
 
 cases-5
 {
-    text: "0>et"
-    case: accusative
+    text: "0>et";
+    case: accusative;
 }
 cases-5
 {
-    text: "0>ben"
-    case: inessive
+    text: "0>ben";
+    case: inessive;
 }
 cases-5
 {
-    text: "0>ből"
-    case: elative
+    text: "0>ből";
+    case: elative;
 }
 cases-5
 {
-    text: "0>től"
-    case: ablative
+    text: "0>től";
+    case: ablative;
 }
 cases-5
 {
-    text: "0>nek"
-    case: dative
+    text: "0>nek";
+    case: dative;
 }
 cases-5
 {
-    text: "0>ként"
-    case: essive-formal
+    text: "0>ként";
+    case: essive-formal;
 }
 cases-5
 {
-    text: "0>ül"
-    case: essive-modal
+    text: "0>ül";
+    case: essive-modal;
 }
 cases-5
 {
-    text: "1>kel"
-    case: instrumental
+    text: "1>kel";
+    case: instrumental;
 }
 cases-5
 {
-    text: "0>é"
-    case: possessive
+    text: "0>é";
+    case: possessive;
 }
 cases-5
 {
-    text: "0>nél"
-    case: adessive
+    text: "0>nél";
+    case: adessive;
 }
 cases-5
 {
-    text: "0>höz"
-    case: allative
+    text: "0>höz";
+    case: allative;
 }
 cases-5
 {
-    text: "1>kel"
-    case: comitative
+    text: "1>kel";
+    case: comitative;
 }
 cases-5
 {
-    text: "0>ről"
-    case: delative
+    text: "0>ről";
+    case: delative;
 }
 cases-5
 {
-    text: "0>be"
-    case: illative
+    text: "0>be";
+    case: illative;
 }
 cases-5
 {
-    text: "0>re"
-    case: sublative
+    text: "0>re";
+    case: sublative;
 }
 cases-5
 {
-    text: "0>ön"
-    case: superessive
+    text: "0>ön";
+    case: superessive;
 }
 cases-5
 {
-    text: "0>ig"
-    case: terminative
+    text: "0>ig";
+    case: terminative;
 }
 cases-5
 {
-    text: "1>é"
-    case: translative
+    text: "1>é";
+    case: translative;
 }
 cases-5
 {
-    text: "0>ért"
-    case: final
+    text: "0>ért";
+    case: final;
 }
 
 cases-budapest
 {
-    text: "0>et"
-    case: accusative
+    text: "0>et";
+    case: accusative;
 }
 cases-budapest
 {
-    text: "0>en"
-    case: inessive
+    text: "0>en";
+    case: inessive;
 }
 cases-budapest
 {
-    text: "0>ből"
-    case: elative
+    text: "0>ből";
+    case: elative;
 }
 cases-budapest
 {
-    text: "0>től"
-    case: ablative
+    text: "0>től";
+    case: ablative;
 }
 cases-budapest
 {
-    text: "0>nek"
-    case: dative
+    text: "0>nek";
+    case: dative;
 }
 cases-budapest
 {
-    text: "0>ként"
-    case: essive-formal
+    text: "0>ként";
+    case: essive-formal;
 }
 cases-budapest
 {
-    text: "0>ül"
-    case: essive-modal
+    text: "0>ül";
+    case: essive-modal;
 }
 cases-budapest
 {
-    text: "0>:el"
-    case: instrumental
+    text: "0>:el";
+    case: instrumental;
 }
 cases-budapest
 {
-    text: "0>é"
-    case: possessive
+    text: "0>é";
+    case: possessive;
 }
 cases-budapest
 {
-    text: "0>nél"
-    case: adessive
+    text: "0>nél";
+    case: adessive;
 }
 cases-budapest
 {
-    text: "0>hez"
-    case: allative
+    text: "0>hez";
+    case: allative;
 }
 cases-budapest
 {
-    text: "0>:el"
-    case: comitative
+    text: "0>:el";
+    case: comitative;
 }
 cases-budapest
 {
-    text: "0>ről"
-    case: delative
+    text: "0>ről";
+    case: delative;
 }
 cases-budapest
 {
-    text: "0>be"
-    case: illative
+    text: "0>be";
+    case: illative;
 }
 cases-budapest
 {
-    text: "0>re"
-    case: sublative
+    text: "0>re";
+    case: sublative;
 }
 cases-budapest
 {
-    text: "0>en"
-    case: superessive
+    text: "0>en";
+    case: superessive;
 }
 cases-budapest
 {
-    text: "0>ig"
-    case: terminative
+    text: "0>ig";
+    case: terminative;
 }
 cases-budapest
 {
-    text: "1>é"
-    case: translative
+    text: "1>é";
+    case: translative;
 }
 cases-budapest
 {
-    text: "0>ért"
-    case: final
+    text: "0>ért";
+    case: final;
 }
 
 cases-kijev
 {
-    text: "0>t"
-    case: accusative
+    text: "0>t";
+    case: accusative;
 }
 cases-kijev
 {
-    text: "0>en"
-    case: inessive
+    text: "0>en";
+    case: inessive;
 }
 cases-kijev
 {
-    text: "0>ből"
-    case: elative
+    text: "0>ből";
+    case: elative;
 }
 cases-kijev
 {
-    text: "0>től"
-    case: ablative
+    text: "0>től";
+    case: ablative;
 }
 cases-kijev
 {
-    text: "0>nek"
-    case: dative
+    text: "0>nek";
+    case: dative;
 }
 cases-kijev
 {
-    text: "0>ként"
-    case: essive-formal
+    text: "0>ként";
+    case: essive-formal;
 }
 cases-kijev
 {
-    text: "0>ül"
-    case: essive-modal
+    text: "0>ül";
+    case: essive-modal;
 }
 cases-kijev
 {
-    text: "0>:el"
-    case: instrumental
+    text: "0>:el";
+    case: instrumental;
 }
 cases-kijev
 {
-    text: "0>é"
-    case: possessive
+    text: "0>é";
+    case: possessive;
 }
 cases-kijev
 {
-    text: "0>nél"
-    case: adessive
+    text: "0>nél";
+    case: adessive;
 }
 cases-kijev
 {
-    text: "0>hez"
-    case: allative
+    text: "0>hez";
+    case: allative;
 }
 cases-kijev
 {
-    text: "0>:el"
-    case: comitative
+    text: "0>:el";
+    case: comitative;
 }
 cases-kijev
 {
-    text: "0>ről"
-    case: delative
+    text: "0>ről";
+    case: delative;
 }
 cases-kijev
 {
-    text: "0>be"
-    case: illative
+    text: "0>be";
+    case: illative;
 }
 cases-kijev
 {
-    text: "0>re"
-    case: sublative
+    text: "0>re";
+    case: sublative;
 }
 cases-kijev
 {
-    text: "0>en"
-    case: superessive
+    text: "0>en";
+    case: superessive;
 }
 cases-kijev
 {
-    text: "0>ig"
-    case: terminative
+    text: "0>ig";
+    case: terminative;
 }
 cases-kijev
 {
-    text: "1>é"
-    case: translative
+    text: "1>é";
+    case: translative;
 }
 cases-kijev
 {
-    text: "0>ért"
-    case: final
+    text: "0>ért";
+    case: final;
 }
 
 plural-1 :: cases-1
 {
-    text: "0>ak"
-    real-number: plural
-    number: plural
+    text: "0>ak";
+    real-number: plural;
+    number: plural;
 }
 
 plural-3 :: cases-1
 {
-    text: "0>ok"
-    real-number: plural
-    number: plural
+    text: "0>ok";
+    real-number: plural;
+    number: plural;
 }
 
 plural-2 :: cases-1
 {
-    text: "0>k"
-    real-number: plural
-    number: plural
+    text: "0>k";
+    real-number: plural;
+    number: plural;
 }
 
 plural-4 :: cases-5
 {
-    text: "0>k"
-    real-number: plural
-    number: plural
+    text: "0>k";
+    real-number: plural;
+    number: plural;
 }
 
-all-cases-1 :: cases-1; plural-1
-{
-}
-
-all-cases-2 :: cases-2; plural-2
+all-cases-1 :: cases-1 plural-1
 {
 }
 
-all-cases-3 :: cases-3; plural-3
+all-cases-2 :: cases-2 plural-2
 {
 }
 
-all-cases-4 :: cases-4; plural-4
+all-cases-3 :: cases-3 plural-3
+{
+}
+
+all-cases-4 :: cases-4 plural-4
 {
 }
 
 possessed-1
 {
-    text: "0>a"
-    case: nominative
-    case-2: possessed
+    text: "0>a";
+    case: nominative;
+    case-2: possessed;
 }
 possessed-1
 {
-    text: "0>át"
-    case: accusative
-    case-2: possessed
+    text: "0>át";
+    case: accusative;
+    case-2: possessed;
 }
 possessed-1
 {
-    text: "0>ában"
-    case: inessive
-    case-2: possessed
+    text: "0>ában";
+    case: inessive;
+    case-2: possessed;
 }
 possessed-1
 {
-    text: "0>ából"
-    case: elative
-    case-2: possessed
+    text: "0>ából";
+    case: elative;
+    case-2: possessed;
 }
 possessed-1
 {
-    text: "0>ától"
-    case: ablative
-    case-2: possessed
+    text: "0>ától";
+    case: ablative;
+    case-2: possessed;
 }
 possessed-1
 {
-    text: "0>ának"
-    case: dative
-    case-2: possessed
+    text: "0>ának";
+    case: dative;
+    case-2: possessed;
 }
 possessed-1
 {
-    text: "0>aként"
-    case: essive-formal
-    case-2: possessed
+    text: "0>aként";
+    case: essive-formal;
+    case-2: possessed;
 }
 possessed-1
 {
-    text: "0>ául"
-    case: essive-modal
-    case-2: possessed
+    text: "0>ául";
+    case: essive-modal;
+    case-2: possessed;
 }
 possessed-1
 {
-    text: "0>ával"
-    case: instrumental
-    case-2: possessed
+    text: "0>ával";
+    case: instrumental;
+    case-2: possessed;
 }
 possessed-1
 {
-    text: "0>áé"
-    case: possessive
-    case-2: possessed
+    text: "0>áé";
+    case: possessive;
+    case-2: possessed;
 }
 possessed-1
 {
-    text: "0>ánál"
-    case: adessive
-    case-2: possessed
+    text: "0>ánál";
+    case: adessive;
+    case-2: possessed;
 }
 possessed-1
 {
-    text: "0>ához"
-    case: allative
-    case-2: possessed
+    text: "0>ához";
+    case: allative;
+    case-2: possessed;
 }
 possessed-1
 {
-    text: "0>ával"
-    case: comitative
-    case-2: possessed
+    text: "0>ával";
+    case: comitative;
+    case-2: possessed;
 }
 possessed-1
 {
-    text: "0>áról"
-    case: delative
-    case-2: possessed
+    text: "0>áról";
+    case: delative;
+    case-2: possessed;
 }
 possessed-1
 {
-    text: "0>ába"
-    case: illative
-    case-2: possessed
+    text: "0>ába";
+    case: illative;
+    case-2: possessed;
 }
 possessed-1
 {
-    text: "0>ára"
-    case: sublative
-    case-2: possessed
+    text: "0>ára";
+    case: sublative;
+    case-2: possessed;
 }
 possessed-1
 {
-    text: "0>án"
-    case: superessive
-    case-2: possessed
+    text: "0>án";
+    case: superessive;
+    case-2: possessed;
 }
 possessed-1
 {
-    text: "0>áig"
-    case: terminative
-    case-2: possessed
+    text: "0>áig";
+    case: terminative;
+    case-2: possessed;
 }
 possessed-1
 {
-    text: "0>ává"
-    case: translative
-    case-2: possessed
+    text: "0>ává";
+    case: translative;
+    case-2: possessed;
 }
 possessed-1
 {
-    text: "0>áért"
-    case: final
-    case-2: possessed
+    text: "0>áért";
+    case: final;
+    case-2: possessed;
 }
 possessed-1
 {
-    text: "0>ai"
-    case: nominative
-    case-2: possessed
-    real-number: plural
-    number: plural
+    text: "0>ai";
+    case: nominative;
+    case-2: possessed;
+    real-number: plural;
+    number: plural;
 }
 possessed-1
 {
-    text: "0>ait"
-    case: accusative
-    case-2: possessed
-    real-number: plural
-    number: plural
+    text: "0>ait";
+    case: accusative;
+    case-2: possessed;
+    real-number: plural;
+    number: plural;
 }
 possessed-1
 {
-    text: "0>aiban"
-    case: inessive
-    case-2: possessed
-    real-number: plural
-    number: plural
+    text: "0>aiban";
+    case: inessive;
+    case-2: possessed;
+    real-number: plural;
+    number: plural;
 }
 possessed-1
 {
-    text: "0>aiból"
-    case: elative
-    case-2: possessed
-    real-number: plural
-    number: plural
+    text: "0>aiból";
+    case: elative;
+    case-2: possessed;
+    real-number: plural;
+    number: plural;
 }
 possessed-1
 {
-    text: "0>aitól"
-    case: ablative
-    case-2: possessed
-    real-number: plural
-    number: plural
+    text: "0>aitól";
+    case: ablative;
+    case-2: possessed;
+    real-number: plural;
+    number: plural;
 }
 possessed-1
 {
-    text: "0>ainak"
-    case: dative
-    case-2: possessed
-    real-number: plural
-    number: plural
+    text: "0>ainak";
+    case: dative;
+    case-2: possessed;
+    real-number: plural;
+    number: plural;
 }
 possessed-1
 {
-    text: "0>aiként"
-    case: essive-formal
-    case-2: possessed
-    real-number: plural
-    number: plural
+    text: "0>aiként";
+    case: essive-formal;
+    case-2: possessed;
+    real-number: plural;
+    number: plural;
 }
 possessed-1
 {
-    text: "0>aiul"
-    case: essive-modal
-    case-2: possessed
-    real-number: plural
-    number: plural
+    text: "0>aiul";
+    case: essive-modal;
+    case-2: possessed;
+    real-number: plural;
+    number: plural;
 }
 possessed-1
 {
-    text: "0>aival"
-    case: instrumental
-    case-2: possessed
-    real-number: plural
-    number: plural
+    text: "0>aival";
+    case: instrumental;
+    case-2: possessed;
+    real-number: plural;
+    number: plural;
 }
 possessed-1
 {
-    text: "0>aié"
-    case: possessive
-    case-2: possessed
-    real-number: plural
-    number: plural
+    text: "0>aié";
+    case: possessive;
+    case-2: possessed;
+    real-number: plural;
+    number: plural;
 }
 possessed-1
 {
-    text: "0>ainál"
-    case: adessive
-    case-2: possessed
-    real-number: plural
-    number: plural
+    text: "0>ainál";
+    case: adessive;
+    case-2: possessed;
+    real-number: plural;
+    number: plural;
 }
 possessed-1
 {
-    text: "0>aihoz"
-    case: allative
-    case-2: possessed
-    real-number: plural
-    number: plural
+    text: "0>aihoz";
+    case: allative;
+    case-2: possessed;
+    real-number: plural;
+    number: plural;
 }
 possessed-1
 {
-    text: "0>aival"
-    case: comitative
-    case-2: possessed
-    real-number: plural
-    number: plural
+    text: "0>aival";
+    case: comitative;
+    case-2: possessed;
+    real-number: plural;
+    number: plural;
 }
 possessed-1
 {
-    text: "0>airól"
-    case: delative
-    case-2: possessed
-    real-number: plural
-    number: plural
+    text: "0>airól";
+    case: delative;
+    case-2: possessed;
+    real-number: plural;
+    number: plural;
 }
 possessed-1
 {
-    text: "0>aiba"
-    case: illative
-    case-2: possessed
-    real-number: plural
-    number: plural
+    text: "0>aiba";
+    case: illative;
+    case-2: possessed;
+    real-number: plural;
+    number: plural;
 }
 possessed-1
 {
-    text: "0>aira"
-    case: sublative
-    case-2: possessed
-    real-number: plural
-    number: plural
+    text: "0>aira";
+    case: sublative;
+    case-2: possessed;
+    real-number: plural;
+    number: plural;
 }
 possessed-1
 {
-    text: "0>ain"
-    case: superessive
-    case-2: possessed
-    real-number: plural
-    number: plural
+    text: "0>ain";
+    case: superessive;
+    case-2: possessed;
+    real-number: plural;
+    number: plural;
 }
 possessed-1
 {
-    text: "0>aiig"
-    case: terminative
-    case-2: possessed
-    real-number: plural
-    number: plural
+    text: "0>aiig";
+    case: terminative;
+    case-2: possessed;
+    real-number: plural;
+    number: plural;
 }
 possessed-1
 {
-    text: "0>aivá"
-    case: translative
-    case-2: possessed
-    real-number: plural
-    number: plural
+    text: "0>aivá";
+    case: translative;
+    case-2: possessed;
+    real-number: plural;
+    number: plural;
 }
 possessed-1
 {
-    text: "0>aiért"
-    case: final
-    case-2: possessed
-    real-number: plural
-    number: plural
+    text: "0>aiért";
+    case: final;
+    case-2: possessed;
+    real-number: plural;
+    number: plural;
 }
 
 
-################################################################################
-################################################################################
-################################################################################
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 possessive-1
 {
-    text: "0>é"
-    case: nominative
-    case-2: possessive
+    text: "0>é";
+    case: nominative;
+    case-2: possessive;
 }
 possessive-1
 {
-    text: "0>ét"
-    case: accusative
-    case-2: possessive
+    text: "0>ét";
+    case: accusative;
+    case-2: possessive;
 }
 possessive-1
 {
-    text: "0>éban"
-    case: inessive
-    case-2: possessive
+    text: "0>éban";
+    case: inessive;
+    case-2: possessive;
 }
 possessive-1
 {
-    text: "0>éból"
-    case: elative
-    case-2: possessive
+    text: "0>éból";
+    case: elative;
+    case-2: possessive;
 }
 possessive-1
 {
-    text: "0>étól"
-    case: ablative
-    case-2: possessive
+    text: "0>étól";
+    case: ablative;
+    case-2: possessive;
 }
 possessive-1
 {
-    text: "0>énak"
-    case: dative
-    case-2: possessive
+    text: "0>énak";
+    case: dative;
+    case-2: possessive;
 }
 possessive-1
 {
-    text: "0>éként"
-    case: essive-formal
-    case-2: possessive
+    text: "0>éként";
+    case: essive-formal;
+    case-2: possessive;
 }
 possessive-1
 {
-    text: "0>ául"
-    case: essive-modal
-    case-2: possessive
+    text: "0>ául";
+    case: essive-modal;
+    case-2: possessive;
 }
 possessive-1
 {
-    text: "0>ával"
-    case: instrumental
-    case-2: possessive
+    text: "0>ával";
+    case: instrumental;
+    case-2: possessive;
 }
 possessive-1
 {
-    text: "0>áé"
-    case: possessive
-    case-2: possessive
+    text: "0>áé";
+    case: possessive;
+    case-2: possessive;
 }
 possessive-1
 {
-    text: "0>ánál"
-    case: adessive
-    case-2: possessive
+    text: "0>ánál";
+    case: adessive;
+    case-2: possessive;
 }
 possessive-1
 {
-    text: "0>ához"
-    case: allative
-    case-2: possessive
+    text: "0>ához";
+    case: allative;
+    case-2: possessive;
 }
 possessive-1
 {
-    text: "0>ával"
-    case: comitative
-    case-2: possessive
+    text: "0>ával";
+    case: comitative;
+    case-2: possessive;
 }
 possessive-1
 {
-    text: "0>áról"
-    case: delative
-    case-2: possessive
+    text: "0>áról";
+    case: delative;
+    case-2: possessive;
 }
 possessive-1
 {
-    text: "0>ába"
-    case: illative
-    case-2: possessive
+    text: "0>ába";
+    case: illative;
+    case-2: possessive;
 }
 possessive-1
 {
-    text: "0>ára"
-    case: sublative
-    case-2: possessive
+    text: "0>ára";
+    case: sublative;
+    case-2: possessive;
 }
 possessive-1
 {
-    text: "0>án"
-    case: superessive
-    case-2: possessive
+    text: "0>án";
+    case: superessive;
+    case-2: possessive;
 }
 possessive-1
 {
-    text: "0>áig"
-    case: terminative
-    case-2: possessive
+    text: "0>áig";
+    case: terminative;
+    case-2: possessive;
 }
 possessive-1
 {
-    text: "0>ává"
-    case: translative
-    case-2: possessive
+    text: "0>ává";
+    case: translative;
+    case-2: possessive;
 }
 possessive-1
 {
-    text: "0>áért"
-    case: final
-    case-2: possessive
+    text: "0>áért";
+    case: final;
+    case-2: possessive;
 }
 possessive-1
 {
-    text: "0>ai"
-    case: nominative
-    case-2: possessive
-    number: plural
+    text: "0>ai";
+    case: nominative;
+    case-2: possessive;
+    number: plural;
 }
 possessive-1
 {
-    text: "0>áit"
-    case: accusative
-    case-2: possessive
-    number: plural
+    text: "0>áit";
+    case: accusative;
+    case-2: possessive;
+    number: plural;
 }
 possessive-1
 {
-    text: "0>aiban"
-    case: inessive
-    case-2: possessive
-    number: plural
+    text: "0>aiban";
+    case: inessive;
+    case-2: possessive;
+    number: plural;
 }
 possessive-1
 {
-    text: "0>aiból"
-    case: elative
-    case-2: possessive
-    number: plural
+    text: "0>aiból";
+    case: elative;
+    case-2: possessive;
+    number: plural;
 }
 possessive-1
 {
-    text: "0>aitól"
-    case: ablative
-    case-2: possessive
-    number: plural
+    text: "0>aitól";
+    case: ablative;
+    case-2: possessive;
+    number: plural;
 }
 possessive-1
 {
-    text: "0>ainak"
-    case: dative
-    case-2: possessive
-    number: plural
+    text: "0>ainak";
+    case: dative;
+    case-2: possessive;
+    number: plural;
 }
 possessive-1
 {
-    text: "0>aiként"
-    case: essive-formal
-    case-2: possessive
-    number: plural
+    text: "0>aiként";
+    case: essive-formal;
+    case-2: possessive;
+    number: plural;
 }
 possessive-1
 {
-    text: "0>aiul"
-    case: essive-modal
-    case-2: possessive
-    number: plural
+    text: "0>aiul";
+    case: essive-modal;
+    case-2: possessive;
+    number: plural;
 }
 possessive-1
 {
-    text: "0>aival"
-    case: instrumental
-    case-2: possessive
-    number: plural
+    text: "0>aival";
+    case: instrumental;
+    case-2: possessive;
+    number: plural;
 }
 possessive-1
 {
-    text: "0>aié"
-    case: possessive
-    case-2: possessive
-    number: plural
+    text: "0>aié";
+    case: possessive;
+    case-2: possessive;
+    number: plural;
 }
 possessive-1
 {
-    text: "0>ainál"
-    case: adessive
-    case-2: possessive
-    number: plural
+    text: "0>ainál";
+    case: adessive;
+    case-2: possessive;
+    number: plural;
 }
 possessive-1
 {
-    text: "0>aihoz"
-    case: allative
-    case-2: possessive
-    number: plural
+    text: "0>aihoz";
+    case: allative;
+    case-2: possessive;
+    number: plural;
 }
 possessive-1
 {
-    text: "0>aival"
-    case: comitative
-    case-2: possessive
-    number: plural
+    text: "0>aival";
+    case: comitative;
+    case-2: possessive;
+    number: plural;
 }
 possessive-1
 {
-    text: "0>airól"
-    case: delative
-    case-2: possessive
-    number: plural
+    text: "0>airól";
+    case: delative;
+    case-2: possessive;
+    number: plural;
 }
 possessive-1
 {
-    text: "0>aiba"
-    case: illative
-    case-2: possessive
-    number: plural
+    text: "0>aiba";
+    case: illative;
+    case-2: possessive;
+    number: plural;
 }
 possessive-1
 {
-    text: "0>aira"
-    case: sublative
-    case-2: possessive
-    number: plural
+    text: "0>aira";
+    case: sublative;
+    case-2: possessive;
+    number: plural;
 }
 possessive-1
 {
-    text: "0>ain"
-    case: superessive
-    case-2: possessive
-    number: plural
+    text: "0>ain";
+    case: superessive;
+    case-2: possessive;
+    number: plural;
 }
 possessive-1
 {
-    text: "0>aiig"
-    case: terminative
-    case-2: possessive
-    number: plural
+    text: "0>aiig";
+    case: terminative;
+    case-2: possessive;
+    number: plural;
 }
 possessive-1
 {
-    text: "0>aivá"
-    case: translative
-    case-2: possessive
-    number: plural
+    text: "0>aivá";
+    case: translative;
+    case-2: possessive;
+    number: plural;
 }
 possessive-1
 {
-    text: "0>aiért"
-    case: final
-    case-2: possessive
-    number: plural
+    text: "0>aiért";
+    case: final;
+    case-2: possessive;
+    number: plural;
 }
-################################################################################
-################################################################################
-################################################################################
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -1462,326 +1462,326 @@ possessive-1
 
 possessed-2
 {
-    text: "0>ja"
-    case: possessed
+    text: "0>ja";
+    case: possessed;
 }
 possessed-2
 {
-    text: "0>ji"
-    case: possessed
-    number: plural
+    text: "0>ji";
+    case: possessed;
+    number: plural;
 }
 
 
 
 possessed-3
 {
-    text: "0>a"
-    case: possessed
+    text: "0>a";
+    case: possessed;
 }
 possessed-3
 {
-    text: "0>ai"
-    case: possessed
-    number: plural
+    text: "0>ai";
+    case: possessed;
+    number: plural;
 }
 
 possessed-4
 {
-    text: "0>je"
-    case: possessed
+    text: "0>je";
+    case: possessed;
 }
 possessed-4
 {
-    text: "0>jei"
-    case: possessed
-    number: plural
+    text: "0>jei";
+    case: possessed;
+    number: plural;
 }
 
 cases-6
 {
-    text: "0>t"
-    case: accusative
+    text: "0>t";
+    case: accusative;
 }
 cases-6
 {
-    text: "0>on"
-    case: inessive
+    text: "0>on";
+    case: inessive;
 }
 cases-6
 {
-    text: "0>ból"
-    case: elative
+    text: "0>ból";
+    case: elative;
 }
 cases-6
 {
-    text: "0>tól"
-    case: ablative
+    text: "0>tól";
+    case: ablative;
 }
 cases-6
 {
-    text: "0>nak"
-    case: dative
+    text: "0>nak";
+    case: dative;
 }
 cases-6
 {
-    text: "0>ként"
-    case: essive-formal
+    text: "0>ként";
+    case: essive-formal;
 }
 cases-6
 {
-    text: "0>ul"
-    case: essive-modal
+    text: "0>ul";
+    case: essive-modal;
 }
 cases-6
 {
-    text: "0>:al"
-    case: instrumental
+    text: "0>:al";
+    case: instrumental;
 }
 cases-6
 {
-    text: "0>á"
-    case: possessive
+    text: "0>á";
+    case: possessive;
 }
 cases-6
 {
-    text: "0>nál"
-    case: adessive
+    text: "0>nál";
+    case: adessive;
 }
 cases-6
 {
-    text: "0>hoz"
-    case: allative
+    text: "0>hoz";
+    case: allative;
 }
 cases-6
 {
-    text: "0>:al"
-    case: comitative
+    text: "0>:al";
+    case: comitative;
 }
 cases-6
 {
-    text: "0>ról"
-    case: delative
+    text: "0>ról";
+    case: delative;
 }
 cases-6
 {
-    text: "0>ba"
-    case: illative
+    text: "0>ba";
+    case: illative;
 }
 cases-6
 {
-    text: "0>ra"
-    case: sublative
+    text: "0>ra";
+    case: sublative;
 }
 cases-6
 {
-    text: "0>on"
-    case: superessive
+    text: "0>on";
+    case: superessive;
 }
 cases-6
 {
-    text: "0>ig"
-    case: terminative
+    text: "0>ig";
+    case: terminative;
 }
 cases-6
 {
-    text: "0>:á"
-    case: translative
+    text: "0>:á";
+    case: translative;
 }
 cases-6
 {
-    text: "0>ért"
-    case: final
+    text: "0>ért";
+    case: final;
 }
 
 cases-ny
 {
-    text: "0>ot"
-    case: accusative
+    text: "0>ot";
+    case: accusative;
 }
 cases-ny
 {
-    text: "0>on"
-    case: inessive
+    text: "0>on";
+    case: inessive;
 }
 cases-ny
 {
-    text: "0>ból"
-    case: elative
+    text: "0>ból";
+    case: elative;
 }
 cases-ny
 {
-    text: "0>tól"
-    case: ablative
+    text: "0>tól";
+    case: ablative;
 }
 cases-ny
 {
-    text: "0>nak"
-    case: dative
+    text: "0>nak";
+    case: dative;
 }
 cases-ny
 {
-    text: "0>ként"
-    case: essive-formal
+    text: "0>ként";
+    case: essive-formal;
 }
 cases-ny
 {
-    text: "0>ul"
-    case: essive-modal
+    text: "0>ul";
+    case: essive-modal;
 }
 cases-ny
 {
-    text: "0>:al"
-    case: instrumental
+    text: "0>:al";
+    case: instrumental;
 }
 cases-ny
 {
-    text: "0>á"
-    case: possessive
+    text: "0>á";
+    case: possessive;
 }
 cases-ny
 {
-    text: "0>nál"
-    case: adessive
+    text: "0>nál";
+    case: adessive;
 }
 cases-ny
 {
-    text: "0>hoz"
-    case: allative
+    text: "0>hoz";
+    case: allative;
 }
 cases-ny
 {
-    text: "0>:al"
-    case: comitative
+    text: "0>:al";
+    case: comitative;
 }
 cases-ny
 {
-    text: "0>ról"
-    case: delative
+    text: "0>ról";
+    case: delative;
 }
 cases-ny
 {
-    text: "0>ba"
-    case: illative
+    text: "0>ba";
+    case: illative;
 }
 cases-ny
 {
-    text: "0>ra"
-    case: sublative
+    text: "0>ra";
+    case: sublative;
 }
 cases-ny
 {
-    text: "0>on"
-    case: superessive
+    text: "0>on";
+    case: superessive;
 }
 cases-ny
 {
-    text: "0>ig"
-    case: terminative
+    text: "0>ig";
+    case: terminative;
 }
 cases-ny
 {
-    text: "0>:á"
-    case: translative
+    text: "0>:á";
+    case: translative;
 }
 cases-ny
 {
-    text: "0>ért"
-    case: final
+    text: "0>ért";
+    case: final;
 }
 
 cases-7
 {
-    text: "1>át"
-    case: accusative
+    text: "1>át";
+    case: accusative;
 }
 cases-7
 {
-    text: "1>ában"
-    case: inessive
+    text: "1>ában";
+    case: inessive;
 }
 cases-7
 {
-    text: "1>ából"
-    case: elative
+    text: "1>ából";
+    case: elative;
 }
 cases-7
 {
-    text: "1>ától"
-    case: ablative
+    text: "1>ától";
+    case: ablative;
 }
 cases-7
 {
-    text: "1>ának"
-    case: dative
+    text: "1>ának";
+    case: dative;
 }
 cases-7
 {
-    text: "1>aként"
-    case: essive-formal
+    text: "1>aként";
+    case: essive-formal;
 }
 cases-7
 {
-    text: "1>ául"
-    case: essive-modal
+    text: "1>ául";
+    case: essive-modal;
 }
 cases-7
 {
-    text: "1>ával"
-    case: instrumental
+    text: "1>ával";
+    case: instrumental;
 }
 cases-7
 {
-    text: "1>áé"
-    case: possessive
+    text: "1>áé";
+    case: possessive;
 }
 cases-7
 {
-    text: "1>ánál"
-    case: adessive
+    text: "1>ánál";
+    case: adessive;
 }
 cases-7
 {
-    text: "1>ához"
-    case: allative
+    text: "1>ához";
+    case: allative;
 }
 cases-7
 {
-    text: "1>ával"
-    case: comitative
+    text: "1>ával";
+    case: comitative;
 }
 cases-7
 {
-    text: "1>áról"
-    case: delative
+    text: "1>áról";
+    case: delative;
 }
 cases-7
 {
-    text: "1>ába"
-    case: illative
+    text: "1>ába";
+    case: illative;
 }
 cases-7
 {
-    text: "1>ára"
-    case: sublative
+    text: "1>ára";
+    case: sublative;
 }
 cases-7
 {
-    text: "1>án"
-    case: superessive
+    text: "1>án";
+    case: superessive;
 }
 cases-7
 {
-    text: "1>áig"
-    case: terminative
+    text: "1>áig";
+    case: terminative;
 }
 cases-7
 {
-    text: "1>ává"
-    case: translative
+    text: "1>ává";
+    case: translative;
 }
 cases-7
 {
-    text: "1>áért"
-    case: final
+    text: "1>áért";
+    case: final;
 }
