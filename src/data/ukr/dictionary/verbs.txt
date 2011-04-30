@@ -1,201 +1,201 @@
-#ukrainian dictionary v0.0.1
-"бачити" :: verbs-2; cont-verbs-2
+//ukrainian dictionary v0.0.1;
+"бачити" :: verbs-2 cont-verbs-2
 {
-    transcription: "batʃete"
-    lemma: "viska"
-    stem: "viska.бачити"
-    type: verb
-    tense: infinitive
-    aspect: indefinite
-    participle: not-participle
+    transcription: "batʃete";
+    lemma: "viska";
+    stem: "viska.бачити";
+    type: verb;
+    tense: infinitive;
+    aspect: indefinite;
+    participle: not-participle;
 }
 "говорити"[hovorete] :: verb-forms-3
 {
-    lemma: "cusku"
-    stem: "cusku.говорити"
-    type: verb
-    aspect: indefinite
-    tense: infinitive
-    participle: not-participle
+    lemma: "cusku";
+    stem: "cusku.говорити";
+    type: verb;
+    aspect: indefinite;
+    tense: infinitive;
+    participle: not-participle;
 }
 "писати"[pesate]
 {
-    lemma: "ciska"
-    stem: "ciska.писати"
-    type: verb
-    tense: infinitive
-    aspect: indefinite
-    participle: not-participle
+    lemma: "ciska";
+    stem: "ciska.писати";
+    type: verb;
+    tense: infinitive;
+    aspect: indefinite;
+    participle: not-participle;
 }
 "знати" :: verb-forms-1
 {
-    transcription: "znate"
-    lemma: "dzuno"
-    stem: "dzuno.знати"
-    type: verb
-    tense: infinitive
-    aspect: indefinite
-    participle: not-participle
+    transcription: "znate";
+    lemma: "dzuno";
+    stem: "dzuno.знати";
+    type: verb;
+    tense: infinitive;
+    aspect: indefinite;
+    participle: not-participle;
 }
 "іти"
 {
-    transcription: "ite"
-    lemma: "cadzu"
-    stem: "cadzu.іти"
-    type: verb
-    tense: infinitive
-    aspect: indefinite
-    participle: not-participle
+    transcription: "ite";
+    lemma: "cadzu";
+    stem: "cadzu.іти";
+    type: verb;
+    tense: infinitive;
+    aspect: indefinite;
+    participle: not-participle;
 }
-"іде"[idɛ]; "йде"[jdɛ]
+"іде"[idɛ] "йде"[jdɛ]
 {
-    lemma: "cadzu"
-    stem: "cadzu.іти"
-    type: verb
-    tense: present
-    participle: not-participle
-    aspect: indefinite
-    number: singular
+    lemma: "cadzu";
+    stem: "cadzu.іти";
+    type: verb;
+    tense: present;
+    participle: not-participle;
+    aspect: indefinite;
+    number: singular;
 }
 "ішов"
 {
-    transcription: "iʃov"
-    lemma: "cadzu"
-    stem: "cadzu.іти"
-    type: verb
-    tense: past
-    participle: not-participle
-    gender: masculine
-    aspect: indefinite
-    number: singular
+    transcription: "iʃov";
+    lemma: "cadzu";
+    stem: "cadzu.іти";
+    type: verb;
+    tense: past;
+    participle: not-participle;
+    gender: masculine;
+    aspect: indefinite;
+    number: singular;
 }
 "ішли"
 {
-    transcription: "iʃle"
-    lemma: "cadzu"
-    stem: "cadzu.іти"
-    type: verb
-    tense: past
-    participle: not-participle
-    aspect: indefinite
-    number: plural
+    transcription: "iʃle";
+    lemma: "cadzu";
+    stem: "cadzu.іти";
+    type: verb;
+    tense: past;
+    participle: not-participle;
+    aspect: indefinite;
+    number: plural;
 }
-"ідуть"[idutʲ]; "йдуть"[jdutʲ]
+"ідуть"[idutʲ] "йдуть"[jdutʲ]
 {
-    lemma: "cadzu"
-    stem: "cadzu.іти"
-    type: verb
-    tense: present
-    participle: not-participle
-    aspect: indefinite
-    number: plural
+    lemma: "cadzu";
+    stem: "cadzu.іти";
+    type: verb;
+    tense: present;
+    participle: not-participle;
+    aspect: indefinite;
+    number: plural;
 }
 "ітимуть"
 {
-    transcription: "itemutʲ"
-    lemma: "cadzu"
-    stem: "cadzu.іти"
-    type: verb
-    tense: future
-    participle: not-participle
-    aspect: indefinite
-    number: plural
+    transcription: "itemutʲ";
+    lemma: "cadzu";
+    stem: "cadzu.іти";
+    type: verb;
+    tense: future;
+    participle: not-participle;
+    aspect: indefinite;
+    number: plural;
 }
 "йтимуть"
 {
-    transcription: "jtemutʲ"
-    lemma: "cadzu"
-    stem: "cadzu.іти"
-    type: verb
-    tense: future
-    participle: not-participle
-    aspect: indefinite
-    number: plural
+    transcription: "jtemutʲ";
+    lemma: "cadzu";
+    stem: "cadzu.іти";
+    type: verb;
+    tense: future;
+    participle: not-participle;
+    aspect: indefinite;
+    number: plural;
 }
 "йти"
 {
-    transcription: "jte"
-    lemma: "cadzu"
-    stem: "cadzu.іти"
-    type: verb
-    tense: infinitive
-    aspect: indefinite
-    participle: not-participle
+    transcription: "jte";
+    lemma: "cadzu";
+    stem: "cadzu.іти";
+    type: verb;
+    tense: infinitive;
+    aspect: indefinite;
+    participle: not-participle;
 }
 "йшов"
 {
-    transcription: "jʃov"
-    lemma: "cadzu"
-    stem: "cadzu.іти"
-    type: verb
-    tense: past
-    participle: not-participle
-    gender: masculine
-    aspect: indefinite
-    number: singular
+    transcription: "jʃov";
+    lemma: "cadzu";
+    stem: "cadzu.іти";
+    type: verb;
+    tense: past;
+    participle: not-participle;
+    gender: masculine;
+    aspect: indefinite;
+    number: singular;
 }
 "йшла"
 {
-    transcription: "jʃla"
-    lemma: "cadzu"
-    stem: "cadzu.іти"
-    type: verb
-    tense: past
-    participle: not-participle
-    gender: feminine
-    aspect: indefinite
-    number: singular
+    transcription: "jʃla";
+    lemma: "cadzu";
+    stem: "cadzu.іти";
+    type: verb;
+    tense: past;
+    participle: not-participle;
+    gender: feminine;
+    aspect: indefinite;
+    number: singular;
 }
 "йшли"
 {
-    transcription: "jʃle"
-    lemma: "cadzu"
-    stem: "cadzu.іти"
-    type: verb
-    tense: past
-    participle: not-participle
-    aspect: indefinite
-    number: plural
+    transcription: "jʃle";
+    lemma: "cadzu";
+    stem: "cadzu.іти";
+    type: verb;
+    tense: past;
+    participle: not-participle;
+    aspect: indefinite;
+    number: plural;
 }
 "плавати" :: verb-forms-1
 {
-    transcription: "plavate"
-    lemma: "limna"
-    stem: "limna.плавати"
-    type: verb
-    tense: infinitive
-    aspect: indefinite
-    participle: not-participle
+    transcription: "plavate";
+    lemma: "limna";
+    stem: "limna.плавати";
+    type: verb;
+    tense: infinitive;
+    aspect: indefinite;
+    participle: not-participle;
 }
 "купляти"[kuplʲate]
 {
-    lemma: "terme'u"
-    stem: "terme'u.купляти"
-    type: verb
-    tense: infinitive
-    aspect: indefinite
-    participle: not-participle
+    lemma: "terme'u";
+    stem: "terme'u.купляти";
+    type: verb;
+    tense: infinitive;
+    aspect: indefinite;
+    participle: not-participle;
 }
 ."купля"[kuplʲate] :: verb-forms-kupljaty
 {
-    lemma: "terme'u"
-    stem: "terme'u.купляти"
-    type: verb
+    lemma: "terme'u";
+    stem: "terme'u.купляти";
+    type: verb;
 }
 "купити"[kupete]
 {
-    lemma: "terme'u"
-    stem: "terme'u.купити"
-    type: verb
-    tense: infinitive
-    aspect: indefinite
-    participle: not-participle
+    lemma: "terme'u";
+    stem: "terme'u.купити";
+    type: verb;
+    tense: infinitive;
+    aspect: indefinite;
+    participle: not-participle;
 }
 ."куп"[kupete] :: verb-forms-kupyty
 {
-    lemma: "terme'u"
-    stem: "terme'u.купити"
-    type: verb
-    tense: infinitive
-    participle: not-participle
+    lemma: "terme'u";
+    stem: "terme'u.купити";
+    type: verb;
+    tense: infinitive;
+    participle: not-participle;
 }

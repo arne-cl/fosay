@@ -1,141 +1,141 @@
 "mondani"[mondɒni]
 {
-    lemma: "cusku"
-    stem: "cusku.mondani"
-    type: verb
-    tense: infinitive
-    mood: declarative #######nem itt kell!!
-    aspect: indefinite
-    participle: not-participle
+    lemma: "cusku";
+    stem: "cusku.mondani";
+    type: verb;
+    tense: infinitive;
+    mood: declarative; //////////////nem itt kell!!;
+    aspect: indefinite;
+    participle: not-participle;
 }
 ."mond" :: all-verbs
 {
-    lemma: "cusku"
-    stem: "cusku.mondani"
-    type: verb
-    mood: declarative #######nem itt kell!!
+    lemma: "cusku";
+    stem: "cusku.mondani";
+    type: verb;
+    mood: declarative; //////////////nem itt kell!!
 }
 "látni"[latni]
 {
-    lemma: "viska"
-    stem: "viska.látni"
-    type: verb
-    tense: infinitive
-    mood: declarative #######nem itt kell!!
-    aspect: indefinite
-    participle: not-participle
+    lemma: "viska";
+    stem: "viska.látni";
+    type: verb;
+    tense: infinitive;
+    mood: declarative; //////////////nem itt kell!!
+    aspect: indefinite;
+    participle: not-participle;
 }
 ."lát" :: all-verbs
 {
-    transcription: "latni"
-    lemma: "viska"
-    stem: "viska.látni"
-    type: verb
-    mood: declarative #######nem itt kell!!
+    transcription: "latni";
+    lemma: "viska";
+    stem: "viska.látni";
+    type: verb;
+    mood: declarative; //////////////nem itt kell!!
 }
 "látni fogja"
 {
-    transcription: "latni fogjɒ"
-    lemma: "viska"
-    stem: "viska.látni"
-    type: verb
-    tense: future
-    aspect: indefinite
-    mood: declarative #######nem itt kell!!
-    subject-number: singular
-    subject-persone: third
-    object-difinity: difinite
-    participle: not-participle
+    transcription: "latni fogjɒ";
+    lemma: "viska";
+    stem: "viska.látni";
+    type: verb;
+    tense: future;
+    aspect: indefinite;
+    mood: declarative; //////////////nem itt kell!!;
+    subject-number: singular;
+    subject-persone: third;
+    object-difinity: difinite;
+    participle: not-participle;
 }
 "látni fog"
 {
-    transcription: "latni fog"
-    lemma: "viska"
-    stem: "viska.látni"
-    type: verb
-    tense: future
-    aspect: indefinite
-    mood: declarative #######nem itt kell!!
-    subject-number: singular
-    subject-persone: third
-    object-difinity: undifinite
-    participle: not-participle
+    transcription: "latni fog";
+    lemma: "viska";
+    stem: "viska.látni";
+    type: verb;
+    tense: future;
+    aspect: indefinite;
+    mood: declarative; //////////////nem itt kell!!;
+    subject-number: singular;
+    subject-persone: third;
+    object-difinity: undifinite;
+    participle: not-participle;
 }
 "látni fognak"
 {
-    transcription: "latni fogɒk"
-    lemma: "viska"
-    stem: "viska.látni"
-    type: verb
-    tense: future
-    aspect: indefinite
-    mood: declarative #######nem itt kell!!
-    subject-number: plural
-    subject-persone: third
-    object-difinity: undifinite
-    participle: not-participle
+    transcription: "latni fogɒk";
+    lemma: "viska";
+    stem: "viska.látni";
+    type: verb;
+    tense: future;
+    aspect: indefinite;
+    mood: declarative; //////////////nem itt kell!!;
+    subject-number: plural;
+    subject-persone: third;
+    object-difinity: undifinite;
+    participle: not-participle;
 }
 "venni"[vɛn:i]
 {
-    lemma: "terme'u"
-    stem: "terme'u.venni"
-    type: verb
-    tense: infinitive
-    mood: declarative #######nem itt kell!!
-    aspect: indefinite
-    participle: not-participle
+    lemma: "terme'u";
+    stem: "terme'u.venni";
+    type: verb;
+    tense: infinitive;
+    mood: declarative; //////////////nem itt kell!!;
+    aspect: indefinite;
+    participle: not-participle;
 }
 ."vet" :: past-verbs-2
 {
-    lemma: "terme'u"
-    stem: "terme'u.venni"
-    type: verb
-    mood: declarative #######nem itt kell!!
+    lemma: "terme'u";
+    stem: "terme'u.venni";
+    type: verb;
+    mood: declarative; //////////////nem itt kell!!;
 }
 ."vesz" :: present-verbs-2
 {
-    lemma: "terme'u"
-    stem: "terme'u.venni"
-    type: verb
-    mood: declarative #######nem itt kell!!
+    lemma: "terme'u";
+    stem: "terme'u.venni";
+    type: verb;
+    mood: declarative; //////////////nem itt kell!!;
 }
 "írni"[i:rni]
 {
-    lemma: "ciska"
-    stem: "ciska.írni"
-    type: verb
-    tense: infinitive
-    mood: declarative #######nem itt kell!!
-    aspect: indefinite
-    participle: not-participle
+    lemma: "ciska";
+    stem: "ciska.írni";
+    type: verb;
+    tense: infinitive;
+    mood: declarative; //////////////nem itt kell!!;
+    aspect: indefinite;
+    participle: not-participle;
 }
 "olvasni"[olvɒʃni]
 {
-    lemma: "tcidu"
-    stem: "tcidu.olvasni"
-    type: verb
-    tense: infinitive
-    mood: declarative #######nem itt kell!!
-    aspect: indefinite
-    participle: not-participle
+    lemma: "tcidu";
+    stem: "tcidu.olvasni";
+    type: verb;
+    tense: infinitive;
+    mood: declarative; //////////////nem itt kell!!;
+    aspect: indefinite;
+    participle: not-participle;
 }
 ."olvas" :: all-verbs-3
 {
-    lemma: "tcidu"
-    stem: "tcidu.olvasni"
-    type: verb
-    mood: declarative #######nem itt kell!!
+    lemma: "tcidu";
+    stem: "tcidu.olvasni";
+    type: verb;
+    mood: declarative; //////////////nem itt kell!!;
 }
-"megy" :: verb-continuous; verb-perfect-continuous-durative
+"megy" :: verb-continuous verb-perfect-continuous-durative
 {
-    transcription: "mɛdʲ"
-    lemma: "cadzu"
-    stem: "cadzu.megy"
-    type: verb
-    tense: present
-    aspect: indefinite
-    mood: declarative #######nem itt kell!!
-    subject-number: singular
-    subject-persone: third
-    participle: not-participle
+    transcription: "mɛdʲ";
+    lemma: "cadzu";
+    stem: "cadzu.megy";
+    type: verb;
+    tense: present;
+    aspect: indefinite;
+    mood: declarative; //////////////nem itt kell!!;
+    subject-number: singular;
+    subject-persone: third;
+    participle: not-participle;
 }

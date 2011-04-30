@@ -1,99 +1,99 @@
 ". "
 {
-    lemma: "."
-    type: punctuation
+    lemma: ".";
+    type: punctuation;
 }
-"a"[ə]; "an"[æn]
+"a"[ə] "an"[æn]
 {
-    type: article
-    number: singular
-    difinity: undifinite
-    quantity: none
+    type: article;
+    number: singular;
+    difinity: undifinite;
+    quantity: none;
 }
 "the"
 {
-    transcription: "ðə"
-    type: article
-    difinity: difinite
-    quantity: none
+    transcription: "ðə";
+    type: article;
+    difinity: difinite;
+    quantity: none;
 }
 "a long time ago"
 {
-    transcription: "ə lɒŋ tajm əgo"
-    lemma: "a long time ago"
-    stem: "a long time ago.a long time ago"
-    type: adverb
-    tense: past
-    adverb-type: time
+    transcription: "ə lɒŋ tajm əgo";
+    lemma: "a long time ago";
+    stem: "a long time ago.a long time ago";
+    type: adverb;
+    tense: past;
+    adverb-type: time;
 }
 "beautifully"
 {
-    transcription: "bjutəfli"
-    lemma: "melbi"
-    stem: "beautiful"
-    type: adverb
+    transcription: "bjutəfli";
+    lemma: "melbi";
+    stem: "beautiful";
+    type: adverb;
 }
 "day after day"
 {
-    transcription: "de æftər de"
-    lemma: "day after day"
-    stem: "day after day.day after day"
-    type: adverb
-    tense: past
-    adverb-type: time
+    transcription: "de æftər de";
+    lemma: "day after day";
+    stem: "day after day.day after day";
+    type: adverb;
+    tense: past;
+    adverb-type: time;
 }
 "greatly"
 {
-    transcription: "gretli"
-    lemma: "banli"
-    stem: "banli.great"
-    type: adverb
+    transcription: "gretli";
+    lemma: "banli";
+    stem: "banli.great";
+    type: adverb;
 }
 "last"
 {
-    transcription: "læst"
-    lemma: "prula'i"
-    stem: "prula'i.last"
-    type: adjective
+    transcription: "læst";
+    lemma: "prula'i";
+    stem: "prula'i.last";
+    type: adjective;
 }
 "not"[nɑt]
 {
-    type: negative
-    truth: 0.0
+    type: negative;
+    truth: 0.0;
 }
 "once upon a time"
 {
-    transcription: "wəns əpɑn ə tajm"
-    lemma: "paroi"
-    stem: "paroi.once upon a time"
-    type: adverb
-    tense: past
-    adverb-type: time
+    transcription: "wəns əpɑn ə tajm";
+    lemma: "paroi";
+    stem: "paroi.once upon a time";
+    type: adverb;
+    tense: past;
+    adverb-type: time;
 }
 "today"
 {
-    transcription: "tədeɪ"
-    lemma: "cabdei"
-    stem: "cabdei.today"
-    type: adverb
-    adverb-type: time
-    tense: inherit
+    transcription: "tədeɪ";
+    lemma: "cabdei";
+    stem: "cabdei.today";
+    type: adverb;
+    adverb-type: time;
+    tense: inherit;
 }
 "tomorrow"
 {
-    transcription: "təmɑro"
-    lemma: "bavlamdei"
-    stem: "bavlamdei.tomorrow"
-    type: adverb
-    tense: future
-    adverb-type: time
+    transcription: "təmɑro";
+    lemma: "bavlamdei";
+    stem: "bavlamdei.tomorrow";
+    type: adverb;
+    tense: future;
+    adverb-type: time;
 }
 "yesterday"
 {
-    transcription: "yɛstərdeɪ"
-    lemma: "prulamdei"
-    stem: "prulamdei"
-    type: adverb
-    tense: past
-    adverb-type: time
+    transcription: "yɛstərdeɪ";
+    lemma: "prulamdei";
+    stem: "prulamdei";
+    type: adverb;
+    tense: past;
+    adverb-type: time;
 }

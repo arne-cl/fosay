@@ -1,436 +1,436 @@
 feminine-patronymic-1
 {
-    text: "0>івна"
-    gender: feminine
-    personal-name: patronymic
+    text: "0>івна";
+    gender: feminine;
+    personal-name: patronymic;
 }
 
 feminine-patronymic-2
 {
-    text: "1>ївна"
-    gender: feminine
-    personal-name: patronymic
+    text: "1>ївна";
+    gender: feminine;
+    personal-name: patronymic;
 }
 
 masculine-patronymic-1
 {
-    text: "0>ович"
-    gender: masculine
-    personal-name: patronymic
+    text: "0>ович";
+    gender: masculine;
+    personal-name: patronymic;
 }
 
 
 lifeless
 {
-    gender: lifeless
+    gender: lifeless;
 }
 
 adj-cases-1 :: lifeless
 {
-    text: "2>ого"
-    case: possessive
+    text: "2>ого";
+    case: possessive;
 }
 adj-cases-1 :: lifeless
 {
-    text: "2>ому"
-    case: dative
+    text: "2>ому";
+    case: dative;
 }
 adj-cases-1 :: lifeless
 {
-    text: "2>ого"
-    case: accusative
-    extra-1: 1
+    text: "2>ого";
+    case: accusative;
+    extra-1: 1;
 }
 adj-cases-1 :: lifeless
 {
-    case: accusative
-    extra-1: 2
+    case: accusative;
+    extra-1: 2;
 }
 adj-cases-1 :: lifeless
 {
-    text: "2>им"
-    case: instrumental
+    text: "2>им";
+    case: instrumental;
 }
 adj-cases-1 :: lifeless
 {
-    text: "2>ому"
-    case: locative
+    text: "2>ому";
+    case: locative;
 }
 adj-cases-1 :: lifeless
-    {
-    text: "2>ім"
-    case: locative
+{
+    text: "2>ім";
+    case: locative;
 }
 adj-cases-1
 {
-    text: "2>е"
-    case: nominative
-    gender: lifeless
+    text: "2>е";
+    case: nominative;
+    gender: lifeless;
 }
 
 adj-cases-2
 {
-    text: "1>ого"
-    case: possessive
+    text: "1>ого";
+    case: possessive;
 }
 adj-cases-2
 {
-    text: "1>ому"
-    case: dative
+    text: "1>ому";
+    case: dative;
 }
 adj-cases-2
 {
-    text: "1>ому"
-    case: accusative
-    extra-1: 1
+    text: "1>ому";
+    case: accusative;
+    extra-1: 1;
 }
 adj-cases-2
 {
-    case: accusative
-    extra-1: 2
+    case: accusative;
+    extra-1: 2;
 }
 adj-cases-2
 {
-    text: "1>им"
-    case: instrumental
+    text: "1>им";
+    case: instrumental;
 }
 adj-cases-2
 {
-    text: "1>ому"
-    case: locative
+    text: "1>ому";
+    case: locative;
 }
 adj-cases-2
 {
-    text: "1>ім"
-    case: locative
+    text: "1>ім";
+    case: locative;
 }
 
 adj-cases-3
 {
-    text: "1>ього"
-    case: possessive
+    text: "1>ього";
+    case: possessive;
 }
 adj-cases-3
 {
-    text: "1>ьій"
-    case: dative
+    text: "1>ьій";
+    case: dative;
 }
 adj-cases-3
 {
-    text: "1>ього"
-    case: accusative
-    extra-1: 1
+    text: "1>ього";
+    case: accusative;
+    extra-1: 1;
 }
 adj-cases-3
 {
-    case: accusative
-    extra-1: 2
+    case: accusative;
+    extra-1: 2;
 }
 adj-cases-3
 {
-    text: "1>ім"
-    case: instrumental
+    text: "1>ім";
+    case: instrumental;
 }
 adj-cases-3
 {
-    text: "1>ьому"
-    case: locative
+    text: "1>ьому";
+    case: locative;
 }
 adj-cases-3
 {
-    text: "1>ьім"
-    case: locative
+    text: "1>ьім";
+    case: locative;
 }
 
 adj-cases-4
 {
-    text: "2>ього"
-    case: possessive
+    text: "2>ього";
+    case: possessive;
 }
 adj-cases-4
 {
-    text: "2>ьій"
-    case: dative
+    text: "2>ьій";
+    case: dative;
 }
 adj-cases-4
 {
-    text: "2>ього"
-    case: accusative
-    extra-1: 1
+    text: "2>ього";
+    case: accusative;
+    extra-1: 1;
 }
 adj-cases-4
 {
-    case: accusative
-    extra-1: 2
+    case: accusative;
+    extra-1: 2;
 }
 adj-cases-4
 {
-    text: "2>ім"
-    case: instrumental
+    text: "2>ім";
+    case: instrumental;
 }
 adj-cases-4
 {
-    text: "2>ьому"
-    case: locative
+    text: "2>ьому";
+    case: locative;
 }
 adj-cases-4
 {
-    text: "2>ьім"
-    case: locative
+    text: "2>ьім";
+    case: locative;
 }
 
 adj-cases-feminine-t
 {
-    text: "2>а"
-    gender: feminine
-    case: nominative
+    text: "2>а";
+    gender: feminine;
+    case: nominative;
 }
 
 adj-cases-feminine-t
 {
-    text: "2>ої"
-    gender: feminine
-    case: possessive
+    text: "2>ої";
+    gender: feminine;
+    case: possessive;
 }
 adj-cases-feminine-t
 {
-    text: "2>ій"
-    gender: feminine
-    case: dative
+    text: "2>ій";
+    gender: feminine;
+    case: dative;
 }
 adj-cases-feminine-t
 {
-    text: "2>у"
-    gender: feminine
-    case: accusative
-    extra-1: 1
+    text: "2>у";
+    gender: feminine;
+    case: accusative;
+    extra-1: 1;
 }
 adj-cases-feminine-t
 {
-    text: "2>а"
-    gender: feminine
-    case: accusative
-    extra-1: 2
+    text: "2>а";
+    gender: feminine;
+    case: accusative;
+    extra-1: 2;
 }
 adj-cases-feminine-t
 {
-    text: "2>ою"
-    gender: feminine
-    case: instrumental
+    text: "2>ою";
+    gender: feminine;
+    case: instrumental;
 }
 adj-cases-feminine-t
 {
-    text: "2>ій"
-    gender: feminine
-    case: locative
+    text: "2>ій";
+    gender: feminine;
+    case: locative;
 }
 
 adj-cases-6
 {
-    text: "2>ої"
-    case: possessive
+    text: "2>ої";
+    case: possessive;
 }
 adj-cases-6
 {
-    text: "2>ій"
-    case: dative
+    text: "2>ій";
+    case: dative;
 }
 adj-cases-6
 {
-    text: "2>ю"
-    case: accusative
-    extra-1: 1
+    text: "2>ю";
+    case: accusative;
+    extra-1: 1;
 }
 adj-cases-6
 {
-    case: accusative
-    extra-1: 2
+    case: accusative;
+    extra-1: 2;
 }
 adj-cases-6
 {
-    text: "2>ою"
-    case: instrumental
+    text: "2>ою";
+    case: instrumental;
 }
 adj-cases-6
 {
-    text: "2>ій"
-    case: locative
+    text: "2>ій";
+    case: locative;
 }
 
 adj-feminine-m
 {
-    text: "2>я"
-    gender: feminine
+    text: "2>я";
+    gender: feminine;
 }
 
 adj-lifeless-t
 {
-    text: "2>е"
-    gender: lifeless
+    text: "2>е";
+    gender: lifeless;
 }
 
 adj-lifeless-m
 {
-    text: "2>є"
-    gender: lifeless
+    text: "2>є";
+    gender: lifeless;
 }
 
 adj-plural-cases-m1
 {
-    text: "1>і"
-    case: nominative
-    number: plural
+    text: "1>і";
+    case: nominative;
+    number: plural;
 }
 adj-plural-cases-m1
 {
-    text: "1>іх"
-    case: possessive
-    number: plural
+    text: "1>іх";
+    case: possessive;
+    number: plural;
 }
 adj-plural-cases-m1
 {
-    text: "1>ім"
-    case: dative
-    number: plural
+    text: "1>ім";
+    case: dative;
+    number: plural;
 }
 adj-plural-cases-m1
 {
-    text: "1>іх"
-    case: accusative
-    number: plural
+    text: "1>іх";
+    case: accusative;
+    number: plural;
 }
 adj-plural-cases-m1
 {
-    text: "1>іми"
-    case: instrumental
-    number: plural
+    text: "1>іми";
+    case: instrumental;
+    number: plural;
 }
 adj-plural-cases-m1
 {
-    text: "1>іх"
-    case: locative
-    number: plural
+    text: "1>іх";
+    case: locative;
+    number: plural;
 }
 
 adj-plural-cases-m2
 {
-    text: "2>і"
-    case: nominative
-    number: plural
+    text: "2>і";
+    case: nominative;
+    number: plural;
 }
 adj-plural-cases-m2
 {
-    text: "2>іх"
-    case: possessive
-    number: plural
+    text: "2>іх";
+    case: possessive;
+    number: plural;
 }
 adj-plural-cases-m2
 {
-    text: "2>ім"
-    case: dative
-    number: plural
+    text: "2>ім";
+    case: dative;
+    number: plural;
 }
 adj-plural-cases-m2
 {
-    text: "2>іх"
-    case: accusative
-    number: plural
+    text: "2>іх";
+    case: accusative;
+    number: plural;
 }
 adj-plural-cases-m2
 {
-    text: "2>іми"
-    case: instrumental
-    number: plural
+    text: "2>іми";
+    case: instrumental;
+    number: plural;
 }
 adj-plural-cases-m2
 {
-    text: "2>іх"
-    case: locative
-    number: plural
+    text: "2>іх";
+    case: locative;
+    number: plural;
 }
 
 adj-plural-cases-t1
 {
-    text: "1>і"
-    case: nominative
-    number: plural
+    text: "1>і";
+    case: nominative;
+    number: plural;
 }
 adj-plural-cases-t1
 {
-    text: "1>их"
-    case: possessive
-    number: plural
+    text: "1>их";
+    case: possessive;
+    number: plural;
 }
 adj-plural-cases-t1
 {
-    text: "1>им"
-    case: dative
-    number: plural
+    text: "1>им";
+    case: dative;
+    number: plural;
 }
 adj-plural-cases-t1
 {
-    text: "1>их"
-    case: accusative
-    number: plural
+    text: "1>их";
+    case: accusative;
+    number: plural;
 }
 adj-plural-cases-t1
 {
-    text: "1>ими"
-    case: instrumental
-    number: plural
+    text: "1>ими";
+    case: instrumental;
+    number: plural;
 }
 adj-plural-cases-t1
 {
-    text: "1>их"
-    case: locative
-    number: plural
+    text: "1>их";
+    case: locative;
+    number: plural;
 }
 
 adj-plural-cases-t2
 {
-    text: "2>і"
-    case: nominative
-    number: plural
-    gender: inherit
+    text: "2>і";
+    case: nominative;
+    number: plural;
+    gender: inherit;
 }
 adj-plural-cases-t2
 {
-    text: "2>их"
-    case: possessive
-    number: plural
-    gender: inherit
+    text: "2>их";
+    case: possessive;
+    number: plural;
+    gender: inherit;
 }
 adj-plural-cases-t2
 {
-    text: "2>им"
-    case: dative
-    number: plural
-    gender: inherit
+    text: "2>им";
+    case: dative;
+    number: plural;
+    gender: inherit;
 }
 adj-plural-cases-t2
 {
-    text: "2>их"
-    case: accusative
-    number: plural
-    gender: inherit
+    text: "2>их";
+    case: accusative;
+    number: plural;
+    gender: inherit;
 }
 adj-plural-cases-t2
 {
-    text: "2>ими"
-    case: instrumental
-    number: plural
-    gender: inherit
+    text: "2>ими";
+    case: instrumental;
+    number: plural;
+    gender: inherit;
 }
 adj-plural-cases-t2
 {
-    text: "2>их"
-    case: locative
-    number: plural
-    gender: inherit
+    text: "2>их";
+    case: locative;
+    number: plural;
+    gender: inherit;
 }
 
-all-adj-cases-1 :: adj-cases-1; \
-                    adj-plural-cases-t2; \
+all-adj-cases-1 :: adj-cases-1
+                    adj-plural-cases-t2
                     adj-cases-feminine-t
 {
 }

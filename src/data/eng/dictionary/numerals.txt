@@ -1,126 +1,126 @@
-"eight" :: xeen; ordinal-t; decimal-t
+"eight" :: xeen ordinal-t decimal-t
 {
-    transcription: "et"
-    lemma: "8"
-    type: numeral
+    transcription: "et";
+    lemma: "8";
+    type: numeral;
 }
 "eleven" :: ordinal
 {
-    transcription: "əlɛvən"
-    lemma: "11"
-    type: numeral
+    transcription: "əlɛvən";
+    lemma: "11";
+    type: numeral;
 }
 "fifteen" :: ordinal
 {
-    transcription: "fɪftin"
-    lemma: "15"
-    type: numeral
+    transcription: "fɪftin";
+    lemma: "15";
+    type: numeral;
 }
-"fifty" :: ordinal-y; every-decimal; every-ordinal-decimal
+"fifty" :: ordinal-y every-decimal every-ordinal-decimal
 {
-    transcription: "fɪfti"
-    lemma: "50"
-    type: numeral
+    transcription: "fɪfti";
+    lemma: "50";
+    type: numeral;
 }
 "five"
 {
-    transcription: "fajv"
-    lemma: "5"
-    type: numeral
+    transcription: "fajv";
+    lemma: "5";
+    type: numeral;
 }
-"forty" :: ordinal-y; every-decimal; every-ordinal-decimal
+"forty" :: ordinal-y every-decimal every-ordinal-decimal
 {
-    transcription: "fɔrti"
-    lemma: "40"
-    type: numeral
+    transcription: "fɔrti";
+    lemma: "40";
+    type: numeral;
 }
-"four" :: xteen; ordinal
+"four" :: xteen ordinal
 {
-    transcription: "fɔr"
-    lemma: "4"
-    type: numeral
+    transcription: "fɔr";
+    lemma: "4";
+    type: numeral;
 }
 "hundred" :: ordinal
 {
-    transcription: "hʌndrɪd"
-    lemma: "100"
-    type: numeral
+    transcription: "hʌndrɪd";
+    lemma: "100";
+    type: numeral;
 }
 "million" :: ordinal
 {
-    transcription: "mɪljən"
-    lemma: "1000000"
-    type: numeral
+    transcription: "mɪljən";
+    lemma: "1000000";
+    type: numeral;
 }
-"nine" :: xteen; ordinal-e; decimal
+"nine" :: xteen ordinal-e decimal
 {
-    transcription: "najn"
-    lemma: "9"
-    type: numeral
+    transcription: "najn";
+    lemma: "9";
+    type: numeral;
 }
 "one" :: ordinal-1
 {
-    transcription: "wən"
-    lemma: "1"
-    type: numeral
+    transcription: "wən";
+    lemma: "1";
+    type: numeral;
 }
-"seven" :: xteen; ordinal; decimal
+"seven" :: xteen ordinal decimal
 {
-    transcription: "sɛvən"
-    lemma: "7"
-    type: numeral
+    transcription: "sɛvən";
+    lemma: "7";
+    type: numeral;
 }
-"six" :: xteen; ordinal; decimal
+"six" :: xteen ordinal decimal
 {
-    transcription: "sɪks"
-    lemma: "6"
-    type: numeral
+    transcription: "sɪks";
+    lemma: "6";
+    type: numeral;
 }
 "ten" :: ordinal
 {
-    transcription: "tɛn"
-    lemma: "10"
-    type: numeral
+    transcription: "tɛn";
+    lemma: "10";
+    type: numeral;
 }
 "thirteen" :: ordinal
 {
-    transcription: "θərtin"
-    lemma: "13"
-    type: numeral
+    transcription: "θərtin";
+    lemma: "13";
+    type: numeral;
 }
-"thirty" :: ordinal-y; every-decimal; every-ordinal-decimal
+"thirty" :: ordinal-y every-decimal every-ordinal-decimal
 {
-    transcription: "θərdi"
-    lemma: "30"
-    type: numeral
+    transcription: "θərdi";
+    lemma: "30";
+    type: numeral;
 }
 "thousand" :: ordinal
 {
-    transcription: "θawzənd"
-    lemma: "1000"
-    type: numeral
+    transcription: "θawzənd";
+    lemma: "1000";
+    type: numeral;
 }
 "three" :: ordinal-3
 {
-    transcription: "θri"
-    lemma: "3"
-    type: numeral
+    transcription: "θri";
+    lemma: "3";
+    type: numeral;
 }
 "twelve" :: ordinal-ve
 {
-    transcription: "twɛlv"
-    lemma: "12"
-    type: numeral
+    transcription: "twɛlv";
+    lemma: "12";
+    type: numeral;
 }
-"twenty" :: ordinal-y; every-decimal; every-ordinal-decimal
+"twenty" :: ordinal-y every-decimal every-ordinal-decimal
 {
-    transcription: "twɛnti"
-    lemma: "20"
-    type: numeral
+    transcription: "twɛnti";
+    lemma: "20";
+    type: numeral;
 }
 "two" :: ordinal-2
 {
-    transcription: "tu"
-    lemma: "2"
-    type: numeral
+    transcription: "tu";
+    lemma: "2";
+    type: numeral;
 }

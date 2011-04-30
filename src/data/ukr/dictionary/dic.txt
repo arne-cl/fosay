@@ -1,34 +1,34 @@
-#ukrainian dictionary v0.0.1
+//ukrainian dictionary v0.0.1
 ". "
 {
-    lemma: "."
-    type: punctuation
+    lemma: ".";
+    type: punctuation;
 }
 "гарно"
 {
-    transcription: "harno"
-    lemma: "melbi"
-    stem: "melbi.гарно"
-    type: adverb
+    transcription: "harno";
+    lemma: "melbi";
+    stem: "melbi.гарно";
+    type: adverb;
 }
 "не"
 {
-    transcription: "nɛ"
-    type: negative
+    transcription: "nɛ";
+    type: negative;
 }
 "чудово"
 {
-    transcription: "tʃudovo"
-    lemma: "banli"
-    lemma: "banli.чудово"
-    type: adverb
+    transcription: "tʃudovo";
+    lemma: "banli";
+    lemma: "banli.чудово";
+    type: adverb;
 }
 "сьогодні"
 {
-    transcription: "sʲohodnʲi"
-    lemma: "cabdei"
-    stem: "cabdei.сьогодні"
-    type: adverb
-    adverb-type: time
-    tense: inherit
+    transcription: "sʲohodnʲi";
+    lemma: "cabdei";
+    stem: "cabdei.сьогодні";
+    type: adverb;
+    adverb-type: time;
+    tense: inherit;
 }

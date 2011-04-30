@@ -1,298 +1,298 @@
-"teacher" :: plural-sz; possessive; accusative
+"teacher" :: plural-sz possessive accusative
 {
-    transcription: "titʃər"
-    lemma: "ctuca"
-    stem: "ctuca.teacher"
-    real-number: singular
-    type: noun
-    number: singular
-    gender: masculine
-    persone: third
-    noun-type: common
-    case: nominative
+    transcription: "titʃər";
+    lemma: "ctuca";
+    stem: "ctuca.teacher";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    gender: masculine;
+    persone: third;
+    noun-type: common;
+    case: nominative;
 }
-"boy" :: plural-sz; possessive; accusative
+"boy" :: plural-sz possessive accusative
 {
-    transcription: "bɔj"
-    lemma: "nanla"
-    stem: "nanla.boy"
-    real-number: singular
-    type: noun
-    number: singular
-    gender: masculine
-    persone: third
-    noun-type: common
-    case: nominative
+    transcription: "bɔj";
+    lemma: "nanla";
+    stem: "nanla.boy";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    gender: masculine;
+    persone: third;
+    noun-type: common;
+    case: nominative;
 }
-"dude" :: plural-ss; possessive; accusative
+"dude" :: plural-ss possessive accusative
 {
-    transcription: "dud"
-    lemma: "nanla"
-    stem: "nanla.dude"
-    real-number: singular
-    type: noun
-    tags: slang
-    number: singular
-    gender: masculine
-    persone: third
-    noun-type: common
-    case: nominative
+    transcription: "dud";
+    lemma: "nanla";
+    stem: "nanla.dude";
+    real-number: singular;
+    type: noun;
+    tags: slang;
+    number: singular;
+    gender: masculine;
+    persone: third;
+    noun-type: common;
+    case: nominative;
 }
-"sibling" :: plural-sz; possessive; accusative
+"sibling" :: plural-sz possessive accusative
 {
-    transcription: "sɪblɪŋ"
-    lemma: "tunba"
-    stem: "tunba.sibling"
-    real-number: singular
-    type: noun
-    number: singular
-    persone: third
-    noun-type: common
-    case: nominative
+    transcription: "sɪblɪŋ";
+    lemma: "tunba";
+    stem: "tunba.sibling";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    persone: third;
+    noun-type: common;
+    case: nominative;
 }
-"brother"[brəðər] :: plural-sz; possessive; accusative
+"brother"[brəðər] :: plural-sz possessive accusative
 {
-    lemma: "bruna"
-    stem: "bruna.brother"
-    real-number: singular
-    type: noun
-    number: singular
-    gender: masculine
-    persone: third
-    noun-type: common
-    case: nominative
+    lemma: "bruna";
+    stem: "bruna.brother";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    gender: masculine;
+    persone: third;
+    noun-type: common;
+    case: nominative;
 }
-"sister"[sɪstər] :: plural-sz; possessive; accusative
+"sister"[sɪstər] :: plural-sz possessive accusative
 {
-    lemma: "mensi"
-    stem: "mensi.sister"
-    real-number: singular
-    type: noun
-    number: singular
-    gender: feminine
-    persone: third
-    noun-type: common
-    case: nominative
+    lemma: "mensi";
+    stem: "mensi.sister";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    gender: feminine;
+    persone: third;
+    noun-type: common;
+    case: nominative;
 }
-"day" :: plural-sz; possessive; accusative
+"day" :: plural-sz possessive accusative
 {
-    transcription: "de"
-    lemma: "djedi"
-    stem: "djedi.day"
-    real-number: singular
-    type: noun
-    number: singular
-    gender: lifeless
-    persone: third
-    case: nominative
-    noun-type: common
+    transcription: "de";
+    lemma: "djedi";
+    stem: "djedi.day";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    gender: lifeless;
+    persone: third;
+    case: nominative;
+    noun-type: common;
 }
-"girl" :: plural-sz; possessive; accusative
+"girl" :: plural-sz possessive accusative
 {
-    transcription: "gɜrl"
-    lemma: "nixli"
-    stem: "nixli.girl"
-    real-number: singular
-    type: noun
-    number: singular
-    gender: feminine
-    persone: third
-    noun-type: common
-    case: nominative
+    transcription: "gɜrl";
+    lemma: "nixli";
+    stem: "nixli.girl";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    gender: feminine;
+    persone: third;
+    noun-type: common;
+    case: nominative;
 }
-"missy" :: plural-ies; possessive; accusative
+"missy" :: plural-ies possessive accusative
 {
-    transcription: "misi"
-    lemma: "nixli"
-    stem: "nixli.missy"
-    real-number: singular
-    type: noun
-    number: singular
-    form: informal
-    gender: feminine
-    persone: third
-    noun-type: common
-    case: nominative
+    transcription: "misi";
+    lemma: "nixli";
+    stem: "nixli.missy";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    form: informal;
+    gender: feminine;
+    persone: third;
+    noun-type: common;
+    case: nominative;
 }
-"house" :: plural-sz; possessive; accusative
+"house" :: plural-sz possessive accusative
 {
-    transcription: "haws"
-    lemma: "zdani"
-    stem: "zdani.house"
-    real-number: singular
-    type: noun
-    number: singular
-    gender: lifeless
-    persone: third
-    noun-type: common
-    case: nominative
+    transcription: "haws";
+    lemma: "zdani";
+    stem: "zdani.house";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    gender: lifeless;
+    persone: third;
+    noun-type: common;
+    case: nominative;
 }
-"school" :: plural-sz; possessive; accusative
+"school" :: plural-sz possessive accusative
 {
-    transcription: "skul"
-    lemma: "ckule"
-    stem: "ckule.school"
-    real-number: singular
-    type: noun
-    number: singular
-    gender: lifeless
-    persone: third
-    noun-type: common
-    case: nominative
+    transcription: "skul";
+    lemma: "ckule";
+    stem: "ckule.school";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    gender: lifeless;
+    persone: third;
+    noun-type: common;
+    case: nominative;
 }
-"kindergarten" :: plural-sz; possessive; accusative
+"kindergarten" :: plural-sz possessive accusative
 {
-    transcription: "kɪndərgɑrtən"
-    lemma: "sab-lerneyo"
-    stem: "sab-lerneyo.kindergarten"
-    real-number: singular
-    type: noun
-    number: singular
-    gender: lifeless
-    persone: third
-    noun-type: common
-    case: nominative
+    transcription: "kɪndərgɑrtən";
+    lemma: "sab-lerneyo";
+    stem: "sab-lerneyo.kindergarten";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    gender: lifeless;
+    persone: third;
+    noun-type: common;
+    case: nominative;
 }
-"university" :: plural-ies; possessive; accusative
+"university" :: plural-ies possessive accusative
 {
-    transcription: "junɪvərsəti"
-    lemma: "balcu'e"
-    stem: "balcu'e.university"
-    real-number: singular
-    type: noun
-    number: singular
-    gender: lifeless
-    persone: third
-    noun-type: common
-    case: nominative
+    transcription: "junɪvərsəti";
+    lemma: "balcu'e";
+    stem: "balcu'e.university";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    gender: lifeless;
+    persone: third;
+    noun-type: common;
+    case: nominative;
 }
-"man" :: possessive; accusative
+"man" :: possessive accusative
 {
-    transcription: "mæn"
-    lemma: "nanmu"
-    stem: "nanmu.man"
-    real-number: singular
-    type: noun
-    number: singular
-    gender: masculine
-    persone: third
-    noun-type: common
-    case: nominative
+    transcription: "mæn";
+    lemma: "nanmu";
+    stem: "nanmu.man";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    gender: masculine;
+    persone: third;
+    noun-type: common;
+    case: nominative;
 }
-"elder" :: possessive; plural-sz; accusative
+"elder" :: possessive plural-sz accusative
 {
-    transcription: "ɛldər"
-    lemma: "dzena"
-    stem: "dzena.elder"
-    real-number: singular
-    type: noun
-    number: singular
-    gender: masculine
-    persone: third
-    case: nominative
+    transcription: "ɛldər";
+    lemma: "dzena";
+    stem: "dzena.elder";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    gender: masculine;
+    persone: third;
+    case: nominative;
 }
-"men" :: possessive; accusative
+"men" :: possessive accusative
 {
-    transcription: "mɛn"
-    lemma: "nanmu"
-    stem: "nanmu.men"
-    real-number: plural
-    type: noun
-    number: plural
-    gender: masculine
-    persone: third
-    noun-type: common
-    case: nominative
+    transcription: "mɛn";
+    lemma: "nanmu";
+    stem: "nanmu.men";
+    real-number: plural;
+    type: noun;
+    number: plural;
+    gender: masculine;
+    persone: third;
+    noun-type: common;
+    case: nominative;
 }
-"monday" :: plural-sz; possessive; accusative
+"monday" :: plural-sz possessive accusative
 {
-    transcription: "mʌndeɪ"
-    lemma: "padjed"
-    stem: "padjed.monday"
-    real-number: singular
-    type: noun
-    number: singular
-    gender: lifeless
-    persone: third
-    case: nominative
+    transcription: "mʌndeɪ";
+    lemma: "padjed";
+    stem: "padjed.monday";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    gender: lifeless;
+    persone: third;
+    case: nominative;
 }
-"september" :: plural-sz; possessive; accusative
+"september" :: plural-sz possessive accusative
 {
-    transcription: "sɛptɛmbər"
-    lemma: "pamast"
-    stem: "pamast.september"
-    real-number: singular
-    type: noun
-    number: singular
-    gender: lifeless
-    persone: third
-    case: nominative
+    transcription: "sɛptɛmbər";
+    lemma: "pamast";
+    stem: "pamast.september";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    gender: lifeless;
+    persone: third;
+    case: nominative;
 }
 "sink or swim"
 {
-    transcription: "sɪŋk ɔr swɪm"
-    lemma: "to fail or succeed"
-    stem: "to fail or succeed.sink or swim"
-    type: noun
+    transcription: "sɪŋk ɔr swɪm";
+    lemma: "to fail or succeed";
+    stem: "to fail or succeed.sink or swim";
+    type: noun;
 }
-"tuesday" :: plural-sz; possessive; accusative
+"tuesday" :: plural-sz possessive accusative
 {
-    transcription: "tuzdeɪ"
-    lemma: "redjed"
-    stem: "redjed.tuesday"
-    real-number: singular
-    type: noun
-    number: singular
-    gender: lifeless
-    persone: third
-    case: nominative
+    transcription: "tuzdeɪ";
+    lemma: "redjed";
+    stem: "redjed.tuesday";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    gender: lifeless;
+    persone: third;
+    case: nominative;
 }
-"week" :: plural-sz; possessive; accusative
+"week" :: plural-sz possessive accusative
 {
-    transcription: "wik"
-    lemma: "jeftu"
-    stem: "jeftu.week"
-    real-number: singular
-    type: noun
-    number: singular
-    gender: lifeless
-    persone: third
-    case: nominative
+    transcription: "wik";
+    lemma: "jeftu";
+    stem: "jeftu.week";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    gender: lifeless;
+    persone: third;
+    case: nominative;
 }
-"woman" :: possessive; accusative
+"woman" :: possessive accusative
 {
-    transcription: "wʊmən"
-    lemma: "ninmu"
-    stem: "ninmu.woman"
-    real-number: singular
-    type: noun
-    number: singular
-    gender: feminine
-    persone: third
-    noun-type: common
-    case: nominative
+    transcription: "wʊmən";
+    lemma: "ninmu";
+    stem: "ninmu.woman";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    gender: feminine;
+    persone: third;
+    noun-type: common;
+    case: nominative;
 }
-"women" :: possessive; accusative
+"women" :: possessive accusative
 {
-    transcription: "wɪmən"
-    lemma: "ninmu"
-    stem: "ninmu.woman"
-    real-number: plural
-    type: noun
-    number: plural
-    gender: feminine
-    persone: third
-    noun-type: common
-    case: nominative
+    transcription: "wɪmən";
+    lemma: "ninmu";
+    stem: "ninmu.woman";
+    real-number: plural;
+    type: noun;
+    number: plural;
+    gender: feminine;
+    persone: third;
+    noun-type: common;
+    case: nominative;
 }
-"doggy" :: possessive; accusative
+"doggy" :: possessive accusative
 {
-    transcription: "dogɪ"
-    lemma: "gerku"
-    stem: "gerku.dog"
-    type: noun
-    real-number: singular
-    form: informal
-    persone: third
-    case: nominative
+    transcription: "dogɪ";
+    lemma: "gerku";
+    stem: "gerku.dog";
+    type: noun;
+    real-number: singular;
+    form: informal;
+    persone: third;
+    case: nominative;
 }

@@ -1,409 +1,409 @@
 "am"
 {
-    transcription: "æm"
-    lemma: "esi"
-    stem: "esi.is"
-    type: auxiliary
-    number: singular
-    persone: first
-    tense: present
-    participle: not-participle
-    modal: false
-    #position: before-1
+    transcription: "æm";
+    lemma: "esi";
+    stem: "esi.is";
+    type: auxiliary;
+    number: singular;
+    persone: first;
+    tense: present;
+    participle: not-participle;
+    modal: false;
+    //position: before-1;
 }
 "are"
 {
-    transcription: "ɑr"
-    lemma: "esi"
-    stem: "esi.is"
-    type: auxiliary
-    number: plural
-    tense: present
-    participle: not-participle
-    modal: false
-    #position: before-1
+    transcription: "ɑr";
+    lemma: "esi";
+    stem: "esi.is";
+    type: auxiliary;
+    number: plural;
+    tense: present;
+    participle: not-participle;
+    modal: false;
+    //position: before-1;
 }
 "are"
 {
-    transcription: "ɑr"
-    lemma: "esi"
-    stem: "esi.is"
-    type: auxiliary
-    persone: second
-    tense: present
-    participle: not-participle
-    modal: false
-    #position: before-1
+    transcription: "ɑr";
+    lemma: "esi";
+    stem: "esi.is";
+    type: auxiliary;
+    persone: second;
+    tense: present;
+    participle: not-participle;
+    modal: false;
+    //position: before-1;
 }
 "is"
 {
-    transcription: "ɪz"
-    lemma: "esi"
-    lemma: "esi.is"
-    type: auxiliary
-    number: singular
-    persone: third
-    tense: present
-    participle: not-participle
-    modal: false
-    #position: before-1
+    transcription: "ɪz";
+    lemma: "esi";
+    lemma: "esi.is";
+    type: auxiliary;
+    number: singular;
+    persone: third;
+    tense: present;
+    participle: not-participle;
+    modal: false;
+    //position: before-1;
 }
 "be"
 {
-    transcription: "bi"
-    lemma: "be"
-    type: auxiliary
-    tense: present
-    participle: not-participle
-    modal: false
-    position: before-2
+    transcription: "bi";
+    lemma: "be";
+    type: auxiliary;
+    tense: present;
+    participle: not-participle;
+    modal: false;
+    position: before-2;
 }
 "been"
 {
-    transcription: "bɪn"
-    lemma: "be"
-    type: auxiliary
-    tense: past
-    participle: participle
-    modal: false
-    #position: before-2
+    transcription: "bɪn";
+    lemma: "be";
+    type: auxiliary;
+    tense: past;
+    participle: participle;
+    modal: false;
+    //position: before-2;
 }
 "being"
 {
-    transcription: "biɪŋ"
-    lemma: "be"
-    type: auxiliary
-    tense: present
-    participle: participle
-    modal: false
-    position: before-2
+    transcription: "biɪŋ";
+    lemma: "be";
+    type: auxiliary;
+    tense: present;
+    participle: participle;
+    modal: false;
+    position: before-2;
 }
 "can"
 {
-    transcription: "kæn"
-    lemma: "povo"
-    type: verb
-    tense: present
-    participle: not-participle
-    modal: true
+    transcription: "kæn";
+    lemma: "povo";
+    type: verb;
+    tense: present;
+    participle: not-participle;
+    modal: true;
 }
 "could"
 {
-    transcription: "kʊd"
-    lemma: "povo"
-    type: verb
-    tense: past
-    participle: not-participle
-    modal: true
+    transcription: "kʊd";
+    lemma: "povo";
+    type: verb;
+    tense: past;
+    participle: not-participle;
+    modal: true;
 }
 "did"
 {
-    transcription: "dɪd"
-    lemma: "do"
-    type: auxiliary
-    tense: past
-    #aspect: indefinite
-    participle: not-participle
-    modal: false
-    #position: before-1
+    transcription: "dɪd";
+    lemma: "do";
+    type: auxiliary;
+    tense: past;
+    //aspect: indefinite;
+    participle: not-participle;
+    modal: false;
+    //position: before-1;
 }
-"do" :: third-singular-es; third-plural; second-persone
+"do" :: third-singular-es third-plural second-persone
 {
-    transcription: "du"
-    lemma: "do"
-    stem: "do"
-    type: auxiliary
-    tense: present
-    persone: first
-    modal: false
-    participle: not-participle
-    #position: before-1
+    transcription: "du";
+    lemma: "do";
+    stem: "do";
+    type: auxiliary;
+    tense: present;
+    persone: first;
+    modal: false;
+    participle: not-participle;
+    //position: before-1;
 }
-"go" :: third-singular-es; present-participle
+"go" :: third-singular-es present-participle
 {
-    transcription: "goʊ"
-    lemma: "cadzu"
-    stem: "cadzu.go"
-    type: verb
-    tense: present
-    participle: not-participle
+    transcription: "goʊ";
+    lemma: "cadzu";
+    stem: "cadzu.go";
+    type: verb;
+    tense: present;
+    participle: not-participle;
 }
 "gone"
 {
-    transcription: "gɒn"
-    lemma: "cadzu"
-    stem: "cadzu.go"
-    type: verb
-    tense: past
-    participle: participle
+    transcription: "gɒn";
+    lemma: "cadzu";
+    stem: "cadzu.go";
+    type: verb;
+    tense: past;
+    participle: participle;
 }
 "had"
 {
-    transcription: "hæd"
-    lemma: "havi"
-    stem: "havi.have"
-    type: auxiliary
-    tense: past
-    participle: not-participle
-    modal: false
-    position: before-1
+    transcription: "hæd";
+    lemma: "havi";
+    stem: "havi.have";
+    type: auxiliary;
+    tense: past;
+    participle: not-participle;
+    modal: false;
+    position: before-1;
 }
 "has"
 {
-    transcription: "hæz"
-    lemma: "havi"
-    stem: "havi.have"
-    type: auxiliary
-    number: singular
-    persone: third
-    tense: present
-    #aspect: perfect
-    modal: false
-    participle: not-participle
-    #position: before-1
+    transcription: "hæz";
+    lemma: "havi";
+    stem: "havi.have";
+    type: auxiliary;
+    number: singular;
+    persone: third;
+    tense: present;
+    //aspect: perfect;
+    modal: false;
+    participle: not-participle;
+    //position: before-1;
 }
 "have"
 {
-    transcription: "hæv"
-    lemma: "havi"
-    stem: "havi.have"
-    type: verb
-    tense: present
-    participle: not-participle
-    modal: true
-##}
-##"have
-##{transcription: "hæv
-##lemma: "havi
-##type: auxiliary
-##tense: present
-##modal: false
-##position: before-1
-#}
-#"have
-#{transcription: "hæv
-#lemma: "havi
-#type: auxiliary
-#tense: present
-#aspect: perfect
-#participle: not-participle
-#modal: false
-##position: before-2
+    transcription: "hæv";
+    lemma: "havi";
+    stem: "havi.have";
+    type: verb;
+    tense: present;
+    participle: not-participle;
+    modal: true;
+////}
+////"have
+////{transcription: "hæv
+////lemma: "havi
+////type: auxiliary
+////tense: present
+////modal: false
+////position: before-1
+//}
+//"have
+//{transcription: "hæv
+//lemma: "havi
+//type: auxiliary
+//tense: present
+//aspect: perfect
+//participle: not-participle
+//modal: false
+////position: before-2
 }
-"have" :: third-plural; second-persone
+"have" :: third-plural second-persone
 {
-    transcription: "hæv"
-    lemma: "havi"
-    stem: "havi.have"
-    type: auxiliary
-    persone: first
-    tense: present
-    #aspect: perfect
-    participle: not-participle
-    modal: false
+    transcription: "hæv";
+    lemma: "havi";
+    stem: "havi.have";
+    type: auxiliary;
+    persone: first;
+    tense: present;
+    //aspect: perfect;
+    participle: not-participle;
+    modal: false;
 }
-"know" :: present-participle; third-singular-s
+"know" :: present-participle third-singular-s
 {
-    transcription: "noʊ"
-    lemma: "dzuno"
-    stem: "dzuno.know"
-    type: verb
-    tense: present
-    participle: not-participle
-}
-"said"
-{
-    transcription: "sɛd"
-    lemma: "cusku"
-    stem: "cusku.say"
-    type: verb
-    tense: past
-    #aspect: indefinite
-    participle: not-participle
+    transcription: "noʊ";
+    lemma: "dzuno";
+    stem: "dzuno.know";
+    type: verb;
+    tense: present;
+    participle: not-participle;
 }
 "said"
 {
-    transcription: "sɛd"
-    lemma: "cusku"
-    stem: "cusku.say"
-    type: verb
-    tense: past
-    #aspect: indefinite
-    participle: participle
+    transcription: "sɛd";
+    lemma: "cusku";
+    stem: "cusku.say";
+    type: verb;
+    tense: past;
+    //aspect: indefinite;
+    participle: not-participle;
+}
+"said"
+{
+    transcription: "sɛd";
+    lemma: "cusku";
+    stem: "cusku.say";
+    type: verb;
+    tense: past;
+    //aspect: indefinite;
+    participle: participle;
 }
 "saw"
 {
-    transcription: "sɒ"
-    lemma: "viska"
-    stem: "viska.see"
-    type: verb
-    tense: past
-    #aspect: indefinite
-    participle: not-participle
+    transcription: "sɒ";
+    lemma: "viska";
+    stem: "viska.see";
+    type: verb;
+    tense: past;
+    //aspect: indefinite;
+    participle: not-participle;
 }
-"say" :: present-participle; third-singular-s
+"say" :: present-participle third-singular-s
 {
-    transcription: "seɪ"
-    lemma: "cusku"
-    stem: "cusku.say"
-    type: verb
-    tense: present
-    #aspect: indefinite
-    participle: not-participle
+    transcription: "seɪ";
+    lemma: "cusku";
+    stem: "cusku.say";
+    type: verb;
+    tense: present;
+    //aspect: indefinite;
+    participle: not-participle;
 }
-"see" :: present-participle; third-singular-s; third-plural; second-persone
+"see" :: present-participle third-singular-s third-plural second-persone
 {
-    transcription: "si"
-    lemma: "viska"
-    stem: "viska.see"
-    type: verb
-    tense: present
-    #aspect: indefinite
-    persone: first
-    participle: not-participle
+    transcription: "si";
+    lemma: "viska";
+    stem: "viska.see";
+    type: verb;
+    tense: present;
+    //aspect: indefinite;
+    persone: first;
+    participle: not-participle;
 }
 "seen"
 {
-    transcription: "sin"
-    lemma: "viska"
-    stem: "viska.see"
-    type: verb
-    tense: past
-    participle: participle
+    transcription: "sin";
+    lemma: "viska";
+    stem: "viska.see";
+    type: verb;
+    tense: past;
+    participle: participle;
 }
-"buy"[baj] :: present-participle; third-singular-s; third-plural; second-persone
+"buy"[baj] :: present-participle third-singular-s third-plural second-persone
 {
-    lemma: "terme'u"
-    stem: "terme'u.buy"
-    type: verb
-    tense: present
-    persone: first
-    participle: not-participle
+    lemma: "terme'u";
+    stem: "terme'u.buy";
+    type: verb;
+    tense: present;
+    persone: first;
+    participle: not-participle;
 }
 "bought"[bɑt]
 {
-    lemma: "terme'u"
-    stem: "terme'u.buy"
-    type: verb
-    tense: past
-    participle: not-participle; participle
+    lemma: "terme'u";
+    stem: "terme'u.buy";
+    type: verb;
+    tense: past;
+    participle: not-participle participle;
 }
-"write"[rajt] :: present-participle; third-singular-s; third-plural; second-persone
+"write"[rajt] :: present-participle third-singular-s third-plural second-persone
 {
-    lemma: "ciska"
-    stem: "ciska.write"
-    type: verb
-    tense: present
-    persone: first
-    participle: not-participle
+    lemma: "ciska";
+    stem: "ciska.write";
+    type: verb;
+    tense: present;
+    persone: first;
+    participle: not-participle;
 }
 "wrote"[rot]
 {
-    lemma: "ciska"
-    stem: "ciska.write"
-    type: verb
-    tense: past
-    participle: not-participle
+    lemma: "ciska";
+    stem: "ciska.write";
+    type: verb;
+    tense: past;
+    participle: not-participle;
 }
 "written"[rɪtən]
 {
-    lemma: "ciska"
-    stem: "ciska.write"
-    type: verb
-    tense: past
-    participle: participle
+    lemma: "ciska";
+    stem: "ciska.write";
+    type: verb;
+    tense: past;
+    participle: participle;
 }
 "shall"
 {
-    transcription: "ʃæl"
-    lemma: "be"
-    type: auxiliary
-    persone: first
-    tense: future
-    participle: not-participle
-    #aspect: indefinite
-    modal: false
-    #position: before-1
+    transcription: "ʃæl";
+    lemma: "be";
+    type: auxiliary;
+    persone: first;
+    tense: future;
+    participle: not-participle;
+    //aspect: indefinite;
+    modal: false;
+    //position: before-1;
 }
 "should"
 {
-    transcription: "ʃʊd"
-    lemma: "be"
-    type: auxiliary
-    persone: first
-    tense: past
-    participle: not-participle
-    modal: false
-    position: before-1
+    transcription: "ʃʊd";
+    lemma: "be";
+    type: auxiliary;
+    persone: first;
+    tense: past;
+    participle: not-participle;
+    modal: false;
+    position: before-1;
 }
 "swim"
 {
-    transcription: "swɪm"
-    lemma: "limna"
-    lemma: "limna.swim"
-    type: verb
-    tense: present
-    participle: not-participle
+    transcription: "swɪm";
+    lemma: "limna";
+    lemma: "limna.swim";
+    type: verb;
+    tense: present;
+    participle: not-participle;
 }
 "was"
 {
-    transcription: "wəz"
-    lemma: "esi"
-    type: auxiliary
-    number: singular
-    tense: past
-    participle: not-participle
-    modal: false
-    position: before-1
+    transcription: "wəz";
+    lemma: "esi";
+    type: auxiliary;
+    number: singular;
+    tense: past;
+    participle: not-participle;
+    modal: false;
+    position: before-1;
 }
 "went"
 {
-    transcription: "wɛnt"
-    lemma: "cadzu"
-    lemma: "cadzu.go"
-    type: verb
-    tense: past
-    participle: not-participle
+    transcription: "wɛnt";
+    lemma: "cadzu";
+    lemma: "cadzu.go";
+    type: verb;
+    tense: past;
+    participle: not-participle;
 }
 "were"
 {
-    transcription: "wər"
-    lemma: "esi"
-    type: auxiliary
-    number: plural
-    tense: past
-    participle: not-participle
-    modal: false
-    position: before-1
+    transcription: "wər";
+    lemma: "esi";
+    type: auxiliary;
+    number: plural;
+    tense: past;
+    participle: not-participle;
+    modal: false;
+    position: before-1;
 }
 "were"
 {
-    transcription: "wər"
-    lemma: "esi"
-    type: auxiliary
-    persone: second
-    tense: past
-    participle: not-participle
-    modal: false
-    position: before-1
+    transcription: "wər";
+    lemma: "esi";
+    type: auxiliary;
+    persone: second;
+    tense: past;
+    participle: not-participle;
+    modal: false;
+    position: before-1;
 }
 "will"
 {
-    transcription: "wɪl"
-    lemma: "be"
-    type: auxiliary
-    tense: future
-    participle: not-participle
-    modal: false
-    #position: before-1
+    transcription: "wɪl";
+    lemma: "be";
+    type: auxiliary;
+    tense: future;
+    participle: not-participle;
+    modal: false;
+    //position: before-1;
 }
 "would"
 {
-    transcription: "wʊd"
-    lemma: "be"
-    type: auxiliary
-    tense: past
-    participle: not-participle
-    modal: false
-    position: before-1
+    transcription: "wʊd";
+    lemma: "be";
+    type: auxiliary;
+    tense: past;
+    participle: not-participle;
+    modal: false;
+    position: before-1;
 }

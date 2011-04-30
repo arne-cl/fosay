@@ -77,7 +77,7 @@ def gen_cf_diff(diff):
     temp = {}
     for w, d in diff:
         st = jbo.init_sentence(d, "np")
-        #if len(st) > 1:
+        #if len(st) > 1: #TODO:Drop comments
         #    raise NotImplementedError
         temp[w] = lang_to_case_frame(st[-1])
         if PRINT_TO_CONSOLE:

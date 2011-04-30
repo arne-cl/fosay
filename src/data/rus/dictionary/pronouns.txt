@@ -1,336 +1,336 @@
-#ukrainian dictionary v0.0.1
+//ukrainian dictionary v0.0.1;
 "вы"[ve]
 {
-    lemma: "ivio"
-    real-number: singular
-    form: formal
-    type: pronoun
-    number: singular
-    persone: second
-    case: nominative
-    pronoun-type: personal
+    lemma: "ivio";
+    real-number: singular;
+    form: formal;
+    type: pronoun;
+    number: singular;
+    persone: second;
+    case: nominative;
+    pronoun-type: personal;
 }
 "вы"[ve]
 {
-    transcription: "ve"
-    lemma: "ivio"
-    real-number: plural
-    type: pronoun
-    number: plural
-    persone: second
-    case: nominative
-    pronoun-type: personal
+    transcription: "ve";
+    lemma: "ivio";
+    real-number: plural;
+    type: pronoun;
+    number: plural;
+    persone: second;
+    case: nominative;
+    pronoun-type: personal;
 }
 "он"[on]
 {
-    lemma: "ilulo"
-    real-number: singular
-    type: pronoun
-    number: singular
-    gender: masculine
-    persone: third
-    case: nominative
-    pronoun-type: personal
+    lemma: "ilulo";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    gender: masculine;
+    persone: third;
+    case: nominative;
+    pronoun-type: personal;
 }
 "она"[ana]
 {
-    lemma: "ilino"
-    real-number: singular
-    type: pronoun
-    number: singular
-    gender: feminine
-    persone: third
-    case: nominative
-    pronoun-type: personal
+    lemma: "ilino";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    gender: feminine;
+    persone: third;
+    case: nominative;
+    pronoun-type: personal;
 }
 "они"[anʲi]
 {
-    lemma: "ilino"
-    real-number: plural
-    type: pronoun
-    number: plural
-    persone: third
-    case: nominative
-    pronoun-type: personal
+    lemma: "ilino";
+    real-number: plural;
+    type: pronoun;
+    number: plural;
+    persone: third;
+    case: nominative;
+    pronoun-type: personal;
 }
 "оно"[ano]
 {
-    lemma: "idjio"
-    real-number: singular
-    type: pronoun
-    number: singular
-    persone: third
-    case: nominative
-    pronoun-type: personal
+    lemma: "idjio";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    persone: third;
+    case: nominative;
+    pronoun-type: personal;
 }
 "его"[jivo]
 {
-    lemma: "ilulo"
-    real-number: singular
-    type: pronoun
-    number: singular
-    gender: masculine
-    persone: third
-    case: accusative
-    pronoun-type: personal
+    lemma: "ilulo";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    gender: masculine;
+    persone: third;
+    case: accusative;
+    pronoun-type: personal;
 }
 "его"[jivo]
 {
-    transcription: "joho"
-    lemma: "ilulo"
-    real-number: singular
-    type: pronoun
-    persone: third
-    case: possessive
-    pronoun-type: possessive
-    poss-form: conjoint
+    transcription: "joho";
+    lemma: "ilulo";
+    real-number: singular;
+    type: pronoun;
+    persone: third;
+    case: possessive;
+    pronoun-type: possessive;
+    poss-form: conjoint;
 }
-"ее"[jijo]; "её"[jijo]
+"ее"[jijo] "её"[jijo]
 {
-    lemma: "ilino"
-    real-number: singular
-    type: pronoun
-    number: singular
-    gender: feminine
-    persone: third
-    case: accusative
-    pronoun-type: personal
+    lemma: "ilino";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    gender: feminine;
+    persone: third;
+    case: accusative;
+    pronoun-type: personal;
 }
-"ее"[jijo]; "её"[jijo]
+"ее"[jijo] "её"[jijo]
 {
-    lemma: "ilino"
-    real-number: singular
-    type: pronoun
-    persone: third
-    case: possessive
-    pronoun-type: possessive
-    poss-form: conjoint
+    lemma: "ilino";
+    real-number: singular;
+    type: pronoun;
+    persone: third;
+    case: possessive;
+    pronoun-type: possessive;
+    poss-form: conjoint;
 }
 "их"[ix]
 {
-    lemma: "ilio"
-    real-number: plural
-    type: pronoun
-    number: plural
-    persone: third
-    case: accusative
-    pronoun-type: personal
+    lemma: "ilio";
+    real-number: plural;
+    type: pronoun;
+    number: plural;
+    persone: third;
+    case: accusative;
+    pronoun-type: personal;
 }
 "меня"[minʲa]
 {
-    lemma: "imio"
-    real-number: singular
-    type: pronoun
-    number: singular
-    persone: first
-    case: accusative
-    pronoun-type: personal
+    lemma: "imio";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    persone: first;
+    case: accusative;
+    pronoun-type: personal;
 }
 "мы"[me]
 {
-    lemma: "imio"
-    real-number: plural
-    type: pronoun
-    number: plural
-    persone: first
-    case: nominative
-    pronoun-type: personal
+    lemma: "imio";
+    real-number: plural;
+    type: pronoun;
+    number: plural;
+    persone: first;
+    case: nominative;
+    pronoun-type: personal;
 }
 "мой"[moj]
 {
-    lemma: "imio"
-    real-number: singular
-    type: pronoun
-    number: singular
-    gender: masculine
-    persone: first
-    case: possessive
-    pronoun-type: possessive
-    poss-form: conjoint
+    lemma: "imio";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    gender: masculine;
+    persone: first;
+    case: possessive;
+    pronoun-type: possessive;
+    poss-form: conjoint;
 }
-"мое"[majo]; "моё"[majo]
+"мое"[majo] "моё"[majo]
 {
-    lemma: "imio"
-    real-number: singular
-    type: pronoun
-    number: singular
-    gender: lifeless
-    persone: first
-    case: possessive
-    pronoun-type: possessive
-    poss-form: conjoint
+    lemma: "imio";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    gender: lifeless;
+    persone: first;
+    case: possessive;
+    pronoun-type: possessive;
+    poss-form: conjoint;
 }
 "мои"[mai]
 {
-    lemma: "imio"
-    real-number: singular
-    type: pronoun
-    number: plural
-    persone: first
-    case: possessive
-    pronoun-type: possessive
-    poss-form: conjoint
+    lemma: "imio";
+    real-number: singular;
+    type: pronoun;
+    number: plural;
+    persone: first;
+    case: possessive;
+    pronoun-type: possessive;
+    poss-form: conjoint;
 }
 "моя"[maja]
 {
-    lemma: "imio"
-    real-number: singular
-    type: pronoun
-    number: singular
-    gender: feminine
-    persone: first
-    case: possessive
-    pronoun-type: possessive
-    poss-form: conjoint
+    lemma: "imio";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    gender: feminine;
+    persone: first;
+    case: possessive;
+    pronoun-type: possessive;
+    poss-form: conjoint;
 }
 "нас"[nas]
 {
-    lemma: "imio"
-    real-number: plural
-    type: pronoun
-    number: plural
-    persone: first
-    case: accusative
-    pronoun-type: personal
+    lemma: "imio";
+    real-number: plural;
+    type: pronoun;
+    number: plural;
+    persone: first;
+    case: accusative;
+    pronoun-type: personal;
 }
 "наш"[naʃ]
 {
-    lemma: "imio"
-    real-number: plural
-    type: pronoun
-    number: singular
-    gender: masculine
-    persone: first
-    case: possessive
-    pronoun-type: possessive
-    poss-form: conjoint
+    lemma: "imio";
+    real-number: plural;
+    type: pronoun;
+    number: singular;
+    gender: masculine;
+    persone: first;
+    case: possessive;
+    pronoun-type: possessive;
+    poss-form: conjoint;
 }
 "наша"[naʃa]
 {
-    lemma: "imio"
-    real-number: plural
-    type: pronoun
-    number: singular
-    gender: feminine
-    persone: first
-    case: possessive
-    pronoun-type: possessive
-    poss-form: conjoint
+    lemma: "imio";
+    real-number: plural;
+    type: pronoun;
+    number: singular;
+    gender: feminine;
+    persone: first;
+    case: possessive;
+    pronoun-type: possessive;
+    poss-form: conjoint;
 }
 "нашое"[naʃojɛ]
 {
-    lemma: "imio"
-    real-number: plural
-    type: pronoun
-    number: singular
-    gender: lifeless
-    persone: first
-    case: possessive
-    pronoun-type: possessive
-    poss-form: conjoint
+    lemma: "imio";
+    real-number: plural;
+    type: pronoun;
+    number: singular;
+    gender: lifeless;
+    persone: first;
+    case: possessive;
+    pronoun-type: possessive;
+    poss-form: conjoint;
 }
 "наши"[naʃe]
 {
-    lemma: "imio"
-    real-number: plural
-    type: pronoun
-    number: plural
-    persone: first
-    case: possessive
-    pronoun-type: possessive
-    poss-form: conjoint
+    lemma: "imio";
+    real-number: plural;
+    type: pronoun;
+    number: plural;
+    persone: first;
+    case: possessive;
+    pronoun-type: possessive;
+    poss-form: conjoint;
 }
 "твой"[tvoj]
 {
-    lemma: "ivio"
-    real-number: singular
-    type: pronoun
-    number: singular
-    gender: masculine
-    persone: second
-    case: possessive
-    pronoun-type: possessive
-    poss-form: conjoint
+    lemma: "ivio";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    gender: masculine;
+    persone: second;
+    case: possessive;
+    pronoun-type: possessive;
+    poss-form: conjoint;
 }
-"твое"[tvajo]; "твоё"[tvajo]
+"твое"[tvajo] "твоё"[tvajo]
 {
-    lemma: "ivio"
-    real-number: singular
-    type: pronoun
-    number: singular
-    gender: lifeless
-    persone: second
-    case: possessive
-    pronoun-type: possessive
-    poss-form: conjoint
+    lemma: "ivio";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    gender: lifeless;
+    persone: second;
+    case: possessive;
+    pronoun-type: possessive;
+    poss-form: conjoint;
 }
 "твои"[tvai]
 {
-    lemma: "ivio"
-    real-number: singular
-    type: pronoun
-    number: plural
-    persone: second
-    case: possessive
-    pronoun-type: possessive
-    poss-form: conjoint
+    lemma: "ivio";
+    real-number: singular;
+    type: pronoun;
+    number: plural;
+    persone: second;
+    case: possessive;
+    pronoun-type: possessive;
+    poss-form: conjoint;
 }
 "твоя"[tvaja]
 {
-    lemma: "ivio"
-    real-number: singular
-    type: pronoun
-    number: singular
-    gender: feminine
-    persone: second
-    case: possessive
-    pronoun-type: possessive
-    poss-form: conjoint
+    lemma: "ivio";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    gender: feminine;
+    persone: second;
+    case: possessive;
+    pronoun-type: possessive;
+    poss-form: conjoint;
 }
 "ты"[te]
 {
-    lemma: "ivio"
-    real-number: singular
-    type: pronoun
-    number: singular
-    persone: second
-    case: nominative
-    form: informal
-    gender: masculine; feminine
-    pronoun-type: personal
+    lemma: "ivio";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    persone: second;
+    case: nominative;
+    form: informal;
+    gender: masculine feminine;
+    pronoun-type: personal;
 }
 "тебя"[tʲibʲa]
 {
-    lemma: "ivio"
-    real-number: singular
-    type: pronoun
-    number: singular
-    persone: second
-    case: accusative
-    form: informal
-    pronoun-type: personal
-    #difinity: undifinite ######
+    lemma: "ivio";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    persone: second;
+    case: accusative;
+    form: informal;
+    pronoun-type: personal;
+    //difinity: undifinite ////////////;
 }
 "вас"[vas]
 {
-    #lemma: "ivio"
-    real-number: singular
-    type: pronoun
-    number: singular
-    persone: second
-    case: accusative
-    form: formal
-    pronoun-type: personal
+    //lemma: "ivio";
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    persone: second;
+    case: accusative;
+    form: formal;
+    pronoun-type: personal;
 }
 "я"[ja]
 {
-    lemma: "imio" #imio
-    real-number: singular
-    type: pronoun
-    number: singular
-    persone: first
-    case: nominative
-    pronoun-type: personal
-    gender: masculine; feminine
-    #difinity: undifinite ######
+    lemma: "imio"; //imio;
+    real-number: singular;
+    type: pronoun;
+    number: singular;
+    persone: first;
+    case: nominative;
+    pronoun-type: personal;
+    gender: masculine feminine;
+    //difinity: undifinite ////////////;
 }

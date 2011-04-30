@@ -1,259 +1,259 @@
-"john" :: possessive; accusative
+"john" :: possessive accusative
 {
-    transcription: "dʒon"
-    lemma: "ioxanan"
-    tags: english
-    type: noun
-    number: singular
-    gender: masculine
-    persone: third
-    noun-type: proper
-    personal-name: first-name
-    case: nominative
+    transcription: "dʒon";
+    lemma: "ioxanan";
+    tags: english;
+    type: noun;
+    number: singular;
+    gender: masculine;
+    persone: third;
+    noun-type: proper;
+    personal-name: first-name;
+    case: nominative;
 }
-"samuel"[sæmjul] :: possessive; accusative
+"samuel"[sæmjul] :: possessive accusative
 {
-    lemma: "semu'el"
-    tags: english
-    type: noun
-    number: singular
-    gender: masculine
-    persone: third
-    noun-type: proper
-    personal-name: first-name
-    case: nominative
+    lemma: "semu'el";
+    tags: english;
+    type: noun;
+    number: singular;
+    gender: masculine;
+    persone: third;
+    noun-type: proper;
+    personal-name: first-name;
+    case: nominative;
 }
-"ivan" :: possessive; accusative
+"ivan" :: possessive accusative
 {
-    transcription: "ivan"
-    lemma: "ioxanan"
-    tags: ukrainian
-    type: noun
-    number: singular
-    gender: masculine
-    persone: third
-    noun-type: proper
-    personal-name: first-name
-    case: nominative
+    transcription: "ivan";
+    lemma: "ioxanan";
+    tags: ukrainian;
+    type: noun;
+    number: singular;
+    gender: masculine;
+    persone: third;
+    noun-type: proper;
+    personal-name: first-name;
+    case: nominative;
 }
-"zoltan" :: possessive; accusative
+"zoltan" :: possessive accusative
 {
-    transcription: "zoltan"
-    lemma: "zoltan"
-    tags: hungarian
-    type: noun
-    form: formal
-    number: singular
-    gender: masculine
-    persone: third
-    noun-type: proper
-    personal-name: first-name
-    case: nominative
+    transcription: "zoltan";
+    lemma: "zoltan";
+    tags: hungarian;
+    type: noun;
+    form: formal;
+    number: singular;
+    gender: masculine;
+    persone: third;
+    noun-type: proper;
+    personal-name: first-name;
+    case: nominative;
 }
-"zoli" :: possessive; accusative
+"zoli" :: possessive accusative
 {
-    transcription: "zoli"
-    lemma: "zoltan"
-    tags: hungarian
-    type: noun
-    form: informal
-    number: singular
-    gender: masculine
-    persone: third
-    noun-type: proper
-    personal-name: first-name
-    case: nominative
+    transcription: "zoli";
+    lemma: "zoltan";
+    tags: hungarian;
+    type: noun;
+    form: informal;
+    number: singular;
+    gender: masculine;
+    persone: third;
+    noun-type: proper;
+    personal-name: first-name;
+    case: nominative;
 }
-"yuliya"[julija]; "yulia"[julia] :: possessive; accusative
+"yuliya"[julija] "yulia"[julia] :: possessive accusative
 {
-    lemma: "iuli'as"
-    form: formal
-    tags: ukrainian
-    type: noun
-    number: singular
-    gender: masculine
-    persone: third
-    noun-type: proper
-    personal-name: first-name
-    case: nominative
+    lemma: "iuli'as";
+    form: formal;
+    tags: ukrainian;
+    type: noun;
+    number: singular;
+    gender: masculine;
+    persone: third;
+    noun-type: proper;
+    personal-name: first-name;
+    case: nominative;
 }
-"victoria"[vɪktɔriə] :: possessive; accusative
+"victoria"[vɪktɔriə] :: possessive accusative
 {
-    lemma: "viktoriias"
-    form: formal
-    type: noun
-    number: singular
-    gender: masculine
-    persone: third
-    noun-type: proper
-    personal-name: first-name
-    case: nominative
+    lemma: "viktoriias";
+    form: formal;
+    type: noun;
+    number: singular;
+    gender: masculine;
+    persone: third;
+    noun-type: proper;
+    personal-name: first-name;
+    case: nominative;
 }
-"vicki"[vɪki]; "tori"[tɔri] :: possessive; accusative
+"vicki"[vɪki] "tori"[tɔri] :: possessive accusative
 {
-    lemma: "viktoriias"
-    form: informal
-    type: noun
-    number: singular
-    gender: masculine
-    persone: third
-    noun-type: proper
-    personal-name: first-name
-    case: nominative
+    lemma: "viktoriias";
+    form: informal;
+    type: noun;
+    number: singular;
+    gender: masculine;
+    persone: third;
+    noun-type: proper;
+    personal-name: first-name;
+    case: nominative;
 }
-"yulya" :: possessive; accusative
+"yulya" :: possessive accusative
 {
-    transcription: "julʲa"
-    lemma: "iuli'as"
-    form: informal
-    tags: ukrainian
-    type: noun
-    number: singular
-    gender: masculine
-    persone: third
-    noun-type: proper
-    personal-name: first-name
-    case: nominative
+    transcription: "julʲa";
+    lemma: "iuli'as";
+    form: informal;
+    tags: ukrainian;
+    type: noun;
+    number: singular;
+    gender: masculine;
+    persone: third;
+    noun-type: proper;
+    personal-name: first-name;
+    case: nominative;
 }
-"kochan"[kotʃan] :: possessive; accusative
+"kochan"[kotʃan] :: possessive accusative
 {
-    lemma: "kotcan"
-    type: noun
-    number: singular
-    persone: third
-    noun-type: proper
-    personal-name: surname
-    case: nominative
+    lemma: "kotcan";
+    type: noun;
+    number: singular;
+    persone: third;
+    noun-type: proper;
+    personal-name: surname;
+    case: nominative;
 }
-"lokk"[lokk] :: possessive; accusative
+"lokk"[lokk] :: possessive accusative
 {
-    lemma: "lok"
-    type: noun
-    tags: english
-    number: singular
-    persone: third
-    noun-type: proper
-    personal-name: surname
-    case: nominative
+    lemma: "lok";
+    type: noun;
+    tags: english;
+    number: singular;
+    persone: third;
+    noun-type: proper;
+    personal-name: surname;
+    case: nominative;
 }
-"johnson"[dʒɑnsən] :: possessive; accusative
+"johnson"[dʒɑnsən] :: possessive accusative
 {
-    lemma: "djonson"
-    type: noun
-    tags: english
-    number: singular
-    persone: third
-    noun-type: proper
-    personal-name: surname
-    case: nominative
+    lemma: "djonson";
+    type: noun;
+    tags: english;
+    number: singular;
+    persone: third;
+    noun-type: proper;
+    personal-name: surname;
+    case: nominative;
 }
-"smith"[smɪθ] :: possessive; accusative
+"smith"[smɪθ] :: possessive accusative
 {
-    lemma: "smit"
-    type: noun
-    tags: english
-    number: singular
-    persone: third
-    noun-type: proper
-    personal-name: surname
-    case: nominative
+    lemma: "smit";
+    type: noun;
+    tags: english;
+    number: singular;
+    persone: third;
+    noun-type: proper;
+    personal-name: surname;
+    case: nominative;
 }
-#
-# Geographical names
-#
-"uzhhorod" :: possessive; accusative
+//
+// Geographical names
+//
+"uzhhorod" :: possessive accusative
 {
-    transcription: "uʒhorod"
-    lemma: ".UJhorod"
-    real-number: singular
-    tags: ukrainian
-    type: noun
-    number: singular
-    gender: lifeless
-    persone: third
-    noun-type: proper
-    case: nominative
+    transcription: "uʒhorod";
+    lemma: ".UJhorod";
+    real-number: singular;
+    tags: ukrainian;
+    type: noun;
+    number: singular;
+    gender: lifeless;
+    persone: third;
+    noun-type: proper;
+    case: nominative;
 }
-"budapest"[budəpɛst] :: possessive; accusative
+"budapest"[budəpɛst] :: possessive accusative
 {
-    lemma: "BUdapect"
-    real-number: singular
-    type: noun
-    number: singular
-    gender: lifeless
-    persone: third
-    noun-type: proper
-    case: nominative
+    lemma: "BUdapect";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    gender: lifeless;
+    persone: third;
+    noun-type: proper;
+    case: nominative;
 }
-"kyiv"[keiv] :: possessive; accusative
+"kyiv"[keiv] :: possessive accusative
 {
-    lemma: "kiiev"
-    real-number: singular
-    type: noun
-    tags: ukrainian
-    number: singular
-    gender: lifeless
-    persone: third
-    noun-type: proper
-    case: nominative
+    lemma: "kiiev";
+    real-number: singular;
+    type: noun;
+    tags: ukrainian;
+    number: singular;
+    gender: lifeless;
+    persone: third;
+    noun-type: proper;
+    case: nominative;
 }
-"kiev"[kiɛv] :: possessive; accusative
+"kiev"[kiɛv] :: possessive accusative
 {
-    lemma: "kiiev"
-    real-number: singular
-    type: noun
-    tags: russian
-    number: singular
-    gender: lifeless
-    persone: third
-    noun-type: proper
-    case: nominative
+    lemma: "kiiev";
+    real-number: singular;
+    type: noun;
+    tags: russian;
+    number: singular;
+    gender: lifeless;
+    persone: third;
+    noun-type: proper;
+    case: nominative;
 }
-"london"[ləndən] :: possessive; accusative
+"london"[ləndən] :: possessive accusative
 {
-    lemma: "lyndyn"
-    real-number: singular
-    type: noun
-    tags: russian
-    number: singular
-    gender: lifeless
-    persone: third
-    noun-type: proper
-    case: nominative
+    lemma: "lyndyn";
+    real-number: singular;
+    type: noun;
+    tags: russian;
+    number: singular;
+    gender: lifeless;
+    persone: third;
+    noun-type: proper;
+    case: nominative;
 }
-"moscow"[mɑsko] :: possessive; accusative
+"moscow"[mɑsko] :: possessive accusative
 {
-    lemma: "moskov"
-    real-number: singular
-    type: noun
-    tags: russian
-    number: singular
-    gender: lifeless
-    persone: third
-    noun-type: proper
-    case: nominative
+    lemma: "moskov";
+    real-number: singular;
+    type: noun;
+    tags: russian;
+    number: singular;
+    gender: lifeless;
+    persone: third;
+    noun-type: proper;
+    case: nominative;
 }
 "new york"[nu jɔrk]
 {
-    lemma: "nu,IORK"
-    real-number: singular
-    type: noun
-    tags: russian
-    number: singular
-    gender: lifeless
-    persone: third
-    noun-type: proper
-    case: nominative
+    lemma: "nu,IORK";
+    real-number: singular;
+    type: noun;
+    tags: russian;
+    number: singular;
+    gender: lifeless;
+    persone: third;
+    noun-type: proper;
+    case: nominative;
 }
 "berlin"[bərlɪn]
 {
-    lemma: "byLIN"
-    real-number: singular
-    type: noun
-    tags: russian
-    number: singular
-    gender: lifeless
-    persone: third
-    noun-type: proper
-    case: nominative
+    lemma: "byLIN";
+    real-number: singular;
+    type: noun;
+    tags: russian;
+    number: singular;
+    gender: lifeless;
+    persone: third;
+    noun-type: proper;
+    case: nominative;
 }

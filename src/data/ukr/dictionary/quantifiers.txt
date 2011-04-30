@@ -1,80 +1,80 @@
-#ukrainian dictionary v0.0.1
+//ukrainian dictionary v0.0.1;
 "багато"[bahato]
 {
-    type: quantifier
-    real-number: plural
-    quantity: many
-    number: plural
-    case: nominative
-    quantity-number: plural
-    quantity-case: accusative
-    difinity: undifinite
+    type: quantifier;
+    real-number: plural;
+    quantity: many;
+    number: plural;
+    case: nominative;
+    quantity-number: plural;
+    quantity-case: accusative;
+    difinity: undifinite;
 }
 "багатьох"[bahatʲox]
 {
-    type: quantifier
-    real-number: plural
-    quantity: many
-    number: plural
-    case: accusative; possessive
-    quantity-number: plural
-    quantity-case: accusative
-    difinity: undifinite
+    type: quantifier;
+    real-number: plural;
+    quantity: many;
+    number: plural;
+    case: accusative possessive;
+    quantity-number: plural;
+    quantity-case: accusative;
+    difinity: undifinite;
 }
 "декілька"[dɛkilʲka]
 {
-    type: quantifier
-    real-number: plural
-    quantity: few
-    number: plural
-    case: nominative
-    quantity-number: plural
-    quantity-case: accusative
-    difinity: undifinite
+    type: quantifier;
+    real-number: plural;
+    quantity: few;
+    number: plural;
+    case: nominative;
+    quantity-number: plural;
+    quantity-case: accusative;
+    difinity: undifinite;
 }
 "декількох"[dɛkilʲkox]
 {
-    type: quantifier
-    real-number: plural
-    quantity: few
-    number: plural
-    case: accusative; possessive
-    quantity-number: plural
-    quantity-case: accusative
-    difinity: undifinite
+    type: quantifier;
+    real-number: plural;
+    quantity: few;
+    number: plural;
+    case: accusative possessive;
+    quantity-number: plural;
+    quantity-case: accusative;
+    difinity: undifinite;
 }
-"всі"[vsi]; "усі"[usi]
+"всі"[vsi] "усі"[usi]
 {
-    type: quantifier
-    real-number: plural
-    quantity: all
-    number: plural
-    case: nominative
-    quantity-number: plural
-    quantity-case: nominative
-    difinity: difinite
+    type: quantifier;
+    real-number: plural;
+    quantity: all;
+    number: plural;
+    case: nominative;
+    quantity-number: plural;
+    quantity-case: nominative;
+    difinity: difinite;
 }
 "кожний" :: all-adj-cases-1
 {
-    transcription: "koʒnej"
-    type: quantifier
-    real-number: singular
-    quantity: all
-    number: singular
-    gender: masculine
-    case: nominative
-    quantity-number: singular
-    quantity-case: nominative
-    difinity: undifinite
+    transcription: "koʒnej";
+    type: quantifier;
+    real-number: singular;
+    quantity: all;
+    number: singular;
+    gender: masculine;
+    case: nominative;
+    quantity-number: singular;
+    quantity-case: nominative;
+    difinity: undifinite;
 }
 "кожен"
 {
-    transcription: "koʒɛn"
-    type: quantifier
-    quantity: all
-    number: singular
-    gender: masculine
-    case: nominative
-    quantity-case: nominative
-    difinity: undifinite
+    transcription: "koʒɛn";
+    type: quantifier;
+    quantity: all;
+    number: singular;
+    gender: masculine;
+    case: nominative;
+    quantity-case: nominative;
+    difinity: undifinite;
 }

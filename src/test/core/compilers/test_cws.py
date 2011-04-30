@@ -12,25 +12,25 @@ class CwsTestCase(unittest.TestCase):
             '''
             "alpha"
             {
-                number: singular
-                gender: masculine; feminine
+                number: singular;
+                gender: masculine feminine;
             }
             ''',
             '''
             betta
             {
-                case: accusative; nominative
+                case: accusative nominative;
             }
-            "echo"[exo]; "delta" :: betta
+            "echo"[exo] "delta" :: betta
             {
-                real-number: dual
+                real-number: dual;
             }
             ''',
             '''
             "dog"[dog]
             {
-                tags: slang; ukrainian, russian
-                type: noun
+                tags: slang ukrainian, russian;
+                type: noun;
             }
             '''
         ]
@@ -43,25 +43,35 @@ class CwsTestCase(unittest.TestCase):
             '''
             "alpha""
             {
-                number: singular
-                gender: masculine; feminine
+                number: singular;
+                gender: masculine feminine;
             }
             ''',
             '''
             betta
             {
-                ca-se: accusative; nominative
+                case: accusative nominative;
             }
-            "echo"[exo] "delta" :: betta
+            "echo"[exo] "delta" :: bett-a
             {
-                real-number: dual
+                real-number: dual;
             }
             ''',
+#            '''
+#            betta
+#            {
+#                ca-se: accusative nominative;
+#            }
+#            "echo"[exo] "delta" :: betta
+#            {
+#                real-number: dual;
+#            }
+#            ''',
             '''
             "dog"[dog]
             {
-                tags: slang; ukrainian, russian
-                type: nounl
+                tags: slang ukrainian, russian;
+                type: nounl;
             }
             '''
         ]
