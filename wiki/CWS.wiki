@@ -11,15 +11,15 @@ CWS looks like CSS:
 {{{
 "brother"[brəðər]
 {
-    lemma: "bruna"
-    stem: "bruna.brother"
-    real-number: singular
-    type: noun
-    number: singular
-    gender: masculine
-    persone: third
-    noun-type: common
-    case: nominative
+    lemma: "bruna";
+    stem: "bruna.brother";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    gender: masculine;
+    persone: third;
+    noun-type: common;
+    case: nominative;
 }
 }}}
 I guess only three attributes need explanation here: lemma, stem and real-number.
