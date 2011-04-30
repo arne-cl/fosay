@@ -1,7 +1,5 @@
-"húg"
+"húg"[hug]
 {
-    transcription: "hug";
-    lemma: "mensi";
     stem: "mensi.húg";
     real-number: singular;
     type: noun;
@@ -12,10 +10,8 @@
     case-2: nominative;
     noun-type: common;
 }
-"báty"
+"báty"[batʲ]
 {
-    transcription: "batʲ";
-    lemma: "bruna";
     stem: "bruna.báty";
     real-number: singular;
     form: formal;
@@ -26,10 +22,8 @@
     case-2: nominative;
     noun-type: common;
 }
-"testvér"
+"testvér"[tɛʃtver]
 {
-    transcription: "tɛʃtver";
-    lemma: "tunba";
     stem: "tunba.testvér";
     real-number: singular;
     form: formal;
@@ -40,87 +34,80 @@
     case-2: nominative;
     noun-type: common;
 }
-"lány" :: all-cases-3
+"lány"[lanʲ] :: all-cases-3
 {
-    transcription: "lanʲ";
-    lemma: "nixli";
     stem: "nixli.lány";
-    real-number: singular;
     form: formal;
-    type: noun;
+    real-number: singular;
+    noun-type: common;
+
     number: singular;
+    type: noun;
     persone: third;
     case: nominative;
     case-2: nominative;
-    noun-type: common;
 }
-"fiú" :: all-cases-2
+"fiú"[fiju] :: all-cases-2
 {
-    transcription: "fiju";
-    lemma: "nanla";
     stem: "nanla.fiú";
     real-number: singular;
     form: formal;
+    noun-type: common;
+
     type: noun;
     number: singular;
     persone: third;
     case: nominative;
     case-2: nominative;
-    noun-type: common;
 }
-"fiúcska"
+"fiúcska"[fijutʃkɒ]
 {
-    transcription: "fijutʃkɒ";
-    lemma: "nanla";
-    stem: "nanla.fiúcska";
+    stem: "nanla.fiú";
     real-number: singular;
     form: informal;
+    noun-type: common;
     type: noun;
     number: singular;
     persone: third;
     case: nominative;
     case-2: nominative;
-    noun-type: common;
 }
-"nő" :: all-cases-4
+"nő"[nø] :: all-cases-4
 {
-    transcription: "nøt";
-    lemma: "ninmu";
     stem: "ninmu.nő";
     real-number: singular;
     type: noun;
     form: formal;
+    noun-type: common;
+
     number: singular;
     persone: third;
     case: nominative;
     case-2: nominative;
-    noun-type: common;
 }
-"ház" :: all-cases-1 possessed-1
+"ház"[haz] :: all-cases-1 possessed-1
 {
-    transcription: "haz";
-    lemma: "zdani";
     stem: "zdani.ház";
     real-number: singular;
     type: noun;
     form: formal;
+    noun-type: common;
+
     number: singular;
     persone: third;
     case: nominative;
     case-2: nominative;
-    noun-type: common;
 }
-"tanár" :: all-cases-3
+"tanár"[tɒnar] :: all-cases-3
 {
-    transcription: "tɒnar";
-    lemma: "ctuca";
     stem: "ctuca.tanár";
     real-number: singular;
     type: noun;
     form: formal;
+    noun-type: common;
+
     number: singular;
     persone: third;
     case: nominative;
     case-2: nominative;
-    noun-type: common;
 }
