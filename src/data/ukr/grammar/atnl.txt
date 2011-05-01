@@ -52,7 +52,7 @@ prcl :-
     subj<subj-att>
     $vp<vp-att>
     [obj]
-    [time]
+    [time<tense>]
     [allobj]
     [inobj]
     [illobj]

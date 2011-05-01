@@ -50,16 +50,16 @@ for sn, ln in load_languages():
 #
 #def save_words(file_name, lang):
 #    f = open(str(os.path.dirname(sys.argv[0])) + "\\data\\" + file_name + "\\temp.txt", mode='w', encoding = 'utf-8')
-#    ww = [w for w in lang.vocabulary]
-#    #ww = [w + " " + str(len(lang.vocabulary[w])) + " " + str([x.descr() for x in lang.vocabulary[w]]) for w in lang.vocabulary]
+#    #ww = [w for w in lang.vocabulary]
+#    ww = [w + " " + str(len(lang.vocabulary[w])) + " " + str([x.descr() for x in lang.vocabulary[w]]) for w in lang.vocabulary]
 #    ww.sort()
 #    for w in ww:
 #        f.write(w + "\n") #, ukr.vocabulary[w][0].meaning
 #    f.close()
 #
-#save_words("hun", hun)
-#save_words("eng", eng)
-#save_words("ukr", ukr)
+#save_words("hun", langs["hun"])
+#save_words("eng", langs["eng"])
+#save_words("ukr", langs["ukr"])
 #########################################################################################################################
 #########################################################################################################################
 #########################################################################################################################
@@ -144,7 +144,10 @@ class TranslatorFrame(ttk.Frame):
         self.target_text.config(state=NORMAL)
         self.target_text.delete('1.0', 'end')
         if self.target_combo_box.get() == "*caseframe":
-            s = interlingua_to_str(text_to_interlingua(text, first, srclan)[0])
+            tr = text_to_interlingua(text, first, srclan)
+            s = ''
+            for item in tr:
+                s += interlingua_to_str(item) + '\n' + '-'*50 + '\n'
             self.target_text.insert('end', s)
         else:
             trglan = langs[short_name[self.target_combo_box.get()]]
