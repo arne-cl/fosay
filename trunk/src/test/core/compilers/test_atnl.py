@@ -18,22 +18,22 @@ class AtnlTestCase(unittest.TestCase):
     def test_atnl(self):
         tests = [
             """
-            np is noun-phrase
-            N is noun
+            np is noun-phrase;
+            N is noun;
             np :-
-                $N
+                $N;
             """,
             """
-            np is noun-phrase
-            N is noun
+            np is noun-phrase;
+            N is noun;
             np :-
-                $N<number, $case->gender>
+                $N<number, $case->gender>;
             """,
             """
-            np is noun-phrase
-            N is noun
+            np is noun-phrase;
+            N is noun;
             np :-
-                $N<number, case->gender>{gender: feminine}
+                $N<number, case->gender>{gender: feminine};
             """,
         ]
         for txt in tests:
@@ -42,52 +42,52 @@ class AtnlTestCase(unittest.TestCase):
     def test_atnl_errors(self):
         tests = [
             """
-            np is noun-phrase
-            N is noun
+            np is noun-phrase;
+            N is noun;
             np :-
-                $N<number, $caste->gender>
+                $N<number, $caste->gender>;
             """,
             """
-            np is noun-phrase
-            N is noun
+            np is noun-phrase;
+            N is noun;
             np :-
-                $N<number, case->gender>{gender: fkeminine}
+                $N<number, case->gender>{gender: fkeminine};
             """,
             """
-            np is noun-phrase
-            N is noun
+            np is noun-phrase;
+            N is noun;
             np :-
-                $N<number, case->gender>{geonder: feminine}
+                $N<number, case->gender>{geonder: feminine};
             """,
             """
-            np is noun-phrase
-            N is noun
+            np is noun-phrase;
+            N is noun;
             np :-
-                $Nbb<number, case->gender>{geonder: feminine}
+                $Nbb<number, case->gender>{geonder: feminine};
             """,
             """
-            np is noun-phrase
-            N is noun
+            np is noun-phrase;
+            N is noun;
             npb :-
-                $N<number, case->gender>{gender: feminine}
+                $N<number, case->gender>{gender: feminine};
             """,
             """
-            np is noun-phrase
-            N is noun
+            np is noun-phrase;
+            N is noun;
             n--p :-
-                $N<8number, case->gender>{gender: feminine}
+                $N<8number, case->gender>{gender: feminine};
             """,
             """
-            np is noun-phrase
-            N is noun
+            np is noun-phrase;
+            N is noun;
             np :-
-                $N<num---ber, case->gender>{gender: feminine}
+                $N<num---ber, case->gender>{gender: feminine};
             """,
             """
-            np is noun-phrase
-            N is noun
+            np is noun-phrase;
+            N is noun;
             np :-
-                $N<number, case->gender>{gender: ".uioou}
+                $N<number, case->gender>{gender: ".uioou};
             """,
         ]
         for txt in tests:

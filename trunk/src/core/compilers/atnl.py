@@ -73,7 +73,6 @@ tokens = [
     "STRING",
     "ASSIGN_RULE",
     "ASSIGN_CONST",
-    "NEWLINE",
     "LANY",
     "RANY",
     "FLOAT",
@@ -121,11 +120,15 @@ def t_FLOAT(t):
     t.value = float(t.value)
     return t
 
-def t_NEWLINE(t):
-    r'(\#.*)?\n'
-    #t.lexer.lineno += len(t.value)
-    t.lexer.lineno += 1
-    return t
+# Comment
+def t_COMMENT(t):
+    r'(/\*(.|\n)*?\*/)|(//.*?\n)'
+    t.lexer.lineno += t.value.count("\n")
+    pass
+
+def t_newline(t):
+    r'\n+'
+    t.lexer.lineno += len(t.value)
 
 # Error handling rule
 def t_error(t):
@@ -137,7 +140,6 @@ def t_error(t):
         print_error(-1, -1, "Illegal character")
 
 precedence = (
-    ('left', 'NEWLINE'),
     ('right',
         'CONJ_IDENTIFIER',
         'DOLLAR_IDENTIFIER',
@@ -165,11 +167,6 @@ label = ""
 consts = {}
 label_types = {}
 
-def p_grammar(p):
-    '''grammar : rules
-               | newlines rules'''
-
-
 def p_rules(p):
     '''rules : rule
              | assignment
@@ -178,10 +175,7 @@ def p_rules(p):
              | rules rule
              | rules assignment
              | rules priority
-             | rules is_type
-
-             | assignment newlines
-             | rules assignment newlines'''
+             | rules is_type'''
 
 #-------------------------------------------------------------------------------
 # Identifiers
@@ -234,21 +228,21 @@ def p_invalid_string(p):
 # is_type rules
 #-------------------------------------------------------------------------------
 def p_is_type(p):
-    '''is_type : identifier identifier rule_name_simple
-               | identifier identifier rule_name_complex'''
+    '''is_type : identifier identifier rule_name_simple ";"
+               | identifier identifier rule_name_complex ";"'''
     if p[2] != 'is':
         AtnlSyntaxError("'%s' is an invalid keyword", p, 2, p[2])
     global label_types, standard_attr
     label_types[p[1]], standard_attr[p[1]] = p[3]
 
 def p_rule_name_simple(p):
-    '''rule_name_simple : identifier newlines'''
+    '''rule_name_simple : identifier'''
     if not p[1] in const.type:
         AtnlSyntaxError(ERROR_INVALID_TYPE, p, 1, p[1])
     p[0] = (const.type[p[1]], [])
 
 def p_rule_name_complex(p):
-    '''rule_name_complex : identifier "{" attributes "}" newlines'''
+    '''rule_name_complex : identifier "{" attributes "}"'''
     if not p[1] in const.type:
         AtnlSyntaxError(ERROR_INVALID_TYPE, p, 1, p[1])
     p[0] = (const.type[p[1]], p[3])
@@ -257,9 +251,9 @@ def p_rule_name_complex(p):
 # Priority rules
 #-------------------------------------------------------------------------------
 def p_priority(p):
-    '''priority : priority_header NEWLINE priority_expressions newlines'''
+    '''priority : priority_header priority_expressions ";"'''
     global prior
-    prior = update_dict(prior, {p[1]: p[3]})
+    prior = update_dict(prior, {p[1]: p[2]})
 
 def p_priority_header(p):
     '''priority_header : identifier ASSIGN_PRIOR'''
@@ -275,8 +269,8 @@ def p_priority_expression_single(p):
     p[0] = [p[1]]
 
 def p_priority_expression_few(p):
-    '''priority_expression_few : priority_expressions NEWLINE priority_expression_single'''
-    p[0] = p[1] + p[3]
+    '''priority_expression_few : priority_expressions priority_expression_single'''
+    p[0] = p[1] + p[2]
 
 def p_priority_expression(p):
     '''priority_expression : FLOAT ":" identifiers'''
@@ -308,7 +302,7 @@ def p_ident_clue(p):
 # Constant rules
 #-------------------------------------------------------------------------------
 def p_assignment(p):
-    '''assignment : identifier ASSIGN_CONST attaches'''
+    '''assignment : identifier ASSIGN_CONST attaches ";"'''
     global consts
     consts[p[1]] = p[3]
 
@@ -327,36 +321,34 @@ def add_up_attributes(rp, terms):
     return terms
 
 def p_rule(p):
-    '''rule : full_rule
-            | conj_rule'''
+    '''rule : full_rule ";"
+            | conj_rule ";"'''
     p[0] = p[1]
 
 def p_conj_rule(p):
-    '''conj_rule : CONJ_IDENTIFIER ASSIGN_RULE newlines conj_sub newlines'''
+    '''conj_rule : CONJ_IDENTIFIER ASSIGN_RULE conj_sub'''
     label = p[1][1:]
     global atn
     if const.STATE_CONJ_A1 in atn[label]:
         raise AtnlSyntaxError(ERROR_CONJ, p, 1, label)
-    if p[4][0] != label:
+    if p[3][0] != label:
         raise AtnlSyntaxError(ERROR_CONJ_SUB, p, 1, label)
-    atn[label] = with_conj(label, p[4][1], atn[label])
+    atn[label] = with_conj(label, p[3][1], atn[label])
 
 def p_conj_sub(p):
     '''conj_sub : DOLLAR_IDENTIFIER "<" attaches ">"'''
     p[0] = (p[1][1:], p[3])
 
 def p_full_rule(p):
-    '''full_rule : rule_params ASSIGN_RULE newlines terms newlines
-                 | rule_params ASSIGN_RULE newlines terms'''
+    '''full_rule : rule_params ASSIGN_RULE terms'''
     global atn
-    if len(p) in [5, 6]:
-        pars = p[1]
-        terms = add_up_attributes(pars, p[4])
-        label = pars[0]
-        if label in atn:
-            atn[label] = unite(atn[label], terms)
-        else:
-            atn[label] = terms
+    pars = p[1]
+    terms = add_up_attributes(pars, p[3])
+    label = pars[0]
+    if label in atn:
+        atn[label] = unite(atn[label], terms)
+    else:
+        atn[label] = terms
 
 def p_rule_params(p):
     '''rule_params : rule_params_empty
@@ -452,33 +444,21 @@ def p_terms(p):
 def p_term_1(p):
     '''term_1 : term_str
               | terms_not_required
-              | terms_any
-              | terms_any_nl
-              | terms_not_required_nl'''
+              | terms_any'''
     p[0] = p[1]
 
 def p_terms_clue(p):
-    '''terms_clue : terms NEWLINE term_1'''
-    p[0] = concat(p[1], p[3])
+    '''terms_clue : terms term_1'''
+    p[0] = concat(p[1], p[2])
 
 def p_terms_not_required(p):
     '''terms_not_required : "[" terms "]"'''
     addjump(p[2])
     p[0] = p[2]
 
-def p_terms_not_required_nl(p):
-    '''terms_not_required_nl : "[" NEWLINE terms NEWLINE "]"'''
-    addjump(p[3])
-    p[0] = p[3]
-
 def p_terms_any(p):
     '''terms_any : LANY terms RANY'''
     ob, op = div_to_op(p[2])
-    p[0] = any_sequence(ob, op, MAXOP)
-
-def p_terms_any_nl(p):
-    '''terms_any_nl : LANY NEWLINE terms NEWLINE RANY'''
-    ob, op = div_to_op(p[3])
     p[0] = any_sequence(ob, op, MAXOP)
 
 def p_term_str(p):
@@ -660,10 +640,6 @@ def p_pair_complex_fixed(p):
 # Common rules
 #-------------------------------------------------------------------------------
 
-def p_newlines(p):
-    '''newlines : NEWLINE
-                | newlines NEWLINE'''
-
 def p_error(p):
     if not PRINT_TO_CONSOLE: return
     try:
@@ -771,16 +747,7 @@ def parse(s, print_to_console=True):
 def _read_file(file_path):
     try:
         f = open(file_path, encoding = 'utf-8')
-        s = [x.split('#')[0].strip() for x in f.readlines()]
-        i = 0
-        while i < len(s):
-            if len(s[i]) == 0:
-                del s[i]
-            elif s[i][-1] != '\\':
-                i += 1
-            else:
-                s[i] = s[i][:-1] + ' ' + s[i + 1]
-                del s[i + 1]
+        s = f.read()
     except IOError:
         print("can't open file '" + os.path.join(self.path, file_path) + "'")
     finally:
@@ -790,11 +757,4 @@ def _read_file(file_path):
 def parse_file(_path, print_to_console=True):
     global path
     path = _path
-    f = _read_file(path)
-    #print(f)
-    lines = []
-    for line in f:
-        lines += [line] if line.find(':-') == -1 else ["\n" + line]
-    s = "\n".join(lines) + "\n" ##
-    #print(s)
-    return _parse_text(s, print_to_console)
+    return _parse_text(_read_file(path), print_to_console)
