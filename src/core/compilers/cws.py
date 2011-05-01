@@ -661,10 +661,6 @@ def p_error(p):
             print_error(p.lineno, find_column(p.lexpos), "Syntax error")
     raise Exception()
 
-#def p_newlines(p):
-#    '''newlines : NEWLINE
-#                | newlines NEWLINE'''
-
 yaccer = yacc.yacc()
 
 path = None

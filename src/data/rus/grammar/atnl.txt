@@ -1,50 +1,50 @@
-subj-att := gender, number, persone, form
-vp-att := gender, number, tense, persone, mood, aspect, form
-np-att := case, gender, number, persone, form
-ap-att := case, gender, number, persone, extra-1
-N-att := case, gender, number, persone, extra-1
-PRON-att := case, gender, number, persone, form
-V-att := gender, number, tense, aspect, persone, mood, participle, form
-ADJ-att := case, gender, number, extra-1
-PRON-empty-att := case, real-number -> number, persone, form
+subj-att := gender, number, persone, form;
+vp-att := gender, number, tense, persone, mood, aspect, form;
+np-att := case, gender, number, persone, form;
+ap-att := case, gender, number, persone, extra-1;
+N-att := case, gender, number, persone, extra-1;
+PRON-att := case, gender, number, persone, form;
+V-att := gender, number, tense, aspect, persone, mood, participle, form;
+ADJ-att := case, gender, number, extra-1;
+PRON-empty-att := case, real-number -> number, persone, form;
 
-PUNCT is punctuation
-ADJ is adjective
-ADV is adverb
-V is verb
-P is preposition
-PRON is pronoun
-ART is article
-QUA is quantifier
-N is noun
-NUM is numeral
-NOT is negative
-ip is sentence
-subj is subject
-np1 is noun-phrase
-np is noun-phrase
-ap is epithet
-time is time
-vp is verb-phrase
-vp1 is verb-phrase
-vp2 is verb-phrase
-inobj is object{case: inessive}
-illobj is object{case: illative}
-elobj is object{case: elative}
-obj is object{case: accusative}
-cpo is object{case: accusative}
-poss is object{case: possessive}
-poss1 is object{case: possessive}
-pp is preposition-phrase
-prcl is clause
-subcl is clause
-nump is numeral-phrase
-FN is noun{personal-name: first-name}
-SN is noun{personal-name: surname}
+PUNCT is punctuation;
+ADJ is adjective;
+ADV is adverb;
+V is verb;
+P is preposition;
+PRON is pronoun;
+ART is article;
+QUA is quantifier;
+N is noun;
+NUM is numeral;
+NOT is negative;
+ip is sentence;
+subj is subject;
+np1 is noun-phrase;
+np is noun-phrase;
+ap is epithet;
+time is time;
+vp is verb-phrase;
+vp1 is verb-phrase;
+vp2 is verb-phrase;
+inobj is object{case: inessive};
+illobj is object{case: illative};
+elobj is object{case: elative};
+obj is object{case: accusative};
+cpo is object{case: accusative};
+poss is object{case: possessive};
+poss1 is object{case: possessive};
+pp is preposition-phrase;
+prcl is clause;
+subcl is clause;
+nump is numeral-phrase;
+FN is noun{personal-name: first-name};
+SN is noun{personal-name: surname};
 
 ip :-
     $prcl
-    PUNCT{lemma: "."}
+    PUNCT{lemma: "."};
 
 prcl :-
     (
@@ -55,84 +55,84 @@ prcl :-
     [inobj]
     [illobj]
     [elobj]
-    )
+    );
 
 prcl :-
     .subj<subj-att>
     $vp<vp-att>
-    [obj]
+    [obj];
 
 .subj :-
-    $.np<np-att>{case: nominative}
+    $.np<np-att>{case: nominative};
 
 .np :-
-    $.PRON<PRON-empty-att>
+    $.PRON<PRON-empty-att>;
 
 time :-
-    $ADV<tense>{adverb-type: time}
+    $ADV<tense>{adverb-type: time};
 
 subj :-
-    $np<np-att>{case: nominative}
+    $np<np-att>{case: nominative};
 
 obj :-
-    $np<np-att>{case: accusative}
+    $np<np-att>{case: accusative};
 
 inobj :-
     P<$case>{case: inessive}
-    $np{case: inessive}
+    $np{case: inessive};
 
 illobj :-
     P<$case>{case: illative}
-    $np{case: illative}
+    $np{case: illative};
 
 elobj :-
     P<$case>{case: elative}
-    $np{case: possessive}
+    $np{case: possessive};
 
 pp :-
     P<$case>
-    $np<case>
+    $np<case>;
 
 vp{truth: 1.0} :-
-    $V<V-att>
+    $V<V-att>;
 
 ap :-
-    $ADJ<ADJ-att>
+    $ADJ<ADJ-att>;
 
 &ap :-
-    $ap<ap-att>
+    $ap<ap-att>;
 
 poss :-
-    $np<case>{case: possessive}
+    $np<case>{case: possessive};
 
 np :-
-    $PRON<PRON-att>{pronoun-type: personal}
+    $PRON<PRON-att>{pronoun-type: personal};
 
 np :-
     poss
-    $np<N-att>
+    $np<N-att>;
 
 np :-
     $np<N-att>
-    poss
+    poss;
 
 np{quantity: none} :-
     [ap<ap-att>]
-    $N<$N-att> ###
+    $N<$N-att>; //////;
 
 np :-
     QUA<$quantity, $number, $quantity-number, $quantity-case, $case, $difinity, ap-att>
     [ap<gender, number -> quantity-number, extra-1, case -> quantity-case>]
-    $N<$gender, $persone, $extra-1, case -> quantity-case, number -> quantity-number>
+    $N<$gender, $persone, $extra-1, case -> quantity-case, number -> quantity-number>;
 
 np{quantity: none; difinity: difinite; number: singular; noun-type: proper; persone: third} :-
     (
     $FN<case, gender>
     $SN<case, gender>
-    )
+    );
 
 &np :-
-    $np<np-att>
+    $np<np-att>;
 
 prcl ::=
     1.0: subj vp
@@ -142,8 +142,8 @@ prcl ::=
     1.0: subj vp inobj
     1.0: subj vp inobj obj
     1.0: time subj vp inobj
-    1.0: time subj vp inobj obj
+    1.0: time subj vp inobj obj;
 
 np ::=
     1.0: np poss
-    1.0: SN FN
+    1.0: SN FN;
