@@ -273,12 +273,6 @@ co-p
 :: pa-sl { sufix: "ло" }
 :: pa-p  { sufix: "ли" }
 
-.past-verb-forms-kupyty
-:: pa-sm { sufix: "ив"  }
-:: pa-sf { sufix: "ила" }
-:: pa-sl { sufix: "ило" }
-:: pa-p  { sufix: "или" }
-
 .past-verb-forms-kupljaty
 :: pa-sm { sufix: "в"  }
 :: pa-sf { sufix: "ла" }
@@ -344,12 +338,6 @@ co-p
 :: co-sf { sufix: "ла б" }
 :: co-sl { sufix: "ло б" }
 :: co-p  { sufix: "ли б" }
-
-.conditional-verb-forms-kupyty
-:: co-sm { sufix: "ив би" }
-:: co-sf { sufix: "ила б" }
-:: co-sl { sufix: "ило б" }
-:: co-p  { sufix: "или б" }
 
 .conditional-verb-forms-kupljaty
 :: co-sm { sufix: "в би" }
@@ -429,6 +417,7 @@ co-p
 }
 
 .verb-forms-kupljaty ::
+    infinitive-ty
     past-verb-forms-kupljaty 
     past-verb-forms-kupljaty(verb-perfect-present-po) 
     present-verb-forms-kupljaty 
@@ -436,16 +425,19 @@ co-p
     future-verb-forms-kupljaty 
     conditional-verb-forms-kupljaty
 {
+    type: verb;
 }
 
 .verb-forms-kupyty ::
-    past-verb-forms-kupyty 
-    past-verb-forms-kupyty(verb-perfect-present-po) 
+    infinitive-yty
+    past-verb-forms-yla
+    past-verb-forms-yla(verb-perfect-present-po)
     present-verb-forms-kupyty 
     present-verb-forms-kupyty(verb-perfect-future-po) 
     future-verb-forms-kupyty 
-    conditional-verb-forms-kupyty
+    conditional-verb-forms-yla
 {
+    type: verb;
 }
 
 .verbs-2 ::

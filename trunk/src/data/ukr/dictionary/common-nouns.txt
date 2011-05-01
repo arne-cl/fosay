@@ -39,17 +39,11 @@
     case: inessive possessive;
     noun-type: common;
 }
-"вчитель"[vtʃetɛlʲ]
-"учитель"[utʃetɛlʲ] :: cases-1 plural-cases-5
+."вчител"
+."учител" :: noun-cases-1
 {
-    lemma: "ctuca";
     stem: "ctuca.вчитель";
-    real-number: singular;
-    type: noun;
-    number: singular;
-    gender: masculine;
-    persone: third;
-    case: nominative;
+    noun-type: common;
 }
 "учень"[utʃenʲ]
 {
@@ -101,17 +95,10 @@
     case: nominative;
     noun-type: common;
 }
-"дівчина" :: cases-2
+."дівчин" :: cases-2
 {
-    transcription: "dʲivtʃena";
-    lemma: "nixli";
     stem: "nixli.дівчина";
-    real-number: singular;
-    type: noun;
-    number: singular;
     gender: feminine;
-    persone: third;
-    case: nominative;
     noun-type: common;
     extra-1: 1;
 }
@@ -157,68 +144,22 @@
     case: nominative;
     noun-type: common;
 }
-"жінка" :: all-cases-3
+."жін" :: noun-cases-3
 {
-    transcription: "ʒinka";
-    lemma: "ninmu";
     stem: "ninmu.жінка";
     real-number: singular;
-    type: noun;
-    number: singular;
-    gender: feminine;
-    persone: third;
-    case: nominative;
     noun-type: common;
 }
-"жінок"
+."робітниц" :: noun-cases-4
 {
-    transcription: "ʒinok";
-    lemma: "ninmu";
-    stem: "ninmu.жінка";
-    real-number: plural;
-    type: noun;
-    number: plural;
-    gender: feminine;
-    persone: third;
-    case: accusative;
-    noun-type: common;
-}
-"жінок"
-{
-    transcription: "ʒinok";
-    lemma: "ninmu";
-    stem: "ninmu.жінка";
-    real-number: plural;
-    type: noun;
-    number: plural;
-    gender: feminine;
-    persone: third;
-    case: possessive;
-    noun-type: common;
-}
-"робітниця" :: cases-4 plural-cases-2
-{
-    transcription: "robitnetsʲa";
-    lemma: "workorino";
-    stem: "workorino.робітниця";
+    stem: "le'ipli.робітниця";
     real-number: singular;
-    type: noun;
-    number: singular;
-    gender: feminine;
-    persone: third;
-    case: nominative;
+    noun-type: common;
 }
-"фабрика" :: cases-3 plural-cases-3
+."фабри" :: noun-cases-2
 {
-    transcription: "fabreka";
-    lemma: "fabriko";
-    stem: "fabriko.фабрика";
+    stem: "fanri.фабрика";
     real-number: singular;
-    type: noun;
-    number: singular;
-    gender: feminine;
-    persone: third;
-    case: nominative;
     noun-type: common;
 }
 "брат"
@@ -362,16 +303,9 @@
     case: accusative;
     noun-type: common;
 }
-"чоловік" :: cases-5 plural-cases-4
+."чоловік" :: noun-cases-5
 {
-    transcription: "tʃolovik";
-    lemma: "nanmu";
     stem: "nanmu.чоловік";
     real-number: singular;
-    type: noun;
-    number: singular;
-    gender: masculine;
-    persone: third;
-    case: nominative;
     noun-type: common;
 }
