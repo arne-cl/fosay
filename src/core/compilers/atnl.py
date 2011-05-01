@@ -646,7 +646,7 @@ def p_error(p):
         if not p is None:
             print_error(p.lineno, find_column(p.lexpos), "Syntax error at '%s'" % p.value)
         else:
-            print("Syntax error")
+            print_error(-1, -1, "Syntax error")
     except UnicodeEncodeError:
         print_error(p.lineno, 0, "Syntax error")
 

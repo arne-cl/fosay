@@ -1,0 +1,347 @@
+verb-perfect-future-u
+{
+    prefix: "у";
+    aspect: perfect;
+    tense: future;
+}
+
+verb-perfect-present-u
+{
+    prefix: "у";
+    aspect: perfect;
+    tense: present;
+}
+
+verb-continuous
+{
+    aspect: continuous;
+}
+
+verb-perfect-continuous-durative
+{
+    aspect: perfect-continuous-durative;
+}
+
+verb-perfect-continuous-not-durative
+{
+    tense: present;
+    aspect: perfect-continuous-not-durative;
+}
+inf
+{
+    tense: infinitive;
+    aspect: indefinite;
+    participle: not-participle;
+}
+pr-s1
+{
+    tense: present;
+    persone: first;
+    number: singular;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+pr-p1
+{
+    tense: present;
+    persone: first;
+    number: plural;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+pr-s2i
+{
+    tense: present;
+    persone: second;
+    number: singular;
+    form: informal;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+pr-s2f
+{
+    tense: present;
+    persone: second;
+    number: singular;
+    form: formal;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+pr-p2i
+{
+    tense: present;
+    persone: second;
+    number: plural;
+    form: informal;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+pr-s3
+{
+    tense: present;
+    persone: third;
+    number: singular;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+pr-p3
+{
+    tense: present;
+    persone: third;
+    number: plural;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+//past;
+pa-sm
+{
+    gender: masculine;
+    tense: past;
+    number: singular;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+pa-sf
+{
+    gender: feminine;
+    tense: past;
+    number: singular;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+pa-sl
+{
+    gender: lifeless;
+    tense: past;
+    number: singular;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+pa-p
+{
+    tense: past;
+    number: plural;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+//future;
+fu-s1
+{
+    tense: future;
+    persone: first;
+    number: singular;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+fu-p1
+{
+    tense: future;
+    persone: first;
+    number: plural;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+fu-s2i
+{
+    tense: future;
+    persone: second;
+    number: singular;
+    form: informal;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+fu-s2f
+{
+    tense: future;
+    persone: second;
+    number: singular;
+    form: formal;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+fu-p2i
+{
+    tense: future;
+    persone: second;
+    number: plural;
+    form: informal;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+fu-s3
+{
+    tense: future;
+    persone: third;
+    number: singular;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+fu-p3
+{
+    tense: future;
+    persone: third;
+    number: plural;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+
+co-sm
+{
+    gender: masculine;
+    tense: past;
+    number: singular;
+    participle: not-participle;
+    mood: conditional;
+    aspect: indefinite;
+}
+co-sf
+{
+    gender: feminine;
+    tense: past;
+    number: singular;
+    participle: not-participle;
+    mood: conditional;
+    aspect: indefinite;
+}
+co-sl
+{
+    gender: lifeless;
+    tense: past;
+    number: singular;
+    mood: conditional;
+    participle: not-participle;
+    aspect: indefinite;
+}
+co-p
+{
+    tense: past;
+    number: plural;
+    mood: conditional;
+    participle: not-participle;
+    aspect: indefinite;
+}
+
+.past-verb-forms-1
+:: pa-sm { sufix: "л"  }
+:: pa-sf { sufix: "ла" }
+:: pa-sl { sufix: "ло" }
+:: pa-p  { sufix: "ли" }
+
+.present-verb-forms-1
+:: pr-s1  { sufix: "ю"   }
+:: pr-p1  { sufix: "ем"  }
+:: pr-s2i { sufix: "ешь" }
+:: pr-s2f { sufix: "ете" }
+:: pr-p2i { sufix: "ете" }
+:: pr-s3  { sufix: "ет"  }
+:: pr-p3  { sufix: "ют"  }
+
+.conditional-verb-forms-1
+:: co-sm { sufix: "л бы" }
+:: co-sf { sufix: "ла б" }
+:: co-sl { sufix: "ло б" }
+:: co-p  { sufix: "ли б" }
+
+.present-verb-forms-2
+:: pr-s1  { sufix: "жу"  }
+:: pr-p1  { sufix: "им"  }
+:: pr-s2i { sufix: "ишь" }
+:: pr-s2f { sufix: "ите" }
+:: pr-p2i { sufix: "ите" }
+:: pr-s3  { sufix: "ит"  }
+:: pr-p3  { sufix: "ят"  }
+
+.past-verb-forms-jela
+:: pa-sm { sufix: "ел"  }
+:: pa-sf { sufix: "ела" }
+:: pa-sl { sufix: "ело" }
+:: pa-p  { sufix: "ели" }
+
+.conditional-verb-forms-jela
+:: co-sm { sufix: "ел бы" }
+:: co-sf { sufix: "ела б" }
+:: co-sl { sufix: "ело б" }
+:: co-p  { sufix: "ели б" }
+
+
+.present-verb-forms-3
+:: pr-s1  { sufix: "ю"   }
+:: pr-p1  { sufix: "имо" }
+:: pr-s2i { sufix: "иш"  }
+:: pr-s2f { sufix: "ите" }
+:: pr-p2i { sufix: "ите" }
+:: pr-s3  { sufix: "ить" }
+:: pr-p3  { sufix: "ять" }
+
+
+.infinitive-jetj
+:: inf { sufix: "еть" }
+
+.infinitive-tj
+:: inf { sufix: "ть" }
+
+.verb-forms-3 ::
+    infinitive-jetj
+    past-verb-forms-jela
+    past-verb-forms-jela(verb-perfect-present-u)
+    present-verb-forms-3
+    present-verb-forms-3(verb-perfect-future-u)
+    conditional-verb-forms-jela
+{
+    type: verb;
+}
+
+.verb-forms-1 ::
+    infinitive-tj
+    past-verb-forms-1
+    past-verb-forms-1(verb-perfect-present-u)
+    present-verb-forms-1
+    present-verb-forms-1(verb-perfect-future-u)
+    conditional-verb-forms-1
+{
+    type: verb;
+}
+
+
+.verbs-2 ::
+    infinitive-jetj
+    past-verb-forms-jela
+    past-verb-forms-jela(verb-perfect-present-u)
+    present-verb-forms-2
+    present-verb-forms-2(verb-perfect-future-u)
+    conditional-verb-forms-jela
+{
+    type: verb;
+}
+
+.cont-verbs-2 ::
+    infinitive-jetj
+    past-verb-forms-jela
+    past-verb-forms-jela(verb-perfect-present-u)
+    past-verb-forms-jela(verb-perfect-continuous-not-durative)
+    present-verb-forms-2
+    present-verb-forms-2(verb-perfect-future-u)
+    present-verb-forms-2(verb-continuous)
+    present-verb-forms-2(verb-perfect-continuous-durative)
+    conditional-verb-forms-jela
+{
+    type: verb;
+}

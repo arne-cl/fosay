@@ -1,0 +1,1 @@
+."vid" :: verb { stem: "viska.vidi" }

@@ -1,0 +1,6 @@
+"la"
+{
+    type: article;
+    difinity: difinite;
+    quantity: none;
+}
