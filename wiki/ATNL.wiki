@@ -10,7 +10,7 @@ An ATN consists of a set of rules which makes the language grammar. E.g. the sim
 {{{
 np :-
     ART
-    $N
+    $N;
 }}}
 Above,
   *`np is the rule's name
@@ -19,21 +19,21 @@ Above,
 But it's the simplest kind of noun-phrase. There are also noun-phrases with epithets: _"the big house"_, _"a red apple"_, _"the beautiful girls"_, etc. In this case we should describe a new rule for adjective-phrases and change the noun-phrase rule:
 {{{
 ap :-
-    $ADJ
+    $ADJ;
 np :-
     ART
     [ap]
-    $N
+    $N;
 }}}
 `[...`] shows the part of the rule which is optional.
 
 OK, as you can see, the rules for English noun-phrases are really simple because they are context-free. But how do we handle a context-sensitive noun-phrase? E.g. a Spanish noun-phrase is always context-sensitive because the article, adjective and noun should have the same number and gender: _"las grandes casas"_, _"una manzana roja"_, _"las hermosas chicas"_, etc. But the rule above will produce also invalid phrases like: _"las grande casa"_, _"la hermosa chicas"_, _"una manzana rojo"_ etc. To exclude such results the ATN should be as follows:
 {{{
 ap :-
-    $ADJ<$number; $gender>
+    $ADJ<$number; $gender>;
 np :-
     ART<number; gender>
     [ap<number; gender>]
-    $N<$number; $gender>
+    $N<$number; $gender>;
 }}}
 Here `<number; gender> shows that the number and gender of the terminal/nonterminal should be the same as it's parent's(rule's). `$number shows that if there are more than one elements which have influence to the number of the rule then the current element's number will be assigned as the rule's number and the others will be compared to it.
