@@ -23,10 +23,8 @@
     lemma: "banli.чудово";
     type: adverb;
 }
-"сьогодні"
+"сьогодні"[sʲohodnʲi]
 {
-    transcription: "sʲohodnʲi";
-    lemma: "cabdei";
     stem: "cabdei.сьогодні";
     type: adverb;
     adverb-type: time;
