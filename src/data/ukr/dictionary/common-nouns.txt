@@ -23,55 +23,23 @@
     case: nominative;
     noun-type: common;
 }
-."хлопчик" :: noun-cases-5(common)
+."легін" :: noun-cases-1(common)
 {
     stem: "nanla.хлопець";
-    form: informal;
-}
-"легінь"
-{
-    transcription: "lehinʲ";
-    lemma: "nanla";
-    stem: "nanla.хлопець";
-    real-number: singular;
     form: formal;
-    type: noun;
     tags: rusyn;
-    number: singular;
-    gender: masculine;
-    persone: third;
-    case: nominative;
-    noun-type: common;
 }
-"чувак"
+."чувак" :: noun-cases-11(common)
 {
-    transcription: "tʃuvak";
-    lemma: "nanla";
     stem: "nanla.хлопець";
-    real-number: singular;
     form: formal;
-    type: noun;
     tags: slang;
-    number: singular;
-    gender: masculine;
-    persone: third;
-    case: nominative;
-    noun-type: common;
 }
-"пацан"
+."пацан" :: noun-cases-7(common)
 {
-    transcription: "patsan";
-    lemma: "nanla";
     stem: "nanla.хлопець";
-    real-number: singular;
     form: formal;
-    type: noun;
     tags: slang, russian;
-    number: singular;
-    gender: masculine;
-    persone: third;
-    case: nominative;
-    noun-type: common;
 }
 ."жін"      :: noun-cases-3(common) { stem: "ninmu.жінка" }
 ."робітниц" :: noun-cases-4(common) { stem: "le'ipli.робітниця" }
@@ -103,4 +71,9 @@
 {
     stem: "nixli.дівчина";
     tags: slang;
+}
+."хлопчик" :: noun-cases-5(common)
+{
+    stem: "nanla.хлопець";
+    form: informal;
 }

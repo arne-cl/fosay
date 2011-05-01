@@ -1,7 +1,5 @@
-"én"
+"én"[ejn]
 {
-    transcription: "ejn";
-    lemma: "imio";
     type: pronoun;
     real-number: singular;
     number: singular;
@@ -10,10 +8,19 @@
     pronoun-type: personal;
     //difinity: undifinite ////////////difinite!;
 }
-"téged"
+"te"[tɛ]
 {
-    transcription: "tejgɛd";
-    lemma: "ivio";
+    type: pronoun;
+    real-number: singular;
+    form: informal;
+    number: singular;
+    persone: second;
+    case: nominative;
+    pronoun-type: personal;
+    //difinity: undifinite ////////////difinite!;
+}
+"téged"[tejgɛd]
+{
     type: pronoun;
     real-number: singular;
     number: singular;

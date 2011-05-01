@@ -1,7 +1,10 @@
-."гарн"   :: adj-cases-1 { stem: "melbi.гарний" }
+."гарн"   :: adj-cases-1 { stem: "melbi.гарний"   }
 ."розумн" :: adj-cases-1 { stem: "prije.розумний" }
-."біл"    :: adj-cases-1 { stem: "blabi.білий" }
-."чорн"   :: adj-cases-1 { stem: "xekri.чорний" }
-."мал"    :: adj-cases-1 { stem: "cmalu.малий" }
-."велик"  :: adj-cases-1 { stem: "barda.великий" }
-."дорог"  :: adj-cases-1 { stem: "kargu.дорогий" }
+."біл"    :: adj-cases-1 { stem: "blabi.білий"    }
+."чорн"   :: adj-cases-1 { stem: "xekri.чорний"   }
+."жовт"   :: adj-cases-1 { stem: "pelxu.жовтий"   }
+."червон" :: adj-cases-1 { stem: "xunre.червоний" }
+."зелен"  :: adj-cases-1 { stem: "crino.зелений"  }
+."мал"    :: adj-cases-1 { stem: "cmalu.малий"    }
+."велик"  :: adj-cases-1 { stem: "barda.великий"  }
+."дорог"  :: adj-cases-1 { stem: "kargu.дорогий"  }
