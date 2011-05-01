@@ -1,50 +1,4 @@
 //ukrainian dictionary v0.0.1
-"будинки" :: accusative
-{
-    transcription: "budenke";
-    lemma: "zdani";
-    stem: "zdani.будинок";
-    real-number: plural;
-    type: noun;
-    number: plural;
-    gender: masculine;
-    persone: third;
-    case: nominative;
-    noun-type: common;
-}
-"будинок"
-{
-    transcription: "budenok";
-    lemma: "zdani";
-    stem: "zdani.будинок";
-    real-number: singular;
-    type: noun;
-    number: singular;
-    gender: masculine;
-    persone: third;
-    case: nominative accusative illative;
-    noun-type: common;
-    extra-1: 2;
-}
-"будинку"
-{
-    transcription: "budenku";
-    lemma: "zdani";
-    stem: "zdani.будинок";
-    real-number: singular;
-    type: noun;
-    number: singular;
-    gender: masculine;
-    persone: third;
-    case: inessive possessive;
-    noun-type: common;
-}
-."вчител"
-."учител" :: noun-cases-1
-{
-    stem: "ctuca.вчитель";
-    noun-type: common;
-}
 "учень"[utʃenʲ]
 {
     lemma: "tadni";
@@ -69,152 +23,10 @@
     case: nominative;
     noun-type: common;
 }
-"дівчат"
+."хлопчик" :: noun-cases-5(common)
 {
-    transcription: "dʲivtʃat";
-    lemma: "nixli";
-    stem: "nixli.дівчина";
-    real-number: plural;
-    type: noun;
-    number: plural;
-    gender: feminine;
-    persone: third;
-    case: accusative;
-    noun-type: common;
-}
-"дівчата"
-{
-    transcription: "dʲivtʃata";
-    lemma: "nixli";
-    stem: "nixli.дівчина";
-    real-number: plural;
-    type: noun;
-    number: plural;
-    gender: feminine;
-    persone: third;
-    case: nominative;
-    noun-type: common;
-}
-."дівчин" :: cases-2
-{
-    stem: "nixli.дівчина";
-    gender: feminine;
-    noun-type: common;
-    extra-1: 1;
-}
-"дівчинку"
-{
-    transcription: "dʲivtʃenku";
-    lemma: "nixli";
-    stem: "nixli.дівчина";
-    real-number: singular;
-    type: noun;
-    form: informal;
-    number: singular;
-    gender: feminine;
-    persone: third;
-    case: accusative;
-    noun-type: common;
-}
-"дівка"
-{
-    transcription: "dʲivka";
-    lemma: "nixli";
-    stem: "nixli.дівчина";
-    real-number: singular;
-    type: noun;
-    tags: slang;
-    number: singular;
-    gender: feminine;
-    persone: third;
-    case: nominative;
-    noun-type: common;
-}
-"тьолка"
-{
-    transcription: "tʲolka";
-    lemma: "nixli";
-    stem: "nixli.дівчина";
-    real-number: singular;
-    type: noun;
-    tags: slang, russian;
-    number: singular;
-    gender: feminine;
-    persone: third;
-    case: nominative;
-    noun-type: common;
-}
-."жін" :: noun-cases-3
-{
-    stem: "ninmu.жінка";
-    real-number: singular;
-    noun-type: common;
-}
-."робітниц" :: noun-cases-4
-{
-    stem: "le'ipli.робітниця";
-    real-number: singular;
-    noun-type: common;
-}
-."фабри" :: noun-cases-2
-{
-    stem: "fanri.фабрика";
-    real-number: singular;
-    noun-type: common;
-}
-"брат"
-{
-    transcription: "brat";
-    lemma: "bruna";
-    stem: "bruna.брат";
-    real-number: singular;
-    type: noun;
-    number: singular;
-    gender: masculine;
-    persone: third;
-    case: nominative;
-    noun-type: common;
-}
-"сестра"
-{
-    transcription: "sɛstra";
-    lemma: "mensi";
-    stem: "mensi.сестра";
-    real-number: singular;
-    type: noun;
-    number: singular;
-    gender: feminine;
-    persone: third;
-    case: nominative;
-    noun-type: common;
-}
-"хлопчик"
-{
-    transcription: "xloptʃek";
-    lemma: "nanla";
     stem: "nanla.хлопець";
-    real-number: singular;
     form: informal;
-    type: noun;
-    number: singular;
-    gender: masculine;
-    persone: third;
-    case: nominative;
-    noun-type: common;
-}
-"хлопець"
-{
-    transcription: "xlopɛtsʲ";
-    lemma: "nanla";
-    stem: "nanla.хлопець";
-    real-number: singular;
-    form: formal;
-    type: noun;
-    number: singular;
-    gender: masculine;
-    persone: third;
-    case: nominative;
-    noun-type: common;
 }
 "легінь"
 {
@@ -261,51 +73,34 @@
     case: nominative;
     noun-type: common;
 }
-"хлопці"
+."жін"      :: noun-cases-3(common) { stem: "ninmu.жінка" }
+."робітниц" :: noun-cases-4(common) { stem: "le'ipli.робітниця" }
+."фабри"    :: noun-cases-2(common) { stem: "fanri.фабрика" }
+."чоловік"  :: noun-cases-5(common) { stem: "nanmu.чоловік" }
+."вчител"
+."учител"   :: noun-cases-1(common) { stem: "ctuca.вчитель" }
+."будин"    :: noun-cases-6(common) { stem: "zdani.будинок"; extra-1: 2 }
+."брат"     :: noun-cases-7(common) { stem: "bruna.брат" }
+."хлоп"     :: noun-cases-9(common) { stem: "nanla.хлопець"; form: formal; }
+."дівч" :: noun-cases-8(common)
 {
-    transcription: "xloptsi";
-    lemma: "nanla";
-    stem: "nanla.хлопець";
-    real-number: plural;
+    stem: "nixli.дівчина";
+    extra-1: 1;
     form: formal;
-    type: noun;
-    number: plural;
-    gender: masculine;
-    persone: third;
-    case: nominative;
-    noun-type: common;
 }
-"хлопців"
+."тьол" :: noun-cases-3(common)
 {
-    transcription: "xloptsiv";
-    lemma: "nanla";
-    stem: "nanla.хлопець";
-    real-number: plural;
-    form: formal;
-    type: noun;
-    number: plural;
-    gender: masculine;
-    persone: third;
-    case: accusative;
-    noun-type: common;
+    stem: "nixli.дівчина";
+    tags: slang, russian;
 }
-"хлопця"
+."сестр" :: noun-cases-10(common) { stem: "mensi.сестра" }
+."дівчин" :: noun-cases-3(common)
 {
-    transcription: "xloptsʲa";
-    lemma: "nanla";
-    stem: "nanla.хлопець";
-    real-number: singular;
-    form: formal;
-    type: noun;
-    number: singular;
-    gender: masculine;
-    persone: third;
-    case: accusative;
-    noun-type: common;
+    stem: "nixli.дівчина";
+    form: informal;
 }
-."чоловік" :: noun-cases-5
+."дів" :: noun-cases-3(common)
 {
-    stem: "nanmu.чоловік";
-    real-number: singular;
-    noun-type: common;
+    stem: "nixli.дівчина";
+    tags: slang;
 }

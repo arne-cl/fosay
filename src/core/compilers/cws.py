@@ -190,6 +190,9 @@ def y(n, props):
     if b: w.transcription = to_ipa(w.text)
     if w.meaning is None and not w.attr(concept['stem']) is None:
         w.meaning = w.attr(concept['stem']).rsplit('.', 1)[0]
+    if not w.attr(concept['number']) is None \
+        and w.attr(concept['real-number']) is None:
+        w.attr(concept['real-number'], w.attr(concept['number']))
     return [w]
 
 funcs = {}
@@ -326,6 +329,9 @@ def p_record(p):
                         tok.attr(concept['transcription'], [tok.attr(concept['transcription'])])
                     if tok.meaning is None and not tok.attr(concept['stem']) is None:
                         tok.meaning = tok.attr(concept['stem']).rsplit('.', 1)[0]
+                    if not tok.attr(concept['number']) is None \
+                        and tok.attr(concept['real-number']) is None:
+                        tok.attr(concept['real-number'], tok.attr(concept['number']))
                     tok.text = [nme]
                     p[0] += modify_token(base, tok)
                 else:
@@ -337,6 +343,9 @@ def p_record(p):
                         tok.attr(concept['transcription'], [tok.attr(concept['transcription'])])
                     if tok.meaning is None and not tok.attr(concept['stem']) is None:
                         tok.meaning = tok.attr(concept['stem']).rsplit('.', 1)[0]
+                    if not tok.attr(concept['number']) is None \
+                        and tok.attr(concept['real-number']) is None:
+                        tok.attr(concept['real-number'], tok.attr(concept['number']))
                     tok.text = [nme]
                     if not has_dot: p[0] += [tok]
         else:
