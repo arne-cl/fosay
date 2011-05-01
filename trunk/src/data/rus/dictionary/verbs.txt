@@ -1,28 +1,7 @@
-"видеть"[vidʲɛtʲ] :: verbs-2
-{
-    lemma: "viska";
-    stem: "viska.видеть";
-    type: verb;
-    tense: infinitive;
-    aspect: indefinite;
-    participle: not-participle;
-}
-"говорить"[gavaritʲ] :: verb-forms-3
-{
-    lemma: "cusku";
-    lemma: "cusku.говорить";
-    type: verb;
-    tense: infinitive;
-    participle: not-participle;
-}
-"знать"[znatʲ] :: verb-forms-1
-{
-    lemma: "dzuno";
-    stem: "dzuno.знать";
-    type: verb;
-    tense: infinitive;
-    participle: not-participle;
-}
+."вид" :: verbs-2 { stem: "viska.видеть" }
+."говори" :: verb-forms-3 { lemma: "cusku.говорить" }
+."зна" :: verb-forms-1 { stem: "dzuno.знать" }
+."плава" :: verb-forms-1 { stem: "limna.плавать" }
 "идти"[idtʲi]
 {
     lemma: "cadzu";
@@ -67,12 +46,4 @@
     tense: present;
     participle: not-participle;
     number: plural;
-}
-"плавать"[plavatʲ] :: verb-forms-1
-{
-    lemma: "limna";
-    stem: "limna.плавать";
-    type: verb;
-    tense: infinitive;
-    participle: not-participle;
 }

@@ -1,3 +1,4 @@
+epo, Esperanto
 eng, English
 ukr, українська
 rus, русский

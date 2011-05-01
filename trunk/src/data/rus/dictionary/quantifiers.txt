@@ -53,7 +53,7 @@
     quantity-case: nominative;
     difinity: difinite;
 }
-"каждый"[kaʒdej] :: all-adj-cases-1
+"каждый"[kaʒdej]// :: all-adj-cases-1
 {
     type: quantifier;
     real-number: singular;

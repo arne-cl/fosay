@@ -1,4 +1,4 @@
-﻿"1"
+"1"
 {
     por: noun-phrase, epithet, preposition-phrase, clause
     order: 1
@@ -64,7 +64,6 @@
 #conj-type: non-contrasting
 #before: either
 #among: or
-}
 "13"
 {
     por: clause

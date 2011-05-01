@@ -94,6 +94,8 @@ masculine
 .loc-ml :: locative(lifeless) locative(masculine) { }
 
 .adj-sing-cases-1
+:: nom-mas   { sufix: "ий"  }
+:: nom-lif   { sufix: "е"   }
 :: poss-ml   { sufix: "ого" }
 :: dat-ml    { sufix: "ому" }
 :: acc-ml-1  { sufix: "ого" }
@@ -102,8 +104,6 @@ masculine
 :: inst-ml   { sufix: "им"  }
 :: loc-ml    { sufix: "ому" }
 :: loc-ml    { sufix: "ім"  }
-:: nom-lif   { sufix: "е"   }
-:: nom-mas   { sufix: "ий"  }
 :: nom-fem   { sufix: "а"   }
 :: poss-fem  { sufix: "ої"  }
 :: dat-fem   { sufix: "ій"  }
@@ -112,277 +112,24 @@ masculine
 :: inst-fem  { sufix: "ою"  }
 :: loc-fem   { sufix: "ій"  }
 
-adj-cases-2
-{
-    text: "1>ого";
-    case: possessive;
-}
-adj-cases-2
-{
-    text: "1>ому";
-    case: dative;
-}
-adj-cases-2
-{
-    text: "1>ому";
-    case: accusative;
-    extra-1: 1;
-}
-adj-cases-2
-{
-    case: accusative;
-    extra-1: 2;
-}
-adj-cases-2
-{
-    text: "1>им";
-    case: instrumental;
-}
-adj-cases-2
-{
-    text: "1>ому";
-    case: locative;
-}
-adj-cases-2
-{
-    text: "1>ім";
-    case: locative;
-}
-
-adj-cases-3
-{
-    text: "1>ього";
-    case: possessive;
-}
-adj-cases-3
-{
-    text: "1>ьій";
-    case: dative;
-}
-adj-cases-3
-{
-    text: "1>ього";
-    case: accusative;
-    extra-1: 1;
-}
-adj-cases-3
-{
-    case: accusative;
-    extra-1: 2;
-}
-adj-cases-3
-{
-    text: "1>ім";
-    case: instrumental;
-}
-adj-cases-3
-{
-    text: "1>ьому";
-    case: locative;
-}
-adj-cases-3
-{
-    text: "1>ьім";
-    case: locative;
-}
-
-adj-cases-4
-{
-    text: "2>ього";
-    case: possessive;
-}
-adj-cases-4
-{
-    text: "2>ьій";
-    case: dative;
-}
-adj-cases-4
-{
-    text: "2>ього";
-    case: accusative;
-    extra-1: 1;
-}
-adj-cases-4
-{
-    case: accusative;
-    extra-1: 2;
-}
-adj-cases-4
-{
-    text: "2>ім";
-    case: instrumental;
-}
-adj-cases-4
-{
-    text: "2>ьому";
-    case: locative;
-}
-adj-cases-4
-{
-    text: "2>ьім";
-    case: locative;
-}
-
-adj-cases-6
-{
-    text: "2>ої";
-    case: possessive;
-}
-adj-cases-6
-{
-    text: "2>ій";
-    case: dative;
-}
-adj-cases-6
-{
-    text: "2>ю";
-    case: accusative;
-    extra-1: 1;
-}
-adj-cases-6
-{
-    case: accusative;
-    extra-1: 2;
-}
-adj-cases-6
-{
-    text: "2>ою";
-    case: instrumental;
-}
-adj-cases-6
-{
-    text: "2>ій";
-    case: locative;
-}
-
-adj-feminine-m
-{
-    text: "2>я";
-    gender: feminine;
-}
-
-adj-lifeless-t
-{
-    text: "2>е";
-    gender: lifeless;
-}
-
-adj-lifeless-m
-{
-    text: "2>є";
-    gender: lifeless;
-}
-
-adj-plural-cases-m1
-{
-    text: "1>і";
-    case: nominative;
-    number: plural;
-}
-adj-plural-cases-m1
-{
-    text: "1>іх";
-    case: possessive;
-    number: plural;
-}
-adj-plural-cases-m1
-{
-    text: "1>ім";
-    case: dative;
-    number: plural;
-}
-adj-plural-cases-m1
-{
-    text: "1>іх";
-    case: accusative;
-    number: plural;
-}
-adj-plural-cases-m1
-{
-    text: "1>іми";
-    case: instrumental;
-    number: plural;
-}
-adj-plural-cases-m1
-{
-    text: "1>іх";
-    case: locative;
-    number: plural;
-}
-
-adj-plural-cases-m2
-{
-    text: "2>і";
-    case: nominative;
-    number: plural;
-}
-adj-plural-cases-m2
-{
-    text: "2>іх";
-    case: possessive;
-    number: plural;
-}
-adj-plural-cases-m2
-{
-    text: "2>ім";
-    case: dative;
-    number: plural;
-}
-adj-plural-cases-m2
-{
-    text: "2>іх";
-    case: accusative;
-    number: plural;
-}
-adj-plural-cases-m2
-{
-    text: "2>іми";
-    case: instrumental;
-    number: plural;
-}
-adj-plural-cases-m2
-{
-    text: "2>іх";
-    case: locative;
-    number: plural;
-}
-
-adj-plural-cases-t1
-{
-    text: "1>і";
-    case: nominative;
-    number: plural;
-}
-adj-plural-cases-t1
-{
-    text: "1>их";
-    case: possessive;
-    number: plural;
-}
-adj-plural-cases-t1
-{
-    text: "1>им";
-    case: dative;
-    number: plural;
-}
-adj-plural-cases-t1
-{
-    text: "1>их";
-    case: accusative;
-    number: plural;
-}
-adj-plural-cases-t1
-{
-    text: "1>ими";
-    case: instrumental;
-    number: plural;
-}
-adj-plural-cases-t1
-{
-    text: "1>их";
-    case: locative;
-    number: plural;
-}
+.adj-sing-cases-2
+:: nom-mas   { sufix: "ій"  }
+:: nom-lif   { sufix: "є"   }
+:: poss-ml   { sufix: "ього" }
+:: dat-ml    { sufix: "ьому" }
+:: acc-ml-1  { sufix: "ього" }
+:: acc-mas-2 { sufix: "ій"  }
+:: acc-lif-2 { sufix: "є"   }
+:: inst-ml   { sufix: "ім"  }
+:: loc-ml    { sufix: "ьому" }
+:: loc-ml    { sufix: "ім"  }
+:: nom-fem   { sufix: "я"   }
+:: poss-fem  { sufix: "ьої"  }
+:: dat-fem   { sufix: "ій"  }
+:: acc-fem-1 { sufix: "ю"   }
+:: acc-fem-2 { sufix: "я"   }
+:: inst-fem  { sufix: "ьою"  }
+:: loc-fem   { sufix: "ій"  }
 
 pia
 {
@@ -391,8 +138,7 @@ pia
     gender: inherit;
 }
 
-
-.adj-plural-cases-t2
+.adj-plural-cases-1
 :: nominative(pia)   { sufix: "і"   }
 :: possessive(pia)   { sufix: "их"  }
 :: dative(pia)       { sufix: "им"  }
@@ -400,4 +146,13 @@ pia
 :: instrumental(pia) { sufix: "ими" }
 :: locative(pia)     { sufix: "их"  }
 
-.adj-cases-1 :: adj-sing-cases-1 adj-plural-cases-t2 { }
+.adj-plural-cases-2
+:: nominative(pia)   { sufix: "і"   }
+:: possessive(pia)   { sufix: "іх"  }
+:: dative(pia)       { sufix: "ім"  }
+:: accusative(pia)   { sufix: "іх"  }
+:: instrumental(pia) { sufix: "іми" }
+:: locative(pia)     { sufix: "іх"  }
+
+.adj-cases-1 :: adj-sing-cases-1 adj-plural-cases-1 { }
+.adj-cases-2 :: adj-sing-cases-2 adj-plural-cases-2 { }
