@@ -13,6 +13,9 @@ feminine-patronymic-1
     text: "0>івна";
     gender: feminine;
     personal-name: patronymic;
+    type: noun;
+    persone: third;
+    case: nominative;
 }
 
 feminine-patronymic-2
@@ -20,6 +23,9 @@ feminine-patronymic-2
     text: "1>ївна";
     gender: feminine;
     personal-name: patronymic;
+    type: noun;
+    persone: third;
+    case: nominative;
 }
 
 masculine-patronymic-1
@@ -27,6 +33,9 @@ masculine-patronymic-1
     text: "0>ович";
     gender: masculine;
     personal-name: patronymic;
+    type: noun;
+    persone: third;
+    case: nominative;
 }
 
 lifeless

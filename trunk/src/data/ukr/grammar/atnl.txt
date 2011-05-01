@@ -1,9 +1,10 @@
-subj-att := gender, number, persone
-vp-att := gender, number, tense, persone, mood, aspect
-np-att := case, gender, number, persone
+subj-att := gender, number, persone, form
+vp-att := gender, number, tense, persone, mood, aspect, form
+np-att := case, gender, number, persone, form
 ap-att := case, gender, number, persone, extra-1
 N-att := case, gender, number, persone, extra-1
-V-att := gender, number, tense, aspect, persone, mood, participle
+PRON-att := case, gender, number, persone, form
+V-att := gender, number, tense, aspect, persone, mood, participle, form
 ADJ-att := case, gender, number, extra-1
 PRON-empty-att := case, real-number -> number, persone, form
 
@@ -111,7 +112,7 @@ poss :-
     $np<case>{case: possessive}
 
 np :-
-    $PRON<N-att>{pronoun-type: personal}
+    $PRON<PRON-att>{pronoun-type: personal}
 
 np :-
     poss

@@ -1,53 +1,26 @@
-"джон"
+."джон" :: noun-cases-7(proper)
 {
-    transcription: "dʒon";
-    lemma: "ioxanan";
-    type: noun;
+    stem: "ioxanan.джон";
     tags: english;
-    number: singular;
-    gender: masculine;
-    persone: third;
-    case: nominative;
-    noun-type: proper;
     personal-name: first-name;
 }
-"семюель"[semjuelʲ]
+."семюел" :: noun-cases-1(proper)
 {
-    lemma: "semu'el";
-    type: noun;
+    stem: "semu'el.семюель";
     tags: english;
-    number: singular;
-    gender: masculine;
-    persone: third;
-    case: nominative;
-    noun-type: proper;
     personal-name: first-name;
 }
-"іван" :: masculine-patronymic-1 feminine-patronymic-1
+."іван" :: noun-cases-7(proper) masculine-patronymic-1 feminine-patronymic-1
 {
-    transcription: "ivan";
-    lemma: "ioxanan";
-    type: noun;
+    stem: "ioxanan.іван";
     tags: ukrainian;
-    number: singular;
-    gender: masculine;
-    persone: third;
-    case: nominative;
-    noun-type: proper;
     personal-name: first-name;
 }
-"золтан" :: masculine-patronymic-1 feminine-patronymic-1
+."золтан" :: noun-cases-7(proper) masculine-patronymic-1 feminine-patronymic-1
 {
-    transcription: "zoltan";
-    lemma: "zoltan";
-    type: noun;
+    stem: "zoltan.золтан";
     form: formal;
     tags: hungarian;
-    number: singular;
-    gender: masculine;
-    persone: third;
-    case: nominative;
-    noun-type: proper;
     personal-name: first-name;
 }
 "зол'і"
@@ -121,29 +94,16 @@
     noun-type: proper;
     personal-name: surname;
 }
-"юлія"
+."юлі" :: noun-cases-12(proper)
 {
-    transcription: "julʲija";
-    lemma: "iuli'as";
-    type: noun;
+    stem: "iuli'as.юлія";
     form: formal;
-    number: singular;
-    gender: feminine;
-    persone: third;
-    case: nominative;
-    noun-type: proper;
     personal-name: first-name;
 }
-"вікторія"[viktorija]
+."вікторі" :: noun-cases-12(proper)
 {
-    lemma: "viktoriias";
-    type: noun;
+    stem: "viktoriias.вікторія";
     form: formal;
-    number: singular;
-    gender: feminine;
-    persone: third;
-    case: nominative;
-    noun-type: proper;
     personal-name: first-name;
 }
 "віка"[vika]
@@ -155,19 +115,6 @@
     gender: feminine;
     persone: third;
     case: nominative;
-    noun-type: proper;
-    personal-name: first-name;
-}
-"юлії"
-{
-    transcription: "julʲiji";
-    lemma: "iuli'as";
-    type: noun;
-    form: formal;
-    number: singular;
-    gender: feminine;
-    persone: third;
-    case: possessive;
     noun-type: proper;
     personal-name: first-name;
 }

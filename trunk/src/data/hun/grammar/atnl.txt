@@ -1,7 +1,7 @@
-vp-att := tense, aspect, mood, object-persone, object-number, object-form, object-difinity, subject-persone, subject-number, transitivity
-subj-att := number -> subject-number, persone -> subject-persone
+vp-att := tense, aspect, mood, object-persone, object-number, object-form, object-difinity, subject-persone, subject-number, subject-form, transitivity
+subj-att := number -> subject-number, persone -> subject-persone, form -> subject-form
 obj-att := persone->object-persone, number->object-number, form->object-form, difinity->object-difinity
-V-att := tense, aspect, mood, participle, object-persone, object-number, object-form, object-difinity, subject-persone, subject-number, transitivity
+V-att := tense, aspect, mood, participle, object-persone, object-number, object-form, object-difinity, subject-persone, subject-number, subject-form, transitivity
 N-att := case, number, persone
 PRON-att := case, number, persone, form
 ap-att := number, case

@@ -2,7 +2,6 @@
 "ви"
 {
     transcription: "ve";
-    lemma: "ivio";
     real-number: singular;
     form: formal;
     type: pronoun;
@@ -14,7 +13,6 @@
 "ви"
 {
     transcription: "ve";
-    lemma: "ivio";
     real-number: plural;
     type: pronoun;
     number: plural;
@@ -25,7 +23,6 @@
 "він"
 {
     transcription: "vin";
-    lemma: "ilulo";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -37,7 +34,6 @@
 "вона"
 {
     transcription: "vona";
-    lemma: "ilino";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -49,7 +45,6 @@
 "вони"
 {
     transcription: "vone";
-    lemma: "ilino";
     real-number: plural;
     type: pronoun;
     number: plural;
@@ -60,7 +55,6 @@
 "воно"
 {
     transcription: "vono";
-    lemma: "idjio";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -71,7 +65,6 @@
 "його"
 {
     transcription: "joho";
-    lemma: "ilulo";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -83,7 +76,6 @@
 "його"
 {
     transcription: "joho";
-    lemma: "ilulo";
     real-number: singular;
     type: pronoun;
     persone: third;
@@ -94,7 +86,6 @@
 "її"
 {
     transcription: "jiji";
-    lemma: "ilino";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -106,7 +97,6 @@
 "її"
 {
     transcription: "jiji";
-    lemma: "ilino";
     real-number: singular;
     type: pronoun;
     persone: third;
@@ -117,7 +107,6 @@
 "їх"
 {
     transcription: "jix";
-    lemma: "ilio";
     real-number: plural;
     type: pronoun;
     number: plural;
@@ -128,7 +117,6 @@
 "мене"
 {
     transcription: "mɛnɛ";
-    lemma: "imio";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -139,7 +127,6 @@
 "ми"
 {
     transcription: "me";
-    lemma: "imio";
     real-number: plural;
     type: pronoun;
     number: plural;
@@ -150,7 +137,6 @@
 "мій"
 {
     transcription: "mij";
-    lemma: "imio";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -163,7 +149,6 @@
 "моє"
 {
     transcription: "mojɛ";
-    lemma: "imio";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -176,7 +161,6 @@
 "мої"
 {
     transcription: "moji";
-    lemma: "imio";
     real-number: singular;
     type: pronoun;
     number: plural;
@@ -188,7 +172,6 @@
 "моя"
 {
     transcription: "moja";
-    lemma: "imio";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -201,7 +184,6 @@
 "нас"
 {
     transcription: "nas";
-    lemma: "imio";
     real-number: plural;
     type: pronoun;
     number: plural;
@@ -212,7 +194,6 @@
 "наш"
 {
     transcription: "naʃ";
-    lemma: "imio";
     real-number: plural;
     type: pronoun;
     number: singular;
@@ -225,7 +206,6 @@
 "наша"
 {
     transcription: "naʃa";
-    lemma: "imio";
     real-number: plural;
     type: pronoun;
     number: singular;
@@ -238,7 +218,6 @@
 "наше"
 {
     transcription: "naʃɛ";
-    lemma: "imio";
     real-number: plural;
     type: pronoun;
     number: singular;
@@ -251,7 +230,6 @@
 "наші"
 {
     transcription: "naʃi";
-    lemma: "imio";
     real-number: plural;
     type: pronoun;
     number: plural;
@@ -263,7 +241,6 @@
 "твій"
 {
     transcription: "tvij";
-    lemma: "ivio";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -276,7 +253,6 @@
 "твоє"
 {
     transcription: "tvojɛ";
-    lemma: "ivio";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -289,7 +265,6 @@
 "твої"
 {
     transcription: "tvoji";
-    lemma: "ivio";
     real-number: singular;
     type: pronoun;
     number: plural;
@@ -301,7 +276,6 @@
 "твоя"
 {
     transcription: "tvoja";
-    lemma: "ivio";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -314,7 +288,6 @@
 "ти"
 {
     transcription: "te";
-    lemma: "ivio";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -327,7 +300,6 @@
 "тебе"
 {
     transcription: "tɛbɛ";
-    lemma: "ivio";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -340,7 +312,6 @@
 "вас"
 {
     transcription: "vas";
-    //lemma: "ivio";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -352,7 +323,6 @@
 "я"
 {
     transcription: "ja";
-    lemma: "imio"; //imio;
     real-number: singular;
     type: pronoun;
     number: singular;

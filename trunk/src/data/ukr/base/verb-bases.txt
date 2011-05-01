@@ -459,6 +459,7 @@ co-p
     past-verb-forms-yla(verb-perfect-continuous-not-durative)
     present-verb-forms-2
     present-verb-forms-2(verb-perfect-future-po)
+    present-verb-forms-2(verb-continuous)
     present-verb-forms-2(verb-perfect-continuous-durative) 
     future-verb-forms-ytymu
     conditional-verb-forms-yla

@@ -1,4 +1,5 @@
 common { noun-type: common }
+proper { noun-type: proper }
 
 singular
 {
@@ -107,6 +108,26 @@ singular
 :: sn-loc  { sufix: "і"  }
 :: sn-voc  { sufix: "о"  }
 
+.cases-10
+:: sn-nom  { sufix: ""    }
+:: sn-poss { sufix: "а"   }
+:: sn-dat  { sufix: "у"   }
+:: sn-dat  { sufix: "ові" }
+:: sn-acc  { sufix: "а"   }
+:: sn-inst { sufix: "ом"  }
+:: sn-loc  { sufix: "ові" }
+:: sn-loc  { sufix: "у"   }
+:: sn-voc  { sufix: "че"  }
+
+.cases-11
+:: sn-nom  { sufix: "я"  }
+:: sn-poss { sufix: "ї"  }
+:: sn-dat  { sufix: "ї"  }
+:: sn-acc  { sufix: "ю"  }
+:: sn-inst { sufix: "єю" }
+:: sn-loc  { sufix: "ї"  }
+:: sn-voc  { sufix: "є"  }
+
 plural
 {
     type: noun;
@@ -212,15 +233,5 @@ plural
 .noun-cases-8 :: cases-2 plural-cases-7 { gender: feminine  }
 .noun-cases-9 :: cases-8 plural-cases-8 { gender: masculine }
 .noun-cases-10 :: cases-9 plural-cases-9 { gender: masculine }
-
-accusative-1
-{
-    text: "0>у";
-    case: accusative;
-}
-
-accusative-2
-{
-    text: "0>ю";
-    case: accusative;
-}
+.noun-cases-11 :: cases-10 plural-cases-4 { gender: masculine }
+.noun-cases-12 :: cases-11 { gender: feminine }
