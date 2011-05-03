@@ -166,6 +166,7 @@ class Language():
         files = []
         for infile in glob.glob(os.path.join(os.path.join(self.path, 'base'), '*.txt')):
             files += [infile]
+        files = sorted(files) ###############
         for infile in glob.glob(os.path.join(os.path.join(self.path, 'dictionary'), '*.txt')):
             files += [infile]
 
