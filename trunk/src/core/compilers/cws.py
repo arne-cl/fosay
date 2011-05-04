@@ -167,44 +167,32 @@ def p_few_records(p):
     '''few_records : records record'''
     p[0] = fill_dm(p[1][0], p[1][1], p[2])
 
-def y(n, props):
+def modif_word(n, props):
     w = deepcopy(n)
-    #w.text = w.text[:-1] + [w.text[-1][:-2]]
-    #w.transcription = to_ipa(tr, w.text)
-    b = False
-    #print(props)
     for p, v in props:
         if p == concept["text"]:
-            b = True
             w.text[-1] = modif_text(v, w.text[-1])
         elif p == concept["transcription"]:
-            b = False
-            #print(w.transcription)
             w.transcription[-1] = modif_text(v, w.transcription[-1])
         elif p == concept["lemma"]:
-            b = False
             w.meaning = modif_text(v, w.meaning)
         else:
             w.attr(p, v)
     global to_ipa
-    if b: w.transcription = to_ipa(w.text)
+    if w.attr(concept['transcription']) is None and \
+        not w.attr(concept['text']) is None:
+        w.transcription = to_ipa(w.text)
     if w.meaning is None and not w.attr(concept['stem']) is None:
         w.meaning = w.attr(concept['stem']).rsplit('.', 1)[0]
     if not w.attr(concept['number']) is None \
         and w.attr(concept['real-number']) is None:
         w.attr(concept['real-number'], w.attr(concept['number']))
-    return [w]
+    return w
 
 funcs = {}
 
 def modify_token(base, word):
-    global funcs
-    words = []
-    #if not function_name in funcs:
-    #   print(funcs.keys())
-    for ff in get_base(base):
-        words += y(word, ff)
-    return words
+    return [modif_word(word, b) for b in get_base(base)]
 
 def modif_text(pattern, text):
     if pattern.find("|") != -1:
@@ -215,7 +203,6 @@ def modif_text(pattern, text):
 
     if pattern.find(">") != -1:
         n, wo = pattern.split(">")
-        #print(pattern, text)
         temp = text if n == "0" else text[:-int(n)]
         if len(wo) > 1 and wo[0] == ":":
             if temp[-1] == "y":
@@ -230,37 +217,40 @@ def modif_text(pattern, text):
         return wo + temp
     return pattern
 
-def modify(obj, base):
+def mod(obj, base):
+    n = deepcopy(obj)
+    pattern = None
+    for p in base:
+        if p[0] == concept["text"]:
+            pattern = p[1]
+            continue
+        for j in range(len(n)):
+            if n[j][0] == p[0]:
+                del n[j]
+                break
+        n += [p]
+    if not pattern is None:
+        for j in range(len(n)):
+            if n[j][0] == concept["text"]:
+                text = n[j][1]
+                if text.find(">") != -1 and pattern.find("<") != -1:
+                    n[j] = (n[j][0], pattern + "|" + text)
+                elif text.find("<") != -1 and pattern.find(">") != -1:
+                    n[j] = (n[j][0], text + "|" + pattern)
+                else:
+                    n[j] = (n[j][0], modif_text(pattern, text))
+                break
+        else:
+            n += [(concept["text"], pattern)]
+    return n
+
+def modify(object_name, base_name):
     res = []
     global funcs
-    for pr in funcs[base]:
-        if pr is None: raise Exception()
-        for bj in funcs[obj]:
-            n = deepcopy(bj)
-            pattern = None
-            for p in pr:
-                if p[0] != concept["text"]:
-                    for j in range(len(n)):
-                        if n[j][0] == p[0]:
-                            del n[j]
-                            break
-                    n += [p]
-                else:
-                    pattern = p[1]
-            if not pattern is None:
-                for j in range(len(n)):
-                    if n[j][0] == concept["text"]:
-                        text = n[j][1]
-                        if text.find(">") != -1 and pattern.find("<") != -1:
-                            n[j] = (n[j][0], pattern + "|" + text)
-                        elif text.find("<") != -1 and pattern.find(">") != -1:
-                            n[j] = (n[j][0], text + "|" + pattern)
-                        else:
-                            n[j] = (n[j][0], modif_text(pattern, text))
-                        break
-                else:
-                    n += [(concept["text"], pattern)]
-            res += [n]
+    for base in funcs[base_name]:
+        if base is None: raise Exception()
+        for obj in funcs[object_name]:
+            res += [mod(obj, base)]
     return res
 
 def get_base(base):
@@ -271,34 +261,10 @@ def modify_base(has_dot, name, tomod, base):
     global funcs
     for pr in get_base(base):
         if pr is None and has_dot: continue
-        n = deepcopy(tomod)
-        pattern = None
-        for p in pr:
-            if p[0] != concept["text"]:
-                for j in range(len(n)):
-                    if n[j][0] == p[0]:
-                        del n[j]
-                        break
-                n += [p]
-            else:
-                pattern = p[1]
-        if not pattern is None:
-            for j in range(len(n)):
-                if n[j][0] == concept["text"]:
-                    text = n[j][1]
-                    if text.find(">") != -1 and pattern.find("<") != -1:
-                        n[j] = (n[j][0], pattern + "|" + text)
-                    elif text.find("<") != -1 and pattern.find(">") != -1:
-                        n[j] = (n[j][0], text + "|" + pattern)
-                    else:
-                        n[j] = (n[j][0], modif_text(pattern, text))
-                    break
-            else:
-                n += [(concept["text"], pattern)]
         if name in funcs.keys():
-            funcs[name] += [n]
+            funcs[name] += [mod(tomod, pr)]
         else:
-            funcs[name] = [n]
+            funcs[name] = [mod(tomod, pr)]
 
 def attr_to_dict(l):
     d = {}
@@ -314,42 +280,28 @@ def p_record(p):
     p[0] = []
     header = p[1]
     attributes = p[3] if len(p) > 4 else [[]]
-    #print(p[1])
     for name, base in header:
-        #print(len(name[0]), name[0][0])
         has_dot, is_word, nme, ipa = name
+        if base is None and has_dot: continue
         if is_word:
             for attr in attributes:
+                tok = Token(None, 0, 0)
+                tok._attrs = attr_to_dict(attr)
+                if not ipa is None:
+                    tok.attr(concept['transcription'], ipa)
+                if not tok.attr(concept['transcription']) is None:
+                    tok.attr(concept['transcription'], [tok.attr(concept['transcription'])])
+                if tok.meaning is None and not tok.attr(concept['stem']) is None:
+                    tok.meaning = tok.attr(concept['stem']).rsplit('.', 1)[0]
+                if not tok.attr(concept['number']) is None \
+                    and tok.attr(concept['real-number']) is None:
+                    tok.attr(concept['real-number'], tok.attr(concept['number']))
+                tok.text = [nme]
                 if not base is None:
-                    tok = Token(None, 0, 0)
-                    tok._attrs = attr_to_dict(attr)
-                    if not ipa is None:
-                        tok.attr(concept['transcription'], ipa)
-                    if not tok.attr(concept['transcription']) is None:
-                        tok.attr(concept['transcription'], [tok.attr(concept['transcription'])])
-                    if tok.meaning is None and not tok.attr(concept['stem']) is None:
-                        tok.meaning = tok.attr(concept['stem']).rsplit('.', 1)[0]
-                    if not tok.attr(concept['number']) is None \
-                        and tok.attr(concept['real-number']) is None:
-                        tok.attr(concept['real-number'], tok.attr(concept['number']))
-                    tok.text = [nme]
                     p[0] += modify_token(base, tok)
                 else:
-                    tok = Token(None, 0, 0)
-                    tok._attrs = attr_to_dict(attr)
-                    if not ipa is None:
-                        tok.attr(concept['transcription'], ipa)
-                    if not tok.attr(concept['transcription']) is None:
-                        tok.attr(concept['transcription'], [tok.attr(concept['transcription'])])
-                    if tok.meaning is None and not tok.attr(concept['stem']) is None:
-                        tok.meaning = tok.attr(concept['stem']).rsplit('.', 1)[0]
-                    if not tok.attr(concept['number']) is None \
-                        and tok.attr(concept['real-number']) is None:
-                        tok.attr(concept['real-number'], tok.attr(concept['number']))
-                    tok.text = [nme]
-                    if not has_dot: p[0] += [tok]
+                    p[0] += [tok]
         else:
-            #print(nme)
             if not ipa is None:
                 raise Exception()
             for attr in attributes:
