@@ -1,3 +1,5 @@
+using :: base-funcs { }
+
 ."szép"[sep]      :: adjective { stem: "melbi.szép"   }
 ."okos"[okoʃ]     :: adjective { stem: "prije.okos"   }
 ."drága"[dragɒ]   :: adjective { stem: "kargu.drága"  }

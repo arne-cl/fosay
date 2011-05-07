@@ -1,3 +1,5 @@
+using :: base-funcs { }
+
 ."гарн"     :: adj-cases-1 { stem: "melbi.гарний"     }
 ."розумн"   :: adj-cases-1 { stem: "prije.розумний"   }
 ."мал"      :: adj-cases-1 { stem: "cmalu.малий"      }

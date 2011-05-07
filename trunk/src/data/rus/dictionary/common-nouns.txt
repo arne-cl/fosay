@@ -1,3 +1,5 @@
+using :: base-funcs { }
+
 "здания"[zdanʲija] :: accusative
 {
     lemma: "zdani";

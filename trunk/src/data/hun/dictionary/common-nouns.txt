@@ -1,3 +1,5 @@
+using :: base-funcs { }
+
 "húg"[hug]
 {
     stem: "mensi.húg";

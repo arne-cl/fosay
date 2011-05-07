@@ -1,3 +1,5 @@
+using :: base-verb-bases { }
+
 ."вид" :: verbs-2 { stem: "viska.видеть" }
 ."говори" :: verb-forms-3 { lemma: "cusku.говорить" }
 ."зна" :: verb-forms-1 { stem: "dzuno.знать" }

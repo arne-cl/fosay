@@ -1,4 +1,6 @@
 //ukrainian dictionary v0.0.1
+using :: base-noun-bases { }
+
 "учень"[utʃenʲ]
 {
     lemma: "tadni";
