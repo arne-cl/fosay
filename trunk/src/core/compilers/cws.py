@@ -666,7 +666,8 @@ def p_error(p):
             print_error(p.lineno, find_column(p.lexpos), "Syntax error")
     raise Exception()
 
-
+glexer = lex.lex()
+yaccer = yacc.yacc()
 
 path = None
 
@@ -679,9 +680,10 @@ def _parse_text(s, print_to_console):
     text = s
     res = None
     try:
-        lexer = lex.lex()
+        global glexer, yaccer
+        lexer = glexer.clone()
         lexer.lineno = 1
-        yaccer = yacc.yacc()
+        #yaccer = gyaccer.clone()
         res = yaccer.parse(s, lexer=lexer, tracking=PRINT_TO_CONSOLE)
     except Exception:
         if PRINT_TO_CONSOLE:
