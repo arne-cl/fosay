@@ -1,3 +1,5 @@
+using :: base-funcs { }
+
 "john" :: possessive accusative
 {
     transcription: "dʒon";

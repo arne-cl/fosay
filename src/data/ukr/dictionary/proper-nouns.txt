@@ -1,3 +1,5 @@
+using :: base-noun-bases { }
+
 ."джон" :: noun-cases-7(proper)
 {
     stem: "ioxanan.джон";

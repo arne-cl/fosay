@@ -1,3 +1,5 @@
+using :: base-funcs { }
+
 "джон"[dʒon]
 {
     lemma: "ioxanan";

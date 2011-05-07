@@ -1,3 +1,5 @@
+using :: base-funcs { }
+
 "iván" :: cases-london
 {
     transcription: "ivan";

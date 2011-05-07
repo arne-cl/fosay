@@ -1,0 +1,468 @@
+verb-perfect-future-po
+{
+    prefix: "по";
+    aspect: perfect;
+    tense: future;
+}
+
+verb-perfect-present-po
+{
+    prefix: "по";
+    aspect: perfect;
+    tense: present;
+}
+
+verb-perfect-future-na
+{
+    prefix: "на";
+    aspect: perfect;
+    tense: future;
+}
+
+verb-perfect-present-na
+{
+    prefix: "на";
+    aspect: perfect;
+    tense: present;
+}
+
+verb-perfect-future-s
+{
+    prefix: "с";
+    aspect: perfect;
+    tense: future;
+}
+
+verb-perfect-present-s
+{
+    prefix: "с";
+    aspect: perfect;
+    tense: present;
+}
+
+verb-continuous
+{
+    aspect: continuous;
+}
+
+verb-perfect-continuous-durative
+{
+    aspect: perfect-continuous-durative;
+}
+
+verb-perfect-continuous-not-durative
+{
+    tense: present;
+    aspect: perfect-continuous-not-durative;
+}
+inf
+{
+    tense: infinitive;
+    aspect: indefinite;
+    participle: not-participle;
+}
+pr-s1
+{
+    tense: present;
+    persone: first;
+    number: singular;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+pr-p1
+{
+    tense: present;
+    persone: first;
+    number: plural;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+pr-s2i
+{
+    tense: present;
+    persone: second;
+    number: singular;
+    form: informal;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+pr-s2f
+{
+    tense: present;
+    persone: second;
+    number: singular;
+    form: formal;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+pr-p2i
+{
+    tense: present;
+    persone: second;
+    number: plural;
+    form: informal;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+pr-s3
+{
+    tense: present;
+    persone: third;
+    number: singular;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+pr-p3
+{
+    tense: present;
+    persone: third;
+    number: plural;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+//past;
+pa-sm
+{
+    gender: masculine;
+    tense: past;
+    number: singular;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+pa-sf
+{
+    gender: feminine;
+    tense: past;
+    number: singular;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+pa-sl
+{
+    gender: lifeless;
+    tense: past;
+    number: singular;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+pa-p
+{
+    tense: past;
+    number: plural;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+//future;
+fu-s1
+{
+    tense: future;
+    persone: first;
+    number: singular;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+fu-p1
+{
+    tense: future;
+    persone: first;
+    number: plural;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+fu-s2i
+{
+    tense: future;
+    persone: second;
+    number: singular;
+    form: informal;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+fu-s2f
+{
+    tense: future;
+    persone: second;
+    number: singular;
+    form: formal;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+fu-p2i
+{
+    tense: future;
+    persone: second;
+    number: plural;
+    form: informal;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+fu-s3
+{
+    tense: future;
+    persone: third;
+    number: singular;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+fu-p3
+{
+    tense: future;
+    persone: third;
+    number: plural;
+    participle: not-participle;
+    mood: declarative;
+    aspect: indefinite;
+}
+
+co-sm
+{
+    gender: masculine;
+    tense: past;
+    number: singular;
+    participle: not-participle;
+    mood: conditional;
+    aspect: indefinite;
+}
+co-sf
+{
+    gender: feminine;
+    tense: past;
+    number: singular;
+    participle: not-participle;
+    mood: conditional;
+    aspect: indefinite;
+}
+co-sl
+{
+    gender: lifeless;
+    tense: past;
+    number: singular;
+    mood: conditional;
+    participle: not-participle;
+    aspect: indefinite;
+}
+co-p
+{
+    tense: past;
+    number: plural;
+    mood: conditional;
+    participle: not-participle;
+    aspect: indefinite;
+}
+
+.past-verb-forms-1
+:: pa-sm { sufix: "в"  }
+:: pa-sf { sufix: "ла" }
+:: pa-sl { sufix: "ло" }
+:: pa-p  { sufix: "ли" }
+
+.past-verb-forms-kupljaty
+:: pa-sm { sufix: "в"  }
+:: pa-sf { sufix: "ла" }
+:: pa-sl { sufix: "ло" }
+:: pa-p  { sufix: "ли" }
+
+.present-verb-forms-1
+:: pr-s1  { sufix: "ю"   }
+:: pr-p1  { sufix: "ємо" }
+:: pr-s2i { sufix: "єш"  }
+:: pr-s2f { sufix: "єте" }
+:: pr-p2i { sufix: "єте" }
+:: pr-s3  { sufix: "є"   }
+:: pr-p3  { sufix: "ють" }
+
+.present-verb-forms-kupljaty
+:: pr-s1  { sufix: "ю"   }
+:: pr-p1  { sufix: "ємо" }
+:: pr-s2i { sufix: "єш"  }
+:: pr-s2f { sufix: "єте" }
+:: pr-p2i { sufix: "єте" }
+:: pr-s3  { sufix: "є"   }
+:: pr-p3  { sufix: "ють" }
+
+.present-verb-forms-kupyty
+:: pr-s1  { sufix: "ую"   }
+:: pr-p1  { sufix: "уємо" }
+:: pr-s2i { sufix: "уєш"  }
+:: pr-s2f { sufix: "уєте" }
+:: pr-p2i { sufix: "уєте" }
+:: pr-s3  { sufix: "ує"   }
+:: pr-p3  { sufix: "ують" }
+
+.future-verb-forms-1
+:: fu-s1  { sufix: "тиму"   }
+:: fu-p1  { sufix: "тимемо" }
+:: fu-s2i { sufix: "тимеш"  }
+:: fu-s2f { sufix: "тимете" }
+:: fu-p2i { sufix: "тимете" }
+:: fu-s3  { sufix: "тиме"   }
+:: fu-p3  { sufix: "тимуть" }
+
+.future-verb-forms-kupyty
+:: fu-s1  { sufix: "лю"   }
+:: fu-p1  { sufix: "имо"  }
+:: fu-s2i { sufix: "иш"   }
+:: fu-s2f { sufix: "ите"  }
+:: fu-p2i { sufix: "ите"  }
+:: fu-s3  { sufix: "ить"  }
+:: fu-p3  { sufix: "лять" }
+
+.future-verb-forms-kupljaty
+:: fu-s1  { sufix: "тиму"   }
+:: fu-p1  { sufix: "тимемо" }
+:: fu-s2i { sufix: "тимеш"  }
+:: fu-s2f { sufix: "тимете" }
+:: fu-p2i { sufix: "тимете" }
+:: fu-s3  { sufix: "тиме"   }
+:: fu-p3  { sufix: "тимуть" }
+
+.conditional-verb-forms-1
+:: co-sm { sufix: "в би" }
+:: co-sf { sufix: "ла б" }
+:: co-sl { sufix: "ло б" }
+:: co-p  { sufix: "ли б" }
+
+.conditional-verb-forms-kupljaty
+:: co-sm { sufix: "в би" }
+:: co-sf { sufix: "ла б" }
+:: co-sl { sufix: "ло б" }
+:: co-p  { sufix: "ли б" }
+
+.present-verb-forms-2
+:: pr-s1  { sufix: "у"   }
+:: pr-p1  { sufix: "имо" }
+:: pr-s2i { sufix: "иш"  }
+:: pr-s2f { sufix: "ите" }
+:: pr-p2i { sufix: "ите" }
+:: pr-s3  { sufix: "ить" }
+:: pr-p3  { sufix: "ать" }
+
+.past-verb-forms-yla
+:: pa-sm { sufix: "ив"  }
+:: pa-sf { sufix: "ила" }
+:: pa-sl { sufix: "ило" }
+:: pa-p  { sufix: "или" }
+
+.future-verb-forms-ytymu
+:: fu-s1  { sufix: "итиму"   }
+:: fu-p1  { sufix: "итимемо" }
+:: fu-s2i { sufix: "итимеш"  }
+:: fu-s2f { sufix: "итимете" }
+:: fu-p2i { sufix: "итимете" }
+:: fu-s3  { sufix: "итиме"   }
+:: fu-p3  { sufix: "итимуть" }
+
+.conditional-verb-forms-yla
+:: co-sm { sufix: "ив би" }
+:: co-sf { sufix: "ила б" }
+:: co-sl { sufix: "ило б" }
+:: co-p  { sufix: "или б" }
+
+
+.present-verb-forms-3
+:: pr-s1  { sufix: "ю"   }
+:: pr-p1  { sufix: "имо" }
+:: pr-s2i { sufix: "иш"  }
+:: pr-s2f { sufix: "ите" }
+:: pr-p2i { sufix: "ите" }
+:: pr-s3  { sufix: "ить" }
+:: pr-p3  { sufix: "ять" }
+
+
+.infinitive-yty
+:: inf { sufix: "ити" }
+
+.infinitive-ty
+:: inf { sufix: "ти" }
+
+.verb-forms-3 ::
+    infinitive-yty
+    past-verb-forms-yla
+    past-verb-forms-yla(verb-perfect-present-po)
+    present-verb-forms-3 
+    present-verb-forms-3(verb-perfect-future-po) 
+    future-verb-forms-ytymu
+    conditional-verb-forms-yla
+{
+    type: verb;
+}
+
+.verb-forms-1 ::
+    infinitive-ty
+    past-verb-forms-1 
+    past-verb-forms-1(verb-perfect-present-po) 
+    present-verb-forms-1 
+    present-verb-forms-1(verb-perfect-future-po) 
+    future-verb-forms-1 
+    conditional-verb-forms-1
+{
+    type: verb;
+}
+
+.verb-forms-kupljaty ::
+    infinitive-ty
+    past-verb-forms-kupljaty 
+    past-verb-forms-kupljaty(verb-perfect-present-po) 
+    present-verb-forms-kupljaty 
+    present-verb-forms-kupljaty(verb-perfect-future-po) 
+    future-verb-forms-kupljaty 
+    conditional-verb-forms-kupljaty
+{
+    type: verb;
+}
+
+.verb-forms-kupyty ::
+    infinitive-yty
+    past-verb-forms-yla
+    past-verb-forms-yla(verb-perfect-present-po)
+    present-verb-forms-kupyty 
+    present-verb-forms-kupyty(verb-perfect-future-po) 
+    future-verb-forms-kupyty 
+    conditional-verb-forms-yla
+{
+    type: verb;
+}
+
+.verbs-2 ::
+    infinitive-yty
+    past-verb-forms-yla
+    past-verb-forms-yla(verb-perfect-present-po)
+    present-verb-forms-2 
+    present-verb-forms-2(verb-perfect-future-po) 
+    future-verb-forms-ytymu
+    conditional-verb-forms-yla
+{
+    type: verb;
+}
+
+.cont-verbs-2 ::
+    infinitive-yty
+    past-verb-forms-yla
+    past-verb-forms-yla(verb-perfect-present-po)
+    past-verb-forms-yla(verb-perfect-continuous-not-durative)
+    present-verb-forms-2
+    present-verb-forms-2(verb-perfect-future-po)
+    present-verb-forms-2(verb-continuous)
+    present-verb-forms-2(verb-perfect-continuous-durative) 
+    future-verb-forms-ytymu
+    conditional-verb-forms-yla
+{
+    type: verb;
+}

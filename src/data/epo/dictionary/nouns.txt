@@ -1,2 +1,4 @@
+using :: base-bases { }
+
 ."knab" :: noun { stem: "nanla.knabo"; gender: masculine; }
 ."knabin" :: noun { stem: "nixli.knabino"; gender: feminine; }

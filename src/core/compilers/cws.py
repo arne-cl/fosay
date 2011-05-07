@@ -19,6 +19,8 @@ ERROR_INVALID_ATTR_PAR_TYPE = "'%s' has bad type"
 ERROR_INVALID_ATTR = "'%s' is an invalid attribute"
 ERROR_IMP_INHERIT_NAME = "it's impossible to inherit any name here"
 ERROR_INVALID_BASE_NAME = "base '%s' doesn't exist."
+ERROR_MISSING_FILE = "can't find '%s' .cws file."
+ERROR_DUPLICATE_FILE = "file '%s' .cws was already used."
 
 # Compute column.
 #     input is the input text string
@@ -48,6 +50,9 @@ class CWSSyntaxError(SyntaxError):
                 print_error(p.lineno(n), find_column(p.lexpos(n)), errmsg % s)
         SyntaxError.__init__(self)
 
+reserved = {
+   'using' : 'USING'
+}
 
 tokens = [
     'IDENTIFIER',
@@ -63,7 +68,7 @@ tokens = [
     "ERROR_IDENTIFIER_NUM",
     "ERROR_IDENTIFIER_HYPH",
     "ERROR_IDENTIFIER_NUM_HYPH",
-]
+] + list(reserved.values())
 
 # Tokens
 
@@ -71,7 +76,6 @@ literals = ['{', '}', ':', ';', ',', '[', ']', '(', ')']
 
 t_ignore = " \t"
 t_TRANSCR = r"\[[^\[\]]+\]"
-t_IDENTIFIER = r"[a-zA-Z_][-a-zA-Z_0-9]*"
 t_DOT_IDENTIFIER = r"\.[a-zA-Z_][-a-zA-Z_0-9]*"
 t_DCOLON = r"::"
 t_STRING = r'\"([^\\\n]|(\\.))*?\"'
@@ -85,6 +89,11 @@ t_ERROR_IDENTIFIER_NUM = r"[-0-9]+[a-zA-Z0-9]*([a-zA-Z]+|(-[a-zA-Z0-9]+)+)"
 t_ERROR_IDENTIFIER_HYPH = r'[a-zA-Z]' + ident_hyph_suff
 t_ERROR_IDENTIFIER_NUM_HYPH = r"[-0-9]+" + ident_hyph_suff
 #t_ERROR_STRING = r'\"([^\\\n\"]|(\\.))+'
+
+def t_IDENTIFIER(t):
+    r"[a-zA-Z_][-a-zA-Z_0-9]*"
+    t.type = reserved.get(t.value, 'IDENTIFIER')    # Check for reserved words
+    return t
 
 def t_FLOAT(t):
     '''(0\.[0-9]{1,4}|1\.0)'''
@@ -118,31 +127,27 @@ def t_error(t):
 
 
 
-precedence = (
-    ('right',
-        'IDENTIFIER',
-        'FLOAT',
-        "ERROR_IDENTIFIER_NUM",
-        "ERROR_IDENTIFIER_HYPH",
-        "ERROR_IDENTIFIER_NUM_HYPH",),
-        #"ERROR_STRING"),
-    ('right', '{'),
-    ('right', '}'),
-)
-
-lexer = lex.lex()
+#precedence = (
+#    ('right',
+#        'IDENTIFIER',
+#        'USING',
+#        'FLOAT',
+#        "ERROR_IDENTIFIER_NUM",
+#        "ERROR_IDENTIFIER_HYPH",
+#        "ERROR_IDENTIFIER_NUM_HYPH",),
+#        #"ERROR_STRING"),
+#    ('right', '{'),
+#    ('right', '}'),
+#    #('right', 'USING')
+#)
 
 
 # Parsing rules
-
-def p_whole(p):
-    '''whole : records'''
-    p[0] = p[1]
-
 def p_records(p):
     '''records : one_record
                | few_records'''
-    p[0] = p[1]
+    global funcs
+    p[0] = (p[1][0], p[1][1], funcs)
 
 def fill_dm(dictionary, meanings, tokens):
     for token in tokens:
@@ -158,14 +163,14 @@ def fill_dm(dictionary, meanings, tokens):
     return (dictionary, meanings)
 
 def p_one_record(p):
-    '''one_record : record'''
-    dictionary = {}
-    meanings = {}
-    p[0] = fill_dm(dictionary, meanings, p[1])
+    '''one_record : record
+                  | using'''
+    p[0] = p[1]
 
 def p_few_records(p):
-    '''few_records : records record'''
-    p[0] = fill_dm(p[1][0], p[1][1], p[2])
+    '''few_records : records record
+                   | records using'''
+    p[0] = (update_dict(p[1][0], p[2][0]), update_dict(p[1][1], p[2][1]))
 
 def modif_word(n, props):
     w = deepcopy(n)
@@ -272,12 +277,55 @@ def attr_to_dict(l):
         d[key] = value
     return d
 
+def p_using(p):
+    '''using : USING DCOLON files "{" "}"'''
+    p[0] = p[3]
+    
+def p_files(p):
+    '''files : one_file
+             | few_files'''
+    p[0] = p[1]
+
+def p_one_file(p):
+    '''one_file : identifier'''
+    global cws_files
+    if not p[1] in cws_files:
+        raise CWSSyntaxError(ERROR_MISSING_FILE, p, 1, p[1])
+    
+    global attached_files
+    if p[1] in attached_files:
+        raise CWSSyntaxError(ERROR_DUPLICATE_FILE, p, 1, p[1])
+    attached_files += [p[1]]
+    
+    global all_funcs, funcs
+    if p[1] in all_funcs:
+        funcs = update_dict(funcs, all_funcs[p[1]])
+        return ({}, {})
+    
+    global PRINT_TO_CONSOLE, path, text
+    _path = path
+    _text = text
+    _funcs = funcs
+    
+    funcs = {}
+    nme = p[1]
+    tmp = _parse_file(cws_files[nme], PRINT_TO_CONSOLE)
+    path = _path
+    text = _text
+    funcs = update_dict(_funcs, tmp[2])
+    
+    p[0] = (tmp[0], tmp[1])
+
+def p_few_files(p):
+    '''few_files : files one_file'''
+    p[0] = (update_dict(p[1][0], p[2][0]), update_dict(p[1][1], p[2][1]))
+
 def p_record(p):
     '''record : header "{" attributes "}"
               | header "{" attributes ";" "}"
               | header "{" "}"'''
     global funcs
-    p[0] = []
+    res = []
     header = p[1]
     attributes = p[3] if len(p) > 4 else [[]]
     for name, base in header:
@@ -298,9 +346,9 @@ def p_record(p):
                     tok.attr(concept['real-number'], tok.attr(concept['number']))
                 tok.text = [nme]
                 if not base is None:
-                    p[0] += modify_token(base, tok)
+                    res += modify_token(base, tok)
                 else:
-                    p[0] += [tok]
+                    res += [tok]
         else:
             if not ipa is None:
                 raise Exception()
@@ -312,6 +360,9 @@ def p_record(p):
                         funcs[nme] += [attr]
                     else:
                         funcs[nme] = [attr]
+    dictionary = {}
+    meanings = {}
+    p[0] = fill_dm(dictionary, meanings, res)
 
 #-------------------------------------------------------------------------------
 # Identifiers
@@ -333,15 +384,15 @@ def p_error_ident(p):
 
 def p_error_ident_num(p):
     '''error_ident_num : ERROR_IDENTIFIER_NUM'''
-    raise AtnlSyntaxError(ERROR_INVALID_IDENT_NUM, p, 1, p[1])
+    raise CWSSyntaxError(ERROR_INVALID_IDENT_NUM, p, 1, p[1])
 
 def p_error_ident_hyph(p):
     '''error_ident_hyph : ERROR_IDENTIFIER_HYPH'''
-    raise AtnlSyntaxError(ERROR_INVALID_IDENT_HYPH, p, 1, p[1])
+    raise CWSSyntaxError(ERROR_INVALID_IDENT_HYPH, p, 1, p[1])
 
 def p_error_ident_num_hyph(p):
     '''error_ident_num_hyph : ERROR_IDENTIFIER_NUM_HYPH'''
-    raise AtnlSyntaxError(ERROR_INVALID_IDENT_NUM_HYPH, p, 1, p[1])
+    raise CWSSyntaxError(ERROR_INVALID_IDENT_NUM_HYPH, p, 1, p[1])
 
 #-------------------------------------------------------------------------------
 
@@ -567,7 +618,7 @@ def p_attr_str(p):
 def p_attr_float(p):
     '''attr_float : identifier ":" FLOAT'''
     if not p[1] in concept:
-        raise AtnlSyntaxError(ERROR_INVALID_ATTR, p, 1, p[1])
+        raise CWSSyntaxError(ERROR_INVALID_ATTR, p, 1, p[1])
     if concept_type[p[1]] != 'float':
         raise CWSSyntaxError(ERROR_INVALID_ATTR_PAR_TYPE, p, 3, p[3])
     p[0] = [(concept[p[1]], p[3])]
@@ -609,11 +660,13 @@ def p_error(p):
                 #print(text)
             else:
                 print_error(-1, -1, "Syntax error")
+                #global text
+                #print(text)
         except UnicodeEncodeError:
             print_error(p.lineno, find_column(p.lexpos), "Syntax error")
     raise Exception()
 
-yaccer = yacc.yacc()
+
 
 path = None
 
@@ -624,9 +677,11 @@ def _parse_text(s, print_to_console):
     global text, prev
     prev = None
     text = s
-    lexer.lineno = 1
     res = None
     try:
+        lexer = lex.lex()
+        lexer.lineno = 1
+        yaccer = yacc.yacc()
         res = yaccer.parse(s, lexer=lexer, tracking=PRINT_TO_CONSOLE)
     except Exception:
         if PRINT_TO_CONSOLE:
@@ -644,7 +699,8 @@ def _read_file(file_path):
         f = open(file_path, encoding = 'utf-8')
         s = f.read()
     except IOError:
-        print("can't open file '" + os.path.join(self.path, file_path) + "'")
+        #print("can't open file '" + os.path.join(self.path, file_path) + "'")
+        print("can't open file '" + file_path + "'")
     finally:
         f.close()
     return s
@@ -671,13 +727,35 @@ def update_dict(c, b):
             a[key] = b[key] if type(b[key]) == list else [b[key]]
     return a
 
-def parse_files(pathes, _to_ipa, print_to_console=True):
-    global funcs, to_ipa
-    funcs = {}
+cws_files = {}
+import os
+
+def find_all_cws(dirname, nme = ''):
+    global cws_files
+    for f in os.listdir(dirname):
+        fp = os.path.join(dirname, f)
+        if os.path.isdir(fp):
+            find_all_cws(fp, nme + f + '-')
+        elif fp[-4:] == '.txt':
+            cws_files[nme + f[:-4]] = fp
+
+def parse_files(path, _to_ipa, print_to_console=True):
+    global cws_files
+    cws_files = {}
+    find_all_cws(path)
+    
+    global funcs, to_ipa, all_funcs, attached_files
+    #print(cws_files)
+    all_funcs = {}
+
     to_ipa = _to_ipa
     vocabulary, meanings = {}, {}
-    for path in pathes:
+    for key in [x for x in cws_files.keys()]:
+        if key in all_funcs: continue
+        path = cws_files[key]
         #print(path)
+        funcs = {}
+        attached_files = []
         tmp = _parse_file(path, print_to_console)
         vocabulary = update_dict(vocabulary, tmp[0])
         meanings = update_dict(meanings, tmp[1])

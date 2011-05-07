@@ -1,3 +1,5 @@
+using :: base-funcs { }
+
 "eight" :: xeen ordinal-t decimal-t
 {
     transcription: "et";

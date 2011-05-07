@@ -1,3 +1,5 @@
+using :: base-verb-bases { }
+
 ."бач" :: cont-verbs-2
 {
     stem: "viska.бачити"

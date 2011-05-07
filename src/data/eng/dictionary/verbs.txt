@@ -1,3 +1,5 @@
+using :: base-funcs { }
+
 "am"
 {
     transcription: "æm";

@@ -1,3 +1,5 @@
+using :: base-verb-bases { }
+
 "mondani"[mondɒni]
 {
     lemma: "cusku";

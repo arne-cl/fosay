@@ -1,3 +1,5 @@
+using :: base-funcs { }
+
 "teacher" :: plural-sz possessive accusative
 {
     transcription: "titʃər";

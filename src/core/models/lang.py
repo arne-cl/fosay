@@ -163,14 +163,8 @@ class Language():
 
     def _init_dictionary(self):
         self._init_tr()
-        files = []
-        for infile in glob.glob(os.path.join(os.path.join(self.path, 'base'), '*.txt')):
-            files += [infile]
-        files = sorted(files) ###############
-        for infile in glob.glob(os.path.join(os.path.join(self.path, 'dictionary'), '*.txt')):
-            files += [infile]
-
-        self.vocabulary, self.meanings = cws.parse_files(files, self.gen_to_ipa(), True)
+        
+        self.vocabulary, self.meanings = cws.parse_files(os.path.join(self.path, 'dictionary'), self.gen_to_ipa(), True)
         
         self.words = []
         for k in self.vocabulary.keys():
