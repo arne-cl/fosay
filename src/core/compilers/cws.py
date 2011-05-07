@@ -683,7 +683,6 @@ def _parse_text(s, print_to_console):
         global glexer, yaccer
         lexer = glexer.clone()
         lexer.lineno = 1
-        #yaccer = gyaccer.clone()
         res = yaccer.parse(s, lexer=lexer, tracking=PRINT_TO_CONSOLE)
     except Exception:
         if PRINT_TO_CONSOLE:
@@ -738,7 +737,7 @@ def find_all_cws(dirname, nme = ''):
         fp = os.path.join(dirname, f)
         if os.path.isdir(fp):
             find_all_cws(fp, nme + f + '-')
-        elif fp[-4:] == '.txt':
+        elif fp[-4:] == '.cws':
             cws_files[nme + f[:-4]] = fp
 
 def parse_files(path, _to_ipa, print_to_console=True):
