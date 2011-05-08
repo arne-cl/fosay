@@ -5,6 +5,7 @@ __author__="zoltan kochan"
 __date__ ="$6 бер 2011 1:32:14$"
 #quenya Quenya (qenya)
 import core.ply.lex as lex
+from core.ply.lex import TOKEN
 import core.ply.yacc as yacc
 from core.constants import concept
 import core.constants as const
@@ -56,12 +57,12 @@ class AtnlSyntaxError(SyntaxError):
     def __init__(self, errmsg, p, n, s):
         global PRINT_TO_CONSOLE
         if PRINT_TO_CONSOLE:
-            #if not path is None:
             print_error(p.lineno(n), find_column(p.lexpos(n)), errmsg % s)
-            #else:
-            #    errmsg = "line %d, col %d: " + errmsg
-            #    print(errmsg % (p.lineno(n), find_column(p.lexpos(n)), s))
         SyntaxError.__init__(self)
+
+reserved = {
+   'is' : 'IS'
+}
 
 tokens = [
     'CONJ_IDENTIFIER',
@@ -77,6 +78,7 @@ tokens = [
     "RANY",
     "FLOAT",
     "ASSIGN_PRIOR",
+    "IS",
 
     "ERROR_STRING",
     "ERROR_IDENTIFIER_NUM",
@@ -97,7 +99,6 @@ t_CONJ_IDENTIFIER       = r"&" + ident
 t_DOLLAR_IDENTIFIER     = r"\$" + ident
 t_DOT_IDENTIFIER        = r"\." + ident
 t_DOLLAR_DOT_IDENTIFIER = r"\$\." + ident
-t_IDENTIFIER            = r"" + ident
 t_STRING = r'\"([^\\\n]|(\\.))*?\"'
 t_ARROW = r"->"
 t_ASSIGN_RULE = r":-"
@@ -114,6 +115,11 @@ t_ERROR_IDENTIFIER_NUM = r"[-0-9]+[a-zA-Z0-9]*([a-zA-Z]+|(-[a-zA-Z0-9]+)+)"
 t_ERROR_IDENTIFIER_HYPH = r'[a-zA-Z]' + ident_hyph_suff
 t_ERROR_IDENTIFIER_NUM_HYPH = r"[-0-9]+" + ident_hyph_suff
 t_ERROR_STRING = r'\"([^\\\n\"]|(\\.))+'
+
+@TOKEN(ident)
+def t_IDENTIFIER(t):
+    t.type = reserved.get(t.value, 'IDENTIFIER')    # Check for reserved words
+    return t
 
 def t_FLOAT(t):
     '''(0\.[0-9]{1,4}|1\.0)'''
@@ -228,10 +234,8 @@ def p_invalid_string(p):
 # is_type rules
 #-------------------------------------------------------------------------------
 def p_is_type(p):
-    '''is_type : identifier identifier rule_name_simple ";"
-               | identifier identifier rule_name_complex ";"'''
-    if p[2] != 'is':
-        AtnlSyntaxError("'%s' is an invalid keyword", p, 2, p[2])
+    '''is_type : identifier IS rule_name_simple ";"
+               | identifier IS rule_name_complex ";"'''
     global label_types, standard_attr
     label_types[p[1]], standard_attr[p[1]] = p[3]
 
