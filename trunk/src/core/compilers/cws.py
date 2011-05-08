@@ -26,17 +26,17 @@ ERROR_DUPLICATE_FILE = "file '%s' .cws was already used."
 #     input is the input text string
 #     token is a token instance
 def find_column(lexpos):
-    global text
-    last_cr = text.rfind('\n',0,lexpos)
+    global Params
+    last_cr = Params.text.rfind('\n',0,lexpos)
     if last_cr < 0:
         last_cr = 0
     column = (lexpos - last_cr)
     return column
 
 def print_error(line, col, errmsg):
-    global path
+    global Params
     print("-"*80)
-    print("File '%s', line %d, column %d" % (path, line, col))
+    print("File '%s', line %d, column %d" % (Params.path, line, col))
     print(" "*5, "CWS ERROR:", errmsg)
     print("-"*80)
 
@@ -146,8 +146,8 @@ def t_error(t):
 def p_records(p):
     '''records : one_record
                | few_records'''
-    global funcs
-    p[0] = (p[1][0], p[1][1], funcs)
+    global Params
+    p[0] = (p[1][0], p[1][1], Params.funcs)
 
 def fill_dm(dictionary, meanings, tokens):
     for token in tokens:
@@ -183,18 +183,16 @@ def modif_word(n, props):
             w.meaning = modif_text(v, w.meaning)
         else:
             w.attr(p, v)
-    global to_ipa
+    global Params
     if w.attr(concept['transcription']) is None and \
         not w.attr(concept['text']) is None:
-        w.transcription = to_ipa(w.text)
+        w.transcription = Params.to_ipa(w.text)
     if w.meaning is None and not w.attr(concept['stem']) is None:
         w.meaning = w.attr(concept['stem']).rsplit('.', 1)[0]
     if not w.attr(concept['number']) is None \
         and w.attr(concept['real-number']) is None:
         w.attr(concept['real-number'], w.attr(concept['number']))
     return w
-
-funcs = {}
 
 def modify_token(base, word):
     return [modif_word(word, b) for b in get_base(base)]
@@ -251,25 +249,25 @@ def mod(obj, base):
 
 def modify(object_name, base_name):
     res = []
-    global funcs
-    for base in funcs[base_name]:
+    global Params
+    for base in Params.funcs[base_name]:
         if base is None: raise Exception()
-        for obj in funcs[object_name]:
+        for obj in Params.funcs[object_name]:
             res += [mod(obj, base)]
     return res
 
 def get_base(base):
-    if base[1] is None: return funcs[base[0]]
+    if base[1] is None: return GetParams().funcs[base[0]]
     else: return modify(base[0], base[1])
 
 def modify_base(has_dot, name, tomod, base):
-    global funcs
+    global Params
     for pr in get_base(base):
         if pr is None and has_dot: continue
-        if name in funcs.keys():
-            funcs[name] += [mod(tomod, pr)]
+        if name in Params.funcs.keys():
+            Params.funcs[name] += [mod(tomod, pr)]
         else:
-            funcs[name] = [mod(tomod, pr)]
+            Params.funcs[name] = [mod(tomod, pr)]
 
 def attr_to_dict(l):
     d = {}
@@ -288,31 +286,29 @@ def p_files(p):
 
 def p_one_file(p):
     '''one_file : identifier'''
-    global cws_files
-    if not p[1] in cws_files:
+    global Params
+    if not p[1] in Params.cws_files:
         raise CWSSyntaxError(ERROR_MISSING_FILE, p, 1, p[1])
     
-    global attached_files
-    if p[1] in attached_files:
+    if p[1] in Params.attached_files:
         raise CWSSyntaxError(ERROR_DUPLICATE_FILE, p, 1, p[1])
-    attached_files += [p[1]]
+    Params.attached_files += [p[1]]
     
-    global all_funcs, funcs
-    if p[1] in all_funcs:
-        funcs = update_dict(funcs, all_funcs[p[1]])
+    if p[1] in Params.all_funcs:
+        Params.funcs = update_dict(Params.funcs, Params.all_funcs[p[1]])
         return ({}, {})
     
-    global PRINT_TO_CONSOLE, path, text
-    _path = path
-    _text = text
-    _funcs = funcs
+    global PRINT_TO_CONSOLE
+    _path = Params.path
+    _text = Params.text
+    _funcs = Params.funcs
     
-    funcs = {}
+    Params.funcs = {}
     nme = p[1]
-    tmp = _parse_file(cws_files[nme], PRINT_TO_CONSOLE)
-    path = _path
-    text = _text
-    funcs = update_dict(_funcs, tmp[2])
+    tmp = _parse_file(Params.cws_files[nme], PRINT_TO_CONSOLE)
+    Params.path = _path
+    Params.text = _text
+    Params.funcs = update_dict(_funcs, tmp[2])
     
     p[0] = (tmp[0], tmp[1])
 
@@ -324,7 +320,7 @@ def p_record(p):
     '''record : header "{" attributes "}"
               | header "{" attributes ";" "}"
               | header "{" "}"'''
-    global funcs
+    global Params
     res = []
     header = p[1]
     attributes = p[3] if len(p) > 4 else [[]]
@@ -356,10 +352,10 @@ def p_record(p):
                 if not base is None:
                     modify_base(has_dot, nme, attr, base)
                 elif not has_dot and attr != []:
-                    if nme in funcs.keys():
-                        funcs[nme] += [attr]
+                    if nme in Params.funcs.keys():
+                        Params.funcs[nme] += [attr]
                     else:
-                        funcs[nme] = [attr]
+                        Params.funcs[nme] = [attr]
     dictionary = {}
     meanings = {}
     p[0] = fill_dm(dictionary, meanings, res)
@@ -409,16 +405,16 @@ def p_simple_header(p):
 
 def p_full_header(p):
     '''full_header : words DCOLON base_tokens'''
-    global prev
-    prev = p[1]
-    p[0] = [(w, bt) for bt in [None] + p[3] for w in prev]
+    global Params
+    Params.prev = p[1]
+    p[0] = [(w, bt) for bt in [None] + p[3] for w in Params.prev]
 
 def p_lil_full_header(p):
     '''lil_full_header : DCOLON base_tokens'''
-    global prev
-    if prev is None:
+    global Params
+    if Params.prev is None:
         raise CWSSyntaxError(ERROR_IMP_INHERIT_NAME, p, 1)
-    p[0] = [(w, bt) for bt in [None] + p[2] for w in prev]
+    p[0] = [(w, bt) for bt in [None] + p[2] for w in Params.prev]
 #endregion
 
 def p_words(p):
@@ -488,33 +484,33 @@ def p_base_tokens(p):
 
 def p_base_token(p):
     '''base_token : identifier'''
-    global funcs
-    if not p[1] in funcs:
+    global Params
+    if not p[1] in Params.funcs:
         raise CWSSyntaxError(ERROR_INVALID_BASE_NAME, p, 1, p[1])
     p[0] = [(p[1], None)]
 
 def p_complex_base_token(p):
     '''complex_base_token : identifier "(" identifier ")"'''
-    global funcs
-    if not p[1] in funcs:
+    global Params
+    if not p[1] in Params.funcs:
         raise CWSSyntaxError(ERROR_INVALID_BASE_NAME, p, 1, p[1])
-    if not p[3] in funcs:
+    if not p[3] in Params.funcs:
         raise CWSSyntaxError(ERROR_INVALID_BASE_NAME, p, 3, p[3])
     p[0] = [(p[1], p[3])]
 
 def p_few_base_tokens(p):
     '''few_base_tokens : base_tokens identifier'''
-    global funcs
-    if not p[2] in funcs:
+    global Params
+    if not p[2] in Params.funcs:
         raise CWSSyntaxError(ERROR_INVALID_BASE_NAME, p, 2, p[2])
     p[0] = p[1] + [(p[2], None)]
 
 def p_few_complex_base_tokens(p):
     '''few_complex_base_tokens : base_tokens identifier "(" identifier ")" '''
-    global funcs
-    if not p[2] in funcs:
+    global Params
+    if not p[2] in Params.funcs:
         raise CWSSyntaxError(ERROR_INVALID_BASE_NAME, p, 2, p[2])
-    if not p[4] in funcs:
+    if not p[4] in Params.funcs:
         raise CWSSyntaxError(ERROR_INVALID_BASE_NAME, p, 4, p[4])
     p[0] = p[1] + [(p[2], p[4])]
 
@@ -675,24 +671,24 @@ def _parse_text(s, print_to_console):
     global PRINT_TO_CONSOLE
     PRINT_TO_CONSOLE = print_to_console
 
-    global text, prev
-    prev = None
-    text = s
+    global Params
+    Params.prev = None
+    Params.text = s
     res = None
-    try:
-        global glexer, yaccer
-        lexer = glexer.clone()
-        lexer.lineno = 1
-        res = yaccer.parse(s, lexer=lexer, tracking=PRINT_TO_CONSOLE)
-    except Exception:
-        if PRINT_TO_CONSOLE:
-            print("WARNING: internal CWS compiler error")
-        return None
+    #try:
+    global glexer, yaccer
+    lexer = glexer.clone()
+    lexer.lineno = 1
+    res = yaccer.parse(s, lexer=lexer, tracking=PRINT_TO_CONSOLE)
+    #except Exception:
+    #    if PRINT_TO_CONSOLE:
+    #        print("WARNING: internal CWS compiler error")
+    #    return None
     return res
 
 def parse(s, print_to_console):
-    global path
-    path = None
+    global Params
+    Params.path = None
     return _parse_text(s, print_to_console)
 
 def _read_file(file_path):
@@ -700,23 +696,20 @@ def _read_file(file_path):
         f = open(file_path, encoding = 'utf-8')
         s = f.read()
     except IOError:
-        #print("can't open file '" + os.path.join(self.path, file_path) + "'")
         print("can't open file '" + file_path + "'")
     finally:
         f.close()
     return s
 
 def _parse_file(_path, print_to_console=True):
-    global path
-    path = _path
-    return _parse_text(_read_file(path), print_to_console)
-
-to_ipa = None
+    global Params
+    Params.path = _path
+    return _parse_text(_read_file(Params.path), print_to_console)
 
 def parse_file(_path, _to_ipa, print_to_console=True):
-    global funcs, to_ipa
-    funcs = {}
-    to_ipa = _to_ipa
+    global Params
+    Params.funcs = {}
+    Params.to_ipa = _to_ipa
     return _parse_file(_path, print_to_console)
 
 def update_dict(c, b):
@@ -728,35 +721,47 @@ def update_dict(c, b):
             a[key] = b[key] if type(b[key]) == list else [b[key]]
     return a
 
-cws_files = {}
+Params = None
+
+def GetParams():
+    global Params
+    return Params
+
+def SetParams(par):
+    global Params
+    Params = par
+
+class ParamsClass:
+    def __init__(self, path, to_ipa):
+        self.cws_files = {}
+        self.find_all_cws(path)
+        
+        self.all_funcs = {}
+        self.to_ipa = to_ipa
+        
+        self.funcs = {}
+        self.attached_files = []
+                
+    def find_all_cws(self, dirname, nme = ''):
+        for f in os.listdir(dirname):
+            fp = os.path.join(dirname, f)
+            if os.path.isdir(fp):
+                self.find_all_cws(fp, nme + f + '-')
+            elif fp[-4:] == '.cws':
+                self.cws_files[nme + f[:-4]] = fp
+
 import os
 
-def find_all_cws(dirname, nme = ''):
-    global cws_files
-    for f in os.listdir(dirname):
-        fp = os.path.join(dirname, f)
-        if os.path.isdir(fp):
-            find_all_cws(fp, nme + f + '-')
-        elif fp[-4:] == '.cws':
-            cws_files[nme + f[:-4]] = fp
-
 def parse_files(path, _to_ipa, print_to_console=True):
-    global cws_files
-    cws_files = {}
-    find_all_cws(path)
+    global Params
+    Params = ParamsClass(path, _to_ipa)
     
-    global funcs, to_ipa, all_funcs, attached_files
-    #print(cws_files)
-    all_funcs = {}
-
-    to_ipa = _to_ipa
     vocabulary, meanings = {}, {}
-    for key in [x for x in cws_files.keys()]:
-        if key in all_funcs: continue
-        path = cws_files[key]
-        #print(path)
-        funcs = {}
-        attached_files = []
+    for key in [x for x in Params.cws_files.keys()]:
+        if key in Params.all_funcs: continue
+        path = Params.cws_files[key]
+        Params.funcs = {}
+        Params.attached_files = []
         tmp = _parse_file(path, print_to_console)
         vocabulary = update_dict(vocabulary, tmp[0])
         meanings = update_dict(meanings, tmp[1])
