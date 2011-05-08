@@ -1,4 +1,4 @@
-using :: base-funcs { }
+using :: base-adjective { }
 
 ."красив" :: adj-cases-1 { stem: "melbi.красивый" }
 ."умн"    :: adj-cases-1 { stem: "prije.умный"    }

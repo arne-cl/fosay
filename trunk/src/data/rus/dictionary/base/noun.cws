@@ -1,0 +1,336 @@
+using :: base-funcs { }
+
+cases-1
+{
+    text: "1>я";
+    case: possessive;
+}
+cases-1
+{
+    text: "1>ю";
+    case: dative;
+}
+cases-1
+{
+    text: "1>ю";
+    case: dative;
+}
+cases-1
+{
+    text: "1>я";
+    case: accusative;
+}
+cases-1
+{
+    text: "1>ем";
+    case: instrumental;
+}
+cases-1
+{
+    text: "1>е";
+    case: locative;
+}
+cases-1
+{
+    case: vocative;
+}
+
+
+cases-2
+{
+    text: "1>ы";
+    case: possessive;
+}
+cases-2
+{
+    text: "1>е";
+    case: dative;
+}
+cases-2
+{
+    text: "1>у";
+    case: accusative;
+}
+cases-2
+{
+    text: "1>ой";
+    case: instrumental;
+}
+cases-2
+{
+    text: "1>е";
+    case: locative;
+}
+cases-2
+{
+    case: vocative;
+}
+
+
+cases-3
+{
+    text: "1>ы";
+    case: possessive;
+}
+cases-3
+{
+    text: "1>е";
+    case: dative;
+}
+cases-3
+{
+    text: "1>у";
+    case: accusative;
+}
+cases-3
+{
+    text: "1>ой";
+    case: instrumental;
+}
+cases-3
+{
+    text: "1>е";
+    case: locative;
+}
+cases-3
+{
+    case: vocative;
+}
+
+cases-4
+{
+    text: "1>ы";
+    case: possessive;
+}
+cases-4
+{
+    text: "1>е";
+    case: dative;
+}
+cases-4
+{
+    text: "1>у";
+    case: accusative;
+}
+cases-4
+{
+    text: "1>ей";
+    case: instrumental;
+}
+cases-4
+{
+    text: "1>е";
+    case: locative;
+}
+cases-4
+{
+    case: vocative;
+}
+
+cases-5
+{
+    text: "0>а";
+    case: possessive;
+}
+cases-5
+{
+    text: "0>у";
+    case: dative;
+}
+cases-5
+{
+    text: "0>а";
+    case: accusative;
+}
+cases-5
+{
+    text: "0>ом";
+    case: instrumental;
+}
+cases-5
+{
+    text: "0>е";
+    case: locative;
+}
+cases-5
+{
+    case: vocative;
+}
+
+pl-nominative-1s plural-cases-1 plural-cases-2 plural-cases-5
+{
+    text: "1>і";
+    real-number: plural;
+    case: nominative;
+    number: plural;
+}
+
+pl-nominative-1h plural-cases-3
+{
+    text: "1>и";
+    real-number: plural;
+    case: nominative;
+    number: plural;
+}
+
+pl-nominative-2h
+{
+    text: "0>и";
+    real-number: plural;
+    case: nominative;
+    number: plural;
+}
+
+pl-possessive-1s
+{
+    text: "1>ь";
+    real-number: plural;
+    case: possessive;
+    number: plural;
+}
+
+pl-possessive-1h plural-cases-3
+{
+    text: "1>";
+    real-number: plural;
+    case: possessive;
+    number: plural;
+}
+
+pl-possessive-2h plural-cases-1 plural-cases-4
+{
+    text: "0>ів";
+    real-number: plural;
+    case: possessive;
+    number: plural;
+}
+
+plural-cases-5
+{
+    text: "1>ів";
+    real-number: plural;
+    case: possessive;
+    number: plural;
+}
+
+
+pl-dative-1 plural-cases-1 plural-cases-2 plural-cases-5
+{
+    text: "1>ям";
+    real-number: plural;
+    case: dative;
+    number: plural;
+}
+
+pl-dative-2 plural-cases-3
+{
+    text: "1>ам";
+    real-number: plural;
+    case: dative;
+    number: plural;
+}
+
+pl-dative-20 plural-cases-4
+{
+    text: "0>ам";
+    real-number: plural;
+    case: dative;
+    number: plural;
+}
+
+
+pl-instrumental-1 plural-cases-1 plural-cases-2 plural-cases-5
+{
+    text: "1>ями";
+    real-number: plural;
+    case: instrumental;
+    number: plural;
+}
+
+pl-instrumental-2 plural-cases-3
+{
+    text: "1>ами";
+    real-number: plural;
+    case: instrumental;
+    number: plural;
+}
+
+pl-instrumental-20 plural-cases-4
+{
+    text: "0>ами";
+    real-number: plural;
+    case: instrumental;
+    number: plural;
+}
+
+
+pl-locative-1 plural-cases-1 plural-cases-2 plural-cases-5
+{
+    text: "1>ях";
+    real-number: plural;
+    case: locative;
+    number: plural;
+}
+
+pl-locative-2 plural-cases-3
+{
+    text: "1>ах";
+    real-number: plural;
+    case: locative;
+    number: plural;
+}
+
+pl-locative-20 plural-cases-4
+{
+    text: "0>ах";
+    real-number: plural;
+    case: locative;
+    number: plural;
+}
+
+
+pl-vocative-1 plural-cases-1 plural-cases-2 plural-cases-5
+{
+    text: "1>і";
+    real-number: plural;
+    case: vocative;
+    number: plural;
+}
+
+pl-vocative-2 plural-cases-3
+{
+    text: "1>и";
+    real-number: plural;
+    case: vocative;
+    number: plural;
+}
+
+pl-vocative-20 plural-cases-4
+{
+    text: "0>и";
+    real-number: plural;
+    case: vocative;
+    number: plural;
+}
+
+accusative-1
+{
+    text: "0>у";
+    case: accusative;
+}
+
+accusative-2
+{
+    text: "0>ю";
+    case: accusative;
+}
+
+.all-cases-3 ::
+    cases-3
+    pl-nominative-1h
+    pl-dative-2
+    pl-instrumental-2
+    pl-locative-2
+    pl-vocative-2
+{
+}

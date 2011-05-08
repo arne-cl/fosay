@@ -11,13 +11,13 @@ singular
     persone: third;
 }
 
-.sn-nom  :: nominative(singular) { }
-.sn-poss :: possessive(singular) { }
-.sn-dat  :: dative(singular) { }
+.sn-nom  :: nominative(singular)   { }
+.sn-poss :: possessive(singular)   { }
+.sn-dat  :: dative(singular)       { }
 .sn-inst :: instrumental(singular) { }
-.sn-acc  :: accusative(singular) { }
-.sn-loc  :: locative(singular) { }
-.sn-voc  :: vocative(singular) { }
+.sn-acc  :: accusative(singular)   { }
+.sn-loc  :: locative(singular)     { }
+.sn-voc  :: vocative(singular)     { }
 
 .cases-1
 :: sn-nom  { sufix: "ь"   }
@@ -138,13 +138,13 @@ plural
     persone: third;
 }
 
-.pl-nom  :: nominative(plural) { }
-.pl-poss :: possessive(plural) { }
-.pl-acc  :: accusative(plural) { }
-.pl-dat  :: dative(plural) { }
+.pl-nom  :: nominative(plural)   { }
+.pl-poss :: possessive(plural)   { }
+.pl-acc  :: accusative(plural)   { }
+.pl-dat  :: dative(plural)       { }
 .pl-inst :: instrumental(plural) { }
-.pl-loc  :: locative(plural) { }
-.pl-voc  :: vocative(plural) { }
+.pl-loc  :: locative(plural)     { }
+.pl-voc  :: vocative(plural)     { }
 
 .plural-cases-5
 :: pl-nom  { sufix: "і"   }
