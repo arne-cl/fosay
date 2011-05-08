@@ -675,15 +675,15 @@ def _parse_text(s, print_to_console):
     Params.prev = None
     Params.text = s
     res = None
-    #try:
-    global glexer, yaccer
-    lexer = glexer.clone()
-    lexer.lineno = 1
-    res = yaccer.parse(s, lexer=lexer, tracking=PRINT_TO_CONSOLE)
-    #except Exception:
-    #    if PRINT_TO_CONSOLE:
-    #        print("WARNING: internal CWS compiler error")
-    #    return None
+    try:
+        global glexer, yaccer
+        lexer = glexer.clone()
+        lexer.lineno = 1
+        res = yaccer.parse(s, lexer=lexer, tracking=PRINT_TO_CONSOLE)
+    except Exception:
+        if PRINT_TO_CONSOLE:
+            print("WARNING: internal CWS compiler error")
+        return None
     return res
 
 def parse(s, print_to_console):
