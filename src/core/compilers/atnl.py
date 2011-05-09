@@ -654,33 +654,40 @@ def p_error(p):
     except UnicodeEncodeError:
         print_error(p.lineno, 0, "Syntax error")
 
-def search_way(patn, state, way, prior):
-    if len(way) == 0: return False
+def search_path(sub_atn, state, path, weight):
     i = -1
     b = False
-    for item in patn[state]:
+    for label, function, lweight, next in sub_atn[state]:
         i += 1
-        if item[0] != way[0]: continue
-        if item[ATN_NEXT] == const.STATE_END:
-            if len(way) == 1:
-            #if len(way) == 1 and item[2] in [0.0, prior]:
-                patn[state][i] = item[0], item[1], max(prior, item[2]), item[3]
+        jmplab = label == const.type['epsilon'] or label == 'JMP' #########
+        if len(path) == 0:
+            if jmplab and (next == const.STATE_END or search_path(sub_atn, next, path, weight)):
+                sub_atn[state][i] = label, function, max(weight, lweight), next
                 b = True
             continue
-        if search_way(patn, item[ATN_NEXT], way[1:], prior):
-        #if item[2] in [0.0, prior] and search_way(patn, item[ATN_NEXT], way[1:], prior):
-            patn[state][i] = item[0], item[1], max(prior, item[2]), item[3]
+        if label != path[0]:
+            if not jmplab: continue
+            jump = True
+        else:
+            jump = False
+        if next == const.STATE_END:
+            if len(path) == 1 and not jump:
+                sub_atn[state][i] = label, function, max(weight, lweight), next
+                b = True
+            continue
+        if search_path(sub_atn, next, path if jump else path[1:], weight):
+            sub_atn[state][i] = label, function, max(weight, lweight), next
             b = True
     return b
 
-def add_priorities(atn, pr):
-    for item in pr:
-        if not item in atn:
-            print(item,)
+def add_priorities(atn, priorities):
+    for nonterminal in priorities:
+        if not nonterminal in atn:
+            print(nonterminal,)
             raise Exception()
-        pa = atn[item]
-        for way in pr[item]:
-            search_way(pa, const.STATE_START, way[1], way[0])
+        sub_atn = atn[nonterminal]
+        for weight, path in priorities[nonterminal]:
+            search_path(sub_atn, const.STATE_START, path, weight)
 
 
 ####################################################################

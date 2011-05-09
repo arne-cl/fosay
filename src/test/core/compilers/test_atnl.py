@@ -216,71 +216,200 @@ class AtnlTestCase(unittest.TestCase):
             self.assertEqual((atnl.concat(par[0], par[1])), target)
 
     def test_add_priorities(self):
+        epsilon = const.type['epsilon']
         tests = [
             (
-            (
-            {
-                'tango':
+                (
+                    { #tango :- alpha [bravo] | uniform;
+                        'tango':
+                        {
+                            1: [('alpha', None, 0.0, 2), ('uniform', None, 0.0, const.STATE_END),],
+                            2: [('bravo', None, 0.0, const.STATE_END), (epsilon, None, 0.0, const.STATE_END)]
+                        }
+                    },
+                    { #tango := 0.87: alpha bravo | 0.34: uniform
+                        'tango': [(0.87, ['alpha', 'bravo']), (0.34, ['uniform'])]
+                    }
+                ),
                 {
-                    1: [('alpha', None, 0.0, 2), ('uniform', None, 0.0, const.STATE_END),],
-                    2: [('bravo', None, 0.0, const.STATE_END), ('JMP', None, 0.0, const.STATE_END)]
+                    'tango':
+                    {
+                        1: [('alpha', None, 0.87, 2), ('uniform', None, 0.34, const.STATE_END),],
+                        2: [('bravo', None, 0.87, const.STATE_END), (epsilon, None, 0.0, const.STATE_END)]
+                    }
                 }
-            },
-            {
-                'tango': [(0.87, ['alpha', 'bravo']), (0.34, ['uniform'])]
-            }
-            ),
-            {
-                'tango':
-                {
-                    1: [('alpha', None, 0.87, 2), ('uniform', None, 0.34, const.STATE_END),],
-                    2: [('bravo', None, 0.87, const.STATE_END), ('JMP', None, 0.0, const.STATE_END)]
-                }
-            }
-            ),
-            (
-            (
-            {
-                'tango':
-                {
-                    1: [('alpha', None, 0.0, 2), ('uniform', None, 0.0, const.STATE_END),],
-                    2: [('bravo', None, 0.0, const.STATE_END), ('bravo', None, 0.0, 3), ('JMP', None, 0.0, const.STATE_END)],
-                    3: [('delta', None, 0.0, const.STATE_END)]
-                }
-            },
-            {
-                'tango': [(0.87, ['alpha', 'bravo']), (0.34, ['uniform'])]
-            }
-            ),
-            {
-                'tango':
-                {
-                    1: [('alpha', None, 0.87, 2), ('uniform', None, 0.34, const.STATE_END),],
-                    2: [('bravo', None, 0.87, const.STATE_END), ('bravo', None, 0.0, 3), ('JMP', None, 0.0, const.STATE_END)],
-                    3: [('delta', None, 0.0, const.STATE_END)]
-                }
-            }
             ),
             (
-            (
-            {
-                'tango':
+                (
+                    {
+                        'tango':
+                        {
+                            1: [('alpha', None, 0.0, 2), ('uniform', None, 0.0, const.STATE_END),],
+                            2: [('bravo', None, 0.0, const.STATE_END), ('bravo', None, 0.0, 3), (epsilon, None, 0.0, const.STATE_END)],
+                            3: [('delta', None, 0.0, const.STATE_END)]
+                        }
+                    },
+                    {
+                        'tango': [(0.87, ['alpha', 'bravo']), (0.34, ['uniform'])]
+                    }
+                ),
                 {
-                    1: [('alpha', None, 0.0, 2), ('uniform', None, 0.0, const.STATE_END),],
-                    2: [('bravo', None, 0.0, const.STATE_END), ('JMP', None, 0.0, const.STATE_END)]
+                    'tango':
+                    {
+                        1: [('alpha', None, 0.87, 2), ('uniform', None, 0.34, const.STATE_END),],
+                        2: [('bravo', None, 0.87, const.STATE_END), ('bravo', None, 0.0, 3), (epsilon, None, 0.0, const.STATE_END)],
+                        3: [('delta', None, 0.0, const.STATE_END)]
+                    }
                 }
-            },
-            {
-                'tango': [(0.98, ['alpha', 'JMP']), (0.87, ['alpha', 'bravo']), (0.34, ['uniform'])]
-            }
             ),
-            {
-                'tango':
+            (
+                (
+                    {
+                        'tango':
+                        {
+                            1: [('alpha', None, 0.0, 2), ('uniform', None, 0.0, const.STATE_END),],
+                            2: [('bravo', None, 0.0, const.STATE_END), (epsilon, None, 0.0, const.STATE_END)]
+                        }
+                    },
+                    {
+                        'tango': [(0.98, ['alpha', epsilon]), (0.87, ['alpha', 'bravo']), (0.34, ['uniform'])]
+                    }
+                ),
                 {
-                    1: [('alpha', None, 0.98, 2), ('uniform', None, 0.34, const.STATE_END),],
-                    2: [('bravo', None, 0.87, const.STATE_END), ('JMP', None, 0.98, const.STATE_END)]
+                    'tango':
+                    {
+                        1: [('alpha', None, 0.98, 2), ('uniform', None, 0.34, const.STATE_END),],
+                        2: [('bravo', None, 0.87, const.STATE_END), (epsilon, None, 0.98, const.STATE_END)]
+                    }
                 }
-            }
+            ),
+            (
+                (
+                    {
+                        'tango':
+                        {
+                            1: [('alpha', None, 0.0, 2), ('uniform', None, 0.0, const.STATE_END),],
+                            2: [('bravo', None, 0.0, const.STATE_END), (epsilon, None, 0.0, const.STATE_END)]
+                        }
+                    },
+                    {
+                        'tango': [(0.98, ['alpha']), (0.87, ['alpha', 'bravo']), (0.34, ['uniform'])]
+                    }
+                ),
+                {
+                    'tango':
+                    {
+                        1: [('alpha', None, 0.98, 2), ('uniform', None, 0.34, const.STATE_END),],
+                        2: [('bravo', None, 0.87, const.STATE_END), (epsilon, None, 0.98, const.STATE_END)]
+                    }
+                }
+            ),
+            (
+                (
+                    {
+                        'tango':
+                        {
+                            1: [(epsilon, None, 0.0, 2), ('uniform', None, 0.0, 2)],
+                            2: [('alpha', None, 0.0, const.STATE_END)]
+                        }
+                    },
+                    {
+                        'tango': [(0.98, ['alpha']), (0.98, ['uniform', 'alpha'])]
+                    }
+                ),
+                {
+                    'tango':
+                    {
+                        1: [(epsilon, None, 0.98, 2), ('uniform', None, 0.98, 2),],
+                        2: [('alpha', None, 0.98, const.STATE_END)]
+                    }
+                }
+            ),
+            (
+                (
+                    {
+                        'tango':
+                        {
+                            1: [('uniform', None, 0.0, 2)],
+                            2: [(epsilon, None, 0.0, 3)],
+                            3: [(epsilon, None, 0.0, const.STATE_END)]
+                        }
+                    },
+                    {
+                        'tango': [(0.56, ['uniform'])]
+                    }
+                ),
+                {
+                    'tango':
+                    {
+                        1: [('uniform', None, 0.56, 2)],
+                        2: [(epsilon, None, 0.56, 3)],
+                        3: [(epsilon, None, 0.56, const.STATE_END)]
+                    }
+                }
+            ),
+            (
+                (
+                    {
+                        'tango':
+                        {
+                            1: [('uniform', None, 0.0, 2)],
+                            2: [(epsilon, None, 0.0, const.STATE_END)]
+                        }
+                    },
+                    {
+                        'tango': [(0.56, ['uniform'])]
+                    }
+                ),
+                {
+                    'tango':
+                    {
+                        1: [('uniform', None, 0.56, 2)],
+                        2: [(epsilon, None, 0.56, const.STATE_END)]
+                    }
+                }
+            ),
+            (
+                (
+                    {
+                        'tango':
+                        {
+                            1: [(epsilon, None, 0.0, const.STATE_END)],
+                        }
+                    },
+                    {
+                        'tango': [(0.56, ['uniform'])]
+                    }
+                ),
+                {
+                    'tango':
+                    {
+                        1: [(epsilon, None, 0.0, const.STATE_END)]
+                    }
+                }
+            ),
+            (
+                (
+                    {
+                        'tango':
+                        {
+                            1: [('uniform', None, 0.0, 2)],
+                            2: [(epsilon, None, 0.0, 3)],
+                            3: [('x-ray', None, 0.0, const.STATE_END)]
+                        }
+                    },
+                    {
+                        'tango': [(0.56, ['uniform', 'x-ray'])]
+                    }
+                ),
+                {
+                    'tango':
+                    {
+                        1: [('uniform', None, 0.56, 2)],
+                        2: [(epsilon, None, 0.56, 3)],
+                        3: [('x-ray', None, 0.56, const.STATE_END)]
+                    }
+                }
             ),
         ]
 
