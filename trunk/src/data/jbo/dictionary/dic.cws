@@ -121,6 +121,7 @@
 {
     lemma: "tunba";
     type: noun;
+    real-number: singular;
     persone: third;
     noun-type: common;
 }
@@ -128,6 +129,7 @@
 {
     lemma: "mensi";
     type: noun;
+    real-number: singular;
     persone: third;
     noun-type: common;
 }
@@ -135,6 +137,7 @@
 {
     lemma: "bruna";
     type: noun;
+    real-number: singular;
     persone: third;
     noun-type: common;
 }

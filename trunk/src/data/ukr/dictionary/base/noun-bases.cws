@@ -234,6 +234,6 @@ plural
 .noun-cases-7 :: cases-7 plural-cases-4 { gender: masculine }
 .noun-cases-8 :: cases-2 plural-cases-7 { gender: feminine  }
 .noun-cases-9 :: cases-8 plural-cases-8 { gender: masculine }
-.noun-cases-10 :: cases-9 plural-cases-9 { gender: masculine }
+.noun-cases-10 :: cases-9 plural-cases-9 { gender: feminine }
 .noun-cases-11 :: cases-10 plural-cases-4 { gender: masculine }
 .noun-cases-12 :: cases-11 { gender: feminine }

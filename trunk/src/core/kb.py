@@ -257,7 +257,7 @@ def meaning_shift(cf, lang):
                     tt = cf[key][concept["order-number"]]
                     del cf[key]
                     h = temp[[k for k in temp.keys()][0]] #because of {16: {16:
-                    #WTF? IT WILL CHACK IT TWICE!!!
+                    #WTF? IT WILL CHECK IT TWICE!!!
                     for key in h.keys():
                         cf[key] = h[key]
                     cf[concept["order-number"]] = tt
