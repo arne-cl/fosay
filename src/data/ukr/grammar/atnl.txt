@@ -7,6 +7,8 @@ PRON-att := case, gender, number, persone, form;
 V-att := gender, number, tense, aspect, persone, mood, participle, form;
 ADJ-att := case, gender, number, extra-1;
 PRON-empty-att := case, real-number -> number, persone, form;
+ng := number, gender;
+ngp := number, gender, persone;
 
 PUNCT is punctuation;
 ADJ is adjective;
@@ -23,6 +25,7 @@ ip is sentence;
 subj is subject;
 np-1 is noun-phrase;
 np is noun-phrase;
+np-poss-pron is noun-phrase;
 ap is epithet;
 time is time;
 vp is verb-phrase;
@@ -35,7 +38,8 @@ elobj is object{case: elative};
 obj is object{case: accusative};
 cpo is object{case: accusative};
 poss is object{case: possessive};
-poss1 is object{case: possessive};
+pr-poss is object{case: possessive};
+poss-1 is object{case: possessive};
 pp is preposition-phrase;
 prcl is clause;
 subcl is clause;
@@ -111,16 +115,20 @@ ap :-
 poss :-
     $np<case>{case: possessive};
 
+np-poss-pron :-
+	$PRON<ngp>{pronoun-type: possessive; poss-form: conjoint};
+
+poss{case: possessive} :-
+	$np-poss-pron<ng>;
+
 np :-
     $PRON<PRON-att>{pronoun-type: personal};
 
 np :-
-    poss
-    $np<N-att>;
-
-np :-
+	(
+    poss<ng>
     $np<N-att>
-    poss;
+    );
 
 np{quantity: none} :-
     [ap<ap-att>]
@@ -151,5 +159,6 @@ prcl ::=
     1.0: time subj vp inobj obj;
 
 np ::=
+	//1.0: pr-poss np
     1.0: np poss
     1.0: SN FN;

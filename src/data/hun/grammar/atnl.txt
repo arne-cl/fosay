@@ -49,7 +49,7 @@ illobj is object{case: illative};
 elobj is object{case: elative};
 obj is object{case: accusative};
 poss is object{case: possessive};
-poss1 is object{case: possessive};
+poss-1 is object{case: possessive};
 pp is preposition-phrase;
 prcl is clause;
 subcl is clause;
@@ -141,7 +141,7 @@ ap :-
 poss :-
     $np<difinity>{case: nominative};
 
-poss1 :-
+poss-1 :-
     $np<difinity>{case: dative};
 
 np :-
@@ -182,7 +182,7 @@ np :-
     $np-1<$N-att, $difinity>{case-2: possessed};
 
 np :-
-    poss1
+    poss-1
     $np<$N-att, $difinity>{case-2: possessed};
 
 &np :-
@@ -198,7 +198,7 @@ np-1{difinity: difinite; number: singular} :-
     $N<case-2, number, $case, $persone>;
 
 np-1 :-
-    poss1
+    poss-1
     $np<$N-att, $difinity>{case-2: possessed};
 
 np-1{difinity: difinite} :-

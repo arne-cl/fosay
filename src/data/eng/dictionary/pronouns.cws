@@ -3,7 +3,6 @@ using :: base-funcs { }
 "i"
 {
     transcription: "aj";
-    lemma: "imio";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -31,7 +30,6 @@ using :: base-funcs { }
 "he"
 {
     transcription: "hi";
-    lemma: "ilulo";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -43,7 +41,6 @@ using :: base-funcs { }
 "her"
 {
     transcription: "hər";
-    lemma: "ilino";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -55,7 +52,6 @@ using :: base-funcs { }
 "her"
 {
     transcription: "hər";
-    lemma: "ilino";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -68,7 +64,6 @@ using :: base-funcs { }
 "hers"
 {
     transcription: "hərz";
-    lemma: "ilino";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -81,7 +76,6 @@ using :: base-funcs { }
 "him"
 {
     transcription: "hɪm";
-    lemma: "ilino";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -93,7 +87,6 @@ using :: base-funcs { }
 "his"
 {
     transcription: "hɪz";
-    lemma: "ilino";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -106,7 +99,6 @@ using :: base-funcs { }
 "his"
 {
     transcription: "hɪz";
-    lemma: "ilino";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -119,7 +111,6 @@ using :: base-funcs { }
 "it" :: accusative
 {
     transcription: "ɪt";
-    lemma: "djio";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -130,7 +121,6 @@ using :: base-funcs { }
 "its"
 {
     transcription: "ɪts";
-    lemma: "djio";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -142,7 +132,6 @@ using :: base-funcs { }
 "me"
 {
     transcription: "mi";
-    lemma: "imio";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -153,7 +142,6 @@ using :: base-funcs { }
 "mine"
 {
     transcription: "majn";
-    lemma: "imio";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -165,7 +153,6 @@ using :: base-funcs { }
 "mine"
 {
     transcription: "majn";
-    lemma: "imio";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -177,7 +164,6 @@ using :: base-funcs { }
 "my"
 {
     transcription: "maj";
-    lemma: "imio";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -189,7 +175,6 @@ using :: base-funcs { }
 "our"
 {
     transcription: "awər";
-    lemma: "inio";
     real-number: plural;
     type: pronoun;
     number: plural;
@@ -201,7 +186,6 @@ using :: base-funcs { }
 "ours"
 {
     transcription: "awərz";
-    lemma: "inio";
     real-number: plural;
     type: pronoun;
     number: plural;
@@ -219,7 +203,6 @@ using :: base-funcs { }
 "she"
 {
     transcription: "ʃi";
-    lemma: "ilino";
     real-number: singular;
     type: pronoun;
     number: singular;
@@ -257,7 +240,6 @@ using :: base-funcs { }
 "their"
 {
     transcription: "ðɛr";
-    lemma: "ilio";
     real-number: plural;
     type: pronoun;
     number: plural;
@@ -269,7 +251,6 @@ using :: base-funcs { }
 "theirs"
 {
     transcription: "ðɛrz";
-    lemma: "ilio";
     real-number: plural;
     type: pronoun;
     number: plural;
@@ -281,7 +262,6 @@ using :: base-funcs { }
 "them"
 {
     transcription: "ðɛm";
-    lemma: "ilio";
     real-number: plural;
     type: pronoun;
     number: plural;
@@ -292,7 +272,6 @@ using :: base-funcs { }
 "they"
 {
     transcription: "ðeɪ";
-    lemma: "ilio";
     real-number: plural;
     type: pronoun;
     number: plural;
@@ -303,7 +282,6 @@ using :: base-funcs { }
 "us"
 {
     transcription: "əs";
-    lemma: "imio";
     real-number: plural;
     type: pronoun;
     number: plural;
@@ -314,7 +292,6 @@ using :: base-funcs { }
 "we"
 {
     transcription: "wi";
-    lemma: "ilio";
     real-number: plural;
     type: pronoun;
     number: plural;
@@ -381,7 +358,6 @@ using :: base-funcs { }
 "you" :: accusative
 {
     transcription: "ju";
-    lemma: "ivio";
     //real-number: inherit;
     type: pronoun;
     persone: second;
@@ -392,7 +368,6 @@ using :: base-funcs { }
 "your"
 {
     transcription: "jɔr";
-    lemma: "ivio";
     type: pronoun;
     persone: second;
     case: possessive;
@@ -402,7 +377,6 @@ using :: base-funcs { }
 "yours"
 {
     transcription: "jʊrz";
-    lemma: "ivio";
     type: pronoun;
     persone: second;
     case: possessive;
