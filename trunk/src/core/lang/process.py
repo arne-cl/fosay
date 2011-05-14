@@ -259,7 +259,7 @@ transferred_attributes = {
         concept["noun-type"],
         concept["real-number"],
         concept["form"],
-        concept["persone"],
+        concept["pronoun-type"],
         concept["gender"]
     ],
     const.type["adjective"]:

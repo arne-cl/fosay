@@ -18,8 +18,9 @@ NUM is numeral;
 NOT is negative;
 ip is sentence;
 subj is subject;
-np1 is noun-phrase;
+np-1 is noun-phrase;
 np is noun-phrase;
+np-poss-pron is noun-phrase;
 ap is epithet;
 time is time;
 vp is verb-phrase;
@@ -31,7 +32,7 @@ elobj is object{case: elative};
 allobj is object{case: allative};
 obj is object{case: accusative};
 poss is object{case: possessive};
-poss1 is object{case: possessive};
+poss-1 is object{case: possessive};
 pp is preposition-phrase;
 prcl is clause;
 
@@ -140,24 +141,30 @@ vp-1{mood: declarative; aspect: perfect-continuous-not-durative} :-
 poss :-
     $np<case>{case: possessive};
 
-poss1 :-
+np-poss-pron :-
+	$PRON<np-att>{pronoun-type: possessive; poss-form: conjoint};
+
+poss{case: possessive} :-
+	$np-poss-pron<case, number>;
+
+poss-1 :-
     P<case>{case: possessive}
     $np{case: nominative};
 
-np1{difinity: difinite} :-
+np-1{difinity: difinite} :-
     [ap]
     $N<$number, $persone, $case>;
 
 ////|;
-np1{difinity: difinite} :-
+np-1{difinity: difinite} :-
     poss{difinity: difinite}
-    $np1<$number, $persone, $case>;
+    $np-1<$number, $persone, $case>;
 
-np1 :-
+np-1 :-
     $PRON<$number, $persone, $case, $difinity>{pronoun-type: personal};
 
-&np1 :-
-    $np1<np-att>;
+&np-1 :-
+    $np-1<np-att>;
 
 np :-
     QUA<$quantity, $quantity-number, $number>
@@ -186,11 +193,11 @@ np :-
 ////|
 np :-
     $np<number, persone, case>
-    poss1;
+    poss-1;
 ////|
 np :-
     poss{difinity: difinite}
-    $np1<$number, $persone, $case>;
+    $np-1<$number, $persone, $case>;
 
 np{quantity: none; noun-type: common}:-
     ART<$difinity>{difinity: difinite}
@@ -204,4 +211,4 @@ vp-1 ::=
     1.0: V;
 //    1.0: AUX JMP AUX V;
 np ::=
-    1.0: poss np1;
+    1.0: poss np-1;
