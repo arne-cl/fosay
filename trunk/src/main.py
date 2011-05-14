@@ -5,7 +5,7 @@ __version_info__ = ("pre-alpha", 0, 0, 1, 239)
 __version__ = '.'.join([str(i) for i in __version_info__[1:]])
 
 #testing
-import test.core.__init__
+#import test.core.__init__
 
 from core.models.lang import Language
 import os, glob, sys
