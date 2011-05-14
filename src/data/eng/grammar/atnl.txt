@@ -1,5 +1,5 @@
 subj-att := number, persone;
-vp1-att  := number, persone, aspect, tense;
+vp-1-att  := number, persone, aspect, tense;
 np-att   := number, persone, case;
 V-att    := number, persone, aspect, tense, participle, mood;
 ap-att   := number, case;
@@ -23,8 +23,8 @@ np is noun-phrase;
 ap is epithet;
 time is time;
 vp is verb-phrase;
-vp1 is verb-phrase;
-vp2 is verb-phrase;
+vp-1 is verb-phrase;
+vp-2 is verb-phrase;
 inobj is object{case: inessive};
 illobj is object{case: illative};
 elobj is object{case: elative};
@@ -42,7 +42,7 @@ ip :-
 prcl{clause-type: principal} :-
     [time<tense>]
     subj<subj-att>
-    $vp1<vp1-att>
+    $vp-1<vp-1-att>
     [
         [obj{case: dative}]
         [obj]
@@ -88,13 +88,13 @@ ap :-
 time :-
     $ADV<tense>{adverb-type: time};
 
-vp1{mood: declarative; aspect: indefinite; truth: 1.0} :-
+vp-1{mood: declarative; aspect: indefinite; truth: 1.0} :-
     $V<V-att>{tense: present; participle: not-participle};
 
-vp1{mood: declarative; aspect: indefinite; truth: 1.0} :-
+vp-1{mood: declarative; aspect: indefinite; truth: 1.0} :-
     $V<V-att>{tense: past; participle: not-participle};
 
-vp1{mood: declarative; aspect: perfect} :-
+vp-1{mood: declarative; aspect: perfect} :-
     AUX<V-att>{
         lemma: "havi";
         tense: present;
@@ -102,7 +102,7 @@ vp1{mood: declarative; aspect: perfect} :-
     [NOT<truth>{truth: 0.0}]
     $V{tense: past; participle: participle};
 
-vp1{mood: declarative; aspect: indefinite} :-
+vp-1{mood: declarative; aspect: indefinite} :-
     AUX<V-att>{
         lemma: "do";
         tense: past;
@@ -110,28 +110,28 @@ vp1{mood: declarative; aspect: indefinite} :-
     [NOT<truth>{truth: 0.0}]
     $V{tense: present; participle: not-participle; persone: first};
 
-vp1{mood: declarative; aspect: indefinite} :-
+vp-1{mood: declarative; aspect: indefinite} :-
     AUX<V-att>{lemma: "do"; tense: present; participle: not-participle}
     [NOT<truth>{truth: 0.0}]
     $V{tense: present; participle: not-participle; persone: first};
 
-vp1{mood: declarative; aspect: indefinite} :-
+vp-1{mood: declarative; aspect: indefinite} :-
     AUX<V-att>{lemma: "be"; tense: future; participle: not-participle}
     [NOT<truth>{truth: 0.0}]
     $V{tense: present; participle: not-participle; persone: first};
 
-vp1{mood: declarative; aspect: continuous} :-
+vp-1{mood: declarative; aspect: continuous} :-
     AUX<V-att>{lemma: "esi"; tense: present; participle: not-participle}
     [NOT<truth>{truth: 0.0}]
     $V{tense: present; participle: participle};
 
-vp1{mood: declarative; aspect: perfect-continuous-durative} :-
+vp-1{mood: declarative; aspect: perfect-continuous-durative} :-
     AUX<V-att>{lemma: "havi"; tense: present; participle: not-participle}
     [NOT<truth>{truth: 0.0}]
     AUX{lemma: "be"; tense: past; participle: participle}
     $V{tense: present; participle: participle};
 
-vp1{mood: declarative; aspect: perfect-continuous-not-durative} :-
+vp-1{mood: declarative; aspect: perfect-continuous-not-durative} :-
     AUX<V-att>{lemma: "havi"; tense: present; participle: not-participle}
     [NOT<truth>{truth: 0.0}]
     AUX{lemma: "be"; tense: past; participle: participle}
@@ -200,7 +200,7 @@ np{quantity: none; noun-type: common}:-
 &np :-
     $np<np-att>;
 
-vp1 ::=
+vp-1 ::=
     1.0: V;
 //    1.0: AUX JMP AUX V;
 np ::=
