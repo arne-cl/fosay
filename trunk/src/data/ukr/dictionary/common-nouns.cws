@@ -1,6 +1,26 @@
 //ukrainian dictionary v0.0.1
 using :: base-noun-bases { }
 
+"кохання"[koxannʲa]
+{
+    stem: "prami.кохання";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    gender: lifeless;
+    persone: third;
+    case: nominative accusative;
+}
+"пристрасть"[prestrastʲ]
+{
+    stem: "prami1.пристрасть";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    gender: feminine;
+    persone: third;
+    case: nominative accusative;
+}
 "учень"[utʃenʲ]
 {
     lemma: "tadni";
@@ -64,6 +84,7 @@ using :: base-noun-bases { }
     tags: slang, russian;
 }
 ."сестр" :: noun-cases-10(common) { stem: "mensi.сестра" }
+."троянд" :: noun-cases-13(common) { stem: "rozgu.троянда" }
 ."дівчин" :: noun-cases-3(common)
 {
     stem: "nixli.дівчина";

@@ -5,6 +5,12 @@ accusative
     case: accusative;
 }
 
+past-ed
+{
+    sufix: "ed";
+    tense: past;
+}
+
 possessive
 {
     text: "0>'s";

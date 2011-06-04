@@ -25,6 +25,27 @@ using :: base-funcs { }
     personal-name: first-name;
     case: nominative;
 }
+"gandhi"[gɑndi] :: possessive accusative
+{
+    lemma: "gandis";
+    type: noun;
+    number: singular;
+    persone: third;
+    noun-type: proper;
+    personal-name: surname;
+    case: nominative;
+}
+"mahatma"[mahatma] :: possessive accusative
+{
+    lemma: "mahatMAS";
+    type: noun;
+    number: singular;
+    gender: masculine;
+    persone: third;
+    noun-type: proper;
+    personal-name: first-name;
+    case: nominative;
+}
 "ivan" :: possessive accusative
 {
     transcription: "ivan";
