@@ -299,6 +299,40 @@ using :: base-funcs { }
     persone: first;
     participle: not-participle;
 }
+"symbolize"[sɪmbəlɑjz] :: present-participle third-singular-es third-plural second-persone
+{
+    lemma: "id2";
+    stem: "id2.symbolize";
+    type: verb;
+    tense: present;
+    persone: first;
+    participle: not-participle;
+}
+"love"[lav] :: present-participle third-singular-s third-plural second-persone
+{
+    stem: "prami.love";
+    type: verb;
+    tense: present;
+    persone: first;
+    participle: not-participle;
+}
+"banish"[bænɪʃ] :: present-participle third-singular-es third-plural second-persone
+{
+    lemma: "id1";
+    stem: "id1.banish";
+    type: verb;
+    tense: present;
+    persone: first;
+    participle: not-participle;
+}
+"banished"[bænɪʃd]
+{
+    lemma: "id1";
+    stem: "id1.banish";
+    type: verb;
+    tense: past;
+    participle: not-participle;
+}
 "wrote"[rot]
 {
     lemma: "ciska";

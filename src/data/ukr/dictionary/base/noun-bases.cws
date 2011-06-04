@@ -225,6 +225,13 @@ plural
 :: pl-inst { sufix: "ами" }
 :: pl-loc  { sufix: "ах"  }
 
+.plural-cases-10
+:: pl-nom pl-voc  { sufix: "и"   }
+:: pl-poss pl-acc { }
+:: pl-dat  { sufix: "ам"  }
+:: pl-inst { sufix: "ами" }
+:: pl-loc  { sufix: "ах"  }
+
 .noun-cases-1 :: cases-1 plural-cases-5 { gender: masculine }
 .noun-cases-2 :: cases-3 plural-cases-3 { gender: feminine  }
 .noun-cases-3 :: cases-3 plural-cases-6 { gender: feminine  }
@@ -237,3 +244,4 @@ plural
 .noun-cases-10 :: cases-9 plural-cases-9 { gender: feminine }
 .noun-cases-11 :: cases-10 plural-cases-4 { gender: masculine }
 .noun-cases-12 :: cases-11 { gender: feminine }
+.noun-cases-13 :: cases-9 plural-cases-10 { gender: feminine }

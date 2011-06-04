@@ -1,5 +1,38 @@
 using :: base-funcs { }
 
+"rose"[roz] :: plural-ss possessive accusative
+{
+    lemma: "rozgu";
+    stem: "rozgu.rose";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    persone: third;
+    noun-type: common;
+    case: nominative;
+}
+"love"[lav] :: possessive accusative
+{
+    lemma: "prami";
+    stem: "prami.love";
+    real-number: singular;
+    type: noun;
+    number: uncountable;
+    persone: third;
+    noun-type: common;
+    case: nominative;
+}
+"passion"[pæʃən] :: possessive accusative
+{
+    lemma: "prami1";
+    stem: "prami1.passion";
+    real-number: singular;
+    type: noun;
+    number: uncountable;
+    persone: third;
+    noun-type: common;
+    case: nominative;
+}
 "teacher" :: plural-sz possessive accusative
 {
     transcription: "titʃər";

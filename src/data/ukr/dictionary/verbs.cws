@@ -12,6 +12,16 @@ using :: base-verb-bases { }
 {
     stem: "limna.плавати"
 }
+."прогна" :: past-verb-forms-1
+{
+    type: verb;
+    stem: "id1.проганяти"
+}
+."символізу" :: present-verb-forms-kupljaty
+{
+    type: verb;
+    stem: "id2.символізувати"
+}
 ."купля" :: verb-forms-kupljaty
 {
     stem: "terme'u.купляти";

@@ -44,3 +44,8 @@ using :: base-funcs { }
     lemma: "xekri";
     stem: "xekri.black";
 }
+."red"[rɛd] :: adjective
+{
+    lemma: "xunre";
+    stem: "xunre.red";
+}

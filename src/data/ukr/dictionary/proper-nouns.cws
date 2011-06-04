@@ -133,6 +133,29 @@ using :: base-noun-bases { }
     noun-type: proper;
     personal-name: first-name;
 }
+"магатма"[mahatma]
+{
+    lemma: "mahatMAS";
+    type: noun;
+    form: formal;
+    number: singular;
+    gender: masculine;
+    persone: third;
+    case: nominative;
+    noun-type: proper;
+    personal-name: first-name;
+}
+"ґанді"[gandʲi]
+{
+    lemma: "gandis";
+    type: noun;
+    form: formal;
+    number: singular;
+    persone: third;
+    case: nominative;
+    noun-type: proper;
+    personal-name: surname;
+}
 "ужгороді"
 {
     transcription: "uʒhorod";

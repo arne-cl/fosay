@@ -29,6 +29,31 @@ using :: base-funcs { }
     noun-type: proper;
     personal-name: first-name;
 }
+"gandhi"[gɒndi]
+{
+    lemma: "gandis";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    form: formal;
+    persone: third;
+    case: nominative;
+    case-2: nominative;
+    noun-type: proper;
+    personal-name: surname;
+}
+"mahátma"[mɒhatmɒ]
+{
+    lemma: "mahatMAS";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    persone: third;
+    case: nominative;
+    case-2: nominative;
+    noun-type: proper;
+    personal-name: first-name;
+}
 "zoli"
 {
     transcription: "zoli";
