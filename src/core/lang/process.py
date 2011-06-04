@@ -479,7 +479,7 @@ def props_score(token, st):
     return s
 
 #choosing the ones that match better
-def tbt(tokens, st):
+def score_tags(tokens, st):
     nncf = []
     if len(tokens) == 0:
         return []
@@ -506,31 +506,31 @@ def pre_morphen(lang, st, ind = 0):
         if not st.fixed or is_empty_word(st):
             yield st
             return
-        rr = [x for x in lang.words if all(y == concept["tags"] or eqx(y, x, st) for y in concept)] #musteq
-        rr = tbt(rr, st)
-        newr = []
-        if PRINT_TO_CONSOLE and len(rr) > 1: print("CAUTION: Ambiguity in 'pre_morphen' at %s" % st.descr())
-        for r in rr:
-            for nr in newr:
+        variants = [x for x in lang.words if all(y == concept["tags"] or eqx(y, x, st) for y in concept)] #musteq
+        variants = score_tags(variants, st)
+        new_variants = []
+        if PRINT_TO_CONSOLE and len(variants) > 1: print("CAUTION: Ambiguity in 'pre_morphen' at %s" % st.descr())
+        for variant in variants:
+            for new_variant in new_variants:
                 for f in st.fixed:
-                    if r.attr(f) != nr.attr(f):
+                    if variant.attr(f) != new_variant.attr(f):
                         break
                 else:
                     break
             else:
                 for f in st.fixed: #################################################
-                    if r.attr(f) == NONE_VALUE:
+                    if variant.attr(f) == NONE_VALUE:
                         print("xxxxxxxxxxxpre_morphenpre_morphenpre_morphenpre_morphen")
                         break#############################################################################################################################
                 else:
-                    newr += [r]
-        rr = newr
-        if rr == []:
+                    new_variants += [variant]
+        variants = new_variants
+        if variants == []:
             return
-        for r in rr:
+        for variant in variants:
             c = deepcopy(st)
             for f in c.fixed:
-                c.attr(f, r.attr(f))
+                c.attr(f, variant.attr(f))
             yield c
         return
 
@@ -564,18 +564,18 @@ def morphen(lang, st, ind = 0):
             yield st
             return
 
-        rr = [x for x in lang.words if all(y == concept["tags"] or eqx(y, x, st) for y in concept)] #musteq
-        rr = tbt(rr, st)
+        variants = [x for x in lang.words if all(y == concept["tags"] or eqx(y, x, st) for y in concept)] #musteq
+        variants = score_tags(variants, st)
 
-        if rr == [] or rr is None: raise Exception("Not found in the '%s' dictionary %s" % (lang.name,  st.descr()))
-        if PRINT_TO_CONSOLE and len(rr) > 1:
-            tmp = str([x.descr() for x in rr])
-            print("CAUTION: Ambiguity in 'morphen' at %s alternatives %d (%s)" % (st.descr(), len(rr), tmp))
-        for r in rr:
+        if variants == [] or variants is None: raise Exception("Not found in the '%s' dictionary %s" % (lang.name,  st.descr()))
+        if PRINT_TO_CONSOLE and len(variants) > 1:
+            tmp = str([x.descr() for x in variants])
+            print("CAUTION: Ambiguity in 'morphen' at %s alternatives %d (%s)" % (st.descr(), len(variants), tmp))
+        for variant in variants:
             c = deepcopy(st)
-            c.text = r.text
-            c.transcription = r.transcription
-            for p in concept: c.attr(p, r.attr(p))
+            c.text = variant.text
+            c.transcription = variant.transcription
+            for p in concept: c.attr(p, variant.attr(p))
             yield c
         return
     res = []
