@@ -256,7 +256,7 @@ using :: base-funcs { }
     case-2: nominative;
     noun-type: proper;
 }
-"moskva"[moskvɒ]
+"moskva"[moskvɒ] :: cases-india
 {
     lemma: "moskov";
     real-number: singular;
@@ -281,6 +281,17 @@ using :: base-funcs { }
 "berlin"[bɛrlin] :: cases-berlin
 {
     lemma: "byLIN";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    persone: third;
+    case: nominative;
+    case-2: nominative;
+    noun-type: proper;
+}
+"india"[indiɒ] :: cases-india
+{
+    lemma: "gugde'inu";
     real-number: singular;
     type: noun;
     number: singular;

@@ -18,6 +18,18 @@ possessive
     case: possessive;
 }
 
+proper
+{
+	real-number: singular;
+    type: noun;
+    number: singular;
+    gender: lifeless;
+    persone: third;
+    noun-type: proper;
+    case: nominative;
+}
+proper-noun :: proper proper(possessive) proper(accusative) { }
+
 plural-ss :: accusative
 {
     text: "0>s";

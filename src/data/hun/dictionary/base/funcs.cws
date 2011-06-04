@@ -123,6 +123,27 @@ final { case: final }
 :: translative   { text: "0>é"    }
 :: final         { text: "0>ért"  }
 
+.cases-india
+:: accusative    { text: "1>át"    }
+:: inessive      { text: "1>ában"  }
+:: elative       { text: "1>ából"  }
+:: ablative      { text: "1>ától"  }
+:: dative        { text: "1>ának"  }
+:: essive-formal { text: "1>aként" }
+:: essive-modal  { text: "1>ául"   }
+:: instrumental  { text: "1>ával"  }
+:: possessive    { text: "1>áé"    }
+:: adessive      { text: "1>ánál"  }
+:: allative      { text: "1>ához"  }
+:: comitative    { text: "1>ával"  }
+:: delative      { text: "1>áról"  }
+:: illative      { text: "1>ába"   }
+:: sublative     { text: "1>ára"   }
+:: superessive   { text: "1>án"   }
+:: terminative   { text: "1>áig"   }
+:: translative   { text: "1>áé"    }
+:: final         { text: "1>áért"  }
+
 .cases-5
 :: accusative    { text: "0>et"   }
 :: inessive      { text: "0>ben"  }

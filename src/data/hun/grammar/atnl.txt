@@ -219,6 +219,14 @@ prcl ::=
     0.8: subj vp inobj obj
     0.8: time subj vp inobj
     0.8: time subj vp inobj obj
+    0.8: subj vp elobj
+    0.8: subj vp elobj obj
+    0.8: time subj vp elobj
+    0.8: time subj vp elobj obj
+    0.8: subj vp illobj
+    0.8: subj vp illobj obj
+    0.8: time subj vp illobj
+    0.8: time subj vp illobj obj
     1.0: .subj vp .obj
     0.9: .subj vp obj
     0.9: subj vp .obj;

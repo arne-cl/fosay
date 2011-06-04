@@ -184,99 +184,24 @@ using :: base-funcs { }
 //
 // Geographical names
 //
-"uzhhorod" :: possessive accusative
+."uzhhorod"[uʒhorod] :: proper-noun
 {
-    transcription: "uʒhorod";
     lemma: ".UJhorod";
-    real-number: singular;
     tags: ukrainian;
-    type: noun;
-    number: singular;
-    gender: lifeless;
-    persone: third;
-    noun-type: proper;
-    case: nominative;
 }
-"budapest"[budəpɛst] :: possessive accusative
-{
-    lemma: "BUdapect";
-    real-number: singular;
-    type: noun;
-    number: singular;
-    gender: lifeless;
-    persone: third;
-    noun-type: proper;
-    case: nominative;
-}
-"kyiv"[keiv] :: possessive accusative
+."budapest"[budəpɛst] :: proper-noun { lemma: "BUdapect" }
+."kyiv"[keiv] :: proper-noun
 {
     lemma: "kiiev";
-    real-number: singular;
-    type: noun;
     tags: ukrainian;
-    number: singular;
-    gender: lifeless;
-    persone: third;
-    noun-type: proper;
-    case: nominative;
 }
-"kiev"[kiɛv] :: possessive accusative
+."kiev"[kiɛv] :: proper-noun
 {
-    lemma: "kiiev";
-    real-number: singular;
-    type: noun;
+	lemma: "kiiev";
     tags: russian;
-    number: singular;
-    gender: lifeless;
-    persone: third;
-    noun-type: proper;
-    case: nominative;
 }
-"london"[ləndən] :: possessive accusative
-{
-    lemma: "lyndyn";
-    real-number: singular;
-    type: noun;
-    tags: russian;
-    number: singular;
-    gender: lifeless;
-    persone: third;
-    noun-type: proper;
-    case: nominative;
-}
-"moscow"[mɑsko] :: possessive accusative
-{
-    lemma: "moskov";
-    real-number: singular;
-    type: noun;
-    tags: russian;
-    number: singular;
-    gender: lifeless;
-    persone: third;
-    noun-type: proper;
-    case: nominative;
-}
-"new york"[nu jɔrk]
-{
-    lemma: "nu,IORK";
-    real-number: singular;
-    type: noun;
-    tags: russian;
-    number: singular;
-    gender: lifeless;
-    persone: third;
-    noun-type: proper;
-    case: nominative;
-}
-"berlin"[bərlɪn]
-{
-    lemma: "byLIN";
-    real-number: singular;
-    type: noun;
-    tags: russian;
-    number: singular;
-    gender: lifeless;
-    persone: third;
-    noun-type: proper;
-    case: nominative;
-}
+."london"[ləndən]    :: proper-noun { lemma: "lyndyn"    }
+."moscow"[mɑsko]     :: proper-noun { lemma: "moskov"    }
+."new york"[nu jɔrk] :: proper-noun { lemma: "nu,IORK"   }
+."berlin"[bərlɪn]    :: proper-noun { lemma: "byLIN"     }
+."india"[india]      :: proper-noun { lemma: "gugde'inu" }

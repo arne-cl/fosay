@@ -434,7 +434,7 @@ def referencing(cf): #words
         if const.type["noun"] in p[i].keys():
             j = i + 1
             if p[i].get(concept["quantity"], None) == quantity["none"] and p[i].get(concept["difinity"], None) == None:
-                if p[i][const.type["noun"]][concept["noun-type"]] == noun_type["proper"]:
+                if p[i][const.type["noun"]][concept["noun-type"]] == noun_type["proper"] or const.type["epithet"] in p[i].keys():
                     p[i][concept["difinity"]] = difinity["difinite"]
                 else:
                     p[i][concept["difinity"]] = difinity["undifinite"]
@@ -573,6 +573,7 @@ def morphen(lang, st, ind = 0):
             print("CAUTION: Ambiguity in 'morphen' at %s alternatives %d (%s)" % (st.descr(), len(variants), tmp))
         for variant in variants:
             c = deepcopy(st)
+            if c.type is None: raise Exception('%s hasn\'t type' % str(st))
             c.text = variant.text
             c.transcription = variant.transcription
             for p in concept: c.attr(p, variant.attr(p))

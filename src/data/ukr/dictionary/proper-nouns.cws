@@ -168,3 +168,4 @@ using :: base-noun-bases { }
     case: inessive;
     noun-type: proper;
 }
+."інді" :: noun-cases-12(proper) { stem: "gugde'inu.індія" }

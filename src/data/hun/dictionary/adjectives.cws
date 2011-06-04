@@ -12,3 +12,4 @@ using :: base-funcs { }
 ."zöld"[zøld]     :: adjective { stem: "crino.zöld"   }
 ."kék"[kek]       :: adjective { stem: "blanu.kék"    }
 ."barna"[bɒrnɒ]   :: adjective { stem: "bunre.barna"  }
+."brit"[brit]     :: adjective { stem: "brito.brit"   }
