@@ -63,6 +63,7 @@ using :: base-noun-bases { }
     form: formal;
     tags: slang, russian;
 }
+."колонізатор" :: noun-cases-5(common) { stem: "colonizer.n.01.колонізатор" }
 ."жін"      :: noun-cases-3(common) { stem: "ninmu.жінка" }
 ."робітниц" :: noun-cases-4(common) { stem: "le'ipli.робітниця" }
 ."фабри"    :: noun-cases-2(common) { stem: "fanri.фабрика" }

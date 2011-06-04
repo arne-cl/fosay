@@ -4,6 +4,8 @@ __date__ ="$1 груд 2010 1:13:17$"
 from core.constants import is_terminalc
 
 def get_tranarr(st):
+    if st.type is None:
+        raise Exception('%s has None type' % st.meaning)
     if is_terminalc(st.type):
         return st.transcription
     r = []

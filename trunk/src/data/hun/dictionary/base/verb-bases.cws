@@ -518,6 +518,27 @@ pr-p3-u :: verb-continuous verb-perfect-continuous-durative
 :: pa-p3-d   { sufix: "ták"   }
 :: pa-p3-u   { sufix: "tak"   }
 
+.past-verbs-4
+:: pa-s1-3   { sufix: "tem"   }
+:: pa-s1-2f  { sufix: "tem"   }
+:: pa-s1-2i  { sufix: "telek" }
+:: pa-p1-2i  { sufix: "tük"   }
+:: pa-p1-2iu { sufix: "tünk"  }
+:: pa-s2i-d  { sufix: "ted"   }
+:: pa-s2i-u  { sufix: "tél"   }
+:: pa-s2i-1  { sufix: "tél"   }
+:: pa-s2f-d  { sufix: "te"    }
+:: pa-s3-d   { sufix: "te"    }
+:: pa-s2f-u  { sufix: "ött"   }
+:: pa-s2f-1  { sufix: "ött"   }
+:: pa-s3-u   { sufix: "ött"   }
+:: pa-s3-1   { sufix: "ött"   }
+:: pa-p2i-d  { sufix: "tétek" }
+:: pa-p2i-u  { sufix: "tetek" }
+:: pa-p2f-d  { sufix: "ték"   }
+:: pa-p2f-u  { sufix: "tek"   }
+:: pa-p3-d   { sufix: "ték"   }
+:: pa-p3-u   { sufix: "tek"   }
 
 .present-verbs
 :: pr-s1-3u  { sufix: "ok"    }
@@ -621,6 +642,29 @@ pr-p3-u :: verb-continuous verb-perfect-continuous-durative
 :: pr-p3-d   { sufix: "ják"   }
 :: pr-p3-u   { sufix: "nak"   }
 
+.present-verbs-5
+:: pr-s1-3u  { sufix: "ök"    }
+:: pr-s1-3d  { sufix: "öm"    }
+:: pr-s1-2f  { sufix: "öm"    }
+:: pr-s1-2i  { sufix: "lek"   }
+:: pr-p1-2id { sufix: "ük"    }
+:: pr-p1-2iu { sufix: "ünk"   }
+:: pr-s2i-d  { sufix: "öd"    }
+:: pr-s2i-u  { sufix: "öl"    }
+:: pr-s2i-1  { sufix: "öl"    }
+:: pr-s2f-d  { sufix: "ja"    }
+:: pr-s3-d   { sufix: "ja"    }
+:: pr-s2f-3u {                }
+:: pr-s2f-1  {                }
+:: pr-s3-3u  {                }
+:: pr-s3-1   {                }
+:: pr-p2i-d  { sufix: ":átok" }
+:: pr-p2i-u  { sufix: "tök"   }
+:: pr-p2f-d  { sufix: ":ák"   }
+:: pr-p2f-u  { sufix: "nak"   }
+:: pr-p3-d   { sufix: ":ák"   }
+:: pr-p3-u   { sufix: "nak"   }
+
 verb-perfect-future
 {
     text: "meg<0";
@@ -628,6 +672,7 @@ verb-perfect-future
     tense: future;
 }
 
-.all-verbs :: past-verbs present-verbs { }
+.all-verbs :: past-verbs present-verbs       { }
 .all-verbs-2 :: past-verbs-2 present-verbs-2 { }
-.all-verbs-3 :: past-verbs present-verbs-3 { }
+.all-verbs-3 :: past-verbs present-verbs-3   { }
+.all-verbs-4 :: past-verbs-4 present-verbs-5 { }

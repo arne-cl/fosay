@@ -113,3 +113,17 @@ using :: base-funcs { }
     case: nominative;
     case-2: nominative;
 }
+"gyarmatosító"[dʲɒrmɒtoʃitou] :: all-cases-2
+{
+	lemma: "colonizer.n.01";
+    stem: "colonizer.n.01.gyarmatosító";
+    real-number: singular;
+    type: noun;
+    form: formal;
+    noun-type: common;
+
+    number: singular;
+    persone: third;
+    case: nominative;
+    case-2: nominative;
+}

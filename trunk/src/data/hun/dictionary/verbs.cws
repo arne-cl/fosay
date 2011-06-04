@@ -27,6 +27,13 @@ using :: base-verb-bases { }
     aspect: indefinite;
     participle: not-participle;
 }
+."száműz" :: all-verbs-4
+{
+    lemma: "id1";
+    stem: "id1.száműzni";
+    type: verb;
+    mood: declarative; //////////////nem itt kell!!
+}
 ."lát" :: all-verbs
 {
     transcription: "latni";

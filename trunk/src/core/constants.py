@@ -48,6 +48,7 @@ def create_dict_t(concept, list):
 
 
 def is_terminalc(const):
+    if const is None: raise Exception("Type can't be None")
     return const in terminal
 
 def is_nonterminalc(const):
