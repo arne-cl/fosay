@@ -169,3 +169,4 @@ using :: base-noun-bases { }
     noun-type: proper;
 }
 ."інді" :: noun-cases-12(proper) { stem: "gugde'inu.індія" }
+."франці" :: noun-cases-12(proper) { stem: "fasygu'e.франція" }

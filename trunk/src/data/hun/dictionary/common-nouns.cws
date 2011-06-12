@@ -127,3 +127,29 @@ using :: base-funcs { }
     case: nominative;
     case-2: nominative;
 }
+"matematikus"[mɒtɛmɒtikuʃ] :: all-cases-3
+{
+    stem: "mathematician.matematikus";
+    real-number: singular;
+    type: noun;
+    form: formal;
+    noun-type: common;
+
+    number: singular;
+    persone: third;
+    case: nominative;
+    case-2: nominative;
+}
+"kutya"[kutʲɒ] :: all-cases-3
+{
+    stem: "gerku.kutya";
+    real-number: singular;
+    type: noun;
+    form: formal;
+    noun-type: common;
+
+    number: singular;
+    persone: third;
+    case: nominative;
+    case-2: nominative;
+}

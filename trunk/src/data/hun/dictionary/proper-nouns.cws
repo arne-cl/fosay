@@ -300,3 +300,14 @@ using :: base-funcs { }
     case-2: nominative;
     noun-type: proper;
 }
+"franciaország"[frɒnciɒorsag] :: cases-london
+{
+    lemma: "fasygu'e";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    persone: third;
+    case: nominative;
+    case-2: nominative;
+    noun-type: proper;
+}

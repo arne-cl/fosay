@@ -49,3 +49,7 @@ using :: base-funcs { }
     lemma: "xunre";
     stem: "xunre.red";
 }
+."outstanding"[ɑwtstændɪŋ] :: adjective
+{
+    stem: "outstanding.outstanding";
+}
