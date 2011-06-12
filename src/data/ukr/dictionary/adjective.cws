@@ -13,3 +13,4 @@ using :: base-adjective { }
 ."син"       :: adj-cases-2 { stem: "blanu.синій"       }
 ."коричнев"  :: adj-cases-1 { stem: "bunre.коричневий"  }
 ."британськ" :: adj-cases-1 { stem: "brito.британський" }
+."видатн"    :: adj-cases-1 { stem: "outstanding.видатний" }

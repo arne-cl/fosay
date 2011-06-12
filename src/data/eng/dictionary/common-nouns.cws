@@ -214,6 +214,17 @@ using :: base-funcs { }
     noun-type: common;
     case: nominative;
 }
+"mathematician"[mæθəmətɪʃən] :: possessive accusative
+{
+    stem: "mathematician.mathematician";
+    real-number: singular;
+    type: noun;
+    number: singular;
+    gender: masculine;
+    persone: third;
+    noun-type: common;
+    case: nominative;
+}
 "elder" :: possessive plural-sz accusative
 {
     transcription: "ɛldər";
@@ -328,6 +339,16 @@ using :: base-funcs { }
     type: noun;
     real-number: singular;
     form: informal;
+    persone: third;
+    case: nominative;
+}
+"dog" :: possessive accusative
+{
+    transcription: "dog";
+    stem: "gerku.dog";
+    type: noun;
+    real-number: singular;
+    form: formal;
     persone: third;
     case: nominative;
 }

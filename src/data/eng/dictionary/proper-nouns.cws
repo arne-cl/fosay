@@ -205,3 +205,4 @@ using :: base-funcs { }
 ."new york"[nu jɔrk] :: proper-noun { lemma: "nu,IORK"   }
 ."berlin"[bərlɪn]    :: proper-noun { lemma: "byLIN"     }
 ."india"[india]      :: proper-noun { lemma: "gugde'inu" }
+."france"[fræns]     :: proper-noun { lemma: "fasygu'e"  }

@@ -64,6 +64,8 @@ using :: base-noun-bases { }
     tags: slang, russian;
 }
 ."колонізатор" :: noun-cases-5(common) { stem: "colonizer.n.01.колонізатор" }
+."математик" :: noun-cases-5(common) { stem: "mathematician.n.01.математик" }
+."соба"     :: noun-cases-14(common) { stem: "gerku.собака" }
 ."жін"      :: noun-cases-3(common) { stem: "ninmu.жінка" }
 ."робітниц" :: noun-cases-4(common) { stem: "le'ipli.робітниця" }
 ."фабри"    :: noun-cases-2(common) { stem: "fanri.фабрика" }
